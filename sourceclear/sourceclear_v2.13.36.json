@@ -1,0 +1,3049 @@
+^[{
+  "metadata" : {
+    "requestDate" : "2018-03-14T15:49:29.783+0000"
+  },
+  "records" : [ {
+    "metadata" : {
+      "recordType" : "SCAN"
+    },
+    "graphs" : [ {
+      "coords" : {
+        "coordinateType" : "PYPI",
+        "coordinate1" : "apache-airflow",
+        "coordinate2" : null,
+        "version" : "1.10.0.dev0+incubating",
+        "scope" : null,
+        "platform" : null,
+        "commitHash" : null
+      },
+      "directs" : [ {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "bleach",
+          "coordinate2" : null,
+          "version" : "2.1.2",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "html5lib",
+            "coordinate2" : null,
+            "version" : "1.0.1",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ {
+            "coords" : {
+              "coordinateType" : "PYPI",
+              "coordinate1" : "webencodings",
+              "coordinate2" : null,
+              "version" : "0.5.1",
+              "scope" : null,
+              "platform" : null,
+              "commitHash" : null
+            },
+            "directs" : [ ],
+            "filename" : "setup.py",
+            "lineNumber" : null,
+            "moduleName" : null,
+            "sha1" : null,
+            "sha2" : null,
+            "bytecodeHash" : null
+          } ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        }, {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "six",
+            "coordinate2" : null,
+            "version" : "1.11.0",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "iso8601",
+          "coordinate2" : null,
+          "version" : "0.1.12",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "pygments",
+          "coordinate2" : null,
+          "version" : "2.2.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "croniter",
+          "coordinate2" : null,
+          "version" : "0.3.20",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "tabulate",
+          "coordinate2" : null,
+          "version" : "0.7.7",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "pendulum",
+          "coordinate2" : null,
+          "version" : "1.4.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "pytzdata",
+            "coordinate2" : null,
+            "version" : "2018.3",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "gitpython",
+          "coordinate2" : null,
+          "version" : "2.1.8",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "gitdb2",
+            "coordinate2" : null,
+            "version" : "2.0.3",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ {
+            "coords" : {
+              "coordinateType" : "PYPI",
+              "coordinate1" : "smmap2",
+              "coordinate2" : null,
+              "version" : "2.0.3",
+              "scope" : null,
+              "platform" : null,
+              "commitHash" : null
+            },
+            "directs" : [ ],
+            "filename" : "setup.py",
+            "lineNumber" : null,
+            "moduleName" : null,
+            "sha1" : null,
+            "sha2" : null,
+            "bytecodeHash" : null
+          } ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "flask-wtf",
+          "coordinate2" : null,
+          "version" : "0.14.2",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "flask",
+          "coordinate2" : null,
+          "version" : "0.11.1",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "itsdangerous",
+            "coordinate2" : null,
+            "version" : "0.24",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        }, {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "click",
+            "coordinate2" : null,
+            "version" : "6.7",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "requests",
+          "coordinate2" : null,
+          "version" : "2.18.4",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "idna",
+            "coordinate2" : null,
+            "version" : "2.6",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        }, {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "certifi",
+            "coordinate2" : null,
+            "version" : "2018.1.18",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        }, {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "urllib3",
+            "coordinate2" : null,
+            "version" : "1.22",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        }, {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "chardet",
+            "coordinate2" : null,
+            "version" : "3.0.4",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "gunicorn",
+          "coordinate2" : null,
+          "version" : "19.7.1",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "python-daemon",
+          "coordinate2" : null,
+          "version" : "2.1.2",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "lockfile",
+            "coordinate2" : null,
+            "version" : "0.12.2",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        }, {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "docutils",
+            "coordinate2" : null,
+            "version" : "0.14",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        }, {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "setuptools",
+            "coordinate2" : null,
+            "version" : "28.8.0",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "flask-swagger",
+          "coordinate2" : null,
+          "version" : "0.2.13",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "PyYAML",
+            "coordinate2" : null,
+            "version" : "3.12",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "lxml",
+          "coordinate2" : null,
+          "version" : "3.8.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "jinja2",
+          "coordinate2" : null,
+          "version" : "2.8.1",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "MarkupSafe",
+            "coordinate2" : null,
+            "version" : "1.0",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "dill",
+          "coordinate2" : null,
+          "version" : "0.2.7.1",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "markdown",
+          "coordinate2" : null,
+          "version" : "2.6.11",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "tzlocal",
+          "coordinate2" : null,
+          "version" : "1.5.1",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "configparser",
+          "coordinate2" : null,
+          "version" : "3.5.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "funcsigs",
+          "coordinate2" : null,
+          "version" : "1.0.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "ordereddict",
+            "coordinate2" : null,
+            "version" : "1.1",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "sqlalchemy-utc",
+          "coordinate2" : null,
+          "version" : "0.10.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "pandas",
+          "coordinate2" : null,
+          "version" : "0.22.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "pytz",
+            "coordinate2" : null,
+            "version" : "2018.3",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        }, {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "numpy",
+            "coordinate2" : null,
+            "version" : "1.14.2",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "future",
+          "coordinate2" : null,
+          "version" : "0.16.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "flask-admin",
+          "coordinate2" : null,
+          "version" : "1.4.1",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "wtforms",
+            "coordinate2" : null,
+            "version" : "2.1",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "flask-caching",
+          "coordinate2" : null,
+          "version" : "1.3.3",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "setproctitle",
+          "coordinate2" : null,
+          "version" : "1.1.10",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "psutil",
+          "coordinate2" : null,
+          "version" : "4.4.2",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "flask-login",
+          "coordinate2" : null,
+          "version" : "0.2.11",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "python-nvd3",
+          "coordinate2" : null,
+          "version" : "0.14.2",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "python-slugify",
+            "coordinate2" : null,
+            "version" : "1.1.4",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ {
+            "coords" : {
+              "coordinateType" : "PYPI",
+              "coordinate1" : "Unidecode",
+              "coordinate2" : null,
+              "version" : "1.0.22",
+              "scope" : null,
+              "platform" : null,
+              "commitHash" : null
+            },
+            "directs" : [ ],
+            "filename" : "setup.py",
+            "lineNumber" : null,
+            "moduleName" : null,
+            "sha1" : null,
+            "sha2" : null,
+            "bytecodeHash" : null
+          } ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "python-dateutil",
+          "coordinate2" : null,
+          "version" : "2.7.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "alembic",
+          "coordinate2" : null,
+          "version" : "0.8.10",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "Mako",
+            "coordinate2" : null,
+            "version" : "1.0.7",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        }, {
+          "coords" : {
+            "coordinateType" : "PYPI",
+            "coordinate1" : "python-editor",
+            "coordinate2" : null,
+            "version" : "1.0.3",
+            "scope" : null,
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "setup.py",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "thrift",
+          "coordinate2" : null,
+          "version" : "0.11.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "zope.deprecation",
+          "coordinate2" : null,
+          "version" : "4.3.0",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "sqlalchemy",
+          "coordinate2" : null,
+          "version" : "1.1.18",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "PYPI",
+          "coordinate1" : "werkzeug",
+          "coordinate2" : null,
+          "version" : "0.14.1",
+          "scope" : null,
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "setup.py",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      } ],
+      "filename" : "setup.py",
+      "lineNumber" : null,
+      "moduleName" : null,
+      "sha1" : null,
+      "sha2" : null,
+      "bytecodeHash" : null
+    } ],
+    "libraries" : [ {
+      "name" : "alembic",
+      "description" : "A database migration tool for SQLAlchemy.",
+      "author" : "Mike Bayer",
+      "authorUrl" : "http://bitbucket.org/zzzeek/alembic",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "alembic",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.9.8",
+      "latestReleaseDate" : "2018-02-16T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.8.10",
+        "releaseDate" : "2017-01-17T00:00:00.000+0000",
+        "sha1" : "089718a63b89d001d30bc75a766af808ef8a323f",
+        "sha2" : "0e3b50e96218283ec7443fb661199f5a81f5879f766967a8a2d25e8f9d4e7919",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/229995?version=0.8.10"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/229995"
+      }
+    }, {
+      "name" : "bleach",
+      "description" : "An easy safelist-based HTML-sanitizing tool.",
+      "author" : "Will Kahn-Greene",
+      "authorUrl" : "http://github.com/mozilla/bleach",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "bleach",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.1.3",
+      "latestReleaseDate" : "2018-03-05T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.1.2",
+        "releaseDate" : "2017-12-07T00:00:00.000+0000",
+        "sha1" : "5a1c023724f16cbb1fce65816aa36b6a502bebdc",
+        "sha2" : "38fc8cbebea4e787d8db55d6f324820c7f74362b70db9142c1ac7920452d1a19",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/179193?version=2.1.2"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/179193"
+      }
+    }, {
+      "name" : "certifi",
+      "description" : "Python package for providing Mozilla's CA Bundle.",
+      "author" : "Kenneth Reitz",
+      "authorUrl" : "http://certifi.io/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "certifi",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "14.05.14",
+      "latestReleaseDate" : "2014-05-18T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2018.1.18",
+        "releaseDate" : "2018-01-18T00:00:00.000+0000",
+        "sha1" : "ec6518531fc22e7ba5d25959fa315c3eb5c4c862",
+        "sha2" : "edbc3f203427eef571f79a7692bb160a2b0f7ccaa31953e99bd17e307cf63f7d",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MPL20",
+          "license" : "Mozilla Public License 2.0 (MPL-2.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/211509?version=2018.1.18"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/211509"
+      }
+    }, {
+      "name" : "chardet",
+      "description" : "Universal encoding detector for Python 2 and 3",
+      "author" : "Daniel Blanchard",
+      "authorUrl" : "https://github.com/chardet/chardet",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "chardet",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "3.0.4",
+      "latestReleaseDate" : "2017-06-08T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "3.0.4",
+        "releaseDate" : "2017-06-08T00:00:00.000+0000",
+        "sha1" : "4766fb07e700945a7085d073257f1f320d037ce8",
+        "sha2" : "84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "LGPL30",
+          "license" : "GNU Library or \"Lesser\" General Public License version 3.0 (LGPL-3.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/197825?version=3.0.4"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/197825"
+      }
+    }, {
+      "name" : "click",
+      "description" : "A simple wrapper around optparse for powerful command line utilities.",
+      "author" : "Armin Ronacher",
+      "authorUrl" : "http://github.com/mitsuhiko/click",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "click",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "6.7",
+      "latestReleaseDate" : "2017-01-06T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "6.7",
+        "releaseDate" : "2017-01-06T00:00:00.000+0000",
+        "sha1" : "c16e7cb561a40c385ae8d1a50528e549cc1d8e94",
+        "sha2" : "f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/172523?version=6.7"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/172523"
+      }
+    }, {
+      "name" : "configparser",
+      "description" : "This library brings the updated configparser from Python 3.5 to Python 2.6-3.5.",
+      "author" : "��ukasz Langa",
+      "authorUrl" : "http://docs.python.org/3/library/configparser.html",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "configparser",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "3.5.0",
+      "latestReleaseDate" : "2016-05-21T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "3.5.0",
+        "releaseDate" : "2016-05-21T00:00:00.000+0000",
+        "sha1" : "8ee6b29c6a11977c0e094da1d4f5f71e7e7ac78b",
+        "sha2" : "5308b47021bc2340965c371f0f058cc6971a04502638d4244225c49d80db273a",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/181565?version=3.5.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/181565"
+      }
+    }, {
+      "name" : "croniter",
+      "description" : "croniter provides iteration for datetime object with cron like format",
+      "author" : "Matsumoto Taichi, kiorky",
+      "authorUrl" : "http://github.com/kiorky/croniter",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "croniter",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.3.20",
+      "latestReleaseDate" : "2017-11-06T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.3.20",
+        "releaseDate" : "2017-11-06T00:00:00.000+0000",
+        "sha1" : "fe620a67da878ddf77dea688aec548077eac6814",
+        "sha2" : "272c333ab0b354a82173e502d419299e2f3dfdd5dce771ecd8bdf03680495016",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/215572?version=0.3.20"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/215572"
+      }
+    }, {
+      "name" : "dill",
+      "description" : "serialize all of python",
+      "author" : "Mike McKerns",
+      "authorUrl" : "http://www.cacr.caltech.edu/~mmckerns/dill.htm",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "dill",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.2.7.1",
+      "latestReleaseDate" : "2017-07-18T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.2.7.1",
+        "releaseDate" : "2017-07-18T00:00:00.000+0000",
+        "sha1" : "61c22be05b2f918adc4bc8bb62c6e1f65b28d492",
+        "sha2" : "97fd758f5fe742d42b11ec8318ecfcff8776bccacbfcec05dfd6276f5d450f73",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD2",
+          "license" : "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/212682?version=0.2.7.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/212682"
+      }
+    }, {
+      "name" : "docutils",
+      "description" : "Docutils -- Python Documentation Utilities",
+      "author" : "docutils-develop list",
+      "authorUrl" : "http://docutils.sourceforge.net/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "docutils",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "http://sourceforge.net/tracker/?group_id=38414&atid=422030",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.14",
+      "latestReleaseDate" : "2017-08-03T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.14",
+        "releaseDate" : "2017-08-03T00:00:00.000+0000",
+        "sha1" : "32cefb69ac3dab5b04c4d150776f35419cc4c863",
+        "sha2" : "51e64ef2ebfb29cae1faa133b3710143496eca21c530f3f71424d77687764274",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/220632?version=0.14"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/220632"
+      }
+    }, {
+      "name" : "Flask",
+      "description" : "A microframework based on Werkzeug, Jinja2 and good intentions",
+      "author" : "Armin Ronacher",
+      "authorUrl" : "http://github.com/pallets/flask/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "flask",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.12.2",
+      "latestReleaseDate" : "2017-05-16T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.11.1",
+        "releaseDate" : "2016-06-07T00:00:00.000+0000",
+        "sha1" : "8144bfba25a266ff572d19530472f403c96ad911",
+        "sha2" : "b4713f2bfb9ebc2966b8a49903ae0d3984781d5c878591cf2f7b484d28756b0e",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/206073?version=0.11.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/206073"
+      }
+    }, {
+      "name" : "Flask-Admin",
+      "description" : "Simple and extensible admin interface framework for Flask",
+      "author" : "Flask-Admin team",
+      "authorUrl" : "https://github.com/flask-admin/flask-admin/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "flask_admin",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.5.1",
+      "latestReleaseDate" : "2018-03-06T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.4.1",
+        "releaseDate" : "2016-06-13T00:00:00.000+0000",
+        "sha1" : "69c0960e79327a504b7bb30fd20c253291af43ba",
+        "sha2" : "88618750e08ceee1ab232a5a9ebcef31275db5db1c0b56db29e014c24c7067a4",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/203071?version=1.4.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/203071"
+      }
+    }, {
+      "name" : "Flask-Login",
+      "description" : "User session management for Flask",
+      "author" : "Matthew Frazier",
+      "authorUrl" : "https://github.com/maxcountryman/flask-login",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "flask_login",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.4.1",
+      "latestReleaseDate" : "2017-12-02T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.2.11",
+        "releaseDate" : "2014-05-20T00:00:00.000+0000",
+        "sha1" : "d23f920096b40a6794e0a0e8997aca823382af7d",
+        "sha2" : "83d5f10e5c4f214feed6cc41c212db63a58a15ac32e56df81591bfa0a5cee3e5",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/235548?version=0.2.11"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/235548"
+      }
+    }, {
+      "name" : "flask-swagger",
+      "description" : "Extract swagger specs from your flask project",
+      "author" : "Atli Thorbjornsson",
+      "authorUrl" : "https://github.com/gangverk/flask-swagger",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "flask_swagger",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.2.13",
+      "latestReleaseDate" : "2016-10-01T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.2.13",
+        "releaseDate" : "2016-10-01T00:00:00.000+0000",
+        "sha1" : "4de18c66dbe60d5d0bbc1dd7724ddfcbed845e2e",
+        "sha2" : "42420efbed1aad86f7ca6bb869df550e09591e1d540ebd3040c197906c0f0be6",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/235844?version=0.2.13"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/235844"
+      }
+    }, {
+      "name" : "Flask-WTF",
+      "description" : "Simple integration of Flask and WTForms.",
+      "author" : "Hsiaoming Yang",
+      "authorUrl" : "https://github.com/lepture/flask-wtf",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "flask_wtf",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.14.2",
+      "latestReleaseDate" : "2017-01-10T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.14.2",
+        "releaseDate" : "2017-01-10T00:00:00.000+0000",
+        "sha1" : "b8e8c9f2b76e43839b982b96683d2cfd70ac668f",
+        "sha2" : "5d14d55cfd35f613d99ee7cba0fc3fbbe63ba02f544d349158c14ca15561cc36",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/216363?version=0.14.2"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/216363"
+      }
+    }, {
+      "name" : "funcsigs",
+      "description" : "Python function signatures from PEP362 for Python 2.6, 2.7 and 3.2+",
+      "author" : "Testing Cabal",
+      "authorUrl" : "http://funcsigs.readthedocs.org",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "funcsigs",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.0.2",
+      "latestReleaseDate" : "2016-04-25T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.0.0",
+        "releaseDate" : "2016-04-06T00:00:00.000+0000",
+        "sha1" : "f6717d5e80d7fb70d30d32476cafcbe7460a862f",
+        "sha2" : "2310f9d4a77c284e920ec572dc2525366a107b08d216ff8dbb891d95b6a77563",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "APACHE20",
+          "license" : "Apache License 2.0 (Apache-2.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/204880?version=1.0.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/204880"
+      }
+    }, {
+      "name" : "future",
+      "description" : "Clean single-source support for Python 3 and 2",
+      "author" : "Ed Schofield",
+      "authorUrl" : "https://python-future.org",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "future",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.16.0",
+      "latestReleaseDate" : "2016-10-27T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.16.0",
+        "releaseDate" : "2016-10-27T00:00:00.000+0000",
+        "sha1" : "86ed881acef874d04576b9df03c29d25ad2cd25f",
+        "sha2" : "e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/187557?version=0.16.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/187557"
+      }
+    }, {
+      "name" : "gitdb2",
+      "description" : "Git Object Database",
+      "author" : "Sebastian Thiel",
+      "authorUrl" : "https://github.com/gitpython-developers/gitdb",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "gitdb2",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.0.3",
+      "latestReleaseDate" : "2017-09-28T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.0.3",
+        "releaseDate" : "2017-09-28T00:00:00.000+0000",
+        "sha1" : "ec5fea89cf66189317550c552e6f443956cea3b9",
+        "sha2" : "b60e29d4533e5e25bb50b7678bbc187c8f6bcff1344b4f293b2ba55c85795f09",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/669796?version=2.0.3"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/669796"
+      }
+    }, {
+      "name" : "GitPython",
+      "description" : "Python Git Library",
+      "author" : "Sebastian Thiel, Michael Trier",
+      "authorUrl" : "https://github.com/gitpython-developers/GitPython",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "gitpython",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.1.8",
+      "latestReleaseDate" : "2017-12-11T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.1.8",
+        "releaseDate" : "2017-12-11T00:00:00.000+0000",
+        "sha1" : "8d533251b2c00007eec7b4ed8631969cc9a8d168",
+        "sha2" : "ad61bc25deadb535b047684d06f3654c001d9415e1971e51c9c20f5b510076e9",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/202939?version=2.1.8"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/202939"
+      }
+    }, {
+      "name" : "gunicorn",
+      "description" : "WSGI HTTP Server for UNIX",
+      "author" : "Benoit Chesneau",
+      "authorUrl" : "http://gunicorn.org",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "gunicorn",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "19.7.1",
+      "latestReleaseDate" : "2017-03-21T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "19.7.1",
+        "releaseDate" : "2017-03-21T00:00:00.000+0000",
+        "sha1" : "e4d9f55744bf4198f71d29f61f9eeaf9d216ecac",
+        "sha2" : "eee1169f0ca667be05db3351a0960765620dad53f53434262ff8901b68a1b622",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/240893?version=19.7.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/240893"
+      }
+    }, {
+      "name" : "html5lib",
+      "description" : "HTML parser based on the WHATWG HTML specification",
+      "author" : "James Graham",
+      "authorUrl" : "https://github.com/html5lib/html5lib-python",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "html5lib",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.0.1",
+      "latestReleaseDate" : "2017-12-07T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.0.1",
+        "releaseDate" : "2017-12-07T00:00:00.000+0000",
+        "sha1" : "5e1a2c7e18de7d1d0883e223f1733dc6dc796ee2",
+        "sha2" : "66cb0dcfdbbc4f9c3ba1a63fdb511ffdbd4f513b2b6d81b80cd26ce6b3fb3736",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/238977?version=1.0.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/238977"
+      }
+    }, {
+      "name" : "idna",
+      "description" : "Internationalized Domain Names in Applications (IDNA)",
+      "author" : "Kim Davies",
+      "authorUrl" : "https://github.com/kjd/idna",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "idna",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.6",
+      "latestReleaseDate" : "2017-08-08T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.6",
+        "releaseDate" : "2017-08-08T00:00:00.000+0000",
+        "sha1" : "abf5e2e7d8f52dd00e658f1ead4eb9f4d2240bf4",
+        "sha2" : "2c6a5de3089009e3da7c5dde64a141dbc8551d5b7f6cf4ed7c2568d0cc520a8f",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/225366?version=2.6"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/225366"
+      }
+    }, {
+      "name" : "iso8601",
+      "description" : "Simple module to parse ISO 8601 dates",
+      "author" : "Michael Twomey",
+      "authorUrl" : "https://bitbucket.org/micktwomey/pyiso8601",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "iso8601",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.1.12",
+      "latestReleaseDate" : "2017-07-27T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.1.12",
+        "releaseDate" : "2017-07-27T00:00:00.000+0000",
+        "sha1" : "0943b06fbfbf43b5efa3dca32fc7e01c26d66cde",
+        "sha2" : "49c4b20e1f38aa5cf109ddcd39647ac419f928512c869dc01d5c7098eddede82",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/241634?version=0.1.12"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/241634"
+      }
+    }, {
+      "name" : "itsdangerous",
+      "description" : "Various helpers to pass trusted data to untrusted environments and back.",
+      "author" : "Armin Ronacher",
+      "authorUrl" : "http://github.com/mitsuhiko/itsdangerous",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "itsdangerous",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.24",
+      "latestReleaseDate" : "2014-03-28T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.24",
+        "releaseDate" : "2014-03-28T00:00:00.000+0000",
+        "sha1" : "0a6ae9c20cd72e89d75314ebc7b0f390f93e6a0d",
+        "sha2" : "cbb3fcf8d3e33df861709ecaf89d9e6629cff0a217bc2848f1b41cd30d360519",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/239966?version=0.24"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/239966"
+      }
+    }, {
+      "name" : "Jinja2",
+      "description" : "A small but fast and easy to use stand-alone template engine written in pure python.",
+      "author" : "Armin Ronacher",
+      "authorUrl" : "http://jinja.pocoo.org/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "jinja2",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.10",
+      "latestReleaseDate" : "2017-11-08T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.8.1",
+        "releaseDate" : "2016-12-29T00:00:00.000+0000",
+        "sha1" : "6baee2df662bf193bb3669c2c5b475da6083e2aa",
+        "sha2" : "35341f3a97b46327b3ef1eb624aadea87a535b8f50863036e085e7c426ac5891",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/167488?version=2.8.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/167488"
+      }
+    }, {
+      "name" : "lockfile",
+      "description" : "Platform-independent file locking module",
+      "author" : "OpenStack",
+      "authorUrl" : "http://launchpad.net/pylockfile",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "lockfile",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.12.2",
+      "latestReleaseDate" : "2015-11-25T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.12.2",
+        "releaseDate" : "2015-11-25T00:00:00.000+0000",
+        "sha1" : "c2ac46e48585e5f8f8d57ccc55ca83faa8b53b86",
+        "sha2" : "6aed02de03cba24efabcd600b30540140634fc06cfa603822d508d5361e9f799",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/216656?version=0.12.2"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/216656"
+      }
+    }, {
+      "name" : "lxml",
+      "description" : "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.",
+      "author" : "lxml dev team",
+      "authorUrl" : "http://lxml.de/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "lxml",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "https://bugs.launchpad.net/lxml",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "4.2.0",
+      "latestReleaseDate" : "2018-03-13T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "3.8.0",
+        "releaseDate" : "2017-06-03T00:00:00.000+0000",
+        "sha1" : "9cc81a0b1559a21812cde9c42ca90ccd5c95e138",
+        "sha2" : "736f72be15caad8116891eb6aa4a078b590d231fdc63818c40c21624ac71db96",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/167437?version=3.8.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/167437"
+      }
+    }, {
+      "name" : "Mako",
+      "description" : "A super-fast templating language that borrows the  best ideas from the existing templating languages.",
+      "author" : "Mike Bayer",
+      "authorUrl" : "http://www.makotemplates.org/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "mako",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.0.7",
+      "latestReleaseDate" : "2017-07-13T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.0.7",
+        "releaseDate" : "2017-07-13T00:00:00.000+0000",
+        "sha1" : "bf0c1f4cdfca4dd37bc0c9f83e984a0558268b42",
+        "sha2" : "4e02fde57bd4abb5ec400181e4c314f56ac3e49ba4fb8b0d50bba18cb27d25ae",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/168072?version=1.0.7"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/168072"
+      }
+    }, {
+      "name" : "Markdown",
+      "description" : "Python implementation of Markdown.",
+      "author" : "Waylan Limberg",
+      "authorUrl" : "https://Python-Markdown.github.io/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "markdown",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.6.11",
+      "latestReleaseDate" : "2018-01-05T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.6.11",
+        "releaseDate" : "2018-01-05T00:00:00.000+0000",
+        "sha1" : "4fb4cb6c46eac3dea20d38f9df70f375f73bdd2e",
+        "sha2" : "a856869c7ff079ad84a3e19cd87a64998350c2b94e9e08e44270faef33400f81",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/208062?version=2.6.11"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/208062"
+      }
+    }, {
+      "name" : "MarkupSafe",
+      "description" : "Implements a XML/HTML/XHTML Markup safe string for Python",
+      "author" : "Armin Ronacher",
+      "authorUrl" : "http://github.com/pallets/markupsafe",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "markupsafe",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.0",
+      "latestReleaseDate" : "2017-03-07T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.0",
+        "releaseDate" : "2017-03-07T00:00:00.000+0000",
+        "sha1" : "9072e80a7faa0f49805737a48f3d871eb1c48728",
+        "sha2" : "a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/235789?version=1.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/235789"
+      }
+    }, {
+      "name" : "numpy",
+      "description" : "NumPy: array processing for numbers, strings, records, and objects.",
+      "author" : "NumPy Developers",
+      "authorUrl" : "http://www.numpy.org",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "numpy",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.14.2",
+      "latestReleaseDate" : "2018-03-12T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.14.2",
+        "releaseDate" : "2018-03-12T00:00:00.000+0000",
+        "sha1" : "20100aa3d1ce2cb5e297c6938613dea9c3f6f304",
+        "sha2" : "1aa4846609f168e35bbe364b586a010fb1e0ff42b44962a2af0238fd7748a419",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/168272?version=1.14.2"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/168272"
+      }
+    }, {
+      "name" : "ordereddict",
+      "description" : "A drop-in substitute for Py2.7's new collections.OrderedDict that works in Python 2.4-2.6.",
+      "author" : "Raymond Hettinger",
+      "authorUrl" : "UNKNOWN",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "ordereddict",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.1",
+      "latestReleaseDate" : "2010-10-28T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.1",
+        "releaseDate" : "2010-10-28T00:00:00.000+0000",
+        "sha1" : "ab90b67dceab55a11b609d253846fa486eb980c4",
+        "sha2" : "1c35b4ac206cef2d24816c89f89cf289dd3d38cf7c449bb3fab7bf6d43f01b1f",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/221448?version=1.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/221448"
+      }
+    }, {
+      "name" : "pandas",
+      "description" : "Powerful data structures for data analysis, time series,and statistics",
+      "author" : "The PyData Development Team",
+      "authorUrl" : "http://pandas.pydata.org",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "pandas",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.22.0",
+      "latestReleaseDate" : "2017-12-31T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.22.0",
+        "releaseDate" : "2017-12-31T00:00:00.000+0000",
+        "sha1" : "e62c0c9e606054c1c7a081fd3f4dcb74c0b31ff9",
+        "sha2" : "44a94091dd71f05922eec661638ec1a35f26d573c119aa2fad964f10a2880e6c",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/174104?version=0.22.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/174104"
+      }
+    }, {
+      "name" : "pendulum",
+      "description" : "Python datetimes made easy.",
+      "author" : "S��bastien Eustace",
+      "authorUrl" : "https://github.com/sdispater/pendulum",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "pendulum",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.4.2",
+      "latestReleaseDate" : "2018-02-22T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.4.0",
+        "releaseDate" : "2018-01-22T00:00:00.000+0000",
+        "sha1" : "4693feaeee1295f789db719e4c9cd2f9ece1b34c",
+        "sha2" : "e996c34fb101c9c6d88a839c19af74d7c067b92ed3371274efcf4d4b6dc160a6",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/560004?version=1.4.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/560004"
+      }
+    }, {
+      "name" : "psutil",
+      "description" : "Cross-platform lib for process and system monitoring in Python.",
+      "author" : "Giampaolo Rodola",
+      "authorUrl" : "https://github.com/giampaolo/psutil",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "psutil",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "5.4.3",
+      "latestReleaseDate" : "2018-01-01T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "4.4.2",
+        "releaseDate" : "2016-10-26T00:00:00.000+0000",
+        "sha1" : "38349fc28a4d5d1242b5c80867f41d5632ca42cf",
+        "sha2" : "1c37e6428f7fe3aeea607f9249986d9bb933bb98133c7919837fd9aac4996b07",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/245137?version=4.4.2"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/245137"
+      }
+    }, {
+      "name" : "Pygments",
+      "description" : "Pygments is a syntax highlighting package written in Python.",
+      "author" : "Georg Brandl",
+      "authorUrl" : "http://pygments.org/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "pygments",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.2.0",
+      "latestReleaseDate" : "2017-01-22T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.2.0",
+        "releaseDate" : "2017-01-22T00:00:00.000+0000",
+        "sha1" : "5c6714bd6fd950c1478889f7b72fc7f6771d5163",
+        "sha2" : "dbae1046def0efb574852fab9e90209b23f556367b5a320c0bcb871c77c3e8cc",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/167150?version=2.2.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/167150"
+      }
+    }, {
+      "name" : "python-daemon",
+      "description" : "Library to implement a well-behaved Unix daemon process.",
+      "author" : "Ben Finney",
+      "authorUrl" : "https://pagure.io/python-daemon/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "python_daemon",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.1.2",
+      "latestReleaseDate" : "2016-10-26T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.1.2",
+        "releaseDate" : "2016-10-26T00:00:00.000+0000",
+        "sha1" : "e333e9031424611b8974d2b2d2804dd26c4fae8e",
+        "sha2" : "261c859be5c12ae7d4286dc6951e87e9e1a70a882a8b41fd926efc1ec4214f73",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "APACHE20",
+          "license" : "Apache License 2.0 (Apache-2.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/229932?version=2.1.2"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/229932"
+      }
+    }, {
+      "name" : "python-dateutil",
+      "description" : "Extensions to the standard Python datetime module",
+      "author" : "Paul Ganssle",
+      "authorUrl" : "https://dateutil.readthedocs.io",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "python_dateutil",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.7.0",
+      "latestReleaseDate" : "2018-03-11T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.7.0",
+        "releaseDate" : "2018-03-11T00:00:00.000+0000",
+        "sha1" : "4560c05e34cc94be23e007fdc443dc7ac3cd3c70",
+        "sha2" : "8f95bb7e6edbb2456a51a1fb58c8dca942024b4f5844cae62c90aa88afe6e300",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "APACHE20",
+          "license" : "Apache License 2.0 (Apache-2.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/231744?version=2.7.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/231744"
+      }
+    }, {
+      "name" : "python-editor",
+      "description" : "Programmatically open an editor, capture the result.",
+      "author" : "Peter Ruibal",
+      "authorUrl" : "https://github.com/fmoo/python-editor",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "python_editor",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.0.3",
+      "latestReleaseDate" : "2016-11-27T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.0.3",
+        "releaseDate" : "2016-11-27T00:00:00.000+0000",
+        "sha1" : "018e3c55a09ce6ac6531e9337bfa29a252aacdc2",
+        "sha2" : "a3c066acee22a1c94f63938341d4fb374e3fdd69366ed6603d7b24bed1efc565",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "APACHE20",
+          "license" : "Apache License 2.0 (Apache-2.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/181727?version=1.0.3"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/181727"
+      }
+    }, {
+      "name" : "python-nvd3",
+      "description" : "Python NVD3 - Chart Library for d3.js",
+      "author" : "Belaid Arezqui",
+      "authorUrl" : "http://github.com/areski/python-nvd3",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "python_nvd3",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.14.2",
+      "latestReleaseDate" : "2015-12-10T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.14.2",
+        "releaseDate" : "2015-12-10T00:00:00.000+0000",
+        "sha1" : "68a778cf45707aab94788cf34832ccb0b674efa1",
+        "sha2" : "86ca51a9526ced2ebe8faff999b0660755f51f2d00af7871efba9b777470ae95",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/214950?version=0.14.2"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/214950"
+      }
+    }, {
+      "name" : "python-slugify",
+      "description" : "A Python Slugify application that handles Unicode",
+      "author" : "Val Neekman",
+      "authorUrl" : "https://github.com/un33k/python-slugify",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "python_slugify",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.2.4",
+      "latestReleaseDate" : "2017-04-11T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.1.4",
+        "releaseDate" : "2015-09-21T00:00:00.000+0000",
+        "sha1" : "d665b11eb677420f43c57b8d50ede3dd877ed23b",
+        "sha2" : "e674f0d45eaeb5c47b7d4771319889a39b15ee87aa62c3b2fcc33cf34e94fc98",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        }, {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/188671?version=1.1.4"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/188671"
+      }
+    }, {
+      "name" : "pytz",
+      "description" : "World timezone definitions, modern and historical",
+      "author" : "Stuart Bishop",
+      "authorUrl" : "http://pythonhosted.org/pytz",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "pytz",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2018.3",
+      "latestReleaseDate" : "2018-02-09T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2018.3",
+        "releaseDate" : "2018-02-09T00:00:00.000+0000",
+        "sha1" : "b8d76d3a483d08d7e3a8c7058f5b0f4ed526cd3e",
+        "sha2" : "410bcd1d6409026fbaa65d9ed33bf6dd8b1e94a499e32168acfc7b332e4095c0",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/240033?version=2018.3"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/240033"
+      }
+    }, {
+      "name" : "pytzdata",
+      "description" : "Official timezone database for Python.",
+      "author" : "S��bastien Eustace",
+      "authorUrl" : "https://github.com/sdispater/pytzdata",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "pytzdata",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2018.3",
+      "latestReleaseDate" : "2018-01-29T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2018.3",
+        "releaseDate" : "2018-01-29T00:00:00.000+0000",
+        "sha1" : "6bf8d5253681f08c2dbaa83770dc3f1b903257bc",
+        "sha2" : "4e2cceb54335cd6c28caea46b15cd592e2aec5e8b05b0241cbccfb1b23c02ae7",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/665315?version=2018.3"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/665315"
+      }
+    }, {
+      "name" : "PyYAML",
+      "description" : "YAML parser and emitter for Python",
+      "author" : "Kirill Simonov",
+      "authorUrl" : "http://pyyaml.org/wiki/PyYAML",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "pyyaml",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "3.12",
+      "latestReleaseDate" : "2016-08-29T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "3.12",
+        "releaseDate" : "2016-08-29T00:00:00.000+0000",
+        "sha1" : "cb7fd3e58c129494ee86e41baedfec69eb7dafbe",
+        "sha2" : "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/169888?version=3.12"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/169888"
+      }
+    }, {
+      "name" : "requests",
+      "description" : "Python HTTP for Humans.",
+      "author" : "Kenneth Reitz",
+      "authorUrl" : "http://python-requests.org",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "requests",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.18.4",
+      "latestReleaseDate" : "2017-08-15T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.18.4",
+        "releaseDate" : "2017-08-15T00:00:00.000+0000",
+        "sha1" : "f5e1dbba5a12ff2df063333fd2bf071e24659b63",
+        "sha2" : "9c443e7324ba5b85070c4a818ade28bfabedf16ea10206da1132edaa6dda237e",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "APACHE20",
+          "license" : "Apache License 2.0 (Apache-2.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/167292?version=2.18.4"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/167292"
+      }
+    }, {
+      "name" : "setproctitle",
+      "description" : "A Python module to customize the process title",
+      "author" : "Daniele Varrazzo",
+      "authorUrl" : "https://github.com/dvarrazzo/py-setproctitle",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "setproctitle",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.1.10",
+      "latestReleaseDate" : "2016-05-11T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.1.10",
+        "releaseDate" : "2016-05-11T00:00:00.000+0000",
+        "sha1" : "9331e4cdd416c5d2bd2c1abccd2d9292965e613d",
+        "sha2" : "6283b7a58477dd8478fbb9e76defb37968ee4ba47b05ec1c053cb39638bd7398",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/185784?version=1.1.10"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/185784"
+      }
+    }, {
+      "name" : "setuptools",
+      "description" : "Easily download, build, install, upgrade, and uninstall Python packages",
+      "author" : "Python Packaging Authority",
+      "authorUrl" : "https://github.com/pypa/setuptools",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "setuptools",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "38.5.2",
+      "latestReleaseDate" : "2018-03-06T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "28.8.0",
+        "releaseDate" : "2016-11-04T00:00:00.000+0000",
+        "sha1" : "04c69a7d5487f5f4023ec2f2367492cdaa7195c7",
+        "sha2" : "432a1ad4044338c34c2d09b0ff75d509b9849df8cf329f4c1c7706d9c2ba3c61",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/167510?version=28.8.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/167510"
+      }
+    }, {
+      "name" : "six",
+      "description" : "Python 2 and 3 compatibility utilities",
+      "author" : "Benjamin Peterson",
+      "authorUrl" : "http://pypi.python.org/pypi/six/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "six",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.11.0",
+      "latestReleaseDate" : "2017-09-17T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.11.0",
+        "releaseDate" : "2017-09-17T00:00:00.000+0000",
+        "sha1" : "3647372a0e104e7b53bd477762392024e1083ac0",
+        "sha2" : "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/172868?version=1.11.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/172868"
+      }
+    }, {
+      "name" : "smmap2",
+      "description" : "A pure python implementation of a sliding window memory map manager",
+      "author" : "Sebastian Thiel",
+      "authorUrl" : "https://github.com/Byron/smmap",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "smmap2",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.0.3",
+      "latestReleaseDate" : "2017-06-10T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.0.3",
+        "releaseDate" : "2017-06-10T00:00:00.000+0000",
+        "sha1" : "112cf3fb94f668eea2a0a421c4e251a157bcc62d",
+        "sha2" : "c7530db63f15f09f8251094b22091298e82bf6c699a6b8344aaaef3f2e1276c3",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/669795?version=2.0.3"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/669795"
+      }
+    }, {
+      "name" : "SQLAlchemy",
+      "description" : "Database Abstraction Library",
+      "author" : "Mike Bayer",
+      "authorUrl" : "http://www.sqlalchemy.org",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "sqlalchemy",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.2.5",
+      "latestReleaseDate" : "2018-03-06T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.1.18",
+        "releaseDate" : "2018-03-06T00:00:00.000+0000",
+        "sha1" : "e830bab78a1e6a9dd94c05fd4ebc8a98af6f3f69",
+        "sha2" : "8b0ec71af9291191ba83a91c03d157b19ab3e7119e27da97932a4773a3f664a9",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/219559?version=1.1.18"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/219559"
+      }
+    }, {
+      "name" : "SQLAlchemy-Utc",
+      "description" : "SQLAlchemy type to store aware datetime values",
+      "author" : "Hong Minhee",
+      "authorUrl" : "https://github.com/spoqa/sqlalchemy-utc",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "sqlalchemy_utc",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.10.0",
+      "latestReleaseDate" : "2018-01-25T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.10.0",
+        "releaseDate" : "2018-01-25T00:00:00.000+0000",
+        "sha1" : "dff6eca9331fe6ea84ec254c37a0ad440b8cc8dc",
+        "sha2" : "fed53af37d250168b99eba8f9908a50e34e10dab3c32d38df3e65601ac951baf",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/551697?version=0.10.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/551697"
+      }
+    }, {
+      "name" : "tabulate",
+      "description" : "Pretty-print tabular data",
+      "author" : "Sergey Astanin",
+      "authorUrl" : "https://bitbucket.org/astanin/python-tabulate",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "tabulate",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.8.2",
+      "latestReleaseDate" : "2017-11-26T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.7.7",
+        "releaseDate" : "2016-11-07T00:00:00.000+0000",
+        "sha1" : "9021b475eefb357deb12f7b0e59a12457411472c",
+        "sha2" : "83a0b8e17c09f012090a50e1e97ae897300a72b35e0c86c0b53d3bd2ae86d8c6",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/233080?version=0.7.7"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/233080"
+      }
+    }, {
+      "name" : "thrift",
+      "description" : "Python bindings for the Apache Thrift RPC system",
+      "author" : "Thrift Developers",
+      "authorUrl" : "http://thrift.apache.org",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "thrift",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.11.0",
+      "latestReleaseDate" : "2018-01-11T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.11.0",
+        "releaseDate" : "2018-01-11T00:00:00.000+0000",
+        "sha1" : "462985a201d0eb353f24c33b5df6d2d6e3120725",
+        "sha2" : "7d59ac4fdcb2c58037ebd4a9da5f9a49e3e034bf75b3f26d9fe48ba3d8806e6b",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "APACHE20",
+          "license" : "Apache License 2.0 (Apache-2.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/171215?version=0.11.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/171215"
+      }
+    }, {
+      "name" : "tzlocal",
+      "description" : "tzinfo object for the local timezone",
+      "author" : "Lennart Regebro",
+      "authorUrl" : "https://github.com/regebro/tzlocal",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "tzlocal",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.5.1",
+      "latestReleaseDate" : "2017-12-01T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.5.1",
+        "releaseDate" : "2017-12-01T00:00:00.000+0000",
+        "sha1" : "98dc51724f3201f66f4ec36f22b99bd03f3059bd",
+        "sha2" : "4ebeb848845ac898da6519b9b31879cf13b6626f7184c496037b818e238f2c4e",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/215933?version=1.5.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/215933"
+      }
+    }, {
+      "name" : "Unidecode",
+      "description" : "ASCII transliterations of Unicode text",
+      "author" : "Tomaz Solc",
+      "authorUrl" : "",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "unidecode",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.0.22",
+      "latestReleaseDate" : "2018-01-05T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.0.22",
+        "releaseDate" : "2018-01-05T00:00:00.000+0000",
+        "sha1" : "16aa7932b34eda97af8aef318d3557302435cbff",
+        "sha2" : "8c33dd588e0c9bc22a76eaa0c715a5434851f726131bd44a6c26471746efabf5",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "GPL30",
+          "license" : "GNU General Public License version 3.0 (GPL-3.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/185257?version=1.0.22"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/185257"
+      }
+    }, {
+      "name" : "urllib3",
+      "description" : "HTTP library with thread-safe connection pooling, file post, and more.",
+      "author" : "Andrey Petrov",
+      "authorUrl" : "https://urllib3.readthedocs.io/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "urllib3",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "1.22",
+      "latestReleaseDate" : "2017-07-20T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "1.22",
+        "releaseDate" : "2017-07-20T00:00:00.000+0000",
+        "sha1" : "02c623c3bdceda4ef5bffdafdda472d2d9e34ef1",
+        "sha2" : "cc44da8e1145637334317feebd728bd869a35285b93cbb4cca2577da7e62db4f",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/182115?version=1.22"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/182115"
+      }
+    }, {
+      "name" : "webencodings",
+      "description" : "Character encoding aliases for legacy web content",
+      "author" : "Geoffrey Sneddon",
+      "authorUrl" : "https://github.com/SimonSapin/python-webencodings",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "webencodings",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.5.1",
+      "latestReleaseDate" : "2017-04-05T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.5.1",
+        "releaseDate" : "2017-04-05T00:00:00.000+0000",
+        "sha1" : "fd870193fde74183c0e1cd43bce01a4a930cd049",
+        "sha2" : "b36a1c245f2d304965eb4e0a82848379241dc04b865afcc4aab16748587e1923",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/212218?version=0.5.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/212218"
+      }
+    }, {
+      "name" : "Werkzeug",
+      "description" : "The comprehensive WSGI web application library.",
+      "author" : "Armin Ronacher",
+      "authorUrl" : "https://www.palletsprojects.org/p/werkzeug/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "werkzeug",
+      "coordinate2" : "",
+      "bugTrackerUrl" : "",
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "0.14.1",
+      "latestReleaseDate" : "2017-12-31T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "0.14.1",
+        "releaseDate" : "2017-12-31T00:00:00.000+0000",
+        "sha1" : "4b979fb960c5b5507ccb8a705931fa217013483d",
+        "sha2" : "c3fd7a7d41976d9f44db327260e263132466836cef6f91512889ed60ad26557c",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/200470?version=0.14.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/200470"
+      }
+    }, {
+      "name" : "WTForms",
+      "description" : "A flexible forms validation and rendering library for python web development.",
+      "author" : "Thomas Johansson, James Crasta",
+      "authorUrl" : "http://wtforms.simplecodes.com/",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "wtforms",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.1",
+      "latestReleaseDate" : "2015-12-15T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "2.1",
+        "releaseDate" : "2015-12-15T00:00:00.000+0000",
+        "sha1" : "5c678568379b4a0305a3b48378f130e70db845d7",
+        "sha2" : "34d768ee60c6d9136afa3936ba0dbb0382a811bf750d2e87d481c36482958af7",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/211663?version=2.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/211663"
+      }
+    }, {
+      "name" : "zope.deprecation",
+      "description" : "Zope Deprecation Infrastructure",
+      "author" : "Zope Corporation and Contributors",
+      "authorUrl" : "http://github.com/zopefoundation/zope.deprecation",
+      "language" : "PYTHON",
+      "coordinateType" : "PYPI",
+      "coordinate1" : "zope_deprecation",
+      "coordinate2" : "",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "4.3.0",
+      "latestReleaseDate" : "2017-08-07T00:00:00.000+0000",
+      "versions" : [ {
+        "version" : "4.3.0",
+        "releaseDate" : "2017-08-07T00:00:00.000+0000",
+        "sha1" : "ee66f204f80cd314adf362860a3845440bdd5d67",
+        "sha2" : "7d52e134bbaaa0d72e1e2bc90f0587f1adc116c4bdf15912afaf2f1e8856b224",
+        "bytecodeHash" : null,
+        "platform" : "source",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/210835?version=4.3.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/210835"
+      }
+    } ],
+    "vulnerabilities" : [ {
+      "disclosureDate" : "2016-12-23T00:00:00.000+0000",
+      "cve" : null,
+      "title" : "Cross-Site Scripting (XSS)",
+      "overview" : "onegov.form is vulnerable to cross-site scripting (XSS) attacks. The vulnerability exists due to the usage of unescaped labels in WTForms.",
+      "language" : "PYTHON",
+      "vulnerabilityTypes" : [ "Cross Site Scripting (XSS)" ],
+      "cvssScore" : 6.4,
+      "libraries" : [ {
+        "details" : [ {
+          "updateToVersion" : "",
+          "versionRange" : "0.4-2.1",
+          "fixText" : "",
+          "patch" : ""
+        } ],
+        "_links" : {
+          "ref" : "/records/0/libraries/57/versions/0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/vulnerabilities/3174"
+      },
+      "hasExploits" : false
+    }, {
+      "disclosureDate" : "2017-05-16T00:00:00.000+0000",
+      "cve" : "2017-9088",
+      "title" : "Directory Traversal",
+      "overview" : "Flask and Werkzeug are vulnerable to directory traversal attacks. These attacks are possible because it uses the `safe_join` method. In Windows, `safe_join` doesn't correctly filter file paths allowing directory traversal and disclosure of arbitrary files from a server.",
+      "language" : "PYTHON",
+      "vulnerabilityTypes" : [ "File I/O", "Other" ],
+      "cvssScore" : 4.3,
+      "libraries" : [ {
+        "details" : [ {
+          "updateToVersion" : "0.12.2",
+          "versionRange" : "0.7-0.12.1",
+          "fixText" : "",
+          "patch" : "https://github.com/pallets/flask/commit/f7c35bf0d51d1ae02709e39fe29110e12f64fb87"
+        } ],
+        "_links" : {
+          "ref" : "/records/0/libraries/9/versions/0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/vulnerabilities/4415"
+      },
+      "hasExploits" : false
+    }, {
+      "disclosureDate" : "2018-03-06T00:00:00.000+0000",
+      "cve" : "2018-7753",
+      "title" : "URL Filter Bypass",
+      "overview" : "bleach is vulnerable to URL filter bypasses. The library does not properly filter certain characters, allowing certain disallowed URLs to bypass the URL filter.",
+      "language" : "PYTHON",
+      "vulnerabilityTypes" : [ "Other" ],
+      "cvssScore" : 6.4,
+      "libraries" : [ {
+        "details" : [ {
+          "updateToVersion" : "2.1.3",
+          "versionRange" : "2.0.0-2.1.2",
+          "fixText" : "",
+          "patch" : "https://github.com/mozilla/bleach/commit/c5df5789ec3471a31311f42c2d19fc2cf21b35ef"
+        } ],
+        "_links" : {
+          "ref" : "/records/0/libraries/1/versions/0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/vulnerabilities/5898"
+      },
+      "hasExploits" : false
+    } ],
+    "unmatchedLibraries" : [ {
+      "evidenceType" : "COORDINATES",
+      "scope" : null,
+      "coordinateType" : "PYPI",
+      "coordinate2" : null,
+      "coordinate1" : "flask_caching",
+      "version" : "1.3.3",
+      "platform" : null,
+      "commitHash" : null
+    } ],
+    "vulnMethods" : [ ]
+  } ]
+}
