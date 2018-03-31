@@ -1,0 +1,1543 @@
+<?xml version="1.0" encoding="UTF-8"?><OWASPZAPReport generated="Fri, 4 Oct 2013 15:17:03" version="1.4.0.1">
+<site host="10.2.100.1" name="http://10.2.100.1" port="80" ssl="false"><alerts><alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10014</pluginid>
+  <alert>Cross Site Request Forgery</alert>
+  <riskcode>2</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Medium (Warning)</riskdesc>
+  <desc>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.
+	
+	CSRF attacks are effective in a number of situations, including:
+	    * The victim has an active session on the target site.
+	    * The victim is authenticated via HTTP auth on the target site.
+	    * The victim is on the same local network as the target site.
+	
+	CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-reflected.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	For example, use anti-CSRF packages such as the OWASP CSRFGuard.
+	
+	Phase: Implementation
+	Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.
+	
+	Phase: Architecture and Design
+	Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).
+	Note that this can be bypassed using XSS.
+	
+	Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.
+	Note that this can be bypassed using XSS.
+	
+	Use the ESAPI Session Management control.
+	This control includes a component for CSRF.
+	
+	Do not use the GET method for any request that triggers a state change.
+	
+	Phase: Implementation
+	Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Request-Forgery
+	http://cwe.mitre.org/data/definitions/352.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-reflected.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-reflected.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-reflected2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-reflected2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10014</pluginid>
+  <alert>Cross Site Request Forgery</alert>
+  <riskcode>2</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Medium (Warning)</riskdesc>
+  <desc>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.
+	
+	CSRF attacks are effective in a number of situations, including:
+	    * The victim has an active session on the target site.
+	    * The victim is authenticated via HTTP auth on the target site.
+	    * The victim is on the same local network as the target site.
+	
+	CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.
+	</desc>
+  <uri>http://10.2.100.1/demo/LDAPInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	For example, use anti-CSRF packages such as the OWASP CSRFGuard.
+	
+	Phase: Implementation
+	Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.
+	
+	Phase: Architecture and Design
+	Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).
+	Note that this can be bypassed using XSS.
+	
+	Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.
+	Note that this can be bypassed using XSS.
+	
+	Use the ESAPI Session Management control.
+	This control includes a component for CSRF.
+	
+	Do not use the GET method for any request that triggers a state change.
+	
+	Phase: Implementation
+	Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Request-Forgery
+	http://cwe.mitre.org/data/definitions/352.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/LDAPInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/LDAPInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/LDAPInjection2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/LDAPInjection2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10014</pluginid>
+  <alert>Cross Site Request Forgery</alert>
+  <riskcode>2</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Medium (Warning)</riskdesc>
+  <desc>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.
+	
+	CSRF attacks are effective in a number of situations, including:
+	    * The victim has an active session on the target site.
+	    * The victim is authenticated via HTTP auth on the target site.
+	    * The victim is on the same local network as the target site.
+	
+	CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.
+	</desc>
+  <uri>http://10.2.100.1/demo/EvalInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	For example, use anti-CSRF packages such as the OWASP CSRFGuard.
+	
+	Phase: Implementation
+	Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.
+	
+	Phase: Architecture and Design
+	Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).
+	Note that this can be bypassed using XSS.
+	
+	Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.
+	Note that this can be bypassed using XSS.
+	
+	Use the ESAPI Session Management control.
+	This control includes a component for CSRF.
+	
+	Do not use the GET method for any request that triggers a state change.
+	
+	Phase: Implementation
+	Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Request-Forgery
+	http://cwe.mitre.org/data/definitions/352.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/EvalInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/EvalInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/EvalInjection2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/EvalInjection2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10014</pluginid>
+  <alert>Cross Site Request Forgery</alert>
+  <riskcode>2</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Medium (Warning)</riskdesc>
+  <desc>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.
+	
+	CSRF attacks are effective in a number of situations, including:
+	    * The victim has an active session on the target site.
+	    * The victim is authenticated via HTTP auth on the target site.
+	    * The victim is on the same local network as the target site.
+	
+	CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.
+	</desc>
+  <uri>http://10.2.100.1/demo/SQLI.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	For example, use anti-CSRF packages such as the OWASP CSRFGuard.
+	
+	Phase: Implementation
+	Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.
+	
+	Phase: Architecture and Design
+	Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).
+	Note that this can be bypassed using XSS.
+	
+	Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.
+	Note that this can be bypassed using XSS.
+	
+	Use the ESAPI Session Management control.
+	This control includes a component for CSRF.
+	
+	Do not use the GET method for any request that triggers a state change.
+	
+	Phase: Implementation
+	Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Request-Forgery
+	http://cwe.mitre.org/data/definitions/352.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/SQLI.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/SQLI.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-stored.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-stored.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10014</pluginid>
+  <alert>Cross Site Request Forgery</alert>
+  <riskcode>2</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Medium (Warning)</riskdesc>
+  <desc>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.
+	
+	CSRF attacks are effective in a number of situations, including:
+	    * The victim has an active session on the target site.
+	    * The victim is authenticated via HTTP auth on the target site.
+	    * The victim is on the same local network as the target site.
+	
+	CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-cookie.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	For example, use anti-CSRF packages such as the OWASP CSRFGuard.
+	
+	Phase: Implementation
+	Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.
+	
+	Phase: Architecture and Design
+	Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).
+	Note that this can be bypassed using XSS.
+	
+	Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.
+	Note that this can be bypassed using XSS.
+	
+	Use the ESAPI Session Management control.
+	This control includes a component for CSRF.
+	
+	Do not use the GET method for any request that triggers a state change.
+	
+	Phase: Implementation
+	Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Request-Forgery
+	http://cwe.mitre.org/data/definitions/352.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-cookie.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-cookie.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/SQLI2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/SQLI2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/PredictableResource.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/PredictableResource.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/PathTraversal.php?action=PathTraversal.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/PathTraversal.php?action=PathTraversal.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/DirectoryIndexing/</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/DirectoryIndexing/</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10014</pluginid>
+  <alert>Cross Site Request Forgery</alert>
+  <riskcode>2</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Medium (Warning)</riskdesc>
+  <desc>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.
+	
+	CSRF attacks are effective in a number of situations, including:
+	    * The victim has an active session on the target site.
+	    * The victim is authenticated via HTTP auth on the target site.
+	    * The victim is on the same local network as the target site.
+	
+	CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.
+	</desc>
+  <uri>http://10.2.100.1/demo/XPathInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	For example, use anti-CSRF packages such as the OWASP CSRFGuard.
+	
+	Phase: Implementation
+	Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.
+	
+	Phase: Architecture and Design
+	Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).
+	Note that this can be bypassed using XSS.
+	
+	Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.
+	Note that this can be bypassed using XSS.
+	
+	Use the ESAPI Session Management control.
+	This control includes a component for CSRF.
+	
+	Do not use the GET method for any request that triggers a state change.
+	
+	Phase: Implementation
+	Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Request-Forgery
+	http://cwe.mitre.org/data/definitions/352.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/XPathInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/XPathInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10014</pluginid>
+  <alert>Cross Site Request Forgery</alert>
+  <riskcode>2</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Medium (Warning)</riskdesc>
+  <desc>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.
+	
+	CSRF attacks are effective in a number of situations, including:
+	    * The victim has an active session on the target site.
+	    * The victim is authenticated via HTTP auth on the target site.
+	    * The victim is on the same local network as the target site.
+	
+	CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.
+	</desc>
+  <uri>http://10.2.100.1/demo/FormatString.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	For example, use anti-CSRF packages such as the OWASP CSRFGuard.
+	
+	Phase: Implementation
+	Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.
+	
+	Phase: Architecture and Design
+	Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).
+	Note that this can be bypassed using XSS.
+	
+	Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.
+	Note that this can be bypassed using XSS.
+	
+	Use the ESAPI Session Management control.
+	This control includes a component for CSRF.
+	
+	Do not use the GET method for any request that triggers a state change.
+	
+	Phase: Implementation
+	Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Request-Forgery
+	http://cwe.mitre.org/data/definitions/352.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/FormatString.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/FormatString.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10014</pluginid>
+  <alert>Cross Site Request Forgery</alert>
+  <riskcode>2</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Medium (Warning)</riskdesc>
+  <desc>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.
+	
+	CSRF attacks are effective in a number of situations, including:
+	    * The victim has an active session on the target site.
+	    * The victim is authenticated via HTTP auth on the target site.
+	    * The victim is on the same local network as the target site.
+	
+	CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.
+	</desc>
+  <uri>http://10.2.100.1/demo/OSCommandInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	For example, use anti-CSRF packages such as the OWASP CSRFGuard.
+	
+	Phase: Implementation
+	Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.
+	
+	Phase: Architecture and Design
+	Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).
+	Note that this can be bypassed using XSS.
+	
+	Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.
+	Note that this can be bypassed using XSS.
+	
+	Use the ESAPI Session Management control.
+	This control includes a component for CSRF.
+	
+	Do not use the GET method for any request that triggers a state change.
+	
+	Phase: Implementation
+	Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Request-Forgery
+	http://cwe.mitre.org/data/definitions/352.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/OSCommandInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/OSCommandInjection.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/ResponseSplitting.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/ResponseSplitting.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/DirectoryIndexing/admin.txt</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/DirectoryIndexing/admin.txt</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/XPathInjection2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/XPathInjection2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/FormatString2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/FormatString2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>X-Content-Type-Options header missing</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'
+	</desc>
+  <uri>http://10.2.100.1/demo/OSCommandInjection2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>This check is specific to Internet Explorer 8 and Google Chrome. Ensure each page sets a Content-Type header and the X-CONTENT-TYPE-OPTIONS if the Content-Type header is unknown
+	</solution>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options header not set</alert>
+  <riskcode>0</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Informational (Warning)</riskdesc>
+  <desc>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks
+	</desc>
+  <uri>http://10.2.100.1/demo/OSCommandInjection2.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Most modern Web browsers support the X-Frame-Options HTTP header, ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.
+	</solution>
+  <reference>http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>0</pluginid>
+  <alert>Directory browsing</alert>
+  <riskcode>2</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Medium (Warning)</riskdesc>
+  <desc>It is possible to view the directory listing.  Directory listing may reveal hidden scripts, include files , backup source files etc which be accessed to read sensitive information.
+	</desc>
+  <uri>http://10.2.100.1/demo/DirectoryIndexing/</uri>
+  <param/>
+  <attack/>
+  <otherinfo/>
+  <solution>Disable directory browsing.  If this is required, make sure the listed files does not induce risks.
+	</solution>
+  <reference>For IIS, turn off directory browsing.
+	For Apache, use the 'Options -Indexes' directive to disable indexes in directory or via .htaccess:
+	. http://httpd.apache.org/docs/mod/core.html#options
+	. http://alamo.satlug.org/pipermail/satlug/2002-February/000053.html
+	. or create a default index.html for each directory.
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>2</pluginid>
+  <alert>Private IP disclosure</alert>
+  <riskcode>1</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>Low (Warning)</riskdesc>
+  <desc>A private IP such as 10.x.x.x, 172.x.x.x, 192.168.x.x has been found in the HTTP response body.  This information might be helpful for further attacks targeting internal systems.
+	</desc>
+  <uri>http://10.2.100.1/demo/PredictableResource.php</uri>
+  <param/>
+  <attack/>
+  <otherinfo>192.168.1.30:8080
+</otherinfo>
+  <solution>Remove the private IP address from the HTTP response body.  For comments, use JSP/ASP comment instead of HTML/JavaScript comment which can be seen by client browsers.
+	</solution>
+  <otherinfo>192.168.1.30:8080
+	
+	</otherinfo>
+  <reference>
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>6</pluginid>
+  <alert>Path Traversal</alert>
+  <riskcode>3</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>High (Warning)</riskdesc>
+  <desc>The Path Traversal attack technique allows an attacker access to files, directories, and commands that potentially reside outside the web document root directory. An attacker may manipulate a URL in such a way that the web site will execute or reveal the contents of arbitrary files anywhere on the web server. Any device that exposes an HTTP-based interface is potentially vulnerable to Path Traversal.
+	
+	Most web sites restrict user access to a specific portion of the file-system, typically called the "web document root" or "CGI root" directory. These directories contain the files intended for user access and the executable necessary to drive web application functionality. To access files or execute commands anywhere on the file-system, Path Traversal attacks will utilize the ability of special-characters sequences.
+	
+	The most basic Path Traversal attack uses the "../" special-character sequence to alter the resource location requested in the URL. Although most popular web servers will prevent this technique from escaping the web document root, alternate encodings of the "../" sequence may help bypass the security filters. These method variations include valid and invalid Unicode-encoding ("..%u2216" or "..%c0%af") of the forward slash character, backslash characters ("..\") on Windows-based servers, URL encoded characters "%2e%2e%2f"), and double URL encoding ("..%255c") of the backslash character.
+	
+	Even if the web server properly restricts Path Traversal attempts in the URL path, a web application itself may still be vulnerable due to improper handling of user-supplied input. This is a common problem of web applications that use template mechanisms or load static text from files. In variations of the attack, the original URL parameter value is substituted with the file name of one of the web application's dynamic scripts. Consequently, the results can reveal source code because the file is interpreted as text instead of an executable script. These techniques often employ additional special characters such as the dot (".") to reveal the listing of the current working directory, or "%00" NULL characters in order to bypass rudimentary file extension checks.
+	</desc>
+  <uri>http://10.2.100.1/demo/PathTraversal.php?action=%5cWindows%5csystem.ini</uri>
+  <param>action</param>
+  <attack>null</attack>
+  <otherinfo>%5cWindows%5csystem.ini</otherinfo>
+  <solution>Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a blacklist). However, blacklists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.
+	
+	When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."
+	
+	For filenames, use stringent whitelists that limit the character set to be used. If feasible, only allow a single "." character in the filename to avoid weaknesses, and exclude directory separators such as "/". Use a whitelist of allowable file extensions.
+	
+	Warning: if you attempt to cleanse your data, then do so that the end result is not in the form that can be dangerous. A sanitizing mechanism can remove characters such as '.' and ';' which may be required for some exploits. An attacker can try to fool the sanitizing mechanism into "cleaning" data into a dangerous form. Suppose the attacker injects a '.' inside a filename (e.g. "sensi.tiveFile") and the sanitizing mechanism removes the character resulting in the valid filename, "sensitiveFile". If the input data are now assumed to be safe, then the file may be compromised. 
+	
+	Inputs should be decoded and canonicalized to the application's current internal representation before being validated. Make sure that your application does not decode the same input twice. Such errors could be used to bypass whitelist schemes by introducing dangerous inputs after they have been checked.
+	
+	Use a built-in path canonicalization function (such as realpath() in C) that produces the canonical version of the pathname, which effectively removes ".." sequences and symbolic links.
+	
+	Run your code using the lowest privileges that are required to accomplish the necessary tasks. If possible, create isolated accounts with limited privileges that are only used for a single task. That way, a successful attack will not immediately give the attacker access to the rest of the software or its environment. For example, database applications rarely need to run as the database administrator, especially in day-to-day operations.
+	
+	When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs.
+	
+	Run your code in a "jail" or similar sandbox environment that enforces strict boundaries between the process and the operating system. This may effectively restrict which files can be accessed in a particular directory or which commands can be executed by your software.
+	
+	OS-level examples include the Unix chroot jail, AppArmor, and SELinux. In general, managed code may provide some protection. For example, java.io.FilePermission in the Java SecurityManager allows you to specify restrictions on file operations.
+	
+	This may not be a feasible solution, and it only limits the impact to the operating system; the rest of your application may still be subject to compromise.
+	</solution>
+  <otherinfo>%5cWindows%5csystem.ini
+	</otherinfo>
+  <reference>http://projects.webappsec.org/Path-Traversal
+	http://cwe.mitre.org/data/definitions/22.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>40004</pluginid>
+  <alert>SQL Injection Fingerprinting</alert>
+  <riskcode>3</riskcode>
+  <reliability>1</reliability>
+  <riskdesc>High (Suspicious)</riskdesc>
+  <desc>SQL injection may be possible.
+	</desc>
+  <uri>http://10.2.100.1/demo/SQLI2.php</uri>
+  <param>username</param>
+  <attack>1'INJECTED_PARAM</attack>
+  <otherinfo>SQL</otherinfo>
+  <solution>Do not trust client side input even if there is client side validation.  In general, If the input string is numeric, type check it.
+	If the application used JDBC, use PreparedStatement or CallableStatement with parameters passed by '?'
+	If the application used ASP, use ADO Command Objects with strong type checking and parameterized query.
+	If stored procedure or bind variables can be used, use it for parameter passing into query.  Do not just concatenate string into query in the stored procedure!
+	Do not create dynamic SQL query by simple string concatentation.
+	Use minimum database user privilege for the application.  This does not eliminate SQL injection but minimize its damage.  Eg if the application require reading one table only, grant such access to the application.  Avoid using 'sa' or 'db-owner'.
+	
+	</solution>
+  <otherinfo>SQL
+	</otherinfo>
+  <reference>The OWASP guide at http://www.owasp.org/documentation/guide
+	http://www.sqlsecurity.com/DesktopDefault.aspx?tabid=23
+	http://www.spidynamics.com/whitepapers/WhitepaperSQLInjection.pdf
+	For Oracle database, refer to http://www.integrigy.com/info/IntegrigyIntrotoSQLInjectionAttacks.pdf
+	
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>40005</pluginid>
+  <alert>SQL Injection</alert>
+  <riskcode>3</riskcode>
+  <reliability>1</reliability>
+  <riskdesc>High (Suspicious)</riskdesc>
+  <desc>SQL injection is possible.  User parameters submitted will be formulated into a SQL query for database processing.  If the query is built by simple 'string concatenation', it is possible to modify the meaning of the query by carefully crafting the parameters.  Depending on the access right and type of database used, tampered query can be used to retrieve sensitive information from the database or execute arbitrary code.  MS SQL and PostGreSQL, which supports multiple statements, may be exploited if the database access right is more powerful.
+	This can occur in URL query strings, POST paramters or even cookies.  Currently check on cookie is not supported by Paros.  You should check SQL injection manually as well as some blind SQL injection areas cannot be discovered by this check.
+	</desc>
+  <uri>http://10.2.100.1/demo/SQLI2.php</uri>
+  <param>username</param>
+  <attack>1%27INJECTED_PARAM'INJECTED_PARAM</attack>
+  <otherinfo>SQL</otherinfo>
+  <solution>Do not trust client side input even if there is client side validation.  In general, If the input string is numeric, type check it.
+	If the application used JDBC, use PreparedStatement or CallableStatement with parameters passed by '?'
+	If the application used ASP, use ADO Command Objects with strong type checking and parameterized query.
+	If stored procedure or bind variables can be used, use it for parameter passing into query.  Do not just concatenate string into query in the stored procedure!
+	Do not create dynamic SQL query by simple string concatentation.
+	Use minimum database user privilege for the application.  This does not eliminate SQL injection but minimize its damage.  Eg if the application require reading one table only, grant such access to the application.  Avoid using 'sa' or 'db-owner'.
+	
+	</solution>
+  <otherinfo>SQL
+	</otherinfo>
+  <reference>The OWASP guide at http://www.owasp.org/documentation/guide
+	http://www.sqlsecurity.com/DesktopDefault.aspx?tabid=23
+	http://www.spidynamics.com/whitepapers/WhitepaperSQLInjection.pdf
+	For Oracle database, refer to http://www.integrigy.com/info/IntegrigyIntrotoSQLInjectionAttacks.pdf
+	
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>40012</pluginid>
+  <alert>Cross Site Scripting</alert>
+  <riskcode>3</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>High (Warning)</riskdesc>
+  <desc>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user's browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.
+	When an attacker gets a user's browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.
+	
+	There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.
+	Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim's knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user's browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.
+	Persistent attacks occur when the malicious code is submitted to a web site where it's stored for a period of time. Examples of an attacker's favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.
+	</desc>
+  <uri>http://10.2.100.1/demo/EvalInjection2.php</uri>
+  <param>command</param>
+  <attack>&lt;/pre&gt;&lt;script&gt;alert(1);&lt;/script&gt;&lt;pre&gt;</attack>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft's Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.
+	
+	Phases: Implementation; Architecture and Design
+	Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.
+	For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.
+	Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.
+	
+	Phase: Architecture and Design
+	For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.
+	
+	If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.
+	
+	Phase: Implementation
+	For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.
+	
+	To help mitigate XSS attacks against the user's session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user's session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.
+	
+	Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a blacklist). However, blacklists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.
+	
+	When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."
+	
+	Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Scripting
+	http://cwe.mitre.org/data/definitions/79.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>40012</pluginid>
+  <alert>Cross Site Scripting</alert>
+  <riskcode>3</riskcode>
+  <reliability>2</reliability>
+  <riskdesc>High (Warning)</riskdesc>
+  <desc>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user's browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.
+	When an attacker gets a user's browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.
+	
+	There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.
+	Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim's knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user's browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.
+	Persistent attacks occur when the malicious code is submitted to a web site where it's stored for a period of time. Examples of an attacker's favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.
+	</desc>
+  <uri>http://10.2.100.1/demo/XSS-reflected2.php</uri>
+  <param>username</param>
+  <attack>&lt;script&gt;alert(1);&lt;/script&gt;</attack>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft's Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.
+	
+	Phases: Implementation; Architecture and Design
+	Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.
+	For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.
+	Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.
+	
+	Phase: Architecture and Design
+	For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.
+	
+	If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.
+	
+	Phase: Implementation
+	For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.
+	
+	To help mitigate XSS attacks against the user's session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user's session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.
+	
+	Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a blacklist). However, blacklists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.
+	
+	When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."
+	
+	Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Scripting
+	http://cwe.mitre.org/data/definitions/79.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>40012</pluginid>
+  <alert>Cross Site Scripting</alert>
+  <riskcode>3</riskcode>
+  <reliability>1</reliability>
+  <riskdesc>High (Suspicious)</riskdesc>
+  <desc>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user's browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.
+	When an attacker gets a user's browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.
+	
+	There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.
+	Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim's knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user's browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.
+	Persistent attacks occur when the malicious code is submitted to a web site where it's stored for a period of time. Examples of an attacker's favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.
+	</desc>
+  <uri>http://10.2.100.1/demo/XPathInjection2.php</uri>
+  <param>username</param>
+  <attack>'"&lt;script&gt;alert(1);&lt;/script&gt;</attack>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft's Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.
+	
+	Phases: Implementation; Architecture and Design
+	Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.
+	For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.
+	Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.
+	
+	Phase: Architecture and Design
+	For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.
+	
+	If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.
+	
+	Phase: Implementation
+	For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.
+	
+	To help mitigate XSS attacks against the user's session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user's session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.
+	
+	Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a blacklist). However, blacklists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.
+	
+	When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."
+	
+	Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Scripting
+	http://cwe.mitre.org/data/definitions/79.html
+	</reference>
+</alertitem>
+<alertitem>
+  <pluginid>40012</pluginid>
+  <alert>Cross Site Scripting</alert>
+  <riskcode>3</riskcode>
+  <reliability>1</reliability>
+  <riskdesc>High (Suspicious)</riskdesc>
+  <desc>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user's browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.
+	When an attacker gets a user's browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.
+	
+	There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.
+	Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim's knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user's browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.
+	Persistent attacks occur when the malicious code is submitted to a web site where it's stored for a period of time. Examples of an attacker's favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.
+	</desc>
+  <uri>http://10.2.100.1/demo/XPathInjection2.php</uri>
+  <param>password</param>
+  <attack>'"&lt;script&gt;alert(1);&lt;/script&gt;</attack>
+  <otherinfo/>
+  <solution>Phase: Architecture and Design
+	Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+	Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft's Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.
+	
+	Phases: Implementation; Architecture and Design
+	Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.
+	For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.
+	Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.
+	
+	Phase: Architecture and Design
+	For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.
+	
+	If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.
+	
+	Phase: Implementation
+	For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.
+	
+	To help mitigate XSS attacks against the user's session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user's session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.
+	
+	Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a blacklist). However, blacklists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.
+	
+	When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."
+	
+	Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.
+	</solution>
+  <reference>http://projects.webappsec.org/Cross-Site-Scripting
+	http://cwe.mitre.org/data/definitions/79.html
+	</reference>
+</alertitem>
+</alerts><portscan/></site></OWASPZAPReport>
