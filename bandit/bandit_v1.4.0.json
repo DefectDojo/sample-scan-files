@@ -1,0 +1,2741 @@
+{
+  "errors": [
+    {
+      "filename": "",
+      "reason": "No such file or directory"
+    }
+  ],
+  "generated_at": "2018-04-03T06:29:57Z",
+  "metrics": {
+    "/opt/appsecpipeline/source/docs/conf.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 38,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 6,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/api.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1268,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/celery.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 12,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/cred/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/cred/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 27,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/cred/views.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 521,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/development_environment/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/development_environment/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 9,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/development_environment/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 67,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/endpoint/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/endpoint/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 22,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/endpoint/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 306,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/engagement/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/engagement/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 38,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/engagement/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 728,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/filters.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 818,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/finding/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/finding/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 58,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/finding/views.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 849,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/forms.py": {
+      "CONFIDENCE.HIGH": 4,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 4,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1198,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/home/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/home/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 6,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/home/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 114,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/jira_link/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/jira_link/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 12,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/jira_link/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 168,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/management/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/management/commands/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/management/commands/csv_findings_export.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 42,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/management/commands/jira_async_updates.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 43,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/management/commands/migrate_finding_templates.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 33,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/management/commands/migrate_product_contacts.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 79,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/management/commands/notify_isoc.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 52,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/management/commands/push_to_jira_update.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 18,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/management/commands/run_scan.py": {
+      "CONFIDENCE.HIGH": 2,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 2,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 251,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/management/commands/stamp_finding_last_reviewed.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 63,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/metrics/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/metrics/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 24,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/metrics/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 864,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/middleware.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 37,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/models.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1216,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/notifications/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/notifications/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 9,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/notifications/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 61,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/object/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/object/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 95,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/object/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 11,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/object/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 111,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/product/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/product/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 22,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/product/views.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 582,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/product_type/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/product_type/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 12,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/product_type/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 78,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/reports/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/reports/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 40,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/reports/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 711,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/reports/widgets.py": {
+      "CONFIDENCE.HIGH": 19,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 19,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 389,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/scan/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/scan/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 13,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/scan/views.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 214,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/search/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/search/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 6,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/search/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 105,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/settings/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/settings/settings.dist.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 189,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/settings/unittest.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 8,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/system_settings/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/system_settings/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 7,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/system_settings/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 40,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tasks.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 211,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/templatetags/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/templatetags/display_tags.py": {
+      "CONFIDENCE.HIGH": 6,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 3,
+      "SEVERITY.MEDIUM": 3,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 166,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/templatetags/event_tags.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 88,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/templatetags/get_attribute.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 8,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/templatetags/get_config_setting.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 13,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/templatetags/get_system_setting.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 14,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/templatetags/navigation_tags.py": {
+      "CONFIDENCE.HIGH": 4,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 4,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 107,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/test/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/test/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 23,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/test/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 539,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/test_type/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/test_type/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 9,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/test_type/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 71,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tool_config/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tool_config/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 9,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tool_config/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 85,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tool_product/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tool_product/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 10,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tool_product/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 122,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tool_type/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tool_type/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 9,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tool_type/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 77,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/appspider/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/appspider/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 78,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/arachni/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/arachni/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 149,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/bandit/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/bandit/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 53,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/burp/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/burp/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 189,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/checkmarx/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/checkmarx/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 73,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/dependencycheck/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/dependencycheck/parser.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 76,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/factory.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 73,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/generic/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/generic/parser.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 242,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/nessus/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/nessus/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 178,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/nexpose/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/nexpose/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 237,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/nmap/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/nmap/parser.py": {
+      "CONFIDENCE.HIGH": 2,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 64,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/nsp/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/nsp/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 52,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/openvas_csv/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/openvas_csv/parser.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 242,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/qualys/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/qualys/parser.py": {
+      "CONFIDENCE.HIGH": 2,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 125,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/qualys/utfdictcsv.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 21,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/qualyswebapp/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/qualyswebapp/parser.py": {
+      "CONFIDENCE.HIGH": 2,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 133,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/qualyswebapp/utfdictcsv.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 21,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/retirejs/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/retirejs/parser.py": {
+      "CONFIDENCE.HIGH": 2,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 2,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 56,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/skf/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/skf/parser.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 100,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/snyk/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/snyk/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 55,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/ssllabs/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/ssllabs/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 126,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/vcg/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/vcg/parser.py": {
+      "CONFIDENCE.HIGH": 2,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 2,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 142,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/veracode/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/veracode/parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 96,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/zap/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/tools/zap/parser.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 192,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/unittests/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/unittests/test_dependency_check_parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 370,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/unittests/test_endpoint_metadata.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 224,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/unittests/test_generic_finding_upload.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 257,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/unittests/test_vcg_parser.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 197,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 109,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/user/__init__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 0,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/user/urls.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 21,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/user/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 260,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/utils.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 948,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/views.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 25,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/dojo/wsgi.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 16,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/manage.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 6,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/setup.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 63,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/tests/apply_finding_template_tests.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 243,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/tests/check_status.py": {
+      "CONFIDENCE.HIGH": 4,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 4,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 87,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/tests/check_status_ui.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 164,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/tests/smoke_test.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 120,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/tests/zap.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 85,
+      "nosec": 0
+    },
+    "/opt/appsecpipeline/source/wsgi.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 16,
+      "nosec": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 60,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 4,
+      "SEVERITY.LOW": 11,
+      "SEVERITY.MEDIUM": 45,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 19247,
+      "nosec": 0
+    }
+  },
+  "results": [
+    {
+      "code": "523         cred = Cred_Mapping.objects.get(pk=ttid)\n524     except:\n525         pass\n",
+      "filename": "/opt/appsecpipeline/source/dojo/cred/views.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Pass detected.",
+      "line_number": 524,
+      "line_range": [
+        524
+      ],
+      "test_id": "B110",
+      "test_name": "try_except_pass"
+    },
+    {
+      "code": "572                              messages.SUCCESS,\n573                              mark_safe('Finding template added successfully. You may edit it <a href=\"%s\">here</a>.' %\n574                                        reverse('edit_template',\n575                                                args=(template.id,))),\n576                              extra_tags='alert-success')\n",
+      "filename": "/opt/appsecpipeline/source/dojo/finding/views.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 573,
+      "line_range": [
+        573,
+        574,
+        575
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "41 \n42         return mark_safe(popup_plus)\n43 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/forms.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 42,
+      "line_range": [
+        42
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "49 \n50         return mark_safe(popup_plus)\n51 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/forms.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 50,
+      "line_range": [
+        50
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "57 \n58         return mark_safe(popup_plus)\n59 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/forms.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 58,
+      "line_range": [
+        58
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "121 \n122         return mark_safe(u'\\n'.join(output))\n123 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/forms.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 122,
+      "line_range": [
+        122
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "154             try:\n155                 scan_results = eval('set(' + IPScan.objects.get(\n156                     address=host,\n157                     scan=Scan.objects.get(\n158                         id=service_dict['scan_id'])).services+')')\n159                 scan_results = map(\n",
+      "filename": "/opt/appsecpipeline/source/dojo/management/commands/run_scan.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+      "line_number": 155,
+      "line_range": [
+        155,
+        156,
+        157,
+        158
+      ],
+      "test_id": "B307",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "273                             str(x[3]),\n274                             eval(most_recent_ipscans.get(\n275                                 address=addr).services))\n276                     except:\n",
+      "filename": "/opt/appsecpipeline/source/dojo/management/commands/run_scan.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+      "line_number": 274,
+      "line_range": [
+        274,
+        275
+      ],
+      "test_id": "B307",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "25     def process_request(self, request):\n26         assert hasattr(request, 'user'), \"The Login Required middleware\\\n27  requires authentication middleware to be installed. Edit your\\\n28  MIDDLEWARE_CLASSES setting to insert\\\n29  'django.contrib.auth.middleware.AuthenticationMiddleware'. If that doesn't\\\n30  work, ensure your TEMPLATE_CONTEXT_PROCESSORS setting includes\\\n31  'django.core.context_processors.auth'.\"\n32         if not request.user.is_authenticated():\n",
+      "filename": "/opt/appsecpipeline/source/dojo/middleware.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 26,
+      "line_range": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "345                     jform.save()\n346                 except:\n347                     pass\n",
+      "filename": "/opt/appsecpipeline/source/dojo/product/views.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Pass detected.",
+      "line_number": 346,
+      "line_range": [
+        346
+      ],
+      "test_id": "B110",
+      "test_name": "try_except_pass"
+    },
+    {
+      "code": "138     def get_html(self):\n139         return mark_safe('<hr title=\"Page Break\" class=\"report-page-break\"/>')\n140 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 139,
+      "line_range": [
+        139
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "141     def get_asciidoc(self):\n142         return mark_safe('<br/><<<<br/>')\n143 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 142,
+      "line_range": [
+        142
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "144     def get_option_form(self):\n145         return mark_safe(\n146             \"<div data-multiple='true'  class='panel panel-available-widget'><div class='panel-heading' title='Click \"\n147             \"and drag to move' data-toggle='tooltip'><div class='clearfix'><h5 style='width: 90%' class='pull-left'>\" +\n148             self.get_html() + \"</h5><span class='fa fa-arrows pull-right icon'></span></div></div>\"\n149                               \"<form id='page-break'><input type='hidden' name='page-break'/></form></div>\")\n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 145,
+      "line_range": [
+        145,
+        146,
+        147,
+        148
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "159     def get_asciidoc(self):\n160         return mark_safe('')\n161 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 160,
+      "line_range": [
+        160
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "162     def get_html(self):\n163         return mark_safe('')\n164 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 163,
+      "line_range": [
+        163
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "169                                                             \"extra_help\": self.extra_help})\n170         return mark_safe(html)\n171 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 170,
+      "line_range": [
+        170
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "180     def get_html(self):\n181         return mark_safe('')\n182 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 181,
+      "line_range": [
+        181
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "192                                                             'extra_help': self.help_text})\n193         return mark_safe(html)\n194 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 193,
+      "line_range": [
+        193
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "203     def get_html(self):\n204         return mark_safe('')\n205 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 204,
+      "line_range": [
+        204
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "214                                                             'extra_help': self.help_text})\n215         return mark_safe(html)\n216 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 215,
+      "line_range": [
+        215
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "227                                                                                 \"content\": self.content})\n228         return mark_safe(html)\n229 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 228,
+      "line_range": [
+        228
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "232                                                                                          \"content\": self.content})\n233         return mark_safe(asciidoc)\n234 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 233,
+      "line_range": [
+        233
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "238                                                             \"title\": self.title})\n239         return mark_safe(html)\n240 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 239,
+      "line_range": [
+        239
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "294                                      \"user_id\": self.user_id})\n295         return mark_safe(asciidoc)\n296 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 295,
+      "line_range": [
+        295
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "304                                  \"user_id\": self.user_id})\n305         return mark_safe(html)\n306 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 305,
+      "line_range": [
+        305
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "315                                  })\n316         return mark_safe(html)\n317 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 316,
+      "line_range": [
+        316
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "364                                  \"user_id\": self.user_id})\n365         return mark_safe(html)\n366 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 365,
+      "line_range": [
+        365
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "373                                      \"user_id\": self.user_id})\n374         return mark_safe(asciidoc)\n375 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 374,
+      "line_range": [
+        374
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "383                                  })\n384         return mark_safe(html)\n385 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/reports/widgets.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 384,
+      "line_range": [
+        384
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "52     for i in ipScan_objects:\n53         service_list = eval(i.services)\n54         row = [i.address]\n",
+      "filename": "/opt/appsecpipeline/source/dojo/scan/views.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+      "line_number": 53,
+      "line_range": [
+        53
+      ],
+      "test_id": "B307",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "24     for ipscan in value.ipscan_set.all():\n25         count += len(eval(ipscan.services))\n26     return count\n",
+      "filename": "/opt/appsecpipeline/source/dojo/templatetags/display_tags.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+      "line_number": 25,
+      "line_range": [
+        25
+      ],
+      "test_id": "B307",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "48 \n49     return mark_safe(value.replace('\\n', '&nbsp;+<br />'))\n50 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/templatetags/display_tags.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 49,
+      "line_range": [
+        49
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "60     from dojo import __docs__\n61     return mark_safe(__docs__)\n62 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/templatetags/display_tags.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 61,
+      "line_range": [
+        61
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "98 def random_html():\n99     r = lambda: random.randint(0,255)\n100     return ('#%02X%02X%02X' % (r(),r(),r()))\n",
+      "filename": "/opt/appsecpipeline/source/dojo/templatetags/display_tags.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 99,
+      "line_range": [
+        99
+      ],
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "123     import random\n124     return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(12))\n125 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/templatetags/display_tags.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 124,
+      "line_range": [
+        124
+      ],
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "184             value = Finding.get_numerical_severity(value)\n185     except:\n186         pass\n",
+      "filename": "/opt/appsecpipeline/source/dojo/templatetags/display_tags.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Pass detected.",
+      "line_number": 185,
+      "line_range": [
+        185
+      ],
+      "test_id": "B110",
+      "test_name": "try_except_pass"
+    },
+    {
+      "code": "28                 inputs += \"<input type='hidden' name='\" + escape(parts[0]) + \"' value=''/>\"\n29     return safe(inputs)\n30 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/templatetags/navigation_tags.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 29,
+      "line_range": [
+        29
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "76     link = '<a title=\"' + title + '\" href=\"?' + dict_.urlencode() + '\">' + display + '&nbsp;' + icon + '</a>'\n77     return safe(link)\n78 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/templatetags/navigation_tags.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 77,
+      "line_range": [
+        77
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "133         pages.insert(0, PaginationNav(page.previous_page_number(),\n134                      safe('Previous')))\n135 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/templatetags/navigation_tags.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 134,
+      "line_range": [
+        134
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "138         pages.append(PaginationNav(page.next_page_number(),\n139                      safe('Next')))\n140 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/templatetags/navigation_tags.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 139,
+      "line_range": [
+        139
+      ],
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "89                         if finding is not None:\n90                             key = hashlib.md5(\n91                                 finding.severity + '|' + finding.title + '|' +\n92                                 finding.description).hexdigest()\n93 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/dependencycheck/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of insecure MD2, MD4, or MD5 hash function.",
+      "line_number": 90,
+      "line_range": [
+        90,
+        91,
+        92
+      ],
+      "test_id": "B303",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "327             if finding is not None:\n328                 key = hashlib.md5(finding.severity + '|' + finding.title + '|' + finding.description).hexdigest()\n329 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/generic/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of insecure MD2, MD4, or MD5 hash function.",
+      "line_number": 328,
+      "line_range": [
+        328
+      ],
+      "test_id": "B303",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "1 from xml.dom import NamespaceErr\n2 import lxml.etree as le\n3 import os\n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/nmap/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Using lxml.etree to parse untrusted XML data is known to be vulnerable to XML attacks. Replace lxml.etree with the equivalent defusedxml package.",
+      "line_number": 2,
+      "line_range": [
+        2
+      ],
+      "test_id": "B410",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "13         parser = le.XMLParser(resolve_entities=False)\n14         nscan = le.parse(file, parser)\n15         root = nscan.getroot()\n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/nmap/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Using lxml.etree.parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace lxml.etree.parse with its defusedxml equivalent function.",
+      "line_number": 14,
+      "line_range": [
+        14
+      ],
+      "test_id": "B320",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "330             if finding is not None:\n331                 key = hashlib.md5(finding.url + '|' + finding.severity + '|' + finding.title + '|' + finding.description).hexdigest()\n332 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/openvas_csv/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of insecure MD2, MD4, or MD5 hash function.",
+      "line_number": 331,
+      "line_range": [
+        331
+      ],
+      "test_id": "B303",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "19     import defusedxml.lxml as lxml\n20     from lxml import etree\n21 except ImportError:\n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/qualys/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Using etree to parse untrusted XML data is known to be vulnerable to XML attacks. Replace etree with the equivalent defusedxml package.",
+      "line_number": 20,
+      "line_range": [
+        20
+      ],
+      "test_id": "B410",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "151     parser = etree.XMLParser(remove_blank_text=True, no_network=True, recover=True)\n152     d = etree.parse(qualys_xml_file, parser)\n153     r = d.xpath('//ASSET_DATA_REPORT/HOST_LIST/HOST')\n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/qualys/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Using lxml.etree.parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace lxml.etree.parse with its defusedxml equivalent function.",
+      "line_number": 152,
+      "line_range": [
+        152
+      ],
+      "test_id": "B320",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "13     import defusedxml.lxml as lxml\n14     from lxml import etree\n15 except ImportError:\n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/qualyswebapp/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Using etree to parse untrusted XML data is known to be vulnerable to XML attacks. Replace etree with the equivalent defusedxml package.",
+      "line_number": 14,
+      "line_range": [
+        14
+      ],
+      "test_id": "B410",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "141     parser = etree.XMLParser(remove_blank_text=True, no_network=True, recover=True)\n142     d = etree.parse(qualys_xml_file, parser)\n143 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/qualyswebapp/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Using lxml.etree.parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace lxml.etree.parse with its defusedxml equivalent function.",
+      "line_number": 142,
+      "line_range": [
+        142
+      ],
+      "test_id": "B320",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "38                         item.description += \"\\n\\n Raw Result: \" + str(json.dumps(vulnerability, indent=4, sort_keys=True))\n39                         unique_key = item.title + hashlib.md5(item.references).hexdigest() + hashlib.md5(node['file']).hexdigest()\n40                         items[unique_key] = item\n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/retirejs/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of insecure MD2, MD4, or MD5 hash function.",
+      "line_number": 39,
+      "line_range": [
+        39
+      ],
+      "test_id": "B303",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "38                         item.description += \"\\n\\n Raw Result: \" + str(json.dumps(vulnerability, indent=4, sort_keys=True))\n39                         unique_key = item.title + hashlib.md5(item.references).hexdigest() + hashlib.md5(node['file']).hexdigest()\n40                         items[unique_key] = item\n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/retirejs/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of insecure MD2, MD4, or MD5 hash function.",
+      "line_number": 39,
+      "line_range": [
+        39
+      ],
+      "test_id": "B303",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "134             if finding is not None:\n135                 key = hashlib.md5(finding.severity + '|' + finding.title + '|' + finding.description).hexdigest()\n136 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/skf/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of insecure MD2, MD4, or MD5 hash function.",
+      "line_number": 135,
+      "line_range": [
+        135
+      ],
+      "test_id": "B303",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "111             if finding is not None:\n112                 key = hashlib.md5(finding.severity + '|' + finding.title + '|' + finding.description).hexdigest()\n113 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/vcg/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of insecure MD2, MD4, or MD5 hash function.",
+      "line_number": 112,
+      "line_range": [
+        112
+      ],
+      "test_id": "B303",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "169             if finding is not None:\n170                 key = hashlib.md5(finding.severity + '|' + finding.title + '|' + finding.description).hexdigest()\n171 \n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/vcg/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of insecure MD2, MD4, or MD5 hash function.",
+      "line_number": 170,
+      "line_range": [
+        170
+      ],
+      "test_id": "B303",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "153             return socket.gethostbyname(host)\n154         except:\n155             pass\n",
+      "filename": "/opt/appsecpipeline/source/dojo/tools/zap/parser.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Pass detected.",
+      "line_number": 154,
+      "line_range": [
+        154
+      ],
+      "test_id": "B110",
+      "test_name": "try_except_pass"
+    },
+    {
+      "code": "43                    'Authorization': 'ApiKey %s:%s' % (user, api_key)}\n44         r = requests.get(api_url, headers=headers, verify=False)\n45         self.assertEqual(r.status_code, 200)\n",
+      "filename": "/opt/appsecpipeline/source/tests/check_status.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Requests call with verify=False disabling SSL certificate checks, security issue.",
+      "line_number": 44,
+      "line_range": [
+        44
+      ],
+      "test_id": "B501",
+      "test_name": "request_with_no_cert_validation"
+    },
+    {
+      "code": "53 \n54         r = requests.get(api_url, headers=headers, verify=False)\n55         self.assertEqual(r.status_code, 200)\n",
+      "filename": "/opt/appsecpipeline/source/tests/check_status.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Requests call with verify=False disabling SSL certificate checks, security issue.",
+      "line_number": 54,
+      "line_range": [
+        54
+      ],
+      "test_id": "B501",
+      "test_name": "request_with_no_cert_validation"
+    },
+    {
+      "code": "62                    'Authorization': 'ApiKey %s:%s' % (user, api_key)}\n63         r = requests.get(api_url, headers=headers, verify=False)\n64         self.assertEqual(r.status_code, 200)\n",
+      "filename": "/opt/appsecpipeline/source/tests/check_status.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Requests call with verify=False disabling SSL certificate checks, security issue.",
+      "line_number": 63,
+      "line_range": [
+        63
+      ],
+      "test_id": "B501",
+      "test_name": "request_with_no_cert_validation"
+    },
+    {
+      "code": "71                    'Authorization': 'ApiKey %s:%s' % (user, api_key)}\n72         r = requests.get(api_url, headers=headers, verify=False)\n73         self.assertEqual(r.status_code, 200)\n",
+      "filename": "/opt/appsecpipeline/source/tests/check_status.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Requests call with verify=False disabling SSL certificate checks, security issue.",
+      "line_number": 72,
+      "line_range": [
+        72
+      ],
+      "test_id": "B501",
+      "test_name": "request_with_no_cert_validation"
+    },
+    {
+      "code": "3 import os\n4 import subprocess\n5 import collections\n",
+      "filename": "/opt/appsecpipeline/source/tests/zap.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 4,
+      "line_range": [
+        4
+      ],
+      "test_id": "B404",
+      "test_name": "blacklist"
+    }
+  ]
+}
