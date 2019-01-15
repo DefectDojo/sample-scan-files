@@ -1,0 +1,9 @@
+[
+    [
+        "requests",
+        "<=2.19.1",
+        "2.9.0",
+        "The Requests package before 2.19.1 sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network.",
+        "36546"
+    ]
+]
