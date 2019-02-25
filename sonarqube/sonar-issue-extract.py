@@ -40,12 +40,18 @@ def get_rule(f_rule, base_key=None,  url=None):
 def get_projects(base_key=None,  url=None):
 	return requests.get(_url('/api/components/search?qualifiers=TRK&ps=300',  url),auth=(base_key, ''))
 
+def  get_languagedistribution(base_key=None,  url=None,  component=None):
+    # /api/measures/component?qualifiers=TRK&component=barbich_django-DefectDojo&metricKeys=ncloc_language_distribution
+    return requests.get(_url('/api/measures/component?qualifiers=TRK&component=%s&metricKeys=ncloc_language_distribution' % (component),  url),auth=(base_key, ''))
+
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--host",type=str, help="host that runs sonarqube (http://acme.corp:9000)",  required=True )
     parser.add_argument("--key",type=str, help="access key",  required=True)
     parser.add_argument("--output",type=str, help="output csv file",  required=False)
+    parser.add_argument("--language",type=str, help="language output csv file",  required=False)
     parser.add_argument("--project",type=str, help="filter on project ID(name) (if absent we will only list all projects)",  required=False,  action='append')
+    parser.add_argument("--debug",action='store_true', help="debug",  required=False)
     args = parser.parse_args()
     # retrieve projects and associated information
     if not args.project:
@@ -64,9 +70,25 @@ if __name__=="__main__":
         sys.exit(0)
     else:
         componentKeys=','.join(args.project)
+        if args.debug: print("Debug: ", componentKeys)
 
     # retrieve issues for indicated project
     issues = get_security_issues(base_key=args.key,  url=args.host,  componentKeys=componentKeys)
+    if args.debug: print("Debug: ", issues)
+    
+    # retrieve language distribution
+    if args.project and args.language:
+        csv_f=open(args.language, "wb")
+        language_file=csv.writer(csv_f,  delimiter=';', escapechar="\\")
+        language_file.writerow(['project', 'language', 'lines'])
+        for p in args.project:
+            languages = get_languagedistribution(base_key=args.key,  url=args.host,  component=p)
+            if args.debug: print("Debug: ", languages.json()['component']['measures'])
+            for m in languages.json()['component']['measures']:
+                if m['metric'] == 'ncloc_language_distribution':
+                    for l in m['value'].split(';'): language_file.writerow([p, l.split('=')[0], l.split('=')[1]])
+        csv_f.close()
+
     
     if not args.output:
         pp(issues)
