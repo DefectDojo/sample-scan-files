@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<detailedreport xmlns:xsi="http&#x3a;&#x2f;&#x2f;www.w3.org&#x2f;2001&#x2f;XMLSchema-instance" xmlns="https&#x3a;&#x2f;&#x2f;www.veracode.com&#x2f;schema&#x2f;reports&#x2f;export&#x2f;1.0" xsi:schemaLocation="https&#x3a;&#x2f;&#x2f;www.veracode.com&#x2f;schema&#x2f;reports&#x2f;export&#x2f;1.0 https&#x3a;&#x2f;&#x2f;analysiscenter.veracode.com&#x2f;resource&#x2f;detailedreport.xsd" report_format_version="1.5" account_id="11649" app_name="SOMEAPP" app_id="17959" analysis_id="2854370" static_analysis_unit_id="2909784" sandbox_id="17959" first_build_submitted_date="2011-11-30 19&#x3a;07&#x3a;28 UTC" version="30 Sep 2018 Static" build_id="2907954" submitter="ACME VeraCode API" platform="Not Specified" assurance_level="5" business_criticality="5" generation_date="2019-02-07 04&#x3a;01&#x3a;14 UTC" veracode_level="VL3" total_flaws="16" flaws_not_mitigated="0" teams="ACME SUA,Security Audit - Verizon" life_cycle_stage="Internal or Alpha Testing" planned_deployment_date="2017-03-26 04&#x3a;00&#x3a;00 UTC" last_update_time="2018-09-30 11&#x3a;44&#x3a;52 UTC" is_latest_build="true" policy_name="ACME Extended Policy" policy_version="6" policy_compliance_status="Did Not Pass" policy_rules_status="Pass" grace_period_expired="false" scan_overdue="true" business_owner="" business_unit="ACME NTS" tags="" legacy_scan_engine="false"><static-analysis rating="B" score="100" submitted_date="2018-09-30 06&#x3a;27&#x3a;28 UTC" published_date="2018-09-30 11&#x3a;44&#x3a;46 UTC" version="30 Sep 2018 Static" mitigated_rating="A" mitigated_score="100" next_scan_due="2018-10-30 11&#x3a;44&#x3a;46 UTC" analysis_size_bytes="19687114" engine_version="126782">
+      <modules>
+         <module name="SOMEAPP_skinny.war" compiler="JAVAC_8" os="Java J2SE 8" architecture="JVM" loc="1417550" score="96" numflawssev0="0" numflawssev1="0" numflawssev2="4" numflawssev3="8" numflawssev4="0" numflawssev5="0"/>
+      </modules>
+   </static-analysis>
+   <dynamic-analysis rating="B" score="100" submitted_date="2018-09-21 09&#x3a;55&#x3a;40 UTC" published_date="2018-09-28 07&#x3a;27&#x3a;21 UTC" version="28 Sep 2018 Dynamic" mitigated_rating="A" mitigated_score="100" dynamic_scan_type="ds" scan_exit_status_id="13" scan_exit_status_desc="min_priority">
+      <modules>
+         <module name="dynamic_analysis" compiler="Unknown" os="" architecture="" loc="0" score="99" numflawssev0="1" numflawssev1="0" numflawssev2="2" numflawssev3="1" numflawssev4="0" numflawssev5="0" target_url="https&#x3a;&#x2f;&#x2f;www.supersecret.ACME.ORG&#x2f;PUBSOMEAPP&#x2f;gateway&#x2f;spec&#x2f;index.html" domain="InternetDomainName&#x7b;name&#x3d;ACME.ORG&#x7d;"/>
+      </modules>
+   </dynamic-analysis>
+   <severity level="5"/>
+   <severity level="4"/>
+   <severity level="3">
+      <category categoryid="10" categoryname="Credentials Management" pcirelated="false">
+         <desc>
+            <para text="Improper management of credentials, such as usernames and passwords, may compromise system security.  In particular, storing passwords in plaintext or hard-coding passwords directly into application code are design issues that cannot be easily remedied.  Not only does embedding a password allow all of the project&#x27;s developers to view the password, it also makes fixing the problem extremely difficult.  Once the code is in production, the password cannot be changed without patching the software.  If a hard-coded password is compromised in a commercial product, all deployed instances may be vulnerable to attack, putting customers at risk."/>
+            <para text="One variation on hard-coding plaintext passwords is to hard-code a constant string which is the result of a cryptographic one-way hash.  For example, instead of storing the word &#x22;secret,&#x22; the application stores an MD5 hash of the word.  This is a common mechanism for obscuring hard-coded passwords from casual viewing but does not significantly reduce risk.  However, using cryptographic hashes for data stored outside the application code can be an effective practice."/>
+         </desc>
+         <recommendations>
+            <para text="Avoid storing passwords in easily accessible locations, and never store any type of sensitive data in plaintext.  Avoid using hard-coded usernames, passwords, or hash constants whenever possible, particularly in relation to security-critical components.   Store passwords out-of-band from the application code.  Follow best practices for protecting credentials stored in alternate locations such as configuration or properties files."/>
+         </recommendations>
+         <cwe cweid="259" cwename="Use of Hard-coded Password" pcirelated="true" owasp="1028" sans="798" certjava="861">
+            <description>
+               <text text="A method uses a hard-coded password that may compromise system security in a way that cannot be easily remedied.  The use of a hard-coded password significantly increases the possibility that the account being protected will be compromised.  Moreover, the password cannot be changed without patching the software.  If a hard-coded password is compromised in a commercial product, all deployed instances may be vulnerable to attack."/>
+            </description>
+            <staticflaws>
+               <flaw severity="3" categoryname="Use of Hard-coded Password" count="1" issueid="685" module="SOMEAPP_skinny.war" type="PASSWORD initializer" description="This variable assignment uses a hard-coded password that may compromise system security in a way that cannot be easily remedied. The use of a hard-coded password significantly increases the possibility that the account being protected will be compromised. Moreover, the password cannot be changed without patching the software. If a hard-coded password is compromised in a commercial product, all deployed instances may be vulnerable to attack. In some cases, this finding may indicate a reference to a password &#x28;e.g. the name of a key in a properties file&#x29; rather than an actual password. PASSWORD initializer&#xd;&#xa;&#xd;&#xa;Store passwords out-of-band from the application code. Follow best practices for protecting credentials stored in locations such as configuration or properties files. An HSM may be appropriate for particularly sensitive credentials.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;259.html&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="259" remediationeffort="4" exploitLevel="1" categoryid="10" pcirelated="true" date_first_occurrence="2015-11-29 05&#x3a;00&#x3a;07 UTC" remediation_status="Potential False Positive" cia_impact="ppn" grace_period_expires="2016-11-28 14&#x3a;33&#x3a;02 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="Oracle.java" line="1" sourcefilepath="ACME&#x2f;cfmu&#x2f;SECRETAPP&#x2f;oracle&#x2f;" scope="UNKNOWN" functionprototype="UNKNOWN" functionrelativelocation="-1">
+                  <mitigations>
+                     <mitigation action="Potential False Positive" description="TicketID1&#x3a; The flawis illogical, all the fields have the &#x22;PASS&#x22; string in their name, which probably &#x22;looks like&#x22; a password to the engine." user="User Admin3" date="2015-12-04 13&#x3a;49&#x3a;46 UTC"/>
+                     <mitigation action="Approve Mitigation" description="According to analysis" user="User Admin2" date="2016-01-14 13&#x3a;00&#x3a;32 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Potential False Positive" description="TicketID1&#x3a; The flawis illogical, all the fields have the &#x22;PASS&#x22; string in their name, which probably &#x22;looks like&#x22; a password to the engine." user="User Admin3" date="2015-12-04 13&#x3a;49&#x3a;46 UTC"/>
+                     <annotation action="Add Comment" description="RMD ID 261" user="User Admin2" date="2015-12-18 18&#x3a;43&#x3a;12 UTC"/>
+                     <annotation action="Add Comment" description="&#x5b;Added by Veracode Integration for JIRA for JIRA&#x5d; JIRA Issue ACME-1285 has been opened for this flaw." user="ACME JIRA API" date="2017-09-14 09&#x3a;42&#x3a;32 UTC"/>
+                  </annotations>
+               </flaw>
+            </staticflaws>
+         </cwe>
+      </category>
+      <category categoryid="26" categoryname="Deployment Configuration" pcirelated="false">
+         <desc>
+            <para text="A deployment descriptor is a component in J2EE applications that describes how a web application should be deployed. It directs a deployment tool to deploy a module or application with specific container options and describes specific configuration requirements that a deployer must resolve.  Deployment descriptors are part of the packaged application and are usually formatted as XML files.  Failing to properly lock down the web.xml file or other files that define components and operating parameters for the web application can reduce the security of the application."/>
+         </desc>
+         <recommendations>
+            <para text="Remove all unnecessary functionality from deployment descriptors, including servlets, servlet mappings, extension mappings, etc.  Only elements that are required for the application to function should remain."/>
+         </recommendations>
+         <cwe cweid="402" cwename="Transmission of Private Resources into a New Sphere &#x28;&#x27;Resource Leak&#x27;&#x29;" pcirelated="false">
+            <description>
+               <text text="One or more cookies does not have the &#x27;HttpOnly&#x27; attribute set. Using this attribute helps to prevent client-side Javascript from accessing the cookie, thereby mitigating one of the most common XSS exploit scenarios."/>
+            </description>
+            <dynamicflaws>
+               <flaw severity="3" categoryname="Transmission of Private Resources into a New Sphere &#x28;&#x27;Resource Leak&#x27;&#x29;" count="1" issueid="717" module="dynamic_analysis" type="Transmission of Private Resources into a New Sphere &#x28;&#x27;Resource Leak&#x27;&#x29;" description="The PD_STATEFUL_26a43d5e-cc18-11e5-8c4b-005056863b36 cookie does not have the &#x22;HttpOnly&#x22; attribute set. Using this attribute helps to prevent client-side Javascript from accessing the cookie, thereby mitigating one of the most common XSS exploit scenarios.&#xd;&#xa;&#xd;&#xa;Unless the application requires that cookies be accessible to Javascript code, set the &#x22;HttpOnly&#x22; attribute when generating cookies.&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;cgi-bin&#x2f;jumpmenu.cgi&#x3f;id&#x3d;402&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="402" remediationeffort="2" categoryid="26" pcirelated="false" date_first_occurrence="2017-09-26 23&#x3a;18&#x3a;42 UTC" remediation_status="Mitigated" cia_impact="ppn" grace_period_expires="" affects_policy_compliance="false" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" url="https&#x3a;&#x2f;&#x2f;www.supersecret.ACME.ORG&#x2f;PUBLIC&#x2f;gateway&#x2f;spec&#x2f;index.html">
+                  <mitigations>
+                     <mitigation action="Potential False Positive" description="See TicketId5" user="User Admin1" date="2017-11-20 13&#x3a;53&#x3a;40 UTC"/>
+                     <mitigation action="Mitigate by Design" description="test" user="User Admin2" date="2017-12-22 13&#x3a;34&#x3a;11 UTC"/>
+                     <mitigation action="Approve Mitigation" description="test Admin1" user="User Admin2" date="2017-12-22 13&#x3a;34&#x3a;24 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Potential False Positive" description="See TicketId5" user="User Admin1" date="2017-11-20 13&#x3a;53&#x3a;40 UTC"/>
+                  </annotations>
+               </flaw>
+            </dynamicflaws>
+         </cwe>
+      </category>
+      <category categoryid="1" categoryname="Directory Traversal" pcirelated="false">
+         <desc>
+            <para text="Allowing user input to control paths used in filesystem operations may enable an attacker to access or modify otherwise protected system resources that would normally be inaccessible to end users.  In some cases, the user-provided input may be passed directly to the filesystem operation, or it may be concatenated to one or more fixed strings to construct a fully-qualified path."/>
+            <para text="When an application improperly cleanses special character sequences in user-supplied filenames, a path traversal &#x28;or directory traversal&#x29; vulnerability may occur.  For example, an attacker could specify a filename such as &#x22;..&#x2f;..&#x2f;etc&#x2f;passwd&#x22;, which resolves to a file outside of the intended directory that the attacker would not normally be authorized to view."/>
+         </desc>
+         <recommendations>
+            <para text="Assume all user-supplied input is malicious.  Validate all user-supplied input to ensure that it conforms to the expected format, using centralized data validation routines when possible.  When using black lists, be sure that the sanitizing routine performs a sufficient number of iterations to remove all instances of disallowed characters and ensure that the end result is not dangerous."/>
+         </recommendations>
+         <cwe cweid="73" cwename="External Control of File Name or Path" pcirelated="false" sans="22" certcpp="877">
+            <description>
+               <text text="This call contains a path manipulation flaw.  The argument to the function is a filename constructed using untrusted input.  If an attacker is allowed to specify all or part of the filename, it may be possible to gain unauthorized access to files on the server, including those outside the webroot, that would be normally be inaccessible to end users.  The level of exposure depends on the effectiveness of input validation routines, if any."/>
+            </description>
+            <staticflaws>
+               <flaw severity="3" categoryname="External Control of File Name or Path" count="1" issueid="587" module="SOMEAPP_skinny.war" type="java.io.File.&#x21;operator_javanewinit" description="This call to java.io.File.&#x21;operator_javanewinit&#x28;&#x29; contains a path manipulation flaw. The argument to the function is a filename constructed using untrusted input. If an attacker is allowed to specify all or part of the filename, it may be possible to gain unauthorized access to files on the server, including those outside the webroot, that would be normally be inaccessible to end users. The level of exposure depends on the effectiveness of input validation routines, if any. The first argument to &#x21;operator_javanewinit&#x28;&#x29; contains tainted data from the variable fileName.trim&#x28;&#x29;. The tainted data originated from an earlier call to java.lang.process.getinputstream.&#xd;&#xa;&#xd;&#xa;Validate all untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible. When using black lists, be sure that the sanitizing routine performs a sufficient number of iterations to remove all instances of disallowed characters.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;73.html&#x29; &#xd;&#xa;WASC &#x28;http&#x3a;&#x2f;&#x2f;webappsec.pbworks.com&#x2f;Path-Traversal&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="73" remediationeffort="2" exploitLevel="1" categoryid="1" pcirelated="false" date_first_occurrence="2014-08-03 03&#x3a;00&#x3a;29 UTC" remediation_status="Potential False Positive" cia_impact="ppn" grace_period_expires="2017-01-16 17&#x3a;26&#x3a;04 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="OS.java" line="165" sourcefilepath="ACME&#x2f;cfmu&#x2f;SECRETAPP&#x2f;os&#x2f;" scope="ACME.cfmu.SECRETAPP.os.OS" functionprototype="int find&#x28;java.io.File, java.lang.String, java.util.Collection&#x29;" functionrelativelocation="87">
+                  <mitigations>
+                     <mitigation action="Potential False Positive" description="TickedId2 was raised to have the code checked. The investigation revealed that the flaw is a false positive. For more info, please look in the resolution diary of the I2." user="User Admin3" date="2014-11-07 12&#x3a;48&#x3a;41 UTC"/>
+                     <mitigation action="Approve Mitigation" description="Accepted as per TickedId2" user="User Admin1" date="2014-11-14 13&#x3a;04&#x3a;42 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Potential False Positive" description="TickedId2 was raised to have the code checked. The investigation revealed that the flaw is a false positive. For more info, please look in the resolution diary of the I2." user="User Admin3" date="2014-11-07 12&#x3a;48&#x3a;41 UTC"/>
+                     <annotation action="Add Comment" description="&#x5b;Added by Veracode Integration for JIRA for JIRA&#x5d; JIRA Issue ACME-1286 has been opened for this flaw." user="ACME JIRA API" date="2017-09-14 09&#x3a;49&#x3a;15 UTC"/>
+                  </annotations>
+               </flaw>
+               <flaw severity="3" categoryname="External Control of File Name or Path" count="1" issueid="597" module="SOMEAPP_skinny.war" type="java.io.File.&#x21;operator_javanewinit" description="This call to java.io.File.&#x21;operator_javanewinit&#x28;&#x29; contains a path manipulation flaw. The argument to the function is a filename constructed using untrusted input. If an attacker is allowed to specify all or part of the filename, it may be possible to gain unauthorized access to files on the server, including those outside the webroot, that would be normally be inaccessible to end users. The level of exposure depends on the effectiveness of input validation routines, if any. The first argument to &#x21;operator_javanewinit&#x28;&#x29; contains tainted data from the variable fileName.trim&#x28;&#x29;. The tainted data originated from an earlier call to java.lang.process.getinputstream.&#xd;&#xa;&#xd;&#xa;Validate all untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible. When using black lists, be sure that the sanitizing routine performs a sufficient number of iterations to remove all instances of disallowed characters.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;73.html&#x29; &#xd;&#xa;WASC &#x28;http&#x3a;&#x2f;&#x2f;webappsec.pbworks.com&#x2f;Path-Traversal&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="73" remediationeffort="2" exploitLevel="1" categoryid="1" pcirelated="false" date_first_occurrence="2014-08-03 03&#x3a;00&#x3a;29 UTC" remediation_status="Potential False Positive" cia_impact="ppn" grace_period_expires="2017-01-16 17&#x3a;26&#x3a;04 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="OS.java" line="176" sourcefilepath="ACME&#x2f;cfmu&#x2f;SECRETAPP&#x2f;os&#x2f;" scope="ACME.cfmu.SECRETAPP.os.OS" functionprototype="int lsof&#x28;java.util.Collection&#x29;" functionrelativelocation="82">
+                  <mitigations>
+                     <mitigation action="Potential False Positive" description="TickedId2 was raised to have the code checked. The investigation revealed that the flaw is a false positive. For more info, please look in the resolution diary of the I2." user="User Admin3" date="2014-11-07 12&#x3a;49&#x3a;58 UTC"/>
+                     <mitigation action="Approve Mitigation" description="Accepted as per TickedId2" user="User Admin1" date="2014-11-14 13&#x3a;04&#x3a;42 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Potential False Positive" description="TickedId2 was raised to have the code checked. The investigation revealed that the flaw is a false positive. For more info, please look in the resolution diary of the I2." user="User Admin3" date="2014-11-07 12&#x3a;49&#x3a;58 UTC"/>
+                  </annotations>
+               </flaw>
+               <flaw severity="3" categoryname="External Control of File Name or Path" count="1" issueid="610" module="SOMEAPP_skinny.war" type="java.io.File.&#x21;operator_javanewinit" description="This call to java.io.File.&#x21;operator_javanewinit&#x28;&#x29; contains a path manipulation flaw. The argument to the function is a filename constructed using untrusted input. If an attacker is allowed to specify all or part of the filename, it may be possible to gain unauthorized access to files on the server, including those outside the webroot, that would be normally be inaccessible to end users. The level of exposure depends on the effectiveness of input validation routines, if any. The first argument to &#x21;operator_javanewinit&#x28;&#x29; contains tainted data from the variable fileName.trim&#x28;&#x29;. The tainted data originated from an earlier call to java.lang.process.getinputstream.&#xd;&#xa;&#xd;&#xa;Validate all untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible. When using black lists, be sure that the sanitizing routine performs a sufficient number of iterations to remove all instances of disallowed characters.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;73.html&#x29; &#xd;&#xa;WASC &#x28;http&#x3a;&#x2f;&#x2f;webappsec.pbworks.com&#x2f;Path-Traversal&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="73" remediationeffort="2" exploitLevel="1" categoryid="1" pcirelated="false" date_first_occurrence="2014-08-31 04&#x3a;00&#x3a;10 UTC" remediation_status="Potential False Positive" cia_impact="ppn" grace_period_expires="2017-01-16 17&#x3a;26&#x3a;04 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="OS.java" line="208" sourcefilepath="ACME&#x2f;cfmu&#x2f;SECRETAPP&#x2f;os&#x2f;" scope="ACME.cfmu.SECRETAPP.os.OS" functionprototype="int ftpsList&#x28;java.lang.String, java.lang.String, java.util.Collection&#x29;" functionrelativelocation="87">
+                  <mitigations>
+                     <mitigation action="Potential False Positive" description="TickedId2 was raised to have the code checked. The investigation revealed that the flaw is a false positive. For more info, please look in the resolution diary of the I2." user="User Admin3" date="2014-11-07 12&#x3a;50&#x3a;53 UTC"/>
+                     <mitigation action="Approve Mitigation" description="As per TickedId2 " user="User Admin1" date="2014-11-19 09&#x3a;45&#x3a;32 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Potential False Positive" description="TickedId2 was raised to have the code checked. The investigation revealed that the flaw is a false positive. For more info, please look in the resolution diary of the I2." user="User Admin3" date="2014-11-07 12&#x3a;50&#x3a;53 UTC"/>
+                  </annotations>
+               </flaw>
+            </staticflaws>
+         </cwe>
+      </category>
+      <category categoryid="22" categoryname="Encapsulation" pcirelated="false">
+         <desc>
+            <para text="Encapsulation is about defining strong security boundaries governing data and processes. Within an application, it might mean differentiation between validated and unvalidated data, between public and private members, or between one user&#x27;s data and another&#x27;s.  "/>
+            <para text="In object-oriented programming, the term encapsulation is used to describe the grouping together of data and functionality within an object and the ability to provide users with a well-defined interface in a way which hides their internal workings.  Though there is some overlap with the above definition, the two definitions should not be confused as being interchangeable."/>
+         </desc>
+         <recommendations>
+            <para text="The wide variance of encapsulation issues makes it impractical to generalize how these issues should be addressed, beyond stating that encapsulation boundaries should be well-defined and adhered to.  Refer to individual categories for specific recommendations. "/>
+         </recommendations>
+         <cwe cweid="502" cwename="Deserialization of Untrusted Data" pcirelated="true" owasp="1034" certjava="858">
+            <description>
+               <text text="The application deserializes untrusted data without sufficiently verifying that the resulting data will be valid."/>
+            </description>
+            <staticflaws>
+               <flaw severity="3" categoryname="Deserialization of Untrusted Data" count="1" issueid="684" module="SOMEAPP_skinny.war" type="java.io.ObjectInput.readObject" description="The serialized-object data stream used in the call to java.io.ObjectInput.readObject&#x28;&#x29; appears to have been constructed with untrusted data. Attacker manipulation of this stream has the ability to cause the creation of objects of arbitrary Serializable types. Paired with a weakness in another class&#x27;s constructor, this could result in a denial of service, code execution, or data corruption vulnerability. readObject&#x28;&#x29; was called on the ois object, which contains tainted data. The tainted data originated from earlier calls to javax.servlet.servletrequestwrapper.getinputstream, org.apache.http.impl.client.closeablehttpclient.execute, and org.apache.http.client.httpclient.execute.&#xd;&#xa;&#xd;&#xa;Avoid passing untrusted data to ObjectInputStream&#x3b; if the data is untrusted, consider switching to a safer serialization scheme such as JSON.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;502.html&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="502" remediationeffort="2" exploitLevel="0" categoryid="22" pcirelated="true" date_first_occurrence="2015-11-29 05&#x3a;00&#x3a;07 UTC" remediation_status="Potential False Positive" cia_impact="ppn" grace_period_expires="2016-11-28 14&#x3a;33&#x3a;02 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="FreeTypeMarshaller.java" line="64" sourcefilepath="ACME&#x2f;cfmu&#x2f;common&#x2f;iem&#x2f;marshaller&#x2f;" scope="ACME.cfmu.common.iem.marshaller.FreeTypeMarshaller" functionprototype="java.lang.Object unmarshallValue&#x28;BinaryUnmarshaller, UnmarshallingContext&#x29;" functionrelativelocation="32">
+                  <mitigations>
+                     <mitigation action="Potential False Positive" description="TicketID1&#x3a; The code does not interfere with user input, it is used by the backend only, for the inter-node communication." user="User Admin3" date="2015-12-04 13&#x3a;47&#x3a;15 UTC"/>
+                     <mitigation action="Approve Mitigation" description="According to analysis" user="User Admin2" date="2016-01-14 11&#x3a;09&#x3a;27 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Potential False Positive" description="TicketID1&#x3a; The code does not interfere with user input, it is used by the backend only, for the inter-node communication." user="User Admin3" date="2015-12-04 13&#x3a;47&#x3a;15 UTC"/>
+                     <annotation action="Add Comment" description="RMD ID 263" user="User Admin2" date="2015-12-18 18&#x3a;58&#x3a;34 UTC"/>
+                  </annotations>
+               </flaw>
+            </staticflaws>
+         </cwe>
+      </category>
+      <category categoryid="25" categoryname="Insufficient Input Validation" pcirelated="false">
+         <desc>
+            <para text="Weaknesses in this category are related to an absent or incorrect protection mechanism that fails to properly validate input that can affect the control flow or data flow of a program."/>
+         </desc>
+         <recommendations>
+            <para text="Validate input from untrusted sources before it is used. The untrusted data sources may include HTTP requests, file systems, databases, and any external systems that provide data to the application. In the case of HTTP requests, validate all parts of the request, including headers, form fields, cookies, and URL components that are used to transfer information from the browser to the server side application."/>
+            <para text="Duplicate any client-side checks on the server side. This should be simple to implement in terms of time and difficulty, and will greatly reduce the likelihood of insecure parameter values being used in the application."/>
+         </recommendations>
+         <cwe cweid="470" cwename="Use of Externally-Controlled Input to Select Classes or Code &#x28;&#x27;Unsafe Reflection&#x27;&#x29;" pcirelated="false" certjava="859">
+            <description>
+               <text text="A call uses reflection in an unsafe manner.  An attacker can specify the class name to be instantiated, which may create unexpected control flow paths through the application.  Depending on how reflection is being used, the attack vector may allow the attacker to bypass security checks or otherwise cause the application to behave in an unexpected manner.  Even if the object does not implement the specified interface and a ClassCastException is thrown, the constructor of the untrusted class name will have already executed."/>
+            </description>
+            <staticflaws>
+               <flaw severity="3" categoryname="Use of Externally-Controlled Input to Select Classes or Code &#x28;&#x27;Unsafe Reflection&#x27;&#x29;" count="1" issueid="641" module="SOMEAPP_skinny.war" type="java.lang.Class.forName" description="This call to java.lang.Class.forName&#x28;&#x29; uses reflection in an unsafe manner. An attacker can specify the class name to be instantiated, which may create unexpected control flow paths through the application. Depending on how reflection is being used, the attack vector may allow the attacker to bypass security checks or otherwise cause the application to behave in an unexpected manner. Even if the object does not implement the specified interface and a ClassCastException is thrown, the constructor of the untrusted class name will have already executed. The first argument to forName&#x28;&#x29; contains tainted data from the variable declaredTypeName. The tainted data originated from earlier calls to javax.servlet.servletrequestwrapper.getinputstream, org.apache.http.impl.client.closeablehttpclient.execute, and org.apache.http.client.httpclient.execute.&#xd;&#xa;&#xd;&#xa;Validate the class name against a combination of white and black lists to ensure that only expected behavior is produced.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;470.html&#x29; &#xd;&#xa;OWASP &#x28;http&#x3a;&#x2f;&#x2f;www.owasp.org&#x2f;index.php&#x2f;Unsafe_Reflection&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="470" remediationeffort="2" exploitLevel="1" categoryid="25" pcirelated="false" date_first_occurrence="2015-08-09 04&#x3a;00&#x3a;10 UTC" remediation_status="Potential False Positive" cia_impact="ppn" grace_period_expires="2016-08-08 13&#x3a;26&#x3a;23 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="ClassTypeMarshaller.java" line="90" sourcefilepath="ACME&#x2f;cfmu&#x2f;SECRETAPP&#x2f;capture&#x2f;" scope="ACME.cfmu.SECRETAPP.capture.ClassTypeMarshaller" functionprototype="common.iem.marshaller.TypeMarshaller getTypeMarshaller&#x28;java.lang.String, common.iem.marshaller.UnmarshallingContext&#x29;" functionrelativelocation="48">
+                  <mitigations>
+                     <mitigation action="Potential False Positive" description="TicketId3&#x3a; The code is not handling user input and cannot interfere in any way with an attacker, it is used to read capture files created by SECRETAPP logging framework." user="User Admin3" date="2015-12-04 13&#x3a;48&#x3a;22 UTC"/>
+                     <mitigation action="Approve Mitigation" description="According to analysis" user="User Admin2" date="2016-01-14 12&#x3a;49&#x3a;04 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Potential False Positive" description="TicketId3&#x3a; The code is not handling user input and cannot interfere in any way with an attacker, it is used to read capture files created by SECRETAPP logging framework." user="User Admin3" date="2015-12-04 13&#x3a;48&#x3a;22 UTC"/>
+                     <annotation action="Add Comment" description="RMD ID 262" user="User Admin2" date="2015-12-18 18&#x3a;55&#x3a;43 UTC"/>
+                  </annotations>
+               </flaw>
+               <flaw severity="3" categoryname="Use of Externally-Controlled Input to Select Classes or Code &#x28;&#x27;Unsafe Reflection&#x27;&#x29;" count="1" issueid="143" module="SOMEAPP_skinny.war" type="java.lang.Class.forName" description="This call to java.lang.Class.forName&#x28;&#x29; uses reflection in an unsafe manner. An attacker can specify the class name to be instantiated, which may create unexpected control flow paths through the application. Depending on how reflection is being used, the attack vector may allow the attacker to bypass security checks or otherwise cause the application to behave in an unexpected manner. Even if the object does not implement the specified interface and a ClassCastException is thrown, the constructor of the untrusted class name will have already executed. The first argument to forName&#x28;&#x29; contains tainted data from the variable freeClassId. The tainted data originated from earlier calls to javax.servlet.servletrequestwrapper.getinputstream, org.apache.http.impl.client.closeablehttpclient.execute, and org.apache.http.client.httpclient.execute.&#xd;&#xa;&#xd;&#xa;Validate the class name against a combination of white and black lists to ensure that only expected behavior is produced.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;470.html&#x29; &#xd;&#xa;OWASP &#x28;http&#x3a;&#x2f;&#x2f;www.owasp.org&#x2f;index.php&#x2f;Unsafe_Reflection&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="470" remediationeffort="2" exploitLevel="1" categoryid="25" pcirelated="false" date_first_occurrence="2012-08-03 05&#x3a;54&#x3a;07 UTC" remediation_status="Mitigated" cia_impact="ppn" grace_period_expires="2013-08-04 04&#x3a;50&#x3a;41 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="DynamicTypeMarshaller.java" line="234" sourcefilepath="ACME&#x2f;cfmu&#x2f;common&#x2f;iem&#x2f;marshaller&#x2f;" scope="ACME.cfmu.common.iem.marshaller.DynamicTypeMarshaller" functionprototype="TypeMarshaller readDynamicTypeIdentifier&#x28;boolean, BinaryUnmarshaller, UnmarshallingContext&#x29;" functionrelativelocation="87">
+                  <mitigations>
+                     <mitigation action="Mitigate by Design" description="As per TicketId7" user="User Admin1" date="2016-09-28 12&#x3a;28&#x3a;43 UTC"/>
+                     <mitigation action="Approve Mitigation" description="As per TicketId7" user="User Admin1" date="2016-09-28 12&#x3a;29&#x3a;07 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Add Comment" description="TicketId7" user="User Admin1" date="2015-04-22 12&#x3a;47&#x3a;15 UTC"/>
+                     <annotation action="Add Comment" description="Target set to SH2" user="User Admin1" date="2016-06-15 09&#x3a;00&#x3a;00 UTC"/>
+                  </annotations>
+               </flaw>
+               <flaw severity="3" categoryname="Use of Externally-Controlled Input to Select Classes or Code &#x28;&#x27;Unsafe Reflection&#x27;&#x29;" count="1" issueid="38" module="SOMEAPP_skinny.war" type="java.lang.Class.forName" description="This call to java.lang.Class.forName&#x28;&#x29; uses reflection in an unsafe manner. An attacker can specify the class name to be instantiated, which may create unexpected control flow paths through the application. Depending on how reflection is being used, the attack vector may allow the attacker to bypass security checks or otherwise cause the application to behave in an unexpected manner. Even if the object does not implement the specified interface and a ClassCastException is thrown, the constructor of the untrusted class name will have already executed. The first argument to forName&#x28;&#x29; contains tainted data from the variable type. The tainted data originated from earlier calls to javax.servlet.servletrequestwrapper.getinputstream, org.apache.http.impl.client.closeablehttpclient.execute, and org.apache.http.client.httpclient.execute.&#xd;&#xa;&#xd;&#xa;Validate the class name against a combination of white and black lists to ensure that only expected behavior is produced.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;470.html&#x29; &#xd;&#xa;OWASP &#x28;http&#x3a;&#x2f;&#x2f;www.owasp.org&#x2f;index.php&#x2f;Unsafe_Reflection&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="470" remediationeffort="2" exploitLevel="1" categoryid="25" pcirelated="false" date_first_occurrence="2011-11-30 18&#x3a;36&#x3a;37 UTC" remediation_status="Mitigated" cia_impact="ppn" grace_period_expires="2012-11-30 17&#x3a;05&#x3a;09 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="ObjectTypeMarshaller.java" line="24" sourcefilepath="ACME&#x2f;cfmu&#x2f;common&#x2f;iem&#x2f;marshaller&#x2f;" scope="ACME.cfmu.common.iem.marshaller.ObjectTypeMarshaller" functionprototype="java.lang.Object unmarshallArray&#x28;BinaryUnmarshaller, UnmarshallingContext&#x29;" functionrelativelocation="11">
+                  <mitigations>
+                     <mitigation action="Mitigate by Design" description="As per TicketId7" user="User Admin1" date="2016-09-28 12&#x3a;28&#x3a;43 UTC"/>
+                     <mitigation action="Approve Mitigation" description="As per TicketId7" user="User Admin1" date="2016-09-28 12&#x3a;29&#x3a;07 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Add Comment" description="TicketId7" user="User Admin1" date="2015-04-22 12&#x3a;47&#x3a;15 UTC"/>
+                     <annotation action="Add Comment" description="Target set to SH2" user="User Admin1" date="2016-06-15 09&#x3a;00&#x3a;00 UTC"/>
+                  </annotations>
+               </flaw>
+            </staticflaws>
+         </cwe>
+      </category>
+   </severity>
+   <severity level="2">
+      <category categoryid="7" categoryname="API Abuse" pcirelated="false">
+         <desc>
+            <para text="An API is a contract between a caller and a callee. Incorrect usage of certain API functions can result in exploitable security vulnerabilities."/>
+            <para text="The most common forms of API abuse are caused by the caller failing to honor its end of this contract.  For example, if a program fails to call chdir&#x28;&#x29; after calling chroot&#x28;&#x29;, it violates the contract that specifies how to change the active root directory in a secure fashion.  Providing too few arguments to a varargs function such as printf&#x28;&#x29; also violates the API contract and will cause the missing parameters to be populated with unexpected data from the stack."/>
+            <para text="Another common mishap is when the caller makes false assumptions about the callee&#x27;s behavior.  One example of this is when a caller expects a DNS-related function to return trustworthy information that can be used for authentication purposes.  This is a bad assumption because DNS responses can be easily spoofed."/>
+         </desc>
+         <recommendations>
+            <para text="When calling API functions, be sure to fully understand and adhere to the specifications to avoid introducing security vulnerabilities.  Do not make assumptions about trustworthiness of the data returned from API calls or use the data in a context that was unintended by that API."/>
+         </recommendations>
+         <cwe cweid="245" cwename="J2EE Bad Practices&#x3a; Direct Management of Connections" pcirelated="false">
+            <description>
+               <text text="The J2EE application directly manages connections rather than using the container&#x27;s resource management facilities to obtain connections as specified in the J2EE standard.  Every major web application container provides pooled database connection management as part of its resource management framework. Duplicating this functionality in an application is difficult and error prone, which is part of the reason it is forbidden under the J2EE standard."/>
+            </description>
+            <staticflaws>
+               <flaw severity="2" categoryname="J2EE Bad Practices&#x3a; Direct Management of Connections" count="1" issueid="145" module="SOMEAPP_skinny.war" type="java.sql.DriverManager.getConnection" description="This call to getConnection&#x28;&#x29; fails to use the J2EE container&#x27;s resource management facilities as required by the J2EE standard.&#xd;&#xa;&#xd;&#xa;Request the connection from the container rather than attempting to access it directly.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;245.html&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="245" remediationeffort="2" exploitLevel="0" categoryid="7" pcirelated="false" date_first_occurrence="2012-08-03 05&#x3a;54&#x3a;07 UTC" remediation_status="Mitigated" cia_impact="nnp" grace_period_expires="" affects_policy_compliance="false" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="DB.java" line="490" sourcefilepath="ACME&#x2f;cfmu&#x2f;SECRETAPP&#x2f;store&#x2f;" scope="ACME.cfmu.SECRETAPP.store.DB" functionprototype="oracle.jdbc.OracleConnection createConnection&#x28;config.DBConfiguration, config.DBAccount, boolean, boolean, boolean&#x29;" functionrelativelocation="33">
+                  <mitigations>
+                     <mitigation action="Mitigate by Design" description="TicketId8&#x3a; We need to have full control of the JDBC connections being created because we have a fall-back algorithm to switch to a read-only DB instance in case of primary DB instance failure.&#xa;" user="User Admin3" date="2014-12-15 11&#x3a;46&#x3a;35 UTC"/>
+                     <mitigation action="Approve Mitigation" description="as per TicketId9" user="User Admin1" date="2014-12-17 08&#x3a;47&#x3a;04 UTC"/>
+                  </mitigations>
+               </flaw>
+            </staticflaws>
+         </cwe>
+      </category>
+      <category categoryid="17" categoryname="Code Quality" pcirelated="false">
+         <desc>
+            <para text="Code quality issues stem from failure to follow good coding practices and can lead to unpredictable behavior. These may include but are not limited to&#x3a;">
+               <bulletitem text="Neglecting to remove debug code or dead code"/>
+               <bulletitem text="Improper resource management, such as using a pointer after it has been freed"/>
+               <bulletitem text="Using the incorrect operator to compare objects"/>
+               <bulletitem text="Failing to follow an API or framework specification"/>
+               <bulletitem text="Using a language feature or API in an unintended manner"/>
+            </para>
+            <para text="While code quality flaws are generally less severe than other categories and usually are not directly exploitable, they may serve as indicators that developers are not following practices that increase the reliability and security of an application.  For an attacker, code quality issues may provide an opportunity to stress the application in unexpected ways."/>
+         </desc>
+         <recommendations>
+            <para text="The wide variance of code quality issues makes it impractical to generalize how these issues should be addressed.  Refer to individual categories for specific recommendations. "/>
+         </recommendations>
+         <cwe cweid="404" cwename="Improper Resource Shutdown or Release" pcirelated="false" certc="743" certcpp="876" certjava="857">
+            <description>
+               <text text="The application fails to release &#x28;or incorrectly releases&#x29; a system resource before it is made available for re-use.  This condition often occurs with resources such as database connections or file handles.  Most unreleased resource issues result in general software reliability problems, but if an attacker can intentionally trigger a resource leak, it may be possible to launch a denial of service attack by depleting the resource pool."/>
+            </description>
+            <staticflaws>
+               <flaw severity="2" categoryname="Improper Resource Shutdown or Release" count="1" issueid="394" module="SOMEAPP_skinny.war" type="java.io.BufferedReader.&#x21;operator_javanewinit" description="There are total of 4 instances. The program fails to release or incorrectly releases some variables, e.g. the variable reader, which was previously allocated by a call to java.io.BufferedReader.&#x21;operator_javanewinit&#x28;&#x29;.&#xd;&#xa;&#xd;&#xa;Ensure that all code paths properly release this resource.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;404.html&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="404" remediationeffort="2" exploitLevel="0" categoryid="17" pcirelated="false" date_first_occurrence="2013-05-05 03&#x3a;00&#x3a;09 UTC" remediation_status="Mitigated" cia_impact="nnc" grace_period_expires="2043-06-03 16&#x3a;26&#x3a;04 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="CSVLexer.java" line="40" sourcefilepath="ACME&#x2f;cfmu&#x2f;css&#x2f;iem&#x2f;parser&#x2f;csv&#x2f;" scope="ACME.cfmu.css.iem.parser.csv.CSVLexer" functionprototype="void configure&#x28;java.io.Reader&#x29;" functionrelativelocation="77">
+                  <mitigations>
+                     <mitigation action="Mitigate by Design" description="Fixed in TicketId10." user="User Admin3" date="2015-07-27 04&#x3a;54&#x3a;47 UTC"/>
+                     <mitigation action="Approve Mitigation" description="Mitigate as per TicketId11" user="User Admin1" date="2015-08-20 09&#x3a;40&#x3a;07 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Add Comment" description="I was unable to find the file of 9 July 2013." user="User Admin4" date="2013-07-10 18&#x3a;46&#x3a;18 UTC"/>
+                     <annotation action="Add Comment" description="The file does not exist in code repository in Clearcase." user="User Admin3" date="2014-11-27 14&#x3a;11&#x3a;36 UTC"/>
+                  </annotations>
+               </flaw>
+            </staticflaws>
+         </cwe>
+      </category>
+      <category categoryid="12" categoryname="Cryptographic Issues" pcirelated="false">
+         <desc>
+            <para text="Applications commonly use cryptography to implement authentication mechanisms and to ensure the confidentiality and integrity of sensitive data, both in transit and at rest.  The proper and accurate implementation of cryptography is extremely critical to its efficacy.  Configuration or coding mistakes as well as incorrect assumptions may negate a large degree of the protection it affords, leaving the crypto implementation vulnerable to attack."/>
+            <para text="Common cryptographic mistakes include, but are not limited to, selecting weak keys or weak cipher modes, unintentionally exposing sensitive cryptographic data, using predictable entropy sources, and mismanaging or hard-coding keys.  "/>
+            <para text="Developers often make the dangerous assumption that they can improve security by designing their own cryptographic algorithm&#x3b; however, one of the basic tenets of cryptography is that any cipher whose effectiveness is reliant on the secrecy of the algorithm is fundamentally flawed.  "/>
+         </desc>
+         <recommendations>
+            <para text="Select the appropriate type of cryptography for the intended purpose.  Avoid proprietary encryption algorithms as they typically rely on &#x22;security through obscurity&#x22; rather than sound mathematics.  Select key sizes appropriate for the data being protected&#x3b; for high assurance applications, 256-bit symmetric keys and 2048-bit asymmetric keys are sufficient.  Follow best practices for key storage, and ensure that plaintext data and key material are not inadvertently exposed."/>
+         </recommendations>
+         <cwe cweid="614" cwename="Sensitive Cookie in HTTPS Session Without &#x27;Secure&#x27; Attribute" pcirelated="true" owasp="1029" sans="311">
+            <description>
+               <text text="Setting the Secure attribute on an HTTP cookie instructs the web browser to send it only over a secure channel, such as a TLS connection.  Issuing a cookie without the Secure attribute allows the browser to transmit it over unencrypted connections, which are susceptible to eavesdropping.  It is particularly important to set the Secure attribute on any cookies containing sensitive data, such as authentication information &#x28;e.g. &#x22;remember me&#x22; style functionality&#x29;."/>
+            </description>
+            <dynamicflaws>
+               <flaw severity="2" categoryname="Sensitive Cookie in HTTPS Session Without &#x27;Secure&#x27; Attribute" count="1" issueid="718" module="dynamic_analysis" type="Sensitive Cookie in HTTPS Session Without &#x27;Secure&#x27; Attribute" description="The PD_STATEFUL_26a43d5e-cc18-11e5-8c4b-005056863b36 cookie is sent over a secure connection but does not have the &#x22;secure&#x22; attribute set. The &#x22;secure&#x22; attribute tells the browser to only transmit cookies over connections secured with SSL. This protects the values from being inadvertently sent over unencrypted HTTP connections.&#xd;&#xa;&#xd;&#xa;Applications which utilize SSL should ensure all security-related cookies have the &#x22;secure&#x22; attribute set when issuing cookies to users.&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;cgi-bin&#x2f;jumpmenu.cgi&#x3f;id&#x3d;614&#x29; &#xd;&#xa;WASC &#x28;http&#x3a;&#x2f;&#x2f;webappsec.pbworks.com&#x2f;Insufficient-Transport-Layer-Protection&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="614" remediationeffort="1" categoryid="12" pcirelated="true" date_first_occurrence="2017-09-26 23&#x3a;18&#x3a;42 UTC" remediation_status="Mitigated" cia_impact="pnn" grace_period_expires="2045-02-26 18&#x3a;33&#x3a;32 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" url="https&#x3a;&#x2f;&#x2f;www.supersecret.ACME.ORG&#x2f;PUBSOMEAPP&#x2f;gateway&#x2f;spec&#x2f;index.html">
+                  <mitigations>
+                     <mitigation action="Mitigate by Network Environment" description="See TicketId12" user="User Admin1" date="2018-01-18 14&#x3a;35&#x3a;25 UTC"/>
+                     <mitigation action="Approve Mitigation" description="As per TicketId12" user="User Admin1" date="2018-01-22 13&#x3a;13&#x3a;14 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Add Comment" description="See TicketId12" user="User Admin1" date="2017-11-20 14&#x3a;02&#x3a;24 UTC"/>
+                  </annotations>
+               </flaw>
+               <flaw severity="2" categoryname="Sensitive Cookie in HTTPS Session Without &#x27;Secure&#x27; Attribute" count="1" issueid="720" module="dynamic_analysis" type="Sensitive Cookie in HTTPS Session Without &#x27;Secure&#x27; Attribute" description="The JSESSIONID cookie is sent over a secure connection but does not have the &#x22;secure&#x22; attribute set. The &#x22;secure&#x22; attribute tells the browser to only transmit cookies over connections secured with SSL. This protects the values from being inadvertently sent over unencrypted HTTP connections.&#xd;&#xa;&#xd;&#xa;Applications which utilize SSL should ensure all security-related cookies have the &#x22;secure&#x22; attribute set when issuing cookies to users.&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;cgi-bin&#x2f;jumpmenu.cgi&#x3f;id&#x3d;614&#x29; &#xd;&#xa;WASC &#x28;http&#x3a;&#x2f;&#x2f;webappsec.pbworks.com&#x2f;Insufficient-Transport-Layer-Protection&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="614" remediationeffort="1" categoryid="12" pcirelated="true" date_first_occurrence="2017-09-26 23&#x3a;18&#x3a;42 UTC" remediation_status="Mitigated" cia_impact="pnn" grace_period_expires="2045-02-26 18&#x3a;33&#x3a;32 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" url="https&#x3a;&#x2f;&#x2f;www.supersecret.ACME.ORG&#x2f;PUBSOMEAPP&#x2f;gateway&#x2f;spec&#x2f;index.html">
+                  <mitigations>
+                     <mitigation action="Mitigate by Network Environment" description="See TicketId12" user="User Admin1" date="2018-01-18 14&#x3a;35&#x3a;41 UTC"/>
+                     <mitigation action="Approve Mitigation" description="As per TicketId12" user="User Admin1" date="2018-01-22 13&#x3a;12&#x3a;54 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Add Comment" description="See TicketId12" user="User Admin1" date="2017-11-20 14&#x3a;02&#x3a;24 UTC"/>
+                  </annotations>
+               </flaw>
+            </dynamicflaws>
+         </cwe>
+      </category>
+      <category categoryid="8" categoryname="Information Leakage" pcirelated="false">
+         <desc>
+            <para text="An information leak is the intentional or unintentional disclosure of information that is either regarded as sensitive within the product&#x27;s own functionality or provides information about the product or its environment that could be useful in an attack.  Information leakage issues are commonly overlooked because they cannot be used to directly exploit the application.  However, information leaks should be viewed as building blocks that an attacker uses to carry out other, more complicated attacks."/>
+            <para text="There are many different types of problems that involve information leaks, with severities that can range widely depending on the type of information leaked and the context of the information with respect to the application.  Common sources of information leakage include, but are not limited to&#x3a;">
+               <bulletitem text="Source code disclosure"/>
+               <bulletitem text="Browsable directories"/>
+               <bulletitem text="Log files or backup files in web-accessible directories"/>
+               <bulletitem text="Unfiltered backend error messages"/>
+               <bulletitem text="Exception stack traces"/>
+               <bulletitem text="Server version information"/>
+               <bulletitem text="Transmission of uninitialized memory containing sensitive data"/>
+            </para>
+         </desc>
+         <recommendations>
+            <para text="Configure applications and servers to return generic error messages and to suppress stack traces from being displayed to end users.  Ensure that errors generated by the application do not provide insight into specific backend issues.  "/>
+            <para text="Remove all backup files, binary archives, alternate versions of files, and test files from web-accessible directories of production servers.  The only files that should be present in the application&#x27;s web document root are files required by the application.  Ensure that deployment procedures include the removal of these file types by an administrator.  Keep web and application servers fully patched to minimize exposure to publicly-disclosed information leakage vulnerabilities."/>
+         </recommendations>
+         <cwe cweid="201" cwename="Information Exposure Through Sent Data" pcirelated="false">
+            <description>
+               <text text="Sensitive information may be exposed as a result of outbound network connections made by the application."/>
+            </description>
+            <staticflaws>
+               <flaw severity="2" categoryname="Information Exposure Through Sent Data" count="1" issueid="715" module="SOMEAPP_skinny.war" type="java.io.DataOutput.write" description="The application calls the java.io.DataOutput.write&#x28;&#x29; function, which will result in data being transferred out of the application &#x28;via the network or another medium&#x29;. This data contains sensitive information. The first argument to write&#x28;&#x29; contains potentially sensitive data from the variable bytes. The potentially sensitive data originated from earlier calls to javax.servlet.ServletRequestWrapper.getInputStream, org.apache.http.impl.client.CloseableHttpClient.execute, org.apache.http.client.HttpClient.execute, javax.servlet.http.HttpServletRequestWrapper.getMethod, and java.lang.System.getProperty.&#xd;&#xa;&#xd;&#xa;Ensure that the transfer of the sensitive data is intended and that it does not violate application security policy. This flaw is categorized as low severity because it only impacts confidentiality, not integrity or availability. However, in the context of a mobile application, the significance of an information leak may be much greater, especially if misaligned with user expectations or data privacy policies.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;201.html&#x29; &#xd;&#xa;WASC &#x28;http&#x3a;&#x2f;&#x2f;webappsec.pbworks.com&#x2f;Information-Leakage&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="201" remediationeffort="2" exploitLevel="-1" categoryid="8" pcirelated="false" date_first_occurrence="2017-07-30 05&#x3a;14&#x3a;25 UTC" remediation_status="Mitigated" cia_impact="pnn" grace_period_expires="" affects_policy_compliance="false" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="BinaryMarshaller.java" line="20" sourcefilepath="ACME&#x2f;cfmu&#x2f;common&#x2f;iem&#x2f;marshaller&#x2f;" scope="ACME.cfmu.common.iem.marshaller.BinaryMarshaller" functionprototype="void write&#x28;byte  &#x5b;&#x5d;&#x29;" functionrelativelocation="20">
+                  <mitigations>
+                     <mitigation action="Mitigate by Design" description="As per the Resolution Diary of TicketId6, information is exposed only for logging purposes and authorized users." user="User Admin5" date="2017-09-13 14&#x3a;56&#x3a;56 UTC"/>
+                     <mitigation action="Approve Mitigation" description="As per TicketId6" user="User Admin2" date="2017-09-15 13&#x3a;47&#x3a;58 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Add Comment" description="See TicketId6" user="User Admin2" date="2017-09-08 09&#x3a;56&#x3a;24 UTC"/>
+                     <annotation action="Add Comment" description="&#x5b;Added by Veracode Integration for JIRA for JIRA&#x5d; JIRA Issue ACME-1289 has been opened for this flaw." user="ACME JIRA API" date="2017-09-14 09&#x3a;58&#x3a;16 UTC"/>
+                  </annotations>
+               </flaw>
+               <flaw severity="2" categoryname="Information Exposure Through Sent Data" count="1" issueid="716" module="SOMEAPP_skinny.war" type="java.io.DataOutput.write" description="The application calls the java.io.DataOutput.write&#x28;&#x29; function, which will result in data being transferred out of the application &#x28;via the network or another medium&#x29;. This data contains sensitive information. The first argument to write&#x28;&#x29; contains potentially sensitive data from the variable value. The potentially sensitive data originated from earlier calls to javax.servlet.ServletRequestWrapper.getInputStream, org.apache.http.impl.client.CloseableHttpClient.execute, org.apache.http.client.HttpClient.execute, javax.servlet.http.HttpServletRequestWrapper.getRequestURI, java.lang.System.getProperty, and java.lang.Throwable.getMessage.&#xd;&#xa;&#xd;&#xa;Ensure that the transfer of the sensitive data is intended and that it does not violate application security policy. This flaw is categorized as low severity because it only impacts confidentiality, not integrity or availability. However, in the context of a mobile application, the significance of an information leak may be much greater, especially if misaligned with user expectations or data privacy policies.&#xd;&#xa;&#xd;&#xa;References&#x3a; &#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;data&#x2f;definitions&#x2f;201.html&#x29; &#xd;&#xa;WASC &#x28;http&#x3a;&#x2f;&#x2f;webappsec.pbworks.com&#x2f;Information-Leakage&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="201" remediationeffort="2" exploitLevel="-1" categoryid="8" pcirelated="false" date_first_occurrence="2017-07-30 05&#x3a;14&#x3a;25 UTC" remediation_status="Mitigated" cia_impact="pnn" grace_period_expires="" affects_policy_compliance="false" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" sourcefile="BinaryMarshaller.java" line="102" sourcefilepath="ACME&#x2f;cfmu&#x2f;common&#x2f;iem&#x2f;marshaller&#x2f;" scope="ACME.cfmu.common.iem.marshaller.BinaryMarshaller" functionprototype="void writeStringBytes&#x28;byte  &#x5b;&#x5d;&#x29;" functionrelativelocation="45">
+                  <mitigations>
+                     <mitigation action="Mitigate by Design" description="As per the Resolution Diary of TicketId6, information is exposed only for logging purposes and authorized users." user="User Admin5" date="2017-09-13 14&#x3a;57&#x3a;02 UTC"/>
+                     <mitigation action="Approve Mitigation" description="As per TicketId6" user="User Admin2" date="2017-09-15 13&#x3a;47&#x3a;58 UTC"/>
+                  </mitigations>
+                  <annotations>
+                     <annotation action="Add Comment" description="See TicketId6" user="User Admin2" date="2017-09-08 09&#x3a;56&#x3a;24 UTC"/>
+                     <annotation action="Add Comment" description="&#x5b;Added by Veracode Integration for JIRA for JIRA&#x5d; JIRA Issue ACME-1290 has been opened for this flaw." user="ACME JIRA API" date="2017-09-14 09&#x3a;58&#x3a;17 UTC"/>
+                  </annotations>
+               </flaw>
+            </staticflaws>
+         </cwe>
+      </category>
+   </severity>
+   <severity level="1"/>
+   <severity level="0">
+      <category categoryid="27" categoryname="Server Configuration" pcirelated="false">
+         <desc>
+            <para text="The application&#x27;s supporting infrastructure, including web servers and application servers, can impact the security of the deployed application.  Failing to lock down a server, for example, can result in information leaks via error pages, stack traces, or unnecessary files left in a web-accessible directory.  Even though these servers are not part of the application codebase, they create insecurities in the environment which contribute to overall risk."/>
+         </desc>
+         <recommendations>
+            <para text="Remove all extraneous files, including demonstration applications and sample code, from production systems. Configure production servers with the minimum set of services required for the application to function, and ensure that information leaks do not occur via server-generated error pages."/>
+            <para text="Audit any third party dependencies or services that are deployed by default to ensure that they do not compromise the security of the application being supported."/>
+         </recommendations>
+         <cwe cweid="16" cwename="Configuration" pcirelated="true" owasp="1032">
+            <description>
+               <text text="Weaknesses in this category are typically introduced during the configuration of the web server."/>
+            </description>
+            <dynamicflaws>
+               <flaw severity="0" categoryname="Configuration" count="1" issueid="725" module="dynamic_analysis" type="Configuration" description="The site www.supersecret.ACME.ORG&#x3a;443 does not properly utilize the X-Content-Type-Options header. This header can be set to protect against MIME type confusion attacks in Internet Explorer versions 9 and higher, Chrome and Safari. Content sniffing is a method browsers use to attempt to determine the real content type of a response by looking at the content itself, instead of the response header&#x27;s content-type value. By returning X-Content-Type-Options&#x3a; nosniff, certain elements will only load external resources if their content-type matches what is expected. It should be noted this check was only executed against the first few pages of this site.&#xd;&#xa;&#xd;&#xa;Set the X-Content-Type-Options header to a value of &#x22;nosniff&#x22; &#x28;without quotes&#x29;. It is recommended this header be set side wide by configuring your web or application server to return this value for all resources. More information on configuring this header can be found at https&#x3a;&#x2f;&#x2f;www.veracode.com&#x2f;blog&#x2f;2014&#x2f;03&#x2f;guidelines-for-setting-security-headers&#x23;xcto&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;cgi-bin&#x2f;jumpmenu.cgi&#x3f;id&#x3d;16&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="16" remediationeffort="2" categoryid="27" pcirelated="true" date_first_occurrence="2017-09-26 23&#x3a;18&#x3a;42 UTC" remediation_status="Mitigated" cia_impact="zzz" grace_period_expires="2045-02-26 18&#x3a;33&#x3a;32 UTC" affects_policy_compliance="true" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" url="https&#x3a;&#x2f;&#x2f;www.supersecret.ACME.ORG&#x2f;PUBSOMEAPP&#x2f;gateway&#x2f;spec&#x2f;index.html">
+                  <mitigations>
+                     <mitigation action="Mitigate by Design" description="As discussed with Admin1" user="User Admin2" date="2018-07-05 12&#x3a;40&#x3a;02 UTC"/>
+                     <mitigation action="Approve Mitigation" description="As discussed with Admin1" user="User Admin2" date="2018-07-05 12&#x3a;40&#x3a;36 UTC"/>
+                  </mitigations>
+               </flaw>
+               <flaw severity="0" categoryname="Configuration" count="1" issueid="726" module="dynamic_analysis" type="Configuration" description="The site www.supersecret.ACME.ORG&#x3a;443 was found using an invalid value for the Strict-Transport-Security header. The current value of is not properly formed. The Strict Transport Security &#x28;STS&#x29; header is for configuring user-agents to only communicate to the server over a secure transport. It is primarily used to protect against man-in-the-middle attacks by forcing all further communications to occur over TLS.&#xd;&#xa;&#xd;&#xa;Fix the incorrect setting and validate the max-age value is set at a minimum of greater than a week. The recommended value is one year, or a max-age value of 31536000 seconds. For more information on the Strict-Transport-Security header please see https&#x3a;&#x2f;&#x2f;www.veracode.com&#x2f;blog&#x2f;2014&#x2f;03&#x2f;guidelines-for-setting-security-headers&#x23;sts.&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;CWE &#x28;http&#x3a;&#x2f;&#x2f;cwe.mitre.org&#x2f;cgi-bin&#x2f;jumpmenu.cgi&#x3f;id&#x3d;16&#x29;&#xd;&#xa;&#xd;&#xa;" note="" cweid="16" remediationeffort="2" categoryid="27" pcirelated="true" date_first_occurrence="2018-02-23 09&#x3a;10&#x3a;37 UTC" remediation_status="Fixed" cia_impact="zzz" grace_period_expires="" affects_policy_compliance="false" mitigation_status="accepted" mitigation_status_desc="Mitigation Accepted" url="https&#x3a;&#x2f;&#x2f;www.supersecret.ACME.ORG&#x2f;PUBSOMEAPP&#x2f;gateway&#x2f;spec&#x2f;index.html">
+                  <mitigations>
+                     <mitigation action="Mitigate by Design" description="As discussed with Admin1" user="User Admin2" date="2018-07-05 12&#x3a;40&#x3a;11 UTC"/>
+                     <mitigation action="Approve Mitigation" description="As discussed with Admin1" user="User Admin2" date="2018-07-05 12&#x3a;40&#x3a;36 UTC"/>
+                  </mitigations>
+               </flaw>
+            </dynamicflaws>
+         </cwe>
+      </category>
+   </severity>
+   <flaw-status new="0" reopen="0" open="0" cannot-reproduce="1" fixed="2" total="16" not_mitigated="0" sev-1-change="0" sev-2-change="0" sev-3-change="0" sev-4-change="0" sev-5-change="0"/>
+   <customfields>
+      <customfield name="Custom 1" value=""/>
+      <customfield name="Custom 2" value=""/>
+      <customfield name="Custom 3" value=""/>
+      <customfield name="Custom 4" value=""/>
+      <customfield name="Custom 5" value=""/>
+      <customfield name="Custom 6" value=""/>
+      <customfield name="Custom 7" value=""/>
+      <customfield name="Custom 8" value=""/>
+      <customfield name="Custom 9" value=""/>
+      <customfield name="Custom 10" value=""/>
+   </customfields>
+</detailedreport>
