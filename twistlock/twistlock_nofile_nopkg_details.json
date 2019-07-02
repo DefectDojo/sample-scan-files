@@ -1,0 +1,957 @@
+{
+	"results": [
+		{
+			"id": "sha256:f4c0503d26c8da0a04e6190c9d4f2a30f38958852b9fb80bcd2b819a7571e7f7",
+			"distro": "Debian GNU/Linux 9 (stretch)",
+			"compliances": [
+				{
+					"title": "Sensitive information provided in environment variables",
+					"severity": "high",
+					"cause": "The environment variables DD_CELERY_BROKER_PASSWORD,DD_DATABASE_PASSWORD,DD_SECRET_KEY contain sensitive data"
+				}
+			],
+			"complianceDistribution": {
+				"critical": 0,
+				"high": 1,
+				"medium": 0,
+				"low": 0,
+				"total": 1
+			},
+			"vulnerabilities": [
+				{
+					"id": "CVE-2013-7459",
+					"cvss": 9.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"description": "Heap-based buffer overflow in the ALGnew function in block_templace.c in Python Cryptography Toolkit (aka pycrypto) allows remote attackers to execute arbitrary code as demonstrated by a crafted iv parameter to cryptmsg.py.",
+					"severity": "critical",
+					"packageName": "pycrypto",
+					"packageVersion": "2.6.1",
+					"link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7459",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Critical severity": {},
+						"Remote execution": {}
+					}
+				},
+				{
+					"id": "CVE-2018-15686",
+					"status": "fixed in 232-25+deb9u10",
+					"cvss": 9.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"description": "A vulnerability in unit_deserialize of systemd allows an attacker to supply arbitrary state across systemd re-execution via NotifyAccess. This can be used to improperly influence systemd execution and possibly lead to root privilege escalation. Affected releases are systemd versions up to and including 239.",
+					"severity": "high",
+					"packageName": "systemd (used in libsystemd0, libudev1)",
+					"packageVersion": "232-25+deb9u9",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-15686",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Exploit exists": {},
+						"Has fix": {},
+						"High severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-6551",
+					"status": "open",
+					"cvss": 9.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"description": "The malloc implementation in the GNU C Library (aka glibc or libc6), from version 2.24 to 2.26 on powerpc, and only in version 2.26 on i386, did not properly handle malloc calls with arguments close to SIZE_MAX and could return a pointer to a heap region that is smaller than requested, eventually leading to heap corruption.",
+					"severity": "high",
+					"packageName": "glibc (used in multiarch-support, libc6, libc-bin)",
+					"packageVersion": "2.24-11+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-6551",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"High severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2017-16012",
+					"status": "fixed in \u003e=3.0.0",
+					"cvss": 7,
+					"description": "Affected versions of `jquery` interpret `text/javascript` responses from cross-origin ajax requests, and automatically execute the contents in `jQuery.globalEval`, even when the ajax request doesn\\'t contain the `dataType` option.",
+					"severity": "high",
+					"packageName": "jquery",
+					"packageVersion": "2.2.3",
+					"link": "https://www.npmjs.com/advisories/328",
+					"riskFactors": {
+						"Has fix": {},
+						"High severity": {}
+					}
+				},
+				{
+					"id": "CVE-2019-9169",
+					"status": "open",
+					"cvss": 9.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"description": "In the GNU C Library (aka glibc or libc6) through 2.29, proceed_next_node in posix/regexec.c has a heap-based buffer over-read via an attempted case-insensitive regular-expression match.",
+					"severity": "high",
+					"packageName": "glibc (used in multiarch-support, libc6, libc-bin)",
+					"packageVersion": "2.24-11+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2019-9169",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"High severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2017-12424",
+					"status": "open",
+					"cvss": 9.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"description": "In shadow before 4.5, the newusers tool could be made to manipulate internal data structures in ways unintended by the authors. Malformed input may lead to crashes (with a buffer overflow or other memory corruption) or other unspecified behaviors. This crosses a privilege boundary in, for example, certain web-hosting environments in which a Control Panel allows an unprivileged user account to create subaccounts.",
+					"severity": "high",
+					"packageName": "shadow (used in login, passwd)",
+					"packageVersion": "1:4.4-4.1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2017-12424",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"High severity": {}
+					}
+				},
+				{
+					"id": "CVE-2018-1000001",
+					"status": "open",
+					"cvss": 7.8,
+					"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+					"description": "In glibc 2.26 and earlier there is confusion in the usage of getcwd() by realpath() which can be used to write before the destination buffer leading to a buffer underflow and potential code execution.",
+					"severity": "high",
+					"packageName": "glibc (used in multiarch-support, libc6, libc-bin)",
+					"packageVersion": "2.24-11+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-1000001",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Exploit exists": {},
+						"High severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-6485",
+					"status": "open",
+					"cvss": 9.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"description": "An integer overflow in the implementation of the posix_memalign in memalign functions in the GNU C Library (aka glibc or libc6) 2.26 and earlier could cause these functions to return a pointer to a heap area that is too small, potentially leading to heap corruption.",
+					"severity": "high",
+					"packageName": "glibc (used in multiarch-support, libc6, libc-bin)",
+					"packageVersion": "2.24-11+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-6485",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"High severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2016-2779",
+					"status": "open",
+					"cvss": 7.8,
+					"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+					"description": "runuser in util-linux allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal\\'s input buffer.",
+					"severity": "high",
+					"packageName": "util-linux (used in libfdisk1, bsdutils, libsmartcols1, libblkid1, mount, libuuid1, libmount1, util-linux)",
+					"packageVersion": "2.29.2-1+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2016-2779",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"High severity": {}
+					}
+				},
+				{
+					"id": "CVE-2018-5729",
+					"status": "open",
+					"cvss": 4.7,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L",
+					"description": "MIT krb5 1.6 or later allows an authenticated kadmin with permission to add principals to an LDAP Kerberos database to cause a denial of service (NULL pointer dereference) or bypass a DN container check by supplying tagged data that is internal to the database module.",
+					"severity": "medium",
+					"packageName": "krb5 (used in libkrb5-3, libgssapi-krb5-2, libk5crypto3, libkrb5support0)",
+					"packageVersion": "1.15-1+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-5729",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2017-18258",
+					"status": "open",
+					"cvss": 6.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+					"description": "The xz_head function in xzlib.c in libxml2 before 2.9.6 allows remote attackers to cause a denial of service (memory consumption) via a crafted LZMA file, because the decoder functionality does not restrict memory usage to what is required for a legitimate file.",
+					"severity": "medium",
+					"packageName": "libxml2",
+					"packageVersion": "2.9.4+dfsg1-2.2+deb9u2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2017-18258",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {}
+					}
+				},
+				{
+					"id": "CVE-2017-8872",
+					"status": "open",
+					"cvss": 9.1,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+					"description": "The htmlParseTryOrFinish function in HTMLparser.c in libxml2 2.9.4 allows attackers to cause a denial of service (buffer over-read) or information disclosure.",
+					"severity": "medium",
+					"packageName": "libxml2",
+					"packageVersion": "2.9.4+dfsg1-2.2+deb9u2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2017-8872",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {}
+					}
+				},
+				{
+					"id": "CVE-2016-9112",
+					"status": "open",
+					"cvss": 7.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "Floating Point Exception (aka FPE or divide by zero) in opj_pi_next_cprl function in openjp2/pi.c:523 in OpenJPEG 2.1.2.",
+					"severity": "medium",
+					"packageName": "openjpeg2 (used in libopenjp2-7)",
+					"packageVersion": "2.1.2-1.1+deb9u3",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2016-9112",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Medium severity": {}
+					}
+				},
+				{
+					"id": "CVE-2018-1049",
+					"status": "fixed in 232-25+deb9u10",
+					"cvss": 5.9,
+					"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "In systemd prior to 234 a race condition exists between .mount and .automount units such that automount requests from kernel may not be serviced by systemd resulting in kernel holding the mountpoint and any processes that try to use said mount will hang. A race condition like this may lead to denial of service, until mount points are unmounted.",
+					"severity": "medium",
+					"packageName": "systemd (used in libsystemd0, libudev1)",
+					"packageVersion": "232-25+deb9u9",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-1049",
+					"riskFactors": {
+						"Attack vector: network": {},
+						"DoS": {},
+						"Has fix": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2017-5130",
+					"status": "open",
+					"cvss": 8.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"description": "An integer overflow in xmlmemory.c in libxml2 before 2.9.5, as used in Google Chrome prior to 62.0.3202.62 and other products, allowed a remote attacker to potentially exploit heap corruption via a crafted XML file.",
+					"severity": "medium",
+					"packageName": "libxml2",
+					"packageVersion": "2.9.4+dfsg1-2.2+deb9u2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2017-5130",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Medium severity": {}
+					}
+				},
+				{
+					"id": "CVE-2018-19210",
+					"status": "open",
+					"cvss": 6.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+					"description": "In LibTIFF 4.0.9, there is a NULL pointer dereference in the TIFFWriteDirectorySec function in tif_dirwrite.c that will lead to a denial of service attack, as demonstrated by tiffset.",
+					"severity": "medium",
+					"packageName": "tiff (used in libtiff5)",
+					"packageVersion": "4.0.8-2+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-19210",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-14498",
+					"status": "open",
+					"cvss": 6.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+					"description": "get_8bit_row in rdbmp.c in libjpeg-turbo through 1.5.90 and MozJPEG through 3.3.1 allows attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted 8-bit BMP in which one or more of the color indices is out of range for the number of palette entries.",
+					"severity": "medium",
+					"packageName": "libjpeg-turbo (used in libjpeg62-turbo)",
+					"packageVersion": "1:1.5.1-2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-14498",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-17000",
+					"status": "open",
+					"cvss": 6.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+					"description": "A NULL pointer dereference in the function _TIFFmemcmp at tif_unix.c (called from TIFFWriteDirectoryTagTransferfunction) in LibTIFF 4.0.9 allows an attacker to cause a denial-of-service through a crafted tiff file. This vulnerability can be triggered by the executable tiffcp.",
+					"severity": "medium",
+					"packageName": "tiff (used in libtiff5)",
+					"packageVersion": "4.0.8-2+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-17000",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-20506",
+					"status": "open",
+					"cvss": 8.1,
+					"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"description": "SQLite before 3.25.3, when the FTS3 extension is enabled, encounters an integer overflow (and resultant buffer overflow) for FTS3 queries in a \\\"merge\\\" operation that occurs after crafted changes to FTS3 shadow tables, allowing remote attackers to execute arbitrary code by leveraging the ability to run arbitrary SQL statements (such as in certain WebSQL use cases). This is a different vulnerability than CVE-2018-20346.",
+					"severity": "medium",
+					"packageName": "sqlite3 (used in libsqlite3-0)",
+					"packageVersion": "3.16.2-5+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-20506",
+					"riskFactors": {
+						"Attack vector: network": {},
+						"Medium severity": {},
+						"Recent vulnerability": {},
+						"Remote execution": {}
+					}
+				},
+				{
+					"id": "CVE-2019-7663",
+					"status": "open",
+					"cvss": 6.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+					"description": "An Invalid Address dereference was discovered in TIFFWriteDirectoryTagTransferfunction in libtiff/tif_dirwrite.c in LibTIFF 4.0.10, affecting the cpSeparateBufToContigBuf function in tiffcp.c. Remote attackers could leverage this vulnerability to cause a denial-of-service via a crafted tiff file. This is different from CVE-2018-12900.",
+					"severity": "medium",
+					"packageName": "tiff (used in libtiff5)",
+					"packageVersion": "4.0.8-2+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2019-7663",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-20505",
+					"status": "open",
+					"cvss": 7.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "SQLite 3.25.2, when queries are run on a table with a malformed PRIMARY KEY, allows remote attackers to cause a denial of service (application crash) by leveraging the ability to run arbitrary SQL statements (such as in certain WebSQL use cases).",
+					"severity": "medium",
+					"packageName": "sqlite3 (used in libsqlite3-0)",
+					"packageVersion": "3.16.2-5+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-20505",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-14567",
+					"status": "open",
+					"cvss": 6.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+					"description": "libxml2 2.9.8, if --with-lzma is used, allows remote attackers to cause a denial of service (infinite loop) via a crafted XML file that triggers LZMA_MEMLIMIT_ERROR, as demonstrated by xmllint, a different vulnerability than CVE-2015-8035 and CVE-2018-9251.",
+					"severity": "medium",
+					"packageName": "libxml2",
+					"packageVersion": "2.9.4+dfsg1-2.2+deb9u2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-14567",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-8740",
+					"status": "open",
+					"cvss": 7.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "In SQLite through 3.22.0, databases whose schema is corrupted using a CREATE TABLE AS statement could cause a NULL pointer dereference, related to build.c and prepare.c.",
+					"severity": "medium",
+					"packageName": "sqlite3 (used in libsqlite3-0)",
+					"packageVersion": "3.16.2-5+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-8740",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-20346",
+					"status": "open",
+					"cvss": 8.1,
+					"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"description": "SQLite before 3.25.3, when the FTS3 extension is enabled, encounters an integer overflow (and resultant buffer overflow) for FTS3 queries that occur after crafted changes to FTS3 shadow tables, allowing remote attackers to execute arbitrary code by leveraging the ability to run arbitrary SQL statements (such as in certain WebSQL use cases), aka Magellan.",
+					"severity": "medium",
+					"packageName": "sqlite3 (used in libsqlite3-0)",
+					"packageVersion": "3.16.2-5+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-20346",
+					"riskFactors": {
+						"Attack vector: network": {},
+						"Medium severity": {},
+						"Recent vulnerability": {},
+						"Remote execution": {}
+					}
+				},
+				{
+					"id": "CVE-2018-1000858",
+					"status": "open",
+					"cvss": 8.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"description": "GnuPG version 2.1.12 - 2.2.11 contains a Cross ite Request Forgery (CSRF) vulnerability in dirmngr that can result in Attacker controlled CSRF, Information Disclosure, DoS. This attack appear to be exploitable via Victim must perform a WKD request, e.g. enter an email address in the composer window of Thunderbird/Enigmail. This vulnerability appears to have been fixed in after commit 4a4bb874f63741026bd26264c43bb32b1099f060.",
+					"severity": "medium",
+					"packageName": "gnupg2 (used in gpgv)",
+					"packageVersion": "2.1.18-8~deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-1000858",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-14404",
+					"status": "open",
+					"cvss": 7.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "A NULL pointer dereference vulnerability exists in the xpath.c:xmlXPathCompOpEval() function of libxml2 through 2.9.8 when parsing an invalid XPath expression in the XPATH_OP_AND or XPATH_OP_OR case. Applications processing untrusted XSL format inputs with the use of the libxml2 library may be vulnerable to a denial of service attack due to a crash of the application.",
+					"severity": "medium",
+					"packageName": "libxml2",
+					"packageVersion": "2.9.4+dfsg1-2.2+deb9u2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-14404",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2016-10739",
+					"status": "open",
+					"cvss": 5.3,
+					"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+					"description": "In the GNU C Library (aka glibc or libc6) through 2.28, the getaddrinfo function would successfully parse a string that contained an IPv4 address followed by whitespace and arbitrary characters, which could lead applications to incorrectly assume that it had parsed a valid string, without the possibility of embedded HTTP headers or other potentially dangerous substrings.",
+					"severity": "medium",
+					"packageName": "glibc (used in multiarch-support, libc6, libc-bin)",
+					"packageVersion": "2.24-11+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2016-10739",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Medium severity": {}
+					}
+				},
+				{
+					"id": "CVE-2018-5710",
+					"status": "open",
+					"cvss": 6.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"description": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. The pre-defined function \\\"strlen\\\" is getting a \\\"NULL\\\" string as a parameter value in plugins/kdb/ldap/libkdb_ldap/ldap_principal2.c in the Key Distribution Center (KDC), which allows remote authenticated users to cause a denial of service (NULL pointer dereference) via a modified kadmin client.",
+					"severity": "medium",
+					"packageName": "krb5 (used in libkrb5-3, libgssapi-krb5-2, libk5crypto3, libkrb5support0)",
+					"packageVersion": "1.15-1+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-5710",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-5740",
+					"status": "open",
+					"cvss": 7.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "\\\"deny-answer-aliases\\\" is a little-used feature intended to help recursive server operators protect end users against DNS rebinding attacks, a potential method of circumventing the security model used by client browsers. However, a defect in this feature makes it easy, when the feature is in use, to experience an assertion failure in name.c. Affects BIND 9.7.0-\u003e9.8.8, 9.9.0-\u003e9.9.13, 9.10.0-\u003e9.10.8, 9.11.0-\u003e9.11.4, 9.12.0-\u003e9.12.2, 9.13.0-\u003e9.13.2.",
+					"severity": "medium",
+					"packageName": "bind9 (used in liblwres141, libbind9-140, libisccfg140, dnsutils, libisc160, bind9-host, libdns162, libisccc140)",
+					"packageVersion": "1:9.10.3.dfsg.P4-12.3+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-5740",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2016-9318",
+					"status": "open",
+					"cvss": 7.8,
+					"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"description": "libxml2 2.9.4 and earlier, as used in XMLSec 1.2.23 and earlier and other products, does not offer a flag directly indicating that the current document may be read but other files may not be opened, which makes it easier for remote attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+					"severity": "medium",
+					"packageName": "libxml2",
+					"packageVersion": "2.9.4+dfsg1-2.2+deb9u2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2016-9318",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Medium severity": {}
+					}
+				},
+				{
+					"id": "CVE-2017-12132",
+					"status": "open",
+					"cvss": 5.9,
+					"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+					"description": "The DNS stub resolver in the GNU C Library (aka glibc or libc6) before version 2.26, when EDNS support is enabled, will solicit large UDP responses from name servers, potentially simplifying off-path DNS spoofing attacks due to IP fragmentation.",
+					"severity": "medium",
+					"packageName": "glibc (used in multiarch-support, libc6, libc-bin)",
+					"packageVersion": "2.24-11+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2017-12132",
+					"riskFactors": {
+						"Attack vector: network": {},
+						"Medium severity": {}
+					}
+				},
+				{
+					"id": "CVE-2017-16932",
+					"status": "open",
+					"cvss": 7.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "parser.c in libxml2 before 2.9.5 does not prevent infinite recursion in parameter entities.",
+					"severity": "medium",
+					"packageName": "libxml2",
+					"packageVersion": "2.9.4+dfsg1-2.2+deb9u2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2017-16932",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Medium severity": {}
+					}
+				},
+				{
+					"id": "CVE-2019-5428",
+					"status": "fixed in \u003e=3.4.0",
+					"cvss": 4,
+					"description": "A prototype pollution vulnerability exists in jQuery versions \u003c 3.4.0 that allows an attacker to inject properties on Object.prototype.",
+					"severity": "moderate",
+					"packageName": "jquery",
+					"packageVersion": "2.2.3",
+					"link": "https://www.npmjs.com/advisories/796",
+					"riskFactors": {
+						"Has fix": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-5730",
+					"status": "open",
+					"cvss": 3.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N",
+					"description": "MIT krb5 1.6 or later allows an authenticated kadmin with permission to add principals to an LDAP Kerberos database to circumvent a DN containership check by supplying both a \\\"linkdn\\\" and \\\"containerdn\\\" database argument, or by supplying a DN string which is a left extension of a container DN string but is not hierarchically within the container DN.",
+					"severity": "medium",
+					"packageName": "krb5 (used in libkrb5-3, libgssapi-krb5-2, libk5crypto3, libkrb5support0)",
+					"packageVersion": "1.15-1+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-5730",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2019-3842",
+					"status": "fixed in 232-25+deb9u11",
+					"cvss": 7,
+					"vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+					"description": "In systemd before v242-rc4, it was discovered that pam_systemd does not properly sanitize the environment before using the XDG_SEAT variable. It is possible for an attacker, in some particular configurations, to set a XDG_SEAT environment variable which allows for commands to be checked against polkit policies using the \\\"allow_active\\\" element rather than \\\"allow_any\\\".",
+					"severity": "medium",
+					"packageName": "systemd (used in libsystemd0, libudev1)",
+					"packageVersion": "232-25+deb9u9",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2019-3842",
+					"riskFactors": {
+						"Has fix": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-12900",
+					"status": "open",
+					"cvss": 8.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"description": "Heap-based buffer overflow in the cpSeparateBufToContigBuf function in tiffcp.c in LibTIFF 4.0.9 allows remote attackers to cause a denial of service (crash) or possibly have unspecified other impact via a crafted TIFF file.",
+					"severity": "medium",
+					"packageName": "tiff (used in libtiff5)",
+					"packageVersion": "4.0.8-2+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-12900",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Medium severity": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-1152",
+					"status": "open",
+					"cvss": 6.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+					"description": "libjpeg-turbo 1.5.90 is vulnerable to a denial of service vulnerability caused by a divide by zero when processing a crafted BMP image.",
+					"severity": "low",
+					"packageName": "libjpeg-turbo (used in libjpeg62-turbo)",
+					"packageVersion": "1:1.5.1-2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-1152",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-10754",
+					"status": "open",
+					"cvss": 7.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "In ncurses before 6.1.20180414, there is a NULL Pointer Dereference in the _nc_parse_entry function of tinfo/parse_entry.c. It could lead to a remote denial of service if the terminfo library code is used to process untrusted terminfo data in which a use-name is invalid syntax.",
+					"severity": "low",
+					"packageName": "ncurses (used in libncurses5, libtinfo5, ncurses-base, ncurses-bin, libncursesw5)",
+					"packageVersion": "6.0+20161126-1+deb9u2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-10754",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-5745",
+					"status": "open",
+					"description": "\u003cdiv class=\\\"field field-name-field-cve-details-text field-type-text-long field-label-hidden \\\"\u003e",
+					"severity": "low",
+					"packageName": "bind9 (used in liblwres141, libbind9-140, libisccfg140, dnsutils, libisc160, bind9-host, libdns162, libisccc140)",
+					"packageVersion": "1:9.10.3.dfsg.P4-12.3+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-5745",
+					"riskFactors": {
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2019-6465",
+					"status": "open",
+					"description": "\u003cdiv class=\\\"field field-name-field-cve-details-text field-type-text-long field-label-hidden \\\"\u003e",
+					"severity": "low",
+					"packageName": "bind9 (used in liblwres141, libbind9-140, libisccfg140, dnsutils, libisc160, bind9-host, libdns162, libisccc140)",
+					"packageVersion": "1:9.10.3.dfsg.P4-12.3+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2019-6465",
+					"riskFactors": {
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-20217",
+					"status": "open",
+					"cvss": 5.3,
+					"vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"description": "A Reachable Assertion issue was discovered in the KDC in MIT Kerberos 5 (aka krb5) before 1.17. If an attacker can obtain a krbtgt ticket using an older encryption type (single-DES, triple-DES, or RC4), the attacker can crash the KDC by making an S4U2Self request.",
+					"severity": "low",
+					"packageName": "krb5 (used in libkrb5-3, libgssapi-krb5-2, libk5crypto3, libkrb5support0)",
+					"packageVersion": "1.15-1+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-20217",
+					"riskFactors": {
+						"Attack vector: network": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2017-11462",
+					"status": "open",
+					"cvss": 9.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"description": "Double free vulnerability in MIT Kerberos 5 (aka krb5) allows attackers to have unspecified impact via vectors involving automatic deletion of security contexts on error.",
+					"severity": "low",
+					"packageName": "krb5 (used in libkrb5-3, libgssapi-krb5-2, libk5crypto3, libkrb5support0)",
+					"packageVersion": "1.15-1+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2017-11462",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {}
+					}
+				},
+				{
+					"id": "CVE-2016-10228",
+					"status": "open",
+					"cvss": 5.9,
+					"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "The iconv program in the GNU C Library (aka glibc or libc6) 2.25 and earlier, when invoked with the -c option, enters an infinite loop when processing invalid multi-byte input sequences, leading to a denial of service.",
+					"severity": "low",
+					"packageName": "glibc (used in multiarch-support, libc6, libc-bin)",
+					"packageVersion": "2.24-11+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2016-10228",
+					"riskFactors": {
+						"Attack vector: network": {},
+						"DoS": {}
+					}
+				},
+				{
+					"id": "CVE-2018-7169",
+					"status": "open",
+					"cvss": 5.3,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+					"description": "An issue was discovered in shadow 4.5. newgidmap (in shadow-utils) is setuid and allows an unprivileged user to be placed in a user namespace where setgroups(2) is permitted. This allows an attacker to remove themselves from a supplementary group, which may allow access to certain filesystem paths if the administrator has used \\\"group blacklisting\\\" (e.g., chmod g-rwx) to restrict access to paths. This flaw effectively reverts a security feature in the kernel (in particular, the /proc/self/setgroups knob) to prevent this sort of privilege escalation.",
+					"severity": "low",
+					"packageName": "shadow (used in login, passwd)",
+					"packageVersion": "1:4.4-4.1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-7169",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-9234",
+					"status": "open",
+					"cvss": 7.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+					"description": "GnuPG 2.2.4 and 2.2.5 does not enforce a configuration in which key certification requires an offline master Certify key, which results in apparently valid certifications that occurred only with access to a signing subkey.",
+					"severity": "low",
+					"packageName": "gnupg2 (used in gpgv)",
+					"packageVersion": "2.1.18-8~deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-9234",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2019-9937",
+					"status": "open",
+					"cvss": 7.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "In SQLite 3.27.2, interleaving reads and writes in a single transaction with an fts5 virtual table will lead to a NULL Pointer Dereference in fts5ChunkIterate in sqlite3.c. This is related to ext/fts5/fts5_hash.c and ext/fts5/fts5_index.c.",
+					"severity": "low",
+					"packageName": "sqlite3 (used in libsqlite3-0)",
+					"packageVersion": "3.16.2-5+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2019-9937",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-19211",
+					"status": "open",
+					"cvss": 5.5,
+					"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+					"description": "In ncurses 6.1, there is a NULL pointer dereference at function _nc_parse_entry in parse_entry.c that will lead to a denial of service attack.",
+					"severity": "low",
+					"packageName": "ncurses (used in libncurses5, libtinfo5, ncurses-base, ncurses-bin, libncursesw5)",
+					"packageVersion": "6.0+20161126-1+deb9u2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-19211",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"DoS": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2019-1543",
+					"status": "open",
+					"cvss": 7.4,
+					"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+					"description": "ChaCha20-Poly1305 is an AEAD cipher, and requires a unique nonce input for every encryption operation. RFC 7539 specifies that the nonce value (IV) should be 96 bits (12 bytes). OpenSSL allows a variable nonce length and front pads the nonce with 0 bytes if it is less than 12 bytes. However it also incorrectly allows a nonce to be set of up to 16 bytes. In this case only the last 12 bytes are significant and any additional leading bytes are ignored. It is a requirement of using this cipher that nonce values are unique. Messages encrypted using a reused nonce value are susceptible to serious confidentiality and integrity attacks. If an application changes the default nonce length to be longer than 12 bytes and then makes a change to the leading bytes of the nonce expecting the new value to be a new unique nonce then such an application could inadvertently encrypt messages with a reused nonce. Additionally the ignored bytes in a long nonce are not covered by the integrity guarantee of this cipher. Any application that relies on the integrity of these ignored leading bytes of a long nonce may be further affected. Any OpenSSL internal use of this cipher, including in SSL/TLS, is safe because no such use sets such a long nonce value. However user applications that use this cipher directly and set a non-default nonce length to be longer than 12 bytes may be vulnerable. OpenSSL versio",
+					"severity": "low",
+					"packageName": "openssl (used in libssl1.1, openssl)",
+					"packageVersion": "1.1.0j-1~deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2019-1543",
+					"riskFactors": {
+						"Attack vector: network": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2017-17942",
+					"status": "open",
+					"cvss": 8.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"description": "In LibTIFF 4.0.9, there is a heap-based buffer over-read in the function PackBitsEncode in tif_packbits.c.",
+					"severity": "low",
+					"packageName": "tiff (used in libtiff5)",
+					"packageVersion": "4.0.8-2+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2017-17942",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {}
+					}
+				},
+				{
+					"id": "CVE-2018-20482",
+					"status": "open",
+					"cvss": 4.7,
+					"vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"description": "GNU Tar through 1.30, when --sparse is used, mishandles file shrinkage during read access, which allows local users to cause a denial of service (infinite read loop in sparse_dump_region in sparse.c) by modifying a file that is supposed to be archived by a different user\\'s process (e.g., a system backup running as root).",
+					"severity": "low",
+					"packageName": "tar",
+					"packageVersion": "1.29b-1.1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-20482",
+					"riskFactors": {
+						"DoS": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-17100",
+					"status": "open",
+					"cvss": 8.8,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"description": "An issue was discovered in LibTIFF 4.0.9. There is a int32 overflow in multiply_ms in tools/ppm2tiff.c, which can cause a denial of service (crash) or possibly have unspecified other impact via a crafted image file.",
+					"severity": "low",
+					"packageName": "tiff (used in libtiff5)",
+					"packageVersion": "4.0.8-2+deb9u4",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-17100",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2019-6988",
+					"status": "open",
+					"cvss": 6.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+					"description": "An issue was discovered in OpenJPEG 2.3.0. It allows remote attackers to cause a denial of service (attempted excessive memory allocation) in opj_calloc in openjp2/opj_malloc.c, when called from opj_tcd_init_tile in openjp2/tcd.c, as demonstrated by the 64-bit opj_decompress.",
+					"severity": "low",
+					"packageName": "openjpeg2 (used in libopenjp2-7)",
+					"packageVersion": "2.1.2-1.1+deb9u3",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2019-6988",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"DoS": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-6954",
+					"status": "open",
+					"cvss": 7.8,
+					"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+					"description": "systemd-tmpfiles in systemd through 237 mishandles symlinks present in non-terminal path components, which allows local users to obtain ownership of arbitrary files via vectors involving creation of a directory and a file under that directory, and later replacing that directory with a symlink. This occurs even if the fs.protected_symlinks sysctl is turned on.",
+					"severity": "low",
+					"packageName": "systemd (used in libsystemd0, libudev1)",
+					"packageVersion": "232-25+deb9u9",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-6954",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2018-16888",
+					"status": "open",
+					"cvss": 4.7,
+					"vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"description": "It was discovered systemd does not correctly check the content of PIDFile files before using it to kill processes. When a service is run from an unprivileged user (e.g. User field set in the service file), a local attacker who is able to write to the PIDFile of the mentioned service may use this flaw to trick systemd into killing other services and/or privileged processes. Versions before v237 are vulnerable.",
+					"severity": "low",
+					"packageName": "systemd (used in libsystemd0, libudev1)",
+					"packageVersion": "232-25+deb9u9",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2018-16888",
+					"riskFactors": {
+						"Recent vulnerability": {}
+					}
+				},
+				{
+					"id": "CVE-2017-5969",
+					"status": "open",
+					"cvss": 4.7,
+					"vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+					"description": "** DISPUTED ** libxml2 2.9.4, when used in recover mode, allows remote attackers to cause a denial of service (NULL pointer dereference) via a crafted XML document.  NOTE: The maintainer states \\\"I would disagree of a CVE with the Recover parsing option which should only be used for manual recovery at least for XML parser.\\\"",
+					"severity": "low",
+					"packageName": "libxml2",
+					"packageVersion": "2.9.4+dfsg1-2.2+deb9u2",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2017-5969",
+					"riskFactors": {
+						"DoS": {}
+					}
+				},
+				{
+					"id": "CVE-2016-2781",
+					"status": "open",
+					"cvss": 6.5,
+					"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+					"description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal\\'s input buffer.",
+					"severity": "low",
+					"packageName": "coreutils",
+					"packageVersion": "8.26-3",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2016-2781",
+					"riskFactors": {
+						"Attack complexity: low": {}
+					}
+				},
+				{
+					"id": "CVE-2019-9936",
+					"status": "open",
+					"cvss": 7.5,
+					"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+					"description": "In SQLite 3.27.2, running fts5 prefix queries inside a transaction could trigger a heap-based buffer over-read in fts5HashEntrySort in sqlite3.c, which may lead to an information leak. This is related to ext/fts5/fts5_hash.c.",
+					"severity": "low",
+					"packageName": "sqlite3 (used in libsqlite3-0)",
+					"packageVersion": "3.16.2-5+deb9u1",
+					"link": "https://security-tracker.debian.org/tracker/CVE-2019-9936",
+					"riskFactors": {
+						"Attack complexity: low": {},
+						"Attack vector: network": {},
+						"Recent vulnerability": {}
+					}
+				}
+			],
+			"vulnerabilityDistribution": {
+				"critical": 1,
+				"high": 8,
+				"medium": 27,
+				"low": 21,
+				"total": 57
+			}
+		}
+	]
+}
