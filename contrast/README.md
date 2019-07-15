@@ -1,11 +1,9 @@
-# Sample Scan Files
+-Contrast-
 
-Repository for sample scan files.
+Every business is a software business. Yet software remains the leading source of data breaches. The stakes are too costly to leave it
+unprotected and the old methods just don't work anymore.
 
-## Getting Started
+Contrast Security makes software self-protecting so it can defend itself from vulnerabilities & attacks.
+Contrast eliminates risk to software applications and their data.
 
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://www.contrastsecurity.com/

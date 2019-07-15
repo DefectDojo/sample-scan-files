@@ -1,15 +1,5 @@
-# Sample Scan Files
+-Gosec-
 
-Repository for sample scan files.
+Inspects source code for security problems by scanning the Go AST.
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-## References
-gosec - golang security checker: https://github.com/securego/gosec
-Golang Vulnerable App: https://github.com/0c34/govwa
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Github: https://github.com/securego/gosec

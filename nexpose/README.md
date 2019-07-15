@@ -1,11 +1,6 @@
-# Sample Scan Files
+-Nexpose-
 
-Repository for sample scan files.
+Nexpose, Rapid7’s on-premise option for vulnerability management software, monitors exposures in real-time and adapts to new threats with fresh data, ensuring you can always act at the moment of impact.
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://www.rapid7.com/products/nexpose/
+Github: https://github.com/rapid7/nexpose-client/releases/tag/v7.2.1

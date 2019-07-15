@@ -1,11 +1,5 @@
-# Sample Scan Files
+-Qualys Webapp-
 
-Repository for sample scan files.
+WAS finds and catalogs all web apps in your network, including new and unknown ones, and scales from a handful of apps to thousands. With Qualys WAS, you can tag your applications with your own labels and then use those labels to control reporting and limit access to scan data.
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://www.qualys.com/apps/web-app-scanning/

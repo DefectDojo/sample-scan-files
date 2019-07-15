@@ -1,11 +1,5 @@
-# Sample Scan Files
+-Burp-
 
-Repository for sample scan files.
+Burp includes coverage of over 100 generic vulnerabilities, such as SQL injection and cross-site scripting (XSS), with great performance against all vulnerabilities in the OWASP top 10.
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://portswigger.net/burp

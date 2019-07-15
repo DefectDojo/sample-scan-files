@@ -1,11 +1,6 @@
-# Sample Scan Files
+-Crashtest Security-
 
-Repository for sample scan files.
+The Crashtest Security Suite fits the needs of agile development teams programming web applications and APIs. With the black-box approach it checks for common web app vulnerabilities, e.g. the OWASP Top 10.
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://crashtest-security.com/product
+Github: https://github.com/crashtest-security/gist

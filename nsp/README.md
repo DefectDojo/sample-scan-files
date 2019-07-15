@@ -1,3 +1,6 @@
-# Node Security Platform scan
+-Node Security Platform-
 
-Sample scan from vulnerable-node (see also: https://github.com/cr0hn/vulnerable-node)
+Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
+
+Website: https://www.npmjs.com/
+Github: https://github.com/nodesecurity/nsp

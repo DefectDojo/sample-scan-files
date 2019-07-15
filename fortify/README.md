@@ -1,11 +1,5 @@
-# Sample Scan Files
+-Fortify-
 
-Repository for sample scan files.
+Micro Focus Fortify Static Code Analyzer reduces software risk by identifying security vulnerabilities that pose the biggest threats to your organization. It pinpoints the root cause of the vulnerability, correlates and prioritizes results, and provides best practices so developers can develop code more securely.
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://www.microfocus.com/en-us/products/static-code-analysis-sast/how-it-works
