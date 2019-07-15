@@ -1,11 +1,7 @@
-# Sample Scan Files
+-VCG-
 
-Repository for sample scan files.
+VCG is an automated code security review tool that handles C/C++, Java, C#, VB and PL/SQL. It has a few features that should hopefully make it useful to anyone conducting code security reviews, particularly where time is at a premium.
 
-## Getting Started
+-NO SAMPLE SCAN FILES ARE AVAILABLE AT THIS TIME-
 
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Github: https://github.com/nccgroup/VCG

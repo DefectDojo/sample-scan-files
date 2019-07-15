@@ -1,11 +1,6 @@
-# Sample Scan Files
+-Safety Scan-
 
-Repository for sample scan files.
+Microsoft Safety Scanner is a scan tool designed to find and remove malware from Windows computers. Simply download it and run a scan to find malware and try to reverse changes made by identified threats.
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scans are intended to be scrubbed or against demo systems.
+Website: https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download
+Github: https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/security/threat-protection/intelligence/safety-scanner-download.md

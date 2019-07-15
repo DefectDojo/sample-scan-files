@@ -1,11 +1,8 @@
-# Sample Scan Files
+-Spotbugs-
 
-Repository for sample scan files.
+SpotBugs is a program which uses static analysis to look for bugs in Java code. It is free software, distributed under the terms of the GNU Lesser General Public License.
 
-## Getting Started
+-NO SAMPLE SCAN FILES ARE AVAILABLE AT THIS TIME-
 
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://spotbugs.github.io/
+Github: https://github.com/spotbugs/spotbugs

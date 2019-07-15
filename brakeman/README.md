@@ -1,11 +1,6 @@
-# Sample Scan Files
+-Brakeman-
 
-Repository for sample scan files.
+Brakeman is a free vulnerability scanner specifically designed for Ruby on Rails applications. It statically analyzes Rails application code to find security issues at any stage of development.
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://brakemanscanner.org/
+Github: https://github.com/presidentbeef/brakeman

@@ -1,11 +1,6 @@
-# Sample Scan Files
+-Nmap-
 
-Repository for sample scan files.
+Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics.
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://nmap.org/
+Github: https://github.com/nmap/nmap

@@ -1,11 +1,5 @@
-# Sample Scan Files
+-Nessus-
 
-Repository for sample scan files.
+Nessus was built from the ground-up with a deep understanding of how security practitioners work. Every feature in Nessus is designed to make vulnerability assessment simple, easy and intuitive. The result: less time and effort to assess, prioritize, and remediate issues. 
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://www.tenable.com/products/nessus

@@ -1,11 +1,8 @@
-# Sample Scan Files
+-Skf-
 
-Repository for sample scan files.
+SKF (Security knowledge framework) is an OWASP tool that is used as a guide for building and verifying secure software. It can also be used to train developers about application security.
 
-## Getting Started
+-NO SAMPLE SCAN FILES ARE AVAILABLE AT THIS TIME-
 
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://medium.com/@priyankajain997/installing-security-knowledge-framework-skf-233f08a6c1ff
+Github: https://github.com/blabla1337/skf-flask

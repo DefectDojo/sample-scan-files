@@ -1,11 +1,5 @@
-# Sample Scan Files
+-Checkmarx-
 
-Repository for sample scan files.
+Taking a holistic, platform-centric approach, the Software Exposure Platform builds security in from the start of the SDLC, continuously supporting all stages of the DevOps cycle.
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://www.checkmarx.com

@@ -1,11 +1,6 @@
-# Sample Scan Files
+-Dependency Check-
 
-Repository for sample scan files.
+Dependency-Check is a software composition analysis utility that identifies project dependencies and checks if there are any known, publicly disclosed, vulnerabilities. Currently, Java and .NET are supported; additional experimental support has been added for Ruby, Node.js, Python, and limited support for C/C++ build systems (autoconf and cmake). The tool can be part of a solution to the OWASP Top 10 2017 A9-Using Components with Known Vulnerabilities previously known as OWASP Top 10 2013 A9-Using Components with Known Vulnerabilities. 
 
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scan files are intended to be scrubbed or against demo systems.
+Website: https://www.owasp.org/index.php/OWASP_Dependency_Check
+Github: https://github.com/jeremylong/DependencyCheck
