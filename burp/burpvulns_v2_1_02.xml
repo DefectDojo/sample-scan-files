@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<!DOCTYPE issues [
+<!ELEMENT issues (issue*)>
+<!ATTLIST issues burpVersion CDATA "">
+<!ATTLIST issues exportTime CDATA "">
+<!ELEMENT issue (serialNumber, type, name, host, path, location, severity, confidence, issueBackground?, remediationBackground?, references?, vulnerabilityClassifications?, issueDetail?, issueDetailItems?, remediationDetail?, requestresponse*, collaboratorEvent*, infiltratorEvent*, staticAnalysis*, dynamicAnalysis*)>
+<!ELEMENT serialNumber (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT severity (#PCDATA)>
+<!ELEMENT confidence (#PCDATA)>
+<!ELEMENT issueBackground (#PCDATA)>
+<!ELEMENT remediationBackground (#PCDATA)>
+<!ELEMENT references (#PCDATA)>
+<!ELEMENT vulnerabilityClassifications (#PCDATA)>
+<!ELEMENT issueDetail (#PCDATA)>
+<!ELEMENT issueDetailItems (issueDetailItem*)>
+<!ELEMENT issueDetailItem (#PCDATA)>
+<!ELEMENT remediationDetail (#PCDATA)>
+<!ELEMENT requestresponse (request?, response?, responseRedirected?)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request method CDATA "">
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT responseRedirected (#PCDATA)>
+<!ELEMENT sender (#PCDATA)>
+<!ELEMENT message (#PCDATA)>
+<!ELEMENT conversation (#PCDATA)>
+<!ELEMENT recipient (#PCDATA)>
+<!ELEMENT recipients (recipient*)>
+<!ELEMENT smtp (sender, recipients, message, conversation)>
+<!ELEMENT collaboratorEvent (interactionType, originIp, time, lookupType?, lookupHost?, requestresponse?, smtp?)>
+<!ELEMENT interactionType (#PCDATA)>
+<!ELEMENT originIp (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT lookupType (#PCDATA)>
+<!ELEMENT lookupHost (#PCDATA)>
+<!ELEMENT infiltratorEvent (parameterName, platform, signature, stackTrace?, parameterValue?, collaboratorEvent)>
+<!ELEMENT parameterName (#PCDATA)>
+<!ELEMENT platform (#PCDATA)>
+<!ELEMENT signature (#PCDATA)>
+<!ELEMENT stackTrace (#PCDATA)>
+<!ELEMENT parameterValue (#PCDATA)>
+<!ELEMENT dynamicAnalysis (source, sink, sourceStackTrace, sinkStackTrace, eventListenerStackTrace, sourceValue, sinkValue, eventHandlerData, eventHandlerDataType, eventHandlerManipulatedData, poc, origin, isOriginChecked, sourceElementId, sourceElementName, eventFiredEventName, eventFiredElementId, eventFiredElementName, eventFiredOuterHtml)>
+<!ELEMENT staticAnalysis (source, sink, codeSnippets)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT sink (#PCDATA)>
+<!ELEMENT sourceStackTrace (#PCDATA)>
+<!ELEMENT sinkStackTrace (#PCDATA)>
+<!ELEMENT eventListenerStackTrace (#PCDATA)>
+<!ELEMENT sourceValue (#PCDATA)>
+<!ELEMENT sinkValue (#PCDATA)>
+<!ELEMENT eventHandlerData (#PCDATA)>
+<!ELEMENT eventHandlerDataType (#PCDATA)>
+<!ELEMENT sourceElementId (#PCDATA)>
+<!ELEMENT sourceElementName (#PCDATA)>
+<!ELEMENT eventFiredEventName (#PCDATA)>
+<!ELEMENT eventFiredElementId (#PCDATA)>
+<!ELEMENT eventFiredElementName (#PCDATA)>
+<!ELEMENT eventFiredOuterHtml (#PCDATA)>
+<!ELEMENT eventHandlerManipulatedData (#PCDATA)>
+<!ELEMENT poc (#PCDATA)>
+<!ELEMENT origin (#PCDATA)>
+<!ELEMENT isOriginChecked (#PCDATA)>
+<!ELEMENT codeSnippets (codeSnippet*)>
+<!ELEMENT codeSnippet (#PCDATA)>
+]>
+<issues burpVersion="2.1.02" exportTime="Tue Jul 30 16:09:32 EDT 2019">
+  <issue>
+    <serialNumber>3423578709074383872</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[Software Version Numbers Revealed]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Low</severity>
+    <confidence>Certain</confidence>
+    <issueDetail><![CDATA[The server software versions used by the application are revealed by the web server.<br>Displaying version information of software information could allow an attacker to determine which vulnerabilities are present in the software, particularly if an outdated software version is in use with published vulnerabilities.<br><br>The following software appears to be in use:<br><br><li>Microsoft IIS: 8.5]]></issueDetail>
+  </issue>
+  <issue>
+    <serialNumber>5010504608735718400</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[[Vulners] Software detected]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Information</severity>
+    <confidence>Firm</confidence>
+    <issueBackground></issueBackground>
+    <remediationBackground></remediationBackground>
+    <issueDetail><![CDATA[The following software was detected <b>IIS, headers - 8.5</b>
+No vulnerabilities found for current version.]]></issueDetail>
+    <remediationDetail></remediationDetail>
+  </issue>
+  <issue>
+    <serialNumber>3897385493695850496</serialNumber>
+    <type>16777984</type>
+    <name><![CDATA[Strict transport security not enforced]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Low</severity>
+    <confidence>Certain</confidence>
+    <issueBackground><![CDATA[<p> The application fails to prevent users from connecting  to it over unencrypted connections.  An attacker able to modify a legitimate user's network traffic could bypass the application's use of SSL/TLS encryption, and use the application as a platform for attacks against its users. This attack is performed by rewriting HTTPS links as HTTP, so that if a targeted user follows a link to the site from an HTTP page, their browser never attempts to use an encrypted connection. The sslstrip tool  automates this process. </p>
+<p>
+To exploit this vulnerability, an attacker must be suitably positioned to intercept and modify the victim's network traffic.This scenario typically occurs when a client communicates with the server over an insecure connection such as public Wi-Fi, or a corporate or home network that is shared with a compromised computer. Common defenses such as switched networks are not sufficient to prevent this. An attacker situated in the user's ISP or the application's hosting infrastructure could also perform this attack. Note that an advanced adversary could potentially target any connection made over the Internet's core infrastructure. </p>]]></issueBackground>
+    <remediationBackground><![CDATA[<p>The application should instruct web browsers to only access the application using HTTPS. To do this, enable HTTP Strict Transport Security (HSTS) by adding a response header with the name 'Strict-Transport-Security' and the value 'max-age=expireTime', where expireTime is the time in seconds that browsers should remember that the site should only be accessed using HTTPS. Consider adding the 'includeSubDomains' flag if appropriate.</p>
+<p>Note that because HSTS is a &quot;trust on first use&quot; (TOFU) protocol, a user who has never accessed the application will never have seen the HSTS header, and will therefore still be vulnerable to SSL stripping attacks. To mitigate this risk, you can optionally add the 'preload' flag to the HSTS header, and submit the domain for review by browser vendors.</p>]]></remediationBackground>
+    <references><![CDATA[<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/HTTP_strict_transport_security">HTTP Strict Transport Security</a></li>
+<li><a href="http://www.thoughtcrime.org/software/sslstrip/">sslstrip</a></li>
+<li><a href="https://hstspreload.appspot.com/">HSTS Preload Form</a></li>
+</ul>]]></references>
+    <vulnerabilityClassifications><![CDATA[<ul>
+<li><a href="https://cwe.mitre.org/data/definitions/523.html">CWE-523: Unprotected Transport of Credentials</a></li>
+</ul>]]></vulnerabilityClassifications>
+  </issue>
+  <issue>
+    <serialNumber>3755268623110736896</serialNumber>
+    <type>5245344</type>
+    <name><![CDATA[Frameable response (potential Clickjacking)]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Information</severity>
+    <confidence>Firm</confidence>
+    <issueBackground><![CDATA[<p>If a page fails to set an appropriate X-Frame-Options or Content-Security-Policy HTTP header, it might be possible for a page controlled by an attacker to load it within an iframe. This may enable a clickjacking attack, in which the attacker's page overlays the target application's interface with a different interface provided by the attacker. By inducing victim users to perform actions such as mouse clicks and keystrokes, the attacker can cause them to unwittingly carry out actions within the application that is being targeted. This technique allows the attacker to circumvent defenses against cross-site request forgery, and may result in unauthorized actions.</p>
+<p>Note that some applications attempt to prevent these attacks from within the HTML page itself, using "framebusting" code. However, this type of defense is normally ineffective and can usually be circumvented by a skilled attacker.</p>
+<p>You should determine whether any functions accessible within frameable pages can be used by application users to perform any sensitive actions within the application. </p>]]></issueBackground>
+    <remediationBackground><![CDATA[<p>To effectively prevent framing attacks, the application should return a response header with the name <b>X-Frame-Options</b> and the value <b>DENY</b> to prevent framing altogether, or the value <b>SAMEORIGIN</b> to allow framing only by pages on the same origin as the response itself. Note that the SAMEORIGIN header can be partially bypassed if the application itself can be made to frame untrusted websites.</p>]]></remediationBackground>
+    <references><![CDATA[<ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/X-Frame-Options">X-Frame-Options</a></li></ul>]]></references>
+    <vulnerabilityClassifications><![CDATA[<ul>
+<li><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693: Protection Mechanism Failure</a></li>
+</ul>]]></vulnerabilityClassifications>
+  </issue>
+  <issue>
+    <serialNumber>596960384751498240</serialNumber>
+    <type>7340288</type>
+    <name><![CDATA[Cacheable HTTPS response]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Information</severity>
+    <confidence>Certain</confidence>
+    <issueBackground><![CDATA[<p>Unless directed otherwise, browsers may store a local cached copy of content received from web servers. Some browsers, including Internet Explorer, cache content accessed via HTTPS. If sensitive information in application responses is stored in the local cache, then this may be retrieved by other users who have access to the same computer at a future time.</p>]]></issueBackground>
+    <remediationBackground><![CDATA[<p>Applications should return caching directives instructing browsers not to store local copies of any sensitive data. Often, this can be achieved by configuring the web server to prevent caching for relevant paths within the web root. Alternatively, most web development platforms allow you to control the server's caching directives from within individual scripts. Ideally, the web server should return the following HTTP headers in all responses containing sensitive content:</p>
+<ul>
+<li>Cache-control: no-store</li><li>Pragma: no-cache</li></ul>]]></remediationBackground>
+    <vulnerabilityClassifications><![CDATA[<ul>
+<li><a href="https://cwe.mitre.org/data/definitions/524.html">CWE-524: Information Exposure Through Caching</a></li>
+<li><a href="https://cwe.mitre.org/data/definitions/525.html">CWE-525: Information Exposure Through Browser Caching</a></li>
+</ul>]]></vulnerabilityClassifications>
+  </issue>
+  <issue>
+    <serialNumber>1253687630798174208</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[Strict Transport Security Misconfiguration]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Medium</severity>
+    <confidence>Certain</confidence>
+    <issueBackground><![CDATA[<p>The HTTP Strict Transport Security policy defines a timeframe where a browser must connect to the web server via HTTPS. Without a Strict Transport         Security policy the web application may be vulnerable against several attacks:</p>         <ul>         <li>If the web application mixes usage of HTTP and HTTPS, an attacker can manipulate pages in the unsecured area of the application or change redirection targets         in a manner that the switch to the secured page is not performed or done in a manner, that the attacker remains between client and server.</li>         <li>If there is no HTTP server, an attacker in the same network could simulate a HTTP server and motivate the user to click on a prepared URL by a social         engineering attack.</li>         </ul>         <p>The protection is effective only for the given amount of time. Multiple occurrence of this header could cause undefined behaviour in browsers and should be avoided.</p>]]></issueBackground>
+    <issueDetail><![CDATA[There was no "Strict-Transport-Security" header in the server response.]]></issueDetail>
+    <remediationDetail><![CDATA[<p>A Strict-Transport-Security HTTP header should be sent with each HTTPS response. The syntax is as follows:</p>             <p><pre>Strict-Transport-Security: max-age=&lt;seconds&gt;[; includeSubDomains]</pre></p>             <p>The parameter <i>max-age</i> gives the time frame for requirement of HTTPS in seconds and should be chosen quite high, e.g. several months.            A value below 7776000 is considered as too low by this scanner check.             The flag <i>includeSubDomains</i> defines that the policy applies also for sub domains of the sender of the response.</p>]]></remediationDetail>
+  </issue>
+  <issue>
+    <serialNumber>746915251170031616</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[Browser cross-site scripting filter misconfiguration]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Low</severity>
+    <confidence>Certain</confidence>
+    <issueBackground><![CDATA[Cross-site scripting (XSS) filters in browsers check if the URL contains possible harmful XSS payloads and if they are reflected in the response page. If         such a condition is recognized, the injected code is changed in a way, that it is not executed anymore to prevent a succesful XSS attack. The downside of these filters         is, that the browser has no possibility to distinguish between code fragments which were reflected by a vulnerable web application in an XSS attack and these which are         already present on the page. In the past, these filters were used by attackers to deactivate JavaScript code on the attacked web page. Sometimes the XSS filters itself are         vulnerable in a way, that web applications which were protected properly against XSS attacks became vulnerable under certain conditions.]]></issueBackground>
+    <remediationBackground><![CDATA[It is considered as better practice to instruct the browser XSS filter to never render the web page if an XSS attack is detected.]]></remediationBackground>
+    <issueDetail><![CDATA[No X-XSS-Protection header was set in the response. This means that the browser uses default behavior that detection of a cross-site scripting attack never prevents rendering.]]></issueDetail>
+    <remediationDetail><![CDATA[<p>The following header should be set:</p>             <p><pre>X-XSS-Protection: 1; mode=block</pre></p>]]></remediationDetail>
+  </issue>
+  <issue>
+    <serialNumber>3168146132213239808</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[Content Sniffing not disabled]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Low</severity>
+    <confidence>Certain</confidence>
+    <issueBackground><![CDATA[There was no "X-Content-Type-Options" HTTP header with the value <i>nosniff</i> set in the response. The lack of this header causes that certain browsers,         try to determine the content type and encoding of the response even when these properties are defined correctly. This can make the web application         vulnerable against Cross-Site Scripting (XSS) attacks. E.g. the Internet Explorer and Safari treat responses with the content type text/plain as HTML, if they contain         HTML tags.]]></issueBackground>
+    <remediationBackground><![CDATA[Set the following HTTP header at least in all responses which contain user input: <pre>X-Content-Type-Options: nosniff</pre>]]></remediationBackground>
+  </issue>
+  <issue>
+    <serialNumber>8294840651558281216</serialNumber>
+    <type>16777472</type>
+    <name><![CDATA[SSL certificate]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Medium</severity>
+    <confidence>Certain</confidence>
+    <issueBackground><![CDATA[<p>SSL (or TLS) helps to protect the confidentiality and integrity of information in transit between the browser and server, and to provide authentication of the server's identity. To serve this purpose, the server must present an SSL certificate that is valid for the server's hostname, is issued by a trusted authority and is valid for the current date. If any one of these requirements is not met, SSL connections to the server will not provide the full protection for which SSL is designed.</p>
+<p>It should be noted that various attacks exist against SSL in general, and in the context of HTTPS web connections in particular. It may be possible for a determined and suitably-positioned attacker to compromise SSL connections without user detection even when a valid SSL certificate is used. </p>]]></issueBackground>
+    <references><![CDATA[<ul><li><a href="https://wiki.mozilla.org/Security/Server_Side_TLS">SSL/TLS Configuration Guide</a></li></ul>]]></references>
+    <vulnerabilityClassifications><![CDATA[<ul>
+<li><a href="https://cwe.mitre.org/data/definitions/295.html">CWE-295: Improper Certificate Validation</a></li>
+<li><a href="https://cwe.mitre.org/data/definitions/326.html">CWE-326: Inadequate Encryption Strength</a></li>
+<li><a href="https://cwe.mitre.org/data/definitions/327.html">CWE-327: Use of a Broken or Risky Cryptographic Algorithm</a></li>
+</ul>]]></vulnerabilityClassifications>
+    <issueDetail><![CDATA[The following problem was identified with the server's SSL certificate:<ul><li>The server's certificate is not valid for the server's hostname.</li></ul>The server presented the following certificates:<br><br><h4>Server certificate</h4><table><tr><td><b>Issued to:</b>&nbsp;&nbsp;</td><td>*.example.com, example.com</td></tr><tr><td><b>Issued by:</b>&nbsp;&nbsp;</td><td>Go Daddy Secure Certificate Authority - G2</td></tr><tr><td><b>Valid from:</b>&nbsp;&nbsp;</td><td>Wed Jun 13 15:04:11 EDT 2018</td></tr><tr><td><b>Valid to:</b>&nbsp;&nbsp;</td><td>Sat Jun 13 15:04:11 EDT 2020</td></tr></table><h4>Certificate chain #1</h4><table><tr><td><b>Issued to:</b>&nbsp;&nbsp;</td><td>Go Daddy Secure Certificate Authority - G2</td></tr><tr><td><b>Issued by:</b>&nbsp;&nbsp;</td><td>Go Daddy Root Certificate Authority - G2</td></tr><tr><td><b>Valid from:</b>&nbsp;&nbsp;</td><td>Tue May 03 03:00:00 EDT 2011</td></tr><tr><td><b>Valid to:</b>&nbsp;&nbsp;</td><td>Sat May 03 03:00:00 EDT 2031</td></tr></table><h4>Certificate chain #2</h4><table><tr><td><b>Issued to:</b>&nbsp;&nbsp;</td><td>Go Daddy Root Certificate Authority - G2</td></tr><tr><td><b>Issued by:</b>&nbsp;&nbsp;</td><td>Go Daddy Root Certificate Authority - G2</td></tr><tr><td><b>Valid from:</b>&nbsp;&nbsp;</td><td>Mon Aug 31 20:00:00 EDT 2009</td></tr><tr><td><b>Valid to:</b>&nbsp;&nbsp;</td><td>Thu Dec 31 18:59:59 EST 2037</td></tr></table><h4>Certificate chain #3</h4><table><tr><td><b>Issued to:</b>&nbsp;&nbsp;</td><td>Go Daddy Root Certificate Authority - G2</td></tr><tr><td><b>Issued by:</b>&nbsp;&nbsp;</td><td>Go Daddy Root Certificate Authority - G2</td></tr><tr><td><b>Valid from:</b>&nbsp;&nbsp;</td><td>Mon Aug 31 20:00:00 EDT 2009</td></tr><tr><td><b>Valid to:</b>&nbsp;&nbsp;</td><td>Thu Dec 31 18:59:59 EST 2037</td></tr></table>]]></issueDetail>
+  </issue>
+  <issue>
+    <serialNumber>4469086999084867584</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[Software Version Numbers Revealed]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Low</severity>
+    <confidence>Certain</confidence>
+    <issueDetail><![CDATA[The server software versions used by the application are revealed by the web server.<br>Displaying version information of software information could allow an attacker to determine which vulnerabilities are present in the software, particularly if an outdated software version is in use with published vulnerabilities.<br><br>The following software appears to be in use:<br><br><li>Microsoft HTTPAPI: 2.0]]></issueDetail>
+  </issue>
+  <issue>
+    <serialNumber>4222544931570994176</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[Software Version Numbers Revealed]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Low</severity>
+    <confidence>Certain</confidence>
+    <issueDetail><![CDATA[The server software versions used by the application are revealed by the web server.<br>Displaying version information of software information could allow an attacker to determine which vulnerabilities are present in the software, particularly if an outdated software version is in use with published vulnerabilities.<br><br>The following software appears to be in use:<br><br><li>Microsoft IIS: 8.5]]></issueDetail>
+  </issue>
+  <issue>
+    <serialNumber>5882411221325212672</serialNumber>
+    <type>3146240</type>
+    <name><![CDATA[External service interaction (DNS)]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>High</severity>
+    <confidence>Certain</confidence>
+    <issueBackground><![CDATA[<p>External service interaction arises when it is possible to induce an application to interact with an arbitrary external service, such as a web or mail server. The ability to trigger arbitrary external service interactions does not constitute a vulnerability in its own right, and in some cases might even be the intended behavior of the application. 
+However, in many cases, it can indicate a vulnerability with serious consequences.</p>
+<p>In cases where DNS-based interactions can be triggered, it is normally possible to trigger interactions using other service types, and these are reported as separate issues. 
+  If a payload that specifies a particular service type (e.g. a URL) triggers only a DNS-based interaction, 
+  then this strongly indicates that the application attempted to connect using that other service, 
+  but was prevented from doing so by egress filters in place at the network layer. The ability to send requests to other systems can allow the vulnerable server to be used as an attack proxy. 
+  By submitting suitable payloads, an attacker can cause the application server to attack other systems that it can interact with. 
+  This may include public third-party systems, internal systems within the same organization, or services available on the local loopback adapter of the application server itself. 
+  Depending on the network architecture, this may expose highly vulnerable internal services that are not otherwise accessible to external attackers. </p>]]></issueBackground>
+    <remediationBackground><![CDATA[<p>You should review the purpose and intended use of the relevant application functionality, 
+  and determine whether the ability to trigger arbitrary external service interactions is intended behavior. 
+  If so, you should be aware of the types of attacks that can be performed via this behavior and take appropriate measures. 
+  These measures might include blocking network access from the application server to other internal systems, and hardening the application server itself to remove any services available on the local loopback adapter.</p>
+<p>If the ability to trigger arbitrary external service interactions is not intended behavior, then you should implement a whitelist of permitted services and hosts, and block any interactions that do not appear on this whitelist.</p>]]></remediationBackground>
+    <references><![CDATA[<ul>
+  <li><a href="http://blog.portswigger.net/2015/04/introducing-burp-collaborator.html">Burp Collaborator</a></li></ul>]]></references>
+    <vulnerabilityClassifications><![CDATA[<ul>
+<li><a href="https://cwe.mitre.org/data/definitions/918.html">CWE-918: Server-Side Request Forgery (SSRF)</a></li>
+<li><a href="https://cwe.mitre.org/data/definitions/406.html">CWE-406: Insufficient Control of Network Message Volume (Network Amplification)</a></li>
+</ul>]]></vulnerabilityClassifications>
+    <issueDetail><![CDATA[It is possible to induce the application to perform server-side DNS lookups of arbitrary domain names.<br><br>The payload <b>xxxxxxxxxxxxxxxxxxxxxx.burpcollaborator.net</b> was submitted in the SSL SNI value and the HTTP Host header.<br><br>The application performed a DNS lookup of the specified domain.]]></issueDetail>
+    <collaboratorEvent>
+      <interactionType>DNS</interactionType>
+      <originIp>127.0.0.1</originIp>
+      <time>2019-Jul-29 15:24:53 UTC</time>
+      <lookupType>A</lookupType>
+      <lookupHost>xxxxxxxxxxxxxxxxxxxxxx.burpcollaborator.net</lookupHost>
+    </collaboratorEvent>
+  </issue>
+  <issue>
+    <serialNumber>795592099271191552</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[[SSL Scanner] Offer SSLv3]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>High</severity>
+    <confidence>Certain</confidence>
+    <issueBackground><![CDATA[The host uses SSLv3, which is a weak encryption scheme broken by the POODLE attack. <a href="https://cwe.mitre.org/data/definitions/326.html">(CWE-326)</a>]]></issueBackground>
+    <remediationBackground><![CDATA[SSLv3 should never be enabled on production systems.]]></remediationBackground>
+  </issue>
+  <issue>
+    <serialNumber>6314784384365883392</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[[SSL Scanner] POODLE (SSLv3)]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>High</severity>
+    <confidence>Tentative</confidence>
+    <issueBackground><![CDATA[The host is vulnerable to the POODLE attack which affects every website that supports SSLv3. The POODLE attack allows an attacker to extract the plaintext message of a targeted part of a request. There is also a variant of the attack that affects more recent versions of TLS. (Requires external tools) <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566">(CVE-2014-3566)</a>]]></issueBackground>
+    <remediationBackground><![CDATA[If OpenSSL is used, update to version 1.0.1j or higher. Otherwise, update the web server and client to the latest version. Check for TLS_FALLBACK_SCSV support on the server to prevent downgrade attack and help mitigate this issue (SSL Scanner will report if there is no support for TLS_FALLBACK_SCSV). <b>Also, SSLv3 should never be offered.</b> <ul><li>For <b>Internet Explorer 6</b>, there is an option to <b>disable SSLv3 and enable TLS1.0</b>. However, it is only advisable as a <b>workaround.</b></li></ul>]]></remediationBackground>
+  </issue>
+  <issue>
+    <serialNumber>6704840326819568640</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[[SSL Scanner] LUCKY13]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Low</severity>
+    <confidence>Tentative</confidence>
+    <issueBackground><![CDATA[This server offers ciphers with CBC mode of operation. Some implementation do not properly consider timing side-channel attack on a MAC check requirement. Please check if the version of the software is vulnerable to LUCKY13 or not. <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0169">(CVE-2013-0169)</a>]]></issueBackground>
+    <remediationBackground><![CDATA[Check the server version and update to the latest version.]]></remediationBackground>
+  </issue>
+  <issue>
+    <serialNumber>924995672629426176</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[[SSL Scanner] BREACH]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Medium</severity>
+    <confidence>Tentative</confidence>
+    <issueBackground><![CDATA[This server offers HTTP compression which can lead to chosen plaintext attack similar to CRIME where the attack can recover secret cookie such as authentication cookie using the size of compressed request/response. This issue can be ignored if there is no secret in the page or static pages.]]></issueBackground>
+    <remediationBackground><![CDATA[Disable HTTP compression on the server or ignored if there is no secret in the page.]]></remediationBackground>
+  </issue>
+  <issue>
+    <serialNumber>612869509305862144</serialNumber>
+    <type>134217728</type>
+    <name><![CDATA[[SSL Scanner] Supported Cipher Suites]]></name>
+    <host ip="127.0.0.1">https://127.0.0.1</host>
+    <path><![CDATA[/]]></path>
+    <location><![CDATA[/]]></location>
+    <severity>Information</severity>
+    <confidence>Firm</confidence>
+    <issueDetail><![CDATA[<b>SSLv3.0</b><br><ul><li>AES256-SHA: <b>POODLE</b> <b>LUCKY13</b></li><li>ECDHE-RSA-AES256-SHA: <b>POODLE</b> <b>LUCKY13</b></li><li>ECDHE-RSA-AES128-SHA: <b>POODLE</b> <b>LUCKY13</b></li><li>AES128-SHA: <b>POODLE</b> <b>LUCKY13</b></li></ul><b>TLSv1.0</b><br><ul><li>AES256-SHA: <b>LUCKY13</b></li><li>ECDHE-RSA-AES256-SHA: <b>LUCKY13</b></li><li>ECDHE-RSA-AES128-SHA: <b>LUCKY13</b></li><li>AES128-SHA: <b>LUCKY13</b></li></ul><b>TLSv1.1</b><br><ul><li>AES256-SHA: <b>LUCKY13</b></li><li>ECDHE-RSA-AES256-SHA: <b>LUCKY13</b></li><li>ECDHE-RSA-AES128-SHA: <b>LUCKY13</b></li><li>AES128-SHA: <b>LUCKY13</b></li></ul><b>TLSv1.2</b><br><ul><li>AES256-SHA: <b>LUCKY13</b></li><li>AES256-SHA256: <b>LUCKY13</b></li><li>AES256-GCM-SHA384</li><li>ECDHE-RSA-AES256-SHA: <b>LUCKY13</b></li><li>ECDHE-RSA-AES256-SHA384: <b>LUCKY13</b></li><li>ECDHE-RSA-AES256-GCM-SHA384</li><li>ECDHE-RSA-AES128-SHA: <b>LUCKY13</b></li><li>ECDHE-RSA-AES128-SHA256: <b>LUCKY13</b></li><li>ECDHE-RSA-AES128-GCM-SHA256</li><li>AES128-SHA: <b>LUCKY13</b></li><li>AES128-SHA256: <b>LUCKY13</b></li><li>AES128-GCM-SHA256</li></ul>]]></issueDetail>
+  </issue>
+</issues>
