@@ -1,385 +1,387 @@
 <testsuites name="" tests="21" disabled="0" errors="0" failures="31" time="208">
 	<testsuite name="Crashtest Security Suite" tests="21" disabled="0" errors="0" failures="31" skipped="0" time="208">
 		<testcase classname="fingerprinting.crashtest.cloud" name="Fingerprinting (1)">
-			<failure message="The webserver is running Apache 2.4.7" type="Medium">
+			<failure message="The webserver is running Apache 2.4.7" type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="fingerprinting.crashtest.cloud" name="Fingerprinting (2)">
-			<failure message="Found PHP running in version 5.5.9-1ubuntu4.14." type="Medium">
+			<failure message="Found PHP running in version 5.5.9-1ubuntu4.14." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2018-19935">
-			<failure message="ext/imap/php_imap.c in PHP 5.x and 7.x before 7.3.0 allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an empty string in the message argument to the imap_mail function." type="Medium">
+			<failure message="ext/imap/php_imap.c in PHP 5.x and 7.x before 7.3.0 allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an empty string in the message argument to the imap_mail function." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2018-17082">
-			<failure message="The Apache2 component in PHP before 5.6.38, 7.0.x before 7.0.32, 7.1.x before 7.1.22, and 7.2.x before 7.2.10 allows XSS via the body of a &#39;Transfer-Encoding: chunked&#39; request, because the bucket brigade is mishandled in the php_handler function in sapi/apache2handler/sapi_apache2.c." type="Informational">
+			<failure message="The Apache2 component in PHP before 5.6.38, 7.0.x before 7.0.32, 7.1.x before 7.1.22, and 7.2.x before 7.2.10 allows XSS via the body of a &#39;Transfer-Encoding: chunked&#39; request, because the bucket brigade is mishandled in the php_handler function in sapi/apache2handler/sapi_apache2.c." type="informational">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2018-10549">
-			<failure message="An issue was discovered in PHP before 5.6.36, 7.0.x before 7.0.30, 7.1.x before 7.1.17, and 7.2.x before 7.2.5. exif_read_data in ext/exif/exif.c has an out-of-bounds read for crafted JPEG data because exif_iif_add_value mishandles the case of a MakerNote that lacks a final &#39;\0&#39; character." type="Informational">
+			<failure message="An issue was discovered in PHP before 5.6.36, 7.0.x before 7.0.30, 7.1.x before 7.1.17, and 7.2.x before 7.2.5. exif_read_data in ext/exif/exif.c has an out-of-bounds read for crafted JPEG data because exif_iif_add_value mishandles the case of a MakerNote that lacks a final &#39;\0&#39; character." type="informational">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2018-10548">
-			<failure message="An issue was discovered in PHP before 5.6.36, 7.0.x before 7.0.30, 7.1.x before 7.1.17, and 7.2.x before 7.2.5. ext/ldap/ldap.c allows remote LDAP servers to cause a denial of service (NULL pointer dereference and application crash) because of mishandling of the ldap_get_dn return value." type="Informational">
+			<failure message="An issue was discovered in PHP before 5.6.36, 7.0.x before 7.0.30, 7.1.x before 7.1.17, and 7.2.x before 7.2.5. ext/ldap/ldap.c allows remote LDAP servers to cause a denial of service (NULL pointer dereference and application crash) because of mishandling of the ldap_get_dn return value." type="informational">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2018-10546">
-			<failure message="An issue was discovered in PHP before 5.6.36, 7.0.x before 7.0.30, 7.1.x before 7.1.17, and 7.2.x before 7.2.5. An infinite loop exists in ext/iconv/iconv.c because the iconv stream filter does not reject invalid multibyte sequences." type="Informational">
+			<failure message="An issue was discovered in PHP before 5.6.36, 7.0.x before 7.0.30, 7.1.x before 7.1.17, and 7.2.x before 7.2.5. An infinite loop exists in ext/iconv/iconv.c because the iconv stream filter does not reject invalid multibyte sequences." type="informational">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2018-10545">
-			<failure message="An issue was discovered in PHP before 5.6.35, 7.0.x before 7.0.29, 7.1.x before 7.1.16, and 7.2.x before 7.2.4. Dumpable FPM child processes allow bypassing opcache access controls because fpm_unix.c makes a PR_SET_DUMPABLE prctl call, allowing one user (in a multiuser environment) to obtain sensitive information from the process memory of a second user&#39;s PHP applications by running gcore on the PID of the PHP-FPM worker process." type="Informational">
+			<failure message="An issue was discovered in PHP before 5.6.35, 7.0.x before 7.0.29, 7.1.x before 7.1.16, and 7.2.x before 7.2.4. Dumpable FPM child processes allow bypassing opcache access controls because fpm_unix.c makes a PR_SET_DUMPABLE prctl call, allowing one user (in a multiuser environment) to obtain sensitive information from the process memory of a second user&#39;s PHP applications by running gcore on the PID of the PHP-FPM worker process." type="informational">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2017-16642">
-			<failure message="In PHP before 5.6.32, 7.x before 7.0.25, and 7.1.x before 7.1.11, an error in the date extension&#39;s timelib_meridian handling of &#39;front of&#39; and &#39;back of&#39; directives could be used by attackers able to supply date strings to leak information from the interpreter, related to ext/date/lib/parse_date.c out-of-bounds reads affecting the php_parse_date function. NOTE: this is a different issue than CVE-2017-11145." type="Medium">
+			<failure message="In PHP before 5.6.32, 7.x before 7.0.25, and 7.1.x before 7.1.11, an error in the date extension&#39;s timelib_meridian handling of &#39;front of&#39; and &#39;back of&#39; directives could be used by attackers able to supply date strings to leak information from the interpreter, related to ext/date/lib/parse_date.c out-of-bounds reads affecting the php_parse_date function. NOTE: this is a different issue than CVE-2017-11145." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2018-19395">
-			<failure message="ext/standard/var.c in PHP 5.x through 7.1.24 on Windows allows attackers to cause a denial of service (NULL pointer dereference and application crash) because com and com_safearray_proxy return NULL in com_properties_get in ext/com_dotnet/com_handlers.c, as demonstrated by a serialize call on COM(&#39;WScript.Shell&#39;)." type="Medium">
+			<failure message="ext/standard/var.c in PHP 5.x through 7.1.24 on Windows allows attackers to cause a denial of service (NULL pointer dereference and application crash) because com and com_safearray_proxy return NULL in com_properties_get in ext/com_dotnet/com_handlers.c, as demonstrated by a serialize call on COM(&#39;WScript.Shell&#39;)." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2018-15132">
-			<failure message="An issue was discovered in ext/standard/link_win32.c in PHP before 5.6.37, 7.0.x before 7.0.31, 7.1.x before 7.1.20, and 7.2.x before 7.2.8. The linkinfo function on Windows doesn&#39;t implement the open_basedir check. This could be abused to find files on paths outside of the allowed directories." type="Medium">
+			<failure message="An issue was discovered in ext/standard/link_win32.c in PHP before 5.6.37, 7.0.x before 7.0.31, 7.1.x before 7.1.20, and 7.2.x before 7.2.8. The linkinfo function on Windows doesn&#39;t implement the open_basedir check. This could be abused to find files on paths outside of the allowed directories." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2018-14883">
-			<failure message="An issue was discovered in PHP before 5.6.37, 7.0.x before 7.0.31, 7.1.x before 7.1.20, and 7.2.x before 7.2.8. An Integer Overflow leads to a heap-based buffer over-read in exif_thumbnail_extract of exif.c." type="Medium">
+			<failure message="An issue was discovered in PHP before 5.6.37, 7.0.x before 7.0.31, 7.1.x before 7.1.20, and 7.2.x before 7.2.8. An Integer Overflow leads to a heap-based buffer over-read in exif_thumbnail_extract of exif.c." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-2787">
-			<failure message="Use-after-free vulnerability in the process_nested_data function in ext/standard/var_unserializer.re in PHP before 5.4.39, 5.5.x before 5.5.23, and 5.6.x before 5.6.7 allows remote attackers to execute arbitrary code via a crafted unserialize call that leverages use of the unset function within an __wakeup function, a related issue to CVE-2015-0231." type="High">
+			<failure message="Use-after-free vulnerability in the process_nested_data function in ext/standard/var_unserializer.re in PHP before 5.4.39, 5.5.x before 5.5.23, and 5.6.x before 5.6.7 allows remote attackers to execute arbitrary code via a crafted unserialize call that leverages use of the unset function within an __wakeup function, a related issue to CVE-2015-0231." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-2348">
-			<failure message="The move_uploaded_file implementation in ext/standard/basic_functions.c in PHP before 5.4.39, 5.5.x before 5.5.23, and 5.6.x before 5.6.7 truncates a pathname upon encountering a \x00 character, which allows remote attackers to bypass intended extension restrictions and create files with unexpected names via a crafted second argument.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2006-7243." type="Medium">
+			<failure message="The move_uploaded_file implementation in ext/standard/basic_functions.c in PHP before 5.4.39, 5.5.x before 5.5.23, and 5.6.x before 5.6.7 truncates a pathname upon encountering a \x00 character, which allows remote attackers to bypass intended extension restrictions and create files with unexpected names via a crafted second argument.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2006-7243." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-2331">
-			<failure message="Integer overflow in the _zip_cdir_new function in zip_dirent.c in libzip 0.11.2 and earlier, as used in the ZIP extension in PHP before 5.4.39, 5.5.x before 5.5.23, and 5.6.x before 5.6.7 and other products, allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a ZIP archive that contains many entries, leading to a heap-based buffer overflow." type="High">
+			<failure message="Integer overflow in the _zip_cdir_new function in zip_dirent.c in libzip 0.11.2 and earlier, as used in the ZIP extension in PHP before 5.4.39, 5.5.x before 5.5.23, and 5.6.x before 5.6.7 and other products, allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a ZIP archive that contains many entries, leading to a heap-based buffer overflow." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-2301">
-			<failure message="Use-after-free vulnerability in the phar_rename_archive function in phar_object.c in PHP before 5.5.22 and 5.6.x before 5.6.6 allows remote attackers to cause a denial of service or possibly have unspecified other impact via vectors that trigger an attempted renaming of a Phar archive to the name of an existing file." type="High">
+			<failure message="Use-after-free vulnerability in the phar_rename_archive function in phar_object.c in PHP before 5.5.22 and 5.6.x before 5.6.6 allows remote attackers to cause a denial of service or possibly have unspecified other impact via vectors that trigger an attempted renaming of a Phar archive to the name of an existing file." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2016-5116">
-			<failure message="gd_xbm.c in the GD Graphics Library (aka libgd) before 2.2.0, as used in certain custom PHP 5.5.x configurations, allows context-dependent attackers to obtain sensitive information from process memory or cause a denial of service (stack-based buffer under-read and application crash) via a long name." type="Medium">
+			<failure message="gd_xbm.c in the GD Graphics Library (aka libgd) before 2.2.0, as used in certain custom PHP 5.5.x configurations, allows context-dependent attackers to obtain sensitive information from process memory or cause a denial of service (stack-based buffer under-read and application crash) via a long name." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-8873">
-			<failure message="Stack consumption vulnerability in Zend/zend_exceptions.c in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 allows remote attackers to cause a denial of service (segmentation fault) via recursive method calls." type="Medium">
+			<failure message="Stack consumption vulnerability in Zend/zend_exceptions.c in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 allows remote attackers to cause a denial of service (segmentation fault) via recursive method calls." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2018-10547">
-			<failure message="An issue was discovered in ext/phar/phar_object.c in PHP before 5.6.36, 7.0.x before 7.0.30, 7.1.x before 7.1.17, and 7.2.x before 7.2.5. There is Reflected XSS on the PHAR 403 and 404 error pages via request data of a request for a .phar file. NOTE: this vulnerability exists because of an incomplete fix for CVE-2018-5712." type="Medium">
+			<failure message="An issue was discovered in ext/phar/phar_object.c in PHP before 5.6.36, 7.0.x before 7.0.30, 7.1.x before 7.1.17, and 7.2.x before 7.2.5. There is Reflected XSS on the PHAR 403 and 404 error pages via request data of a request for a .phar file. NOTE: this vulnerability exists because of an incomplete fix for CVE-2018-5712." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-9653">
-			<failure message="readelf.c in file before 5.22, as used in the Fileinfo component in PHP before 5.4.37, 5.5.x before 5.5.21, and 5.6.x before 5.6.5, does not consider that pread calls sometimes read only a subset of the available data, which allows remote attackers to cause a denial of service (uninitialized memory access) or possibly have unspecified other impact via a crafted ELF file." type="High">
+			<failure message="readelf.c in file before 5.22, as used in the Fileinfo component in PHP before 5.4.37, 5.5.x before 5.5.21, and 5.6.x before 5.6.5, does not consider that pread calls sometimes read only a subset of the available data, which allows remote attackers to cause a denial of service (uninitialized memory access) or possibly have unspecified other impact via a crafted ELF file." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2016-7478">
-			<failure message="Zend/zend_exceptions.c in PHP, possibly 5.x before 5.6.28 and 7.x before 7.0.13, allows remote attackers to cause a denial of service (infinite loop) via a crafted Exception object in serialized data, a related issue to CVE-2015-8876." type="Medium">
+			<failure message="Zend/zend_exceptions.c in PHP, possibly 5.x before 5.6.28 and 7.x before 7.0.13, allows remote attackers to cause a denial of service (infinite loop) via a crafted Exception object in serialized data, a related issue to CVE-2015-8876." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2016-4073">
-			<failure message="Multiple integer overflows in the mbfl_strcut function in ext/mbstring/libmbfl/mbfl/mbfilter.c in PHP before 5.5.34, 5.6.x before 5.6.20, and 7.x before 7.0.5 allow remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted mb_strcut call." type="High">
+			<failure message="Multiple integer overflows in the mbfl_strcut function in ext/mbstring/libmbfl/mbfl/mbfilter.c in PHP before 5.5.34, 5.6.x before 5.6.20, and 7.x before 7.0.5 allow remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted mb_strcut call." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2016-4072">
-			<failure message="The Phar extension in PHP before 5.5.34, 5.6.x before 5.6.20, and 7.x before 7.0.5 allows remote attackers to execute arbitrary code via a crafted filename, as demonstrated by mishandling of \0 characters by the phar_analyze_path function in ext/phar/phar.c." type="High">
+			<failure message="The Phar extension in PHP before 5.5.34, 5.6.x before 5.6.20, and 7.x before 7.0.5 allows remote attackers to execute arbitrary code via a crafted filename, as demonstrated by mishandling of \0 characters by the phar_analyze_path function in ext/phar/phar.c." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2016-4071">
-			<failure message="Format string vulnerability in the php_snmp_error function in ext/snmp/snmp.c in PHP before 5.5.34, 5.6.x before 5.6.20, and 7.x before 7.0.5 allows remote attackers to execute arbitrary code via format string specifiers in an SNMP::get call." type="High">
+			<failure message="Format string vulnerability in the php_snmp_error function in ext/snmp/snmp.c in PHP before 5.5.34, 5.6.x before 5.6.20, and 7.x before 7.0.5 allows remote attackers to execute arbitrary code via format string specifiers in an SNMP::get call." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-8935">
-			<failure message="The sapi_header_op function in main/SAPI.c in PHP before 5.4.38, 5.5.x before 5.5.22, and 5.6.x before 5.6.6 supports deprecated line folding without considering browser compatibility, which allows remote attackers to conduct cross-site scripting (XSS) attacks against Internet Explorer by leveraging (1) %0A%20 or (2) %0D%0A%20 mishandling in the header function." type="Medium">
+			<failure message="The sapi_header_op function in main/SAPI.c in PHP before 5.4.38, 5.5.x before 5.5.22, and 5.6.x before 5.6.6 supports deprecated line folding without considering browser compatibility, which allows remote attackers to conduct cross-site scripting (XSS) attacks against Internet Explorer by leveraging (1) %0A%20 or (2) %0D%0A%20 mishandling in the header function." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-8876">
-			<failure message="Zend/zend_exceptions.c in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 does not validate certain Exception objects, which allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) or trigger unintended method execution via crafted serialized data." type="High">
+			<failure message="Zend/zend_exceptions.c in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 does not validate certain Exception objects, which allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) or trigger unintended method execution via crafted serialized data." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-8867">
-			<failure message="The openssl_random_pseudo_bytes function in ext/openssl/openssl.c in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 incorrectly relies on the deprecated RAND_pseudo_bytes function, which makes it easier for remote attackers to defeat cryptographic protection mechanisms via unspecified vectors." type="Medium">
+			<failure message="The openssl_random_pseudo_bytes function in ext/openssl/openssl.c in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 incorrectly relies on the deprecated RAND_pseudo_bytes function, which makes it easier for remote attackers to defeat cryptographic protection mechanisms via unspecified vectors." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-8835">
-			<failure message="The make_http_soap_request function in ext/soap/php_http.c in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 does not properly retrieve keys, which allows remote attackers to cause a denial of service (NULL pointer dereference, type confusion, and application crash) or possibly execute arbitrary code via crafted serialized data representing a numerically indexed _cookies array, related to the SoapClient::__call method in ext/soap/soap.c." type="High">
+			<failure message="The make_http_soap_request function in ext/soap/php_http.c in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 does not properly retrieve keys, which allows remote attackers to cause a denial of service (NULL pointer dereference, type confusion, and application crash) or possibly execute arbitrary code via crafted serialized data representing a numerically indexed _cookies array, related to the SoapClient::__call method in ext/soap/soap.c." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4643">
-			<failure message="Integer overflow in the ftp_genlist function in ext/ftp/ftp.c in PHP before 5.4.42, 5.5.x before 5.5.26, and 5.6.x before 5.6.10 allows remote FTP servers to execute arbitrary code via a long reply to a LIST command, leading to a heap-based buffer overflow.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2015-4022." type="High">
+			<failure message="Integer overflow in the ftp_genlist function in ext/ftp/ftp.c in PHP before 5.4.42, 5.5.x before 5.5.26, and 5.6.x before 5.6.10 allows remote FTP servers to execute arbitrary code via a long reply to a LIST command, leading to a heap-based buffer overflow.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2015-4022." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4603">
-			<failure message="The exception::getTraceAsString function in Zend/zend_exceptions.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to execute arbitrary code via an unexpected data type, related to a &#39;type confusion&#39; issue." type="Critical">
+			<failure message="The exception::getTraceAsString function in Zend/zend_exceptions.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to execute arbitrary code via an unexpected data type, related to a &#39;type confusion&#39; issue." type="critical">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4602">
-			<failure message="The __PHP_Incomplete_Class function in ext/standard/incomplete_class.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via an unexpected data type, related to a &#39;type confusion&#39; issue." type="Critical">
+			<failure message="The __PHP_Incomplete_Class function in ext/standard/incomplete_class.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via an unexpected data type, related to a &#39;type confusion&#39; issue." type="critical">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4600">
-			<failure message="The SoapClient implementation in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via an unexpected data type, related to &#39;type confusion&#39; issues in the (1) SoapClient::__getLastRequest, (2) SoapClient::__getLastResponse, (3) SoapClient::__getLastRequestHeaders, (4) SoapClient::__getLastResponseHeaders, (5) SoapClient::__getCookies, and (6) SoapClient::__setCookie methods." type="Critical">
+			<failure message="The SoapClient implementation in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via an unexpected data type, related to &#39;type confusion&#39; issues in the (1) SoapClient::__getLastRequest, (2) SoapClient::__getLastResponse, (3) SoapClient::__getLastRequestHeaders, (4) SoapClient::__getLastResponseHeaders, (5) SoapClient::__getCookies, and (6) SoapClient::__setCookie methods." type="critical">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4599">
-			<failure message="The SoapFault::__toString method in ext/soap/soap.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to obtain sensitive information, cause a denial of service (application crash), or possibly execute arbitrary code via an unexpected data type, related to a &#39;type confusion&#39; issue." type="Critical">
+			<failure message="The SoapFault::__toString method in ext/soap/soap.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to obtain sensitive information, cause a denial of service (application crash), or possibly execute arbitrary code via an unexpected data type, related to a &#39;type confusion&#39; issue." type="critical">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4598">
-			<failure message="PHP before 5.4.42, 5.5.x before 5.5.26, and 5.6.x before 5.6.10 does not ensure that pathnames lack %00 sequences, which might allow remote attackers to read or write to arbitrary files via crafted input to an application that calls (1) a DOMDocument save method or (2) the GD imagepsloadfont function, as demonstrated by a filename\0.html attack that bypasses an intended configuration in which client users may write to only .html files." type="High">
+			<failure message="PHP before 5.4.42, 5.5.x before 5.5.26, and 5.6.x before 5.6.10 does not ensure that pathnames lack %00 sequences, which might allow remote attackers to read or write to arbitrary files via crafted input to an application that calls (1) a DOMDocument save method or (2) the GD imagepsloadfont function, as demonstrated by a filename\0.html attack that bypasses an intended configuration in which client users may write to only .html files." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4148">
-			<failure message="The do_soap_call function in ext/soap/soap.c in PHP before 5.4.39, 5.5.x before 5.5.23, and 5.6.x before 5.6.7 does not verify that the uri property is a string, which allows remote attackers to obtain sensitive information by providing crafted serialized data with an int data type, related to a &#39;type confusion&#39; issue." type="Medium">
+			<failure message="The do_soap_call function in ext/soap/soap.c in PHP before 5.4.39, 5.5.x before 5.5.23, and 5.6.x before 5.6.7 does not verify that the uri property is a string, which allows remote attackers to obtain sensitive information by providing crafted serialized data with an int data type, related to a &#39;type confusion&#39; issue." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4147">
-			<failure message="The SoapClient::__call method in ext/soap/soap.c in PHP before 5.4.39, 5.5.x before 5.5.23, and 5.6.x before 5.6.7 does not verify that __default_headers is an array, which allows remote attackers to execute arbitrary code by providing crafted serialized data with an unexpected data type, related to a &#39;type confusion&#39; issue." type="High">
+			<failure message="The SoapClient::__call method in ext/soap/soap.c in PHP before 5.4.39, 5.5.x before 5.5.23, and 5.6.x before 5.6.7 does not verify that __default_headers is an array, which allows remote attackers to execute arbitrary code by providing crafted serialized data with an unexpected data type, related to a &#39;type confusion&#39; issue." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4026">
-			<failure message="The pcntl_exec implementation in PHP before 5.4.41, 5.5.x before 5.5.25, and 5.6.x before 5.6.9 truncates a pathname upon encountering a \x00 character, which might allow remote attackers to bypass intended extension restrictions and execute files with unexpected names via a crafted first argument.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2006-7243." type="High">
+			<failure message="The pcntl_exec implementation in PHP before 5.4.41, 5.5.x before 5.5.25, and 5.6.x before 5.6.9 truncates a pathname upon encountering a \x00 character, which might allow remote attackers to bypass intended extension restrictions and execute files with unexpected names via a crafted first argument.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2006-7243." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4025">
-			<failure message="PHP before 5.4.41, 5.5.x before 5.5.25, and 5.6.x before 5.6.9 truncates a pathname upon encountering a \x00 character in certain situations, which allows remote attackers to bypass intended extension restrictions and access files or directories with unexpected names via a crafted argument to (1) set_include_path, (2) tempnam, (3) rmdir, or (4) readlink.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2006-7243." type="High">
+			<failure message="PHP before 5.4.41, 5.5.x before 5.5.25, and 5.6.x before 5.6.9 truncates a pathname upon encountering a \x00 character in certain situations, which allows remote attackers to bypass intended extension restrictions and access files or directories with unexpected names via a crafted argument to (1) set_include_path, (2) tempnam, (3) rmdir, or (4) readlink.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2006-7243." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4024">
-			<failure message="Algorithmic complexity vulnerability in the multipart_buffer_headers function in main/rfc1867.c in PHP before 5.4.41, 5.5.x before 5.5.25, and 5.6.x before 5.6.9 allows remote attackers to cause a denial of service (CPU consumption) via crafted form data that triggers an improper order-of-growth outcome." type="Medium">
+			<failure message="Algorithmic complexity vulnerability in the multipart_buffer_headers function in main/rfc1867.c in PHP before 5.4.41, 5.5.x before 5.5.25, and 5.6.x before 5.6.9 allows remote attackers to cause a denial of service (CPU consumption) via crafted form data that triggers an improper order-of-growth outcome." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4022">
-			<failure message="Integer overflow in the ftp_genlist function in ext/ftp/ftp.c in PHP before 5.4.41, 5.5.x before 5.5.25, and 5.6.x before 5.6.9 allows remote FTP servers to execute arbitrary code via a long reply to a LIST command, leading to a heap-based buffer overflow." type="High">
+			<failure message="Integer overflow in the ftp_genlist function in ext/ftp/ftp.c in PHP before 5.4.41, 5.5.x before 5.5.25, and 5.6.x before 5.6.9 allows remote FTP servers to execute arbitrary code via a long reply to a LIST command, leading to a heap-based buffer overflow." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4021">
-			<failure message="The phar_parse_tarfile function in ext/phar/tar.c in PHP before 5.4.41, 5.5.x before 5.5.25, and 5.6.x before 5.6.9 does not verify that the first character of a filename is different from the \0 character, which allows remote attackers to cause a denial of service (integer underflow and memory corruption) via a crafted entry in a tar archive." type="Medium">
+			<failure message="The phar_parse_tarfile function in ext/phar/tar.c in PHP before 5.4.41, 5.5.x before 5.5.25, and 5.6.x before 5.6.9 does not verify that the first character of a filename is different from the \0 character, which allows remote attackers to cause a denial of service (integer underflow and memory corruption) via a crafted entry in a tar archive." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-3412">
-			<failure message="PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 does not ensure that pathnames lack %00 sequences, which might allow remote attackers to read arbitrary files via crafted input to an application that calls the stream_resolve_include_path function in ext/standard/streamsfuncs.c, as demonstrated by a filename\0.extension attack that bypasses an intended configuration in which client users may read files with only one specific extension." type="Medium">
+			<failure message="PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 does not ensure that pathnames lack %00 sequences, which might allow remote attackers to read arbitrary files via crafted input to an application that calls the stream_resolve_include_path function in ext/standard/streamsfuncs.c, as demonstrated by a filename\0.extension attack that bypasses an intended configuration in which client users may read files with only one specific extension." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-3411">
-			<failure message="PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 does not ensure that pathnames lack %00 sequences, which might allow remote attackers to read or write to arbitrary files via crafted input to an application that calls (1) a DOMDocument load method, (2) the xmlwriter_open_uri function, (3) the finfo_file function, or (4) the hash_hmac_file function, as demonstrated by a filename\0.xml attack that bypasses an intended configuration in which client users may read only .xml files." type="Medium">
+			<failure message="PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 does not ensure that pathnames lack %00 sequences, which might allow remote attackers to read or write to arbitrary files via crafted input to an application that calls (1) a DOMDocument load method, (2) the xmlwriter_open_uri function, (3) the finfo_file function, or (4) the hash_hmac_file function, as demonstrated by a filename\0.xml attack that bypasses an intended configuration in which client users may read only .xml files." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-3329">
-			<failure message="Multiple stack-based buffer overflows in the phar_set_inode function in phar_internal.h in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allow remote attackers to execute arbitrary code via a crafted length value in a (1) tar, (2) phar, or (3) ZIP archive." type="High">
+			<failure message="Multiple stack-based buffer overflows in the phar_set_inode function in phar_internal.h in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allow remote attackers to execute arbitrary code via a crafted length value in a (1) tar, (2) phar, or (3) ZIP archive." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-3307">
-			<failure message="The phar_parse_metadata function in ext/phar/phar.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to cause a denial of service (heap metadata corruption) or possibly have unspecified other impact via a crafted tar archive." type="High">
+			<failure message="The phar_parse_metadata function in ext/phar/phar.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to cause a denial of service (heap metadata corruption) or possibly have unspecified other impact via a crafted tar archive." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-2783">
-			<failure message="ext/phar/phar.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to obtain sensitive information from process memory or cause a denial of service (buffer over-read and application crash) via a crafted length value in conjunction with crafted serialized data in a phar archive, related to the phar_parse_metadata and phar_parse_pharfile functions." type="Medium">
+			<failure message="ext/phar/phar.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8 allows remote attackers to obtain sensitive information from process memory or cause a denial of service (buffer over-read and application crash) via a crafted length value in conjunction with crafted serialized data in a phar archive, related to the phar_parse_metadata and phar_parse_pharfile functions." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-0273">
-			<failure message="Multiple use-after-free vulnerabilities in ext/date/php_date.c in PHP before 5.4.38, 5.5.x before 5.5.22, and 5.6.x before 5.6.6 allow remote attackers to execute arbitrary code via crafted serialized input containing a (1) R or (2) r type specifier in (a) DateTimeZone data handled by the php_date_timezone_initialize_from_hash function or (b) DateTime data handled by the php_date_initialize_from_hash function." type="High">
+			<failure message="Multiple use-after-free vulnerabilities in ext/date/php_date.c in PHP before 5.4.38, 5.5.x before 5.5.22, and 5.6.x before 5.6.6 allow remote attackers to execute arbitrary code via crafted serialized input containing a (1) R or (2) r type specifier in (a) DateTimeZone data handled by the php_date_timezone_initialize_from_hash function or (b) DateTime data handled by the php_date_initialize_from_hash function." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-0232">
-			<failure message="The exif_process_unicode function in ext/exif/exif.c in PHP before 5.4.37, 5.5.x before 5.5.21, and 5.6.x before 5.6.5 allows remote attackers to execute arbitrary code or cause a denial of service (uninitialized pointer free and application crash) via crafted EXIF data in a JPEG image." type="Medium">
+			<failure message="The exif_process_unicode function in ext/exif/exif.c in PHP before 5.4.37, 5.5.x before 5.5.21, and 5.6.x before 5.6.5 allows remote attackers to execute arbitrary code or cause a denial of service (uninitialized pointer free and application crash) via crafted EXIF data in a JPEG image." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-9767">
-			<failure message="Directory traversal vulnerability in the ZipArchive::extractTo function in ext/zip/php_zip.c in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13 and ext/zip/ext_zip.cpp in HHVM before 3.12.1 allows remote attackers to create arbitrary empty directories via a crafted ZIP archive." type="Medium">
+			<failure message="Directory traversal vulnerability in the ZipArchive::extractTo function in ext/zip/php_zip.c in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13 and ext/zip/ext_zip.cpp in HHVM before 3.12.1 allows remote attackers to create arbitrary empty directories via a crafted ZIP archive." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-9705">
-			<failure message="Heap-based buffer overflow in the enchant_broker_request_dict function in ext/enchant/enchant.c in PHP before 5.4.38, 5.5.x before 5.5.22, and 5.6.x before 5.6.6 allows remote attackers to execute arbitrary code via vectors that trigger creation of multiple dictionaries." type="High">
+			<failure message="Heap-based buffer overflow in the enchant_broker_request_dict function in ext/enchant/enchant.c in PHP before 5.4.38, 5.5.x before 5.5.22, and 5.6.x before 5.6.6 allows remote attackers to execute arbitrary code via vectors that trigger creation of multiple dictionaries." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3587">
-			<failure message="Integer overflow in the cdf_read_property_info function in cdf.c in file through 5.19, as used in the Fileinfo component in PHP before 5.4.32 and 5.5.x before 5.5.16, allows remote attackers to cause a denial of service (application crash) via a crafted CDF file.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2012-1571." type="Medium">
+			<failure message="Integer overflow in the cdf_read_property_info function in cdf.c in file through 5.19, as used in the Fileinfo component in PHP before 5.4.32 and 5.5.x before 5.5.16, allows remote attackers to cause a denial of service (application crash) via a crafted CDF file.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2012-1571." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-6838">
-			<failure message="The xsl_ext_function_php function in ext/xsl/xsltprocessor.c in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13, when libxml2 before 2.9.2 is used, does not consider the possibility of a NULL valuePop return value before proceeding with a free operation after the principal argument loop, which allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted XML document, a different vulnerability than CVE-2015-6837." type="Medium">
+			<failure message="The xsl_ext_function_php function in ext/xsl/xsltprocessor.c in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13, when libxml2 before 2.9.2 is used, does not consider the possibility of a NULL valuePop return value before proceeding with a free operation after the principal argument loop, which allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted XML document, a different vulnerability than CVE-2015-6837." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-6837">
-			<failure message="The xsl_ext_function_php function in ext/xsl/xsltprocessor.c in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13, when libxml2 before 2.9.2 is used, does not consider the possibility of a NULL valuePop return value before proceeding with a free operation during initial error checking, which allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted XML document, a different vulnerability than CVE-2015-6838." type="Medium">
+			<failure message="The xsl_ext_function_php function in ext/xsl/xsltprocessor.c in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13, when libxml2 before 2.9.2 is used, does not consider the possibility of a NULL valuePop return value before proceeding with a free operation during initial error checking, which allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted XML document, a different vulnerability than CVE-2015-6838." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-6836">
-			<failure message="The SoapClient __call method in ext/soap/soap.c in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13 does not properly manage headers, which allows remote attackers to execute arbitrary code via crafted serialized data that triggers a &#39;type confusion&#39; in the serialize_function_call function." type="High">
+			<failure message="The SoapClient __call method in ext/soap/soap.c in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13 does not properly manage headers, which allows remote attackers to execute arbitrary code via crafted serialized data that triggers a &#39;type confusion&#39; in the serialize_function_call function." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-6835">
-			<failure message="The session deserializer in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13 mishandles multiple php_var_unserialize calls, which allow remote attackers to execute arbitrary code or cause a denial of service (use-after-free) via crafted session content." type="High">
+			<failure message="The session deserializer in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13 mishandles multiple php_var_unserialize calls, which allow remote attackers to execute arbitrary code or cause a denial of service (use-after-free) via crafted session content." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-6834">
-			<failure message="Multiple use-after-free vulnerabilities in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13 allow remote attackers to execute arbitrary code via vectors related to (1) the Serializable interface, (2) the SplObjectStorage class, and (3) the SplDoublyLinkedList class, which are mishandled during unserialization." type="High">
+			<failure message="Multiple use-after-free vulnerabilities in PHP before 5.4.45, 5.5.x before 5.5.29, and 5.6.x before 5.6.13 allow remote attackers to execute arbitrary code via vectors related to (1) the Serializable interface, (2) the SplObjectStorage class, and (3) the SplDoublyLinkedList class, which are mishandled during unserialization." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-6833">
-			<failure message="Directory traversal vulnerability in the PharData class in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 allows remote attackers to write to arbitrary files via a .. (dot dot) in a ZIP archive entry that is mishandled during an extractTo call." type="Medium">
+			<failure message="Directory traversal vulnerability in the PharData class in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 allows remote attackers to write to arbitrary files via a .. (dot dot) in a ZIP archive entry that is mishandled during an extractTo call." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-6832">
-			<failure message="Use-after-free vulnerability in the SPL unserialize implementation in ext/spl/spl_array.c in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 allows remote attackers to execute arbitrary code via crafted serialized data that triggers misuse of an array field." type="High">
+			<failure message="Use-after-free vulnerability in the SPL unserialize implementation in ext/spl/spl_array.c in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 allows remote attackers to execute arbitrary code via crafted serialized data that triggers misuse of an array field." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-6831">
-			<failure message="Multiple use-after-free vulnerabilities in SPL in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 allow remote attackers to execute arbitrary code via vectors involving (1) ArrayObject, (2) SplObjectStorage, and (3) SplDoublyLinkedList, which are mishandled during unserialization." type="High">
+			<failure message="Multiple use-after-free vulnerabilities in SPL in PHP before 5.4.44, 5.5.x before 5.5.28, and 5.6.x before 5.6.12 allow remote attackers to execute arbitrary code via vectors involving (1) ArrayObject, (2) SplObjectStorage, and (3) SplDoublyLinkedList, which are mishandled during unserialization." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-5590">
-			<failure message="Stack-based buffer overflow in the phar_fix_filepath function in ext/phar/phar.c in PHP before 5.4.43, 5.5.x before 5.5.27, and 5.6.x before 5.6.11 allows remote attackers to cause a denial of service or possibly have unspecified other impact via a large length value, as demonstrated by mishandling of an e-mail attachment by the imap PHP extension." type="High">
+			<failure message="Stack-based buffer overflow in the phar_fix_filepath function in ext/phar/phar.c in PHP before 5.4.43, 5.5.x before 5.5.27, and 5.6.x before 5.6.11 allows remote attackers to cause a denial of service or possibly have unspecified other impact via a large length value, as demonstrated by mishandling of an e-mail attachment by the imap PHP extension." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-5589">
-			<failure message="The phar_convert_to_other function in ext/phar/phar_object.c in PHP before 5.4.43, 5.5.x before 5.5.27, and 5.6.x before 5.6.11 does not validate a file pointer before a close operation, which allows remote attackers to cause a denial of service (segmentation fault) or possibly have unspecified other impact via a crafted TAR archive that is mishandled in a Phar::convertToData call." type="Critical">
+			<failure message="The phar_convert_to_other function in ext/phar/phar_object.c in PHP before 5.4.43, 5.5.x before 5.5.27, and 5.6.x before 5.6.11 does not validate a file pointer before a close operation, which allows remote attackers to cause a denial of service (segmentation fault) or possibly have unspecified other impact via a crafted TAR archive that is mishandled in a Phar::convertToData call." type="critical">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4644">
-			<failure message="The php_pgsql_meta_data function in pgsql.c in the PostgreSQL (aka pgsql) extension in PHP before 5.4.42, 5.5.x before 5.5.26, and 5.6.x before 5.6.10 does not validate token extraction for table names, which might allow remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted name.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2015-1352." type="Medium">
+			<failure message="The php_pgsql_meta_data function in pgsql.c in the PostgreSQL (aka pgsql) extension in PHP before 5.4.42, 5.5.x before 5.5.26, and 5.6.x before 5.6.10 does not validate token extraction for table names, which might allow remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted name.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2015-1352." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4642">
-			<failure message="The escapeshellarg function in ext/standard/exec.c in PHP before 5.4.42, 5.5.x before 5.5.26, and 5.6.x before 5.6.10 on Windows allows remote attackers to execute arbitrary OS commands via a crafted string to an application that accepts command-line arguments for a call to the PHP system function." type="Critical">
+			<failure message="The escapeshellarg function in ext/standard/exec.c in PHP before 5.4.42, 5.5.x before 5.5.26, and 5.6.x before 5.6.10 on Windows allows remote attackers to execute arbitrary OS commands via a crafted string to an application that accepts command-line arguments for a call to the PHP system function." type="critical">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4605">
-			<failure message="The mcopy function in softmagic.c in file 5.x, as used in the Fileinfo component in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8, does not properly restrict a certain offset value, which allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted string that is mishandled by a &#39;Python script text executable&#39; rule." type="Medium">
+			<failure message="The mcopy function in softmagic.c in file 5.x, as used in the Fileinfo component in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8, does not properly restrict a certain offset value, which allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted string that is mishandled by a &#39;Python script text executable&#39; rule." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-4604">
-			<failure message="The mget function in softmagic.c in file 5.x, as used in the Fileinfo component in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8, does not properly maintain a certain pointer relationship, which allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted string that is mishandled by a &#39;Python script text executable&#39; rule." type="Medium">
+			<failure message="The mget function in softmagic.c in file 5.x, as used in the Fileinfo component in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8, does not properly maintain a certain pointer relationship, which allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted string that is mishandled by a &#39;Python script text executable&#39; rule." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-9652">
-			<failure message="The mconvert function in softmagic.c in file before 5.21, as used in the Fileinfo component in PHP before 5.4.37, 5.5.x before 5.5.21, and 5.6.x before 5.6.5, does not properly handle a certain string-length field during a copy of a truncated version of a Pascal string, which might allow remote attackers to cause a denial of service (out-of-bounds memory access and application crash) via a crafted file." type="Medium">
+			<failure message="The mconvert function in softmagic.c in file before 5.21, as used in the Fileinfo component in PHP before 5.4.37, 5.5.x before 5.5.21, and 5.6.x before 5.6.5, does not properly handle a certain string-length field during a copy of a truncated version of a Pascal string, which might allow remote attackers to cause a denial of service (out-of-bounds memory access and application crash) via a crafted file." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-8994">
-			<failure message="An issue was discovered in PHP 5.x and 7.x, when the configuration uses apache2handler/mod_php or php-fpm with OpCache enabled. With 5.x after 5.6.28 or 7.x after 7.0.13, the issue is resolved in a non-default configuration with the opcache.validate_permission=1 setting. The vulnerability details are as follows. In PHP SAPIs where PHP interpreters share a common parent process, Zend OpCache creates a shared memory object owned by the common parent during initialization. Child PHP processes inherit the SHM descriptor, using it to cache and retrieve compiled script bytecode (&#39;opcode&#39; in PHP jargon). Cache keys vary depending on configuration, but filename is a central key component, and compiled opcode can generally be run if a script&#39;s filename is known or can be guessed. Many common shared-hosting configurations change EUID in child processes to enforce privilege separation among hosted users (for example using mod_ruid2 for the Apache HTTP Server, or php-fpm user settings). In these scenarios, the default Zend OpCache behavior defeats script file permissions by sharing a single SHM cache among all child PHP processes. PHP scripts often contain sensitive information: Think of CMS configurations where reading or running another user&#39;s script usually means gaining privileges to the CMS database." type="Medium">
+			<failure message="An issue was discovered in PHP 5.x and 7.x, when the configuration uses apache2handler/mod_php or php-fpm with OpCache enabled. With 5.x after 5.6.28 or 7.x after 7.0.13, the issue is resolved in a non-default configuration with the opcache.validate_permission=1 setting. The vulnerability details are as follows. In PHP SAPIs where PHP interpreters share a common parent process, Zend OpCache creates a shared memory object owned by the common parent during initialization. Child PHP processes inherit the SHM descriptor, using it to cache and retrieve compiled script bytecode (&#39;opcode&#39; in PHP jargon). Cache keys vary depending on configuration, but filename is a central key component, and compiled opcode can generally be run if a script&#39;s filename is known or can be guessed. Many common shared-hosting configurations change EUID in child processes to enforce privilege separation among hosted users (for example using mod_ruid2 for the Apache HTTP Server, or php-fpm user settings). In these scenarios, the default Zend OpCache behavior defeats script file permissions by sharing a single SHM cache among all child PHP processes. PHP scripts often contain sensitive information: Think of CMS configurations where reading or running another user&#39;s script usually means gaining privileges to the CMS database." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-9912">
-			<failure message="The get_icu_disp_value_src_php function in ext/intl/locale/locale_methods.c in PHP before 5.3.29, 5.4.x before 5.4.30, and 5.5.x before 5.5.14 does not properly restrict calls to the ICU uresbund.cpp component, which allows remote attackers to cause a denial of service (buffer overflow) or possibly have unspecified other impact via a locale_get_display_name call with a long first argument." type="High">
+			<failure message="The get_icu_disp_value_src_php function in ext/intl/locale/locale_methods.c in PHP before 5.3.29, 5.4.x before 5.4.30, and 5.5.x before 5.5.14 does not properly restrict calls to the ICU uresbund.cpp component, which allows remote attackers to cause a denial of service (buffer overflow) or possibly have unspecified other impact via a locale_get_display_name call with a long first argument." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-4721">
-			<failure message="The phpinfo implementation in ext/standard/info.c in PHP before 5.4.30 and 5.5.x before 5.5.14 does not ensure use of the string data type for the PHP_AUTH_PW, PHP_AUTH_TYPE, PHP_AUTH_USER, and PHP_SELF variables, which might allow context-dependent attackers to obtain sensitive information from process memory by using the integer data type with crafted values, related to a &#39;type confusion&#39; vulnerability, as demonstrated by reading a private SSL key in an Apache HTTP Server web-hosting environment with mod_ssl and a PHP 5.3.x mod_php." type="Low">
+			<failure message="The phpinfo implementation in ext/standard/info.c in PHP before 5.4.30 and 5.5.x before 5.5.14 does not ensure use of the string data type for the PHP_AUTH_PW, PHP_AUTH_TYPE, PHP_AUTH_USER, and PHP_SELF variables, which might allow context-dependent attackers to obtain sensitive information from process memory by using the integer data type with crafted values, related to a &#39;type confusion&#39; vulnerability, as demonstrated by reading a private SSL key in an Apache HTTP Server web-hosting environment with mod_ssl and a PHP 5.3.x mod_php." type="low">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-4698">
-			<failure message="Use-after-free vulnerability in ext/spl/spl_array.c in the SPL component in PHP through 5.5.14 allows context-dependent attackers to cause a denial of service or possibly have unspecified other impact via crafted ArrayIterator usage within applications in certain web-hosting environments." type="Medium">
+			<failure message="Use-after-free vulnerability in ext/spl/spl_array.c in the SPL component in PHP through 5.5.14 allows context-dependent attackers to cause a denial of service or possibly have unspecified other impact via crafted ArrayIterator usage within applications in certain web-hosting environments." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-4670">
-			<failure message="Use-after-free vulnerability in ext/spl/spl_dllist.c in the SPL component in PHP through 5.5.14 allows context-dependent attackers to cause a denial of service or possibly have unspecified other impact via crafted iterator usage within applications in certain web-hosting environments." type="Medium">
+			<failure message="Use-after-free vulnerability in ext/spl/spl_dllist.c in the SPL component in PHP through 5.5.14 allows context-dependent attackers to cause a denial of service or possibly have unspecified other impact via crafted iterator usage within applications in certain web-hosting environments." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3981">
-			<failure message="acinclude.m4, as used in the configure script in PHP 5.5.13 and earlier, allows local users to overwrite arbitrary files via a symlink attack on the /tmp/phpglibccheck file." type="Low">
+			<failure message="acinclude.m4, as used in the configure script in PHP 5.5.13 and earlier, allows local users to overwrite arbitrary files via a symlink attack on the /tmp/phpglibccheck file." type="low">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3597">
-			<failure message="Multiple buffer overflows in the php_parserr function in ext/standard/dns.c in PHP before 5.4.32 and 5.5.x before 5.5.16 allow remote DNS servers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted DNS record, related to the dns_get_record function and the dn_expand function.  NOTE: this issue exists because of an incomplete fix for CVE-2014-4049." type="Medium">
+			<failure message="Multiple buffer overflows in the php_parserr function in ext/standard/dns.c in PHP before 5.4.32 and 5.5.x before 5.5.16 allow remote DNS servers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted DNS record, related to the dns_get_record function and the dn_expand function.  NOTE: this issue exists because of an incomplete fix for CVE-2014-4049." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3515">
-			<failure message="The SPL component in PHP before 5.4.30 and 5.5.x before 5.5.14 incorrectly anticipates that certain data structures will have the array data type after unserialization, which allows remote attackers to execute arbitrary code via a crafted string that triggers use of a Hashtable destructor, related to &#39;type confusion&#39; issues in (1) ArrayObject and (2) SPLObjectStorage." type="High">
+			<failure message="The SPL component in PHP before 5.4.30 and 5.5.x before 5.5.14 incorrectly anticipates that certain data structures will have the array data type after unserialization, which allows remote attackers to execute arbitrary code via a crafted string that triggers use of a Hashtable destructor, related to &#39;type confusion&#39; issues in (1) ArrayObject and (2) SPLObjectStorage." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-0238">
-			<failure message="The cdf_read_property_info function in cdf.c in the Fileinfo component in PHP before 5.4.29 and 5.5.x before 5.5.13 allows remote attackers to cause a denial of service (infinite loop or out-of-bounds memory access) via a vector that (1) has zero length or (2) is too long." type="Medium">
+			<failure message="The cdf_read_property_info function in cdf.c in the Fileinfo component in PHP before 5.4.29 and 5.5.x before 5.5.13 allows remote attackers to cause a denial of service (infinite loop or out-of-bounds memory access) via a vector that (1) has zero length or (2) is too long." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-0237">
-			<failure message="The cdf_unpack_summary_info function in cdf.c in the Fileinfo component in PHP before 5.4.29 and 5.5.x before 5.5.13 allows remote attackers to cause a denial of service (performance degradation) by triggering many file_printf calls." type="Medium">
+			<failure message="The cdf_unpack_summary_info function in cdf.c in the Fileinfo component in PHP before 5.4.29 and 5.5.x before 5.5.13 allows remote attackers to cause a denial of service (performance degradation) by triggering many file_printf calls." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-0185">
-			<failure message="sapi/fpm/fpm/fpm_unix.c in the FastCGI Process Manager (FPM) in PHP before 5.4.28 and 5.5.x before 5.5.12 uses 0666 permissions for the UNIX socket, which allows local users to gain privileges via a crafted FastCGI client." type="High">
+			<failure message="sapi/fpm/fpm/fpm_unix.c in the FastCGI Process Manager (FPM) in PHP before 5.4.28 and 5.5.x before 5.5.12 uses 0666 permissions for the UNIX socket, which allows local users to gain privileges via a crafted FastCGI client." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3669">
-			<failure message="Integer overflow in the object_custom function in ext/standard/var_unserializer.c in PHP before 5.4.34, 5.5.x before 5.5.18, and 5.6.x before 5.6.2 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via an argument to the unserialize function that triggers calculation of a large length value." type="High">
+			<failure message="Integer overflow in the object_custom function in ext/standard/var_unserializer.c in PHP before 5.4.34, 5.5.x before 5.5.18, and 5.6.x before 5.6.2 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via an argument to the unserialize function that triggers calculation of a large length value." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-3330">
-			<failure message="The php_handler function in sapi/apache2handler/sapi_apache2.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8, when the Apache HTTP Server 2.4.x is used, allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via pipelined HTTP requests that result in a &#39;deconfigured interpreter.&#39;" type="Medium">
+			<failure message="The php_handler function in sapi/apache2handler/sapi_apache2.c in PHP before 5.4.40, 5.5.x before 5.5.24, and 5.6.x before 5.6.8, when the Apache HTTP Server 2.4.x is used, allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via pipelined HTTP requests that result in a &#39;deconfigured interpreter.&#39;" type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-0231">
-			<failure message="Use-after-free vulnerability in the process_nested_data function in ext/standard/var_unserializer.re in PHP before 5.4.37, 5.5.x before 5.5.21, and 5.6.x before 5.6.5 allows remote attackers to execute arbitrary code via a crafted unserialize call that leverages improper handling of duplicate numerical keys within the serialized properties of an object.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-8142." type="High">
+			<failure message="Use-after-free vulnerability in the process_nested_data function in ext/standard/var_unserializer.re in PHP before 5.4.37, 5.5.x before 5.5.21, and 5.6.x before 5.6.5 allows remote attackers to execute arbitrary code via a crafted unserialize call that leverages improper handling of duplicate numerical keys within the serialized properties of an object.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-8142." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-9427">
-			<failure message="sapi/cgi/cgi_main.c in the CGI component in PHP through 5.4.36, 5.5.x through 5.5.20, and 5.6.x through 5.6.4, when mmap is used to read a .php file, does not properly consider the mapping&#39;s length during processing of an invalid file that begins with a # character and lacks a newline character, which causes an out-of-bounds read and might (1) allow remote attackers to obtain sensitive information from php-cgi process memory by leveraging the ability to upload a .php file or (2) trigger unexpected code execution if a valid PHP script is present in memory locations adjacent to the mapping." type="High">
+			<failure message="sapi/cgi/cgi_main.c in the CGI component in PHP through 5.4.36, 5.5.x through 5.5.20, and 5.6.x through 5.6.4, when mmap is used to read a .php file, does not properly consider the mapping&#39;s length during processing of an invalid file that begins with a # character and lacks a newline character, which causes an out-of-bounds read and might (1) allow remote attackers to obtain sensitive information from php-cgi process memory by leveraging the ability to upload a .php file or (2) trigger unexpected code execution if a valid PHP script is present in memory locations adjacent to the mapping." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-8142">
-			<failure message="Use-after-free vulnerability in the process_nested_data function in ext/standard/var_unserializer.re in PHP before 5.4.36, 5.5.x before 5.5.20, and 5.6.x before 5.6.4 allows remote attackers to execute arbitrary code via a crafted unserialize call that leverages improper handling of duplicate keys within the serialized properties of an object, a different vulnerability than CVE-2004-1019." type="High">
+			<failure message="Use-after-free vulnerability in the process_nested_data function in ext/standard/var_unserializer.re in PHP before 5.4.36, 5.5.x before 5.5.20, and 5.6.x before 5.6.4 allows remote attackers to execute arbitrary code via a crafted unserialize call that leverages improper handling of duplicate keys within the serialized properties of an object, a different vulnerability than CVE-2004-1019." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2016-3185">
-			<failure message="The make_http_soap_request function in ext/soap/php_http.c in PHP before 5.4.44, 5.5.x before 5.5.28, 5.6.x before 5.6.12, and 7.x before 7.0.4 allows remote attackers to obtain sensitive information from process memory or cause a denial of service (type confusion and application crash) via crafted serialized _cookies data, related to the SoapClient::__call method in ext/soap/soap.c." type="Medium">
+			<failure message="The make_http_soap_request function in ext/soap/php_http.c in PHP before 5.4.44, 5.5.x before 5.5.28, 5.6.x before 5.6.12, and 7.x before 7.0.4 allows remote attackers to obtain sensitive information from process memory or cause a denial of service (type confusion and application crash) via crafted serialized _cookies data, related to the SoapClient::__call method in ext/soap/soap.c." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2015-8838">
-			<failure message="ext/mysqlnd/mysqlnd.c in PHP before 5.4.43, 5.5.x before 5.5.27, and 5.6.x before 5.6.11 uses a client SSL option to mean that SSL is optional, which allows man-in-the-middle attackers to spoof servers via a cleartext-downgrade attack, a related issue to CVE-2015-3152." type="Medium">
+			<failure message="ext/mysqlnd/mysqlnd.c in PHP before 5.4.43, 5.5.x before 5.5.27, and 5.6.x before 5.6.11 uses a client SSL option to mean that SSL is optional, which allows man-in-the-middle attackers to spoof servers via a cleartext-downgrade attack, a related issue to CVE-2015-3152." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3487">
-			<failure message="The cdf_read_property_info function in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, does not properly validate a stream offset, which allows remote attackers to cause a denial of service (application crash) via a crafted CDF file." type="Medium">
+			<failure message="The cdf_read_property_info function in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, does not properly validate a stream offset, which allows remote attackers to cause a denial of service (application crash) via a crafted CDF file." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3480">
-			<failure message="The cdf_count_chain function in cdf.c in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, does not properly validate sector-count data, which allows remote attackers to cause a denial of service (application crash) via a crafted CDF file." type="Medium">
+			<failure message="The cdf_count_chain function in cdf.c in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, does not properly validate sector-count data, which allows remote attackers to cause a denial of service (application crash) via a crafted CDF file." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3479">
-			<failure message="The cdf_check_stream_offset function in cdf.c in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, relies on incorrect sector-size data, which allows remote attackers to cause a denial of service (application crash) via a crafted stream offset in a CDF file." type="Medium">
+			<failure message="The cdf_check_stream_offset function in cdf.c in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, relies on incorrect sector-size data, which allows remote attackers to cause a denial of service (application crash) via a crafted stream offset in a CDF file." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3478">
-			<failure message="Buffer overflow in the mconvert function in softmagic.c in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, allows remote attackers to cause a denial of service (application crash) via a crafted Pascal string in a FILE_PSTRING conversion." type="Medium">
+			<failure message="Buffer overflow in the mconvert function in softmagic.c in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, allows remote attackers to cause a denial of service (application crash) via a crafted Pascal string in a FILE_PSTRING conversion." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-0207">
-			<failure message="The cdf_read_short_sector function in cdf.c in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, allows remote attackers to cause a denial of service (assertion failure and application exit) via a crafted CDF file." type="Medium">
+			<failure message="The cdf_read_short_sector function in cdf.c in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, allows remote attackers to cause a denial of service (assertion failure and application exit) via a crafted CDF file." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-5459">
-			<failure message="The PEAR_REST class in REST.php in PEAR in PHP through 5.6.0 allows local users to write to arbitrary files via a symlink attack on a (1) rest.cachefile or (2) rest.cacheid file in /tmp/pear/cache/, related to the retrieveCacheFirst and useLocalCache functions." type="Low">
+			<failure message="The PEAR_REST class in REST.php in PEAR in PHP through 5.6.0 allows local users to write to arbitrary files via a symlink attack on a (1) rest.cachefile or (2) rest.cacheid file in /tmp/pear/cache/, related to the retrieveCacheFirst and useLocalCache functions." type="low">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-5120">
-			<failure message="gd_ctx.c in the GD component in PHP 5.4.x before 5.4.32 and 5.5.x before 5.5.16 does not ensure that pathnames lack %00 sequences, which might allow remote attackers to overwrite arbitrary files via crafted input to an application that calls the (1) imagegd, (2) imagegd2, (3) imagegif, (4) imagejpeg, (5) imagepng, (6) imagewbmp, or (7) imagewebp function." type="Medium">
+			<failure message="gd_ctx.c in the GD component in PHP 5.4.x before 5.4.32 and 5.5.x before 5.5.16 does not ensure that pathnames lack %00 sequences, which might allow remote attackers to overwrite arbitrary files via crafted input to an application that calls the (1) imagegd, (2) imagegd2, (3) imagegif, (4) imagejpeg, (5) imagepng, (6) imagewbmp, or (7) imagewebp function." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3670">
-			<failure message="The exif_ifd_make_value function in exif.c in the EXIF extension in PHP before 5.4.34, 5.5.x before 5.5.18, and 5.6.x before 5.6.2 operates on floating-point arrays incorrectly, which allows remote attackers to cause a denial of service (heap memory corruption and application crash) or possibly execute arbitrary code via a crafted JPEG image with TIFF thumbnail data that is improperly handled by the exif_thumbnail function." type="Medium">
+			<failure message="The exif_ifd_make_value function in exif.c in the EXIF extension in PHP before 5.4.34, 5.5.x before 5.5.18, and 5.6.x before 5.6.2 operates on floating-point arrays incorrectly, which allows remote attackers to cause a denial of service (heap memory corruption and application crash) or possibly execute arbitrary code via a crafted JPEG image with TIFF thumbnail data that is improperly handled by the exif_thumbnail function." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="cve.crashtest.cloud" name="CVE-2014-3668">
-			<failure message="Buffer overflow in the date_from_ISO8601 function in the mkgmtime implementation in libxmlrpc/xmlrpc.c in the XMLRPC extension in PHP before 5.4.34, 5.5.x before 5.5.18, and 5.6.x before 5.6.2 allows remote attackers to cause a denial of service (application crash) via (1) a crafted first argument to the xmlrpc_set_type function or (2) a crafted argument to the xmlrpc_decode function, related to an out-of-bounds read operation." type="Medium">
+			<failure message="Buffer overflow in the date_from_ISO8601 function in the mkgmtime implementation in libxmlrpc/xmlrpc.c in the XMLRPC extension in PHP before 5.4.34, 5.5.x before 5.5.18, and 5.6.x before 5.6.2 allows remote attackers to cause a denial of service (application crash) via (1) a crafted first argument to the xmlrpc_set_type function or (2) a crafted argument to the xmlrpc_decode function, related to an out-of-bounds read operation." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="commandinjection.crashtest.cloud" name="Command Injection (1)">
+			<failure message="Failed" type="error">
+			</failure>
 		</testcase>
 		<testcase classname="commandinjection.crashtest.cloud" name="Command Injection (2)">
 		</testcase>
 		<testcase classname="commandinjection.crashtest.cloud" name="Command Injection (3)">
 		</testcase>
 		<testcase classname="xss.crashtest.cloud" name="Cross-Site Scripting (XSS) (1)">
-			<failure message="Found possible XSS vulnerability on site example.org/vulnerabilities/xss_r/. The parameter &#39;name&#39; seems vulnerable for payload &#39;&lt;svg &#39;ons&gt;&#39;" type="Medium">
+			<failure message="Found possible XSS vulnerability on site example.org/vulnerabilities/xss_r/. The parameter &#39;name&#39; seems vulnerable for payload &#39;&lt;svg &#39;ons&gt;&#39;" type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="xss.crashtest.cloud" name="Cross-Site Scripting (XSS) (2)">
@@ -387,11 +389,11 @@
 		<testcase classname="xss.crashtest.cloud" name="Cross-Site Scripting (XSS) (3)">
 		</testcase>
 		<testcase classname="sqlinjection.crashtest.cloud" name="SQL Injection (1)">
-			<failure message="Found sqlinjection for parameter id (GET) on https://example.org/vulnerabilities/sqli/" type="Critical">
+			<failure message="Found sqlinjection for parameter id (GET) on https://example.org/vulnerabilities/sqli/" type="critical">
 			</failure>
 		</testcase>
 		<testcase classname="sqlinjection.crashtest.cloud" name="SQL Injection (2)">
-			<failure message="Found sqlinjection for parameter username (GET) on https://example.org/vulnerabilities/brute/" type="Critical">
+			<failure message="Found sqlinjection for parameter username (GET) on https://example.org/vulnerabilities/brute/" type="critical">
 			</failure>
 		</testcase>
 		<testcase classname="sqlinjection.crashtest.cloud" name="SQL Injection (3)">
@@ -403,83 +405,83 @@
 		<testcase classname="xxe.crashtest.cloud" name="XML External Entity (XXE) (3)">
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (1)">
-			<failure message="LOGJAM vulnerability detected CVE-2015-4000" type="Low">
+			<failure message="LOGJAM vulnerability detected CVE-2015-4000" type="low">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (2)">
-			<failure message="Cipherlist_3DES is offered by the server." type="Medium">
+			<failure message="Cipherlist_3DES is offered by the server." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (3)">
-			<failure message="Uses 64 bit block ciphers" type="Medium">
+			<failure message="Uses 64 bit block ciphers" type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (4)">
-			<failure message="HSTS is not offered by the server." type="Medium">
+			<failure message="HSTS is not offered by the server." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (5)">
-			<failure message="BEAST TLS1 The BEAST attack leverages weakness in the cipher block chaining (CBC) which allows man in the middle attacks." type="Medium">
+			<failure message="BEAST TLS1 The BEAST attack leverages weakness in the cipher block chaining (CBC) which allows man in the middle attacks." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (6)">
-			<failure message="There is no subject alt name defined. Browsers are complaining." type="High">
+			<failure message="There is no subject alt name defined. Browsers are complaining." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (7)">
-			<failure message="Neither CRL nor OCSP URI provided" type="High">
+			<failure message="Neither CRL nor OCSP URI provided" type="high">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (8)">
-			<failure message="BEAST SSL3: The BEAST attack leverages weakness in the cipher block chaining (CBC) which allows man in the middle attacks." type="Low">
+			<failure message="BEAST SSL3: The BEAST attack leverages weakness in the cipher block chaining (CBC) which allows man in the middle attacks." type="low">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (9)">
-			<failure message="Certificate does not match supplied URI (same w/o SNI)" type="High">
+			<failure message="Certificate does not match supplied URI (same w/o SNI)" type="high">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (10)">
-			<failure message="SSLv3 is offered by the server." type="High">
+			<failure message="SSLv3 is offered by the server." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (11)">
-			<failure message="Server does not set a cipher order." type="Medium">
+			<failure message="Server does not set a cipher order." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (12)">
-			<failure message="The certificate key size is 1024 bits." type="Medium">
+			<failure message="The certificate key size is 1024 bits." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (13)">
-			<failure message="Signature Algorithm: MD5" type="Medium">
+			<failure message="Signature Algorithm: MD5" type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (14)">
-			<failure message="DNS Certification Authority Authorization (CAA) Resource Record / RFC6844: Not offered" type="Informational">
+			<failure message="DNS Certification Authority Authorization (CAA) Resource Record / RFC6844: Not offered" type="informational">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (15)">
-			<failure message="Certificate is selfsigned." type="High">
+			<failure message="Certificate is selfsigned." type="high">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (16)">
-			<failure message="VULNERABLE -- but also supports higher protocols  TLSv1.1 TLSv1.2 (likely mitigated)" type="Medium">
+			<failure message="VULNERABLE -- but also supports higher protocols  TLSv1.1 TLSv1.2 (likely mitigated)" type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (17)">
-			<failure message="VULNERABLE, Detected ciphers: ECDHE-RSA-RC4-SHA RC4-SHA RC4-MD5" type="Medium">
+			<failure message="VULNERABLE, Detected ciphers: ECDHE-RSA-RC4-SHA RC4-SHA RC4-MD5" type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (18)">
-			<failure message="No security headers detected" type="Medium">
+			<failure message="No security headers detected" type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (19)">
-			<failure message="Cipherlist_128Bit is offered by the server." type="Medium">
+			<failure message="Cipherlist_128Bit is offered by the server." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="ssl.crashtest.cloud" name="Transport Layer Security (TLS/SSL) (20)">
-			<failure message="VULNERABLE, uses SSLv3+CBC" type="Low">
+			<failure message="VULNERABLE, uses SSLv3+CBC" type="low">
 			</failure>
 		</testcase>
 		<testcase classname="fileinclusion.crashtest.cloud" name="File Inclusion (1)">
@@ -495,27 +497,27 @@
 		<testcase classname="deserialization.crashtest.cloud" name="Deserialization (3)">
 		</testcase>
 		<testcase classname="fuzzer.crashtest.cloud" name="Fuzzer (1)">
-			<failure message="Retrieved https://example.org/config/ by using a GET request on the URL without prior knowledge." type="Medium">
+			<failure message="Retrieved https://example.org/config/ by using a GET request on the URL without prior knowledge." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="fuzzer.crashtest.cloud" name="Fuzzer (2)">
-			<failure message="Retrieved https://example.org/docs/ by using a GET request on the URL without prior knowledge." type="Medium">
+			<failure message="Retrieved https://example.org/docs/ by using a GET request on the URL without prior knowledge." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="fuzzer.crashtest.cloud" name="Fuzzer (3)">
-			<failure message="Retrieved https://example.org/.git/ by using a GET request on the URL without prior knowledge." type="Medium">
+			<failure message="Retrieved https://example.org/.git/ by using a GET request on the URL without prior knowledge." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="fuzzer.crashtest.cloud" name="Fuzzer (4)">
-			<failure message="Retrieved https://example.org/php.ini by using a GET request on the URL without prior knowledge." type="Medium">
+			<failure message="Retrieved https://example.org/php.ini by using a GET request on the URL without prior knowledge." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="fuzzer.crashtest.cloud" name="Fuzzer (5)">
-			<failure message="Retrieved https://example.org/README.md by using a GET request on the URL without prior knowledge." type="Medium">
+			<failure message="Retrieved https://example.org/README.md by using a GET request on the URL without prior knowledge." type="medium">
 			</failure>
 		</testcase>
 		<testcase classname="fuzzer.crashtest.cloud" name="Fuzzer (6)">
-			<failure message="Retrieved https://example.org/setup.php by using a GET request on the URL without prior knowledge." type="Medium">
+			<failure message="Retrieved https://example.org/setup.php by using a GET request on the URL without prior knowledge." type="medium">
 			</failure>
 		</testcase>
 	</testsuite>
