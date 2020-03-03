@@ -520,5 +520,11 @@
 			<failure message="Retrieved https://example.org/setup.php by using a GET request on the URL without prior knowledge." type="medium">
 			</failure>
 		</testcase>
+    		<testcase classname="csrf.crashtest.cloud" name="Cross-Site Request Forgery (CSRF) (1)">
+			<failure message="Scan not started because of no login credentials provided" type="Skipped"/>
+		</testcase>
+		<testcase classname="csrf.crashtest.cloud" name="Cross-Site Request Forgery (CSRF) (2)">
+			<failure message="Scan not started because of no login credentials provided" type="Skipped"/>
+		</testcase>
 	</testsuite>
 </testsuites>
