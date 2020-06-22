@@ -1,0 +1,856 @@
+[
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/2fa.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/address.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/angular.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/appConfiguration.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/appVersion.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/authenticatedUsers.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/b2bOrder.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/basket.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 23,
+        "column": 13,
+        "nodeType": "MemberExpression",
+        "endLine": 23,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 23,
+        "column": 46,
+        "nodeType": "MemberExpression",
+        "endLine": 23,
+        "endColumn": 64
+      }
+    ],
+    "errorCount": 2,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst utils = require('../lib/utils')\nconst insecurity = require('../lib/insecurity')\nconst models = require('../models/index')\nconst challenges = require('../data/datacache').challenges\n\nmodule.exports = function retrieveBasket () {\n  return (req, res, next) => {\n    const id = req.params.id\n    models.Basket.findOne({ where: { id }, include: [{ model: models.Product, paranoid: false }] })\n      .then(basket => {\n        /* jshint eqeqeq:false */\n        utils.solveIf(challenges.basketAccessChallenge, () => {\n          const user = insecurity.authenticatedUsers.from(req)\n          return user && id && id !== 'undefined' && id !== 'null' && user.bid != id // eslint-disable-line eqeqeq\n        })\n        if (basket && basket.Products && basket.Products.length > 0) {\n          for (let i = 0; i < basket.Products.length; i++) {\n            basket.Products[i].name = req.__(basket.Products[i].name)\n          }\n        }\n        res.json(utils.queryResultToJson(basket))\n      }).catch(error => {\n        next(error)\n      })\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/basketItems.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 19,
+        "column": 11,
+        "nodeType": "MemberExpression",
+        "endLine": 19,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 20,
+        "column": 25,
+        "nodeType": "MemberExpression",
+        "endLine": 20,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 21,
+        "column": 18,
+        "nodeType": "MemberExpression",
+        "endLine": 21,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 22,
+        "column": 24,
+        "nodeType": "MemberExpression",
+        "endLine": 22,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 23,
+        "column": 18,
+        "nodeType": "MemberExpression",
+        "endLine": 23,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 24,
+        "column": 25,
+        "nodeType": "MemberExpression",
+        "endLine": 24,
+        "endColumn": 34
+      }
+    ],
+    "errorCount": 6,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst utils = require('../lib/utils')\nconst challenges = require('../data/datacache').challenges\nconst insecurity = require('../lib/insecurity')\nconst models = require('../models/index')\n\nmodule.exports.addBasketItem = function addBasketItem () {\n  return (req, res, next) => {\n    var result = utils.parseJsonCustom(req.rawBody)\n    var productIds = []\n    var basketIds = []\n    var quantities = []\n\n    for (var i = 0; i < result.length; i++) {\n      if (result[i].key === 'ProductId') {\n        productIds.push(result[i].value)\n      } else if (result[i].key === 'BasketId') {\n        basketIds.push(result[i].value)\n      } else if (result[i].key === 'quantity') {\n        quantities.push(result[i].value)\n      }\n    }\n\n    const user = insecurity.authenticatedUsers.from(req)\n    if (user && basketIds[0] && basketIds[0] !== 'undefined' && user.bid != basketIds[0]) { // eslint-disable-line eqeqeq\n      res.status(401).send('{\\'error\\' : \\'Invalid BasketId\\'}')\n    } else {\n      const basketItem = {\n        ProductId: productIds[productIds.length - 1],\n        BasketId: basketIds[basketIds.length - 1],\n        quantity: quantities[quantities.length - 1]\n      }\n      utils.solveIf(challenges.basketManipulateChallenge, () => { return user && basketItem.BasketId && basketItem.BasketId !== 'undefined' && user.bid != basketItem.BasketId }) // eslint-disable-line eqeqeq\n\n      const basketItemInstance = models.BasketItem.build(basketItem)\n      basketItemInstance.save().then((basketItem) => {\n        basketItem = {\n          status: 'success',\n          data: basketItem\n        }\n        res.json(basketItem)\n      }).catch(error => {\n        next(error)\n      })\n    }\n  }\n}\n\nmodule.exports.quantityCheckBeforeBasketItemAddition = function quantityCheckBeforeBasketItemAddition () {\n  return (req, res, next) => {\n    quantityCheck(req, res, next, req.body.ProductId, req.body.quantity)\n  }\n}\n\nmodule.exports.quantityCheckBeforeBasketItemUpdate = function quantityCheckBeforeBasketItemUpdate () {\n  return (req, res, next) => {\n    models.BasketItem.findOne({ where: { id: req.params.id } }).then((item) => {\n      if (req.body.quantity) {\n        quantityCheck(req, res, next, item.ProductId, req.body.quantity)\n      } else {\n        next()\n      }\n    }).catch(error => {\n      next(error)\n    })\n  }\n}\n\nasync function quantityCheck (req, res, next, id, quantity) {\n  const record = await models.PurchaseQuantity.findOne({ where: { ProductId: id, UserId: req.body.UserId } })\n\n  const previousPurchase = record ? record.quantity : 0\n\n  const product = await models.Quantity.findOne({ where: { ProductId: id } })\n\n  if (!product.limitPerUser || (product.limitPerUser && (product.limitPerUser - previousPurchase) >= quantity) || insecurity.isDeluxe(req)) {\n    if (product.quantity >= quantity) {\n      next()\n    } else {\n      res.status(400).json({ error: res.__('We are out of stock! Sorry for the inconvenience.') })\n    }\n  } else {\n    res.status(400).json({ error: res.__('You can order only up to {{quantity}} items of this product.', { quantity: product.limitPerUser }) })\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/captcha.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-eval-with-expression",
+        "severity": 2,
+        "message": "eval with argument of type Identifier",
+        "line": 21,
+        "column": 18,
+        "nodeType": "CallExpression",
+        "endLine": 21,
+        "endColumn": 34
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst models = require('../models/index')\n\nfunction captchas () {\n  return (req, res) => {\n    var captchaId = req.app.locals.captchaId++\n    var operators = ['*', '+', '-']\n\n    var firstTerm = Math.floor((Math.random() * 10) + 1)\n    var secondTerm = Math.floor((Math.random() * 10) + 1)\n    var thirdTerm = Math.floor((Math.random() * 10) + 1)\n\n    var firstOperator = operators[Math.floor((Math.random() * 3))]\n    var secondOperator = operators[Math.floor((Math.random() * 3))]\n\n    var expression = firstTerm.toString() + firstOperator + secondTerm.toString() + secondOperator + thirdTerm.toString()\n    var answer = eval(expression).toString() // eslint-disable-line no-eval\n\n    const captcha = {\n      captchaId: captchaId,\n      captcha: expression,\n      answer: answer\n    }\n    const captchaInstance = models.Captcha.build(captcha)\n    captchaInstance.save().then(() => {\n      res.json(captcha)\n    })\n  }\n}\n\ncaptchas.verifyCaptcha = () => (req, res, next) => {\n  models.Captcha.findOne({ where: { captchaId: req.body.captchaId } }).then(captcha => {\n    if (captcha && req.body.captcha === captcha.dataValues.answer) {\n      next()\n    } else {\n      res.status(401).send(res.__('Wrong answer to CAPTCHA. Please try again.'))\n    }\n  })\n}\n\nmodule.exports = captchas\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/changePassword.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/continueCode.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 15,
+        "column": 13,
+        "nodeType": "MemberExpression",
+        "endLine": 15,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 15,
+        "column": 47,
+        "nodeType": "MemberExpression",
+        "endLine": 15,
+        "endColumn": 63
+      }
+    ],
+    "errorCount": 2,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst Hashids = require('hashids/cjs')\nconst hashids = new Hashids('this is my salt', 60, 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890')\nconst challenges = require('../data/datacache').challenges\n\nmodule.exports = function retrieveCurrentContinueCode () {\n  return (req, res) => {\n    const ids = []\n    for (const name in challenges) {\n      if (Object.prototype.hasOwnProperty.call(challenges, name)) {\n        if (challenges[name].solved) ids.push(challenges[name].id)\n      }\n    }\n    const continueCode = ids.length > 0 ? hashids.encode(ids) : undefined\n    res.json({ continueCode })\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/countryMapping.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/coupon.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/createProductReviews.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/currentUser.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/dataExport.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/delivery.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/deluxe.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/easterEgg.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/erasureRequest.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/fileServer.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/fileUpload.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.open with non literal argument at index 0",
+        "line": 37,
+        "column": 7,
+        "nodeType": "MemberExpression",
+        "endLine": 37,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.createReadStream with non literal argument at index 0",
+        "line": 42,
+        "column": 13,
+        "nodeType": "MemberExpression",
+        "endLine": 42,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.createWriteStream with non literal argument at index 0",
+        "line": 49,
+        "column": 30,
+        "nodeType": "MemberExpression",
+        "endLine": 49,
+        "endColumn": 50
+      }
+    ],
+    "errorCount": 3,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst utils = require('../lib/utils')\nconst challenges = require('../data/datacache').challenges\nconst libxml = require('libxmljs2')\nconst os = require('os')\nconst vm = require('vm')\nconst fs = require('fs')\nconst unzipper = require('unzipper')\nconst path = require('path')\n\nfunction matchesSystemIniFile (text) {\n  const match = text.match(/(; for 16-bit app support|drivers|mci|driver32|386enh|keyboard|boot|display)/gi)\n  return match && match.length >= 2\n}\n\nfunction matchesEtcPasswdFile (text) {\n  const match = text.match(/\\w*:\\w*:\\d*:\\d*:\\w*:.*/gi)\n  return match && match.length >= 2\n}\n\nfunction ensureFileIsPassed ({ file }, res, next) {\n  if (file) {\n    next()\n  }\n}\n\nfunction handleZipFileUpload ({ file }, res, next) {\n  if (utils.endsWith(file.originalname.toLowerCase(), '.zip')) {\n    if (file.buffer && !utils.disableOnContainerEnv()) {\n      const buffer = file.buffer\n      const filename = file.originalname.toLowerCase()\n      const tempFile = path.join(os.tmpdir(), filename)\n      fs.open(tempFile, 'w', function (err, fd) {\n        if (err) { next(err) }\n        fs.write(fd, buffer, 0, buffer.length, null, function (err) {\n          if (err) { next(err) }\n          fs.close(fd, function () {\n            fs.createReadStream(tempFile)\n              .pipe(unzipper.Parse())\n              .on('entry', function (entry) {\n                const fileName = entry.path\n                const absolutePath = path.resolve('uploads/complaints/' + fileName)\n                utils.solveIf(challenges.fileWriteChallenge, () => { return absolutePath === path.resolve('ftp/legal.md') })\n                if (absolutePath.includes(path.resolve('.'))) {\n                  entry.pipe(fs.createWriteStream('uploads/complaints/' + fileName).on('error', function (err) { next(err) }))\n                } else {\n                  entry.autodrain()\n                }\n              }).on('error', function (err) { next(err) })\n          })\n        })\n      })\n    }\n    res.status(204).end()\n  } else {\n    next()\n  }\n}\n\nfunction checkUploadSize ({ file }, res, next) {\n  utils.solveIf(challenges.uploadSizeChallenge, () => { return file.size > 100000 })\n  next()\n}\n\nfunction checkFileType ({ file }, res, next) {\n  const fileType = file.originalname.substr(file.originalname.lastIndexOf('.') + 1).toLowerCase()\n  utils.solveIf(challenges.uploadTypeChallenge, () => {\n    return !(fileType === 'pdf' || fileType === 'xml' || fileType === 'zip')\n  })\n  next()\n}\n\nfunction handleXmlUpload ({ file }, res, next) {\n  if (utils.endsWith(file.originalname.toLowerCase(), '.xml')) {\n    utils.solveIf(challenges.deprecatedInterfaceChallenge, () => { return true })\n    if (file.buffer && !utils.disableOnContainerEnv()) { // XXE attacks in Docker/Heroku containers regularly cause \"segfault\" crashes\n      const data = file.buffer.toString()\n      try {\n        const sandbox = { libxml, data }\n        vm.createContext(sandbox)\n        const xmlDoc = vm.runInContext('libxml.parseXml(data, { noblanks: true, noent: true, nocdata: true })', sandbox, { timeout: 2000 })\n        const xmlString = xmlDoc.toString(false)\n        utils.solveIf(challenges.xxeFileDisclosureChallenge, () => { return (matchesSystemIniFile(xmlString) || matchesEtcPasswdFile(xmlString)) })\n        res.status(410)\n        next(new Error('B2B customer complaints via file upload have been deprecated for security reasons: ' + utils.trunc(xmlString, 400) + ' (' + file.originalname + ')'))\n      } catch (err) {\n        if (utils.contains(err.message, 'Script execution timed out')) {\n          if (utils.notSolved(challenges.xxeDosChallenge)) {\n            utils.solve(challenges.xxeDosChallenge)\n          }\n          res.status(503)\n          next(new Error('Sorry, we are temporarily not available! Please try again later.'))\n        } else {\n          res.status(410)\n          next(new Error('B2B customer complaints via file upload have been deprecated for security reasons: ' + err.message + ' (' + file.originalname + ')'))\n        }\n      }\n    } else {\n      res.status(410)\n      next(new Error('B2B customer complaints via file upload have been deprecated for security reasons (' + file.originalname + ')'))\n    }\n  }\n  res.status(204).end()\n}\n\nmodule.exports = {\n  ensureFileIsPassed,\n  handleZipFileUpload,\n  checkUploadSize,\n  checkFileType,\n  handleXmlUpload\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/imageCaptcha.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/keyServer.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/languages.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.readFile with non literal argument at index 0",
+        "line": 25,
+        "column": 11,
+        "nodeType": "MemberExpression",
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 62,
+        "column": 75,
+        "nodeType": "MemberExpression",
+        "endLine": 62,
+        "endColumn": 91
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 62,
+        "column": 96,
+        "nodeType": "MemberExpression",
+        "endLine": 62,
+        "endColumn": 110
+      }
+    ],
+    "errorCount": 3,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst fs = require('fs')\nconst locales = require('../data/static/locales')\n\nmodule.exports = function getLanguageList () {\n  return (req, res, next) => {\n    const languages = []\n    let count = 0\n    let enContent\n\n    fs.readFile('frontend/dist/frontend/assets/i18n/en.json', 'utf-8', (err, content) => {\n      if (err) {\n        next(new Error(`Unable to retrieve en.json language file: ${err.message}`))\n      }\n      enContent = JSON.parse(content)\n      fs.readdir('frontend/dist/frontend/assets/i18n/', (err, languageFiles) => {\n        if (err) {\n          next(new Error(`Unable to read i18n directory: ${err.message}`))\n        }\n        languageFiles.forEach((fileName) => {\n          fs.readFile('frontend/dist/frontend/assets/i18n/' + fileName, 'utf-8', async (err, content) => {\n            if (err) {\n              next(new Error(`Unable to retrieve ${fileName} language file: ${err.message}`))\n            }\n            const fileContent = JSON.parse(content)\n            const percentage = await calcPercentage(fileContent, enContent)\n            const key = fileName.substring(0, fileName.indexOf('.'))\n            let locale = locales.find((l) => l.key === key)\n            if (!locale) locale = ''\n            const lang = {\n              key: key,\n              lang: fileContent.LANGUAGE,\n              icons: locale.icons,\n              shortKey: locale.shortKey,\n              percentage: percentage,\n              gauge: (percentage > 90 ? 'full' : (percentage > 70 ? 'three-quarters' : (percentage > 50 ? 'half' : (percentage > 30 ? 'quarter' : 'empty'))))\n            }\n            if (!(fileName === 'en.json' || fileName === 'tlh_AA.json')) {\n              languages.push(lang)\n            }\n            count++\n            if (count === languageFiles.length) {\n              languages.push({ key: 'en', icons: ['gb', 'us'], shortKey: 'EN', lang: 'English', percentage: 100, gauge: 'full' })\n              languages.sort((a, b) => a.lang.localeCompare(b.lang))\n              res.status(200).json(languages)\n            }\n          })\n        })\n      })\n    })\n\n    function calcPercentage (fileContent, enContent) {\n      const totalStrings = Object.keys(enContent).length\n      let differentStrings = 0\n      return new Promise((resolve, reject) => {\n        try {\n          for (const key in fileContent) {\n            if (Object.prototype.hasOwnProperty.call(fileContent, key) && fileContent[key] !== enContent[key]) {\n              differentStrings++\n            }\n          }\n          resolve((differentStrings / totalStrings) * 100)\n        } catch (err) {\n          reject(err)\n        }\n      })\n    }\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/likeProductReviews.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 30,
+        "column": 23,
+        "nodeType": "MemberExpression",
+        "endLine": 30,
+        "endColumn": 33
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst utils = require('../lib/utils')\nconst challenges = require('../data/datacache').challenges\nconst db = require('../data/mongodb')\nconst insecurity = require('../lib/insecurity')\n\nmodule.exports = function productReviews () {\n  return (req, res, next) => {\n    const id = req.body.id\n    const user = insecurity.authenticatedUsers.from(req)\n    db.reviews.findOne({ _id: id }).then(review => {\n      var likedBy = review.likedBy\n      if (!likedBy.includes(user.data.email)) {\n        db.reviews.update(\n          { _id: id },\n          { $inc: { likesCount: 1 } }\n        ).then(\n          result => {\n            // Artificial wait for timing attack challenge\n            setTimeout(function () {\n              db.reviews.findOne({ _id: id }).then(review => {\n                var likedBy = review.likedBy\n                likedBy.push(user.data.email)\n                var count = 0\n                for (var i = 0; i < likedBy.length; i++) {\n                  if (likedBy[i] === user.data.email) {\n                    count++\n                  }\n                }\n                utils.solveIf(challenges.timingAttackChallenge, () => { return count > 2 })\n                db.reviews.update(\n                  { _id: id },\n                  { $set: { likedBy: likedBy } }\n                ).then(\n                  result => {\n                    res.json(result)\n                  }, err => {\n                    res.status(500).json(err)\n                  })\n              }, () => {\n                res.status(400).json({ error: 'Wrong Params' })\n              })\n            }, 150)\n          }, err => {\n            res.status(500).json(err)\n          })\n      } else {\n        res.status(403).json({ error: 'Not allowed' })\n      }\n    }, () => {\n      res.status(400).json({ error: 'Wrong Params' })\n    })\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/logfileServer.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/login.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/memory.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/metrics.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-unsafe-regex",
+        "severity": 2,
+        "message": "Unsafe Regular Expression",
+        "line": 120,
+        "column": 51,
+        "nodeType": "Literal",
+        "endLine": 120,
+        "endColumn": 103
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst Prometheus = require('prom-client')\nconst onFinished = require('on-finished')\nconst orders = require('../data/mongodb').orders\nconst reviews = require('../data/mongodb').reviews\nconst challenges = require('../data/datacache').challenges\nconst utils = require('../lib/utils')\nconst config = require('config')\nconst models = require('../models')\nconst Op = models.Sequelize.Op\n\nconst register = Prometheus.register\n\nconst fileUploadsCountMetric = new Prometheus.Counter({\n  name: 'file_uploads_count',\n  help: 'Total number of successful file uploads grouped by file type.',\n  labelNames: ['file_type']\n})\n\nconst fileUploadErrorsMetric = new Prometheus.Counter({\n  name: 'file_upload_errors',\n  help: 'Total number of failed file uploads grouped by file type.',\n  labelNames: ['file_type']\n})\n\nexports.observeRequestMetricsMiddleware = function observeRequestMetricsMiddleware () {\n  const httpRequestsMetric = new Prometheus.Counter({\n    name: 'http_requests_count',\n    help: 'Total HTTP request count grouped by status code.',\n    labelNames: ['status_code']\n  })\n\n  return (req, res, next) => {\n    onFinished(res, () => {\n      const statusCode = `${Math.floor(res.statusCode / 100)}XX`\n      httpRequestsMetric.labels(statusCode).inc()\n    })\n    next()\n  }\n}\n\nexports.observeFileUploadMetricsMiddleware = function observeFileUploadMetricsMiddleware () {\n  return ({ file }, res, next) => {\n    onFinished(res, () => {\n      if (file) {\n        res.statusCode < 400 ? fileUploadsCountMetric.labels(file.mimetype).inc() : fileUploadErrorsMetric.labels(file.mimetype).inc()\n      }\n    })\n    next()\n  }\n}\n\nexports.serveMetrics = function serveMetrics () {\n  return (req, res, next) => {\n    utils.solveIf(challenges.exposedMetricsChallenge, () => {\n      const userAgent = req.headers['user-agent'] || ''\n      return !userAgent.includes('Prometheus')\n    })\n    res.set('Content-Type', register.contentType)\n    res.end(register.metrics())\n  }\n}\n\nexports.observeMetrics = function observeMetrics () {\n  const app = config.get('application.customMetricsPrefix')\n  const intervalCollector = Prometheus.collectDefaultMetrics({ timeout: 5000 })\n  register.setDefaultLabels({ app })\n\n  const versionMetrics = new Prometheus.Gauge({\n    name: `${app}_version_info`,\n    help: `Release version of ${config.get('application.name')}.`,\n    labelNames: ['version', 'major', 'minor', 'patch']\n  })\n\n  const challengeSolvedMetrics = new Prometheus.Gauge({\n    name: `${app}_challenges_solved`,\n    help: 'Number of solved challenges grouped by difficulty and category.',\n    labelNames: ['difficulty', 'category']\n  })\n\n  const challengeTotalMetrics = new Prometheus.Gauge({\n    name: `${app}_challenges_total`,\n    help: 'Total number of challenges grouped by difficulty and category.',\n    labelNames: ['difficulty', 'category']\n  })\n\n  const orderMetrics = new Prometheus.Gauge({\n    name: `${app}_orders_placed_total`,\n    help: `Number of orders placed in ${config.get('application.name')}.`\n  })\n\n  const userMetrics = new Prometheus.Gauge({\n    name: `${app}_users_registered`,\n    help: 'Number of registered users grouped by customer type.',\n    labelNames: ['type']\n  })\n\n  const userTotalMetrics = new Prometheus.Gauge({\n    name: `${app}_users_registered_total`,\n    help: 'Total number of registered users.'\n  })\n\n  const walletMetrics = new Prometheus.Gauge({\n    name: `${app}_wallet_balance_total`,\n    help: 'Total balance of all users\\' digital wallets.'\n  })\n\n  const interactionsMetrics = new Prometheus.Gauge({\n    name: `${app}_user_social_interactions`,\n    help: 'Number of social interactions with users grouped by type.',\n    labelNames: ['type']\n  })\n\n  const updateLoop = setInterval(() => {\n    const version = utils.version()\n    const { major, minor, patch } = version.match(/(?<major>[0-9]+).(?<minor>[0-9]+).(?<patch>[0-9]+)/).groups\n    versionMetrics.set({ version, major, minor, patch }, 1)\n\n    const challengeStatuses = new Map()\n    const challengeCount = new Map()\n\n    for (const { difficulty, category, solved } of Object.values(challenges)) {\n      const key = `${difficulty}:${category}`\n\n      // Increment by one if solved, when not solved increment by 0. This ensures that even unsolved challenges are set to , instead of not being set at all\n      challengeStatuses.set(key, (challengeStatuses.get(key) || 0) + (solved ? 1 : 0))\n      challengeCount.set(key, (challengeCount.get(key) || 0) + 1)\n    }\n\n    for (const key of challengeStatuses.keys()) {\n      const [difficulty, category] = key.split(':', 2)\n\n      challengeSolvedMetrics.set({ difficulty, category }, challengeStatuses.get(key))\n      challengeTotalMetrics.set({ difficulty, category }, challengeCount.get(key))\n    }\n\n    orders.count({}).then(orders => {\n      orderMetrics.set(orders)\n    })\n\n    reviews.count({}).then(reviews => {\n      interactionsMetrics.set({ type: 'review' }, reviews)\n    })\n\n    models.User.count({ where: { role: { [Op.eq]: ['customer'] } } }).then(count => {\n      userMetrics.set({ type: 'standard' }, count)\n    })\n    models.User.count({ where: { role: { [Op.eq]: 'deluxe' } } }).then(count => {\n      userMetrics.set({ type: 'deluxe' }, count)\n    })\n    models.User.count().then(count => {\n      userTotalMetrics.set(count)\n    })\n\n    models.Wallet.sum('balance').then(totalBalance => {\n      walletMetrics.set(totalBalance)\n    })\n\n    models.Feedback.count().then(count => {\n      interactionsMetrics.set({ type: 'feedback' }, count)\n    })\n\n    models.Complaint.count().then(count => {\n      interactionsMetrics.set({ type: 'complaint' }, count)\n    })\n  }, 5000)\n\n  return {\n    register: register,\n    probe: intervalCollector,\n    updateLoop: updateLoop\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/order.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.createWriteStream with non literal argument at index 0",
+        "line": 29,
+        "column": 39,
+        "nodeType": "MemberExpression",
+        "endLine": 29,
+        "endColumn": 59
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Variable Assigned to Object Injection Sink",
+        "line": 178,
+        "column": 22,
+        "nodeType": "MemberExpression",
+        "endLine": 178,
+        "endColumn": 43
+      }
+    ],
+    "errorCount": 2,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst path = require('path')\nconst fs = require('fs')\nconst PDFDocument = require('pdfkit')\nconst utils = require('../lib/utils')\nconst insecurity = require('../lib/insecurity')\nconst models = require('../models/index')\nconst products = require('../data/datacache').products\nconst challenges = require('../data/datacache').challenges\nconst config = require('config')\nconst db = require('../data/mongodb')\n\nmodule.exports = function placeOrder () {\n  return (req, res, next) => {\n    const id = req.params.id\n    models.Basket.findOne({ where: { id }, include: [{ model: models.Product, paranoid: false }] })\n      .then(async basket => {\n        if (basket) {\n          const customer = insecurity.authenticatedUsers.from(req)\n          const email = customer ? customer.data ? customer.data.email : '' : ''\n          const orderId = insecurity.hash(email).slice(0, 4) + '-' + utils.randomHexString(16)\n          const pdfFile = `order_${orderId}.pdf`\n          const doc = new PDFDocument()\n          const date = new Date().toJSON().slice(0, 10)\n          const fileWriter = doc.pipe(fs.createWriteStream(path.join(__dirname, '../ftp/', pdfFile)))\n\n          doc.font('Times-Roman', 40).text(config.get('application.name'), { align: 'center' })\n          doc.moveTo(70, 115).lineTo(540, 115).stroke()\n          doc.moveTo(70, 120).lineTo(540, 120).stroke()\n          doc.fontSize(20).moveDown()\n          doc.font('Times-Roman', 20).text(req.__('Order Confirmation'), { align: 'center' })\n          doc.fontSize(20).moveDown()\n          doc.font('Times-Roman', 15).text(`${req.__('Customer')}: ${email}`, { align: 'left' })\n          doc.font('Times-Roman', 15).text(`${req.__('Order')} #: ${orderId}`, { align: 'left' })\n          doc.moveDown()\n          doc.font('Times-Roman', 15).text(`${req.__('Date')}: ${date}`, { align: 'left' })\n          doc.moveDown()\n          doc.moveDown()\n          let totalPrice = 0\n          const basketProducts = []\n          let totalPoints = 0\n          basket.Products.forEach(({ BasketItem, price, deluxePrice, name, id }) => {\n            utils.solveIf(challenges.christmasSpecialChallenge, () => { return BasketItem.ProductId === products.christmasSpecial.id })\n\n            models.Quantity.findOne({ where: { ProductId: BasketItem.ProductId } }).then((product) => {\n              const newQuantity = product.dataValues.quantity - BasketItem.quantity\n              models.Quantity.update({ quantity: newQuantity }, { where: { ProductId: BasketItem.ProductId } }).catch(error => {\n                next(error)\n              })\n              models.PurchaseQuantity.findOne({ where: { ProductId: BasketItem.ProductId, UserId: req.body.UserId } }).then((record) => {\n                if (record) {\n                  const purchasedQuantity = BasketItem.quantity + record.quantity\n                  models.PurchaseQuantity.update({ quantity: purchasedQuantity }, { where: { ProductId: BasketItem.ProductId, UserId: req.body.UserId } }).catch(error => {\n                    next(error)\n                  })\n                } else {\n                  const record = {\n                    ProductId: BasketItem.ProductId,\n                    UserId: req.body.UserId,\n                    quantity: BasketItem.quantity\n                  }\n                  models.PurchaseQuantity.create(record).catch((error) => {\n                    next(error)\n                  })\n                }\n              }).catch(error => {\n                next(error)\n              })\n            }).catch(error => {\n              next(error)\n            })\n            let itemPrice\n            if (insecurity.isDeluxe(req)) {\n              itemPrice = deluxePrice\n            } else {\n              itemPrice = price\n            }\n            const itemTotal = itemPrice * BasketItem.quantity\n            const itemBonus = Math.round(itemPrice / 10) * BasketItem.quantity\n            const product = {\n              quantity: BasketItem.quantity,\n              id: id,\n              name: req.__(name),\n              price: itemPrice,\n              total: itemTotal,\n              bonus: itemBonus\n            }\n            basketProducts.push(product)\n            doc.text(`${BasketItem.quantity}x ${req.__(name)} ${req.__('ea.')} ${itemPrice} = ${itemTotal}¤`)\n            doc.moveDown()\n            totalPrice += itemTotal\n            totalPoints += itemBonus\n          })\n          doc.moveDown()\n          const discount = calculateApplicableDiscount(basket, req)\n          let discountAmount = 0\n          if (discount > 0) {\n            discountAmount = (totalPrice * (discount / 100)).toFixed(2)\n            doc.text(discount + '% discount from coupon: -' + discountAmount + '¤')\n            doc.moveDown()\n            totalPrice -= discountAmount\n          }\n          let deliveryMethod = {\n            deluxePrice: 0,\n            price: 0,\n            eta: 5\n          }\n          if (req.body.orderDetails && req.body.orderDetails.deliveryMethodId) {\n            deliveryMethod = await models.Delivery.findOne({ where: { id: req.body.orderDetails.deliveryMethodId } })\n          }\n          const deliveryAmount = insecurity.isDeluxe(req) ? deliveryMethod.deluxePrice : deliveryMethod.price\n          totalPrice += deliveryAmount\n          doc.text(`${req.__('Delivery Price')}: ${deliveryAmount.toFixed(2)}¤`)\n          doc.moveDown()\n          doc.font('Helvetica-Bold', 20).text(`${req.__('Total Price')}: ${totalPrice.toFixed(2)}¤`)\n          doc.moveDown()\n          doc.font('Helvetica-Bold', 15).text(`${req.__('Bonus Points Earned')}: ${totalPoints}`)\n          doc.font('Times-Roman', 15).text(`(${req.__('The bonus points from this order will be added 1:1 to your wallet ¤-fund for future purchases!')}`)\n          doc.moveDown()\n          doc.moveDown()\n          doc.font('Times-Roman', 15).text(req.__('Thank you for your order!'))\n          doc.end()\n\n          utils.solveIf(challenges.negativeOrderChallenge, () => { return totalPrice < 0 })\n\n          if (req.body.UserId) {\n            if (req.body.orderDetails.paymentId === 'wallet') {\n              models.Wallet.decrement({ balance: totalPrice }, { where: { UserId: req.body.UserId } }).catch(error => {\n                next(error)\n              })\n            }\n            models.Wallet.increment({ balance: totalPoints }, { where: { UserId: req.body.UserId } }).catch(error => {\n              next(error)\n            })\n          }\n\n          db.orders.insert({\n            promotionalAmount: discountAmount,\n            paymentId: req.body.orderDetails ? req.body.orderDetails.paymentId : null,\n            addressId: req.body.orderDetails ? req.body.orderDetails.addressId : null,\n            orderId: orderId,\n            delivered: false,\n            email: (email ? email.replace(/[aeiou]/gi, '*') : undefined),\n            totalPrice: totalPrice,\n            products: basketProducts,\n            bonus: totalPoints,\n            deliveryPrice: deliveryAmount,\n            eta: deliveryMethod.eta.toString()\n          })\n\n          fileWriter.on('finish', () => {\n            basket.update({ coupon: null })\n            models.BasketItem.destroy({ where: { BasketId: id } })\n            res.json({ orderConfirmation: orderId })\n          })\n        } else {\n          next(new Error(`Basket with id=${id} does not exist.`))\n        }\n      }).catch(error => {\n        next(error)\n      })\n  }\n}\n\nfunction calculateApplicableDiscount (basket, req) {\n  if (insecurity.discountFromCoupon(basket.coupon)) {\n    const discount = insecurity.discountFromCoupon(basket.coupon)\n    utils.solveIf(challenges.forgedCouponChallenge, () => { return discount >= 80 })\n    return discount\n  } else if (req.body.couponData) {\n    const couponData = Buffer.from(req.body.couponData, 'base64').toString().split('-')\n    const couponCode = couponData[0]\n    const couponDate = couponData[1]\n    const campaign = campaigns[couponCode]\n    if (campaign && couponDate == campaign.validOn) { // eslint-disable-line eqeqeq\n      utils.solveIf(challenges.manipulateClockChallenge, () => { return campaign.validOn < new Date() })\n      return campaign.discount\n    }\n  }\n  return 0\n}\n\nconst campaigns = {\n  WMNSDY2019: { validOn: new Date('Mar 08, 2019 00:00:00 GMT+0100').getTime(), discount: 75 },\n  WMNSDY2020: { validOn: new Date('Mar 08, 2020 00:00:00 GMT+0100').getTime(), discount: 60 },\n  WMNSDY2021: { validOn: new Date('Mar 08, 2021 00:00:00 GMT+0100').getTime(), discount: 60 },\n  WMNSDY2022: { validOn: new Date('Mar 08, 2022 00:00:00 GMT+0100').getTime(), discount: 60 },\n  WMNSDY2023: { validOn: new Date('Mar 08, 2023 00:00:00 GMT+0100').getTime(), discount: 60 },\n  ORANGE2020: { validOn: new Date('May 04, 2020 00:00:00 GMT+0100').getTime(), discount: 50 },\n  ORANGE2021: { validOn: new Date('May 04, 2021 00:00:00 GMT+0100').getTime(), discount: 40 },\n  ORANGE2022: { validOn: new Date('May 04, 2022 00:00:00 GMT+0100').getTime(), discount: 40 },\n  ORANGE2023: { validOn: new Date('May 04, 2023 00:00:00 GMT+0100').getTime(), discount: 40 }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/orderHistory.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/payment.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/premiumReward.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/privacyPolicyProof.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/profileImageFileUpload.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.open with non literal argument at index 0",
+        "line": 21,
+        "column": 9,
+        "nodeType": "MemberExpression",
+        "endLine": 21,
+        "endColumn": 16
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst utils = require('../lib/utils')\nconst fs = require('fs')\nconst models = require('../models/index')\nconst insecurity = require('../lib/insecurity')\nconst logger = require('../lib/logger')\nconst fileType = require('file-type')\n\nmodule.exports = function fileUpload () {\n  return (req, res, next) => {\n    const file = req.file\n    const buffer = file.buffer\n    const uploadedFileType = fileType(buffer)\n    if (uploadedFileType !== null && utils.startsWith(uploadedFileType.mime, 'image')) {\n      const loggedInUser = insecurity.authenticatedUsers.get(req.cookies.token)\n      if (loggedInUser) {\n        fs.open(`frontend/dist/frontend/assets/public/images/uploads/${loggedInUser.data.id}.${uploadedFileType.ext}`, 'w', function (err, fd) {\n          if (err) logger.warn('Error opening file: ' + err.message)\n          fs.write(fd, buffer, 0, buffer.length, null, function (err) {\n            if (err) logger.warn('Error writing file: ' + err.message)\n            fs.close(fd, function () { })\n          })\n        })\n        models.User.findByPk(loggedInUser.data.id).then(user => {\n          return user.update({ profileImage: `assets/public/images/uploads/${loggedInUser.data.id}.${uploadedFileType.ext}` })\n        }).catch(error => {\n          next(error)\n        })\n        res.location(process.env.BASE_PATH + '/profile')\n        res.redirect(process.env.BASE_PATH + '/profile')\n      } else {\n        next(new Error('Blocked illegal activity by ' + req.connection.remoteAddress))\n      }\n    } else {\n      res.status(415)\n      next(new Error(`Profile image upload does not accept this file type${uploadedFileType ? (': ' + uploadedFileType.mime) : '.'}`))\n    }\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/profileImageUrlUpload.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.createWriteStream with non literal argument at index 0",
+        "line": 28,
+        "column": 33,
+        "nodeType": "MemberExpression",
+        "endLine": 28,
+        "endColumn": 53
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst fs = require('fs')\nconst models = require('../models/index')\nconst insecurity = require('../lib/insecurity')\nconst request = require('request')\nconst logger = require('../lib/logger')\n\nmodule.exports = function profileImageUrlUpload () {\n  return (req, res, next) => {\n    if (req.body.imageUrl !== undefined) {\n      const url = req.body.imageUrl\n      if (url.match(/(.)*solve\\/challenges\\/server-side(.)*/) !== null) req.app.locals.abused_ssrf_bug = true\n      const loggedInUser = insecurity.authenticatedUsers.get(req.cookies.token)\n      if (loggedInUser) {\n        const imageRequest = request\n          .get(url)\n          .on('error', function (err) {\n            models.User.findByPk(loggedInUser.data.id).then(user => { return user.update({ profileImage: url }) }).catch(error => { next(error) })\n            logger.warn('Error retrieving user profile image: ' + err.message + '; using image link directly')\n          })\n          .on('response', function (res) {\n            if (res.statusCode === 200) {\n              const ext = ['jpg', 'jpeg', 'png', 'svg', 'gif'].includes(url.split('.').slice(-1)[0].toLowerCase()) ? url.split('.').slice(-1)[0].toLowerCase() : 'jpg'\n              imageRequest.pipe(fs.createWriteStream(`frontend/dist/frontend/assets/public/images/uploads/${loggedInUser.data.id}.${ext}`))\n              models.User.findByPk(loggedInUser.data.id).then(user => { return user.update({ profileImage: `/assets/public/images/uploads/${loggedInUser.data.id}.${ext}` }) }).catch(error => { next(error) })\n            } else models.User.findByPk(loggedInUser.data.id).then(user => { return user.update({ profileImage: url }) }).catch(error => { next(error) })\n          })\n      } else {\n        next(new Error('Blocked illegal activity by ' + req.connection.remoteAddress))\n      }\n    }\n    res.location(process.env.BASE_PATH + '/profile')\n    res.redirect(process.env.BASE_PATH + '/profile')\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/recycles.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/redirect.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/repeatNotification.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/resetPassword.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/restoreProgress.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 21,
+        "column": 28,
+        "nodeType": "MemberExpression",
+        "endLine": 21,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Function Call Object Injection Sink",
+        "line": 22,
+        "column": 25,
+        "nodeType": "MemberExpression",
+        "endLine": 22,
+        "endColumn": 41
+      }
+    ],
+    "errorCount": 2,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst Hashids = require('hashids/cjs')\nconst hashids = new Hashids('this is my salt', 60, 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890')\nconst challenges = require('../data/datacache').challenges\nconst utils = require('../lib/utils')\n\nmodule.exports = function restoreProgress () {\n  return ({ params }, res) => {\n    const continueCode = params.continueCode\n    const ids = hashids.decode(continueCode)\n    if (utils.notSolved(challenges.continueCodeChallenge) && ids.indexOf(999) > -1) {\n      utils.solve(challenges.continueCodeChallenge)\n      res.end()\n    } else if (ids.length > 0) {\n      for (const name in challenges) {\n        if (Object.prototype.hasOwnProperty.call(challenges, name)) {\n          if (ids.includes(challenges[name].id)) {\n            utils.solve(challenges[name], true)\n          }\n        }\n      }\n      res.json({ data: ids.length + ' solved challenges have been restored.' })\n    } else {\n      res.status(404).send('Invalid continue code.')\n    }\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/saveLoginIp.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/search.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 23,
+        "column": 72,
+        "nodeType": "MemberExpression",
+        "endLine": 23,
+        "endColumn": 85
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 23,
+        "column": 123,
+        "nodeType": "MemberExpression",
+        "endLine": 23,
+        "endColumn": 136
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 40,
+        "column": 72,
+        "nodeType": "MemberExpression",
+        "endLine": 40,
+        "endColumn": 96
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 52,
+        "column": 11,
+        "nodeType": "MemberExpression",
+        "endLine": 52,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 52,
+        "column": 37,
+        "nodeType": "MemberExpression",
+        "endLine": 52,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 53,
+        "column": 11,
+        "nodeType": "MemberExpression",
+        "endLine": 53,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 53,
+        "column": 44,
+        "nodeType": "MemberExpression",
+        "endLine": 53,
+        "endColumn": 55
+      }
+    ],
+    "errorCount": 7,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst utils = require('../lib/utils')\nconst models = require('../models/index')\nconst challenges = require('../data/datacache').challenges\n\nmodule.exports = function searchProducts () {\n  return (req, res, next) => {\n    let criteria = req.query.q === 'undefined' ? '' : req.query.q || ''\n    criteria = (criteria.length <= 200) ? criteria : criteria.substring(0, 200)\n    models.sequelize.query(`SELECT * FROM Products WHERE ((name LIKE '%${criteria}%' OR description LIKE '%${criteria}%') AND deletedAt IS NULL) ORDER BY name`)\n      .then(([products]) => {\n        const dataString = JSON.stringify(products)\n        if (utils.notSolved(challenges.unionSqlInjectionChallenge)) {\n          let solved = true\n          models.User.findAll().then(data => {\n            const users = utils.queryResultToJson(data)\n            if (users.data && users.data.length) {\n              for (let i = 0; i < users.data.length; i++) {\n                solved = solved && utils.containsOrEscaped(dataString, users.data[i].email) && utils.contains(dataString, users.data[i].password)\n                if (!solved) {\n                  break\n                }\n              }\n              if (solved) {\n                utils.solve(challenges.unionSqlInjectionChallenge)\n              }\n            }\n          })\n        }\n        if (utils.notSolved(challenges.dbSchemaChallenge)) {\n          let solved = true\n          models.sequelize.query('SELECT sql FROM sqlite_master').then(([data]) => {\n            const tableDefinitions = utils.queryResultToJson(data)\n            if (tableDefinitions.data && tableDefinitions.data.length) {\n              for (let i = 0; i < tableDefinitions.data.length; i++) {\n                solved = solved && utils.containsOrEscaped(dataString, tableDefinitions.data[i].sql)\n                if (!solved) {\n                  break\n                }\n              }\n              if (solved) {\n                utils.solve(challenges.dbSchemaChallenge)\n              }\n            }\n          })\n        }\n        for (let i = 0; i < products.length; i++) {\n          products[i].name = req.__(products[i].name)\n          products[i].description = req.__(products[i].description)\n        }\n        res.json(utils.queryResultToJson(products))\n      }).catch(error => {\n        next(error)\n      })\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/securityQuestion.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/showProductReviews.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 34,
+        "column": 35,
+        "nodeType": "MemberExpression",
+        "endLine": 34,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "security/detect-object-injection",
+        "severity": 2,
+        "message": "Generic Object Injection Sink",
+        "line": 35,
+        "column": 11,
+        "nodeType": "MemberExpression",
+        "endLine": 35,
+        "endColumn": 21
+      }
+    ],
+    "errorCount": 2,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst utils = require('../lib/utils')\nconst challenges = require('../data/datacache').challenges\nconst insecurity = require('../lib/insecurity')\nconst db = require('../data/mongodb')\n\n// Blocking sleep function as in native MongoDB\nglobal.sleep = time => {\n  // Ensure that users dont accidentally dos their servers for too long\n  if (time > 2000) {\n    time = 2000\n  }\n  const stop = new Date().getTime()\n  while (new Date().getTime() < stop + time) {\n    ;\n  }\n}\n\nmodule.exports = function productReviews () {\n  return (req, res, next) => {\n    const id = utils.disableOnContainerEnv() ? Number(req.params.id) : req.params.id\n\n    // Measure how long the query takes to find out if an there was a nosql dos attack\n    const t0 = new Date().getTime()\n    db.reviews.find({ $where: 'this.product == ' + id }).then(reviews => {\n      const t1 = new Date().getTime()\n      utils.solveIf(challenges.noSqlCommandChallenge, () => { return (t1 - t0) > 2000 })\n      const user = insecurity.authenticatedUsers.from(req)\n      for (var i = 0; i < reviews.length; i++) {\n        if (user === undefined || reviews[i].likedBy.includes(user.data.email)) {\n          reviews[i].liked = true\n        }\n      }\n      res.json(utils.queryResultToJson(reviews))\n    }, () => {\n      res.status(400).json({ error: 'Wrong Params' })\n    })\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/trackOrder.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/updateProductReviews.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/updateUserProfile.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/userProfile.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-eval-with-expression",
+        "severity": 2,
+        "message": "eval with argument of type Identifier",
+        "line": 28,
+        "column": 26,
+        "nodeType": "CallExpression",
+        "endLine": 28,
+        "endColumn": 36
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst fs = require('fs')\nconst models = require('../models/index')\nconst utils = require('../lib/utils')\nconst insecurity = require('../lib/insecurity')\nconst challenges = require('../data/datacache').challenges\nconst pug = require('pug')\nconst config = require('config')\nconst themes = require('../views/themes/themes').themes\n\nmodule.exports = function getUserProfile () {\n  return (req, res, next) => {\n    fs.readFile('views/userProfile.pug', function (err, buf) {\n      if (err) throw err\n      const loggedInUser = insecurity.authenticatedUsers.get(req.cookies.token)\n      if (loggedInUser) {\n        models.User.findByPk(loggedInUser.data.id).then(user => {\n          let template = buf.toString()\n          let username = user.dataValues.username\n          if (username.match(/#\\{(.*)\\}/) !== null && !utils.disableOnContainerEnv()) {\n            req.app.locals.abused_ssti_bug = true\n            const code = username.substring(2, username.length - 1)\n            try {\n              username = eval(code) // eslint-disable-line no-eval\n            } catch (err) {\n              username = '\\\\' + username\n            }\n          } else {\n            username = '\\\\' + username\n          }\n          const theme = themes[config.get('application.theme')]\n          template = template.replace(/_username_/g, username)\n          template = template.replace(/_emailHash_/g, insecurity.hash(user.dataValues.email))\n          template = template.replace(/_title_/g, config.get('application.name'))\n          template = template.replace(/_favicon_/g, favicon())\n          template = template.replace(/_bgColor_/g, theme.bgColor)\n          template = template.replace(/_textColor_/g, theme.textColor)\n          template = template.replace(/_navColor_/g, theme.navColor)\n          template = template.replace(/_primLight_/g, theme.primLight)\n          template = template.replace(/_primDark_/g, theme.primDark)\n          template = template.replace(/_logo_/g, utils.extractFilename(config.get('application.logo')))\n          const fn = pug.compile(template)\n          const CSP = `img-src 'self' ${user.dataValues.profileImage}; script-src 'self' 'unsafe-eval' https://code.getmdl.io http://ajax.googleapis.com`\n          utils.solveIf(challenges.usernameXssChallenge, () => { return user.dataValues.profileImage.match(/;[ ]*script-src(.)*'unsafe-inline'/g) !== null && utils.contains(username, '<script>alert(`xss`)</script>') })\n\n          res.set({\n            'Content-Security-Policy': CSP\n          })\n\n          res.send(fn(user.dataValues))\n        }).catch(error => {\n          next(error)\n        })\n      } else {\n        next(new Error('Blocked illegal activity by ' + req.connection.remoteAddress))\n      }\n    })\n  }\n\n  function favicon () {\n    return utils.extractFilename(config.get('application.favicon'))\n  }\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/verify.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/videoHandler.js",
+    "messages": [
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.statSync with non literal argument at index 0",
+        "line": 16,
+        "column": 18,
+        "nodeType": "MemberExpression",
+        "endLine": 16,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.createReadStream with non literal argument at index 0",
+        "line": 24,
+        "column": 20,
+        "nodeType": "MemberExpression",
+        "endLine": 24,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.createReadStream with non literal argument at index 0",
+        "line": 40,
+        "column": 7,
+        "nodeType": "MemberExpression",
+        "endLine": 40,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "security/detect-non-literal-fs-filename",
+        "severity": 2,
+        "message": "Found fs.readFileSync with non literal argument at index 0",
+        "line": 78,
+        "column": 16,
+        "nodeType": "MemberExpression",
+        "endLine": 78,
+        "endColumn": 31
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "/*\n * Copyright (c) 2014-2020 Bjoern Kimminich.\n * SPDX-License-Identifier: MIT\n */\n\nconst fs = require('fs')\nconst pug = require('pug')\nconst config = require('config')\nconst challenges = require('../data/datacache').challenges\nconst utils = require('../lib/utils')\nconst themes = require('../views/themes/themes').themes\n\nexports.getVideo = () => {\n  return (req, res) => {\n    const path = videoPath()\n    const stat = fs.statSync(path)\n    const fileSize = stat.size\n    const range = req.headers.range\n    if (range) {\n      const parts = range.replace(/bytes=/, '').split('-')\n      const start = parseInt(parts[0], 10)\n      const end = parts[1] ? parseInt(parts[1], 10) : fileSize - 1\n      const chunksize = (end - start) + 1\n      const file = fs.createReadStream(path, { start, end })\n      const head = {\n        'Content-Range': `bytes ${start}-${end}/${fileSize}`,\n        'Accept-Ranges': 'bytes',\n        'Content-Length': chunksize,\n        'Content-Location': '/assets/public/videos/JuiceShopJingle.mp4',\n        'Content-Type': 'video/mp4'\n      }\n      res.writeHead(206, head)\n      file.pipe(res)\n    } else {\n      const head = {\n        'Content-Length': fileSize,\n        'Content-Type': 'video/mp4'\n      }\n      res.writeHead(200, head)\n      fs.createReadStream(path).pipe(res)\n    }\n  }\n}\n\nexports.promotionVideo = () => {\n  return (req, res) => {\n    fs.readFile('views/promotionVideo.pug', function (err, buf) {\n      if (err) throw err\n      let template = buf.toString()\n      const subs = getSubsFromFile()\n\n      utils.solveIf(challenges.videoXssChallenge, () => { return utils.contains(subs, '</script><script>alert(`xss`)</script>') })\n\n      const theme = themes[config.get('application.theme')]\n      template = template.replace(/_title_/g, config.get('application.name'))\n      template = template.replace(/_favicon_/g, favicon())\n      template = template.replace(/_bgColor_/g, theme.bgColor)\n      template = template.replace(/_textColor_/g, theme.textColor)\n      template = template.replace(/_navColor_/g, theme.navColor)\n      template = template.replace(/_primLight_/g, theme.primLight)\n      template = template.replace(/_primDark_/g, theme.primDark)\n      const fn = pug.compile(template)\n      let compiledTemplate = fn()\n      compiledTemplate = compiledTemplate.replace('<script id=\"subtitle\"></script>', '<script id=\"subtitle\" type=\"text/vtt\" data-label=\"English\" data-lang=\"en\">' + subs + '</script>')\n      res.send(compiledTemplate)\n    })\n  }\n  function favicon () {\n    return utils.extractFilename(config.get('application.favicon'))\n  }\n}\n\nfunction getSubsFromFile () {\n  let subtitles = 'JuiceShopJingle.vtt'\n  if (config && config.application && config.application.promotion && config.application.promotion.subtitles !== null) {\n    subtitles = utils.extractFilename(config.application.promotion.subtitles)\n  }\n  const data = fs.readFileSync('frontend/dist/frontend/assets/public/videos/' + subtitles, 'utf8')\n  return data.toString()\n}\n\nfunction videoPath () {\n  if (config && config.application && config.application.promotion && config.application.promotion.video !== null) {\n    const video = utils.extractFilename(config.application.promotion.video)\n    return 'frontend/src/assets/public/videos/' + video\n  }\n  return 'frontend/src/assets/public/videos/JuiceShopJingle.mp4'\n}\n"
+  },
+  {
+    "filePath": "/Users/omerlh/dev/juice-shop/routes/wallet.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  }
+]
