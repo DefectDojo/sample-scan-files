@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ReportDefinition type="xml">
+    <TemplateName>Fortify Developer Workbook</TemplateName>
+    <TemplatePath></TemplatePath>
+    <LogoPath>/MF_logo.jpg</LogoPath>
+    <Footnote>Copyright 2019 Micro Focus or one of its affiliates.</Footnote>
+    <UserName>Eddie.Example</UserName>
+    <ReportSection enabled="true" optionalSubsections="false">
+        <Title>Report Overview</Title>
+        <SubSection enabled="true">
+            <Title>Report Summary</Title>
+            <Description>This provides a high level summary of the findings that the analysis produced.  Also includes basic information on the scope of the scan.</Description>
+            <Text>On Oct 14, 2020, a source code review was performed over the SAST-example code base. 244 files, 13,831 LOC (Executable) were scanned. A total of 12 issues were uncovered during the analysis.  This report provides a comprehensive description of all the types of issues found in this project.  Specific examples and source code are provided for each issue type.</Text>
+        </SubSection>
+        <SubSection enabled="true">
+            <Title>Issue Summary by Fortify Priority Order</Title>
+            <Description>A table summarizing the number of issues found and the breakdown of issues in each Fortify Priority Level</Description>
+            <IssueListing listing="false" limit="-1">
+                <Refinement></Refinement>
+                <Chart chartType="table">
+                    <Axis>Fortify Priority Order</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                    <GroupingSection count="11">
+                        <groupTitle>High (11 Hidden)</groupTitle>
+                    </GroupingSection>
+                    <GroupingSection count="1">
+                        <groupTitle>Critical</groupTitle>
+                    </GroupingSection>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+    </ReportSection>
+    <ReportSection enabled="true" optionalSubsections="false">
+        <Title>Issue Summary</Title>
+        <SubSection enabled="true">
+            <Title>Overall number of results</Title>
+            <Description>Results count</Description>
+            <Text>The scan found 12 issues.</Text>
+        </SubSection>
+        <SubSection enabled="true">
+            <Title>Issues By Category</Title>
+            <IssueListing listing="false" limit="-1">
+                <Refinement></Refinement>
+                <Chart chartType="table">
+                    <Axis>Category</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                    <GroupingSection count="11">
+                        <groupTitle>HTTP Verb Tampering (11 Hidden)</groupTitle>
+                    </GroupingSection>
+                    <GroupingSection count="1">
+                        <groupTitle>Key Management: Hardcoded Encryption Key</groupTitle>
+                    </GroupingSection>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+    </ReportSection>
+    <ReportSection enabled="true" optionalSubsections="true">
+        <Title>Results Outline</Title>
+        <SubSection enabled="true">
+            <Title>Vulnerability Examples by Category</Title>
+            <Description>Results summary of all issue categories.  Vulnerability examples are provided by category.</Description>
+            <IssueListing listing="true" limit="5">
+                <Refinement></Refinement>
+                <Chart chartType="list">
+                    <Axis>Category</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                    <GroupingSection count="11">
+                        <groupTitle>HTTP Verb Tampering (11 Hidden)</groupTitle>
+                        <MajorAttributeSummary>
+                            <MetaInfo>
+<Name>Abstract</Name>
+<Value>Security constraints that specify HTTP verbs often allow more access than intended.</Value>
+                            </MetaInfo>
+                            <MetaInfo>
+<Name>Explanation</Name>
+<Value>An application's authentication and authorization mechanisms can be bypassed with HTTP verb tampering when:
+1) It uses a security control that lists HTTP verbs.
+2) The security control fails to block verbs that are not listed.
+3) The application updates its state based on GET requests or other arbitrary HTTP verbs.
+
+
+
+Most Java EE implementations allow HTTP methods that are not explicitly listed in the configuration. For example the following security constraint is applied to the HTTP GET method but not to other HTTP verbs:
+
+
+    &lt;security-constraint&gt;
+        &lt;display-name&gt;Admin Constraint&lt;/display-name&gt;
+        &lt;web-resource-collection&gt;
+            &lt;web-resource-name&gt;Admin Area&lt;/web-resource-name&gt;
+            &lt;url-pattern&gt;/pages/index.jsp&lt;/url-pattern&gt;
+            &lt;url-pattern&gt;/admin/*.do&lt;/url-pattern&gt;
+            &lt;http-method&gt;GET&lt;/http-method&gt;
+            &lt;http-method&gt;POST&lt;/http-method&gt;
+        &lt;/web-resource-collection&gt;
+        &lt;auth-constraint&gt;
+            &lt;description&gt;only admin&lt;/description&gt;
+            &lt;role-name&gt;admin&lt;/role-name&gt;
+        &lt;/auth-constraint&gt;
+    &lt;/security-constraint&gt;
+
+
+Since verbs like HEAD are not explicitly defined in an &lt;http-method&gt; tag in this configuration, it might be possible to exercise administrative functionality by substituting GET or POST requests with HEAD requests. For HEAD requests to exercise administrative functionality, condition 3 must hold - the application must carry out commands based on verbs other than POST. Some web/application servers will accept arbitrary non-standard HTTP verbs and respond as if they were given a GET request. If that is the case, an attacker would be able to view administrative pages by using an arbitrary verb in a request.
+
+For example, a typically client GET requests looks like:
+
+GET /admin/viewUsers.do HTTP/1.1
+Host: www.example.com
+
+
+In an HTTP Verb Tampering attack, an attacker would substitute GET with something like FOO
+
+FOO /admin/viewUsers.do HTTP/1.1
+Host: www.example.com
+
+
+At its core, this vulnerability is the result of an attempt to create a blacklist--a policy that specifies what users are not allowed to do. Blacklists rarely achieve their intended effect.</Value>
+                            </MetaInfo>
+                            <MetaInfo>
+<Name>Recommendations</Name>
+<Value>Rather than a blacklist, use a whitelist. Specify an authorization policy that lists only what should be allowed and denies everything else. Do not specify HTTP methods in security constraints. This will ensure your security constraints are applied to all HTTP verbs. For example, the following configuration applies the security constraint to all HTTP verbs:
+
+    &lt;security-constraint&gt;
+        &lt;display-name&gt;Admin Constraint&lt;/display-name&gt;
+        &lt;web-resource-collection&gt;
+            &lt;web-resource-name&gt;Admin Area&lt;/web-resource-name&gt;
+            &lt;url-pattern&gt;/pages/index.jsp&lt;/url-pattern&gt;
+            &lt;url-pattern&gt;/admin/*.do&lt;/url-pattern&gt;
+        &lt;/web-resource-collection&gt;
+        &lt;auth-constraint&gt;
+            &lt;description&gt;only admin&lt;/description&gt;
+            &lt;role-name&gt;admin&lt;/role-name&gt;
+        &lt;/auth-constraint&gt;
+    &lt;/security-constraint&gt;
+</Value>
+                            </MetaInfo>
+                            <AttributeValue>
+<Name>&lt;Unaudited&gt;</Name>
+<Count>0</Count>
+                            </AttributeValue>
+                            <AttributeValue>
+<Name>Not an Issue</Name>
+<Count>0</Count>
+                            </AttributeValue>
+                            <AttributeValue>
+<Name>Reliability Issue</Name>
+<Count>0</Count>
+                            </AttributeValue>
+                            <AttributeValue>
+<Name>Bad Practice</Name>
+<Count>0</Count>
+                            </AttributeValue>
+                            <AttributeValue>
+<Name>Suspicious</Name>
+<Count>11</Count>
+                            </AttributeValue>
+                            <AttributeValue>
+<Name>Exploitable</Name>
+<Count>0</Count>
+                            </AttributeValue>
+                        </MajorAttributeSummary>
+                        <Issue iid="E46FE26E9F1E597CE1B9AB71538C81ED" ruleID="851A38FA-904E-43AE-AA76-7164FC7DDC1F">
+                            <Category>HTTP Verb Tampering</Category>
+                            <Folder>High</Folder>
+                            <Kingdom>Security Features</Kingdom>
+                            <Abstract>Security constraints that specify HTTP verbs often allow more access than intended.</Abstract>
+                            <Friority>High</Friority>
+                            <Tag>
+<Name>Analysis</Name>
+<Value>Suspicious</Value>
+                            </Tag>
+                            <Primary>
+<FileName>web.xml</FileName>
+<FilePath>webApplication/WEB-INF/web.xml</FilePath>
+<LineStart>548</LineStart>
+<Snippet>				&lt;http-method&gt;POST&lt;/http-method&gt;
+				&lt;http-method&gt;DELETE&lt;/http-method&gt;
+				&lt;http-method&gt;OPTIONS&lt;/http-method&gt;
+			&lt;/web-resource-collection&gt;
+			&lt;auth-constraint&gt;</Snippet>
+<TargetFunction>null()</TargetFunction>
+                            </Primary>
+                        </Issue>
+                        <Issue iid="E46FE26E9F1E597CE1B9AB71538C81EC" ruleID="851A38FA-904E-43AE-AA76-7164FC7DDC1F">
+                            <Category>HTTP Verb Tampering</Category>
+                            <Folder>High</Folder>
+                            <Kingdom>Security Features</Kingdom>
+                            <Abstract>Security constraints that specify HTTP verbs often allow more access than intended.</Abstract>
+                            <Friority>High</Friority>
+                            <Tag>
+<Name>Analysis</Name>
+<Value>Suspicious</Value>
+                            </Tag>
+                            <Primary>
+<FileName>web.xml</FileName>
+<FilePath>webApplication/WEB-INF/web.xml</FilePath>
+<LineStart>547</LineStart>
+<Snippet>				&lt;http-method&gt;TRACE&lt;/http-method&gt;
+				&lt;http-method&gt;POST&lt;/http-method&gt;
+				&lt;http-method&gt;DELETE&lt;/http-method&gt;
+				&lt;http-method&gt;OPTIONS&lt;/http-method&gt;
+			&lt;/web-resource-collection&gt;</Snippet>
+<TargetFunction>null()</TargetFunction>
+                            </Primary>
+                        </Issue>
+                        <Issue iid="E46FE26E9F1E597CE1B9AB71538C81F1" ruleID="851A38FA-904E-43AE-AA76-7164FC7DDC1F">
+                            <Category>HTTP Verb Tampering</Category>
+                            <Folder>High</Folder>
+                            <Kingdom>Security Features</Kingdom>
+                            <Abstract>Security constraints that specify HTTP verbs often allow more access than intended.</Abstract>
+                            <Friority>High</Friority>
+                            <Tag>
+<Name>Analysis</Name>
+<Value>Suspicious</Value>
+                            </Tag>
+                            <Primary>
+<FileName>web.xml</FileName>
+<FilePath>webApplication/WEB-INF/web.xml</FilePath>
+<LineStart>566</LineStart>
+<Snippet>				&lt;http-method&gt;PUT&lt;/http-method&gt;
+				&lt;http-method&gt;HEAD&lt;/http-method&gt;
+				&lt;http-method&gt;TRACE&lt;/http-method&gt;
+				&lt;http-method&gt;POST&lt;/http-method&gt;
+				&lt;http-method&gt;DELETE&lt;/http-method&gt;</Snippet>
+<TargetFunction>null()</TargetFunction>
+                            </Primary>
+                        </Issue>
+                        <Issue iid="E46FE26E9F1E597CE1B9AB71538C81E9" ruleID="851A38FA-904E-43AE-AA76-7164FC7DDC1F">
+                            <Category>HTTP Verb Tampering</Category>
+                            <Folder>High</Folder>
+                            <Kingdom>Security Features</Kingdom>
+                            <Abstract>Security constraints that specify HTTP verbs often allow more access than intended.</Abstract>
+                            <Friority>High</Friority>
+                            <Tag>
+<Name>Analysis</Name>
+<Value>Suspicious</Value>
+                            </Tag>
+                            <Primary>
+<FileName>web.xml</FileName>
+<FilePath>webApplication/WEB-INF/web.xml</FilePath>
+<LineStart>544</LineStart>
+<Snippet>				&lt;http-method&gt;GET&lt;/http-method&gt;
+				&lt;http-method&gt;PUT&lt;/http-method&gt;
+				&lt;http-method&gt;HEAD&lt;/http-method&gt;
+				&lt;http-method&gt;TRACE&lt;/http-method&gt;
+				&lt;http-method&gt;POST&lt;/http-method&gt;</Snippet>
+<TargetFunction>null()</TargetFunction>
+                            </Primary>
+                        </Issue>
+                        <Issue iid="E46FE26E9F1E597CE1B9AB71538C81F0" ruleID="851A38FA-904E-43AE-AA76-7164FC7DDC1F">
+                            <Category>HTTP Verb Tampering</Category>
+                            <Folder>High</Folder>
+                            <Kingdom>Security Features</Kingdom>
+                            <Abstract>Security constraints that specify HTTP verbs often allow more access than intended.</Abstract>
+                            <Friority>High</Friority>
+                            <Tag>
+<Name>Analysis</Name>
+<Value>Suspicious</Value>
+                            </Tag>
+                            <Primary>
+<FileName>web.xml</FileName>
+<FilePath>webApplication/WEB-INF/web.xml</FilePath>
+<LineStart>565</LineStart>
+<Snippet>				&lt;http-method&gt;GET&lt;/http-method&gt;
+				&lt;http-method&gt;PUT&lt;/http-method&gt;
+				&lt;http-method&gt;HEAD&lt;/http-method&gt;
+				&lt;http-method&gt;TRACE&lt;/http-method&gt;
+				&lt;http-method&gt;POST&lt;/http-method&gt;</Snippet>
+<TargetFunction>null()</TargetFunction>
+                            </Primary>
+                        </Issue>
+                    </GroupingSection>
+                    <GroupingSection count="1">
+                        <groupTitle>Key Management: Hardcoded Encryption Key</groupTitle>
+                        <MajorAttributeSummary>
+                            <MetaInfo>
+<Name>Abstract</Name>
+<Value>Hardcoded encryption keys can compromise security in a way that cannot be easily remedied.</Value>
+                            </MetaInfo>
+                            <MetaInfo>
+<Name>Explanation</Name>
+<Value>It is never a good idea to hardcode an encryption key because it allows all of the project's developers to view the encryption key, and makes fixing the problem extremely difficult. After the code is in production, a software patch is required to change the encryption key. If the account that is protected by the encryption key is compromised, the owners of the system must choose between security and availability.
+
+
+Example 1: The following code uses a hardcoded encryption key:
+
+
+...
+private static final String encryptionKey = "eeeeeeeeeexampleeee";
+byte[] keyBytes = encryptionKey.getBytes();
+SecretKeySpec key = new SecretKeySpec(keyBytes, "AES");
+Cipher encryptCipher = Cipher.getInstance("AES");
+encryptCipher.init(Cipher.ENCRYPT_MODE, key);
+...
+
+
+Anyone with access to the code has access to the encryption key. After the application has shipped, there is no way to change the encryption key unless the program is patched. An employee with access to this information can use it to break into the system. If attackers had access to the executable for the application, they could extract the encryption key value.</Value>
+                            </MetaInfo>
+                            <MetaInfo>
+<Name>Recommendations</Name>
+<Value>Encryption keys should never be hardcoded and should be obfuscated and managed in an external source. Storing encryption keys in plain text anywhere on the system allows anyone with sufficient permissions to read and potentially misuse the encryption key.</Value>
+                            </MetaInfo>
+                            <AttributeValue>
+<Name>&lt;Unaudited&gt;</Name>
+<Count>0</Count>
+                            </AttributeValue>
+                            <AttributeValue>
+<Name>Not an Issue</Name>
+<Count>0</Count>
+                            </AttributeValue>
+                            <AttributeValue>
+<Name>Reliability Issue</Name>
+<Count>0</Count>
+                            </AttributeValue>
+                            <AttributeValue>
+<Name>Bad Practice</Name>
+<Count>0</Count>
+                            </AttributeValue>
+                            <AttributeValue>
+<Name>Suspicious</Name>
+<Count>1</Count>
+                            </AttributeValue>
+                            <AttributeValue>
+<Name>Exploitable</Name>
+<Count>0</Count>
+                            </AttributeValue>
+                        </MajorAttributeSummary>
+                        <Issue iid="E49E75B6EACB89AAA33BCAF71A8ED378" ruleID="17B7D071-8066-482B-AC21-63DFE28CEEC1">
+                            <Category>Key Management: Hardcoded Encryption Key</Category>
+                            <Folder>Critical</Folder>
+                            <Kingdom>Security Features</Kingdom>
+                            <Abstract>Hardcoded encryption keys can compromise security in a way that cannot be easily remedied.</Abstract>
+                            <Friority>Critical</Friority>
+                            <Tag>
+<Name>Analysis</Name>
+<Value>Suspicious</Value>
+                            </Tag>
+                            <Primary>
+<FileName>CheckRequestConstants.java</FileName>
+<FilePath>source/com/example/corp/limit/requestcheck/util/RequestCheckConstants.java</FilePath>
+<LineStart>620</LineStart>
+<Snippet>	public static final String IS_EXAMPLE_ENABLED                 = "IS_EXAMPLE_ENABLED";
+	
+	public  final static String encryptionKey 							= "eeeeeeeeeexampleeee";
+	public final static String characterEncoding 						= "UTF-8";
+	public final static String cipherTransformation 					= "AES/CBC/PKCS5PADDING";</Snippet>
+<TargetFunction>FieldAccess: encryptionKey()</TargetFunction>
+                            </Primary>
+                        </Issue>
+                    </GroupingSection>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+    </ReportSection>
+</ReportDefinition>
