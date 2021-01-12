@@ -1,0 +1,1391 @@
+{
+	"Packages Audited": 149,
+	"Vulnerabilities Found": 5,
+	"Packages": [{
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "object-assign",
+				"version": "4.1.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "postcss-flexbugs-fixes",
+				"version": "3.3.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "postcss-loader",
+				"version": "2.1.5",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "promise",
+				"version": "8.0.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "prop-types",
+				"version": "15.6.2",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "query-string",
+				"version": "5.1.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "raf",
+				"version": "3.4.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "rc-slider",
+				"version": "8.6.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "rc-tooltip",
+				"version": "3.7.2",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react",
+				"version": "16.4.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-currency-input",
+				"version": "1.3.6",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-data-export",
+				"version": "0.3.7",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-datepicker",
+				"version": "1.5.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-dev-utils",
+				"version": "6.0.5",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-device-detect",
+				"version": "1.11.14",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-dnd",
+				"version": "5.0.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-dnd-html5-backend",
+				"version": "5.0.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-dom",
+				"version": "16.4.1",
+				"vendor": null
+			},
+			"Vulnerabilities": [{
+					"id": "422fd048-4155-4213-8126-75b4c3135820",
+					"title": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+					"description": "The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.",
+					"cvssScore": "6.1",
+					"cvssVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+					"cwe": "CWE-79",
+					"reference": "https://ossindex.sonatype.org/vuln/422fd048-4155-4213-8126-75b4c3135820?component-type=npm&component-name=react-dom&utm_source=devaudit&utm_medium=integration&utm_content=3.4"
+				}
+			]
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-dropzone",
+				"version": "4.2.13",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-expand-collapse",
+				"version": "0.2.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-redux",
+				"version": "5.0.7",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-redux-toastr",
+				"version": "7.3.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-router-dom",
+				"version": "5.0.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-scroll",
+				"version": "1.7.9",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-select",
+				"version": "1.2.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-timeago",
+				"version": "4.1.9",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-virtualized-select",
+				"version": "3.1.3",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "reactstrap",
+				"version": "8.2.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "recharts",
+				"version": "1.0.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "reduce-reducers",
+				"version": "0.1.5",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "redux",
+				"version": "3.7.2",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "redux-devtools",
+				"version": "3.4.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "redux-devtools-dock-monitor",
+				"version": "1.1.3",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "redux-devtools-log-monitor",
+				"version": "1.4.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "redux-saga",
+				"version": "0.16.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "reselect",
+				"version": "3.0.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "core",
+				"version": "7.9.0",
+				"vendor": "babel"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "sass-loader",
+				"version": "6.0.7",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "plugin-proposal-class-properties",
+				"version": "7.8.3",
+				"vendor": "babel"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "style-loader",
+				"version": "0.21.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "polyfill",
+				"version": "7.8.7",
+				"vendor": "babel"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "thenby",
+				"version": "1.2.6",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "preset-env",
+				"version": "7.9.5",
+				"vendor": "babel"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "uglifyjs-webpack-plugin",
+				"version": "1.2.7",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "preset-react",
+				"version": "7.9.4",
+				"vendor": "babel"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "uniqid",
+				"version": "5.0.3",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "runtime-corejs2",
+				"version": "7.9.2",
+				"vendor": "babel"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "url-loader",
+				"version": "1.0.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "button",
+				"version": "1.6.0",
+				"vendor": "citrus"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "uuid",
+				"version": "3.3.2",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "data-table",
+				"version": "1.2.0",
+				"vendor": "citrus"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "webpack",
+				"version": "4.15.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "drawer",
+				"version": "1.3.0",
+				"vendor": "citrus"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "xlsx",
+				"version": "0.12.13",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "input-checkbox",
+				"version": "1.3.0",
+				"vendor": "citrus"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "core-js",
+				"version": "3.6.5",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "input-date-range",
+				"version": "2.2.0",
+				"vendor": "citrus"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "cypress",
+				"version": "5.5.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "input-radio",
+				"version": "1.1.0",
+				"vendor": "citrus"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "cypress-localstorage-commands",
+				"version": "1.2.3",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "layout",
+				"version": "3.3.0",
+				"vendor": "citrus"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "eslint-plugin-cypress",
+				"version": "2.11.2",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "zero-state",
+				"version": "2.0.1",
+				"vendor": "citrus"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "accordion",
+				"version": "1.0.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "content-area",
+				"version": "2.0.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "core",
+				"version": "9.1.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "grid",
+				"version": "1.1.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "input-label",
+				"version": "1.0.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "input-textarea",
+				"version": "2.0.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "layout",
+				"version": "3.0.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "multi-step",
+				"version": "1.0.4",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-accordion",
+				"version": "1.0.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-badge",
+				"version": "2.1.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-banner",
+				"version": "2.2.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-button",
+				"version": "4.2.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-button-group",
+				"version": "1.1.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-callout",
+				"version": "1.2.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-card",
+				"version": "1.1.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-content-header",
+				"version": "2.1.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-drawer",
+				"version": "2.0.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-feed",
+				"version": "1.1.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-filter",
+				"version": "2.2.8",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-flyout",
+				"version": "1.6.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-grid",
+				"version": "3.1.6",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-icon",
+				"version": "1.1.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input",
+				"version": "1.2.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-checkbox",
+				"version": "2.2.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-date",
+				"version": "1.7.4",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-date-range-new",
+				"version": "4.0.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-dropdown",
+				"version": "1.6.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-multiselect",
+				"version": "1.1.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-number-stepper",
+				"version": "3.5.5",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-radio",
+				"version": "1.2.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-search",
+				"version": "3.1.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-select",
+				"version": "3.0.5",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-textarea",
+				"version": "0.0.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-textfield",
+				"version": "5.2.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-input-time",
+				"version": "1.3.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-inset-banner",
+				"version": "1.2.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-list",
+				"version": "2.1.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-loader",
+				"version": "2.1.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-modal",
+				"version": "2.1.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-multi-step",
+				"version": "2.3.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-multi-step-wizard",
+				"version": "4.1.3",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-overview",
+				"version": "1.1.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-pager",
+				"version": "1.1.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-portrait",
+				"version": "1.1.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-progress-bar",
+				"version": "2.0.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-shuttle",
+				"version": "4.1.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-splash",
+				"version": "3.1.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-switch",
+				"version": "1.4.2",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-tabs",
+				"version": "2.4.4",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-tag",
+				"version": "1.1.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-tile",
+				"version": "1.0.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react-zero-state",
+				"version": "2.0.1",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "side-nav",
+				"version": "1.0.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "utils",
+				"version": "2.6.0",
+				"vendor": "pcty"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "jest-dom",
+				"version": "5.9.0",
+				"vendor": "testing-library"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "react",
+				"version": "10.2.1",
+				"vendor": "testing-library"
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "assets-webpack-plugin",
+				"version": "3.8.4",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "autoprefixer",
+				"version": "8.6.5",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "axios",
+				"version": "0.19.2",
+				"vendor": null
+			},
+			"Vulnerabilities": [{
+					"id": "f7fc0998-d7c0-4f98-aba5-661f7db01bfd",
+					"title": "[CVE-2020-28168] Axios NPM package 0.21.0 contains a Server-Side Request Forgery (SSRF) vulnerabi...",
+					"description": "Axios NPM package 0.21.0 contains a Server-Side Request Forgery (SSRF) vulnerability where an attacker is able to bypass a proxy by providing a URL that responds with a redirect to a restricted host or IP address.",
+					"cvssScore": "5.9",
+					"cvssVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+					"cwe": null,
+					"reference": "https://ossindex.sonatype.org/vuln/f7fc0998-d7c0-4f98-aba5-661f7db01bfd?component-type=npm&component-name=axios&utm_source=devaudit&utm_medium=integration&utm_content=3.4"
+				}
+			]
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "babel-eslint",
+				"version": "10.1.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "babel-jest",
+				"version": "26.0.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "babel-loader",
+				"version": "8.1.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "case-sensitive-paths-webpack-plugin",
+				"version": "2.1.2",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "chalk",
+				"version": "2.4.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "citrus-react",
+				"version": "0.0.6",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "clean-webpack-plugin",
+				"version": "0.1.19",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "css-loader",
+				"version": "1.0.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "currency-formatter",
+				"version": "1.4.2",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "date-fns",
+				"version": "2.16.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "dotenv",
+				"version": "6.0.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "eslint",
+				"version": "5.1.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "eslint-config-react-app",
+				"version": "2.1.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "eslint-loader",
+				"version": "2.0.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "eslint-plugin-flowtype",
+				"version": "2.50.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "eslint-plugin-import",
+				"version": "2.13.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "eslint-plugin-jsx-a11y",
+				"version": "5.1.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "eslint-plugin-react",
+				"version": "7.10.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "eslint-plugin-react-hooks",
+				"version": "2.1.2",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "export-from-json",
+				"version": "1.1.4",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "file-loader",
+				"version": "1.1.11",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "file-saver",
+				"version": "1.3.8",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "jest",
+				"version": "26.0.1",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "lodash",
+				"version": "4.17.15",
+				"vendor": null
+			},
+			"Vulnerabilities": [{
+					"id": "eeedfb1c-6a5e-428c-bb17-c64b66f9eced",
+					"title": "CWE-770: Allocation of Resources Without Limits or Throttling",
+					"description": "The software allocates a reusable resource or group of resources on behalf of an actor without imposing any restrictions on how many resources can be allocated, in violation of the intended security policy for that actor.",
+					"cvssScore": "7.4",
+					"cvssVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+					"cwe": "CWE-770",
+					"reference": "https://ossindex.sonatype.org/vuln/eeedfb1c-6a5e-428c-bb17-c64b66f9eced?component-type=npm&component-name=lodash&utm_source=devaudit&utm_medium=integration&utm_content=3.4"
+				}
+			]
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "mocha-teamcity-reporter",
+				"version": "2.0.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "moment",
+				"version": "2.27.0",
+				"vendor": null
+			},
+			"Vulnerabilities": []
+		}, {
+			"Package": {
+				"pm": "npm",
+				"group": null,
+				"name": "node-sass",
+				"version": "4.13.0",
+				"vendor": null
+			},
+			"Vulnerabilities": [{
+					"id": "ed685360-15d5-4169-ac35-ce2154a487a1",
+					"title": "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')",
+					"description": "The software does not properly restrict the size or amount of resources that are requested or influenced by an actor, which can be used to consume more resources than intended.",
+					"cvssScore": "7.5",
+					"cvssVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cwe": "CWE-400",
+					"reference": "https://ossindex.sonatype.org/vuln/ed685360-15d5-4169-ac35-ce2154a487a1?component-type=npm&component-name=node-sass&utm_source=devaudit&utm_medium=integration&utm_content=3.4"
+				}, {
+					"id": "c97f4ae7-be1f-4f71-b238-7c095b126e74",
+					"title": "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')",
+					"description": "The software does not properly restrict the size or amount of resources that are requested or influenced by an actor, which can be used to consume more resources than intended.",
+					"cvssScore": "7.5",
+					"cvssVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cwe": "CWE-400",
+					"reference": "https://ossindex.sonatype.org/vuln/c97f4ae7-be1f-4f71-b238-7c095b126e74?component-type=npm&component-name=node-sass&utm_source=devaudit&utm_medium=integration&utm_content=3.4"
+				}
+			]
+		}
+	]
+}
