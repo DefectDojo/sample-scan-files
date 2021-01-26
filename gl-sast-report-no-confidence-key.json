@@ -1,0 +1,909 @@
+{
+  "version": "3.0",
+  "vulnerabilities": [
+    {
+      "id": "01f01288df3508262510410cd3e829dd24085800d304721ab57add01383253f8",
+      "category": "sast",
+      "name": "Assert eval function assert() detected with dynamic parameter directly from user input",
+      "message": "Assert eval function assert() detected with dynamic parameter directly from user input",
+      "description": "Assert eval function assert() detected with dynamic parameter directly from user input",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.Asserts.ErrFunctionHandling",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 28
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.Asserts.ErrFunctionHandling",
+          "value": "PHPCS_SecurityAudit.BadFunctions.Asserts.ErrFunctionHandling"
+        }
+      ]
+    },
+    {
+      "id": "789f2ee44db384dd44fbc39df3476183f649f85ce0c6ad7e2efef0b367123725",
+      "category": "sast",
+      "name": "System execution with backticks detected with dynamic parameter directly from user input",
+      "message": "System execution with backticks detected with dynamic parameter directly from user input",
+      "description": "System execution with backticks detected with dynamic parameter directly from user input",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.Backticks.ErrSystemExec",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 25
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.Backticks.ErrSystemExec",
+          "value": "PHPCS_SecurityAudit.BadFunctions.Backticks.ErrSystemExec"
+        }
+      ]
+    },
+    {
+      "id": "1a327b7eb2f7bc187b17960783f472bf44644ba192d0fdcf5729ea9daca483c9",
+      "category": "sast",
+      "name": "Bad use of openssl_public_encrypt without OPENSSL_PKCS1_OAEP_PADDING",
+      "message": "Bad use of openssl_public_encrypt without OPENSSL_PKCS1_OAEP_PADDING",
+      "description": "Bad use of openssl_public_encrypt without OPENSSL_PKCS1_OAEP_PADDING",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.ErrPCKS1Crypto",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 37
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.ErrPCKS1Crypto",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.ErrPCKS1Crypto"
+        }
+      ]
+    },
+    {
+      "id": "88b316102d10bc365b8b074236ffae53780c9a7a6eacafb9f2f7b9f9a2f14682",
+      "category": "sast",
+      "name": "Easy XSS detected because of direct user input with $_GET on echo",
+      "message": "Easy XSS detected because of direct user input with $_GET on echo",
+      "description": "Easy XSS detected because of direct user input with $_GET on echo",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 54
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+          "value": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr"
+        }
+      ]
+    },
+    {
+      "id": "cccedc45667624b85b8c7d8812a84075b548340a313183960f9e7742b25d4515",
+      "category": "sast",
+      "name": "Easy XSS detected because of direct user input with $_GET on exit",
+      "message": "Easy XSS detected because of direct user input with $_GET on exit",
+      "description": "Easy XSS detected because of direct user input with $_GET on exit",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 58
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+          "value": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr"
+        }
+      ]
+    },
+    {
+      "id": "41725d749f311ad93e05e03d2a902f2642594ba407e410ff8df6307b639c67c0",
+      "category": "sast",
+      "name": "Easy XSS detected because of direct user input with $_GET on die",
+      "message": "Easy XSS detected because of direct user input with $_GET on die",
+      "description": "Easy XSS detected because of direct user input with $_GET on die",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 57
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+          "value": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr"
+        }
+      ]
+    },
+    {
+      "id": "86c8b501d5fe0bc03c14c8334cebb54976a4929c82c600b28f861842e455fb42",
+      "category": "sast",
+      "name": "Easy XSS detected because of direct user input with $_GET on echo",
+      "message": "Easy XSS detected because of direct user input with $_GET on echo",
+      "description": "Easy XSS detected because of direct user input with $_GET on echo",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 55
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+          "value": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr"
+        }
+      ]
+    },
+    {
+      "id": "e1e5c89f80ed1c71c2cfaddd4c14ee413a6d0e5594ee8b7c3445e1bc9820e393",
+      "category": "sast",
+      "name": "Easy XSS detected because of direct user input with $_GET on \u003c?=",
+      "message": "Easy XSS detected because of direct user input with $_GET on \u003c?=",
+      "description": "Easy XSS detected because of direct user input with $_GET on \u003c?=",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 60
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+          "value": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr"
+        }
+      ]
+    },
+    {
+      "id": "b6aa906f8e252d707cf6c656770add79a6e036372e40f2a94227ac93a1f9c942",
+      "category": "sast",
+      "name": "Easy XSS detected because of direct user input with $_GET on echo",
+      "message": "Easy XSS detected because of direct user input with $_GET on echo",
+      "description": "Easy XSS detected because of direct user input with $_GET on echo",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 51
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+          "value": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr"
+        }
+      ]
+    },
+    {
+      "id": "dc2d8eb42a4ddbd5cb0b2d98b87e56374288dc03c25548973244780852dba64d",
+      "category": "sast",
+      "name": "Easy XSS detected because of direct user input with $_GET on echo",
+      "message": "Easy XSS detected because of direct user input with $_GET on echo",
+      "description": "Easy XSS detected because of direct user input with $_GET on echo",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 50
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+          "value": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr"
+        }
+      ]
+    },
+    {
+      "id": "330b92554852d39a3daaa446502c9f72d94f11285de60390e313c3af60012f24",
+      "category": "sast",
+      "name": "Easy XSS detected because of direct user input with $_GET on print",
+      "message": "Easy XSS detected because of direct user input with $_GET on print",
+      "description": "Easy XSS detected because of direct user input with $_GET on print",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 49
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+          "value": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr"
+        }
+      ]
+    },
+    {
+      "id": "66d57be3551331d66b461c5e05e2d9b74ca1ba023ef4df12fc160de155983590",
+      "category": "sast",
+      "name": "Easy XSS detected because of direct user input with $_POST on echo",
+      "message": "Easy XSS detected because of direct user input with $_POST on echo",
+      "description": "Easy XSS detected because of direct user input with $_POST on echo",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 7
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr",
+          "value": "PHPCS_SecurityAudit.BadFunctions.EasyXSS.EasyXSSerr"
+        }
+      ]
+    },
+    {
+      "id": "3445333e4f92f04799252ac44a70caf5fc66b079c83d04fcea30b9586c806d9e",
+      "category": "sast",
+      "name": "User input found in preg_replace, /e modifier could be used for malicious intent.",
+      "message": "User input found in preg_replace, /e modifier could be used for malicious intent.",
+      "description": "User input found in preg_replace, /e modifier could be used for malicious intent.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceUserInput",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 12
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceUserInput",
+          "value": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceUserInput"
+        }
+      ]
+    },
+    {
+      "id": "bc2c246b46a5de9bf54027e1eea50403f4144bc33063761733de16825926687e",
+      "category": "sast",
+      "name": "User input and /e modifier found in preg_replace, remote code execution possible.",
+      "message": "User input and /e modifier found in preg_replace, remote code execution possible.",
+      "description": "User input and /e modifier found in preg_replace, remote code execution possible.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceUserInputE",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 11
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceUserInputE",
+          "value": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceUserInputE"
+        }
+      ]
+    },
+    {
+      "id": "ebb777d57bf1fd9f281a29d8a76127bc973f0b8ab84489f18f24cdc7f4896834",
+      "category": "sast",
+      "name": "SQL function mysql_query() detected with dynamic parameter  directly from user input",
+      "message": "SQL function mysql_query() detected with dynamic parameter  directly from user input",
+      "description": "SQL function mysql_query() detected with dynamic parameter  directly from user input",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.SQLFunctions.ErrSQLFunction",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 32
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.SQLFunctions.ErrSQLFunction",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SQLFunctions.ErrSQLFunction"
+        }
+      ]
+    },
+    {
+      "id": "66b8539c3d95877a36295910aa8e83b3ffeb5e6127b7fa14155e10771f758ae8",
+      "category": "sast",
+      "name": "System program execution function exec() detected with dynamic parameter directly from user input",
+      "message": "System program execution function exec() detected with dynamic parameter directly from user input",
+      "description": "System program execution function exec() detected with dynamic parameter directly from user input",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.ErrSystemExec",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 30
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.ErrSystemExec",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.ErrSystemExec"
+        }
+      ]
+    },
+    {
+      "id": "a716204a9fdebec35f641eb56edc1cf783f769453421938ee30a49614d955d47",
+      "category": "sast",
+      "name": "The file extension '.xyz' that is not specified by --extensions has been used in a include/require function. Please add it to the scan process.",
+      "message": "The file extension '.xyz' that is not specified by --extensions has been used in a include/require function. Please add it to the scan process.",
+      "description": "The file extension '.xyz' that is not specified by --extensions has been used in a include/require function. Please add it to the scan process.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.Misc.IncludeMismatch.ErrMiscIncludeMismatch",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 45
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.Misc.IncludeMismatch.ErrMiscIncludeMismatch",
+          "value": "PHPCS_SecurityAudit.Misc.IncludeMismatch.ErrMiscIncludeMismatch"
+        }
+      ]
+    },
+    {
+      "id": "e3fc28324b9f80d4404d3d7a470962b99208481dbc70dbeee26cd4f5e49f730f",
+      "category": "sast",
+      "name": "No file extension has been found in a include/require function. This implies that some PHP code is not scanned by PHPCS.",
+      "message": "No file extension has been found in a include/require function. This implies that some PHP code is not scanned by PHPCS.",
+      "description": "No file extension has been found in a include/require function. This implies that some PHP code is not scanned by PHPCS.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.Misc.IncludeMismatch.ErrMiscIncludeMismatchNoExt",
+      "severity": "High",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 26
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.Misc.IncludeMismatch.ErrMiscIncludeMismatchNoExt",
+          "value": "PHPCS_SecurityAudit.Misc.IncludeMismatch.ErrMiscIncludeMismatchNoExt"
+        }
+      ]
+    },
+    {
+      "id": "602d7ae2f21a9c610f93f2cc8cff55471f3d9f502d0fedb20a45a8810da0b028",
+      "category": "sast",
+      "name": "Assert eval function assert() detected with dynamic parameter",
+      "message": "Assert eval function assert() detected with dynamic parameter",
+      "description": "Assert eval function assert() detected with dynamic parameter",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.Asserts.WarnFunctionHandling",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 27
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.Asserts.WarnFunctionHandling",
+          "value": "PHPCS_SecurityAudit.BadFunctions.Asserts.WarnFunctionHandling"
+        }
+      ]
+    },
+    {
+      "id": "75b0f2f1726b07f2b2323d77e0b5b2405549e1c66b46cfb8067a0e0713341f7c",
+      "category": "sast",
+      "name": "System execution with backticks detected with dynamic parameter",
+      "message": "System execution with backticks detected with dynamic parameter",
+      "description": "System execution with backticks detected with dynamic parameter",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.Backticks.WarnSystemExec",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 24
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.Backticks.WarnSystemExec",
+          "value": "PHPCS_SecurityAudit.BadFunctions.Backticks.WarnSystemExec"
+        }
+      ]
+    },
+    {
+      "id": "bc5119660dc0ea6d083590bf1c75d41f0a142da87470a3425684197a8d369c3c",
+      "category": "sast",
+      "name": "Function array_map() that supports callback detected",
+      "message": "Function array_map() that supports callback detected",
+      "description": "Function array_map() that supports callback detected",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.CallbackFunctions.WarnCallbackFunctions",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 23
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.CallbackFunctions.WarnCallbackFunctions",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CallbackFunctions.WarnCallbackFunctions"
+        }
+      ]
+    },
+    {
+      "id": "82ff279509536be0a2fbba25b651d4ee6a335541276c3224bfda6cfd25a927fb",
+      "category": "sast",
+      "name": "Filesystem function symlink() detected with dynamic parameter",
+      "message": "Filesystem function symlink() detected with dynamic parameter",
+      "description": "Filesystem function symlink() detected with dynamic parameter",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnFilesystem",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 65
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnFilesystem",
+          "value": "PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnFilesystem"
+        }
+      ]
+    },
+    {
+      "id": "d12526709eb98aeca29a7b57d2baf0aaed79e7c3e09dd44908fdf88c1d830bcd",
+      "category": "sast",
+      "name": "Filesystem function fread() detected with dynamic parameter",
+      "message": "Filesystem function fread() detected with dynamic parameter",
+      "description": "Filesystem function fread() detected with dynamic parameter",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnFilesystem",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 22
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnFilesystem",
+          "value": "PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnFilesystem"
+        }
+      ]
+    },
+    {
+      "id": "39e9187d467f09cb53f89be4c85fe01ee84db62770963523f0dbc313a067f7e5",
+      "category": "sast",
+      "name": "Filesystem function delete() detected with dynamic parameter",
+      "message": "Filesystem function delete() detected with dynamic parameter",
+      "description": "Filesystem function delete() detected with dynamic parameter",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnFilesystem",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 66
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnFilesystem",
+          "value": "PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnFilesystem"
+        }
+      ]
+    },
+    {
+      "id": "3c86cb28a73c2729b52362d53376a516bd69fdefb73d618f7f8610da9c3658da",
+      "category": "sast",
+      "name": "Allowing symlink() while open_basedir is used is actually a security risk. Disabled by default in Suhosin \u003e= 0.9.6",
+      "message": "Allowing symlink() while open_basedir is used is actually a security risk. Disabled by default in Suhosin \u003e= 0.9.6",
+      "description": "Allowing symlink() while open_basedir is used is actually a security risk. Disabled by default in Suhosin \u003e= 0.9.6",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnSymlink",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 65
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnSymlink",
+          "value": "PHPCS_SecurityAudit.BadFunctions.FilesystemFunctions.WarnSymlink"
+        }
+      ]
+    },
+    {
+      "id": "1d29852eccf9fb811d2a048f76cdf64af52a9196faed9d45313c901dbb2663fb",
+      "category": "sast",
+      "name": "Unusual function ftp_exec() detected",
+      "message": "Unusual function ftp_exec() detected",
+      "description": "Unusual function ftp_exec() detected",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.FringeFunctions.WarnFringestuff",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 21
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.FringeFunctions.WarnFringestuff",
+          "value": "PHPCS_SecurityAudit.BadFunctions.FringeFunctions.WarnFringestuff"
+        }
+      ]
+    },
+    {
+      "id": "0201f3e0ebbc4a87895472ecd7b3026d41475541bfb37affffc729458acc2570",
+      "category": "sast",
+      "name": "Function handling function create_function() detected with dynamic parameter",
+      "message": "Function handling function create_function() detected with dynamic parameter",
+      "description": "Function handling function create_function() detected with dynamic parameter",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.FunctionHandlingFunctions.WarnFunctionHandling",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 20
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.FunctionHandlingFunctions.WarnFunctionHandling",
+          "value": "PHPCS_SecurityAudit.BadFunctions.FunctionHandlingFunctions.WarnFunctionHandling"
+        }
+      ]
+    },
+    {
+      "id": "92b234cb8fa37a353ad0b0c3e2ac06555b020aa9014c75ff4bbc3da31352fdc4",
+      "category": "sast",
+      "name": "phpinfo() function detected",
+      "message": "phpinfo() function detected",
+      "description": "phpinfo() function detected",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.Phpinfos.WarnPhpinfo",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 19
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.Phpinfos.WarnPhpinfo",
+          "value": "PHPCS_SecurityAudit.BadFunctions.Phpinfos.WarnPhpinfo"
+        }
+      ]
+    },
+    {
+      "id": "aa578c747de19b868359068be3c1deeec26e69337f5f41604f2400213d4b5f96",
+      "category": "sast",
+      "name": "Dynamic usage of preg_replace, please check manually for /e modifier or user input.",
+      "message": "Dynamic usage of preg_replace, please check manually for /e modifier or user input.",
+      "description": "Dynamic usage of preg_replace, please check manually for /e modifier or user input.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceDyn",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 13
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceDyn",
+          "value": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceDyn"
+        }
+      ]
+    },
+    {
+      "id": "08e487fca7cec618d754d21f63ea13fcceac83dc594ed2e0b5c6f1f5b6da8b69",
+      "category": "sast",
+      "name": "Usage of preg_replace with /e modifier is not recommended.",
+      "message": "Usage of preg_replace with /e modifier is not recommended.",
+      "description": "Usage of preg_replace with /e modifier is not recommended.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceE",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 10
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceE",
+          "value": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceE"
+        }
+      ]
+    },
+    {
+      "id": "2698285b08109697e867d8056f48c274b6714f2e5b5c022b4e88f4bbdf991b18",
+      "category": "sast",
+      "name": "Usage of preg_replace with /e modifier is not recommended.",
+      "message": "Usage of preg_replace with /e modifier is not recommended.",
+      "description": "Usage of preg_replace with /e modifier is not recommended.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceE",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 11
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceE",
+          "value": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceE"
+        }
+      ]
+    },
+    {
+      "id": "1f75826613fc2ae800099a988c5ed4ba1ec74318065886ee1e73ed54f13500c2",
+      "category": "sast",
+      "name": "Weird usage of preg_replace, please check manually for /e modifier.",
+      "message": "Weird usage of preg_replace, please check manually for /e modifier.",
+      "description": "Weird usage of preg_replace, please check manually for /e modifier.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceWeird",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 14
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceWeird",
+          "value": "PHPCS_SecurityAudit.BadFunctions.PregReplace.PregReplaceWeird"
+        }
+      ]
+    },
+    {
+      "id": "f4f87ccd6d8fb5f58daa3ed73a4353d685791d2469d8b219f094586206e96a69",
+      "category": "sast",
+      "name": "SQL function mysql_query() detected with dynamic parameter ",
+      "message": "SQL function mysql_query() detected with dynamic parameter ",
+      "description": "SQL function mysql_query() detected with dynamic parameter ",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.SQLFunctions.WarnSQLFunction",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 31
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.SQLFunctions.WarnSQLFunction",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SQLFunctions.WarnSQLFunction"
+        }
+      ]
+    },
+    {
+      "id": "7a3957fe5b7c3ee31021210b9e1eb7cfadd97782e0bd894e28ee62fbf9e15898",
+      "category": "sast",
+      "name": "System program execution function exec() detected with dynamic parameter",
+      "message": "System program execution function exec() detected with dynamic parameter",
+      "description": "System program execution function exec() detected with dynamic parameter",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 29
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        }
+      ]
+    },
+    {
+      "id": "ef46690c8e78935f7911cf33fb55febc5a778eda1ee6d4a151141da7ddeb1bae",
+      "category": "sast",
+      "name": "CVE-2013-2110 Heap-based buffer overflow in the php_quot_print_encode function in ext/standard/quot_print.c in PHP before 5.3.26 and 5.4.x before 5.4.16 allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via a crafted argument to the quoted_printable_encode function.",
+      "message": "CVE-2013-2110 Heap-based buffer overflow in the php_quot_print_encode function in ext/standard/quot_print.c in PHP before 5.3.26 and 5.4.x before 5.4.16 allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via a crafted argument to the quoted_printable_encode function.",
+      "description": "CVE-2013-2110 Heap-based buffer overflow in the php_quot_print_encode function in ext/standard/quot_print.c in PHP before 5.3.26 and 5.4.x before 5.4.16 allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via a crafted argument to the quoted_printable_encode function.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.Drupal8.CVE20132110.CVE-2013-2110",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 41
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.Drupal8.CVE20132110.CVE-2013-2110",
+          "value": "PHPCS_SecurityAudit.Drupal8.CVE20132110.CVE-2013-2110"
+        }
+      ]
+    },
+    {
+      "id": "9e38b7c54251abf25329fa948ce0aa51ffde751c0a7bd0003838a87c1778a874",
+      "category": "sast",
+      "name": "CVE-2013-4113 ext/xml/xml.c in PHP before 5.3.27 does not properly consider parsing depth, which allows remote attackers to cause a denial of service (heap memory corruption) or possibly have unspecified other impact via a crafted document that is processed by the xml_parse_into_struct function.",
+      "message": "CVE-2013-4113 ext/xml/xml.c in PHP before 5.3.27 does not properly consider parsing depth, which allows remote attackers to cause a denial of service (heap memory corruption) or possibly have unspecified other impact via a crafted document that is processed by the xml_parse_into_struct function.",
+      "description": "CVE-2013-4113 ext/xml/xml.c in PHP before 5.3.27 does not properly consider parsing depth, which allows remote attackers to cause a denial of service (heap memory corruption) or possibly have unspecified other impact via a crafted document that is processed by the xml_parse_into_struct function.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.Drupal8.CVE20134113.CVE-2013-4113",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 40
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.Drupal8.CVE20134113.CVE-2013-4113",
+          "value": "PHPCS_SecurityAudit.Drupal8.CVE20134113.CVE-2013-4113"
+        }
+      ]
+    },
+    {
+      "id": "5de85c124eeff84a5758ea7e6a67b637a3df5e461e6e8e29e2df2e141a16003c",
+      "category": "sast",
+      "name": "Bad CORS header detected.",
+      "message": "Bad CORS header detected.",
+      "description": "Bad CORS header detected.",
+      "cve": "site/test-script.php:PHPCS_SecurityAudit.Misc.BadCorsHeader.WarnPCKS1Crypto",
+      "severity": "Low",
+      "scanner": {
+        "id": "phpcs_security_audit",
+        "name": "phpcs-security-audit v2"
+      },
+      "location": {
+        "file": "site/test-script.php",
+        "start_line": 44
+      },
+      "identifiers": [
+        {
+          "type": "phpcs_security_audit_source",
+          "name": "PHPCS_SecurityAudit.Misc.BadCorsHeader.WarnPCKS1Crypto",
+          "value": "PHPCS_SecurityAudit.Misc.BadCorsHeader.WarnPCKS1Crypto"
+        }
+      ]
+    }
+  ],
+  "remediations": [],
+  "scan": {
+    "scanner": {
+      "id": "phpcs_security_audit",
+      "name": "phpcs-security-audit v2",
+      "url": "https://github.com/FloeDesignTechnologies/phpcs-security-audit",
+      "vendor": {
+        "name": "GitLab"
+      },
+      "version": "2.0.1"
+    },
+    "type": "sast",
+    "start_time": "2021-01-18T18:09:38",
+    "end_time": "2021-01-18T18:09:38",
+    "status": "success"
+  }
+}
