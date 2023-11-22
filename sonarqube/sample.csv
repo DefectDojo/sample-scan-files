@@ -1,5 +1,5 @@
 project;component;creationDate;updateDate;severity;status;key;langName;name;htmlDesc
-barbich_django-DefectDojo;barbich_django-DefectDojo:django-DefectDojo/components/node_modules/@yarn_components/jquery/test/data/core/dont_return.php;2019-02-12T01:48:34+0100;2019-02-12T01:48:34+0100;MINOR;OPEN;php:S2964;PHP;"""sleep""" should not be called";"<p><code>sleep</code> is sometimes used in a mistaken attempt to prevent Denial of Service (DoS) attacks by throttling response rate. But because it
+barbich_django-DefectDojo;barbich_django-DefectDojo:django-DefectDojo/components/node_modules/@yarn_components/jquery/test/data/core/dont_return.php;2019-02-12T01:48:34+0100;2019-02-12T01:48:34+0100;MINOR;OPEN;php:S2964;PHP;""sleep"" should not be called";"<p><code>sleep</code> is sometimes used in a mistaken attempt to prevent Denial of Service (DoS) attacks by throttling response rate. But because it
 ties up a thread, each request takes longer to serve that it otherwise would, making the application <em>more</em> vulnerable to DoS attacks, rather
 than less.</p>
 <h2>Noncompliant Code Example</h2>
