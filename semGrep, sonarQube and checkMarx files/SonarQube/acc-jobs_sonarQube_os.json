@@ -1,0 +1,4312 @@
+{
+    "total": 53,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 53
+    },
+    "effortTotal": 375,
+    "issues": [
+        {
+            "key": "1e78a252-9d03-4eac-9a19-276410ce26f9",
+            "rule": "kubernetes:S6870",
+            "severity": "MAJOR",
+            "component": "acc-jobs:cis-k8s-job/templates/cis-job.yaml",
+            "project": "acc-jobs",
+            "line": 24,
+            "hash": "3bce653ee880b6638658a9e001b6a4f7",
+            "textRange": {
+                "startLine": 24,
+                "endLine": 24,
+                "startOffset": 19,
+                "endOffset": 91
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a storage limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "88319577+sanjay-ba@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-09-22T16:41:22+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8d5142ea-a25f-473a-8299-81158cf760df",
+            "rule": "kubernetes:S6864",
+            "severity": "MAJOR",
+            "component": "acc-jobs:cis-k8s-job/templates/cis-job.yaml",
+            "project": "acc-jobs",
+            "line": 24,
+            "hash": "3bce653ee880b6638658a9e001b6a4f7",
+            "textRange": {
+                "startLine": 24,
+                "endLine": 24,
+                "startOffset": 19,
+                "endOffset": 91
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a memory limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "88319577+sanjay-ba@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-09-22T16:41:22+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "090652ad-8430-4c4c-8fd3-4bc818601bd3",
+            "rule": "kubernetes:S6865",
+            "severity": "MAJOR",
+            "component": "acc-jobs:k8s-risk-assessment-job/templates/job.yaml",
+            "project": "acc-jobs",
+            "line": 17,
+            "hash": "d48d1d13ba72f0494949d4b37f72de7d",
+            "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 4,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Set automountServiceAccountToken to false for this specification of kind Job.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "88319577+sanjay-ba@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-09-22T16:41:22+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "5ed26e24-1401-4642-b937-fb1e8fb120db",
+            "rule": "kubernetes:S6870",
+            "severity": "MAJOR",
+            "component": "acc-jobs:k8s-risk-assessment-job/templates/job.yaml",
+            "project": "acc-jobs",
+            "line": 29,
+            "hash": "3bce653ee880b6638658a9e001b6a4f7",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 21,
+                "endOffset": 93
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a storage limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "88319577+sanjay-ba@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-09-22T16:41:22+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "afe733dd-4c40-4281-a220-bea26793ae32",
+            "rule": "kubernetes:S6864",
+            "severity": "MAJOR",
+            "component": "acc-jobs:k8s-risk-assessment-job/templates/job.yaml",
+            "project": "acc-jobs",
+            "line": 29,
+            "hash": "3bce653ee880b6638658a9e001b6a4f7",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 21,
+                "endOffset": 93
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a memory limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "88319577+sanjay-ba@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-09-22T16:41:22+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1915c75f-412b-418e-9104-734db54170c9",
+            "rule": "kubernetes:S6865",
+            "severity": "MAJOR",
+            "component": "acc-jobs:k8tls-job/templates/k8tls-job.yaml",
+            "project": "acc-jobs",
+            "line": 16,
+            "hash": "d48d1d13ba72f0494949d4b37f72de7d",
+            "textRange": {
+                "startLine": 16,
+                "endLine": 16,
+                "startOffset": 4,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Set automountServiceAccountToken to false for this specification of kind Job.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "88319577+sanjay-ba@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-09-22T16:41:22+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "022c2554-7815-421b-bbeb-7bbc0ef385ac",
+            "rule": "kubernetes:S6870",
+            "severity": "MAJOR",
+            "component": "acc-jobs:k8tls-job/templates/k8tls-job.yaml",
+            "project": "acc-jobs",
+            "line": 19,
+            "hash": "3bce653ee880b6638658a9e001b6a4f7",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 19,
+                "endOffset": 91
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a storage limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "88319577+sanjay-ba@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-09-22T16:41:22+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a0f94cf3-7535-4cb0-8c7d-4ae89f5d4240",
+            "rule": "kubernetes:S6864",
+            "severity": "MAJOR",
+            "component": "acc-jobs:k8tls-job/templates/k8tls-job.yaml",
+            "project": "acc-jobs",
+            "line": 19,
+            "hash": "3bce653ee880b6638658a9e001b6a4f7",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 19,
+                "endOffset": 91
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a memory limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "88319577+sanjay-ba@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-09-22T16:41:22+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "79af86ec-db40-4fbc-a8c2-37c5e11a6571",
+            "rule": "kubernetes:S6865",
+            "severity": "MAJOR",
+            "component": "acc-jobs:kiem-job/templates/job.yaml",
+            "project": "acc-jobs",
+            "line": 17,
+            "hash": "d48d1d13ba72f0494949d4b37f72de7d",
+            "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 4,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Set automountServiceAccountToken to false for this specification of kind Job.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "88319577+sanjay-ba@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-09-22T16:41:22+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "adc268b6-be5d-4dc3-b4a3-9b4fd665a0cf",
+            "rule": "python:S3776",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 210,
+            "hash": "23e39e4664ab654abfd496ca4a58400e",
+            "textRange": {
+                "startLine": 210,
+                "endLine": 210,
+                "startOffset": 4,
+                "endOffset": 24
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 213,
+                                "endLine": 213,
+                                "startOffset": 4,
+                                "endOffset": 7
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 218,
+                                "endLine": 218,
+                                "startOffset": 8,
+                                "endOffset": 14
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 222,
+                                "endLine": 222,
+                                "startOffset": 12,
+                                "endOffset": 18
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 225,
+                                "endLine": 225,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 228,
+                                "endLine": 228,
+                                "startOffset": 12,
+                                "endOffset": 17
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 232,
+                                "endLine": 232,
+                                "startOffset": 16,
+                                "endOffset": 22
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 234,
+                                "endLine": 234,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 236,
+                                "endLine": 236,
+                                "startOffset": 16,
+                                "endOffset": 18
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 238,
+                                "endLine": 238,
+                                "startOffset": 16,
+                                "endOffset": 20
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 240,
+                                "endLine": 240,
+                                "startOffset": 16,
+                                "endOffset": 18
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 242,
+                                "endLine": 242,
+                                "startOffset": 16,
+                                "endOffset": 20
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 246,
+                                "endLine": 246,
+                                "startOffset": 16,
+                                "endOffset": 18
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 248,
+                                "endLine": 248,
+                                "startOffset": 16,
+                                "endOffset": 20
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 252,
+                                "endLine": 252,
+                                "startOffset": 16,
+                                "endOffset": 18
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 254,
+                                "endLine": 254,
+                                "startOffset": 16,
+                                "endOffset": 20
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 264,
+                                "endLine": 264,
+                                "startOffset": 8,
+                                "endOffset": 12
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 267,
+                                "endLine": 267,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 271,
+                                "endLine": 271,
+                                "startOffset": 12,
+                                "endOffset": 17
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 275,
+                                "endLine": 275,
+                                "startOffset": 16,
+                                "endOffset": 22
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 277,
+                                "endLine": 277,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 279,
+                                "endLine": 279,
+                                "startOffset": 12,
+                                "endOffset": 16
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 282,
+                                "endLine": 282,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 285,
+                                "endLine": 285,
+                                "startOffset": 12,
+                                "endOffset": 17
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 289,
+                                "endLine": 289,
+                                "startOffset": 16,
+                                "endOffset": 22
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 295,
+                                "endLine": 295,
+                                "startOffset": 16,
+                                "endOffset": 19
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 304,
+                                "endLine": 304,
+                                "startOffset": 20,
+                                "endOffset": 26
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 308,
+                                "endLine": 308,
+                                "startOffset": 12,
+                                "endOffset": 18
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this function to reduce its Cognitive Complexity from 72 to the 15 allowed.",
+            "effort": "1h2min",
+            "debt": "1h2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2024-08-06T07:39:27+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9c0f5802-41a2-48b6-bfe7-537370e96164",
+            "rule": "python:S3776",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 369,
+            "hash": "84240373dc579b0a6a624264bafba2b5",
+            "textRange": {
+                "startLine": 369,
+                "endLine": 369,
+                "startOffset": 4,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 382,
+                                "endLine": 382,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 385,
+                                "endLine": 385,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 387,
+                                "endLine": 387,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 389,
+                                "endLine": 389,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 395,
+                                "endLine": 395,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 401,
+                                "endLine": 401,
+                                "startOffset": 4,
+                                "endOffset": 10
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 413,
+                                "endLine": 413,
+                                "startOffset": 4,
+                                "endOffset": 7
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 416,
+                                "endLine": 416,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 422,
+                                "endLine": 422,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 423,
+                                "endLine": 423,
+                                "startOffset": 8,
+                                "endOffset": 13
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 427,
+                                "endLine": 427,
+                                "startOffset": 12,
+                                "endOffset": 18
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 432,
+                                "endLine": 432,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 434,
+                                "endLine": 434,
+                                "startOffset": 12,
+                                "endOffset": 15
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 439,
+                                "endLine": 439,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 444,
+                                "endLine": 444,
+                                "startOffset": 4,
+                                "endOffset": 7
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 451,
+                                "endLine": 451,
+                                "startOffset": 8,
+                                "endOffset": 14
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 456,
+                                "endLine": 456,
+                                "startOffset": 8,
+                                "endOffset": 11
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 466,
+                                "endLine": 466,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 468,
+                                "endLine": 468,
+                                "startOffset": 12,
+                                "endOffset": 16
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this function to reduce its Cognitive Complexity from 31 to the 15 allowed.",
+            "effort": "21min",
+            "debt": "21min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2024-08-06T07:39:27+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "01b1cabc-f06a-4549-9121-09e274015349",
+            "rule": "kubernetes:S6870",
+            "severity": "MAJOR",
+            "component": "acc-jobs:kiem-job/templates/job.yaml",
+            "project": "acc-jobs",
+            "line": 29,
+            "hash": "a0cd24fe921a6d0ffbdeaf030be6ba9c",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 10,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a storage limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shreyas.ny@gmail.com",
+            "tags": [],
+            "creationDate": "2024-07-10T07:29:07+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2bfb3c4d-bc5a-4c09-8dce-3bd112b34139",
+            "rule": "kubernetes:S6864",
+            "severity": "MAJOR",
+            "component": "acc-jobs:kiem-job/templates/job.yaml",
+            "project": "acc-jobs",
+            "line": 29,
+            "hash": "a0cd24fe921a6d0ffbdeaf030be6ba9c",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 10,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a memory limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shreyas.ny@gmail.com",
+            "tags": [],
+            "creationDate": "2024-07-10T07:29:07+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e5bda9b0-13c3-4f55-8766-0b957ab56ce1",
+            "rule": "docker:S6596",
+            "severity": "MAJOR",
+            "component": "acc-jobs:Dockerfile",
+            "project": "acc-jobs",
+            "line": 1,
+            "hash": "72cc33f7273acdc5b24e7ebaa1860886",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 5,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use a specific version tag for the image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "75608361+raviknox@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-07-02T10:37:25+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d9cb5ddd-cfd7-404d-8293-5f47da32ec90",
+            "rule": "docker:S6587",
+            "severity": "MAJOR",
+            "component": "acc-jobs:Dockerfile",
+            "project": "acc-jobs",
+            "line": 3,
+            "hash": "251d5e8f34fa0e4f7c54bbd580ae5bdf",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 4,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove cache after installing packages.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "75608361+raviknox@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-07-02T10:37:25+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7c5915b4-efb9-4e83-a0d7-64587e47daf9",
+            "rule": "docker:S6587",
+            "severity": "MAJOR",
+            "component": "acc-jobs:sast-job/Dockerfile",
+            "project": "acc-jobs",
+            "line": 8,
+            "hash": "2c761d1064f59eda7565da5af0f611a7",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 25,
+                "endOffset": 72
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove cache after installing packages.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [],
+            "creationDate": "2024-04-28T13:15:18+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2ba279d2-2a26-4d5c-b115-702b78c683cc",
+            "rule": "python:S125",
+            "severity": "MAJOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 203,
+            "hash": "9e7c8e633519ee59cd0d29dd79a3d9af",
+            "textRange": {
+                "startLine": 203,
+                "endLine": 203,
+                "startOffset": 4,
+                "endOffset": 88
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-28T13:15:18+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "da2ac2b4-c108-46c0-87dc-d40f06188c55",
+            "rule": "python:S125",
+            "severity": "MAJOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 1,
+            "hash": "89943b9b66b735837da59c80507c80ad",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 0,
+                "endOffset": 31
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "dc1319b9-9a83-4301-aef4-e0ee178c4e29",
+            "rule": "python:S125",
+            "severity": "MAJOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 34,
+            "hash": "20e9a2010032fee4df8d6e3b2dba0f9c",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 8,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "86a91414-1296-4cb2-b43b-cb9a19c1661b",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 40,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 4,
+                "endOffset": 10
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "error-handling",
+                "bad-practice",
+                "suspicious"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "96656805-5af2-4e4a-8a4f-f59a3974946f",
+            "rule": "python:S3776",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 65,
+            "hash": "504afafcf34d90a51c8fd35abfa7d710",
+            "textRange": {
+                "startLine": 65,
+                "endLine": 65,
+                "startOffset": 4,
+                "endOffset": 16
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 86,
+                                "endLine": 86,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 92,
+                                "endLine": 92,
+                                "startOffset": 4,
+                                "endOffset": 10
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 102,
+                                "endLine": 102,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 105,
+                                "endLine": 105,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 109,
+                                "endLine": 109,
+                                "startOffset": 4,
+                                "endOffset": 8
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 114,
+                                "endLine": 114,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 116,
+                                "endLine": 116,
+                                "startOffset": 12,
+                                "endOffset": 17
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 120,
+                                "endLine": 120,
+                                "startOffset": 16,
+                                "endOffset": 22
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 126,
+                                "endLine": 126,
+                                "startOffset": 16,
+                                "endOffset": 18
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 134,
+                                "endLine": 134,
+                                "startOffset": 16,
+                                "endOffset": 20
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 141,
+                                "endLine": 141,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 146,
+                                "endLine": 146,
+                                "startOffset": 4,
+                                "endOffset": 10
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 151,
+                                "endLine": 151,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 154,
+                                "endLine": 154,
+                                "startOffset": 8,
+                                "endOffset": 14
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 156,
+                                "endLine": 156,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 160,
+                                "endLine": 160,
+                                "startOffset": 8,
+                                "endOffset": 12
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 165,
+                                "endLine": 165,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 169,
+                                "endLine": 169,
+                                "startOffset": 4,
+                                "endOffset": 8
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 176,
+                                "endLine": 176,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 177,
+                                "endLine": 177,
+                                "startOffset": 12,
+                                "endOffset": 17
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 181,
+                                "endLine": 181,
+                                "startOffset": 16,
+                                "endOffset": 22
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 187,
+                                "endLine": 187,
+                                "startOffset": 16,
+                                "endOffset": 18
+                            },
+                            "msg": "+4 (incl 3 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 196,
+                                "endLine": 196,
+                                "startOffset": 16,
+                                "endOffset": 20
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this function to reduce its Cognitive Complexity from 43 to the 15 allowed.",
+            "effort": "33min",
+            "debt": "33min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d3048cdc-9cf5-4f62-8027-2bc5266fe759",
+            "rule": "python:S125",
+            "severity": "MAJOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 75,
+            "hash": "de84f27c60c0157ecc44b0e59a66f9bc",
+            "textRange": {
+                "startLine": 75,
+                "endLine": 75,
+                "startOffset": 4,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "202a8376-da7e-428c-92c0-f7d64b3b8708",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 91,
+            "hash": "a536ca0b25b77ad56ce5742f77707f08",
+            "textRange": {
+                "startLine": 91,
+                "endLine": 91,
+                "startOffset": 8,
+                "endOffset": 12
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 119,
+                                "endLine": 119,
+                                "startOffset": 20,
+                                "endOffset": 24
+                            },
+                            "msg": "Assignment to unused local variable \"code\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 145,
+                                "endLine": 145,
+                                "startOffset": 8,
+                                "endOffset": 12
+                            },
+                            "msg": "Assignment to unused local variable \"code\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 180,
+                                "endLine": 180,
+                                "startOffset": 20,
+                                "endOffset": 24
+                            },
+                            "msg": "Assignment to unused local variable \"code\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Replace the unused local variable \"code\" with \"_\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "13b463cd-a5dd-4c70-bac3-7ee3e3e83cdf",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 93,
+            "hash": "4ad5249e83fc3e1239dec2b31c3fe206",
+            "textRange": {
+                "startLine": 93,
+                "endLine": 93,
+                "startOffset": 14,
+                "endOffset": 70
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 121,
+                                "endLine": 121,
+                                "startOffset": 26,
+                                "endOffset": 82
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 147,
+                                "endLine": 147,
+                                "startOffset": 14,
+                                "endOffset": 70
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 182,
+                                "endLine": 182,
+                                "startOffset": 26,
+                                "endOffset": 82
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 402,
+                                "endLine": 402,
+                                "startOffset": 14,
+                                "endOffset": 70
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 428,
+                                "endLine": 428,
+                                "startOffset": 22,
+                                "endOffset": 78
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 452,
+                                "endLine": 452,
+                                "startOffset": 18,
+                                "endOffset": 74
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 510,
+                                "endLine": 510,
+                                "startOffset": 14,
+                                "endOffset": 70
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 536,
+                                "endLine": 536,
+                                "startOffset": 18,
+                                "endOffset": 74
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 590,
+                                "endLine": 590,
+                                "startOffset": 18,
+                                "endOffset": 74
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 591,
+                                "endLine": 591,
+                                "startOffset": 15,
+                                "endOffset": 71
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 614,
+                                "endLine": 614,
+                                "startOffset": 26,
+                                "endOffset": 82
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 615,
+                                "endLine": 615,
+                                "startOffset": 23,
+                                "endOffset": 79
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"An error occured when connecting to the SonarQube API.\" 13 times.",
+            "effort": "26min",
+            "debt": "26min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "03901857-d2f6-498d-b44e-bb53d23798bd",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 214,
+            "hash": "7496ddf842a61c6f2114271507fae9c3",
+            "textRange": {
+                "startLine": 214,
+                "endLine": 214,
+                "startOffset": 8,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"hasSnippet\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "082161b2-d79b-49bd-a7a8-fbc6bace5557",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 215,
+            "hash": "212d30dd2f274a66f95577e40e52b880",
+            "textRange": {
+                "startLine": 215,
+                "endLine": 215,
+                "startOffset": 8,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"issueKey\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "409ada10-147a-477d-88ae-86f10d90e3d0",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 218,
+            "hash": "5e11fcffc5ca1f600d0bf53d38f19ae7",
+            "textRange": {
+                "startLine": 218,
+                "endLine": 218,
+                "startOffset": 28,
+                "endOffset": 29
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 222,
+                                "endLine": 222,
+                                "startOffset": 32,
+                                "endOffset": 33
+                            },
+                            "msg": "Assignment to unused local variable \"e\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 232,
+                                "endLine": 232,
+                                "startOffset": 36,
+                                "endOffset": 37
+                            },
+                            "msg": "Assignment to unused local variable \"e\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 275,
+                                "endLine": 275,
+                                "startOffset": 36,
+                                "endOffset": 37
+                            },
+                            "msg": "Assignment to unused local variable \"e\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 289,
+                                "endLine": 289,
+                                "startOffset": 36,
+                                "endOffset": 37
+                            },
+                            "msg": "Assignment to unused local variable \"e\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 304,
+                                "endLine": 304,
+                                "startOffset": 40,
+                                "endOffset": 41
+                            },
+                            "msg": "Assignment to unused local variable \"e\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 308,
+                                "endLine": 308,
+                                "startOffset": 32,
+                                "endOffset": 33
+                            },
+                            "msg": "Assignment to unused local variable \"e\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"e\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0c0ae838-cd78-4697-a211-2ad775f0cb36",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 220,
+            "hash": "afbc76587738b558499f66ce7792de0e",
+            "textRange": {
+                "startLine": 220,
+                "endLine": 220,
+                "startOffset": 16,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"textRange\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ae79a6b2-705c-4208-8129-4c8e1bbf0fb1",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 241,
+            "hash": "c4d4da747fb1602cf854828a991f92b5",
+            "textRange": {
+                "startLine": 241,
+                "endLine": 241,
+                "startOffset": 20,
+                "endOffset": 35
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"riskDescription\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2fc0f689-3240-4039-b0b5-7062f831951b",
+            "rule": "python:S125",
+            "severity": "MAJOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 244,
+            "hash": "a2a61580564379aa97f827847a2b6c6d",
+            "textRange": {
+                "startLine": 244,
+                "endLine": 244,
+                "startOffset": 16,
+                "endOffset": 63
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e409354e-18e9-4a3b-8226-3155068b304b",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 247,
+            "hash": "eabc80e15cc7bc81fbe2bdfd1b52f9e5",
+            "textRange": {
+                "startLine": 247,
+                "endLine": 247,
+                "startOffset": 20,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"vulnerabilityDescription\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "08d0c425-ea8f-4393-a54b-63a0fb18c750",
+            "rule": "python:S125",
+            "severity": "MAJOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 250,
+            "hash": "7575f4fca01db26a0a803ffec1e61eff",
+            "textRange": {
+                "startLine": 250,
+                "endLine": 250,
+                "startOffset": 16,
+                "endOffset": 72
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2dd9b7cb-f383-45fb-96df-c343404f4e63",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 253,
+            "hash": "8f77d22ac9244333a3916ddc5a8d2b3e",
+            "textRange": {
+                "startLine": 253,
+                "endLine": 253,
+                "startOffset": 20,
+                "endOffset": 38
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"fixRecommendations\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e87917a0-253c-46c2-a149-c6d230c2735a",
+            "rule": "python:S125",
+            "severity": "MAJOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 256,
+            "hash": "a14c468092b72af374675372278f52ef",
+            "textRange": {
+                "startLine": 256,
+                "endLine": 256,
+                "startOffset": 16,
+                "endOffset": 66
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0e17957d-66f0-4c91-acd7-c6da89b27f50",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 294,
+            "hash": "44246821528ee73fcf9a9bdc4a9bdf03",
+            "textRange": {
+                "startLine": 294,
+                "endLine": 294,
+                "startOffset": 16,
+                "endOffset": 27
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"fullSnippet\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "45c29f81-f4ff-4ea3-b2ec-0a40c648f02c",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 302,
+            "hash": "1821e8d1b738995ddf6395ec27c2bc50",
+            "textRange": {
+                "startLine": 302,
+                "endLine": 302,
+                "startOffset": 24,
+                "endOffset": 35
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"lineSnippet\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ed7123c2-d30b-4aa3-ac66-737d83022a7a",
+            "rule": "python:S1542",
+            "severity": "MAJOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 316,
+            "hash": "f49194583f602ab096144b5cb4eefd2d",
+            "textRange": {
+                "startLine": 316,
+                "endLine": 316,
+                "startOffset": 4,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename function \"_handleMissingParam\" to match the regular expression ^[a-z_][a-z0-9_]*$.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2f7b7219-2423-4e68-ba0d-ea15a1ec7860",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 342,
+            "hash": "ca79baa34e2b37a30e06bc1513da9b1d",
+            "textRange": {
+                "startLine": 342,
+                "endLine": 342,
+                "startOffset": 4,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"errorMessage\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "eb291e8e-080e-465f-b01a-d4beb13799e1",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 349,
+            "hash": "021fcae2a2e948681f3046340e596aa6",
+            "textRange": {
+                "startLine": 349,
+                "endLine": 349,
+                "startOffset": 35,
+                "endOffset": 47
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 386,
+                                "endLine": 386,
+                                "startOffset": 35,
+                                "endOffset": 47
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 493,
+                                "endLine": 493,
+                                "startOffset": 35,
+                                "endOffset": 47
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 576,
+                                "endLine": 576,
+                                "startOffset": 35,
+                                "endOffset": 47
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"auth token\" 4 times.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "fb4710f6-e8d9-43bd-a294-eeb380117b3a",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 351,
+            "hash": "1af87f0f98ed60dbb2e5b782ed964232",
+            "textRange": {
+                "startLine": 351,
+                "endLine": 351,
+                "startOffset": 35,
+                "endOffset": 46
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 388,
+                                "endLine": 388,
+                                "startOffset": 35,
+                                "endOffset": 46
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 495,
+                                "endLine": 495,
+                                "startOffset": 35,
+                                "endOffset": 46
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 578,
+                                "endLine": 578,
+                                "startOffset": 35,
+                                "endOffset": 46
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"Sonar URL\" 4 times.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "17b01678-023e-446c-8101-8b921dcc3617",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 364,
+            "hash": "7f5c5900ed168a2a49f179e81267c290",
+            "textRange": {
+                "startLine": 364,
+                "endLine": 364,
+                "startOffset": 15,
+                "endOffset": 44
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 471,
+                                "endLine": 471,
+                                "startOffset": 11,
+                                "endOffset": 40
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 556,
+                                "endLine": 556,
+                                "startOffset": 11,
+                                "endOffset": 40
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 640,
+                                "endLine": 640,
+                                "startOffset": 11,
+                                "endOffset": 40
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"Success! Data written to {}\" 4 times.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "fa7e1d8c-3f6a-48b3-af6b-b92bff016722",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 381,
+            "hash": "ca79baa34e2b37a30e06bc1513da9b1d",
+            "textRange": {
+                "startLine": 381,
+                "endLine": 381,
+                "startOffset": 4,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"errorMessage\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9edb6fbe-68c1-456c-947f-b654a05c4179",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 392,
+            "hash": "2952078759bc84303b5df4a07fb73b1f",
+            "textRange": {
+                "startLine": 392,
+                "endLine": 392,
+                "startOffset": 42,
+                "endOffset": 65
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 503,
+                                "endLine": 503,
+                                "startOffset": 42,
+                                "endOffset": 65
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 582,
+                                "endLine": 582,
+                                "startOffset": 42,
+                                "endOffset": 65
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"api/components/search\" 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d3fc9614-8b4e-486b-af20-b5f6d9e33c1a",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 400,
+            "hash": "639121e106fb10ef9b8f396735a5c2c0",
+            "textRange": {
+                "startLine": 400,
+                "endLine": 400,
+                "startOffset": 8,
+                "endOffset": 12
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 426,
+                                "endLine": 426,
+                                "startOffset": 16,
+                                "endOffset": 20
+                            },
+                            "msg": "Assignment to unused local variable \"code\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 450,
+                                "endLine": 450,
+                                "startOffset": 12,
+                                "endOffset": 16
+                            },
+                            "msg": "Assignment to unused local variable \"code\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Replace the unused local variable \"code\" with \"_\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0e447ff7-85dd-4385-a796-64171f01fe7c",
+            "rule": "python:S3776",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 474,
+            "hash": "0efe6a18f3481675d2f0a78e31a3d347",
+            "textRange": {
+                "startLine": 474,
+                "endLine": 474,
+                "startOffset": 4,
+                "endOffset": 20
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 489,
+                                "endLine": 489,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 492,
+                                "endLine": 492,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 494,
+                                "endLine": 494,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 496,
+                                "endLine": 496,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 498,
+                                "endLine": 498,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 500,
+                                "endLine": 500,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 509,
+                                "endLine": 509,
+                                "startOffset": 4,
+                                "endOffset": 10
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 520,
+                                "endLine": 520,
+                                "startOffset": 4,
+                                "endOffset": 7
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 525,
+                                "endLine": 525,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 528,
+                                "endLine": 528,
+                                "startOffset": 4,
+                                "endOffset": 7
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 535,
+                                "endLine": 535,
+                                "startOffset": 8,
+                                "endOffset": 14
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 540,
+                                "endLine": 540,
+                                "startOffset": 8,
+                                "endOffset": 11
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 550,
+                                "endLine": 550,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 553,
+                                "endLine": 553,
+                                "startOffset": 12,
+                                "endOffset": 16
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e4e39f0f-5e26-44f5-b3f7-a69bf72ade1f",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 488,
+            "hash": "ca79baa34e2b37a30e06bc1513da9b1d",
+            "textRange": {
+                "startLine": 488,
+                "endLine": 488,
+                "startOffset": 4,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"errorMessage\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7e12eab4-e02f-4b43-8933-e5a915aa0c78",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 508,
+            "hash": "639121e106fb10ef9b8f396735a5c2c0",
+            "textRange": {
+                "startLine": 508,
+                "endLine": 508,
+                "startOffset": 8,
+                "endOffset": 12
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 534,
+                                "endLine": 534,
+                                "startOffset": 12,
+                                "endOffset": 16
+                            },
+                            "msg": "Assignment to unused local variable \"code\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Replace the unused local variable \"code\" with \"_\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f9476334-7008-45ce-8cbc-76823a3ffadb",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 514,
+            "hash": "72bcf477e0189fce9ed3c0114bc1df9d",
+            "textRange": {
+                "startLine": 514,
+                "endLine": 514,
+                "startOffset": 4,
+                "endOffset": 9
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"total\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6b9ae749-b922-4f40-95ec-5b3de581e167",
+            "rule": "python:S3776",
+            "severity": "CRITICAL",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 559,
+            "hash": "ae4b48dda840aa31c6b77f56afe851e5",
+            "textRange": {
+                "startLine": 559,
+                "endLine": 559,
+                "startOffset": 4,
+                "endOffset": 31
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 572,
+                                "endLine": 572,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 575,
+                                "endLine": 575,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 577,
+                                "endLine": 577,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 579,
+                                "endLine": 579,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 588,
+                                "endLine": 588,
+                                "startOffset": 4,
+                                "endOffset": 10
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 593,
+                                "endLine": 593,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 605,
+                                "endLine": 605,
+                                "startOffset": 4,
+                                "endOffset": 7
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 608,
+                                "endLine": 608,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 609,
+                                "endLine": 609,
+                                "startOffset": 8,
+                                "endOffset": 13
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 613,
+                                "endLine": 613,
+                                "startOffset": 12,
+                                "endOffset": 18
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 618,
+                                "endLine": 618,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 620,
+                                "endLine": 620,
+                                "startOffset": 12,
+                                "endOffset": 15
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 625,
+                                "endLine": 625,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 628,
+                                "endLine": 628,
+                                "startOffset": 4,
+                                "endOffset": 7
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 635,
+                                "endLine": 635,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 637,
+                                "endLine": 637,
+                                "startOffset": 8,
+                                "endOffset": 12
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.",
+            "effort": "14min",
+            "debt": "14min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "4c934e2b-2178-4c77-8ddf-3fcb3bb5d41f",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 571,
+            "hash": "ca79baa34e2b37a30e06bc1513da9b1d",
+            "textRange": {
+                "startLine": 571,
+                "endLine": 571,
+                "startOffset": 4,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"errorMessage\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3e67cc8d-33b3-4082-a866-3ace1b69ceb9",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 588,
+            "hash": "5e11fcffc5ca1f600d0bf53d38f19ae7",
+            "textRange": {
+                "startLine": 588,
+                "endLine": 588,
+                "startOffset": 24,
+                "endOffset": 25
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "acc-jobs:sast-job/sq-job.py",
+                            "textRange": {
+                                "startLine": 613,
+                                "endLine": 613,
+                                "startOffset": 32,
+                                "endOffset": 33
+                            },
+                            "msg": "Assignment to unused local variable \"e\".",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"e\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "dbb9f623-6c04-4117-83ec-57123c908999",
+            "rule": "python:S2772",
+            "severity": "MINOR",
+            "component": "acc-jobs:sast-job/sq-job.py",
+            "project": "acc-jobs",
+            "line": 589,
+            "hash": "1a1dc91c907325c69271ddf0c944bc72",
+            "textRange": {
+                "startLine": 589,
+                "endLine": 589,
+                "startOffset": 8,
+                "endOffset": 12
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unneeded \"pass\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nyrahul@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-04-26T14:04:47+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "5094b288-4a01-44d7-aaff-e33cc6eb8962",
+            "rule": "kubernetes:S6865",
+            "severity": "MAJOR",
+            "component": "acc-jobs:cis-k8s-job/templates/cis-job.yaml",
+            "project": "acc-jobs",
+            "line": 14,
+            "hash": "084d5d41838f6b2d8b0c1f1176d66d01",
+            "textRange": {
+                "startLine": 14,
+                "endLine": 14,
+                "startOffset": 4,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Set automountServiceAccountToken to false for this specification of kind Job.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nyrahul@gmail.com",
+            "tags": [],
+            "creationDate": "2023-11-16T03:24:46+0000",
+            "updateDate": "2024-11-14T04:59:25+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        }
+    ],
+    "components": [
+        {
+            "key": "acc-jobs:k8tls-job/templates/k8tls-job.yaml",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "k8tls-job.yaml",
+            "longName": "k8tls-job/templates/k8tls-job.yaml",
+            "path": "k8tls-job/templates/k8tls-job.yaml"
+        },
+        {
+            "key": "acc-jobs:Dockerfile",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Dockerfile",
+            "longName": "Dockerfile",
+            "path": "Dockerfile"
+        },
+        {
+            "key": "acc-jobs:kiem-job/templates/job.yaml",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "job.yaml",
+            "longName": "kiem-job/templates/job.yaml",
+            "path": "kiem-job/templates/job.yaml"
+        },
+        {
+            "key": "acc-jobs",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "acc-jobs",
+            "longName": "acc-jobs"
+        },
+        {
+            "key": "acc-jobs:k8s-risk-assessment-job/templates/job.yaml",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "job.yaml",
+            "longName": "k8s-risk-assessment-job/templates/job.yaml",
+            "path": "k8s-risk-assessment-job/templates/job.yaml"
+        },
+        {
+            "key": "acc-jobs:sast-job/sq-job.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "sq-job.py",
+            "longName": "sast-job/sq-job.py",
+            "path": "sast-job/sq-job.py"
+        },
+        {
+            "key": "acc-jobs:cis-k8s-job/templates/cis-job.yaml",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "cis-job.yaml",
+            "longName": "cis-k8s-job/templates/cis-job.yaml",
+            "path": "cis-k8s-job/templates/cis-job.yaml"
+        },
+        {
+            "key": "acc-jobs:sast-job/Dockerfile",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Dockerfile",
+            "longName": "sast-job/Dockerfile",
+            "path": "sast-job/Dockerfile"
+        }
+    ],
+    "facets": []
+}

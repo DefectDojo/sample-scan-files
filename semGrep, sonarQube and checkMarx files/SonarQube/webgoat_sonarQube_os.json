@@ -1,0 +1,4762 @@
+{
+    "total": 1944,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 1944
+    },
+    "effortTotal": 11999,
+    "issues": [
+        {
+            "key": "9d0414f6-e6aa-4535-a247-d7b8fe89f464",
+            "rule": "css:S4667",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/passwordreset/css/password.css",
+            "project": "webgoat",
+            "line": 1,
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 0,
+                "endOffset": 0
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected empty source",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "",
+            "tags": [],
+            "creationDate": "2024-11-13T15:59:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9ce724d1-a2cf-4da4-9a6e-d3057531baef",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge5.html",
+            "project": "webgoat",
+            "line": 26,
+            "hash": "c3bd9c9f34bf938c6ebf715c6856b347",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 28,
+                "startOffset": 36,
+                "endOffset": 82
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "cfddaae9-c0a0-42ca-96f5-2bdeae7cb531",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 30,
+            "hash": "c3bd9c9f34bf938c6ebf715c6856b347",
+            "textRange": {
+                "startLine": 30,
+                "endLine": 32,
+                "startOffset": 36,
+                "endOffset": 82
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d7af3382-226e-4e3f-bc7b-b3b3c6f6c89c",
+            "rule": "Web:S5255",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 30,
+            "hash": "c3bd9c9f34bf938c6ebf715c6856b347",
+            "textRange": {
+                "startLine": 30,
+                "endLine": 32,
+                "startOffset": 36,
+                "endOffset": 82
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"aria-label\" or \"aria-labbelledby\" attribute to this element.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "5e788df7-279a-4446-b00d-b65e4982f21a",
+            "rule": "Web:S5255",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 65,
+            "hash": "c0cce0d633f91aea70617e888e0939bb",
+            "textRange": {
+                "startLine": 65,
+                "endLine": 67,
+                "startOffset": 36,
+                "endOffset": 105
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"aria-label\" or \"aria-labbelledby\" attribute to this element.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b1278b6d-86e9-45f2-8606-28ae6df399fc",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 65,
+            "hash": "c0cce0d633f91aea70617e888e0939bb",
+            "textRange": {
+                "startLine": 65,
+                "endLine": 67,
+                "startOffset": 36,
+                "endOffset": 105
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "01e399d3-569b-49b6-8f39-80f368fd8d97",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge7.html",
+            "project": "webgoat",
+            "line": 29,
+            "hash": "c3bd9c9f34bf938c6ebf715c6856b347",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 31,
+                "startOffset": 36,
+                "endOffset": 82
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b163cf5b-d62a-43a9-aa29-c73ac32320ca",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/cia/html/CIA.html",
+            "project": "webgoat",
+            "line": 30,
+            "hash": "7c9dbc1a2097787c7cd83653e32e26c4",
+            "textRange": {
+                "startLine": 30,
+                "endLine": 32,
+                "startOffset": 12,
+                "endOffset": 55
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b1121fcd-dc6f-41de-89e9-62e49b4fe660",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/jwt/html/JWT.html",
+            "project": "webgoat",
+            "line": 125,
+            "hash": "7c9dbc1a2097787c7cd83653e32e26c4",
+            "textRange": {
+                "startLine": 125,
+                "endLine": 128,
+                "startOffset": 12,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1beb2842-e932-4002-9210-f55b1408d851",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/passwordreset/templates/password_reset.html",
+            "project": "webgoat",
+            "line": 12,
+            "hash": "d3a549c0d400304598735c4cac11c9fe",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 12,
+                "endOffset": 140
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a976da7e-1115-4fc9-918d-2d040f59b834",
+            "rule": "Web:S5255",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/sqlinjection/html/SqlInjectionAdvanced.html",
+            "project": "webgoat",
+            "line": 80,
+            "hash": "c3bd9c9f34bf938c6ebf715c6856b347",
+            "textRange": {
+                "startLine": 80,
+                "endLine": 83,
+                "startOffset": 36,
+                "endOffset": 54
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"aria-label\" or \"aria-labbelledby\" attribute to this element.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c4feb20b-2019-487e-a104-b11c5b23a1c1",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/sqlinjection/html/SqlInjectionAdvanced.html",
+            "project": "webgoat",
+            "line": 80,
+            "hash": "c3bd9c9f34bf938c6ebf715c6856b347",
+            "textRange": {
+                "startLine": 80,
+                "endLine": 83,
+                "startOffset": 36,
+                "endOffset": 54
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7a727309-3e77-44b2-b414-0f69fe865fc2",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/sqlinjection/html/SqlInjectionAdvanced.html",
+            "project": "webgoat",
+            "line": 116,
+            "hash": "c0cce0d633f91aea70617e888e0939bb",
+            "textRange": {
+                "startLine": 116,
+                "endLine": 119,
+                "startOffset": 36,
+                "endOffset": 77
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c62ca568-aff6-4739-8386-4eb2a7132456",
+            "rule": "Web:S5255",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/sqlinjection/html/SqlInjectionAdvanced.html",
+            "project": "webgoat",
+            "line": 116,
+            "hash": "c0cce0d633f91aea70617e888e0939bb",
+            "textRange": {
+                "startLine": 116,
+                "endLine": 119,
+                "startOffset": 36,
+                "endOffset": 77
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"aria-label\" or \"aria-labbelledby\" attribute to this element.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0e5a22c9-034d-4528-9eaf-f6c8add764bf",
+            "rule": "Web:S5255",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/sqlinjection/html/SqlInjectionAdvanced.html",
+            "project": "webgoat",
+            "line": 169,
+            "hash": "7c9dbc1a2097787c7cd83653e32e26c4",
+            "textRange": {
+                "startLine": 169,
+                "endLine": 172,
+                "startOffset": 16,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"aria-label\" or \"aria-labbelledby\" attribute to this element.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "24d0d083-c177-47d3-ab16-bb8f6d094970",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/sqlinjection/html/SqlInjectionAdvanced.html",
+            "project": "webgoat",
+            "line": 169,
+            "hash": "7c9dbc1a2097787c7cd83653e32e26c4",
+            "textRange": {
+                "startLine": 169,
+                "endLine": 172,
+                "startOffset": 16,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "66c576aa-5df4-496d-ba08-5e3804d5fa8a",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/xss/html/CrossSiteScripting.html",
+            "project": "webgoat",
+            "line": 169,
+            "hash": "7c9dbc1a2097787c7cd83653e32e26c4",
+            "textRange": {
+                "startLine": 169,
+                "endLine": 171,
+                "startOffset": 3,
+                "endOffset": 58
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2024-11-07T14:45:33+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9e4306a1-22df-4c13-a8d9-74edd5c89932",
+            "rule": "javascript:S3504",
+            "severity": "CRITICAL",
+            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/controller/LessonController.js",
+            "project": "webgoat",
+            "line": 123,
+            "hash": "a8f152240e4ec506978bf7c952d50ad9",
+            "textRange": {
+                "startLine": 123,
+                "endLine": 123,
+                "startOffset": 16,
+                "endOffset": 24
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected var, use let or const instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "es2015",
+                "bad-practice"
+            ],
+            "creationDate": "2024-10-26T08:54:21+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8ec9840a-94c1-4128-a3bb-172f63c63bd5",
+            "rule": "javascript:S1135",
+            "severity": "INFO",
+            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/model/LessonOverviewCollection.js",
+            "project": "webgoat",
+            "line": 16,
+            "hash": "186d8d6f0a186d633d53a0ee28d80465",
+            "textRange": {
+                "startLine": 16,
+                "endLine": 16,
+                "startOffset": 22,
+                "endOffset": 26
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Complete the task associated to this \"TODO\" comment.",
+            "effort": "0min",
+            "debt": "0min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2024-10-26T08:54:21+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "00f76f53-0a3c-45d8-8383-667def1a0658",
+            "rule": "javascript:S2004",
+            "severity": "CRITICAL",
+            "component": "webgoat:src/main/resources/webgoat/static/js/quiz.js",
+            "project": "webgoat",
+            "line": 27,
+            "hash": "9494af93d9c35167ba2ea3b99342ad5f",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 42,
+                "endOffset": 50
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/quiz.js",
+                            "textRange": {
+                                "startLine": 11,
+                                "endLine": 11,
+                                "startOffset": 2,
+                                "endOffset": 10
+                            },
+                            "msg": "Nesting +1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/quiz.js",
+                            "textRange": {
+                                "startLine": 16,
+                                "endLine": 16,
+                                "startOffset": 32,
+                                "endOffset": 40
+                            },
+                            "msg": "Nesting +1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/quiz.js",
+                            "textRange": {
+                                "startLine": 23,
+                                "endLine": 23,
+                                "startOffset": 33,
+                                "endOffset": 41
+                            },
+                            "msg": "Nesting +1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/quiz.js",
+                            "textRange": {
+                                "startLine": 24,
+                                "endLine": 24,
+                                "startOffset": 28,
+                                "endOffset": 36
+                            },
+                            "msg": "Nesting +1",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this code to not nest functions more than 4 levels deep.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "158111888+cap-dev0x@users.noreply.github.com",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2024-02-05T13:30:01+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "193a90fc-5303-4d46-a5e1-586c56c0089c",
+            "rule": "Web:S6853",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/webwolf/templates/jwt.html",
+            "project": "webgoat",
+            "line": 35,
+            "hash": "7bc4ec1353e2d26621126a45d2e5ab5c",
+            "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 16,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "A form label must be associated with a control.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2023-12-02T11:59:56+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e40c838d-5a72-4821-b896-a06bec1b292b",
+            "rule": "javascript:S3504",
+            "severity": "CRITICAL",
+            "component": "webgoat:src/main/resources/webwolf/static/js/jwt.js",
+            "project": "webgoat",
+            "line": 47,
+            "hash": "4646a52328ff886959f4d726156ea6ef",
+            "textRange": {
+                "startLine": 47,
+                "endLine": 47,
+                "startOffset": 8,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected var, use let or const instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "es2015",
+                "bad-practice"
+            ],
+            "creationDate": "2023-11-14T17:14:48+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "572e08d8-2db5-465a-b2ef-69ef76a719f8",
+            "rule": "Web:S5255",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/passwordreset/html/PasswordReset.html",
+            "project": "webgoat",
+            "line": 187,
+            "hash": "c3bd9c9f34bf938c6ebf715c6856b347",
+            "textRange": {
+                "startLine": 187,
+                "endLine": 190,
+                "startOffset": 28,
+                "endOffset": 46
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"aria-label\" or \"aria-labbelledby\" attribute to this element.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "78b816a5-065a-4065-aca3-157151101d8a",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/passwordreset/html/PasswordReset.html",
+            "project": "webgoat",
+            "line": 187,
+            "hash": "c3bd9c9f34bf938c6ebf715c6856b347",
+            "textRange": {
+                "startLine": 187,
+                "endLine": 190,
+                "startOffset": 28,
+                "endOffset": 46
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0fbdeaaf-97fd-478a-a838-8097b68f48df",
+            "rule": "Web:S5255",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/passwordreset/html/PasswordReset.html",
+            "project": "webgoat",
+            "line": 223,
+            "hash": "35ce04156b9bf8058965799be5d9b844",
+            "textRange": {
+                "startLine": 223,
+                "endLine": 226,
+                "startOffset": 28,
+                "endOffset": 46
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"aria-label\" or \"aria-labbelledby\" attribute to this element.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d326f99a-16b5-4eb4-8780-f671e46a8112",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/passwordreset/html/PasswordReset.html",
+            "project": "webgoat",
+            "line": 223,
+            "hash": "35ce04156b9bf8058965799be5d9b844",
+            "textRange": {
+                "startLine": 223,
+                "endLine": 226,
+                "startOffset": 28,
+                "endOffset": 46
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9d448944-2b87-445b-9d8d-e40b7ddb5a22",
+            "rule": "Web:S6822",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/webwolfintroduction/templates/webwolfPasswordReset.html",
+            "project": "webgoat",
+            "line": 12,
+            "hash": "157d2299111322d6bde0bd4fb3efbc06",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 12,
+                "endOffset": 80
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The element form has an implicit role of form. Definig this explicitly is redundant and should be avoided.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a41b370b-17da-474b-9753-fdd48d9fce45",
+            "rule": "Web:S6844",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/xxe/html/XXE.html",
+            "project": "webgoat",
+            "line": 224,
+            "hash": "af59cece60cc7792d65a0ad8e79416bf",
+            "textRange": {
+                "startLine": 224,
+                "endLine": 224,
+                "startOffset": 4,
+                "endOffset": 144
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Anchor tags should not be used as buttons.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0daf498b-b55c-4ac5-ba60-b1a15564cfe6",
+            "rule": "javascript:S125",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+            "project": "webgoat",
+            "line": 59,
+            "hash": "15128b0dd215b4eef69a9629e92f4483",
+            "textRange": {
+                "startLine": 59,
+                "endLine": 60,
+                "startOffset": 20,
+                "endOffset": 66
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "63e85d78-0397-4b67-a5e6-c0b432e09f53",
+            "rule": "javascript:S3504",
+            "severity": "CRITICAL",
+            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+            "project": "webgoat",
+            "line": 61,
+            "hash": "3b101170799b530ff9a9448cf8e18314",
+            "textRange": {
+                "startLine": 61,
+                "endLine": 61,
+                "startOffset": 20,
+                "endOffset": 31
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected var, use let or const instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "es2015",
+                "bad-practice"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e3335d4c-a31b-451c-a29e-b061e06c2e20",
+            "rule": "javascript:S3776",
+            "severity": "CRITICAL",
+            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+            "project": "webgoat",
+            "line": 70,
+            "hash": "37bdc095c9f12ef8e40aa1b91beb9819",
+            "textRange": {
+                "startLine": 70,
+                "endLine": 70,
+                "startOffset": 42,
+                "endOffset": 50
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+                            "textRange": {
+                                "startLine": 71,
+                                "endLine": 71,
+                                "startOffset": 65,
+                                "endOffset": 66
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+                            "textRange": {
+                                "startLine": 73,
+                                "endLine": 73,
+                                "startOffset": 20,
+                                "endOffset": 22
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+                            "textRange": {
+                                "startLine": 76,
+                                "endLine": 76,
+                                "startOffset": 22,
+                                "endOffset": 26
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+                            "textRange": {
+                                "startLine": 82,
+                                "endLine": 82,
+                                "startOffset": 24,
+                                "endOffset": 27
+                            },
+                            "msg": "+2 (incl. 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+                            "textRange": {
+                                "startLine": 85,
+                                "endLine": 85,
+                                "startOffset": 28,
+                                "endOffset": 30
+                            },
+                            "msg": "+3 (incl. 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+                            "textRange": {
+                                "startLine": 89,
+                                "endLine": 89,
+                                "startOffset": 28,
+                                "endOffset": 30
+                            },
+                            "msg": "+3 (incl. 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+                            "textRange": {
+                                "startLine": 93,
+                                "endLine": 93,
+                                "startOffset": 28,
+                                "endOffset": 30
+                            },
+                            "msg": "+3 (incl. 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+                            "textRange": {
+                                "startLine": 94,
+                                "endLine": 94,
+                                "startOffset": 30,
+                                "endOffset": 34
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+                            "textRange": {
+                                "startLine": 93,
+                                "endLine": 93,
+                                "startOffset": 39,
+                                "endOffset": 41
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "28932b6d-cf37-495a-8966-a4a78acf7675",
+            "rule": "javascript:S4138",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+            "project": "webgoat",
+            "line": 82,
+            "hash": "5bdd3fb73a29a78029db80a33238b45b",
+            "textRange": {
+                "startLine": 82,
+                "endLine": 97,
+                "startOffset": 24,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Expected a `for-of` loop instead of a `for` loop with this simple iteration.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "clumsy"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ae7e165d-352c-4459-9ce4-c833c12add81",
+            "rule": "Web:S5256",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/login.html",
+            "project": "webgoat",
+            "line": 48,
+            "hash": "9df233bd81412c467ecde03a2cfeb533",
+            "textRange": {
+                "startLine": 48,
+                "endLine": 48,
+                "startOffset": 16,
+                "endOffset": 51
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"<th>\" headers to this \"<table>\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "14702bb3-85f2-499a-8cc9-4de9bf98a4ca",
+            "rule": "css:S4649",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webwolf/static/css/bootstrap-icons.css",
+            "project": "webgoat",
+            "line": 18,
+            "hash": "e7d55dd89eb1e4d46cd7ab465dcf9b8e",
+            "textRange": {
+                "startLine": 18,
+                "endLine": 18,
+                "startOffset": 0,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected missing generic font family",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "rene@zubcevic.com",
+            "tags": [],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e2c84b6c-e9e0-4fcd-8840-163937cd5f43",
+            "rule": "css:S125",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webwolf/static/css/webwolf.css",
+            "project": "webgoat",
+            "line": 53,
+            "hash": "523048e7f5ca9550505f2d8ea6d587e7",
+            "textRange": {
+                "startLine": 53,
+                "endLine": 53,
+                "startOffset": 0,
+                "endOffset": 2
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ca5ab46c-941d-4c16-af1a-ef54e42121f2",
+            "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/webwolf/templates/requests.html",
+            "project": "webgoat",
+            "line": 36,
+            "hash": "6569c20e827c32a5e7ecd85c930e0fbf",
+            "textRange": {
+                "startLine": 36,
+                "endLine": 37,
+                "startOffset": 20,
+                "endOffset": 129
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <a> tag.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "fe28d7ef-3146-4523-8072-1c73c55c85a0",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webwolf/templates/requests.html",
+            "project": "webgoat",
+            "line": 36,
+            "hash": "6569c20e827c32a5e7ecd85c930e0fbf",
+            "textRange": {
+                "startLine": 36,
+                "endLine": 37,
+                "startOffset": 20,
+                "endOffset": 129
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <button> or <input> instead of the button role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8b5a462b-45e5-489a-aad4-e418cb2063b6",
+            "rule": "Web:S6821",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webwolf/templates/requests.html",
+            "project": "webgoat",
+            "line": 43,
+            "hash": "a94fa148e25bcf24a21aa44cd2e1a72b",
+            "textRange": {
+                "startLine": 43,
+                "endLine": 44,
+                "startOffset": 12,
+                "endOffset": 64
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Elements with ARIA roles must use a valid, non-abstract ARIA role. \"tabcard\" is not a valid role.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "df1f62b5-2a75-4bc1-80d4-be6826e9da6c",
+            "rule": "Web:S5256",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webwolf/templates/webwolf-login.html",
+            "project": "webgoat",
+            "line": 52,
+            "hash": "9df233bd81412c467ecde03a2cfeb533",
+            "textRange": {
+                "startLine": 52,
+                "endLine": 52,
+                "startOffset": 12,
+                "endOffset": 47
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"<th>\" headers to this \"<table>\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2023-11-14T09:01:59+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7c6b6d30-9959-406b-96ac-b5815ce8c3a6",
+            "rule": "Web:ImgWithoutAltCheck",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/lessons/jwt/html/JWT.html",
+            "project": "webgoat",
+            "line": 328,
+            "hash": "be2c1726e45b1bb95a49c5f331233342",
+            "textRange": {
+                "startLine": 328,
+                "endLine": 328,
+                "startOffset": 24,
+                "endOffset": 80
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"alt\" attribute to this image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2023-08-08T15:18:22+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0e3f3a1c-912b-45dc-98d6-01d5f347c459",
+            "rule": "Web:ImgWithoutAltCheck",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/lessons/jwt/html/JWT.html",
+            "project": "webgoat",
+            "line": 346,
+            "hash": "a3e9af2eb5cc961c80ea19f1b2b7fff5",
+            "textRange": {
+                "startLine": 346,
+                "endLine": 346,
+                "startOffset": 24,
+                "endOffset": 78
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"alt\" attribute to this image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2023-08-08T15:18:22+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "27dd70e5-69ed-47a7-ae3a-cbe0e1cedb72",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/httpproxies/html/HttpProxies.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "angel@olleb.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-07-31T20:39:21+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6330bba7-b160-4c1c-8921-5f2613d73a1f",
+            "rule": "Web:PageWithoutTitleCheck",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/httpproxies/html/HttpProxies.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a <title> tag to this page.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "angel@olleb.com",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2022-07-31T20:39:21+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "116f0e35-860c-4f52-a26d-7d188bcb6f76",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/webgoatintroduction/html/WebGoatIntroduction.html",
+            "project": "webgoat",
+            "line": 2,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "angel@olleb.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-07-31T20:39:21+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "4ead7e37-2275-496f-9ba9-5a50d68248be",
+            "rule": "Web:PageWithoutTitleCheck",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/webgoatintroduction/html/WebGoatIntroduction.html",
+            "project": "webgoat",
+            "line": 2,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a <title> tag to this page.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "angel@olleb.com",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2022-07-31T20:39:21+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "705ce743-24ee-449e-9290-b514b2f3b24a",
+            "rule": "javascript:S125",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webgoat/static/js/search.js",
+            "project": "webgoat",
+            "line": 7,
+            "hash": "f5c2bcf5dc485b2179f1f45920e5a0b2",
+            "textRange": {
+                "startLine": 7,
+                "endLine": 7,
+                "startOffset": 8,
+                "endOffset": 45
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2022-07-31T18:45:09+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ce5d5374-5c8e-459e-9dd0-f0fb5c002115",
+            "rule": "javascript:S3504",
+            "severity": "CRITICAL",
+            "component": "webgoat:src/main/resources/webgoat/static/js/search.js",
+            "project": "webgoat",
+            "line": 13,
+            "hash": "5173f1d77233899b1865e118c07dfa32",
+            "textRange": {
+                "startLine": 13,
+                "endLine": 13,
+                "startOffset": 6,
+                "endOffset": 19
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected var, use let or const instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "es2015",
+                "bad-practice"
+            ],
+            "creationDate": "2022-07-31T18:45:09+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "31a8e957-a461-4a14-ac1c-325e3c70af73",
+            "rule": "javascript:S2703",
+            "severity": "BLOCKER",
+            "component": "webgoat:src/main/resources/webgoat/static/js/search.js",
+            "project": "webgoat",
+            "line": 14,
+            "hash": "27b4b8e53c2ff7b62f1970e822627487",
+            "textRange": {
+                "startLine": 14,
+                "endLine": 14,
+                "startOffset": 6,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add the \"let\", \"const\" or \"var\" keyword to this declaration of \"lessons\" to make it explicit.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2022-07-31T18:45:09+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8c9733b2-630f-46ab-8ef4-1cef0ffdc9e8",
+            "rule": "javascript:S2703",
+            "severity": "BLOCKER",
+            "component": "webgoat:src/main/resources/webgoat/static/js/search.js",
+            "project": "webgoat",
+            "line": 16,
+            "hash": "472237cd0a0b26f33523c12f6be67521",
+            "textRange": {
+                "startLine": 16,
+                "endLine": 16,
+                "startOffset": 8,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add the \"let\", \"const\" or \"var\" keyword to this declaration of \"lessonLowerCase\" to make it explicit.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2022-07-31T18:45:09+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "83c82aef-b51c-4f3c-8ee9-17fe4c785030",
+            "rule": "javascript:S2703",
+            "severity": "BLOCKER",
+            "component": "webgoat:src/main/resources/webgoat/static/js/search.js",
+            "project": "webgoat",
+            "line": 35,
+            "hash": "a698de8bb8c99ab58cf92dc51dc0e3f0",
+            "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 8,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add the \"let\", \"const\" or \"var\" keyword to this declaration of \"categoryId\" to make it explicit.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2022-07-31T18:45:09+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e992348c-2cec-41a0-80f8-5d8b0565f1e5",
+            "rule": "Web:ImgWithoutAltCheck",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/main_new.html",
+            "project": "webgoat",
+            "line": 83,
+            "hash": "a3f6b291c247b8dd3e17098d0b9a164e",
+            "textRange": {
+                "startLine": 83,
+                "endLine": 83,
+                "startOffset": 28,
+                "endOffset": 94
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"alt\" attribute to this image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-07-20T08:52:48+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "89377c38-caf2-4254-b9dd-21a5ebe83cc5",
+            "rule": "Web:ImgWithoutAltCheck",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/main_new.html",
+            "project": "webgoat",
+            "line": 86,
+            "hash": "a3f6b291c247b8dd3e17098d0b9a164e",
+            "textRange": {
+                "startLine": 86,
+                "endLine": 86,
+                "startOffset": 28,
+                "endOffset": 94
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"alt\" attribute to this image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-07-20T08:52:48+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ef6cbfdc-8f6d-49b8-9742-72eb990c3636",
+            "rule": "Web:ImgWithoutAltCheck",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/main_new.html",
+            "project": "webgoat",
+            "line": 89,
+            "hash": "a3f6b291c247b8dd3e17098d0b9a164e",
+            "textRange": {
+                "startLine": 89,
+                "endLine": 89,
+                "startOffset": 28,
+                "endOffset": 94
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"alt\" attribute to this image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-07-20T08:52:48+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "72bbe47a-c033-423b-b26a-31eb4ab162bc",
+            "rule": "Web:ImgWithoutAltCheck",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/main_new.html",
+            "project": "webgoat",
+            "line": 92,
+            "hash": "15b9dbf6a3cff7beb3cad89b9257a8ea",
+            "textRange": {
+                "startLine": 92,
+                "endLine": 92,
+                "startOffset": 28,
+                "endOffset": 70
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"alt\" attribute to this image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-07-20T08:52:48+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "59c647fa-7ac8-4320-b700-891402f23df7",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/main_new.html",
+            "project": "webgoat",
+            "line": 97,
+            "hash": "4e6fecedd9bad1b09a3980508e530f55",
+            "textRange": {
+                "startLine": 97,
+                "endLine": 97,
+                "startOffset": 20,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <img> instead of the presentation role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-07-20T08:52:48+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "776b5b5e-2689-4ead-aa5a-91ca3957ef50",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/main_new.html",
+            "project": "webgoat",
+            "line": 102,
+            "hash": "b4bb697a437af1bb5d3cdaa7c2b55fb1",
+            "textRange": {
+                "startLine": 102,
+                "endLine": 102,
+                "startOffset": 20,
+                "endOffset": 60
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <img> instead of the presentation role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-07-20T08:52:48+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8c4ddb80-8d75-4ec0-9a92-dd2b73c2e5f3",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/main_new.html",
+            "project": "webgoat",
+            "line": 103,
+            "hash": "4e6fecedd9bad1b09a3980508e530f55",
+            "textRange": {
+                "startLine": 103,
+                "endLine": 103,
+                "startOffset": 20,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <img> instead of the presentation role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-07-20T08:52:48+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f6a4980d-89a1-41dd-b37e-e811e6e98e59",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/main_new.html",
+            "project": "webgoat",
+            "line": 108,
+            "hash": "4e6fecedd9bad1b09a3980508e530f55",
+            "textRange": {
+                "startLine": 108,
+                "endLine": 108,
+                "startOffset": 20,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <img> instead of the presentation role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-07-20T08:52:48+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3232ac1d-2ded-4449-b6e1-77076ac4eed8",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/main_new.html",
+            "project": "webgoat",
+            "line": 113,
+            "hash": "4e6fecedd9bad1b09a3980508e530f55",
+            "textRange": {
+                "startLine": 113,
+                "endLine": 113,
+                "startOffset": 20,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <img> instead of the presentation role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-07-20T08:52:48+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "77ae3ec0-c371-4332-9db5-2f59a880f607",
+            "rule": "Web:S6853",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/webgoat/templates/registration.html",
+            "project": "webgoat",
+            "line": 58,
+            "hash": "3504e1d6c957d6eb6ebe5252e7ae0be0",
+            "textRange": {
+                "startLine": 58,
+                "endLine": 58,
+                "startOffset": 24,
+                "endOffset": 86
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "A form label must be associated with a control.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-07-16T04:53:39+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "5cf44d39-a0f1-406e-8c90-1fb2bce20da0",
+            "rule": "javascript:S3504",
+            "severity": "CRITICAL",
+            "component": "webgoat:src/main/resources/webgoat/static/js/libs/text.js",
+            "project": "webgoat",
+            "line": 314,
+            "hash": "dcf9c752b2d37bc51b86a1d71572bd32",
+            "textRange": {
+                "startLine": 314,
+                "endLine": 314,
+                "startOffset": 12,
+                "endOffset": 29
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected var, use let or const instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "rene@zubcevic.com",
+            "tags": [
+                "es2015",
+                "bad-practice"
+            ],
+            "creationDate": "2022-07-10T15:13:26+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "4d033a36-3343-4322-9e56-0c413a000252",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/authbypass/html/AuthBypass.html",
+            "project": "webgoat",
+            "line": 1,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b0a4a141-f0f2-4f3c-aea1-9cb1f42f2093",
+            "rule": "Web:DoctypePresenceCheck",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/authbypass/html/AuthBypass.html",
+            "project": "webgoat",
+            "line": 1,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Insert a <!DOCTYPE> declaration to before this <html> tag.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a2ba7345-1d2f-4f34-8e17-c714c9ffb777",
+            "rule": "Web:PageWithoutTitleCheck",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/bypassrestrictions/html/BypassRestrictions.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "bba8faa9fda40b53468a77f4d9c12035",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 78
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a <title> tag to this page.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e6733fbc-d289-46ea-9864-2ebce720778b",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/bypassrestrictions/html/BypassRestrictions.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "bba8faa9fda40b53468a77f4d9c12035",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 78
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "11280af3-c601-4098-99fc-069cdc815f52",
+            "rule": "javascript:S6353",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/lessons/bypassrestrictions/html/BypassRestrictions.html",
+            "project": "webgoat",
+            "line": 116,
+            "hash": "2c2e36fdfe6d482b9d27022ac9fe02cc",
+            "textRange": {
+                "startLine": 116,
+                "endLine": 116,
+                "startOffset": 27,
+                "endOffset": 32
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "regex",
+                "type-dependent"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a82d67d3-91a4-4255-8c18-d3934ac5ea90",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "acfe822f-cf5c-441c-b6e2-2065012de729",
+            "rule": "Web:PageWithoutTitleCheck",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a <title> tag to this page.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "4626cedf-ea65-4800-b72a-d191159e3940",
+            "rule": "Web:PageWithoutTitleCheck",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge1.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a <title> tag to this page.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c321120b-5b97-4e71-94e9-9d8509f46f71",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge1.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "93adc67f-8e14-45e0-8714-6d4adb859abf",
+            "rule": "Web:ImgWithoutAltCheck",
+            "severity": "MINOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge1.html",
+            "project": "webgoat",
+            "line": 15,
+            "hash": "c52eab0f3b16b94a7d54c763288b46cc",
+            "textRange": {
+                "startLine": 15,
+                "endLine": 15,
+                "startOffset": 20,
+                "endOffset": 76
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"alt\" attribute to this image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "88a6e1b5-29dd-4d3a-b935-01dd696a3fde",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge5.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8b00d24d-7a64-472b-908d-6405fa4a1578",
+            "rule": "Web:PageWithoutTitleCheck",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge5.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a <title> tag to this page.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "96e7f683-2c29-4269-bf75-ebc63d1ed9bc",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge5.html",
+            "project": "webgoat",
+            "line": 30,
+            "hash": "dd19d890762f568756ea19e3c3a3d8be",
+            "textRange": {
+                "startLine": 30,
+                "endLine": 31,
+                "startOffset": 44,
+                "endOffset": 105
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7c3f1604-cdee-4d4e-8071-35806b60685a",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge5.html",
+            "project": "webgoat",
+            "line": 34,
+            "hash": "c2b3b989048a94cdddd7c6e2703a83a3",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 35,
+                "startOffset": 44,
+                "endOffset": 96
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2591e2fc-376c-4a19-9fe5-ca573b576ea9",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge5.html",
+            "project": "webgoat",
+            "line": 38,
+            "hash": "1387b70cb84999e2a9ed67ea925d9ff5",
+            "textRange": {
+                "startLine": 38,
+                "endLine": 38,
+                "startOffset": 44,
+                "endOffset": 120
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "26ab389d-6bbf-4228-9d46-ea63a5cbb2e6",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge5.html",
+            "project": "webgoat",
+            "line": 44,
+            "hash": "aac31c2a5647b2c9452b29d9f07b3585",
+            "textRange": {
+                "startLine": 44,
+                "endLine": 46,
+                "startOffset": 52,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "63616cea-66d7-476d-ba5a-3a4c58e2f0ec",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge5.html",
+            "project": "webgoat",
+            "line": 54,
+            "hash": "5c6349a07e0ffc9302a16826c10ff6b1",
+            "textRange": {
+                "startLine": 54,
+                "endLine": 54,
+                "startOffset": 56,
+                "endOffset": 105
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "23903f82-30c5-498f-af88-ad8d3d6660fc",
+            "rule": "Web:PageWithoutTitleCheck",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a <title> tag to this page.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6444311f-dc50-4bf6-b33c-47afd57d9b3e",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 3,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3774bdfb-9f21-43ef-a759-1f558bac3ebd",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 34,
+            "hash": "dd19d890762f568756ea19e3c3a3d8be",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 35,
+                "startOffset": 44,
+                "endOffset": 105
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ca3f3932-fabc-4c60-8c5f-46e205eb6f06",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 38,
+            "hash": "c2b3b989048a94cdddd7c6e2703a83a3",
+            "textRange": {
+                "startLine": 38,
+                "endLine": 39,
+                "startOffset": 44,
+                "endOffset": 96
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e877d4c9-3dba-4140-aaa0-e874a8eec1f8",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 42,
+            "hash": "1387b70cb84999e2a9ed67ea925d9ff5",
+            "textRange": {
+                "startLine": 42,
+                "endLine": 42,
+                "startOffset": 44,
+                "endOffset": 120
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a904cb62-54b5-43f6-95ff-6a08134bc825",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 48,
+            "hash": "aac31c2a5647b2c9452b29d9f07b3585",
+            "textRange": {
+                "startLine": 48,
+                "endLine": 50,
+                "startOffset": 52,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6ad6bb9e-9f56-40c9-9271-dfb9ce3b2d45",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 58,
+            "hash": "5c6349a07e0ffc9302a16826c10ff6b1",
+            "textRange": {
+                "startLine": 58,
+                "endLine": 58,
+                "startOffset": 56,
+                "endOffset": 105
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "04ec2d2d-d292-4ac2-a3ea-4e10923b1b01",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 69,
+            "hash": "846a3465a65d075e47f148e088c79a4a",
+            "textRange": {
+                "startLine": 69,
+                "endLine": 70,
+                "startOffset": 44,
+                "endOffset": 105
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d693b1fd-6bd8-41ff-b46a-59d46f2789ac",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 73,
+            "hash": "f9d505f57f77ff0bf7b3753de2b499c5",
+            "textRange": {
+                "startLine": 73,
+                "endLine": 74,
+                "startOffset": 44,
+                "endOffset": 110
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "71273aa8-8aad-424a-99c3-524d465922c1",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 77,
+            "hash": "5fac2ef538f9020950a38683f96199b8",
+            "textRange": {
+                "startLine": 77,
+                "endLine": 78,
+                "startOffset": 44,
+                "endOffset": 96
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "38bd28be-db57-4948-bf9f-943949eead67",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 81,
+            "hash": "dcd937c9d0ccd14414549955e6801d08",
+            "textRange": {
+                "startLine": 81,
+                "endLine": 82,
+                "startOffset": 44,
+                "endOffset": 117
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "dfdbc080-78d4-4b8e-bf99-57f1845fa78e",
+            "rule": "Web:S6841",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "project": "webgoat",
+            "line": 87,
+            "hash": "db446ac58cd8fc026ec24792cbb39dec",
+            "textRange": {
+                "startLine": 87,
+                "endLine": 89,
+                "startOffset": 52,
+                "endOffset": 81
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using positive values for the \"tabIndex\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "bc02c220-441f-4730-a6e9-92cd9cdcf3e6",
+            "rule": "Web:PageWithoutTitleCheck",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge7.html",
+            "project": "webgoat",
+            "line": 11,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a <title> tag to this page.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d6832a95-95db-4136-af99-658f3f39ecc3",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge7.html",
+            "project": "webgoat",
+            "line": 11,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a58475d2-552c-4f45-8679-08e2a5deb080",
+            "rule": "Web:S6850",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge7.html",
+            "project": "webgoat",
+            "line": 24,
+            "hash": "323993df545eec0e491083f3ac336650",
+            "textRange": {
+                "startLine": 24,
+                "endLine": 24,
+                "startOffset": 0,
+                "endOffset": 73
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Headings must have content and the content must be accessible by a screen reader.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "20fab346-8c02-40dc-a6b9-b4a74950fe1e",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge8.html",
+            "project": "webgoat",
+            "line": 2,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7d845136-d291-4671-8384-35b4d1b0930d",
+            "rule": "Web:PageWithoutTitleCheck",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge8.html",
+            "project": "webgoat",
+            "line": 2,
+            "hash": "5b4160385b83e3c02c1a0f3eaf33b328",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a <title> tag to this page.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b73dfffc-e443-435b-847c-a7b8d9d82ff6",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge8.html",
+            "project": "webgoat",
+            "line": 48,
+            "hash": "faf77669d046e5940eee4b745e748c0b",
+            "textRange": {
+                "startLine": 48,
+                "endLine": 49,
+                "startOffset": 32,
+                "endOffset": 73
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <progress> instead of the progressbar role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1bbd6fb6-4096-4d68-bacf-dc712c49f942",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge8.html",
+            "project": "webgoat",
+            "line": 63,
+            "hash": "73faba54c7b5850ba210033885c978af",
+            "textRange": {
+                "startLine": 63,
+                "endLine": 64,
+                "startOffset": 32,
+                "endOffset": 73
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <progress> instead of the progressbar role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2a4e5a25-023e-4e6f-983c-c5cb59d0e778",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge8.html",
+            "project": "webgoat",
+            "line": 78,
+            "hash": "d841a53499599277914f3500de2874da",
+            "textRange": {
+                "startLine": 78,
+                "endLine": 79,
+                "startOffset": 32,
+                "endOffset": 73
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <progress> instead of the progressbar role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "79b914a0-8930-45e8-98e1-0d65e5775cd0",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge8.html",
+            "project": "webgoat",
+            "line": 93,
+            "hash": "d7388ecfd5eb1fb68a2141f99162b418",
+            "textRange": {
+                "startLine": 93,
+                "endLine": 94,
+                "startOffset": 32,
+                "endOffset": 73
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <progress> instead of the progressbar role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "aef5d285-e3e1-4fcc-a63e-b0806cba8b90",
+            "rule": "Web:S6819",
+            "severity": "MAJOR",
+            "component": "webgoat:src/main/resources/lessons/challenges/html/Challenge8.html",
+            "project": "webgoat",
+            "line": 109,
+            "hash": "077cfd5185c9d48798e9afc175e8802e",
+            "textRange": {
+                "startLine": 109,
+                "endLine": 110,
+                "startOffset": 32,
+                "endOffset": 73
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use <progress> instead of the progressbar role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "nanne.baars@owasp.org",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2022-04-09T12:56:12+0000",
+            "updateDate": "2024-11-13T15:59:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        }
+    ],
+    "components": [
+        {
+            "key": "webgoat:src/main/resources/lessons/webgoatintroduction/html/WebGoatIntroduction.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "WebGoatIntroduction.html",
+            "longName": "src/main/resources/lessons/webgoatintroduction/html/WebGoatIntroduction.html",
+            "path": "src/main/resources/lessons/webgoatintroduction/html/WebGoatIntroduction.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/webwolf/templates/jwt.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "jwt.html",
+            "longName": "src/main/resources/webwolf/templates/jwt.html",
+            "path": "src/main/resources/webwolf/templates/jwt.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/challenges/html/Challenge5.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Challenge5.html",
+            "longName": "src/main/resources/lessons/challenges/html/Challenge5.html",
+            "path": "src/main/resources/lessons/challenges/html/Challenge5.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/challenges/html/Challenge1.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Challenge1.html",
+            "longName": "src/main/resources/lessons/challenges/html/Challenge1.html",
+            "path": "src/main/resources/lessons/challenges/html/Challenge1.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/challenges/html/Challenge.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Challenge.html",
+            "longName": "src/main/resources/lessons/challenges/html/Challenge.html",
+            "path": "src/main/resources/lessons/challenges/html/Challenge.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/passwordreset/html/PasswordReset.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "PasswordReset.html",
+            "longName": "src/main/resources/lessons/passwordreset/html/PasswordReset.html",
+            "path": "src/main/resources/lessons/passwordreset/html/PasswordReset.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/passwordreset/templates/password_reset.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "password_reset.html",
+            "longName": "src/main/resources/lessons/passwordreset/templates/password_reset.html",
+            "path": "src/main/resources/lessons/passwordreset/templates/password_reset.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/cia/html/CIA.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "CIA.html",
+            "longName": "src/main/resources/lessons/cia/html/CIA.html",
+            "path": "src/main/resources/lessons/cia/html/CIA.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/xxe/html/XXE.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "XXE.html",
+            "longName": "src/main/resources/lessons/xxe/html/XXE.html",
+            "path": "src/main/resources/lessons/xxe/html/XXE.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/webgoat/static/js/libs/text.js",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "text.js",
+            "longName": "src/main/resources/webgoat/static/js/libs/text.js",
+            "path": "src/main/resources/webgoat/static/js/libs/text.js"
+        },
+        {
+            "key": "webgoat:src/main/resources/webgoat/static/js/quiz.js",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "quiz.js",
+            "longName": "src/main/resources/webgoat/static/js/quiz.js",
+            "path": "src/main/resources/webgoat/static/js/quiz.js"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/challenges/html/Challenge8.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Challenge8.html",
+            "longName": "src/main/resources/lessons/challenges/html/Challenge8.html",
+            "path": "src/main/resources/lessons/challenges/html/Challenge8.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/challenges/html/Challenge7.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Challenge7.html",
+            "longName": "src/main/resources/lessons/challenges/html/Challenge7.html",
+            "path": "src/main/resources/lessons/challenges/html/Challenge7.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/webwolf/static/js/jwt.js",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "jwt.js",
+            "longName": "src/main/resources/webwolf/static/js/jwt.js",
+            "path": "src/main/resources/webwolf/static/js/jwt.js"
+        },
+        {
+            "key": "webgoat:src/main/resources/webgoat/static/js/search.js",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "search.js",
+            "longName": "src/main/resources/webgoat/static/js/search.js",
+            "path": "src/main/resources/webgoat/static/js/search.js"
+        },
+        {
+            "key": "webgoat:src/main/resources/webwolf/templates/webwolf-login.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "webwolf-login.html",
+            "longName": "src/main/resources/webwolf/templates/webwolf-login.html",
+            "path": "src/main/resources/webwolf/templates/webwolf-login.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/webgoat/templates/main_new.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "main_new.html",
+            "longName": "src/main/resources/webgoat/templates/main_new.html",
+            "path": "src/main/resources/webgoat/templates/main_new.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/webwolf/templates/requests.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "requests.html",
+            "longName": "src/main/resources/webwolf/templates/requests.html",
+            "path": "src/main/resources/webwolf/templates/requests.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/webgoat/templates/registration.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "registration.html",
+            "longName": "src/main/resources/webgoat/templates/registration.html",
+            "path": "src/main/resources/webgoat/templates/registration.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/jwt/html/JWT.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "JWT.html",
+            "longName": "src/main/resources/lessons/jwt/html/JWT.html",
+            "path": "src/main/resources/lessons/jwt/html/JWT.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/authbypass/html/AuthBypass.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "AuthBypass.html",
+            "longName": "src/main/resources/lessons/authbypass/html/AuthBypass.html",
+            "path": "src/main/resources/lessons/authbypass/html/AuthBypass.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/sqlinjection/html/SqlInjectionAdvanced.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "SqlInjectionAdvanced.html",
+            "longName": "src/main/resources/lessons/sqlinjection/html/SqlInjectionAdvanced.html",
+            "path": "src/main/resources/lessons/sqlinjection/html/SqlInjectionAdvanced.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/passwordreset/css/password.css",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "password.css",
+            "longName": "src/main/resources/lessons/passwordreset/css/password.css",
+            "path": "src/main/resources/lessons/passwordreset/css/password.css"
+        },
+        {
+            "key": "webgoat:src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "PaginationControlView.js",
+            "longName": "src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+            "path": "src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js"
+        },
+        {
+            "key": "webgoat:src/main/resources/webwolf/static/css/webwolf.css",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "webwolf.css",
+            "longName": "src/main/resources/webwolf/static/css/webwolf.css",
+            "path": "src/main/resources/webwolf/static/css/webwolf.css"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/challenges/html/Challenge6.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Challenge6.html",
+            "longName": "src/main/resources/lessons/challenges/html/Challenge6.html",
+            "path": "src/main/resources/lessons/challenges/html/Challenge6.html"
+        },
+        {
+            "key": "webgoat",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "webgoat",
+            "longName": "webgoat"
+        },
+        {
+            "key": "webgoat:src/main/resources/webwolf/static/css/bootstrap-icons.css",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "bootstrap-icons.css",
+            "longName": "src/main/resources/webwolf/static/css/bootstrap-icons.css",
+            "path": "src/main/resources/webwolf/static/css/bootstrap-icons.css"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/xss/html/CrossSiteScripting.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "CrossSiteScripting.html",
+            "longName": "src/main/resources/lessons/xss/html/CrossSiteScripting.html",
+            "path": "src/main/resources/lessons/xss/html/CrossSiteScripting.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/httpproxies/html/HttpProxies.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "HttpProxies.html",
+            "longName": "src/main/resources/lessons/httpproxies/html/HttpProxies.html",
+            "path": "src/main/resources/lessons/httpproxies/html/HttpProxies.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/bypassrestrictions/html/BypassRestrictions.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "BypassRestrictions.html",
+            "longName": "src/main/resources/lessons/bypassrestrictions/html/BypassRestrictions.html",
+            "path": "src/main/resources/lessons/bypassrestrictions/html/BypassRestrictions.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/webgoat/static/js/goatApp/controller/LessonController.js",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "LessonController.js",
+            "longName": "src/main/resources/webgoat/static/js/goatApp/controller/LessonController.js",
+            "path": "src/main/resources/webgoat/static/js/goatApp/controller/LessonController.js"
+        },
+        {
+            "key": "webgoat:src/main/resources/lessons/webwolfintroduction/templates/webwolfPasswordReset.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "webwolfPasswordReset.html",
+            "longName": "src/main/resources/lessons/webwolfintroduction/templates/webwolfPasswordReset.html",
+            "path": "src/main/resources/lessons/webwolfintroduction/templates/webwolfPasswordReset.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/webgoat/templates/login.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "login.html",
+            "longName": "src/main/resources/webgoat/templates/login.html",
+            "path": "src/main/resources/webgoat/templates/login.html"
+        },
+        {
+            "key": "webgoat:src/main/resources/webgoat/static/js/goatApp/model/LessonOverviewCollection.js",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "LessonOverviewCollection.js",
+            "longName": "src/main/resources/webgoat/static/js/goatApp/model/LessonOverviewCollection.js",
+            "path": "src/main/resources/webgoat/static/js/goatApp/model/LessonOverviewCollection.js"
+        }
+    ],
+    "facets": []
+}

@@ -1,0 +1,4412 @@
+{
+    "reportSchema": "1.1",
+    "scanInfo": {
+        "engineVersion": "11.1.0",
+        "dataSource": [
+            {
+                "name": "NVD API Last Checked",
+                "timestamp": "2024-11-27T12:50:20+0530"
+            },
+            {
+                "name": "NVD API Last Modified",
+                "timestamp": "2024-11-27T06:15:19Z"
+            }
+        ],
+        "analysisExceptions": [
+            {
+                "exception": {
+                    "message": "org.owasp.dependencycheck.analyzer.exception.AnalysisException: java.util.zip.ZipException: encrypted ZIP entry not supported",
+                    "stackTrace": [
+                        "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractFiles(ArchiveAnalyzer.java:503)",
+                        "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractAndAnalyze(ArchiveAnalyzer.java:295)",
+                        "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.analyzeDependency(ArchiveAnalyzer.java:277)",
+                        "org.owasp.dependencycheck.analyzer.AbstractAnalyzer.analyze(AbstractAnalyzer.java:131)",
+                        "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:88)",
+                        "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:37)",
+                        "java.base\/java.util.concurrent.FutureTask.run(FutureTask.java:317)",
+                        "java.base\/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)",
+                        "java.base\/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)",
+                        "java.base\/java.lang.Thread.run(Thread.java:1575)"
+                    ],
+                    "cause": {
+                        "message": "org.owasp.dependencycheck.analyzer.exception.ArchiveExtractionException: java.util.zip.ZipException: encrypted ZIP entry not supported",
+                        "stackTrace": [
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractArchive(ArchiveAnalyzer.java:602)",
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractFiles(ArchiveAnalyzer.java:457)",
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractAndAnalyze(ArchiveAnalyzer.java:295)",
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.analyzeDependency(ArchiveAnalyzer.java:277)",
+                            "org.owasp.dependencycheck.analyzer.AbstractAnalyzer.analyze(AbstractAnalyzer.java:131)",
+                            "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:88)",
+                            "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:37)",
+                            "java.base\/java.util.concurrent.FutureTask.run(FutureTask.java:317)",
+                            "java.base\/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)",
+                            "java.base\/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)",
+                            "java.base\/java.lang.Thread.run(Thread.java:1575)"
+                        ],
+                        "cause": {
+                            "message": "java.util.zip.ZipException: encrypted ZIP entry not supported",
+                            "stackTrace": [
+                                "java.base\/java.util.zip.ZipInputStream.readLOC(ZipInputStream.java:530)",
+                                "java.base\/java.util.zip.ZipInputStream.getNextEntry(ZipInputStream.java:158)",
+                                "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractArchive(ArchiveAnalyzer.java:581)",
+                                "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractFiles(ArchiveAnalyzer.java:457)",
+                                "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractAndAnalyze(ArchiveAnalyzer.java:295)",
+                                "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.analyzeDependency(ArchiveAnalyzer.java:277)",
+                                "org.owasp.dependencycheck.analyzer.AbstractAnalyzer.analyze(AbstractAnalyzer.java:131)",
+                                "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:88)",
+                                "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:37)",
+                                "java.base\/java.util.concurrent.FutureTask.run(FutureTask.java:317)",
+                                "java.base\/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)",
+                                "java.base\/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)",
+                                "java.base\/java.lang.Thread.run(Thread.java:1575)"
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "exception": {
+                    "message": "org.owasp.dependencycheck.analyzer.exception.AnalysisException: Archive contains a file (..\/..\/frontend\/dist\/frontend\/assets\/public\/videos\/owasp_promo.vtt) that would be extracted outside of the target directory.",
+                    "stackTrace": [
+                        "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractFiles(ArchiveAnalyzer.java:503)",
+                        "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractAndAnalyze(ArchiveAnalyzer.java:295)",
+                        "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.analyzeDependency(ArchiveAnalyzer.java:277)",
+                        "org.owasp.dependencycheck.analyzer.AbstractAnalyzer.analyze(AbstractAnalyzer.java:131)",
+                        "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:88)",
+                        "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:37)",
+                        "java.base\/java.util.concurrent.FutureTask.run(FutureTask.java:317)",
+                        "java.base\/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)",
+                        "java.base\/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)",
+                        "java.base\/java.lang.Thread.run(Thread.java:1575)"
+                    ],
+                    "cause": {
+                        "message": "org.owasp.dependencycheck.analyzer.exception.ArchiveExtractionException: Archive contains a file (..\/..\/frontend\/dist\/frontend\/assets\/public\/videos\/owasp_promo.vtt) that would be extracted outside of the target directory.",
+                        "stackTrace": [
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractArchive(ArchiveAnalyzer.java:589)",
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractFiles(ArchiveAnalyzer.java:457)",
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractAndAnalyze(ArchiveAnalyzer.java:295)",
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.analyzeDependency(ArchiveAnalyzer.java:277)",
+                            "org.owasp.dependencycheck.analyzer.AbstractAnalyzer.analyze(AbstractAnalyzer.java:131)",
+                            "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:88)",
+                            "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:37)",
+                            "java.base\/java.util.concurrent.FutureTask.run(FutureTask.java:317)",
+                            "java.base\/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)",
+                            "java.base\/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)",
+                            "java.base\/java.lang.Thread.run(Thread.java:1575)"
+                        ]
+                    }
+                }
+            },
+            {
+                "exception": {
+                    "message": "org.owasp.dependencycheck.analyzer.exception.AnalysisException: Archive contains a file (..\/..\/ftp\/legal.md) that would be extracted outside of the target directory.",
+                    "stackTrace": [
+                        "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractFiles(ArchiveAnalyzer.java:503)",
+                        "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractAndAnalyze(ArchiveAnalyzer.java:295)",
+                        "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.analyzeDependency(ArchiveAnalyzer.java:277)",
+                        "org.owasp.dependencycheck.analyzer.AbstractAnalyzer.analyze(AbstractAnalyzer.java:131)",
+                        "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:88)",
+                        "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:37)",
+                        "java.base\/java.util.concurrent.FutureTask.run(FutureTask.java:317)",
+                        "java.base\/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)",
+                        "java.base\/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)",
+                        "java.base\/java.lang.Thread.run(Thread.java:1575)"
+                    ],
+                    "cause": {
+                        "message": "org.owasp.dependencycheck.analyzer.exception.ArchiveExtractionException: Archive contains a file (..\/..\/ftp\/legal.md) that would be extracted outside of the target directory.",
+                        "stackTrace": [
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractArchive(ArchiveAnalyzer.java:589)",
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractFiles(ArchiveAnalyzer.java:457)",
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.extractAndAnalyze(ArchiveAnalyzer.java:295)",
+                            "org.owasp.dependencycheck.analyzer.ArchiveAnalyzer.analyzeDependency(ArchiveAnalyzer.java:277)",
+                            "org.owasp.dependencycheck.analyzer.AbstractAnalyzer.analyze(AbstractAnalyzer.java:131)",
+                            "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:88)",
+                            "org.owasp.dependencycheck.AnalysisTask.call(AnalysisTask.java:37)",
+                            "java.base\/java.util.concurrent.FutureTask.run(FutureTask.java:317)",
+                            "java.base\/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)",
+                            "java.base\/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)",
+                            "java.base\/java.lang.Thread.run(Thread.java:1575)"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "projectInfo": {
+        "name": "",
+        "reportDate": "2024-11-27T08:16:10.454941200Z",
+        "credits": {
+            "NVD": "This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov",
+            "CISA": "This report may contain data retrieved from the CISA Known Exploited Vulnerability Catalog: https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+            "NPM": "This report may contain data retrieved from the Github Advisory Database (via NPM Audit API): https://github.com/advisories/",
+            "RETIREJS": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+            "OSSINDEX": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
+        }
+    },
+    "dependencies": [
+        {
+            "isVirtual": false,
+            "fileName": ".eslintrc.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\.eslintrc.js",
+            "md5": "64e713b0372ea4236d2ffdd52665608c",
+            "sha1": "624f5d9ae591155762d417d5e654ce208d5b0bf5",
+            "sha256": "e14a7ee9fc16972d688823fd8e39484c47eaed7e15f3373d0109e9ef17bdaeab",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": ".eslintrc.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\.eslintrc.js",
+            "md5": "3320e86da1f93c0aa3edf7a8afff9a0f",
+            "sha1": "8205e2b35eeb468c4756a06d1c581d878cc36ffd",
+            "sha256": "d31c2f065145cc25f1a830d723240919f57bcfde03434cec76523d30b702d23a",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": ".stylelintrc.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\.stylelintrc.js",
+            "md5": "ce1f48d0407c0a6d4b6ec48812a5fd20",
+            "sha1": "aef56dc75dd6d937a2560505e926c003688cd508",
+            "sha256": "5a5b058e8724a2f0a9abe3dd899202eea4c45b9d2bed28661ac23d915ea8d465",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "CopyShader.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\src\\assets\\private\\CopyShader.js",
+            "md5": "3e8fdc9d9d5321f3fa9853084f333e78",
+            "sha1": "321b37b4b7a28037b9494fd2b18e017d722d4186",
+            "sha256": "44236de09270e3fa9da0d9b15dc4819862ce6d700c361a681a52104408c13404",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "EffectComposer.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\src\\assets\\private\\EffectComposer.js",
+            "md5": "8eb577f43cd575aa055b5ebfad206107",
+            "sha1": "9152b12e6cd0d0fbfa7c5dfd051608ebca8a8dc0",
+            "sha256": "72b33d6626747b3b33d8a08c026584c4f7380fb1ccb026462ec87f55b5f2a1d0",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "Gruntfile.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\Gruntfile.js",
+            "md5": "03c9a5b05f1dbad0964c26d380dbce14",
+            "sha1": "c209162ab47985525d323b367c9b134afa7604d0",
+            "sha256": "c93ae33f877d75e38aa50f2cd0fa3f103135df140e345e314a428a792734e2ec",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "MaskPass.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\src\\assets\\private\\MaskPass.js",
+            "md5": "aea6f191cd9cc461e26499913add9a66",
+            "sha1": "e0b7771cfadf6b41dbe294bb64a58f0629b5fc36",
+            "sha256": "4f8aedf44ca4f94aa3feb2fa5d116336c55f77ca262455e88bf465465fa49e07",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "OrbitControls.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\src\\assets\\private\\OrbitControls.js",
+            "md5": "92efeb2456759b9189333cf7cf40a9d2",
+            "sha1": "b6888de1a15af632d21fdeecf7d4c74508278c71",
+            "sha256": "2cdc58c6462550712bafc0bc4f0a898becc5c34562d62c6b8b72d5ddda823048",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "RenderPass.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\src\\assets\\private\\RenderPass.js",
+            "md5": "47f484c774389f53d28815da2b044c64",
+            "sha1": "ef03bf972f0866bfe0af293a2a468709d547cdba",
+            "sha256": "381d0a0c35af0e0a358f0a0b6abe540a100b6f026e344f313e252e2c3668feda",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "ShaderPass.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\src\\assets\\private\\ShaderPass.js",
+            "md5": "ceb0f02e96d660a5b09abcad34fd8eb9",
+            "sha1": "af853f00497ae9fc2dd6e036ce2c2a5f0c32f8be",
+            "sha256": "ac467b3a10e40c32b878f9a4fcb123ac0d4ed9aa877a927e4f70393e30c41309",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "arbitraryFileWrite.zip",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\test\\files\\arbitraryFileWrite.zip",
+            "md5": "b37d74ef19c7e449f586dc67fb512500",
+            "sha1": "c2b37ad2110bf77aaa4f38aadced93ffa4384b0e",
+            "sha256": "599571c7fb6c0ab3afd8cb9585527bcd2c07a2bb9cf9068b5a3625ead91fd9d0",
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "name",
+                        "value": "arbitraryFileWrite"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "name",
+                        "value": "arbitraryFileWrite"
+                    }
+                ],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "bindings.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\node_modules\\libxmljs2\\lib\\bindings.js",
+            "md5": "cb76f315e53f5e7833eedac1320e6432",
+            "sha1": "65d1a2fd07bcadb4a459dba0554bd34ad8884f9a",
+            "sha256": "e7e3b9be92259356d4fa68de0468410ebdbbd8938ad0436a06d77148030385e3",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "bindings.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\node_modules\\libxmljs2\\node_modules\\bindings\\bindings.js",
+            "md5": "13c05ea1a2f638b707aa56eea958810c",
+            "sha1": "c93878e75a9f0545f73aa8d6fba3a761c4ceda36",
+            "sha256": "8e32a0d37f20bd6f7d5bdbf99d041aa27be47cbbe5172ac13ebf7380a10b3bf6",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "body-parser:^1.20.2",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\body-parser:^1.20.2",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "body-parser"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "body-parser"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.20.2"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/body-parser@%5E1.20.2",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/body-parser@%5E1.20.2?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "check-dependencies:^1.1.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\check-dependencies:^1.1.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "check-dependencies"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "check-dependencies"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.1.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/check-dependencies@%5E1.1.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/check-dependencies@%5E1.1.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "check-internet-connected:^2.0.6",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\check-internet-connected:^2.0.6",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "check-internet-connected"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "check-internet-connected"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^2.0.6"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/check-internet-connected@%5E2.0.6",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/check-internet-connected@%5E2.0.6?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "clarinet:^0.12.5",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\clarinet:^0.12.5",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "clarinet"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "clarinet"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.12.5"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/clarinet@%5E0.12.5",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/clarinet@%5E0.12.5?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "colors:1.4.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\colors:1.4.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "colors"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "colors"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "1.4.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/colors@1.4.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/colors@1.4.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "compression:^1.7.4",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\compression:^1.7.4",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "compression"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "compression"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.7.4"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/compression@%5E1.7.4",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/compression@%5E1.7.4?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "concurrently:^5.3.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\concurrently:^5.3.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "concurrently"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "concurrently"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^5.3.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/concurrently@%5E5.3.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/concurrently@%5E5.3.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "config:^3.3.9",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\config:^3.3.9",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "config"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "config"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^3.3.9"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/config@%5E3.3.9",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/config@%5E3.3.9?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "cookie-parser:^1.4.5",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\cookie-parser:^1.4.5",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "cookie-parser"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "cookie-parser"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.4.5"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/cookie-parser@%5E1.4.5",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/cookie-parser@%5E1.4.5?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "cors:^2.8.5",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\cors:^2.8.5",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "cors"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "cors"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^2.8.5"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/cors@%5E2.8.5",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/cors@%5E2.8.5?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "dat.gui.min.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\src\\assets\\private\\dat.gui.min.js",
+            "md5": "ed146dcedfd795494907b5c5e4fe8ee1",
+            "sha1": "52d1e28f6a5755b4203c3e4f66d93cd334645ad8",
+            "sha256": "67dd7e65b2bf1ca42c0214a5ae1210581894cf8d7e65d3cb2dd7fb25f8fe2ec0",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "document.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\node_modules\\libxmljs2\\lib\\document.js",
+            "md5": "31657f0fd5fc59db50c386d3d3f6bb2d",
+            "sha1": "5bfabe5d1e718a67d9876e982700fb8be5b74547",
+            "sha256": "6098a5245a4cce7f704745c4fd55de81c82f3654ca2a9f534dd57854c28905df",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "dottie:^2.0.2",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\dottie:^2.0.2",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "dottie"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "dottie"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^2.0.2"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/dottie@%5E2.0.2",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/dottie@%5E2.0.2?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:dottie_project:dottie:2.0.2:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Adottie_project&cpe_product=cpe%3A%2F%3Adottie_project%3Adottie&cpe_version=cpe%3A%2F%3Adottie_project%3Adottie%3A2.0.2"
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "source": "NVD",
+                    "name": "CVE-2023-26132",
+                    "severity": "HIGH",
+                    "cvssv3": {
+                        "baseScore": 7.5,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW",
+                        "privilegesRequired": "NONE",
+                        "userInteraction": "NONE",
+                        "scope": "UNCHANGED",
+                        "confidentialityImpact": "NONE",
+                        "integrityImpact": "NONE",
+                        "availabilityImpact": "HIGH",
+                        "baseSeverity": "HIGH",
+                        "exploitabilityScore": "3.9",
+                        "impactScore": "3.6",
+                        "version": "3.1"
+                    },
+                    "cwes": [
+                        "CWE-1321"
+                    ],
+                    "description": "Versions of the package dottie before 2.0.4 are vulnerable to Prototype Pollution due to insufficient checks, via the set() function and the current variable in the \/dottie.js file.",
+                    "notes": "",
+                    "references": [
+                        {
+                            "source": "report@snyk.io",
+                            "url": "https:\/\/github.com\/mickhansen\/dottie.js\/blob\/b48e22714aae4489ea6276452f22cc61980ba5a4\/dottie.js%23L107",
+                            "name": "BROKEN_LINK"
+                        },
+                        {
+                            "source": "report@snyk.io",
+                            "url": "https:\/\/github.com\/mickhansen\/dottie.js\/commit\/7d3aee1c9c3c842720506e131de7e181e5c8db68",
+                            "name": "PATCH"
+                        },
+                        {
+                            "source": "report@snyk.io",
+                            "url": "https:\/\/security.snyk.io\/vuln\/SNYK-JS-DOTTIE-3332763",
+                            "name": "EXPLOIT,THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "af854a3a-2127-422b-91ae-364da2661108",
+                            "url": "https:\/\/github.com\/mickhansen\/dottie.js\/commit\/7d3aee1c9c3c842720506e131de7e181e5c8db68",
+                            "name": "PATCH"
+                        },
+                        {
+                            "source": "af854a3a-2127-422b-91ae-364da2661108",
+                            "url": "https:\/\/security.snyk.io\/vuln\/SNYK-JS-DOTTIE-3332763",
+                            "name": "EXPLOIT,THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "af854a3a-2127-422b-91ae-364da2661108",
+                            "url": "https:\/\/github.com\/mickhansen\/dottie.js\/blob\/b48e22714aae4489ea6276452f22cc61980ba5a4\/dottie.js%23L107",
+                            "name": "BROKEN_LINK"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:dottie_project:dottie:*:*:*:*:*:node.js:*:*",
+                                "vulnerabilityIdMatched": "true",
+                                "versionEndExcluding": "2.0.4"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "download:^8.0.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\download:^8.0.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "download"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "download"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^8.0.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/download@%5E8.0.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/download@%5E8.0.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "element.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\node_modules\\libxmljs2\\lib\\element.js",
+            "md5": "0b3643baef71ac1a6db9ffe1b98378a9",
+            "sha1": "92277b0cae42b2e03dc738a479d592565a066d84",
+            "sha256": "b5e7e9de5e45ea3d7baf648477daa1d4427a5a3b5398960b6479fc354a84cf02",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "errorhandler:^1.5.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\errorhandler:^1.5.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "errorhandler"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "errorhandler"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.5.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/errorhandler@%5E1.5.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/errorhandler@%5E1.5.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "ethers:^6.7.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\ethers:^6.7.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "ethers"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "ethers"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^6.7.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/ethers@%5E6.7.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/ethers@%5E6.7.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "exif:^0.6.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\exif:^0.6.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "exif"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "exif"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.6.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/exif@%5E0.6.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/exif@%5E0.6.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:exif:exif:0.6.0:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aexif&cpe_product=cpe%3A%2F%3Aexif%3Aexif&cpe_version=cpe%3A%2F%3Aexif%3Aexif%3A0.6.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "express-ipfilter:^1.2.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\express-ipfilter:^1.2.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express-ipfilter"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express-ipfilter"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.2.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/express-ipfilter@%5E1.2.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/express-ipfilter@%5E1.2.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "express-jwt:0.1.3",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\express-jwt:0.1.3",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express-jwt"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express-jwt"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "0.1.3"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/express-jwt@0.1.3",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/express-jwt@0.1.3?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "source": "OSSINDEX",
+                    "name": "CVE-2020-15084",
+                    "severity": "CRITICAL",
+                    "cvssv3": {
+                        "baseScore": 9.100000381469727,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW",
+                        "privilegesRequired": "NONE",
+                        "userInteraction": "NONE",
+                        "scope": "UNCHANGED",
+                        "confidentialityImpact": "HIGH",
+                        "integrityImpact": "HIGH",
+                        "availabilityImpact": "NONE",
+                        "baseSeverity": "CRITICAL",
+                        "version": "3.1"
+                    },
+                    "cwes": [
+                        "CWE-285"
+                    ],
+                    "description": "In express-jwt (NPM package) up and including version 5.3.3, the algorithms entry to be specified in the configuration is not being enforced. When algorithms is not specified in the configuration, with the combination of jwks-rsa, it may lead to authorization bypass. You are affected by this vulnerability if all of the following conditions apply: - You are using express-jwt - You do not have **algorithms** configured in your express-jwt configuration. - You are using libraries such as jwks-rsa as the **secret**. You can fix this by specifying **algorithms** in the express-jwt configuration. See linked GHSA for example. This is also fixed in version 6.0.0.",
+                    "notes": "",
+                    "references": [
+                        {
+                            "source": "OSSIndex",
+                            "url": "https:\/\/github.com\/auth0\/express-jwt\/security\/advisories\/GHSA-6g6m-m6h5-w9gf",
+                            "name": "https:\/\/github.com\/auth0\/express-jwt\/security\/advisories\/GHSA-6g6m-m6h5-w9gf"
+                        },
+                        {
+                            "source": "OSSINDEX",
+                            "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2020-15084?component-type=npm&component-name=express-jwt&utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0",
+                            "name": "[CVE-2020-15084] CWE-285: Improper Authorization"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "http:\/\/web.nvd.nist.gov\/view\/vuln\/detail?vulnId=CVE-2020-15084",
+                            "name": "http:\/\/web.nvd.nist.gov\/view\/vuln\/detail?vulnId=CVE-2020-15084"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:*:express-jwt:0.1.3:*:*:*:*:*:*:*",
+                                "vulnerabilityIdMatched": "true"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "express-rate-limit:^5.3.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\express-rate-limit:^5.3.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express-rate-limit"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express-rate-limit"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^5.3.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/express-rate-limit@%5E5.3.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/express-rate-limit@%5E5.3.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "express-robots-txt:^0.4.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\express-robots-txt:^0.4.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express-robots-txt"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express-robots-txt"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.4.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/express-robots-txt@%5E0.4.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/express-robots-txt@%5E0.4.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "express-security.txt:^2.0.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\express-security.txt:^2.0.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express-security.txt"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express-security.txt"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^2.0.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/express-security.txt@%5E2.0.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/express-security.txt@%5E2.0.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "express:^4.17.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\express:^4.17.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "express"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^4.17.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/express@%5E4.17.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/express@%5E4.17.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "feature-policy:^0.5.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\feature-policy:^0.5.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "feature-policy"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "feature-policy"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.5.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/feature-policy@%5E0.5.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/feature-policy@%5E0.5.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "file-stream-rotator:^0.5.7",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\file-stream-rotator:^0.5.7",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "file-stream-rotator"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "file-stream-rotator"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.5.7"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/file-stream-rotator@%5E0.5.7",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/file-stream-rotator@%5E0.5.7?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "file-type:^16.1.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\file-type:^16.1.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "file-type"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "file-type"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^16.1.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/file-type@%5E16.1.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/file-type@%5E16.1.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:file-type_project:file-type:16.1.0:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Afile-type_project&cpe_product=cpe%3A%2F%3Afile-type_project%3Afile-type&cpe_version=cpe%3A%2F%3Afile-type_project%3Afile-type%3A16.1.0"
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "source": "NVD",
+                    "name": "CVE-2022-36313",
+                    "severity": "MEDIUM",
+                    "cvssv3": {
+                        "baseScore": 5.5,
+                        "attackVector": "LOCAL",
+                        "attackComplexity": "LOW",
+                        "privilegesRequired": "NONE",
+                        "userInteraction": "REQUIRED",
+                        "scope": "UNCHANGED",
+                        "confidentialityImpact": "NONE",
+                        "integrityImpact": "NONE",
+                        "availabilityImpact": "HIGH",
+                        "baseSeverity": "MEDIUM",
+                        "exploitabilityScore": "1.8",
+                        "impactScore": "3.6",
+                        "version": "3.1"
+                    },
+                    "cwes": [
+                        "CWE-835"
+                    ],
+                    "description": "An issue was discovered in the file-type package before 16.5.4 and 17.x before 17.1.3 for Node.js. A malformed MKV file could cause the file type detector to get caught in an infinite loop. This would make the application become unresponsive and could be used to cause a DoS attack.",
+                    "notes": "",
+                    "references": [
+                        {
+                            "source": "cve@mitre.org",
+                            "url": "https:\/\/github.com\/sindresorhus\/file-type\/releases\/tag\/v17.1.3",
+                            "name": "RELEASE_NOTES,THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "af854a3a-2127-422b-91ae-364da2661108",
+                            "url": "https:\/\/github.com\/sindresorhus\/file-type\/releases\/tag\/v17.1.3",
+                            "name": "RELEASE_NOTES,THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "cve@mitre.org",
+                            "url": "https:\/\/github.com\/sindresorhus\/file-type\/releases\/tag\/v16.5.4",
+                            "name": "RELEASE_NOTES,THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "af854a3a-2127-422b-91ae-364da2661108",
+                            "url": "https:\/\/github.com\/sindresorhus\/file-type\/releases\/tag\/v16.5.4",
+                            "name": "RELEASE_NOTES,THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "cve@mitre.org",
+                            "url": "https:\/\/www.npmjs.com\/package\/file-type",
+                            "name": "PRODUCT,THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "af854a3a-2127-422b-91ae-364da2661108",
+                            "url": "https:\/\/security.netapp.com\/advisory\/ntap-20220909-0005\/",
+                            "name": "THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "cve@mitre.org",
+                            "url": "https:\/\/security.netapp.com\/advisory\/ntap-20220909-0005\/",
+                            "name": "THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "af854a3a-2127-422b-91ae-364da2661108",
+                            "url": "https:\/\/www.npmjs.com\/package\/file-type",
+                            "name": "PRODUCT,THIRD_PARTY_ADVISORY"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:file-type_project:file-type:*:*:*:*:*:node.js:*:*",
+                                "vulnerabilityIdMatched": "true",
+                                "versionEndExcluding": "16.5.4"
+                            }
+                        },
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:file-type_project:file-type:*:*:*:*:*:node.js:*:*",
+                                "versionStartIncluding": "17.0.0",
+                                "versionEndExcluding": "17.1.3"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "filesniffer:^1.0.3",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\filesniffer:^1.0.3",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "filesniffer"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "filesniffer"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.0.3"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/filesniffer@%5E1.0.3",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/filesniffer@%5E1.0.3?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "finale-rest:^1.1.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\finale-rest:^1.1.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "finale-rest"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "finale-rest"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.1.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/finale-rest@%5E1.1.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/finale-rest@%5E1.1.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "fs-extra:^9.0.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\fs-extra:^9.0.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "fs-extra"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "fs-extra"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^9.0.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/fs-extra@%5E9.0.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/fs-extra@%5E9.0.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "fuzzball:^1.3.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\fuzzball:^1.3.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "fuzzball"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "fuzzball"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.3.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/fuzzball@%5E1.3.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/fuzzball@%5E1.3.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "glob:^10.3.10",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\glob:^10.3.10",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "glob"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "glob"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^10.3.10"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/glob@%5E10.3.10",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/glob@%5E10.3.10?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "graceful-fs:^4.2.6",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\graceful-fs:^4.2.6",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "graceful-fs"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "graceful-fs"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^4.2.6"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/graceful-fs@%5E4.2.6",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/graceful-fs@%5E4.2.6?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "grunt-contrib-compress:^1.6.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\grunt-contrib-compress:^1.6.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "grunt-contrib-compress"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "grunt-contrib-compress"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.6.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/grunt-contrib-compress@%5E1.6.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/grunt-contrib-compress@%5E1.6.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "grunt-replace-json:^0.1.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\grunt-replace-json:^0.1.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "grunt-replace-json"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "grunt-replace-json"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.1.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/grunt-replace-json@%5E0.1.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/grunt-replace-json@%5E0.1.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "grunt:^1.2.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\grunt:^1.2.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "grunt"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "grunt"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.2.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/grunt@%5E1.2.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/grunt@%5E1.2.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "hashids:^2.2.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\hashids:^2.2.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "hashids"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "hashids"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^2.2.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/hashids@%5E2.2.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/hashids@%5E2.2.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "hbs:^4.0.4",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\hbs:^4.0.4",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "hbs"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "hbs"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^4.0.4"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/hbs@%5E4.0.4",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/hbs@%5E4.0.4?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:hbs_project:hbs:4.0.4:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Ahbs_project&cpe_product=cpe%3A%2F%3Ahbs_project%3Ahbs&cpe_version=cpe%3A%2F%3Ahbs_project%3Ahbs%3A4.0.4"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "helmet:^4.0.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\helmet:^4.0.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "helmet"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "helmet"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^4.0.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/helmet@%5E4.0.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/helmet@%5E4.0.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "html-entities:^1.3.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\html-entities:^1.3.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "html-entities"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "html-entities"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.3.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/html-entities@%5E1.3.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/html-entities@%5E1.3.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "i18n:^0.11.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\i18n:^0.11.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "i18n"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "i18n"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.11.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/i18n@%5E0.11.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/i18n@%5E0.11.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:i18n_project:i18n:0.11.1:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Ai18n_project&cpe_product=cpe%3A%2F%3Ai18n_project%3Ai18n&cpe_version=cpe%3A%2F%3Ai18n_project%3Ai18n%3A0.11.1"
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "index.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\node_modules\\libxmljs2\\index.js",
+            "md5": "4db7937f046d35805b7d215e6a71f9a9",
+            "sha1": "642e3028f33ecb44d63d854be2887208d414e4a9",
+            "sha256": "6f430b6b83d113370522685a0918e6b60beb1ce22368f97f52dec83e72d508a8",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "invalidTypeForClient.exe",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\test\\files\\invalidTypeForClient.exe",
+            "md5": "2319ac34f4848755a639fd524038dfd3",
+            "sha1": "3082a2f97b22b4602e8d39083eef2ca0f7e54c4c",
+            "sha256": "c90232586b801f9558a76f2f963eccd831d9fe6775e4c8f1446b2331aa2132f2",
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "name",
+                        "value": "invalidTypeForClient"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "name",
+                        "value": "invalidTypeForClient"
+                    }
+                ],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "js-yaml:^3.14.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\js-yaml:^3.14.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "js-yaml"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "js-yaml"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^3.14.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/js-yaml@%5E3.14.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/js-yaml@%5E3.14.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:js-yaml_project:js-yaml:3.14.0:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Ajs-yaml_project&cpe_product=cpe%3A%2F%3Ajs-yaml_project%3Ajs-yaml&cpe_version=cpe%3A%2F%3Ajs-yaml_project%3Ajs-yaml%3A3.14.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "jsonwebtoken:0.4.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\jsonwebtoken:0.4.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "jsonwebtoken"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "jsonwebtoken"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "0.4.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/jsonwebtoken@0.4.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/jsonwebtoken@0.4.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "source": "OSSINDEX",
+                    "name": "CVE-2015-9235",
+                    "severity": "CRITICAL",
+                    "cvssv3": {
+                        "baseScore": 9.100000381469727,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW",
+                        "privilegesRequired": "NONE",
+                        "userInteraction": "NONE",
+                        "scope": "UNCHANGED",
+                        "confidentialityImpact": "HIGH",
+                        "integrityImpact": "HIGH",
+                        "availabilityImpact": "NONE",
+                        "baseSeverity": "CRITICAL",
+                        "version": "3.0"
+                    },
+                    "cwes": [
+                        "CWE-295"
+                    ],
+                    "description": "jsonwebtoken Verification Bypass - NPM\n\nThe software does not validate, or incorrectly validates, a certificate.",
+                    "notes": "",
+                    "references": [
+                        {
+                            "source": "OSSINDEX",
+                            "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2015-9235?component-type=npm&component-name=jsonwebtoken&utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0",
+                            "name": "[CVE-2015-9235] CWE-295: Improper Certificate Validation"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "https:\/\/www.npmjs.com\/advisories\/17",
+                            "name": "https:\/\/www.npmjs.com\/advisories\/17"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:*:jsonwebtoken:0.4.0:*:*:*:*:*:*:*",
+                                "vulnerabilityIdMatched": "true"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "source": "OSSINDEX",
+                    "name": "CVE-2022-23539",
+                    "severity": "HIGH",
+                    "cvssv3": {
+                        "baseScore": 8.100000381469727,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW",
+                        "privilegesRequired": "LOW",
+                        "userInteraction": "NONE",
+                        "scope": "UNCHANGED",
+                        "confidentialityImpact": "HIGH",
+                        "integrityImpact": "HIGH",
+                        "availabilityImpact": "NONE",
+                        "baseSeverity": "HIGH",
+                        "version": "3.1"
+                    },
+                    "cwes": [
+                        "CWE-327"
+                    ],
+                    "description": "Versions `<=8.5.1` of `jsonwebtoken` library could be misconfigured so that legacy, insecure key types are used for signature verification. For example, DSA keys could be used with the RS256 algorithm. You are affected if you are using an algorithm and a key type other than a combination listed in the GitHub Security Advisory as unaffected. This issue has been fixed, please update to version 9.0.0. This version validates for asymmetric key type and algorithm combinations. Please refer to the above mentioned algorithm \/ key type combinations for the valid secure configuration. After updating to version 9.0.0, if you still intend to continue with signing or verifying tokens using invalid key type\/algorithm value combinations, you\u2019ll need to set the `allowInvalidAsymmetricKeyTypes` option  to `true` in the `sign()` and\/or `verify()` functions.",
+                    "notes": "",
+                    "references": [
+                        {
+                            "source": "OSSIndex",
+                            "url": "http:\/\/web.nvd.nist.gov\/view\/vuln\/detail?vulnId=CVE-2022-23539",
+                            "name": "http:\/\/web.nvd.nist.gov\/view\/vuln\/detail?vulnId=CVE-2022-23539"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "https:\/\/github.com\/auth0\/node-jsonwebtoken\/blob\/e1fa9dcc12054a8681db4e6373da1b30cf7016e3\/CHANGELOG.md#900---2022-12-21",
+                            "name": "https:\/\/github.com\/auth0\/node-jsonwebtoken\/blob\/e1fa9dcc12054a8681db4e6373da1b30cf7016e3\/CHANGELOG.md#900---2022-12-21"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "https:\/\/github.com\/auth0\/node-jsonwebtoken\/security\/advisories\/GHSA-8cf7-32gw-wr33",
+                            "name": "https:\/\/github.com\/auth0\/node-jsonwebtoken\/security\/advisories\/GHSA-8cf7-32gw-wr33"
+                        },
+                        {
+                            "source": "OSSINDEX",
+                            "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2022-23539?component-type=npm&component-name=jsonwebtoken&utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0",
+                            "name": "[CVE-2022-23539] CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:*:jsonwebtoken:0.4.0:*:*:*:*:*:*:*",
+                                "vulnerabilityIdMatched": "true"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "source": "OSSINDEX",
+                    "name": "CVE-2022-23540",
+                    "severity": "HIGH",
+                    "cvssv3": {
+                        "baseScore": 7.599999904632568,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW",
+                        "privilegesRequired": "LOW",
+                        "userInteraction": "NONE",
+                        "scope": "UNCHANGED",
+                        "confidentialityImpact": "LOW",
+                        "integrityImpact": "HIGH",
+                        "availabilityImpact": "LOW",
+                        "baseSeverity": "HIGH",
+                        "version": "3.1"
+                    },
+                    "cwes": [
+                        "CWE-287"
+                    ],
+                    "description": "In versions `<=8.5.1` of `jsonwebtoken` library, lack of algorithm definition in the `jwt.verify()` function can lead to signature validation bypass due to defaulting to the `none` algorithm for signature verification. Users are affected if you do not specify algorithms in the `jwt.verify()` function. This issue has been fixed, please update to version 9.0.0 which removes the default support for the none algorithm in the `jwt.verify()` method. There will be no impact, if you update to version 9.0.0 and you don\u2019t need to allow for the `none` algorithm. If you need 'none' algorithm, you have to explicitly specify that in `jwt.verify()` options.\n",
+                    "notes": "",
+                    "references": [
+                        {
+                            "source": "OSSINDEX",
+                            "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2022-23540?component-type=npm&component-name=jsonwebtoken&utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0",
+                            "name": "[CVE-2022-23540] CWE-287: Improper Authentication"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "https:\/\/github.com\/auth0\/node-jsonwebtoken\/blob\/e1fa9dcc12054a8681db4e6373da1b30cf7016e3\/CHANGELOG.md#900---2022-12-21",
+                            "name": "https:\/\/github.com\/auth0\/node-jsonwebtoken\/blob\/e1fa9dcc12054a8681db4e6373da1b30cf7016e3\/CHANGELOG.md#900---2022-12-21"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "http:\/\/web.nvd.nist.gov\/view\/vuln\/detail?vulnId=CVE-2022-23540",
+                            "name": "http:\/\/web.nvd.nist.gov\/view\/vuln\/detail?vulnId=CVE-2022-23540"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "https:\/\/github.com\/auth0\/node-jsonwebtoken\/security\/advisories\/GHSA-qwph-4952-7xr6",
+                            "name": "https:\/\/github.com\/auth0\/node-jsonwebtoken\/security\/advisories\/GHSA-qwph-4952-7xr6"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:*:jsonwebtoken:0.4.0:*:*:*:*:*:*:*",
+                                "vulnerabilityIdMatched": "true"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "jssha:^3.1.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\jssha:^3.1.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "jssha"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "jssha"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^3.1.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/jssha@%5E3.1.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/jssha@%5E3.1.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "juicy-chat-bot:~0.8.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\juicy-chat-bot:~0.8.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "juicy-chat-bot"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "juicy-chat-bot"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "~0.8.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/juicy-chat-bot@~0.8.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/juicy-chat-bot@~0.8.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "karma.conf.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\src\\karma.conf.js",
+            "md5": "8c06bdad344cf23a498a0a86f42f33e7",
+            "sha1": "ac95a683b4e4ea58982391918fec92b67f7da9fc",
+            "sha256": "0d9224a4c17c4d062ec492a5af4b9cdb73c767252b06500440f3e0116f8345a4",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "libxmljs:^1.0.11",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\libxmljs:^1.0.11",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "libxmljs"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "libxmljs"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.0.11"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/libxmljs@%5E1.0.11",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/libxmljs@%5E1.0.11?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:libxmljs_project:libxmljs:1.0.11:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Alibxmljs_project&cpe_product=cpe%3A%2F%3Alibxmljs_project%3Alibxmljs&cpe_version=cpe%3A%2F%3Alibxmljs_project%3Alibxmljs%3A1.0.11"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "marsdb:^0.6.11",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\marsdb:^0.6.11",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "marsdb"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "marsdb"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.6.11"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/marsdb@%5E0.6.11",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/marsdb@%5E0.6.11?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "median:^0.0.2",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\median:^0.0.2",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "median"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "median"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.0.2"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/median@%5E0.0.2",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/median@%5E0.0.2?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "morgan:^1.10.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\morgan:^1.10.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "morgan"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "morgan"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.10.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/morgan@%5E1.10.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/morgan@%5E1.10.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:morgan_project:morgan:1.10.0:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Amorgan_project&cpe_product=cpe%3A%2F%3Amorgan_project%3Amorgan&cpe_version=cpe%3A%2F%3Amorgan_project%3Amorgan%3A1.10.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "multer:^1.4.5-lts.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\multer:^1.4.5-lts.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "multer"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "multer"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.4.5-lts.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/multer@%5E1.4.5-lts.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/multer@%5E1.4.5-lts.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "node-pre-gyp:^0.15.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\node-pre-gyp:^0.15.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "node-pre-gyp"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "node-pre-gyp"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.15.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/node-pre-gyp@%5E0.15.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/node-pre-gyp@%5E0.15.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "notevil:^1.3.3",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\notevil:^1.3.3",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "notevil"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "notevil"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.3.3"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/notevil@%5E1.3.3",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/notevil@%5E1.3.3?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:notevil_project:notevil:1.3.3:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Anotevil_project&cpe_product=cpe%3A%2F%3Anotevil_project%3Anotevil&cpe_version=cpe%3A%2F%3Anotevil_project%3Anotevil%3A1.3.3"
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "source": "NVD",
+                    "name": "CVE-2021-23771",
+                    "severity": "MEDIUM",
+                    "cvssv2": {
+                        "score": 6.4,
+                        "accessVector": "NETWORK",
+                        "accessComplexity": "LOW",
+                        "authenticationr": "NONE",
+                        "confidentialityImpact": "PARTIAL",
+                        "integrityImpact": "PARTIAL",
+                        "availabilityImpact": "NONE",
+                        "severity": "MEDIUM",
+                        "version": "2.0",
+                        "exploitabilityScore": "10.0",
+                        "impactScore": "4.9"
+                    },
+                    "cvssv3": {
+                        "baseScore": 6.5,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW",
+                        "privilegesRequired": "NONE",
+                        "userInteraction": "NONE",
+                        "scope": "UNCHANGED",
+                        "confidentialityImpact": "LOW",
+                        "integrityImpact": "LOW",
+                        "availabilityImpact": "NONE",
+                        "baseSeverity": "MEDIUM",
+                        "exploitabilityScore": "3.9",
+                        "impactScore": "2.5",
+                        "version": "3.1"
+                    },
+                    "cwes": [
+                        "CWE-1321"
+                    ],
+                    "description": "This affects all versions of package notevil; all versions of package argencoders-notevil. It is vulnerable to Sandbox Escape leading to Prototype pollution. The package fails to restrict access to the main context, allowing an attacker to add or modify an object's prototype. **Note:** This vulnerability derives from an incomplete fix in [SNYK-JS-NOTEVIL-608878](https:\/\/security.snyk.io\/vuln\/SNYK-JS-NOTEVIL-608878).",
+                    "notes": "",
+                    "references": [
+                        {
+                            "source": "af854a3a-2127-422b-91ae-364da2661108",
+                            "url": "https:\/\/snyk.io\/vuln\/SNYK-JS-ARGENCODERSNOTEVIL-2388587",
+                            "name": "EXPLOIT,THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "af854a3a-2127-422b-91ae-364da2661108",
+                            "url": "https:\/\/snyk.io\/vuln\/SNYK-JS-NOTEVIL-2385946",
+                            "name": "EXPLOIT,THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "report@snyk.io",
+                            "url": "https:\/\/snyk.io\/vuln\/SNYK-JS-ARGENCODERSNOTEVIL-2388587",
+                            "name": "EXPLOIT,THIRD_PARTY_ADVISORY"
+                        },
+                        {
+                            "source": "report@snyk.io",
+                            "url": "https:\/\/snyk.io\/vuln\/SNYK-JS-NOTEVIL-2385946",
+                            "name": "EXPLOIT,THIRD_PARTY_ADVISORY"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:argencoders-notevil_project:argencoders-notevil:*:*:*:*:*:node.js:*:*",
+                                "versionEndIncluding": "2.5.0"
+                            }
+                        },
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:notevil_project:notevil:*:*:*:*:*:node.js:*:*",
+                                "vulnerabilityIdMatched": "true",
+                                "versionEndIncluding": "1.3.3"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "on-finished:^2.3.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\on-finished:^2.3.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "on-finished"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "on-finished"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^2.3.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/on-finished@%5E2.3.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/on-finished@%5E2.3.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "otplib:^12.0.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\otplib:^12.0.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "otplib"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "otplib"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^12.0.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/otplib@%5E12.0.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/otplib@%5E12.0.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "package.json",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\package.json",
+            "md5": "5b93f181477bfa4bc54be604036726b1",
+            "sha1": "d91e9f90238c925fc7f92fc289e32ba731f4b678",
+            "sha256": "9f4ad0485d23e9076269dfcada5b01e7078a1869c49ad76fc521f72e576c8a80",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "package.json",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json",
+            "md5": "5b1c3ca54c9454e9995c7d17a837790d",
+            "sha1": "a87ce3b94affc5ecfe8d4355f95c4e644a2c4ef9",
+            "sha256": "01f79cd6474bb00d38a7a827f86cdf7b422dc62e9ab69e0fc73402257f0f4f6f",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "passwordProtected.zip",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\test\\files\\passwordProtected.zip",
+            "md5": "1feb9c337e0f374f71b2e130f6b2bd35",
+            "sha1": "56d6c4ed6ea28d42bd6b2fedb363d2e115a3dae9",
+            "sha256": "f03270506ad662e27bf9f6686e3e0b4f357e85513db790b3d9fe361c74a3acf7",
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "name",
+                        "value": "passwordProtected"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "name",
+                        "value": "passwordProtected"
+                    }
+                ],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "pdfkit:^0.11.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\pdfkit:^0.11.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "pdfkit"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "pdfkit"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.11.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/pdfkit@%5E0.11.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/pdfkit@%5E0.11.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "portscanner:^2.2.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\portscanner:^2.2.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "portscanner"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "portscanner"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^2.2.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/portscanner@%5E2.2.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/portscanner@%5E2.2.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "prom-client:^14.1.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\prom-client:^14.1.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "prom-client"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "prom-client"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^14.1.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/prom-client@%5E14.1.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/prom-client@%5E14.1.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "pug:^3.0.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\pug:^3.0.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "pug"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "pug"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^3.0.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/pug@%5E3.0.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/pug@%5E3.0.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "replace:^1.2.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\replace:^1.2.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "replace"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "replace"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.2.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/replace@%5E1.2.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/replace@%5E1.2.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "request:^2.88.2",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\request:^2.88.2",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "request"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "request"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^2.88.2"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/request@%5E2.88.2",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/request@%5E2.88.2?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:request_project:request:2.88.2:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Arequest_project&cpe_product=cpe%3A%2F%3Arequest_project%3Arequest&cpe_version=cpe%3A%2F%3Arequest_project%3Arequest%3A2.88.2"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "sanitize-filename:^1.6.3",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\sanitize-filename:^1.6.3",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "sanitize-filename"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "sanitize-filename"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.6.3"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/sanitize-filename@%5E1.6.3",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/sanitize-filename@%5E1.6.3?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "sanitize-html:1.4.2",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\sanitize-html:1.4.2",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "sanitize-html"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "sanitize-html"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "1.4.2"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/sanitize-html@1.4.2",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/sanitize-html@1.4.2?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "source": "OSSINDEX",
+                    "name": "CVE-2022-25887",
+                    "severity": "HIGH",
+                    "cvssv3": {
+                        "baseScore": 7.5,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW",
+                        "privilegesRequired": "NONE",
+                        "userInteraction": "NONE",
+                        "scope": "UNCHANGED",
+                        "confidentialityImpact": "NONE",
+                        "integrityImpact": "NONE",
+                        "availabilityImpact": "HIGH",
+                        "baseSeverity": "HIGH",
+                        "version": "3.1"
+                    },
+                    "cwes": [
+                        "CWE-1333"
+                    ],
+                    "description": "The package sanitize-html before 2.7.1 are vulnerable to Regular Expression Denial of Service (ReDoS) due to insecure global regular expression replacement logic of HTML comment removal.\n\nSonatype's research suggests that this CVE's details differ from those defined at NVD. See https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2022-25887 for details",
+                    "notes": "",
+                    "references": [
+                        {
+                            "source": "OSSINDEX",
+                            "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2022-25887?component-type=npm&component-name=sanitize-html&utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0",
+                            "name": "[CVE-2022-25887] CWE-1333"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "https:\/\/github.com\/apostrophecms\/sanitize-html\/pull\/557",
+                            "name": "https:\/\/github.com\/apostrophecms\/sanitize-html\/pull\/557"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "http:\/\/web.nvd.nist.gov\/view\/vuln\/detail?vulnId=CVE-2022-25887",
+                            "name": "http:\/\/web.nvd.nist.gov\/view\/vuln\/detail?vulnId=CVE-2022-25887"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:*:sanitize-html:1.4.2:*:*:*:*:*:*:*",
+                                "vulnerabilityIdMatched": "true"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "source": "OSSINDEX",
+                    "name": "CVE-2016-1000237",
+                    "severity": "MEDIUM",
+                    "cvssv3": {
+                        "baseScore": 6.300000190734863,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW",
+                        "privilegesRequired": "NONE",
+                        "userInteraction": "REQUIRED",
+                        "scope": "UNCHANGED",
+                        "confidentialityImpact": "LOW",
+                        "integrityImpact": "LOW",
+                        "availabilityImpact": "LOW",
+                        "baseSeverity": "MEDIUM",
+                        "version": "3.0"
+                    },
+                    "cwes": [
+                        "CWE-79"
+                    ],
+                    "description": "sanitize-html Sanitization not applied recursively - NPM\n\nThe software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.",
+                    "notes": "",
+                    "references": [
+                        {
+                            "source": "OSSINDEX",
+                            "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2016-1000237?component-type=npm&component-name=sanitize-html&utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0",
+                            "name": "[CVE-2016-1000237] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "https:\/\/github.com\/punkave\/sanitize-html\/issues\/29",
+                            "name": "https:\/\/github.com\/punkave\/sanitize-html\/issues\/29"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:*:sanitize-html:1.4.2:*:*:*:*:*:*:*",
+                                "vulnerabilityIdMatched": "true"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "source": "OSSINDEX",
+                    "name": "CVE-2021-26539",
+                    "severity": "MEDIUM",
+                    "cvssv3": {
+                        "baseScore": 5.300000190734863,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW",
+                        "privilegesRequired": "NONE",
+                        "userInteraction": "NONE",
+                        "scope": "UNCHANGED",
+                        "confidentialityImpact": "NONE",
+                        "integrityImpact": "LOW",
+                        "availabilityImpact": "NONE",
+                        "baseSeverity": "MEDIUM",
+                        "version": "3.1"
+                    },
+                    "cwes": [
+                        "CWE-noinfo"
+                    ],
+                    "description": "Apostrophe Technologies sanitize-html before 2.3.1 does not properly handle internationalized domain name (IDN) which could allow an attacker to bypass hostname whitelist validation set by the \"allowedIframeHostnames\" option.",
+                    "notes": "",
+                    "references": [
+                        {
+                            "source": "OSSINDEX",
+                            "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2021-26539?component-type=npm&component-name=sanitize-html&utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0",
+                            "name": "[CVE-2021-26539] CWE-noinfo"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "https:\/\/github.com\/apostrophecms\/sanitize-html\/blob\/main\/CHANGELOG.md#231-2021-01-22",
+                            "name": "https:\/\/github.com\/apostrophecms\/sanitize-html\/blob\/main\/CHANGELOG.md#231-2021-01-22"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "https:\/\/github.com\/apostrophecms\/sanitize-html\/pull\/458",
+                            "name": "https:\/\/github.com\/apostrophecms\/sanitize-html\/pull\/458"
+                        },
+                        {
+                            "source": "OSSIndex",
+                            "url": "http:\/\/web.nvd.nist.gov\/view\/vuln\/detail?vulnId=CVE-2021-26539",
+                            "name": "http:\/\/web.nvd.nist.gov\/view\/vuln\/detail?vulnId=CVE-2021-26539"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        {
+                            "software": {
+                                "id": "cpe:2.3:a:*:sanitize-html:1.4.2:*:*:*:*:*:*:*",
+                                "vulnerabilityIdMatched": "true"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "sax_parser.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\node_modules\\libxmljs2\\lib\\sax_parser.js",
+            "md5": "ac0cbb01302c0c90839f00fa1bf5570a",
+            "sha1": "d4b5b2ac799d945802abb3396b67985477ba975e",
+            "sha256": "64421991804a6e5f903ffc6618b1bff99429ef6f7f39b17efe91630b5e83967c",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "semver:^7.3.2",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\semver:^7.3.2",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "semver"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "semver"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^7.3.2"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/semver@%5E7.3.2",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/semver@%5E7.3.2?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "sequelize:^6.15.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\sequelize:^6.15.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "sequelize"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "sequelize"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^6.15.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/sequelize@%5E6.15.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/sequelize@%5E6.15.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:sequelize_project:sequelize:6.15.1:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Asequelize_project&cpe_product=cpe%3A%2F%3Asequelize_project%3Asequelize&cpe_version=cpe%3A%2F%3Asequelize_project%3Asequelize%3A6.15.1"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "serve-index:^1.9.1",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\serve-index:^1.9.1",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "serve-index"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "serve-index"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.9.1"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/serve-index@%5E1.9.1",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/serve-index@%5E1.9.1?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "socket.io:^3.1.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\socket.io:^3.1.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "socket.io"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "socket.io"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^3.1.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/socket.io@%5E3.1.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/socket.io@%5E3.1.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:socket:socket.io:3.1.0:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Asocket&cpe_product=cpe%3A%2F%3Asocket%3Asocket.io&cpe_version=cpe%3A%2F%3Asocket%3Asocket.io%3A3.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "sqlite3:^5.0.8",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\sqlite3:^5.0.8",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "sqlite3"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "sqlite3"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^5.0.8"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/sqlite3@%5E5.0.8",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/sqlite3@%5E5.0.8?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "stats.min.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\src\\assets\\private\\stats.min.js",
+            "md5": "58c75c87c170520de442323c4a7d2e04",
+            "sha1": "503ee78d44b480bc31aa32f61bf8b5193264f77f",
+            "sha256": "a9a900b6ff5401e758e69066f34b6b05d23874a47704b17c2a8f3b2569bcaebf",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "svg-captcha:^1.4.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\svg-captcha:^1.4.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "svg-captcha"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "svg-captcha"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.4.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/svg-captcha@%5E1.4.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/svg-captcha@%5E1.4.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "swagger-ui-express:^5.0.0",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\swagger-ui-express:^5.0.0",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "swagger-ui-express"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "swagger-ui-express"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^5.0.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/swagger-ui-express@%5E5.0.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/swagger-ui-express@%5E5.0.0?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "themes.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\views\\themes\\themes.js",
+            "md5": "4a28274c051e7f7de03d8ca56decb3c7",
+            "sha1": "4aaed6cfb90488adebe3280d8856075ac20a8b7b",
+            "sha256": "3051d1e39e679342a2966295575e87bf040656bbc29edf51dabb0722aa9e8375",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": false,
+            "fileName": "three.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\src\\assets\\private\\three.js",
+            "md5": "a1cd2121a2c08f68034df78ebd7368f9",
+            "sha1": "a93b49724af1bf3fd0d68cf51e5832fdb8cf9969",
+            "sha256": "c095fca8acaf0cecc127c71b01e1ea0319c617e4eb9b74f28d3048c902bc157b",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "ts-node-dev:^1.1.6",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\ts-node-dev:^1.1.6",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "ts-node-dev"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "ts-node-dev"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.1.6"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/ts-node-dev@%5E1.1.6",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/ts-node-dev@%5E1.1.6?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "unzipper:0.9.15",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\unzipper:0.9.15",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "unzipper"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "unzipper"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "0.9.15"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/unzipper@0.9.15",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/unzipper@0.9.15?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ],
+            "vulnerabilityIds": [
+                {
+                    "id": "cpe:2.3:a:unzipper_project:unzipper:0.9.15:*:*:*:*:*:*:*",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aunzipper_project&cpe_product=cpe%3A%2F%3Aunzipper_project%3Aunzipper&cpe_version=cpe%3A%2F%3Aunzipper_project%3Aunzipper%3A0.9.15"
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "videoExploit.zip",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\test\\files\\videoExploit.zip",
+            "md5": "bebb86cecec0bab245a3d18047ef33df",
+            "sha1": "a6c420d51428ab13920b51f9bd7d30520cd4e2d1",
+            "sha256": "2ee6c4c50407d385edc10d0240cb2090551bf92ed99bb2e4bf81244430f3a88a",
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "name",
+                        "value": "videoExploit"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "name",
+                        "value": "videoExploit"
+                    }
+                ],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "web3:^4.0.3",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\web3:^4.0.3",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "web3"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "web3"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^4.0.3"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/web3@%5E4.0.3",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/web3@%5E4.0.3?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "webpack.angular.js",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\frontend\\webpack.angular.js",
+            "md5": "c9c55e939cfdbf3c62cf2cb92401d1ce",
+            "sha1": "8bf97317363e82d76811b8786c806b438523e700",
+            "sha256": "7e1fe947b63f23d85e2a5fb7301f7d61185bba6bafaa447d2cb9acaf16c577ae",
+            "evidenceCollected": {
+                "vendorEvidence": [],
+                "productEvidence": [],
+                "versionEvidence": []
+            }
+        },
+        {
+            "isVirtual": true,
+            "fileName": "winston:^3.3.3",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\winston:^3.3.3",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "winston"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "winston"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^3.3.3"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/winston@%5E3.3.3",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/winston@%5E3.3.3?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "yaml-schema-validator:^1.2.2",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\yaml-schema-validator:^1.2.2",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "yaml-schema-validator"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "yaml-schema-validator"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^1.2.2"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/yaml-schema-validator@%5E1.2.2",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/yaml-schema-validator@%5E1.2.2?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "z85:^0.0.2",
+            "filePath": "C:\\Users\\ayush\\Desktop\\Accuknox_Assets\\ay_accuknox_projects\\juice-shop\\package.json?\\z85:^0.0.2",
+            "projectReferences": [
+                "juice-shop:17.1.1"
+            ],
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "z85"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "name",
+                        "value": "z85"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "package.json",
+                        "name": "version",
+                        "value": "^0.0.2"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:npm\/z85@%5E0.0.2",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:npm\/z85@%5E0.0.2?utm_source=dependency-check&utm_medium=integration&utm_content=11.1.0"
+                }
+            ]
+        }
+    ]
+}

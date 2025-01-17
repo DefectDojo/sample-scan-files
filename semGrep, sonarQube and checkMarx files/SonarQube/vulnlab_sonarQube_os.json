@@ -1,0 +1,4350 @@
+{
+    "total": 1538,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 1538
+    },
+    "effortTotal": 5829,
+    "issues": [
+        {
+            "key": "19b23c03-adda-408b-acb1-edfda5de6a58",
+            "rule": "php:S105",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageYavuzlar.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace all tab characters in this file by sequences of white-spaces.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "74881380+berkayatass@users.noreply.github.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-05-08T19:58:03+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "fe5b44ee-551d-4fc8-9108-600c75d4eb01",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/index.php",
+            "project": "vulnlab",
+            "line": 5,
+            "hash": "166248a6129a1e4370d20adc2d4c23f3",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2024-03-28T18:11:16+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "799cbb8b-1354-4694-922b-eb929939d1b1",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+            "project": "vulnlab",
+            "line": 5,
+            "hash": "166248a6129a1e4370d20adc2d4c23f3",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2024-03-28T18:11:16+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "099a8542-8d74-4234-a24f-9ff63796e2eb",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/index.php",
+            "project": "vulnlab",
+            "line": 1,
+            "hash": "3bf4a04f3c260c62ba653f141258bda1",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 6,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "4f7f7342-7bba-4ab6-9ab5-9cc3c4145d3b",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/index.php",
+            "project": "vulnlab",
+            "line": 1,
+            "hash": "3bf4a04f3c260c62ba653f141258bda1",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 6,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d2d47021-8cc7-475f-b19d-50c6ff6ca451",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/index.php",
+            "project": "vulnlab",
+            "line": 1,
+            "hash": "3bf4a04f3c260c62ba653f141258bda1",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 40,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "de65c906-d7e3-4c59-b519-8b7bf95d16b2",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/index.php",
+            "project": "vulnlab",
+            "line": 1,
+            "hash": "3bf4a04f3c260c62ba653f141258bda1",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 6,
+                "endOffset": 39
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"require\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "839f9072-00d9-434e-96f3-3b28e95818ba",
+            "rule": "php:S131",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/index.php",
+            "project": "vulnlab",
+            "line": 42,
+            "hash": "1ce6f32bdf5a4c8ebdd0d0628130396c",
+            "textRange": {
+                "startLine": 42,
+                "endLine": 42,
+                "startOffset": 20,
+                "endOffset": 26
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a \"case default\" clause to this \"switch\" statement.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9d2a09e7-1e38-40de-b219-f77b02997639",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/index.php",
+            "project": "vulnlab",
+            "line": 48,
+            "hash": "c2bef11d43d42a908d638b8e21336173",
+            "textRange": {
+                "startLine": 48,
+                "endLine": 48,
+                "startOffset": 34,
+                "endOffset": 38
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "23f7d65b-8a1e-4580-aebb-47940ceab2c9",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+            "project": "vulnlab",
+            "line": 1,
+            "hash": "3bf4a04f3c260c62ba653f141258bda1",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 6,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9edd6273-1806-4996-bfa9-2e68237d554c",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+            "project": "vulnlab",
+            "line": 1,
+            "hash": "3bf4a04f3c260c62ba653f141258bda1",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 6,
+                "endOffset": 39
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"require\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "afb49555-6169-4da5-a398-abb4b1849b93",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+            "project": "vulnlab",
+            "line": 1,
+            "hash": "3bf4a04f3c260c62ba653f141258bda1",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 6,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a501115e-c3fd-499c-be17-b94f6621a0ee",
+            "rule": "php:S1125",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+            "project": "vulnlab",
+            "line": 32,
+            "hash": "d4d0f70397bf1c0fc110767e0a1adcf6",
+            "textRange": {
+                "startLine": 32,
+                "endLine": 32,
+                "startOffset": 36,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the literal \"false\" boolean value.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [
+                "clumsy"
+            ],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3becaa5f-ada7-4a08-95e2-cba512be40d3",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+            "project": "vulnlab",
+            "line": 34,
+            "hash": "cbb184dd8e05c9709e5dcaedaa0495cf",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 17,
+                "endOffset": 21
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "fb4acdb7-5526-49d7-a0bb-bdf7f004c779",
+            "rule": "php:S1192",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+            "project": "vulnlab",
+            "line": 40,
+            "hash": "37d29c65da4acb217592186a686890bd",
+            "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 62,
+                "endOffset": 69
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+                            "textRange": {
+                                "startLine": 44,
+                                "endLine": 44,
+                                "startOffset": 62,
+                                "endOffset": 69
+                            },
+                            "msg": "Duplication.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+                            "textRange": {
+                                "startLine": 48,
+                                "endLine": 48,
+                                "startOffset": 62,
+                                "endOffset": 69
+                            },
+                            "msg": "Duplication.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+                            "textRange": {
+                                "startLine": 52,
+                                "endLine": 52,
+                                "startOffset": 62,
+                                "endOffset": 69
+                            },
+                            "msg": "Duplication.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+                            "textRange": {
+                                "startLine": 56,
+                                "endLine": 56,
+                                "startOffset": 62,
+                                "endOffset": 69
+                            },
+                            "msg": "Duplication.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"</h2>\" 5 times.",
+            "effort": "12min",
+            "debt": "12min",
+            "author": "muraatbulut35@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2024-03-22T12:05:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "4ed2d772-32f6-45bc-b498-a1ced8eae967",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass/index.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "metegulduren@outlook.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-03-13T18:51:21+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "078eda40-8d3f-4fb3-89a3-527320b7e13d",
+            "rule": "Web:S6827",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass/index.php",
+            "project": "vulnlab",
+            "line": 129,
+            "hash": "7d1e01d6fd9bbf549ec38396b97a0614",
+            "textRange": {
+                "startLine": 129,
+                "endLine": 129,
+                "startOffset": 0,
+                "endOffset": 118
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Anchors must have content and the content must be accessible by a screen reader.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "metegulduren@outlook.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2024-03-13T18:51:21+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "36f4f0f7-f82c-4ca2-926e-f4ccc8d30d46",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass/view_messages.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "metegulduren@outlook.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-03-13T18:51:21+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b9cf67bd-a2d0-4c24-84f8-c267df5b5f05",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass/view_messages.php",
+            "project": "vulnlab",
+            "line": 5,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 0,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"require\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "metegulduren@outlook.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-03-13T18:51:21+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f73bd2e0-5da4-48fe-b221-2e2ea7555b01",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass/view_messages.php",
+            "project": "vulnlab",
+            "line": 5,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "metegulduren@outlook.com",
+            "tags": [],
+            "creationDate": "2024-03-13T18:51:21+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ff2caec3-49ac-458d-beed-b723a0bef5fe",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass/view_messages.php",
+            "project": "vulnlab",
+            "line": 5,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "metegulduren@outlook.com",
+            "tags": [],
+            "creationDate": "2024-03-13T18:51:21+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e7e1df76-aa7f-4073-8d28-f74726d17ab0",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass1/index.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "metegulduren@outlook.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-03-13T18:51:21+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "04b93239-cbab-4cbb-84c8-186160940776",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass/index.php",
+            "project": "vulnlab",
+            "line": 6,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 0,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"require\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "metegulduren@outlook.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-02-27T22:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a6bc6868-1164-430d-8fcd-f7f3f038ebbd",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass/index.php",
+            "project": "vulnlab",
+            "line": 6,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "metegulduren@outlook.com",
+            "tags": [],
+            "creationDate": "2024-02-27T22:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b3dc10b2-e6ff-40c8-a93b-bc479e0d5784",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass/index.php",
+            "project": "vulnlab",
+            "line": 6,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "metegulduren@outlook.com",
+            "tags": [],
+            "creationDate": "2024-02-27T22:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b8a795ce-93ec-4f99-bc31-faa7e9101f3b",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/race-condition/race-condition1/index.php",
+            "project": "vulnlab",
+            "line": 6,
+            "hash": "90f1ee4380f5d02206ee672ab210c7e8",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"include\" with \"include_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "128467918+yyusufnas@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-02-25T05:45:50+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f3f19b2a-974b-43d4-963c-9018b726d7c7",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/race-condition/race-condition1/index.php",
+            "project": "vulnlab",
+            "line": 6,
+            "hash": "90f1ee4380f5d02206ee672ab210c7e8",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"include\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "128467918+yyusufnas@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-02-25T05:45:50+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f94d52cf-c098-4e4b-abe5-35975697de94",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/race-condition/race-condition1/index.php",
+            "project": "vulnlab",
+            "line": 6,
+            "hash": "90f1ee4380f5d02206ee672ab210c7e8",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 0,
+                "endOffset": 27
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"include\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "128467918+yyusufnas@users.noreply.github.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-02-25T05:45:50+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "96b45be1-4fd6-4c9e-a638-949dc8732f1b",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/race-condition/race-condition1/registers.php",
+            "project": "vulnlab",
+            "line": 19,
+            "hash": "90f1ee4380f5d02206ee672ab210c7e8",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"include\" with \"include_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "128467918+yyusufnas@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-02-25T05:45:50+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a6f8887e-66ca-4262-9607-7fafb7d4f98d",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/race-condition/race-condition1/registers.php",
+            "project": "vulnlab",
+            "line": 19,
+            "hash": "90f1ee4380f5d02206ee672ab210c7e8",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"include\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "128467918+yyusufnas@users.noreply.github.com",
+            "tags": [],
+            "creationDate": "2024-02-25T05:45:50+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e2b828dc-898d-41de-974a-01b6df665fd1",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/race-condition/race-condition1/registers.php",
+            "project": "vulnlab",
+            "line": 19,
+            "hash": "90f1ee4380f5d02206ee672ab210c7e8",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 0,
+                "endOffset": 27
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"include\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "128467918+yyusufnas@users.noreply.github.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-02-25T05:45:50+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c5d495fc-bc3d-488d-b5a9-a88f64466dfa",
+            "rule": "php:S1780",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/captcha-bypass/bypass1/reset_table.php",
+            "project": "vulnlab",
+            "line": 12,
+            "hash": "6ec256c8a7669df51b63aea2878825e2",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 13,
+                "startOffset": 0,
+                "endOffset": 0
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this closing tag \"?>\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "128467918+yyusufnas@users.noreply.github.com",
+            "tags": [
+                "bad-practice",
+                "per"
+            ],
+            "creationDate": "2024-02-20T18:24:55+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3cc91a62-7cd6-4950-b51b-b94052716ec8",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/all_wallpapers.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"require\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-02-15T19:29:55+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "929e5cf6-4b9d-4d1c-9015-2e4dced424d6",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/all_wallpapers.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [],
+            "creationDate": "2024-02-15T19:29:55+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d378fdff-ce53-43e0-860a-4be7185cc525",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/all_wallpapers.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [],
+            "creationDate": "2024-02-15T19:29:55+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "43795a7f-7623-4516-8608-af90518cc498",
+            "rule": "Web:S6851",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/all_wallpapers.php",
+            "project": "vulnlab",
+            "line": 30,
+            "hash": "943342ef814a6e14d04a3b01dfb8ebe6",
+            "textRange": {
+                "startLine": 30,
+                "endLine": 30,
+                "startOffset": 0,
+                "endOffset": 105
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove redundant word \"image\" from the \"alt\" attribute of your \"img\" tag.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2024-02-15T19:29:55+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0d4644d0-d591-4035-9178-ba89a093678f",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/all_wallpapers.php",
+            "project": "vulnlab",
+            "line": 48,
+            "hash": "c48a635c41c986e289f02567026e4575",
+            "textRange": {
+                "startLine": 48,
+                "endLine": 48,
+                "startOffset": 43,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-15T19:29:55+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "5ba03986-e795-43c9-ab40-ea11c540a039",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/dashboard.php",
+            "project": "vulnlab",
+            "line": 179,
+            "hash": "c48a635c41c986e289f02567026e4575",
+            "textRange": {
+                "startLine": 179,
+                "endLine": 179,
+                "startOffset": 55,
+                "endOffset": 56
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-15T19:29:55+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "02f63486-a3ad-44f2-b138-b7676e79698b",
+            "rule": "Web:S6851",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/all_wallpapers.php",
+            "project": "vulnlab",
+            "line": 26,
+            "hash": "943342ef814a6e14d04a3b01dfb8ebe6",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 0,
+                "endOffset": 105
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove redundant word \"image\" from the \"alt\" attribute of your \"img\" tag.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2024-02-14T18:55:50+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "71bce6da-f70d-4875-b0a5-a998115ef985",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/reset_images.php",
+            "project": "vulnlab",
+            "line": 17,
+            "hash": "843495cde0ca4e2dff47eb68b643c26b",
+            "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 38,
+                "endOffset": 39
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-13T22:21:48+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7a6b43b7-bcdf-4af9-8880-6082530bd868",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/reset_images.php",
+            "project": "vulnlab",
+            "line": 20,
+            "hash": "1aec503c921121082a587fdc0a93a74b",
+            "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 22,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-13T22:21:48+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "82df30c1-7b6b-4016-9f07-fd38bd26eae3",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/reset_images.php",
+            "project": "vulnlab",
+            "line": 28,
+            "hash": "f552854b4c1795cfafe59fc43601cdfe",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 39,
+                "endOffset": 40
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-13T22:21:48+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "82c7106e-1b77-4fae-bf9b-afd4ea7138e1",
+            "rule": "php:S1780",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/reset_images.php",
+            "project": "vulnlab",
+            "line": 35,
+            "hash": "6ec256c8a7669df51b63aea2878825e2",
+            "textRange": {
+                "startLine": 35,
+                "endLine": 36,
+                "startOffset": 0,
+                "endOffset": 0
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this closing tag \"?>\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "bad-practice",
+                "per"
+            ],
+            "creationDate": "2024-02-13T22:21:48+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9d327eb1-fd8d-4126-af0a-b85901ef5a60",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/upload.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-13T20:17:45+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "5c8231e5-8e6b-439d-bac3-b9e32b88f09a",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/users.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-13T20:17:45+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b39cd872-be9a-4cd3-b7bc-ce79340d27a4",
+            "rule": "php:S1780",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/users.php",
+            "project": "vulnlab",
+            "line": 34,
+            "hash": "6ec256c8a7669df51b63aea2878825e2",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 0,
+                "endOffset": 2
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this closing tag \"?>\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "bad-practice",
+                "per"
+            ],
+            "creationDate": "2024-02-13T20:17:45+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "58da9c63-7626-40d6-a2bd-5c443c812a1e",
+            "rule": "php:S1780",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/delete_image.php",
+            "project": "vulnlab",
+            "line": 26,
+            "hash": "6ec256c8a7669df51b63aea2878825e2",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 27,
+                "startOffset": 0,
+                "endOffset": 0
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this closing tag \"?>\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "bad-practice",
+                "per"
+            ],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "cbfa22d0-1148-4b48-98db-4b2bd374e3ae",
+            "rule": "php:S1780",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/get_images.php",
+            "project": "vulnlab",
+            "line": 19,
+            "hash": "6ec256c8a7669df51b63aea2878825e2",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 20,
+                "startOffset": 0,
+                "endOffset": 0
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this closing tag \"?>\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "bad-practice",
+                "per"
+            ],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f2ec4ed7-b143-40fb-a00a-5f45af3c476f",
+            "rule": "php:S1780",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/api/upload.php",
+            "project": "vulnlab",
+            "line": 50,
+            "hash": "6ec256c8a7669df51b63aea2878825e2",
+            "textRange": {
+                "startLine": 50,
+                "endLine": 50,
+                "startOffset": 0,
+                "endOffset": 2
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this closing tag \"?>\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "bad-practice",
+                "per"
+            ],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2b87e0a1-a541-4bb5-be68-7608c133a6c1",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/dashboard.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9449fb57-00ed-4a94-b0dc-8dcacf553d31",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/dashboard.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c2336536-8ded-4d39-ab63-7e5a9c008faf",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/dashboard.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"require\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1c5a37ba-157b-4173-b378-7f2646382385",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/index.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "84c2381f-0823-4cdb-bbed-dd73d147ceb1",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/index.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d0beb3d1-9ac8-4ebe-943b-c33230847cc1",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/index.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"require\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "4a90593f-acfa-47a3-a1d9-a51aa8250a7c",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/index.php",
+            "project": "vulnlab",
+            "line": 74,
+            "hash": "4d8e9cfd3d16f37e8c3d8afb2ada492d",
+            "textRange": {
+                "startLine": 74,
+                "endLine": 74,
+                "startOffset": 57,
+                "endOffset": 80
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"echo\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "daf5f35e-c086-4748-8ea4-7aee74ae780a",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/api-hacking/api-hacking1/index.php",
+            "project": "vulnlab",
+            "line": 80,
+            "hash": "870780d972028100d4576cbab6ae71dc",
+            "textRange": {
+                "startLine": 80,
+                "endLine": 80,
+                "startOffset": 71,
+                "endOffset": 97
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"echo\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "22010310023@ogrenci.bartin.edu.tr",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-02-12T15:39:40+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3b362e85-3753-4fe7-8fa7-e6cf2c81b035",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/insecure-deserialization/jwt-attack/index.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "yavuz-kuk@hotmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-11T20:36:51+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "07b57e3e-0962-4d46-941c-05f0c51b04f3",
+            "rule": "php:S1192",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/race-condition/race-condition2/index.php",
+            "project": "vulnlab",
+            "line": 48,
+            "hash": "6fee095e32fdb446e69e3e29144211d1",
+            "textRange": {
+                "startLine": 48,
+                "endLine": 48,
+                "startOffset": 17,
+                "endOffset": 34
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "vulnlab:app/lab/race-condition/race-condition2/index.php",
+                            "textRange": {
+                                "startLine": 51,
+                                "endLine": 51,
+                                "startOffset": 17,
+                                "endOffset": 34
+                            },
+                            "msg": "Duplication.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "vulnlab:app/lab/race-condition/race-condition2/index.php",
+                            "textRange": {
+                                "startLine": 54,
+                                "endLine": 54,
+                                "startOffset": 13,
+                                "endOffset": 30
+                            },
+                            "msg": "Duplication.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"<script>alert('\" 3 times.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "ilaydamese76@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2024-02-11T16:35:26+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "372c2eac-af9b-4961-9bb0-6bb9ac15de3c",
+            "rule": "php:S1192",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/race-condition/race-condition2/index.php",
+            "project": "vulnlab",
+            "line": 48,
+            "hash": "6fee095e32fdb446e69e3e29144211d1",
+            "textRange": {
+                "startLine": 48,
+                "endLine": 48,
+                "startOffset": 62,
+                "endOffset": 75
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "vulnlab:app/lab/race-condition/race-condition2/index.php",
+                            "textRange": {
+                                "startLine": 51,
+                                "endLine": 51,
+                                "startOffset": 58,
+                                "endOffset": 71
+                            },
+                            "msg": "Duplication.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "vulnlab:app/lab/race-condition/race-condition2/index.php",
+                            "textRange": {
+                                "startLine": 54,
+                                "endLine": 54,
+                                "startOffset": 58,
+                                "endOffset": 71
+                            },
+                            "msg": "Duplication.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"')</script>\" 3 times.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "ilaydamese76@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2024-02-11T16:35:26+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "03abad3b-ebdd-485e-9ff8-4899a1f7eec1",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/3Dvalid.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "4ed00d43-836b-4b54-8022-00ff809869bc",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/cart.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "87b50c93-3787-4b8f-a325-388515df8322",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/cart.php",
+            "project": "vulnlab",
+            "line": 147,
+            "hash": "5b95e05ffae733aff1a6ffc1382db964",
+            "textRange": {
+                "startLine": 147,
+                "endLine": 147,
+                "startOffset": 25,
+                "endOffset": 26
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1ca240ae-fe85-407b-acca-2577b8b52a73",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2d73c67b-8a4c-4f36-b7ab-436a944e3d8a",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"require\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c2da7861-acff-4c9e-ac8c-38f627bda8f6",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "06a28372-b675-4711-8b61-13d8cc4a61aa",
+            "rule": "php:S1793",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "project": "vulnlab",
+            "line": 50,
+            "hash": "b5fa87bf8529086683977cfd253dd253",
+            "textRange": {
+                "startLine": 50,
+                "endLine": 50,
+                "startOffset": 14,
+                "endOffset": 21
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this \"else if\" keyword sequence by \"elseif\" keyword.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c1497ac5-4542-4a23-8746-fd6b2a21e1c1",
+            "rule": "php:S1793",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "project": "vulnlab",
+            "line": 52,
+            "hash": "d9c59242e9978655eae31e36ba376660",
+            "textRange": {
+                "startLine": 52,
+                "endLine": 52,
+                "startOffset": 14,
+                "endOffset": 21
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this \"else if\" keyword sequence by \"elseif\" keyword.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "11f396fa-16d7-44c4-bb8f-a3e0f03a5f29",
+            "rule": "php:S125",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "project": "vulnlab",
+            "line": 56,
+            "hash": "0b6aac095318609e4d50a73da791769d",
+            "textRange": {
+                "startLine": 56,
+                "endLine": 61,
+                "startOffset": 12,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "4147ef3f-99c0-40e7-9938-f8653e0aa52c",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "project": "vulnlab",
+            "line": 72,
+            "hash": "195e050b50d98958e07c8f6678b94499",
+            "textRange": {
+                "startLine": 72,
+                "endLine": 72,
+                "startOffset": 16,
+                "endOffset": 17
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "37f5abbd-2b49-42fb-9659-1f797bfc2706",
+            "rule": "php:S125",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "project": "vulnlab",
+            "line": 90,
+            "hash": "56c4c5fb415b8b93bf648db51891f137",
+            "textRange": {
+                "startLine": 90,
+                "endLine": 104,
+                "startOffset": 8,
+                "endOffset": 12
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "fa6ef65c-eda2-4a06-8fb7-05154eaafcaa",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/index.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "67743d28-9f59-46ab-9123-33dd6e5abcf8",
+            "rule": "php:S105",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace all tab characters in this file by sequences of white-spaces.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a6d5a30c-6f67-4313-b2ca-b39c3f52fe5f",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-10T19:17:17+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9008ffc0-b472-4531-ac77-8c76fae9f222",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/add.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "fd5a3118469680626f6e4528461d4d15",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 12
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require_once\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "91e179bd-58f5-4dcc-8882-8e163a27ee76",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "project": "vulnlab",
+            "line": 5,
+            "hash": "fd5a3118469680626f6e4528461d4d15",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 0,
+                "endOffset": 12
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require_once\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3d9c9d9f-be88-4164-a713-1e3ea83e7ce4",
+            "rule": "php:S3626",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "project": "vulnlab",
+            "line": 24,
+            "hash": "5e2bd708bfd9ed026a3eaba9f333b333",
+            "textRange": {
+                "startLine": 24,
+                "endLine": 24,
+                "startOffset": 16,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this redundant jump.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "redundant",
+                "clumsy"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b56d58b3-b472-4674-9995-cae7d5d3dd2b",
+            "rule": "php:S113",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/conn.php",
+            "project": "vulnlab",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "5e6bcd96-d1a9-4457-bcd3-751ef8f37177",
+            "rule": "php:S125",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/conn.php",
+            "project": "vulnlab",
+            "line": 45,
+            "hash": "29d546ca793ee9e8235e7773563e2991",
+            "textRange": {
+                "startLine": 45,
+                "endLine": 52,
+                "startOffset": 4,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "287bd547-e328-487d-b828-3cf09597f734",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/conn.php",
+            "project": "vulnlab",
+            "line": 74,
+            "hash": "b7db4588385c4fc7ed5211c35c711598",
+            "textRange": {
+                "startLine": 74,
+                "endLine": 74,
+                "startOffset": 18,
+                "endOffset": 19
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d241362e-d14d-450b-998f-8082ab86fd69",
+            "rule": "php:S1780",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/conn.php",
+            "project": "vulnlab",
+            "line": 99,
+            "hash": "6ec256c8a7669df51b63aea2878825e2",
+            "textRange": {
+                "startLine": 99,
+                "endLine": 99,
+                "startOffset": 0,
+                "endOffset": 2
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this closing tag \"?>\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "bad-practice",
+                "per"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "76a53b46-4b0a-43cb-94c0-fc7e2b415302",
+            "rule": "css:S4666",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/css/messageStyle.css",
+            "project": "vulnlab",
+            "line": 47,
+            "hash": "c509b2b3c967c6de882163cb907977db",
+            "textRange": {
+                "startLine": 47,
+                "endLine": 47,
+                "startOffset": 0,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected duplicate selector \".chat-messages\", first used at line 11",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "03be4021-bd54-4e6c-9151-0dc768e6e65f",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "47886e23-bb76-4a65-b95d-f9567bae401c",
+            "rule": "php:S6600",
+            "severity": "CRITICAL",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the parentheses from this \"require\" call.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "815b0e8a-42a0-44f0-8fac-9216175d3220",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1026af7d-6ee1-47d4-9435-3c57cd1762fe",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 5,
+            "hash": "58e61969c21dfa1cf6f791e61a35fc05",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "22aac530-5663-40f2-af0c-242b172a99d3",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 5,
+            "hash": "58e61969c21dfa1cf6f791e61a35fc05",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "37b7cedb-91ad-4c86-9ff0-10b71c64d837",
+            "rule": "Web:S5254",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 19,
+            "hash": "166248a6129a1e4370d20adc2d4c23f3",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "5e58da23-b01e-4cfe-a2bb-cc316ed7a66a",
+            "rule": "Web:PageWithoutTitleCheck",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 20,
+            "hash": "babd0daf38a8ba8a6c33c4d1d354eb56",
+            "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a <title> tag to this page.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "user-experience"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0db5bc0b-944d-416d-a914-e0f450f009bc",
+            "rule": "Web:ImgWithoutAltCheck",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 46,
+            "hash": "65c0c2cdbb694ce1cfe004ae17f3090d",
+            "textRange": {
+                "startLine": 46,
+                "endLine": 46,
+                "startOffset": 7,
+                "endOffset": 84
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"alt\" attribute to this image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ad215473-8441-4fe1-b373-e5e2f8c04544",
+            "rule": "Web:ImgWithoutAltCheck",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 56,
+            "hash": "9354a9ea41d442c01721518290eb31c8",
+            "textRange": {
+                "startLine": 56,
+                "endLine": 56,
+                "startOffset": 7,
+                "endOffset": 87
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"alt\" attribute to this image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "93cc6a59-8c7b-4341-87e1-3a14a392ae16",
+            "rule": "Web:AvoidCommentedOutCodeCheck",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 64,
+            "hash": "ccdc9004b52cfac86198d7c8825cb42c",
+            "textRange": {
+                "startLine": 64,
+                "endLine": 64,
+                "startOffset": 0,
+                "endOffset": 78
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "73a743d8-3ab6-404e-a760-e8df29327b9d",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 129,
+            "hash": "a13117505410e7867eae3bba84353f1b",
+            "textRange": {
+                "startLine": 129,
+                "endLine": 129,
+                "startOffset": 46,
+                "endOffset": 47
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "46134a35-7796-4e54-8a5d-b3ccfa2cdaca",
+            "rule": "php:S1793",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 139,
+            "hash": "da719360da7ed244a0766a0a88ca1e6a",
+            "textRange": {
+                "startLine": 139,
+                "endLine": 139,
+                "startOffset": 37,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this \"else if\" keyword sequence by \"elseif\" keyword.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "08f4f5b5-5de7-4339-b202-a160bbbcaccf",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 141,
+            "hash": "a13117505410e7867eae3bba84353f1b",
+            "textRange": {
+                "startLine": 141,
+                "endLine": 141,
+                "startOffset": 46,
+                "endOffset": 47
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "21d10c80-7750-4a2a-8d83-bf6327052f7e",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 154,
+            "hash": "6ec256c8a7669df51b63aea2878825e2",
+            "textRange": {
+                "startLine": 154,
+                "endLine": 154,
+                "startOffset": 34,
+                "endOffset": 39
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3b0d8a97-9218-480a-8fbc-8995963bc5af",
+            "rule": "Web:AvoidCommentedOutCodeCheck",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 156,
+            "hash": "c11bb7eec8b60626961f63cda07648ac",
+            "textRange": {
+                "startLine": 156,
+                "endLine": 156,
+                "startOffset": 0,
+                "endOffset": 10
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "76d65a14-027a-486a-ad07-c000830290f9",
+            "rule": "php:S1131",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "project": "vulnlab",
+            "line": 156,
+            "hash": "c11bb7eec8b60626961f63cda07648ac",
+            "textRange": {
+                "startLine": 156,
+                "endLine": 156,
+                "startOffset": 4,
+                "endOffset": 10
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [
+                "convention",
+                "psr2"
+            ],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8d9f3ee6-dd45-4b6d-b4a3-87977c5019cd",
+            "rule": "php:S4833",
+            "severity": "MAJOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageYavuzlar.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with namespace import mechanism through the \"use\" keyword.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "MODULAR",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ebe1914e-502b-4964-a7ca-d86af5479c47",
+            "rule": "php:S2003",
+            "severity": "MINOR",
+            "component": "vulnlab:app/lab/idor/shopping-cart/messageYavuzlar.php",
+            "project": "vulnlab",
+            "line": 2,
+            "hash": "ffcd4b892b5cded5836788e83f60d27e",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"require\" with \"require_once\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "berkayatas02@gmail.com",
+            "tags": [],
+            "creationDate": "2024-02-09T17:45:25+0000",
+            "updateDate": "2024-11-14T03:21:22+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        }
+    ],
+    "components": [
+        {
+            "key": "vulnlab",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "vulnlab",
+            "longName": "vulnlab"
+        },
+        {
+            "key": "vulnlab:app/lab/api-hacking/api-hacking1/api/users.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "users.php",
+            "longName": "app/lab/api-hacking/api-hacking1/api/users.php",
+            "path": "app/lab/api-hacking/api-hacking1/api/users.php"
+        },
+        {
+            "key": "vulnlab:app/lab/race-condition/race-condition2/index.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "index.php",
+            "longName": "app/lab/race-condition/race-condition2/index.php",
+            "path": "app/lab/race-condition/race-condition2/index.php"
+        },
+        {
+            "key": "vulnlab:app/lab/api-hacking/api-hacking1/dashboard.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "dashboard.php",
+            "longName": "app/lab/api-hacking/api-hacking1/dashboard.php",
+            "path": "app/lab/api-hacking/api-hacking1/dashboard.php"
+        },
+        {
+            "key": "vulnlab:app/lab/path-traversal/path-traversal-2/index.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "index.php",
+            "longName": "app/lab/path-traversal/path-traversal-2/index.php",
+            "path": "app/lab/path-traversal/path-traversal-2/index.php"
+        },
+        {
+            "key": "vulnlab:app/lab/captcha-bypass/bypass/index.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "index.php",
+            "longName": "app/lab/captcha-bypass/bypass/index.php",
+            "path": "app/lab/captcha-bypass/bypass/index.php"
+        },
+        {
+            "key": "vulnlab:app/lab/api-hacking/api-hacking1/api/get_images.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "get_images.php",
+            "longName": "app/lab/api-hacking/api-hacking1/api/get_images.php",
+            "path": "app/lab/api-hacking/api-hacking1/api/get_images.php"
+        },
+        {
+            "key": "vulnlab:app/lab/idor/shopping-cart/code.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "code.php",
+            "longName": "app/lab/idor/shopping-cart/code.php",
+            "path": "app/lab/idor/shopping-cart/code.php"
+        },
+        {
+            "key": "vulnlab:app/lab/race-condition/race-condition1/registers.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "registers.php",
+            "longName": "app/lab/race-condition/race-condition1/registers.php",
+            "path": "app/lab/race-condition/race-condition1/registers.php"
+        },
+        {
+            "key": "vulnlab:app/lab/race-condition/race-condition1/index.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "index.php",
+            "longName": "app/lab/race-condition/race-condition1/index.php",
+            "path": "app/lab/race-condition/race-condition1/index.php"
+        },
+        {
+            "key": "vulnlab:app/lab/idor/shopping-cart/index.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "index.php",
+            "longName": "app/lab/idor/shopping-cart/index.php",
+            "path": "app/lab/idor/shopping-cart/index.php"
+        },
+        {
+            "key": "vulnlab:app/lab/api-hacking/api-hacking1/all_wallpapers.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "all_wallpapers.php",
+            "longName": "app/lab/api-hacking/api-hacking1/all_wallpapers.php",
+            "path": "app/lab/api-hacking/api-hacking1/all_wallpapers.php"
+        },
+        {
+            "key": "vulnlab:app/lab/api-hacking/api-hacking1/api/reset_images.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "reset_images.php",
+            "longName": "app/lab/api-hacking/api-hacking1/api/reset_images.php",
+            "path": "app/lab/api-hacking/api-hacking1/api/reset_images.php"
+        },
+        {
+            "key": "vulnlab:app/lab/idor/shopping-cart/css/messageStyle.css",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "messageStyle.css",
+            "longName": "app/lab/idor/shopping-cart/css/messageStyle.css",
+            "path": "app/lab/idor/shopping-cart/css/messageStyle.css"
+        },
+        {
+            "key": "vulnlab:app/lab/api-hacking/api-hacking1/api/all_wallpapers.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "all_wallpapers.php",
+            "longName": "app/lab/api-hacking/api-hacking1/api/all_wallpapers.php",
+            "path": "app/lab/api-hacking/api-hacking1/api/all_wallpapers.php"
+        },
+        {
+            "key": "vulnlab:app/lab/captcha-bypass/bypass/view_messages.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "view_messages.php",
+            "longName": "app/lab/captcha-bypass/bypass/view_messages.php",
+            "path": "app/lab/captcha-bypass/bypass/view_messages.php"
+        },
+        {
+            "key": "vulnlab:app/lab/idor/shopping-cart/add.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "add.php",
+            "longName": "app/lab/idor/shopping-cart/add.php",
+            "path": "app/lab/idor/shopping-cart/add.php"
+        },
+        {
+            "key": "vulnlab:app/lab/idor/shopping-cart/3Dvalid.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "3Dvalid.php",
+            "longName": "app/lab/idor/shopping-cart/3Dvalid.php",
+            "path": "app/lab/idor/shopping-cart/3Dvalid.php"
+        },
+        {
+            "key": "vulnlab:app/lab/insecure-deserialization/jwt-attack/index.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "index.php",
+            "longName": "app/lab/insecure-deserialization/jwt-attack/index.php",
+            "path": "app/lab/insecure-deserialization/jwt-attack/index.php"
+        },
+        {
+            "key": "vulnlab:app/lab/path-traversal/path-traversal-2/product-detail.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "product-detail.php",
+            "longName": "app/lab/path-traversal/path-traversal-2/product-detail.php",
+            "path": "app/lab/path-traversal/path-traversal-2/product-detail.php"
+        },
+        {
+            "key": "vulnlab:app/lab/idor/shopping-cart/messageBox.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "messageBox.php",
+            "longName": "app/lab/idor/shopping-cart/messageBox.php",
+            "path": "app/lab/idor/shopping-cart/messageBox.php"
+        },
+        {
+            "key": "vulnlab:app/lab/api-hacking/api-hacking1/index.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "index.php",
+            "longName": "app/lab/api-hacking/api-hacking1/index.php",
+            "path": "app/lab/api-hacking/api-hacking1/index.php"
+        },
+        {
+            "key": "vulnlab:app/lab/idor/shopping-cart/cart.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "cart.php",
+            "longName": "app/lab/idor/shopping-cart/cart.php",
+            "path": "app/lab/idor/shopping-cart/cart.php"
+        },
+        {
+            "key": "vulnlab:app/lab/api-hacking/api-hacking1/api/delete_image.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "delete_image.php",
+            "longName": "app/lab/api-hacking/api-hacking1/api/delete_image.php",
+            "path": "app/lab/api-hacking/api-hacking1/api/delete_image.php"
+        },
+        {
+            "key": "vulnlab:app/lab/idor/shopping-cart/conn.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "conn.php",
+            "longName": "app/lab/idor/shopping-cart/conn.php",
+            "path": "app/lab/idor/shopping-cart/conn.php"
+        },
+        {
+            "key": "vulnlab:app/lab/api-hacking/api-hacking1/api/upload.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "upload.php",
+            "longName": "app/lab/api-hacking/api-hacking1/api/upload.php",
+            "path": "app/lab/api-hacking/api-hacking1/api/upload.php"
+        },
+        {
+            "key": "vulnlab:app/lab/captcha-bypass/bypass1/index.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "index.php",
+            "longName": "app/lab/captcha-bypass/bypass1/index.php",
+            "path": "app/lab/captcha-bypass/bypass1/index.php"
+        },
+        {
+            "key": "vulnlab:app/lab/captcha-bypass/bypass1/reset_table.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "reset_table.php",
+            "longName": "app/lab/captcha-bypass/bypass1/reset_table.php",
+            "path": "app/lab/captcha-bypass/bypass1/reset_table.php"
+        },
+        {
+            "key": "vulnlab:app/lab/idor/shopping-cart/messageYavuzlar.php",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "messageYavuzlar.php",
+            "longName": "app/lab/idor/shopping-cart/messageYavuzlar.php",
+            "path": "app/lab/idor/shopping-cart/messageYavuzlar.php"
+        }
+    ],
+    "facets": []
+}

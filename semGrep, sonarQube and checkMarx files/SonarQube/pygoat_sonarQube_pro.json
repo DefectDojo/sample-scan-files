@@ -1,0 +1,5137 @@
+{
+    "total": 98,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 98
+    },
+    "effortTotal": 791,
+    "issues": [
+        {
+            "key": "bea998d6-c76f-41d1-8aac-442981054d3c",
+            "rule": "kubernetes:S6865",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/db-deployment.yaml",
+            "project": "pygoat",
+            "line": 27,
+            "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 6,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+            "effort": "1h",
+            "debt": "1h",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1819b1a9-2557-4439-abab-aeecfe5551c5",
+            "rule": "kubernetes:S6897",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/db-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "a0b3f8d3e1b00b2b68e831765fdab5e9",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a storage request for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "5b21f26d-80cd-4a8a-928b-136d7622775b",
+            "rule": "kubernetes:S6892",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/db-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "a0b3f8d3e1b00b2b68e831765fdab5e9",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a CPU request for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6243558d-139a-4e93-8359-5104b201c1c1",
+            "rule": "kubernetes:S6864",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/db-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "a0b3f8d3e1b00b2b68e831765fdab5e9",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a memory limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9bc7fa00-a624-4f58-aafc-cc4401dc9057",
+            "rule": "kubernetes:S6870",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/db-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "a0b3f8d3e1b00b2b68e831765fdab5e9",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a storage limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a5add0d5-1e92-4469-8598-8e4d4e2d7abf",
+            "rule": "kubernetes:S6873",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/db-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "a0b3f8d3e1b00b2b68e831765fdab5e9",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a memory request for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ad6028e5-8327-4c23-97a3-b20c4981ad27",
+            "rule": "kubernetes:S6596",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/db-deployment.yaml",
+            "project": "pygoat",
+            "line": 35,
+            "hash": "3bb7828e94cdce47cb87ae18906050b9",
+            "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 17,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use a specific version tag for the image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "95e17938-efd0-43ac-9bf5-2223a27fe183",
+            "rule": "kubernetes:S6865",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/migration-deployment.yaml",
+            "project": "pygoat",
+            "line": 27,
+            "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 6,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+            "effort": "1h",
+            "debt": "1h",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "24728715-8c40-46f1-9118-fcb517b2c38d",
+            "rule": "kubernetes:S6870",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/migration-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "d09f62ef5130a0d25074367f25d07b73",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a storage limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "4fb58266-92a6-47bf-9ba6-936b89acbccc",
+            "rule": "kubernetes:S6873",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/migration-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "d09f62ef5130a0d25074367f25d07b73",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a memory request for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6ca833b0-16ed-4edb-8cd2-fdb07ff89dce",
+            "rule": "kubernetes:S6897",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/migration-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "d09f62ef5130a0d25074367f25d07b73",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a storage request for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c10deee4-f14d-4a5a-ba2d-2a882c63dce8",
+            "rule": "kubernetes:S6864",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/migration-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "d09f62ef5130a0d25074367f25d07b73",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a memory limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c6ff397d-f80b-42d1-94d8-c9093514cc9b",
+            "rule": "kubernetes:S6892",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/migration-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "d09f62ef5130a0d25074367f25d07b73",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a CPU request for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f60eb7e9-c6b7-4e29-887c-5c90d7c7bf34",
+            "rule": "kubernetes:S6596",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/migration-deployment.yaml",
+            "project": "pygoat",
+            "line": 33,
+            "hash": "fed6c6b38b3f92155abcf667efb7c996",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 17,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use a specific version tag for the image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "98962897-be45-4827-ab15-2e311e055032",
+            "rule": "kubernetes:S6865",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/web-deployment.yaml",
+            "project": "pygoat",
+            "line": 27,
+            "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 6,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+            "effort": "1h",
+            "debt": "1h",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "711d8ffb-7ff8-4c6e-8638-870495fe1662",
+            "rule": "kubernetes:S6870",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/web-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "d09f62ef5130a0d25074367f25d07b73",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a storage limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8ff38367-bbae-40f1-b77b-b02ceadd6e07",
+            "rule": "kubernetes:S6864",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/web-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "d09f62ef5130a0d25074367f25d07b73",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a memory limit for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a31236a1-af22-4134-a74c-5d0efd13682a",
+            "rule": "kubernetes:S6897",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/web-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "d09f62ef5130a0d25074367f25d07b73",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a storage request for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "bf2c694c-732c-43af-8c51-77c5c4b9f674",
+            "rule": "kubernetes:S6892",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/web-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "d09f62ef5130a0d25074367f25d07b73",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a CPU request for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f4c088f5-b9f0-46cb-b08f-b50b4bc2cdd3",
+            "rule": "kubernetes:S6873",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/web-deployment.yaml",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "d09f62ef5130a0d25074367f25d07b73",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 10,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify a memory request for this container.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b14aaa3a-0a12-4935-8200-3eae34112302",
+            "rule": "kubernetes:S6596",
+            "severity": "MAJOR",
+            "component": "pygoat:k8s/web-deployment.yaml",
+            "project": "pygoat",
+            "line": 33,
+            "hash": "fed6c6b38b3f92155abcf667efb7c996",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 17,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use a specific version tag for the image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "jim.armstrong@snyk.io",
+            "tags": [],
+            "creationDate": "2021-07-20T21:52:53+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "56f89e18-484b-4693-bbec-e48197f8c92b",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/registration/login.html",
+            "project": "pygoat",
+            "line": 6,
+            "hash": "1e6a56945e73799a639ff6db44df86b2",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 4,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-05-17T16:40:22+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8336feaf-573e-492a-adc6-01c426d8dfa1",
+            "rule": "docker:S7031",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/Dockerfile",
+            "project": "pygoat",
+            "line": 5,
+            "hash": "abfc39c16c680cb5a1c76e27fc35d638",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 0,
+                "endOffset": 3
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/Dockerfile",
+                            "textRange": {
+                                "startLine": 9,
+                                "endLine": 9,
+                                "startOffset": 0,
+                                "endOffset": 3
+                            },
+                            "msg": "consecutive RUN instruction",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/Dockerfile",
+                            "textRange": {
+                                "startLine": 10,
+                                "endLine": 10,
+                                "startOffset": 0,
+                                "endOffset": 3
+                            },
+                            "msg": "consecutive RUN instruction",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/Dockerfile",
+                            "textRange": {
+                                "startLine": 12,
+                                "endLine": 12,
+                                "startOffset": 0,
+                                "endOffset": 3
+                            },
+                            "msg": "consecutive RUN instruction",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Merge this RUN instruction with the consecutive ones.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ade.putra@owasp.org",
+            "tags": [],
+            "creationDate": "2021-05-15T04:17:20+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0bacc69c-b1c5-43dc-ad1c-d249de019a41",
+            "rule": "docker:S7018",
+            "severity": "MINOR",
+            "component": "pygoat:pygoat/Dockerfile",
+            "project": "pygoat",
+            "line": 5,
+            "hash": "abfc39c16c680cb5a1c76e27fc35d638",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 7,
+                "startOffset": 22,
+                "endOffset": 22
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Sort these package names alphanumerically.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ade.putra@owasp.org",
+            "tags": [],
+            "creationDate": "2021-05-10T16:20:10+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "72db5e55-c86f-4284-897f-a1c6d7d3d14e",
+            "rule": "docker:S6587",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/Dockerfile",
+            "project": "pygoat",
+            "line": 5,
+            "hash": "abfc39c16c680cb5a1c76e27fc35d638",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 22,
+                "endOffset": 50
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove cache after installing packages or store it in a cache mount.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ade.putra@owasp.org",
+            "tags": [],
+            "creationDate": "2021-05-10T16:20:10+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "becfd47f-50cf-43e7-a4e5-78154d937fbc",
+            "rule": "docker:S7031",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/Dockerfile",
+            "project": "pygoat",
+            "line": 22,
+            "hash": "c339a06bd8081bc21ce5bfed3fe0273c",
+            "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 0,
+                "endOffset": 3
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/Dockerfile",
+                            "textRange": {
+                                "startLine": 23,
+                                "endLine": 23,
+                                "startOffset": 0,
+                                "endOffset": 3
+                            },
+                            "msg": "consecutive RUN instruction",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Merge this RUN instruction with the consecutive ones.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ade.putra@owasp.org",
+            "tags": [],
+            "creationDate": "2021-05-10T16:20:10+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9d44d05c-e354-494b-866b-fcafb2e63a47",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 432,
+            "hash": "907f2b0a19d7b144c6b57d02529e7197",
+            "textRange": {
+                "startLine": 432,
+                "endLine": 432,
+                "startOffset": 34,
+                "endOffset": 56
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 438,
+                                "endLine": 438,
+                                "startOffset": 38,
+                                "endOffset": 60
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 440,
+                                "endLine": 440,
+                                "startOffset": 39,
+                                "endOffset": 61
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"Lab/A10/a10_lab.html\" 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2021-05-06T15:18:05+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ce486b55-fa87-448b-94ea-9554b32a3b69",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/A10/a10.html",
+            "project": "pygoat",
+            "line": 31,
+            "hash": "1602d1daf176c150df8f7ff8cba305c6",
+            "textRange": {
+                "startLine": 31,
+                "endLine": 31,
+                "startOffset": 6,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-05-03T21:04:14+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ab93353c-e095-46ad-80ba-c62ab68739be",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 401,
+            "hash": "99e6030225114cc41b78ca5373abe586",
+            "textRange": {
+                "startLine": 401,
+                "endLine": 401,
+                "startOffset": 34,
+                "endOffset": 54
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 408,
+                                "endLine": 408,
+                                "startOffset": 42,
+                                "endOffset": 62
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 410,
+                                "endLine": 410,
+                                "startOffset": 43,
+                                "endOffset": 63
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 413,
+                                "endLine": 413,
+                                "startOffset": 39,
+                                "endOffset": 59
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 417,
+                                "endLine": 417,
+                                "startOffset": 28,
+                                "endOffset": 48
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"Lab/A9/a9_lab.html\" 5 times.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2021-05-03T21:04:14+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ffb2efbb-51d2-4ffb-91d1-87a60cef47e2",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 412,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 412,
+                "endLine": 412,
+                "startOffset": 12,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "error-handling",
+                "bad-practice",
+                "suspicious"
+            ],
+            "creationDate": "2021-05-03T21:04:14+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9f97d7c1-9f29-4ea4-b03f-af8b6ad49979",
+            "rule": "python:S930",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 407,
+            "hash": "8f05305d42c1b7762fc12fd98b643d52",
+            "textRange": {
+                "startLine": 407,
+                "endLine": 407,
+                "startOffset": 27,
+                "endOffset": 36
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add 1 missing arguments; 'load' expects 2 positional arguments.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2021-05-03T20:16:51+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "385778e5-a116-44c9-8448-243a18ff535b",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 409,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 409,
+                "endLine": 409,
+                "startOffset": 16,
+                "endOffset": 22
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "error-handling",
+                "bad-practice",
+                "suspicious"
+            ],
+            "creationDate": "2021-05-03T20:16:51+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7974114e-93a2-4a68-b42f-16429c9e0659",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/A9/a9.html",
+            "project": "pygoat",
+            "line": 40,
+            "hash": "9d1c7a9ca0bfafe0a7e65193b915523d",
+            "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 18,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-05-02T15:45:23+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6dc2379e-da1e-4328-be7f-4be9acf022ca",
+            "rule": "python:S101",
+            "severity": "MINOR",
+            "component": "pygoat:pygoat/introduction/models.py",
+            "project": "pygoat",
+            "line": 25,
+            "hash": "0ef6d573b03090cd77264614222f53a3",
+            "textRange": {
+                "startLine": 25,
+                "endLine": 25,
+                "startOffset": 6,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename class \"authLogin\" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f5ab46cf-fb08-40f9-bf73-c2f7d57d0ce4",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/AUTH/auth_home.html",
+            "project": "pygoat",
+            "line": 34,
+            "hash": "f4b110213211e34e713c00597ea622c0",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 18,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3e6370fb-2a4b-4324-a1e9-da75fb6dc626",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 184,
+            "hash": "698232d96c592110b3f9d6ed94e728eb",
+            "textRange": {
+                "startLine": 184,
+                "endLine": 184,
+                "startOffset": 30,
+                "endOffset": 61
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 198,
+                                "endLine": 198,
+                                "startOffset": 31,
+                                "endOffset": 62
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 200,
+                                "endLine": 200,
+                                "startOffset": 34,
+                                "endOffset": 65
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal 'Lab/AUTH/auth_lab_signup.html' 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7331b60c-74c9-474b-a04a-6d23e28cbd27",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 192,
+            "hash": "7cee99e2a4c334e8cab574d370fec233",
+            "textRange": {
+                "startLine": 192,
+                "endLine": 192,
+                "startOffset": 44,
+                "endOffset": 72
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 206,
+                                "endLine": 206,
+                                "startOffset": 40,
+                                "endOffset": 68
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 220,
+                                "endLine": 220,
+                                "startOffset": 44,
+                                "endOffset": 72
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal 'Lab/AUTH/auth_success.html' 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f87021de-ea2f-45bc-a2b0-f1f1b6c7fed1",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 197,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 197,
+                "endLine": 197,
+                "startOffset": 12,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "error-handling",
+                "bad-practice",
+                "suspicious"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "58cbc574-7bfd-4fa0-906f-cd2cc9ca6d82",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 199,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 199,
+                "endLine": 199,
+                "startOffset": 8,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "error-handling",
+                "bad-practice",
+                "suspicious"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "deb1b437-ae5f-4b7c-882a-4587108504f8",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 211,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 211,
+                "endLine": 211,
+                "startOffset": 8,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "error-handling",
+                "bad-practice",
+                "suspicious"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "131f9426-0545-4fd7-91fe-35b040adca59",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 212,
+            "hash": "42f2bdb14e7f662bda616a4c34d45ada",
+            "textRange": {
+                "startLine": 212,
+                "endLine": 212,
+                "startOffset": 34,
+                "endOffset": 64
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 226,
+                                "endLine": 226,
+                                "startOffset": 31,
+                                "endOffset": 61
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 228,
+                                "endLine": 228,
+                                "startOffset": 34,
+                                "endOffset": 64
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal 'Lab/AUTH/auth_lab_login.html' 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a812b032-d014-4d6c-9c79-92fe9180b9e2",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 225,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 225,
+                "endLine": 225,
+                "startOffset": 12,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "error-handling",
+                "bad-practice",
+                "suspicious"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9e16d444-3f18-47ff-8756-d8401faf414a",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 227,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 227,
+                "endLine": 227,
+                "startOffset": 8,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "error-handling",
+                "bad-practice",
+                "suspicious"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3426992c-f3b8-4a9b-ae26-ab1ef701d135",
+            "rule": "python:S1172",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 230,
+            "hash": "9d5b3205aa70970b9aa6a9f483261318",
+            "textRange": {
+                "startLine": 230,
+                "endLine": 230,
+                "startOffset": 20,
+                "endOffset": 27
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused function parameter \"request\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "majmundarkushal9@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2021-05-02T08:48:45+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "218c0d40-5e5d-4d20-b0ee-6fdcaaa20a1c",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 378,
+            "hash": "576205a92d6819204df50ebf72d38044",
+            "textRange": {
+                "startLine": 378,
+                "endLine": 378,
+                "startOffset": 30,
+                "endOffset": 60
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 385,
+                                "endLine": 385,
+                                "startOffset": 30,
+                                "endOffset": 60
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 387,
+                                "endLine": 387,
+                                "startOffset": 30,
+                                "endOffset": 60
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"Lab/sec_mis/sec_mis_lab.html\" 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "amanvijaykumarsingh7792@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2021-04-30T19:18:07+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "88db6fdd-69e7-4864-a61a-f682ad95875e",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 383,
+            "hash": "2901c0f3fe091e510270ee9084a6a4a1",
+            "textRange": {
+                "startLine": 383,
+                "endLine": 383,
+                "startOffset": 4,
+                "endOffset": 9
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"XHost\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "amanvijaykumarsingh7792@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2021-04-30T19:18:07+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e32f6646-7b78-475a-9220-eda1e462c546",
+            "rule": "Web:S6850",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/sec_mis/sec_mis.html",
+            "project": "pygoat",
+            "line": 7,
+            "hash": "00e36a8aa29457a40ec2299bd0f73c6e",
+            "textRange": {
+                "startLine": 7,
+                "endLine": 7,
+                "startOffset": 0,
+                "endOffset": 10
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Headings must have content and the content must be accessible by a screen reader.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "amanvijaykumarsingh7792@gmail.com",
+            "tags": [
+                "accessibility"
+            ],
+            "creationDate": "2021-04-29T13:06:51+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0d14c9fe-ac89-477a-a99e-4db5be07e22a",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/sec_mis/sec_mis.html",
+            "project": "pygoat",
+            "line": 29,
+            "hash": "8fdc010e8c6f35b9b0adc70edc854bb3",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 3,
+                "endOffset": 22
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "amanvijaykumarsingh7792@gmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-29T13:06:51+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1a3dcc28-e8a1-4561-9e8f-22c5c9e95f1e",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 252,
+            "hash": "bb292f00efe0b310b8681d26a9cf952d",
+            "textRange": {
+                "startLine": 252,
+                "endLine": 252,
+                "startOffset": 39,
+                "endOffset": 69
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 254,
+                                "endLine": 254,
+                                "startOffset": 39,
+                                "endOffset": 69
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 258,
+                                "endLine": 258,
+                                "startOffset": 39,
+                                "endOffset": 69
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 262,
+                                "endLine": 262,
+                                "startOffset": 39,
+                                "endOffset": 69
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 265,
+                                "endLine": 265,
+                                "startOffset": 34,
+                                "endOffset": 64
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal 'Lab/BrokenAccess/ba_lab.html' 5 times.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2021-04-27T21:14:47+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0b56cd14-2191-4a48-8705-5ba57cdc669d",
+            "rule": "Web:ImgWithoutAltCheck",
+            "severity": "MINOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/XXE/xxe_lab.html",
+            "project": "pygoat",
+            "line": 12,
+            "hash": "b8061438ea82d3029b246d804d97854e",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 8,
+                "endOffset": 64
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"alt\" attribute to this image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2021-04-24T09:25:55+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ad249521-81d9-4995-a2bd-3c67bbdffb71",
+            "rule": "pythonsecurity:S5131",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 363,
+            "hash": "9a9b6b8b70759907fb676c30bcc7dd58",
+            "textRange": {
+                "startLine": 363,
+                "endLine": 363,
+                "startOffset": 19,
+                "endOffset": 79
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 363,
+                                "endLine": 363,
+                                "startOffset": 19,
+                                "endOffset": 79
+                            },
+                            "msg": "Sink: this invocation is not safe; a malicious value can be used as argument",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 363,
+                                "endLine": 363,
+                                "startOffset": 32,
+                                "endOffset": 78
+                            },
+                            "msg": "This concatenation can propagate malicious content to the newly created string",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 363,
+                                "endLine": 363,
+                                "startOffset": 65,
+                                "endOffset": 70
+                            },
+                            "msg": "The malicious content is concatenated into the string",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 361,
+                                "endLine": 361,
+                                "startOffset": 8,
+                                "endOffset": 42
+                            },
+                            "msg": "A malicious value can be assigned to variable ‘email’",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 361,
+                                "endLine": 361,
+                                "startOffset": 14,
+                                "endOffset": 42
+                            },
+                            "msg": "Source: a user can craft an HTTP request with malicious content",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Change this code to not reflect user-controlled data.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2021-04-24T08:38:40+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c5975a31-ddb9-4a6e-96b2-87e5f0eaec34",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 338,
+            "hash": "1031c26ee33d81762187da72f71317b2",
+            "textRange": {
+                "startLine": 338,
+                "endLine": 338,
+                "startOffset": 26,
+                "endOffset": 51
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 348,
+                                "endLine": 348,
+                                "startOffset": 39,
+                                "endOffset": 64
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 354,
+                                "endLine": 354,
+                                "startOffset": 37,
+                                "endOffset": 62
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 358,
+                                "endLine": 358,
+                                "startOffset": 34,
+                                "endOffset": 59
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 365,
+                                "endLine": 365,
+                                "startOffset": 34,
+                                "endOffset": 59
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"Lab/BrokenAuth/otp.html\" 5 times.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2021-04-24T08:26:15+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1363b367-56de-4c74-9f2e-0252077e3342",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/BrokenAuth/bau.html",
+            "project": "pygoat",
+            "line": 80,
+            "hash": "568ef4ec527e6b4a55a267e238dab4db",
+            "textRange": {
+                "startLine": 80,
+                "endLine": 80,
+                "startOffset": 18,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-24T07:31:35+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "011d7b31-77d1-4615-bde9-37b12568962e",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/BrokenAuth/otp.html",
+            "project": "pygoat",
+            "line": 8,
+            "hash": "679ac85f25e04e755486dceb485b3c55",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 8,
+                "endOffset": 27
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-24T07:31:35+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7eeb4434-eff9-4baf-b120-ccbd19b239fc",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/BrokenAuth/otp.html",
+            "project": "pygoat",
+            "line": 26,
+            "hash": "0743916ae63eb1b195545cedfd103b98",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 11,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-24T07:31:35+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ac6e67b0-dddc-4ab6-bc8b-5e4bb7809b3e",
+            "rule": "python:S1542",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 341,
+            "hash": "362a9584d5536c3a27f60cd5687f59fb",
+            "textRange": {
+                "startLine": 341,
+                "endLine": 341,
+                "startOffset": 4,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename function \"Otp\" to match the regular expression ^[a-z_][a-z0-9_]*$.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2021-04-24T07:31:35+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "25711f5b-1937-4b0f-b587-f77d99451fb8",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 344,
+            "hash": "3115007cc84074b432d129b7b68ab8b5",
+            "textRange": {
+                "startLine": 344,
+                "endLine": 344,
+                "startOffset": 8,
+                "endOffset": 12
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"otpN\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2021-04-24T07:31:35+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "60774f07-c549-461d-aa17-173a3b29f678",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 360,
+            "hash": "9fab9e41b1c34203f5d411ae063d2191",
+            "textRange": {
+                "startLine": 360,
+                "endLine": 360,
+                "startOffset": 8,
+                "endOffset": 12
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"otpR\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2021-04-24T07:31:35+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8c30d5bb-6c3c-4b7f-9b9c-56e811cb8095",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/DataExp/data_exp.html",
+            "project": "pygoat",
+            "line": 26,
+            "hash": "d169c99357f6418499315d953fdb3cfe",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 18,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "amanvijaykumarsingh7792@gmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-22T04:37:40+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "64167ee2-08c3-4543-ad4a-f440c2fac1ef",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/CMD/cmd.html",
+            "project": "pygoat",
+            "line": 54,
+            "hash": "0a332d3defa5e20c9c9780273187647a",
+            "textRange": {
+                "startLine": 54,
+                "endLine": 54,
+                "startOffset": 18,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-21T18:04:19+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "9a141b05-ace8-44b2-a42a-e2204ffc1807",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/CMD/cmd_lab.html",
+            "project": "pygoat",
+            "line": 8,
+            "hash": "27906744c022e1ac00837f86667a8c6d",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 4,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-21T18:04:19+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6a36950c-e5e2-4a4a-8b44-babbeeda1f3d",
+            "rule": "css:S4654",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/templates/Lab/CMD/cmd_lab.html",
+            "project": "pygoat",
+            "line": 15,
+            "hash": "7610d24d6b4544f86d3c4944ef83bb70",
+            "textRange": {
+                "startLine": 15,
+                "endLine": 15,
+                "startOffset": 0,
+                "endOffset": 85
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected unknown property \"align\"",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [],
+            "creationDate": "2021-04-21T18:04:19+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "50b4b9b9-0ac0-458a-abec-0a60730816be",
+            "rule": "pythonsecurity:S2076",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 312,
+            "hash": "e8abc742258d8851e3294935524899e2",
+            "textRange": {
+                "startLine": 312,
+                "endLine": 312,
+                "startOffset": 19,
+                "endOffset": 79
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 312,
+                                "endLine": 312,
+                                "startOffset": 19,
+                                "endOffset": 79
+                            },
+                            "msg": "Sink: this invocation is not safe; a malicious value can be used as argument",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 308,
+                                "endLine": 308,
+                                "startOffset": 16,
+                                "endOffset": 52
+                            },
+                            "msg": "A malicious value can be assigned to variable ‘command’",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 308,
+                                "endLine": 308,
+                                "startOffset": 24,
+                                "endOffset": 52
+                            },
+                            "msg": "This string operation can propagate malicious content to the returned object",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 304,
+                                "endLine": 304,
+                                "startOffset": 12,
+                                "endOffset": 52
+                            },
+                            "msg": "A malicious value can be assigned to variable ‘domain’",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 304,
+                                "endLine": 304,
+                                "startOffset": 19,
+                                "endOffset": 52
+                            },
+                            "msg": "This string operation can propagate malicious content to the returned object",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 303,
+                                "endLine": 303,
+                                "startOffset": 12,
+                                "endOffset": 45
+                            },
+                            "msg": "A malicious value can be assigned to variable ‘domain’",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 303,
+                                "endLine": 303,
+                                "startOffset": 19,
+                                "endOffset": 45
+                            },
+                            "msg": "Source: a user can craft an HTTP request with malicious content",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Change this code to not construct the OS command from user-controlled data.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2021-04-21T18:04:19+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3140744d-4bd7-40b2-8bca-b805222d0b51",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/BrokenAccess/ba.html",
+            "project": "pygoat",
+            "line": 40,
+            "hash": "532c128938e5bdb6dff390d88815c951",
+            "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 18,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-19T08:49:04+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e658dac6-1d4b-4f55-b744-3264fd93021c",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/insec_des/insec_des.html",
+            "project": "pygoat",
+            "line": 28,
+            "hash": "8fdc010e8c6f35b9b0adc70edc854bb3",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 3,
+                "endOffset": 22
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "amanvijaykumarsingh7792@gmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-18T15:21:27+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ee86ae9e-9726-4584-b19f-3c0d626cfa4c",
+            "rule": "css:S4654",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/templates/Lab/insec_des/insec_des_lab.html",
+            "project": "pygoat",
+            "line": 7,
+            "hash": "34703aaf964f148de0eea41746390ddb",
+            "textRange": {
+                "startLine": 7,
+                "endLine": 7,
+                "startOffset": 0,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected unknown property \"align\"",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "amanvijaykumarsingh7792@gmail.com",
+            "tags": [],
+            "creationDate": "2021-04-18T15:21:27+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0d0f20fa-00c7-4600-89dd-5929a9c3e082",
+            "rule": "javascript:S2703",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/static/Lab/xss.js",
+            "project": "pygoat",
+            "line": 17,
+            "hash": "cfd635cf8be86bcacdc23c6ef25420ff",
+            "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 8,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add the \"let\", \"const\" or \"var\" keyword to this declaration of \"comment\" to make it explicit.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2371c637-f97b-4a2f-b817-96773b807c66",
+            "rule": "javascript:S3504",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/static/Lab/xss.js",
+            "project": "pygoat",
+            "line": 20,
+            "hash": "6124bcaa4268079b57b16e33d2cf39f7",
+            "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 8,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected var, use let or const instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "es2015",
+                "bad-practice"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0600e86f-48ab-43f4-b419-4853ffe69df0",
+            "rule": "javascript:S2703",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/static/Lab/xss.js",
+            "project": "pygoat",
+            "line": 22,
+            "hash": "12fd7d8c46cd907d496fd38c2f0bda32",
+            "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 8,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add the \"let\", \"const\" or \"var\" keyword to this declaration of \"xml\" to make it explicit.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3174b5c2-1bc7-4336-9a49-6f74c2bb3462",
+            "rule": "javascript:S3504",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/static/Lab/xss.js",
+            "project": "pygoat",
+            "line": 23,
+            "hash": "9090bad7ebb81506bbbc010040db2f28",
+            "textRange": {
+                "startLine": 23,
+                "endLine": 23,
+                "startOffset": 7,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected var, use let or const instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "es2015",
+                "bad-practice"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "51833e87-3ef3-49fb-9e3c-6d989d3a296e",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/XXE/xxe.html",
+            "project": "pygoat",
+            "line": 66,
+            "hash": "ec5c94fa79a685749238f7980e9f1501",
+            "textRange": {
+                "startLine": 66,
+                "endLine": 66,
+                "startOffset": 18,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "255afa60-7a65-4e99-bdd6-fce89ab88f9d",
+            "rule": "Web:AvoidCommentedOutCodeCheck",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/XXE/xxe_lab.html",
+            "project": "pygoat",
+            "line": 9,
+            "hash": "9399c6c20c49881e14272fcc8c966bd1",
+            "textRange": {
+                "startLine": 9,
+                "endLine": 9,
+                "startOffset": 0,
+                "endOffset": 90
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "5b9dc0c0-7120-4c69-8931-d6d9532e5e32",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 143,
+            "hash": "fad00872212d6e2c5e1a9597479fdb4f",
+            "textRange": {
+                "startLine": 143,
+                "endLine": 143,
+                "startOffset": 30,
+                "endOffset": 52
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 153,
+                                "endLine": 153,
+                                "startOffset": 30,
+                                "endOffset": 52
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 173,
+                                "endLine": 173,
+                                "startOffset": 27,
+                                "endOffset": 49
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal 'Lab/XXE/xxe_lab.html' 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ccb11ebb-4fd1-4b83-82e9-026a52609220",
+            "rule": "python:S2755",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 162,
+            "hash": "ea3d9e646cad0662c2c0dce03b5341da",
+            "textRange": {
+                "startLine": 162,
+                "endLine": 162,
+                "startOffset": 4,
+                "endOffset": 49
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 161,
+                                "endLine": 161,
+                                "startOffset": 13,
+                                "endOffset": 26
+                            },
+                            "msg": "This function loads the XML code and triggers the vulnerability.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Disable access to external entities in XML parsing.",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3f9bd931-af51-4dc8-b156-cf0eac50d0bc",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 168,
+            "hash": "c38c56b37dca9b1264596c9b8bf5e757",
+            "textRange": {
+                "startLine": 168,
+                "endLine": 168,
+                "startOffset": 4,
+                "endOffset": 12
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"startInd\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c402bf59-7506-4717-a36c-e7eb50dcd685",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 169,
+            "hash": "f465f73e6f30c8c43570a48411278cf1",
+            "textRange": {
+                "startLine": 169,
+                "endLine": 169,
+                "startOffset": 4,
+                "endOffset": 10
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"endInd\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6fb5f693-76ef-4c32-a8d4-3493005bf865",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 171,
+            "hash": "95e90e5e6ecef0d14d4d02e058c14adf",
+            "textRange": {
+                "startLine": 171,
+                "endLine": 171,
+                "startOffset": 4,
+                "endOffset": 5
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"p\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2021-04-17T19:19:25+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "e0ce65de-42b2-48bb-b52e-609a43bc7440",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/SQL/sql.html",
+            "project": "pygoat",
+            "line": 62,
+            "hash": "72a07c1a0d57fe49d71c4dc081e6321c",
+            "textRange": {
+                "startLine": 62,
+                "endLine": 62,
+                "startOffset": 18,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-15T14:03:40+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "336f93d7-c8d6-4769-a8b5-0a76e3ce92e2",
+            "rule": "pythonsecurity:S3649",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 86,
+            "hash": "5acd2e8afcf8237906b9c7ba62858240",
+            "textRange": {
+                "startLine": 86,
+                "endLine": 86,
+                "startOffset": 20,
+                "endOffset": 122
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 86,
+                                "endLine": 86,
+                                "startOffset": 20,
+                                "endOffset": 122
+                            },
+                            "msg": "Sink: this invocation is not safe; a malicious value can be used as argument",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 86,
+                                "endLine": 86,
+                                "startOffset": 38,
+                                "endOffset": 121
+                            },
+                            "msg": "This concatenation can propagate malicious content to the newly created string",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 86,
+                                "endLine": 86,
+                                "startOffset": 86,
+                                "endOffset": 90
+                            },
+                            "msg": "The malicious content is concatenated into the string",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 76,
+                                "endLine": 76,
+                                "startOffset": 8,
+                                "endOffset": 37
+                            },
+                            "msg": "A malicious value can be assigned to variable ‘name’",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 76,
+                                "endLine": 76,
+                                "startOffset": 13,
+                                "endOffset": 37
+                            },
+                            "msg": "Source: a user can craft an HTTP request with malicious content",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 86,
+                                "endLine": 86,
+                                "startOffset": 20,
+                                "endOffset": 122
+                            },
+                            "msg": "Sink: this invocation is not safe; a malicious value can be used as argument",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 86,
+                                "endLine": 86,
+                                "startOffset": 38,
+                                "endOffset": 121
+                            },
+                            "msg": "This concatenation can propagate malicious content to the newly created string",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 86,
+                                "endLine": 86,
+                                "startOffset": 109,
+                                "endOffset": 117
+                            },
+                            "msg": "The malicious content is concatenated into the string",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 78,
+                                "endLine": 78,
+                                "startOffset": 8,
+                                "endOffset": 41
+                            },
+                            "msg": "A malicious value can be assigned to variable ‘password’",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 78,
+                                "endLine": 78,
+                                "startOffset": 17,
+                                "endOffset": 41
+                            },
+                            "msg": "Source: a user can craft an HTTP request with malicious content",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Change this code to not construct SQL queries directly from user-controlled data.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "cwe",
+                "sql"
+            ],
+            "creationDate": "2021-04-15T14:03:40+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0b68d3f2-abb3-4a8d-b12d-dbb66c686af7",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/views.py",
+            "project": "pygoat",
+            "line": 90,
+            "hash": "8902028bc428a75394062f7e473acaeb",
+            "textRange": {
+                "startLine": 90,
+                "endLine": 90,
+                "startOffset": 43,
+                "endOffset": 65
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 92,
+                                "endLine": 92,
+                                "startOffset": 43,
+                                "endOffset": 65
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 94,
+                                "endLine": 94,
+                                "startOffset": 39,
+                                "endOffset": 61
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 96,
+                                "endLine": 96,
+                                "startOffset": 35,
+                                "endOffset": 57
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal 'Lab/SQL/sql_lab.html' 4 times.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2021-04-15T14:03:40+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "66bfe2fd-58e3-4dd8-a24b-646e62b62f64",
+            "rule": "css:S4654",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/templates/Lab/XSS/xss_lab.html",
+            "project": "pygoat",
+            "line": 9,
+            "hash": "34703aaf964f148de0eea41746390ddb",
+            "textRange": {
+                "startLine": 9,
+                "endLine": 9,
+                "startOffset": 0,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected unknown property \"align\"",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [],
+            "creationDate": "2021-04-14T16:34:47+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2513473b-f6ac-4017-bf45-db1af17088b3",
+            "rule": "css:S4654",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/templates/Lab/XSS/xss_lab.html",
+            "project": "pygoat",
+            "line": 10,
+            "hash": "5baa2c0aa452f358d57f17807f704392",
+            "textRange": {
+                "startLine": 10,
+                "endLine": 10,
+                "startOffset": 0,
+                "endOffset": 48
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected unknown property \"align\"",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [],
+            "creationDate": "2021-04-14T16:34:47+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "eb1fdf41-f2ce-4e6a-8d24-d60ea05b40cf",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/XSS/xss_lab.html",
+            "project": "pygoat",
+            "line": 11,
+            "hash": "3fc2ce779c204119a86b5a3a476be740",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 8,
+                "endOffset": 27
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-14T16:34:47+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0586e48d-1a98-4711-b6af-5b2d29157cd1",
+            "rule": "pythonsecurity:S5131",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/templates/Lab/XSS/xss_lab.html",
+            "project": "pygoat",
+            "line": 27,
+            "hash": "93f3373d69148cf1728f0537da750e14",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 24,
+                "endOffset": 29
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "pygoat:pygoat/introduction/templates/Lab/XSS/xss_lab.html",
+                            "textRange": {
+                                "startLine": 27,
+                                "endLine": 27,
+                                "startOffset": 24,
+                                "endOffset": 29
+                            },
+                            "msg": "Sink: this invocation is not safe; a malicious value can be injected into the caller",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 60,
+                                "endLine": 60,
+                                "startOffset": 19,
+                                "endOffset": 71
+                            },
+                            "msg": "This instruction can propagate malicious content",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 60,
+                                "endLine": 60,
+                                "startOffset": 59,
+                                "endOffset": 69
+                            },
+                            "msg": "A malicious value can be assigned to this data structure",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 54,
+                                "endLine": 54,
+                                "startOffset": 8,
+                                "endOffset": 33
+                            },
+                            "msg": "A malicious value can be assigned to variable ‘q’",
+                            "msgFormattings": []
+                        },
+                        {
+                            "component": "pygoat:pygoat/introduction/views.py",
+                            "textRange": {
+                                "startLine": 54,
+                                "endLine": 54,
+                                "startOffset": 10,
+                                "endOffset": 33
+                            },
+                            "msg": "Source: a user can craft an HTTP request with malicious content",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Change this code to not reflect user-controlled data.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2021-04-14T16:34:47+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ac471702-8408-4484-bb46-65753fcd5e89",
+            "rule": "javascript:S3504",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/static/Lab/xss.js",
+            "project": "pygoat",
+            "line": 1,
+            "hash": "ea1de2abfdd449ce6f032609f9a1c42b",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 0,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected var, use let or const instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "es2015",
+                "bad-practice"
+            ],
+            "creationDate": "2021-04-13T17:31:02+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "50d70aab-7421-4c48-9d27-43ccc9a0642a",
+            "rule": "javascript:S3504",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/static/Lab/xss.js",
+            "project": "pygoat",
+            "line": 2,
+            "hash": "54fad9dc842c69a944805224917152c1",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 0,
+                "endOffset": 5
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected var, use let or const instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "es2015",
+                "bad-practice"
+            ],
+            "creationDate": "2021-04-13T17:31:02+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "bae32c14-6f31-4e63-b588-e459808da68f",
+            "rule": "javascript:S3504",
+            "severity": "CRITICAL",
+            "component": "pygoat:pygoat/introduction/static/Lab/xss.js",
+            "project": "pygoat",
+            "line": 7,
+            "hash": "395111ca242d79e90e308a786e3b81bc",
+            "textRange": {
+                "startLine": 7,
+                "endLine": 7,
+                "startOffset": 4,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected var, use let or const instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "es2015",
+                "bad-practice"
+            ],
+            "creationDate": "2021-04-13T17:31:02+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2d09ab2f-f68f-4f8a-9e30-b63ea4a86fb8",
+            "rule": "css:S4654",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/introduction/static/introduction/style4.css",
+            "project": "pygoat",
+            "line": 213,
+            "hash": "34255057204e19aed67958669104ebe8",
+            "textRange": {
+                "startLine": 213,
+                "endLine": 213,
+                "startOffset": 0,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected unknown property \"font-height\"",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [],
+            "creationDate": "2021-04-13T17:31:02+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a8260739-71dd-4371-9f49-67d0239141ac",
+            "rule": "Web:S1827",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/Lab/XSS/xss.html",
+            "project": "pygoat",
+            "line": 61,
+            "hash": "1cd4cc412f336e8dd14cc7f103cf8f77",
+            "textRange": {
+                "startLine": 61,
+                "endLine": 61,
+                "startOffset": 18,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this deprecated \"align\" attribute.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "shaikajmal.r2000@hotmail.com",
+            "tags": [
+                "html5",
+                "obsolete"
+            ],
+            "creationDate": "2021-04-13T17:31:02+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f03f53a6-b205-4568-9ffc-bdfce083b83a",
+            "rule": "css:S4666",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/static/introduction/style4.css",
+            "project": "pygoat",
+            "line": 131,
+            "hash": "736d49f639b1079e327edf99579c9638",
+            "textRange": {
+                "startLine": 131,
+                "endLine": 131,
+                "startOffset": 0,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected duplicate selector \"#sidebar ul li a\", first used at line 86",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "gauravkumaryadav618@gmail.com",
+            "tags": [],
+            "creationDate": "2020-06-21T01:52:28+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f90b0792-c8f7-4bc4-8dae-c754b89cab39",
+            "rule": "css:S125",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/static/introduction/style4.css",
+            "project": "pygoat",
+            "line": 182,
+            "hash": "80daf81fe0fc963ecc784dfbcba6adc0",
+            "textRange": {
+                "startLine": 182,
+                "endLine": 182,
+                "startOffset": 0,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "gauravkumaryadav618@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2020-06-21T01:52:28+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "b8fa253b-eb2f-4779-bb59-8cc582b1c2e4",
+            "rule": "css:S125",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/static/introduction/style4.css",
+            "project": "pygoat",
+            "line": 187,
+            "hash": "2992e5a7232b96a5de36baed273ab509",
+            "textRange": {
+                "startLine": 187,
+                "endLine": 187,
+                "startOffset": 0,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "gauravkumaryadav618@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2020-06-21T01:52:28+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c17f1af4-7836-40e1-aa57-f7f354d1bac2",
+            "rule": "css:S4666",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/static/introduction/style4.css",
+            "project": "pygoat",
+            "line": 304,
+            "hash": "8cc0a483d1b9eb39a9566503f8d0e870",
+            "textRange": {
+                "startLine": 304,
+                "endLine": 304,
+                "startOffset": 0,
+                "endOffset": 24
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected duplicate selector \"#sidebar ul li a i\", first used at line 297",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "gauravkumaryadav618@gmail.com",
+            "tags": [],
+            "creationDate": "2020-06-21T01:52:28+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f695f4e4-3c79-4492-9fd1-2718b9a8867f",
+            "rule": "css:S4666",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/static/introduction/style4.css",
+            "project": "pygoat",
+            "line": 307,
+            "hash": "7f82f3342db2ddaeafe1719ecaf82d8e",
+            "textRange": {
+                "startLine": 307,
+                "endLine": 307,
+                "startOffset": 0,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected duplicate selector \"#sidebar\", first used at line 267",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "gauravkumaryadav618@gmail.com",
+            "tags": [],
+            "creationDate": "2020-06-21T01:52:28+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ed4fca43-602d-4ae2-99bf-3b7000242922",
+            "rule": "Web:S5255",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/introduction/base.html",
+            "project": "pygoat",
+            "line": 30,
+            "hash": "25fb1da55591b4a74557bb9de2ad782d",
+            "textRange": {
+                "startLine": 30,
+                "endLine": 30,
+                "startOffset": 12,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"aria-label\" or \"aria-labbelledby\" attribute to this element.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "gauravkumaryadav618@gmail.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2020-06-21T01:52:28+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "38306cd9-4e51-4029-bdca-89ec29c0fb7e",
+            "rule": "Web:S5255",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/introduction/base.html",
+            "project": "pygoat",
+            "line": 133,
+            "hash": "c0b7521fe16ecea2fd0a2a6d1df2f19e",
+            "textRange": {
+                "startLine": 133,
+                "endLine": 133,
+                "startOffset": 16,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add an \"aria-label\" or \"aria-labbelledby\" attribute to this element.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "gauravkumaryadav618@gmail.com",
+            "tags": [
+                "accessibility",
+                "wcag2-a"
+            ],
+            "creationDate": "2020-06-21T01:52:28+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c08768dd-466b-4111-b5bc-f7f18eb12354",
+            "rule": "Web:AvoidCommentedOutCodeCheck",
+            "severity": "MAJOR",
+            "component": "pygoat:pygoat/introduction/templates/introduction/base.html",
+            "project": "pygoat",
+            "line": 159,
+            "hash": "433320fb00d8cd3ee2512bb2f0b8fb6d",
+            "textRange": {
+                "startLine": 159,
+                "endLine": 159,
+                "startOffset": 0,
+                "endOffset": 58
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "gauravkumaryadav618@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2020-06-21T01:52:28+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "afc2fc6c-87a5-4c74-bfc6-9eacaebe82e8",
+            "rule": "secrets:S6687",
+            "severity": "BLOCKER",
+            "component": "pygoat:pygoat/pygoat/settings.py",
+            "project": "pygoat",
+            "line": 25,
+            "hash": "1b9e631b53e4b6dee2fec8f6810c3b8b",
+            "textRange": {
+                "startLine": 25,
+                "endLine": 25,
+                "startOffset": 14,
+                "endOffset": 64
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Make sure this Django key gets revoked, changed, and removed from the code.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "gauravkumaryadav618@gmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2020-06-03T01:47:19+0000",
+            "updateDate": "2024-11-14T03:52:34+0000",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        }
+    ],
+    "components": [
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/BrokenAccess/ba.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ba.html",
+            "longName": "pygoat/introduction/templates/Lab/BrokenAccess/ba.html",
+            "path": "pygoat/introduction/templates/Lab/BrokenAccess/ba.html"
+        },
+        {
+            "key": "pygoat:pygoat/Dockerfile",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Dockerfile",
+            "longName": "pygoat/Dockerfile",
+            "path": "pygoat/Dockerfile"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/CMD/cmd.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "cmd.html",
+            "longName": "pygoat/introduction/templates/Lab/CMD/cmd.html",
+            "path": "pygoat/introduction/templates/Lab/CMD/cmd.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/DataExp/data_exp.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "data_exp.html",
+            "longName": "pygoat/introduction/templates/Lab/DataExp/data_exp.html",
+            "path": "pygoat/introduction/templates/Lab/DataExp/data_exp.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/XXE/xxe.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "xxe.html",
+            "longName": "pygoat/introduction/templates/Lab/XXE/xxe.html",
+            "path": "pygoat/introduction/templates/Lab/XXE/xxe.html"
+        },
+        {
+            "key": "pygoat",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "pygoat",
+            "longName": "pygoat"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/XXE/xxe_lab.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "xxe_lab.html",
+            "longName": "pygoat/introduction/templates/Lab/XXE/xxe_lab.html",
+            "path": "pygoat/introduction/templates/Lab/XXE/xxe_lab.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/introduction/base.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "base.html",
+            "longName": "pygoat/introduction/templates/introduction/base.html",
+            "path": "pygoat/introduction/templates/introduction/base.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/BrokenAuth/otp.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "otp.html",
+            "longName": "pygoat/introduction/templates/Lab/BrokenAuth/otp.html",
+            "path": "pygoat/introduction/templates/Lab/BrokenAuth/otp.html"
+        },
+        {
+            "key": "pygoat:k8s/web-deployment.yaml",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "web-deployment.yaml",
+            "longName": "k8s/web-deployment.yaml",
+            "path": "k8s/web-deployment.yaml"
+        },
+        {
+            "key": "pygoat:pygoat/pygoat/settings.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "settings.py",
+            "longName": "pygoat/pygoat/settings.py",
+            "path": "pygoat/pygoat/settings.py"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/registration/login.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "login.html",
+            "longName": "pygoat/introduction/templates/registration/login.html",
+            "path": "pygoat/introduction/templates/registration/login.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/BrokenAuth/bau.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "bau.html",
+            "longName": "pygoat/introduction/templates/Lab/BrokenAuth/bau.html",
+            "path": "pygoat/introduction/templates/Lab/BrokenAuth/bau.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/XSS/xss_lab.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "xss_lab.html",
+            "longName": "pygoat/introduction/templates/Lab/XSS/xss_lab.html",
+            "path": "pygoat/introduction/templates/Lab/XSS/xss_lab.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/A9/a9.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "a9.html",
+            "longName": "pygoat/introduction/templates/Lab/A9/a9.html",
+            "path": "pygoat/introduction/templates/Lab/A9/a9.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/AUTH/auth_home.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "auth_home.html",
+            "longName": "pygoat/introduction/templates/Lab/AUTH/auth_home.html",
+            "path": "pygoat/introduction/templates/Lab/AUTH/auth_home.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/static/Lab/xss.js",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "xss.js",
+            "longName": "pygoat/introduction/static/Lab/xss.js",
+            "path": "pygoat/introduction/static/Lab/xss.js"
+        },
+        {
+            "key": "pygoat:k8s/migration-deployment.yaml",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "migration-deployment.yaml",
+            "longName": "k8s/migration-deployment.yaml",
+            "path": "k8s/migration-deployment.yaml"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/A10/a10.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "a10.html",
+            "longName": "pygoat/introduction/templates/Lab/A10/a10.html",
+            "path": "pygoat/introduction/templates/Lab/A10/a10.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/SQL/sql.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "sql.html",
+            "longName": "pygoat/introduction/templates/Lab/SQL/sql.html",
+            "path": "pygoat/introduction/templates/Lab/SQL/sql.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/insec_des/insec_des_lab.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "insec_des_lab.html",
+            "longName": "pygoat/introduction/templates/Lab/insec_des/insec_des_lab.html",
+            "path": "pygoat/introduction/templates/Lab/insec_des/insec_des_lab.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/static/introduction/style4.css",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "style4.css",
+            "longName": "pygoat/introduction/static/introduction/style4.css",
+            "path": "pygoat/introduction/static/introduction/style4.css"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/sec_mis/sec_mis.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "sec_mis.html",
+            "longName": "pygoat/introduction/templates/Lab/sec_mis/sec_mis.html",
+            "path": "pygoat/introduction/templates/Lab/sec_mis/sec_mis.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/CMD/cmd_lab.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "cmd_lab.html",
+            "longName": "pygoat/introduction/templates/Lab/CMD/cmd_lab.html",
+            "path": "pygoat/introduction/templates/Lab/CMD/cmd_lab.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/XSS/xss.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "xss.html",
+            "longName": "pygoat/introduction/templates/Lab/XSS/xss.html",
+            "path": "pygoat/introduction/templates/Lab/XSS/xss.html"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/views.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "views.py",
+            "longName": "pygoat/introduction/views.py",
+            "path": "pygoat/introduction/views.py"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/models.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "models.py",
+            "longName": "pygoat/introduction/models.py",
+            "path": "pygoat/introduction/models.py"
+        },
+        {
+            "key": "pygoat:pygoat/introduction/templates/Lab/insec_des/insec_des.html",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "insec_des.html",
+            "longName": "pygoat/introduction/templates/Lab/insec_des/insec_des.html",
+            "path": "pygoat/introduction/templates/Lab/insec_des/insec_des.html"
+        },
+        {
+            "key": "pygoat:k8s/db-deployment.yaml",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "db-deployment.yaml",
+            "longName": "k8s/db-deployment.yaml",
+            "path": "k8s/db-deployment.yaml"
+        }
+    ],
+    "facets": []
+}

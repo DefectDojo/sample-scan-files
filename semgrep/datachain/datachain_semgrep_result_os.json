@@ -1,0 +1,878 @@
+{
+    "errors": [],
+    "interfile_languages_used": [],
+    "paths": {
+        "scanned": [
+            ".cruft.json",
+            ".gitattributes",
+            ".github/ISSUE_TEMPLATE/bug_report.yml",
+            ".github/ISSUE_TEMPLATE/empty_issue.md",
+            ".github/ISSUE_TEMPLATE/feature_request.yml",
+            ".github/codecov.yaml",
+            ".github/dependabot.yml",
+            ".github/workflows/SAST.yml",
+            ".gitignore",
+            ".pre-commit-config.yaml",
+            "CODE_OF_CONDUCT.rst",
+            "CONTRIBUTING.rst",
+            "LICENSE",
+            "README.rst",
+            "docs/assets/captioned_cartoons.png",
+            "docs/assets/datachain-white.svg",
+            "docs/assets/datachain.svg",
+            "docs/index.md",
+            "docs/references/datachain.md",
+            "docs/references/datatype.md",
+            "docs/references/file.md",
+            "docs/references/index.md",
+            "docs/references/sql.md",
+            "docs/references/torch.md",
+            "docs/references/udf.md",
+            "examples/computer_vision/iptc_exif_xmp_lib.py",
+            "examples/computer_vision/llava2_image_desc_lib.py",
+            "examples/computer_vision/openimage-detect.py",
+            "examples/get_started/common_sql_functions.py",
+            "examples/get_started/json-csv-reader.py",
+            "examples/get_started/torch-loader.py",
+            "examples/get_started/udfs/parallel.py",
+            "examples/get_started/udfs/simple.py",
+            "examples/get_started/udfs/stateful.py",
+            "examples/llm_and_nlp/claude-query.py",
+            "examples/llm_and_nlp/hf-dataset-llm-eval.py",
+            "examples/llm_and_nlp/unstructured-embeddings-gen.py",
+            "examples/llm_and_nlp/unstructured-summary-map.py",
+            "examples/multimodal/clip_inference.py",
+            "examples/multimodal/hf_pipeline.py",
+            "examples/multimodal/openai_image_desc_lib.py",
+            "examples/multimodal/wds.py",
+            "examples/multimodal/wds_filtered.py",
+            "mkdocs.yml",
+            "noxfile.py",
+            "overrides/main.html",
+            "pyproject.toml",
+            "src/datachain/__init__.py",
+            "src/datachain/__main__.py",
+            "src/datachain/asyn.py",
+            "src/datachain/cache.py",
+            "src/datachain/catalog/__init__.py",
+            "src/datachain/catalog/catalog.py",
+            "src/datachain/catalog/datasource.py",
+            "src/datachain/catalog/loader.py",
+            "src/datachain/cli.py",
+            "src/datachain/cli_utils.py",
+            "src/datachain/client/__init__.py",
+            "src/datachain/client/azure.py",
+            "src/datachain/client/fileslice.py",
+            "src/datachain/client/fsspec.py",
+            "src/datachain/client/gcs.py",
+            "src/datachain/client/hf.py",
+            "src/datachain/client/local.py",
+            "src/datachain/client/s3.py",
+            "src/datachain/config.py",
+            "src/datachain/data_storage/__init__.py",
+            "src/datachain/data_storage/db_engine.py",
+            "src/datachain/data_storage/id_generator.py",
+            "src/datachain/data_storage/job.py",
+            "src/datachain/data_storage/metastore.py",
+            "src/datachain/data_storage/schema.py",
+            "src/datachain/data_storage/serializer.py",
+            "src/datachain/data_storage/sqlite.py",
+            "src/datachain/data_storage/warehouse.py",
+            "src/datachain/dataset.py",
+            "src/datachain/error.py",
+            "src/datachain/job.py",
+            "src/datachain/lib/__init__.py",
+            "src/datachain/lib/arrow.py",
+            "src/datachain/lib/clip.py",
+            "src/datachain/lib/convert/__init__.py",
+            "src/datachain/lib/convert/flatten.py",
+            "src/datachain/lib/convert/python_to_sql.py",
+            "src/datachain/lib/convert/sql_to_python.py",
+            "src/datachain/lib/convert/unflatten.py",
+            "src/datachain/lib/convert/values_to_tuples.py",
+            "src/datachain/lib/data_model.py",
+            "src/datachain/lib/dataset_info.py",
+            "src/datachain/lib/dc.py",
+            "src/datachain/lib/file.py",
+            "src/datachain/lib/func/__init__.py",
+            "src/datachain/lib/func/aggregate.py",
+            "src/datachain/lib/func/func.py",
+            "src/datachain/lib/hf.py",
+            "src/datachain/lib/image.py",
+            "src/datachain/lib/listing.py",
+            "src/datachain/lib/listing_info.py",
+            "src/datachain/lib/meta_formats.py",
+            "src/datachain/lib/model_store.py",
+            "src/datachain/lib/models/__init__.py",
+            "src/datachain/lib/models/bbox.py",
+            "src/datachain/lib/models/pose.py",
+            "src/datachain/lib/models/yolo.py",
+            "src/datachain/lib/pytorch.py",
+            "src/datachain/lib/settings.py",
+            "src/datachain/lib/signal_schema.py",
+            "src/datachain/lib/tar.py",
+            "src/datachain/lib/text.py",
+            "src/datachain/lib/udf.py",
+            "src/datachain/lib/udf_signature.py",
+            "src/datachain/lib/utils.py",
+            "src/datachain/lib/vfile.py",
+            "src/datachain/lib/webdataset.py",
+            "src/datachain/lib/webdataset_laion.py",
+            "src/datachain/listing.py",
+            "src/datachain/node.py",
+            "src/datachain/nodes_fetcher.py",
+            "src/datachain/nodes_thread_pool.py",
+            "src/datachain/progress.py",
+            "src/datachain/py.typed",
+            "src/datachain/query/__init__.py",
+            "src/datachain/query/batch.py",
+            "src/datachain/query/dataset.py",
+            "src/datachain/query/dispatch.py",
+            "src/datachain/query/metrics.py",
+            "src/datachain/query/params.py",
+            "src/datachain/query/queue.py",
+            "src/datachain/query/schema.py",
+            "src/datachain/query/session.py",
+            "src/datachain/remote/__init__.py",
+            "src/datachain/remote/studio.py",
+            "src/datachain/sql/__init__.py",
+            "src/datachain/sql/default/__init__.py",
+            "src/datachain/sql/default/base.py",
+            "src/datachain/sql/functions/__init__.py",
+            "src/datachain/sql/functions/aggregate.py",
+            "src/datachain/sql/functions/array.py",
+            "src/datachain/sql/functions/conditional.py",
+            "src/datachain/sql/functions/path.py",
+            "src/datachain/sql/functions/random.py",
+            "src/datachain/sql/functions/string.py",
+            "src/datachain/sql/selectable.py",
+            "src/datachain/sql/sqlite/__init__.py",
+            "src/datachain/sql/sqlite/base.py",
+            "src/datachain/sql/sqlite/types.py",
+            "src/datachain/sql/sqlite/vector.py",
+            "src/datachain/sql/types.py",
+            "src/datachain/sql/utils.py",
+            "src/datachain/studio.py",
+            "src/datachain/telemetry.py",
+            "src/datachain/torch/__init__.py",
+            "src/datachain/utils.py"
+        ]
+    },
+    "results": [
+        {
+            "check_id": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+            "end": {
+                "col": 6,
+                "line": 69,
+                "offset": 1711
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "12b1bc98f14225dfc8683f4ac4b2443d1b4f7f4b1678f62ca72694aadeb70694e12b5fec6c6b6a8979aaeeb109764eee03da9bbe6c91e6dac48e62b94dc1ae2f_0",
+                "is_ignored": false,
+                "lines": "    train_loader = DataLoader(\n        ds.to_pytorch(transform=transform),\n        batch_size=16,\n        num_workers=2,\n    )",
+                "message": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "HIGH",
+                    "cwe": "CWE-676: Use of Potentially Dangerous Function",
+                    "description": "`PyTorch` memory not automatically pinned",
+                    "impact": "LOW",
+                    "license": "AGPL-3.0 license",
+                    "likelihood": "LOW",
+                    "references": [
+                        "https://pytorch.org/docs/stable/data.html#memory-pinning"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 17165,
+                            "rule_id": "WAUN1Z",
+                            "rv_id": 833289,
+                            "url": "https://semgrep.dev/playground/r/gETy20E/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+                            "version_id": "gETy20E"
+                        }
+                    },
+                    "shortlink": "https://sg.run/jz5N",
+                    "source": "https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "pytorch"
+                    ],
+                    "vulnerability_class": [
+                        "Dangerous Method or Function"
+                    ]
+                },
+                "metavars": {},
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "examples/get_started/torch-loader.py",
+            "start": {
+                "col": 20,
+                "line": 65,
+                "offset": 1604
+            }
+        },
+        {
+            "check_id": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+            "end": {
+                "col": 43,
+                "line": 38,
+                "offset": 1046
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "94b9a9eb18f802e99f6e3437b77a11237dc0da8eb98b9c671d2231e7eacc7dde2f8ad3adacb44eb834078abbaf194c7cab14c2f7b9f54225073187b9a38c3198_0",
+                "is_ignored": false,
+                "lines": "    loader = DataLoader(ds, batch_size=16)",
+                "message": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "HIGH",
+                    "cwe": "CWE-676: Use of Potentially Dangerous Function",
+                    "description": "`PyTorch` memory not automatically pinned",
+                    "impact": "LOW",
+                    "license": "AGPL-3.0 license",
+                    "likelihood": "LOW",
+                    "references": [
+                        "https://pytorch.org/docs/stable/data.html#memory-pinning"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 17165,
+                            "rule_id": "WAUN1Z",
+                            "rv_id": 833289,
+                            "url": "https://semgrep.dev/playground/r/gETy20E/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+                            "version_id": "gETy20E"
+                        }
+                    },
+                    "shortlink": "https://sg.run/jz5N",
+                    "source": "https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "pytorch"
+                    ],
+                    "vulnerability_class": [
+                        "Dangerous Method or Function"
+                    ]
+                },
+                "metavars": {},
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "examples/multimodal/clip_inference.py",
+            "start": {
+                "col": 14,
+                "line": 38,
+                "offset": 1017
+            }
+        },
+        {
+            "check_id": "html.security.audit.missing-integrity.missing-integrity",
+            "end": {
+                "col": 105,
+                "line": 7,
+                "offset": 167
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "9b407a31701ea361a75c281efb6bd591a69ca6317f71cf7ae3f8aac064cb6af4b46c53733080b44fef1f82315e65a577bf514c2044c77afcee80d36d12130d41_0",
+                "is_ignored": false,
+                "lines": "<script data-domain=\"docs.datachain.ai\" src=\"https://plausible.io/js/script.outbound-links.js\"></script>",
+                "message": "This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows for the browser to verify that externally hosted files (for example from a CDN) are delivered without unexpected manipulation. Without this attribute, if an attacker can modify the externally hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the base64-encoded cryptographic hash of the resource (file) you\u2019re telling the browser to fetch in the 'integrity' attribute for all externally hosted files.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "LOW",
+                    "cwe": [
+                        "CWE-353: Missing Support for Integrity Check"
+                    ],
+                    "impact": "LOW",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A08:2021 - Software and Data Integrity Failures"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 13728,
+                            "rule_id": "AbUQzj",
+                            "rv_id": 833890,
+                            "url": "https://semgrep.dev/playground/r/nWTy4vO/html.security.audit.missing-integrity.missing-integrity",
+                            "version_id": "nWTy4vO"
+                        }
+                    },
+                    "shortlink": "https://sg.run/krXA",
+                    "source": "https://semgrep.dev/r/html.security.audit.missing-integrity.missing-integrity",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "html"
+                    ],
+                    "vulnerability_class": [
+                        "Cryptographic Issues"
+                    ]
+                },
+                "metavars": {
+                    "$...A": {
+                        "abstract_content": " data-domain=\"docs.datachain.ai\" src=\"https://plausible.io/js/script.outbound-links.js\"",
+                        "end": {
+                            "col": 95,
+                            "line": 7,
+                            "offset": 157
+                        },
+                        "start": {
+                            "col": 8,
+                            "line": 7,
+                            "offset": 70
+                        }
+                    }
+                },
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "overrides/main.html",
+            "start": {
+                "col": 1,
+                "line": 7,
+                "offset": 63
+            }
+        },
+        {
+            "check_id": "python.lang.security.audit.non-literal-import.non-literal-import",
+            "end": {
+                "col": 46,
+                "line": 65,
+                "offset": 2528
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "259d9616b083d091c482a9c0cf328595e038961c06e23a12dfce3302db08df3215ed8dfc906b58a7ea286d015411b14bfb215be02b4d4ad3a89d676216f62a6d_0",
+                "is_ignored": false,
+                "lines": "    id_generator = import_module(module_name)",
+                "message": "Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running untrusted code.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "LOW",
+                    "cwe": [
+                        "CWE-706: Use of Incorrectly-Resolved Name or Reference"
+                    ],
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A01:2021 - Broken Access Control"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A01_2021-Broken_Access_Control"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 12068,
+                            "rule_id": "AbUGN5",
+                            "rv_id": 834640,
+                            "url": "https://semgrep.dev/playground/r/ZRTldq5/python.lang.security.audit.non-literal-import.non-literal-import",
+                            "version_id": "ZRTldq5"
+                        }
+                    },
+                    "shortlink": "https://sg.run/y6Jk",
+                    "source": "https://semgrep.dev/r/python.lang.security.audit.non-literal-import.non-literal-import",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "python"
+                    ],
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ]
+                },
+                "metavars": {
+                    "$NAME": {
+                        "abstract_content": "module_name",
+                        "end": {
+                            "col": 45,
+                            "line": 65,
+                            "offset": 2527
+                        },
+                        "start": {
+                            "col": 34,
+                            "line": 65,
+                            "offset": 2516
+                        }
+                    }
+                },
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "src/datachain/catalog/loader.py",
+            "start": {
+                "col": 20,
+                "line": 65,
+                "offset": 2502
+            }
+        },
+        {
+            "check_id": "python.lang.security.audit.non-literal-import.non-literal-import",
+            "end": {
+                "col": 43,
+                "line": 107,
+                "offset": 4294
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "259d9616b083d091c482a9c0cf328595e038961c06e23a12dfce3302db08df3215ed8dfc906b58a7ea286d015411b14bfb215be02b4d4ad3a89d676216f62a6d_1",
+                "is_ignored": false,
+                "lines": "    metastore = import_module(module_name)",
+                "message": "Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running untrusted code.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "LOW",
+                    "cwe": [
+                        "CWE-706: Use of Incorrectly-Resolved Name or Reference"
+                    ],
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A01:2021 - Broken Access Control"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A01_2021-Broken_Access_Control"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 12068,
+                            "rule_id": "AbUGN5",
+                            "rv_id": 834640,
+                            "url": "https://semgrep.dev/playground/r/ZRTldq5/python.lang.security.audit.non-literal-import.non-literal-import",
+                            "version_id": "ZRTldq5"
+                        }
+                    },
+                    "shortlink": "https://sg.run/y6Jk",
+                    "source": "https://semgrep.dev/r/python.lang.security.audit.non-literal-import.non-literal-import",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "python"
+                    ],
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ]
+                },
+                "metavars": {
+                    "$NAME": {
+                        "abstract_content": "module_name",
+                        "end": {
+                            "col": 42,
+                            "line": 107,
+                            "offset": 4293
+                        },
+                        "start": {
+                            "col": 31,
+                            "line": 107,
+                            "offset": 4282
+                        }
+                    }
+                },
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "src/datachain/catalog/loader.py",
+            "start": {
+                "col": 17,
+                "line": 107,
+                "offset": 4268
+            }
+        },
+        {
+            "check_id": "python.lang.security.audit.non-literal-import.non-literal-import",
+            "end": {
+                "col": 43,
+                "line": 149,
+                "offset": 6062
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "259d9616b083d091c482a9c0cf328595e038961c06e23a12dfce3302db08df3215ed8dfc906b58a7ea286d015411b14bfb215be02b4d4ad3a89d676216f62a6d_2",
+                "is_ignored": false,
+                "lines": "    warehouse = import_module(module_name)",
+                "message": "Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running untrusted code.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "LOW",
+                    "cwe": [
+                        "CWE-706: Use of Incorrectly-Resolved Name or Reference"
+                    ],
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A01:2021 - Broken Access Control"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A01_2021-Broken_Access_Control"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 12068,
+                            "rule_id": "AbUGN5",
+                            "rv_id": 834640,
+                            "url": "https://semgrep.dev/playground/r/ZRTldq5/python.lang.security.audit.non-literal-import.non-literal-import",
+                            "version_id": "ZRTldq5"
+                        }
+                    },
+                    "shortlink": "https://sg.run/y6Jk",
+                    "source": "https://semgrep.dev/r/python.lang.security.audit.non-literal-import.non-literal-import",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "python"
+                    ],
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ]
+                },
+                "metavars": {
+                    "$NAME": {
+                        "abstract_content": "module_name",
+                        "end": {
+                            "col": 42,
+                            "line": 149,
+                            "offset": 6061
+                        },
+                        "start": {
+                            "col": 31,
+                            "line": 149,
+                            "offset": 6050
+                        }
+                    }
+                },
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "src/datachain/catalog/loader.py",
+            "start": {
+                "col": 17,
+                "line": 149,
+                "offset": 6036
+            }
+        },
+        {
+            "check_id": "python.lang.security.audit.non-literal-import.non-literal-import",
+            "end": {
+                "col": 45,
+                "line": 172,
+                "offset": 7070
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "259d9616b083d091c482a9c0cf328595e038961c06e23a12dfce3302db08df3215ed8dfc906b58a7ea286d015411b14bfb215be02b4d4ad3a89d676216f62a6d_3",
+                "is_ignored": false,
+                "lines": "    distributed = import_module(module_name)",
+                "message": "Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running untrusted code.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "LOW",
+                    "cwe": [
+                        "CWE-706: Use of Incorrectly-Resolved Name or Reference"
+                    ],
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A01:2021 - Broken Access Control"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A01_2021-Broken_Access_Control"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 12068,
+                            "rule_id": "AbUGN5",
+                            "rv_id": 834640,
+                            "url": "https://semgrep.dev/playground/r/ZRTldq5/python.lang.security.audit.non-literal-import.non-literal-import",
+                            "version_id": "ZRTldq5"
+                        }
+                    },
+                    "shortlink": "https://sg.run/y6Jk",
+                    "source": "https://semgrep.dev/r/python.lang.security.audit.non-literal-import.non-literal-import",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "python"
+                    ],
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ]
+                },
+                "metavars": {
+                    "$NAME": {
+                        "abstract_content": "module_name",
+                        "end": {
+                            "col": 44,
+                            "line": 172,
+                            "offset": 7069
+                        },
+                        "start": {
+                            "col": 33,
+                            "line": 172,
+                            "offset": 7058
+                        }
+                    }
+                },
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "src/datachain/catalog/loader.py",
+            "start": {
+                "col": 19,
+                "line": 172,
+                "offset": 7044
+            }
+        },
+        {
+            "check_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+            "end": {
+                "col": 66,
+                "line": 21,
+                "offset": 679
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "45ee24d4501609087cc4ab56fa5c0e4b3eb8a81b3379e2bb562584cf69a042e48a5f824070e6a4f62e96dabd247b1dadcab4f03fd872ec12e1d7339d37bd69d4_0",
+                "is_ignored": false,
+                "lines": "        return base64.b64encode(pickle.dumps(self.clone_params())).decode()",
+                "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "LOW",
+                    "cwe": [
+                        "CWE-502: Deserialization of Untrusted Data"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A08:2017 - Insecure Deserialization",
+                        "A08:2021 - Software and Data Integrity Failures"
+                    ],
+                    "references": [
+                        "https://docs.python.org/3/library/pickle.html"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 9675,
+                            "rule_id": "EwU2BJ",
+                            "rv_id": 928301,
+                            "url": "https://semgrep.dev/playground/r/qkTpk98/python.lang.security.deserialization.pickle.avoid-pickle",
+                            "version_id": "qkTpk98"
+                        }
+                    },
+                    "shortlink": "https://sg.run/OPwB",
+                    "source": "https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "python"
+                    ],
+                    "vulnerability_class": [
+                        "Insecure Deserialization "
+                    ]
+                },
+                "metavars": {
+                    "$FUNC": {
+                        "abstract_content": "dumps",
+                        "end": {
+                            "col": 45,
+                            "line": 21,
+                            "offset": 658
+                        },
+                        "start": {
+                            "col": 40,
+                            "line": 21,
+                            "offset": 653
+                        }
+                    }
+                },
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "src/datachain/data_storage/serializer.py",
+            "start": {
+                "col": 33,
+                "line": 21,
+                "offset": 646
+            }
+        },
+        {
+            "check_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+            "end": {
+                "col": 67,
+                "line": 28,
+                "offset": 882
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "588be18fd1936cc27da50ada1968caf0a125a51791f2ab005e4b522964ef0469ab5e0db6b991f5fa6027c533fb861ea15764597fd2bcfa69651fd6dc9c0d92a3_0",
+                "is_ignored": false,
+                "lines": "    (f, args, kwargs) = pickle.loads(base64.b64decode(s.encode()))  # noqa: S301",
+                "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "LOW",
+                    "cwe": [
+                        "CWE-502: Deserialization of Untrusted Data"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A08:2017 - Insecure Deserialization",
+                        "A08:2021 - Software and Data Integrity Failures"
+                    ],
+                    "references": [
+                        "https://docs.python.org/3/library/pickle.html"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 9675,
+                            "rule_id": "EwU2BJ",
+                            "rv_id": 928301,
+                            "url": "https://semgrep.dev/playground/r/qkTpk98/python.lang.security.deserialization.pickle.avoid-pickle",
+                            "version_id": "qkTpk98"
+                        }
+                    },
+                    "shortlink": "https://sg.run/OPwB",
+                    "source": "https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "python"
+                    ],
+                    "vulnerability_class": [
+                        "Insecure Deserialization "
+                    ]
+                },
+                "metavars": {
+                    "$FUNC": {
+                        "abstract_content": "loads",
+                        "end": {
+                            "col": 37,
+                            "line": 28,
+                            "offset": 852
+                        },
+                        "start": {
+                            "col": 32,
+                            "line": 28,
+                            "offset": 847
+                        }
+                    }
+                },
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "src/datachain/data_storage/serializer.py",
+            "start": {
+                "col": 25,
+                "line": 28,
+                "offset": 840
+            }
+        },
+        {
+            "check_id": "python.lang.security.audit.exec-detected.exec-detected",
+            "end": {
+                "col": 35,
+                "line": 123,
+                "offset": 4102
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "63fb4eaf974072d42f782021de7b0a798aa74b93024ac7c1784019e04721d68ee30c5e442b5764b1f3d016978b029e9ed621c4cc65420b9eddabbe55bd172cb2_0",
+                "is_ignored": false,
+                "lines": "            exec(model_output, gl)  # type: ignore[arg-type] # noqa: S102",
+                "message": "Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this content can be input from outside the program, this may be a code injection vulnerability. Ensure evaluated content is not definable by external sources.",
+                "metadata": {
+                    "asvs": {
+                        "control_id": "5.2.4 Dyanmic Code Execution Features",
+                        "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v52-sanitization-and-sandboxing-requirements",
+                        "section": "V5: Validation, Sanitization and Encoding Verification Requirements",
+                        "version": "4"
+                    },
+                    "category": "security",
+                    "confidence": "LOW",
+                    "cwe": [
+                        "CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"
+                    ],
+                    "impact": "HIGH",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A03:2021 - Injection"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A03_2021-Injection"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 9636,
+                            "rule_id": "QrUzKv",
+                            "rv_id": 834609,
+                            "url": "https://semgrep.dev/playground/r/GxTDX7Y/python.lang.security.audit.exec-detected.exec-detected",
+                            "version_id": "GxTDX7Y"
+                        }
+                    },
+                    "shortlink": "https://sg.run/ndRX",
+                    "source": "https://semgrep.dev/r/python.lang.security.audit.exec-detected.exec-detected",
+                    "source-rule-url": "https://bandit.readthedocs.io/en/latest/plugins/b102_exec_used.html",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "python"
+                    ],
+                    "vulnerability_class": [
+                        "Code Injection"
+                    ]
+                },
+                "metavars": {},
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "src/datachain/lib/meta_formats.py",
+            "start": {
+                "col": 13,
+                "line": 123,
+                "offset": 4080
+            }
+        }
+    ],
+    "skipped_rules": [],
+    "version": "1.93.0"
+}

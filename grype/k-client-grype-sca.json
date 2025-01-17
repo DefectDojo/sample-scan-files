@@ -1,0 +1,2685 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-wh78-7948-358j",
+    "dataSource": "https://github.com/advisories/GHSA-wh78-7948-358j",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-wh78-7948-358j"
+    ],
+    "description": "Cilium leaks sensitive information in cilium-bugtool",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.9,
+       "exploitabilityScore": 1.5,
+       "impactScore": 5.8
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.14.12"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-37307",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-37307",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/cilium/cilium/commit/0191b1ebcfdd61cefd06da0315a0e7d504167407",
+      "https://github.com/cilium/cilium/commit/224e288a5bf40d0bb0f16c9413693b319633431a",
+      "https://github.com/cilium/cilium/commit/9299c0fd0024e33397cffc666ff851e82af28741",
+      "https://github.com/cilium/cilium/commit/958d7b77274bf2c272d8cdfd812631d644250653",
+      "https://github.com/cilium/cilium/commit/9eb25ba40391a9b035d7e66401b862818f4aac4b",
+      "https://github.com/cilium/cilium/commit/bf9a1ae1b2d2b2c9cca329d7aa96aa4858032a61",
+      "https://github.com/cilium/cilium/security/advisories/GHSA-wh78-7948-358j"
+     ],
+     "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. Starting in version 1.13.0 and prior to versions 1.13.7, 1.14.12, and 1.15.6, the output of `cilium-bugtool` can contain sensitive data when the tool is run (with the `--envoy-dump` flag set) against Cilium deployments with the Envoy proxy enabled. Users of the TLS inspection, Ingress with TLS termination, Gateway API with TLS termination, and Kafka network policies with API key filtering features are affected. The sensitive data includes the CA certificate, certificate chain, and private key used by Cilium HTTP Network Policies, and when using Ingress/Gateway API and the API keys used in Kafka-related network policy. `cilium-bugtool` is a debugging tool that is typically invoked manually and does not run during the normal operation of a Cilium cluster. This issue has been patched in Cilium v1.15.6, v1.14.12, and v1.13.17. There is no workaround to this issue.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.9,
+        "exploitabilityScore": 1.5,
+        "impactScore": 5.8
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/cilium/cilium",
+       "version": "v1.14.5"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.14.0,<1.14.12 (unknown)",
+      "vulnerabilityID": "GHSA-wh78-7948-358j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59a3313e9ca40be1",
+    "name": "github.com/cilium/cilium",
+    "version": "v1.14.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cilium:cilium:v1.14.5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cilium/cilium@v1.14.5",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:Jx45FY/swyW5mGPJIWghrxSreuC8QP000wyz5BVZZyU="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-pwqm-x5x6-5586",
+    "dataSource": "https://github.com/advisories/GHSA-pwqm-x5x6-5586",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-pwqm-x5x6-5586"
+    ],
+    "description": "Cilium has insecure IPsec transport encryption",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 8,
+       "exploitabilityScore": 1.6,
+       "impactScore": 5.8
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.14.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28860",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28860",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://docs.cilium.io/en/stable/security/network/encryption-ipsec",
+      "https://github.com/cilium/cilium/commit/311fbce5280491cddceab178d83b06fa23688c72",
+      "https://github.com/cilium/cilium/commit/a1742b478306fa256cd27df1039dfae0537b4149",
+      "https://github.com/cilium/cilium/commit/a652c123331852cca90c74202f993d4170fd37fa",
+      "https://github.com/cilium/cilium/security/advisories/GHSA-pwqm-x5x6-5586"
+     ],
+     "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. Users of IPsec transparent encryption in Cilium may be vulnerable to cryptographic attacks that render the transparent encryption ineffective. In particular, Cilium is vulnerable to chosen plaintext, key recovery, replay attacks by a man-in-the-middle attacker. These attacks are possible due to an ESP sequence number collision when multiple nodes are configured with the same key. Fixed versions of Cilium use unique keys for each IPsec tunnel established between nodes, resolving all of the above attacks. This vulnerability is fixed in 1.13.13, 1.14.9, and 1.15.3.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 8,
+        "exploitabilityScore": 1.6,
+        "impactScore": 5.8
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/cilium/cilium",
+       "version": "v1.14.5"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.14.0,<=1.14.7 (unknown)",
+      "vulnerabilityID": "GHSA-pwqm-x5x6-5586"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59a3313e9ca40be1",
+    "name": "github.com/cilium/cilium",
+    "version": "v1.14.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cilium:cilium:v1.14.5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cilium/cilium@v1.14.5",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:Jx45FY/swyW5mGPJIWghrxSreuC8QP000wyz5BVZZyU="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-68mj-9pjq-mc85",
+    "dataSource": "https://github.com/advisories/GHSA-68mj-9pjq-mc85",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-68mj-9pjq-mc85"
+    ],
+    "description": "Intermittent HTTP policy bypass",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 7.2,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.14.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28248",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28248",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://docs.cilium.io/en/stable/security/policy/language/#http",
+      "https://github.com/cilium/cilium/releases/tag/v1.13.13",
+      "https://github.com/cilium/cilium/releases/tag/v1.14.8",
+      "https://github.com/cilium/cilium/releases/tag/v1.15.2",
+      "https://github.com/cilium/cilium/security/advisories/GHSA-68mj-9pjq-mc85"
+     ],
+     "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. Starting in version 1.13.9 and prior to versions 1.13.13, 1.14.8, and 1.15.2, Cilium's HTTP policies are not consistently applied to all traffic in the scope of the policies, leading to HTTP traffic being incorrectly and intermittently forwarded when it should be dropped. This issue has been patched in Cilium 1.15.2, 1.14.8, and 1.13.13. There are no known workarounds for this issue.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 7.2,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/cilium/cilium",
+       "version": "v1.14.5"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.14.0,<1.14.8 (unknown)",
+      "vulnerabilityID": "GHSA-68mj-9pjq-mc85"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59a3313e9ca40be1",
+    "name": "github.com/cilium/cilium",
+    "version": "v1.14.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cilium:cilium:v1.14.5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cilium/cilium@v1.14.5",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:Jx45FY/swyW5mGPJIWghrxSreuC8QP000wyz5BVZZyU="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-x989-52fc-4vr4",
+    "dataSource": "https://github.com/advisories/GHSA-x989-52fc-4vr4",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-x989-52fc-4vr4"
+    ],
+    "description": "Unencrypted traffic between pods when using Wireguard and an external kvstore",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 1.6,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.14.7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-25631",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-25631",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://docs.cilium.io/en/stable/installation/k8s-install-external-etcd/#when-do-i-need-to-use-a-kvstore",
+      "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/#encryption-wg",
+      "https://github.com/cilium/cilium/releases/tag/v1.14.7",
+      "https://github.com/cilium/cilium/security/advisories/GHSA-x989-52fc-4vr4"
+     ],
+     "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. For Cilium users who have enabled an external kvstore and Wireguard transparent encryption, traffic between pods in the affected cluster is not encrypted. This issue affects Cilium v1.14 before v1.14.7 and has been patched in Cilium v1.14.7. There is no workaround to this issue.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 1.6,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/cilium/cilium",
+       "version": "v1.14.5"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.14.0,<1.14.7 (unknown)",
+      "vulnerabilityID": "GHSA-x989-52fc-4vr4"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59a3313e9ca40be1",
+    "name": "github.com/cilium/cilium",
+    "version": "v1.14.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cilium:cilium:v1.14.5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cilium/cilium@v1.14.5",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:Jx45FY/swyW5mGPJIWghrxSreuC8QP000wyz5BVZZyU="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v6q2-4qr3-5cw6",
+    "dataSource": "https://github.com/advisories/GHSA-v6q2-4qr3-5cw6",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v6q2-4qr3-5cw6"
+    ],
+    "description": "Unencrypted traffic between nodes when using WireGuard and L7 policies",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 1.6,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.14.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28250",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28250",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/cilium/cilium/releases/tag/v1.13.13",
+      "https://github.com/cilium/cilium/releases/tag/v1.14.8",
+      "https://github.com/cilium/cilium/releases/tag/v1.15.2",
+      "https://github.com/cilium/cilium/security/advisories/GHSA-v6q2-4qr3-5cw6"
+     ],
+     "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. Starting in version 1.14.0 and prior to versions 1.14.8 and 1.15.2, In Cilium clusters with WireGuard enabled and traffic matching Layer 7 policies Wireguard-eligible traffic that is sent between a node's Envoy proxy and pods on other nodes is sent unencrypted and Wireguard-eligible traffic that is sent between a node's DNS proxy and pods on other nodes is sent unencrypted. This issue has been resolved in Cilium 1.14.8 and 1.15.2 in in native routing mode (`routingMode=native`) and in Cilium 1.14.4 in tunneling mode (`routingMode=tunnel`). Not that in tunneling mode, `encryption.wireguard.encapsulate` must be set to `true`. There is no known workaround for this issue.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 1.6,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/cilium/cilium",
+       "version": "v1.14.5"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.14.0,<1.14.8 (unknown)",
+      "vulnerabilityID": "GHSA-v6q2-4qr3-5cw6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59a3313e9ca40be1",
+    "name": "github.com/cilium/cilium",
+    "version": "v1.14.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cilium:cilium:v1.14.5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cilium/cilium@v1.14.5",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:Jx45FY/swyW5mGPJIWghrxSreuC8QP000wyz5BVZZyU="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-q7w8-72mr-vpgw",
+    "dataSource": "https://github.com/advisories/GHSA-q7w8-72mr-vpgw",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-q7w8-72mr-vpgw"
+    ],
+    "description": "Policy bypass for Host Firewall policy due to race condition in Cilium agent",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 2.2,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.14.14"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-42488",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-42488",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/cilium/cilium/commit/aa44dd148a9be95e07782e4f990e61678ef0abf8",
+      "https://github.com/cilium/cilium/pull/33511",
+      "https://github.com/cilium/cilium/security/advisories/GHSA-q7w8-72mr-vpgw"
+     ],
+     "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. Prior to versions 1.14.14 and 1.15.8, a race condition in the Cilium agent can cause the agent to ignore labels that should be applied to a node. This could in turn cause CiliumClusterwideNetworkPolicies intended for nodes with the ignored label to not apply, leading to policy bypass. This issue has been patched in Cilium v1.14.14 and v1.15.8 As the underlying issue depends on a race condition, users unable to upgrade can restart the Cilium agent on affected nodes until the affected policies are confirmed to be working as expected.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/cilium/cilium",
+       "version": "v1.14.5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.14.14 (unknown)",
+      "vulnerabilityID": "GHSA-q7w8-72mr-vpgw"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59a3313e9ca40be1",
+    "name": "github.com/cilium/cilium",
+    "version": "v1.14.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cilium:cilium:v1.14.5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cilium/cilium@v1.14.5",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:Jx45FY/swyW5mGPJIWghrxSreuC8QP000wyz5BVZZyU="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-j89h-qrvr-xc36",
+    "dataSource": "https://github.com/advisories/GHSA-j89h-qrvr-xc36",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-j89h-qrvr-xc36"
+    ],
+    "description": "Unencrypted traffic between nodes when using IPsec and L7 policies",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 1.6,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.14.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28249",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28249",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/cilium/cilium/releases/tag/v1.13.13",
+      "https://github.com/cilium/cilium/releases/tag/v1.14.8",
+      "https://github.com/cilium/cilium/releases/tag/v1.15.2",
+      "https://github.com/cilium/cilium/security/advisories/GHSA-j89h-qrvr-xc36"
+     ],
+     "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. Prior to versions 1.13.13, 1.14.8, and 1.15.2, in Cilium clusters with IPsec enabled and traffic matching Layer 7 policies, IPsec-eligible traffic between a node's Envoy proxy and pods on other nodes is sent unencrypted and IPsec-eligible traffic between a node's DNS proxy and pods on other nodes is sent unencrypted. This issue has been resolved in Cilium 1.15.2, 1.14.8, and 1.13.13. There is no known workaround for this issue.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 1.6,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/cilium/cilium",
+       "version": "v1.14.5"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.14.0,<1.14.8 (unknown)",
+      "vulnerabilityID": "GHSA-j89h-qrvr-xc36"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59a3313e9ca40be1",
+    "name": "github.com/cilium/cilium",
+    "version": "v1.14.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cilium:cilium:v1.14.5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cilium/cilium@v1.14.5",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:Jx45FY/swyW5mGPJIWghrxSreuC8QP000wyz5BVZZyU="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-7496-fgv9-xw82",
+    "dataSource": "https://github.com/advisories/GHSA-7496-fgv9-xw82",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-7496-fgv9-xw82"
+    ],
+    "description": "Unencrypted ingress/health traffic when using Wireguard transparent encryption",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 1.6,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.14.7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-25630",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-25630",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/#encryption-wg",
+      "https://github.com/cilium/cilium/releases/tag/v1.14.7",
+      "https://github.com/cilium/cilium/security/advisories/GHSA-7496-fgv9-xw82"
+     ],
+     "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. For Cilium users who are using CRDs to store Cilium state (the default configuration) and Wireguard transparent encryption, traffic to/from the Ingress and health endpoints is not encrypted. This issue affects Cilium v1.14 before v1.14.7 and has been patched in Cilium v1.14.7. There is no workaround to this issue.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 1.6,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/cilium/cilium",
+       "version": "v1.14.5"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.14.0,<1.14.7 (unknown)",
+      "vulnerabilityID": "GHSA-7496-fgv9-xw82"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59a3313e9ca40be1",
+    "name": "github.com/cilium/cilium",
+    "version": "v1.14.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cilium:cilium:v1.14.5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cilium/cilium@v1.14.5",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:Jx45FY/swyW5mGPJIWghrxSreuC8QP000wyz5BVZZyU="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-3wwx-63fv-pfq6",
+    "dataSource": "https://github.com/advisories/GHSA-3wwx-63fv-pfq6",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-3wwx-63fv-pfq6"
+    ],
+    "description": "Cilium's CIDR deny policies may not take effect when a more narrow CIDR allow is present",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 4,
+       "exploitabilityScore": 2.2,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.14.16"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-47825",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-47825",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/cilium/cilium/security/advisories/GHSA-3wwx-63fv-pfq6"
+     ],
+     "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. Starting in version 1.14.0 and prior to versions 1.14.16 and 1.15.10, a policy rule denying a prefix that is broader than `/32` may be ignored if there is a policy rule referencing a more narrow prefix (`CIDRSet` or `toFQDN`) and this narrower policy rule specifies either `enableDefaultDeny: false` or `- toEntities: all`. Note that a rule specifying `toEntities: world` or `toEntities: 0.0.0.0/0` is insufficient, it must be to entity `all`.This issue has been patched in Cilium v1.14.16 and v1.15.10. As this issue only affects policies using `enableDefaultDeny: false` or that set `toEntities` to `all`, some workarounds are available. For users with policies using `enableDefaultDeny: false`, remove this configuration option and explicitly define any allow rules required. For users with egress policies that explicitly specify `toEntities: all`, use `toEntities: world`.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 4,
+        "exploitabilityScore": 2.2,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/cilium/cilium",
+       "version": "v1.14.5"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.14.0,<1.14.16 (unknown)",
+      "vulnerabilityID": "GHSA-3wwx-63fv-pfq6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59a3313e9ca40be1",
+    "name": "github.com/cilium/cilium",
+    "version": "v1.14.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cilium:cilium:v1.14.5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cilium/cilium@v1.14.5",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:Jx45FY/swyW5mGPJIWghrxSreuC8QP000wyz5BVZZyU="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v23v-6jw2-98fq",
+    "dataSource": "https://github.com/advisories/GHSA-v23v-6jw2-98fq",
+    "namespace": "github:language:go",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-v23v-6jw2-98fq"
+    ],
+    "description": "Authz zero length regression",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.9,
+       "exploitabilityScore": 3.1,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "25.0.6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-41110",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-41110",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/moby/moby/commit/411e817ddf710ff8e08fa193da80cb78af708191",
+      "https://github.com/moby/moby/commit/42f40b1d6dd7562342f832b9cd2adf9e668eeb76",
+      "https://github.com/moby/moby/commit/65cc597cea28cdc25bea3b8a86384b4251872919",
+      "https://github.com/moby/moby/commit/852759a7df454cbf88db4e954c919becd48faa9b",
+      "https://github.com/moby/moby/commit/a31260625655cff9ae226b51757915e275e304b0",
+      "https://github.com/moby/moby/commit/a79fabbfe84117696a19671f4aa88b82d0f64fc1",
+      "https://github.com/moby/moby/commit/ae160b4edddb72ef4bd71f66b975a1a1cc434f00",
+      "https://github.com/moby/moby/commit/ae2b3666c517c96cbc2adf1af5591a6b00d4ec0f",
+      "https://github.com/moby/moby/commit/cc13f952511154a2866bddbb7dddebfe9e83b801",
+      "https://github.com/moby/moby/commit/fc274cd2ff4cf3b48c91697fb327dd1fb95588fb",
+      "https://github.com/moby/moby/security/advisories/GHSA-v23v-6jw2-98fq",
+      "https://www.docker.com/blog/docker-security-advisory-docker-engine-authz-plugin"
+     ],
+     "description": "Moby is an open-source project created by Docker for software containerization. A security vulnerability has been detected in certain versions of Docker Engine, which could allow an attacker to bypass authorization plugins (AuthZ) under specific circumstances. The base likelihood of this being exploited is low.\n\nUsing a specially-crafted API request, an Engine API client could make the daemon forward the request or response to an authorization plugin without the body. In certain circumstances, the authorization plugin may allow a request which it would have otherwise denied if the body had been forwarded to it.\n\nA security issue was discovered In 2018, where an attacker could bypass AuthZ plugins using a specially crafted API request. This could lead to unauthorized actions, including privilege escalation. Although this issue was fixed in Docker Engine v18.09.1 in January 2019, the fix was not carried forward to later major versions, resulting in a regression. Anyone who depends on authorization plugins that introspect the request and/or response body to make access control decisions is potentially impacted.\n\nDocker EE v19.03.x and all versions of Mirantis Container Runtime are not vulnerable.\n\ndocker-ce v27.1.1 containes patches to fix the vulnerability. Patches have also been merged into the master, 19.03, 20.0, 23.0, 24.0, 25.0, 26.0, and 26.1 release branches. If one is unable to upgrade immediately, avoid using AuthZ plugins and/or restrict access to the Docker API to trusted parties, following the principle of least privilege.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.9,
+        "exploitabilityScore": 3.1,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/docker/docker",
+       "version": "v25.0.5+incompatible"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=24.0.0,<25.0.6 (unknown)",
+      "vulnerabilityID": "GHSA-v23v-6jw2-98fq"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "01a2e881d57800f3",
+    "name": "github.com/docker/docker",
+    "version": "v25.0.5+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v25.0.5+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v25.0.5%2Bincompatible",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:UmQydMduGkrD5nQde1mecF/YnSbTOaPeFIeP5C4W+DE="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c5q2-7r4c-mv6g",
+    "dataSource": "https://github.com/advisories/GHSA-c5q2-7r4c-mv6g",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-c5q2-7r4c-mv6g"
+    ],
+    "description": "Go JOSE vulnerable to Improper Handling of Highly Compressed Data (Data Amplification)",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.0.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28180",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28180",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/go-jose/go-jose/commit/0dd4dd541c665fb292d664f77604ba694726f298",
+      "https://github.com/go-jose/go-jose/commit/add6a284ea0f844fd6628cba637be5451fe4b28a",
+      "https://github.com/go-jose/go-jose/commit/f4c051a0653d78199a053892f7619ebf96339502",
+      "https://github.com/go-jose/go-jose/security/advisories/GHSA-c5q2-7r4c-mv6g",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GD2GSBQTBLYADASUBHHZV2CZPTSLIPQJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6MMWFBOXJA6ZCXNVPDFJ4XMK5PVG5RG/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ6LAJJ2FTA2JVVOACCV5RZTOIZLXUNJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JNPMXL36YGS3GQEVI3Q5HKHJ7YAAQXL5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KXKGNCRU7OTM5AHC7YIYBNOWI742PRMY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MSOMHDKRPU3A2JEMRODT2IREDFBLVPGS/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UG5FSEYJ3GP27FZXC5YAAMMEC5XWKJHG/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UJO2U5ACZVACNQXJ5EBRFLFW6DP5BROY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJDO5VSIAOGT2WP63AXAAWNRSVJCNCRH/"
+     ],
+     "description": "Package jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/go-jose/go-jose/v3",
+       "version": "v3.0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<3.0.3 (unknown)",
+      "vulnerabilityID": "GHSA-c5q2-7r4c-mv6g"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "df98cb3e5e565fa3",
+    "name": "github.com/go-jose/go-jose/v3",
+    "version": "v3.0.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:go-jose:go-jose/v3:v3.0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:go-jose:go_jose/v3:v3.0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:go_jose:go-jose/v3:v3.0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:go_jose:go_jose/v3:v3.0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:go:go-jose/v3:v3.0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:go:go_jose/v3:v3.0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/go-jose/go-jose@v3.0.1#v3",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:pWmKFVtt+Jl0vBZTIpz/eAKwsm6LkIxDVVbFHKkchhA="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-29wx-vh33-7x7r",
+    "dataSource": "https://github.com/advisories/GHSA-29wx-vh33-7x7r",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-29wx-vh33-7x7r"
+    ],
+    "description": "Bad documentation of error handling in ParseWithClaims can lead to potentially dangerous situations",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 3.1,
+       "exploitabilityScore": 1.6,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Low",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "4.5.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-51744",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-51744",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://github.com/golang-jwt/jwt/commit/7b1c1c00a171c6c79bbdb40e4ce7d197060c1c2c",
+      "https://github.com/golang-jwt/jwt/security/advisories/GHSA-29wx-vh33-7x7r"
+     ],
+     "description": "golang-jwt is a Go implementation of JSON Web Tokens. Unclear documentation of the error behavior in `ParseWithClaims` can lead to situation where users are potentially not checking errors in the way they should be. Especially, if a token is both expired and invalid, the errors returned by `ParseWithClaims` return both error codes. If users only check for the `jwt.ErrTokenExpired ` using `error.Is`, they will ignore the embedded `jwt.ErrTokenSignatureInvalid` and thus potentially accept invalid tokens. A fix has been back-ported with the error handling logic from the `v5` branch to the `v4` branch. In this logic, the `ParseWithClaims` function will immediately return in \"dangerous\" situations (e.g., an invalid signature), limiting the combined errors only to situations where the signature is valid, but further validation failed (e.g., if the signature is valid, but is expired AND has the wrong audience). This fix is part of the 4.5.1 release. We are aware that this changes the behaviour of an established function and is not 100 % backwards compatible, so updating to 4.5.1 might break your code. In case you cannot update to 4.5.0, please make sure that you are properly checking for all errors (\"dangerous\" ones first), so that you are not running in the case detailed above.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 3.1,
+        "exploitabilityScore": 1.6,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/golang-jwt/jwt/v4",
+       "version": "v4.5.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<4.5.1 (unknown)",
+      "vulnerabilityID": "GHSA-29wx-vh33-7x7r"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bf60c7e542386d33",
+    "name": "github.com/golang-jwt/jwt/v4",
+    "version": "v4.5.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang-jwt:jwt/v4:v4.5.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:golang_jwt:jwt/v4:v4.5.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:golang:jwt/v4:v4.5.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/golang-jwt/jwt@v4.5.0#v4",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:7cYmW1XlMY7h7ii7UhUyChSgS5wUJEnm9uZVTGqOWzg="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v6v8-xj6m-xwqh",
+    "dataSource": "https://github.com/advisories/GHSA-v6v8-xj6m-xwqh",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v6v8-xj6m-xwqh"
+    ],
+    "description": "go-retryablehttp can leak basic auth credentials to log files",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6,
+       "exploitabilityScore": 1.5,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.7.7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-6104",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-6104",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/c/security"
+     ],
+     "description": "go-retryablehttp prior to 0.7.7 did not sanitize urls when writing them to its log file. This could lead to go-retryablehttp writing sensitive HTTP basic auth credentials to its log file. This vulnerability, CVE-2024-6104, was fixed in go-retryablehttp 0.7.7.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 1.5,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/go-retryablehttp",
+       "version": "v0.7.5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.7.7 (unknown)",
+      "vulnerabilityID": "GHSA-v6v8-xj6m-xwqh"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "99a89d57a38b4105",
+    "name": "github.com/hashicorp/go-retryablehttp",
+    "version": "v0.7.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:retryablehttp:v0.7.5:*:*:*:*:go:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/go-retryablehttp@v0.7.5",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:bJj+Pj19UZMIweq/iie+1u5YCdGrnxCT9yvm0e+Nd5M="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qjvc-p88j-j9rm",
+    "dataSource": "https://github.com/advisories/GHSA-qjvc-p88j-j9rm",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-qjvc-p88j-j9rm"
+    ],
+    "description": "Kyverno's PolicyException objects can be created in any namespace by default",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.13.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-48921",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-48921",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://github.com/kyverno/kyverno/security/advisories/GHSA-qjvc-p88j-j9rm"
+     ],
+     "description": "Kyverno is a policy engine designed for Kubernetes. A kyverno ClusterPolicy, ie. \"disallow-privileged-containers,\" can be overridden by the creation of a PolicyException in a random namespace. By design, PolicyExceptions are consumed from any namespace. Administrators may not recognize that this allows users with privileges to non-kyverno namespaces to create exceptions. This vulnerability is fixed in 1.13.0.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 2.7,
+        "exploitabilityScore": 1.2,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/kyverno/kyverno",
+       "version": "v1.9.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-qjvc-p88j-j9rm"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d07ec5e69d022ad4",
+    "name": "github.com/kyverno/kyverno",
+    "version": "v1.9.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:kyverno:kyverno:v1.9.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/kyverno/kyverno@v1.9.2",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:KLaeWgQVym5CludEWrphTY5j10XmyygPonbglIedUzE="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-3hfq-cx9j-923w",
+    "dataSource": "https://github.com/advisories/GHSA-3hfq-cx9j-923w",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-3hfq-cx9j-923w"
+    ],
+    "description": "Attacker can cause Kyverno user to unintentionally consume insecure image",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.1,
+       "exploitabilityScore": 1.2,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.10.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-47630",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-47630",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/kyverno/kyverno/security/advisories/GHSA-3hfq-cx9j-923w"
+     ],
+     "description": "Kyverno is a policy engine designed for Kubernetes. An issue was found in Kyverno that allowed an attacker to control the digest of images used by Kyverno users. The issue would require the attacker to compromise the registry that the Kyverno users fetch their images from. The attacker could then return an vulnerable image to the the user and leverage that to further escalate their position. As such, the attacker would need to know which images the Kyverno user consumes and know of one of multiple exploitable vulnerabilities in previous digests of the images. Alternatively, if the attacker has compromised the registry, they could craft a malicious image with a different digest with intentionally placed vulnerabilities and deliver the image to the user.  Users pulling their images by digests and from trusted registries are not impacted by this vulnerability. There is no evidence of this being exploited in the wild. The issue has been patched in 1.10.5. All users are advised to upgrade. There are no known workarounds for this vulnerability.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.1,
+        "exploitabilityScore": 1.2,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.1,
+        "exploitabilityScore": 1.2,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/kyverno/kyverno",
+       "version": "v1.9.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.10.5 (unknown)",
+      "vulnerabilityID": "GHSA-3hfq-cx9j-923w"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d07ec5e69d022ad4",
+    "name": "github.com/kyverno/kyverno",
+    "version": "v1.9.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:kyverno:kyverno:v1.9.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/kyverno/kyverno@v1.9.2",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:KLaeWgQVym5CludEWrphTY5j10XmyygPonbglIedUzE="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hq4m-4948-64cc",
+    "dataSource": "https://github.com/advisories/GHSA-hq4m-4948-64cc",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hq4m-4948-64cc"
+    ],
+    "description": "Kyverno resource with a deletionTimestamp may allow policy circumvention",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.10.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-34091",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-34091",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/kyverno/kyverno/releases/tag/v1.10.0",
+      "https://github.com/kyverno/kyverno/security/advisories/GHSA-hq4m-4948-64cc"
+     ],
+     "description": "Kyverno is a policy engine designed for Kubernetes. In versions of Kyverno prior to 1.10.0, resources which have the `deletionTimestamp` field defined can bypass validate, generate, or mutate-existing policies, even in cases where the `validationFailureAction` field is set to `Enforce`. This situation occurs as resources pending deletion were being consciously exempted by Kyverno, as a way to reduce processing load as policies are typically not applied to objects which are being deleted. However, this could potentially result in allowing a malicious user to leverage the Kubernetes finalizers feature by setting a finalizer which causes the Kubernetes API server to set the `deletionTimestamp` and then not completing the delete operation as a way to explicitly to bypass a Kyverno policy. Note that this is not applicable to Kubernetes Pods but, as an example, a Kubernetes Service resource can be manipulated using an indefinite finalizer to bypass policies. This is resolved in Kyverno 1.10.0. There is no known workaround.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/kyverno/kyverno",
+       "version": "v1.9.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.10.0 (unknown)",
+      "vulnerabilityID": "GHSA-hq4m-4948-64cc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d07ec5e69d022ad4",
+    "name": "github.com/kyverno/kyverno",
+    "version": "v1.9.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:kyverno:kyverno:v1.9.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/kyverno/kyverno@v1.9.2",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:KLaeWgQVym5CludEWrphTY5j10XmyygPonbglIedUzE="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hgv6-w7r3-w4qw",
+    "dataSource": "https://github.com/advisories/GHSA-hgv6-w7r3-w4qw",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hgv6-w7r3-w4qw"
+    ],
+    "description": "Kyverno vulnerable due to usage of insecure cipher",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.9.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/kyverno/kyverno",
+       "version": "v1.9.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.9.5 (unknown)",
+      "vulnerabilityID": "GHSA-hgv6-w7r3-w4qw"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d07ec5e69d022ad4",
+    "name": "github.com/kyverno/kyverno",
+    "version": "v1.9.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:kyverno:kyverno:v1.9.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/kyverno/kyverno@v1.9.2",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:KLaeWgQVym5CludEWrphTY5j10XmyygPonbglIedUzE="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-33hq-f2mf-jm3c",
+    "dataSource": "https://github.com/advisories/GHSA-33hq-f2mf-jm3c",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-33hq-f2mf-jm3c"
+    ],
+    "description": "kyverno seccomp control can be circumvented",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:L",
+      "metrics": {
+       "baseScore": 4.6,
+       "exploitabilityScore": 1.2,
+       "impactScore": 3.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.9.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-33191",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-33191",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/kyverno/kyverno/pull/7263",
+      "https://github.com/kyverno/kyverno/releases/tag/v1.9.4",
+      "https://github.com/kyverno/kyverno/security/advisories/GHSA-33hq-f2mf-jm3c"
+     ],
+     "description": "Kyverno is a policy engine designed for Kubernetes. Kyverno seccomp control can be circumvented. Users of the podSecurity `validate.podSecurity` subrule in Kyverno 1.9.2 and 1.9.3 are vulnerable. This issue was patched in version 1.9.4.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 4.6,
+        "exploitabilityScore": 1.2,
+        "impactScore": 3.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/kyverno/kyverno",
+       "version": "v1.9.2"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.9.2,<1.9.4 (unknown)",
+      "vulnerabilityID": "GHSA-33hq-f2mf-jm3c"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d07ec5e69d022ad4",
+    "name": "github.com/kyverno/kyverno",
+    "version": "v1.9.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:kyverno:kyverno:v1.9.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/kyverno/kyverno@v1.9.2",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:KLaeWgQVym5CludEWrphTY5j10XmyygPonbglIedUzE="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-rhh4-rh7c-7r5v",
+    "dataSource": "https://github.com/advisories/GHSA-rhh4-rh7c-7r5v",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-rhh4-rh7c-7r5v"
+    ],
+    "description": "Archiver Path Traversal vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 1.8,
+       "impactScore": 4.2
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-0406",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-0406",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2024-0406",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2257749"
+     ],
+     "description": "A flaw was discovered in the mholt/archiver package. This flaw allows an attacker to create a specially crafted tar file, which, when unpacked, may allow access to restricted files or directories. This issue can allow the creation or overwriting of files with the user's or application's privileges using the library.",
+     "cvss": [
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 1.8,
+        "impactScore": 4.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/mholt/archiver/v3",
+       "version": "v3.5.1"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=3.0.0,<=3.5.1 (unknown)",
+      "vulnerabilityID": "GHSA-rhh4-rh7c-7r5v"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "38d9a2f4cc41960c",
+    "name": "github.com/mholt/archiver/v3",
+    "version": "v3.5.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:mholt:archiver/v3:v3.5.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/mholt/archiver@v3.5.1#v3",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:rDjOBX9JSF5BvoJGvjqK479aL70qh9DIpZCl+k7Clwo="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c77r-fh37-x2px",
+    "dataSource": "https://github.com/advisories/GHSA-c77r-fh37-x2px",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-c77r-fh37-x2px"
+    ],
+    "description": "OPA for Windows has an SMB force-authentication vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:L",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 1.3,
+       "impactScore": 4.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.68.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-8260",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-8260",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.tenable.com/security/research/tra-2024-36"
+     ],
+     "description": "A SMB force-authentication vulnerability exists in all versions of OPA for Windows prior to v0.68.0. The vulnerability exists because of improper input validation, allowing a user to pass an arbitrary SMB share instead of a Rego file as an argument to OPA CLI or to one of the OPA Go library’s functions.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.3,
+        "exploitabilityScore": 1.3,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "vulnreport@tenable.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:L",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 1.3,
+        "impactScore": 4.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/open-policy-agent/opa",
+       "version": "v0.60.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.68.0 (unknown)",
+      "vulnerabilityID": "GHSA-c77r-fh37-x2px"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "062feb7164c70de4",
+    "name": "github.com/open-policy-agent/opa",
+    "version": "v0.60.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:open-policy-agent:opa:v0.60.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:open_policy_agent:opa:v0.60.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:open-policy:opa:v0.60.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:open_policy:opa:v0.60.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:open:opa:v0.60.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/open-policy-agent/opa@v0.60.0",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:ZPoPt4yeNs5UXCpd/P/btpSyR8CR0wfhVoh9BOwgJNs="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-95pr-fxf5-86gv",
+    "dataSource": "https://github.com/advisories/GHSA-95pr-fxf5-86gv",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-95pr-fxf5-86gv"
+    ],
+    "description": "Cosign malicious artifacts can cause machine-wide DoS",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 4.2,
+       "exploitabilityScore": 0.5,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-29903",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-29903",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/sigstore/cosign/blob/14795db16417579fac0c00c11e166868d7976b61/pkg/cosign/verify.go#L948-L955",
+      "https://github.com/sigstore/cosign/blob/286a98a4a99c1b2f32f84b0d560e324100312280/pkg/oci/remote/signatures.go#L56-L70",
+      "https://github.com/sigstore/cosign/commit/629f5f8fa672973503edde75f84dcd984637629e",
+      "https://github.com/sigstore/cosign/releases/tag/v2.2.4",
+      "https://github.com/sigstore/cosign/security/advisories/GHSA-95pr-fxf5-86gv"
+     ],
+     "description": "Cosign provides code signing and transparency for containers and binaries. Prior to version 2.2.4, maliciously-crafted software artifacts can cause denial of service of the machine running Cosign thereby impacting all services on the machine. The root cause is that Cosign creates slices based on the number of signatures, manifests or attestations in untrusted artifacts. As such, the untrusted artifact can control the amount of memory that Cosign allocates. The exact issue is Cosign allocates excessive memory on the lines that creates a slice of the same length as the manifests. Version 2.2.4 contains a patch for the vulnerability.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 4.2,
+        "exploitabilityScore": 0.5,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/sigstore/cosign/v2",
+       "version": "v2.2.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=2.2.3 (unknown)",
+      "vulnerabilityID": "GHSA-95pr-fxf5-86gv"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2f37dc82dfad2284",
+    "name": "github.com/sigstore/cosign/v2",
+    "version": "v2.2.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:sigstore:cosign/v2:v2.2.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/sigstore/cosign@v2.2.2#v2",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:V1uE1/QnKGfj77vuqlEGBg6O2ZJqOrWkLwjTC21Vxw0="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-88jx-383q-w4qc",
+    "dataSource": "https://github.com/advisories/GHSA-88jx-383q-w4qc",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-88jx-383q-w4qc"
+    ],
+    "description": "Cosign malicious attachments can cause system-wide denial of service",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 4.2,
+       "exploitabilityScore": 0.5,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-29902",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-29902",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/google/go-containerregistry/blob/a0658aa1d0cc7a7f1bcc4a3af9155335b6943f40/pkg/v1/remote/layer.go#L36-L40",
+      "https://github.com/sigstore/cosign/blob/9bc3ee309bf35d2f6e17f5d23f231a3d8bf580bc/pkg/oci/remote/remote.go#L228-L239",
+      "https://github.com/sigstore/cosign/commit/629f5f8fa672973503edde75f84dcd984637629e",
+      "https://github.com/sigstore/cosign/releases/tag/v2.2.4",
+      "https://github.com/sigstore/cosign/security/advisories/GHSA-88jx-383q-w4qc"
+     ],
+     "description": "Cosign provides code signing and transparency for containers and binaries. Prior to version 2.2.4, a remote image with a malicious attachment can cause denial of service of the host machine running Cosign. This can impact other services on the machine that rely on having memory available such as a Redis database which can result in data loss. It can also impact the availability of other services on the machine that will not be available for the duration of the machine denial. The root cause of this issue is that Cosign reads the attachment from a remote image entirely into memory without checking the size of the attachment first. As such, a large attachment can make Cosign read a large attachment into memory; If the attachments size is larger than the machine has memory available, the machine will be denied of service. The Go runtime will make a SigKill after a few seconds of system-wide denial. This issue can allow a supply-chain escalation from a compromised registry to the Cosign user: If an attacher has compromised a registry or the account of an image vendor, they can include a malicious attachment and hurt the image consumer. Version 2.2.4 contains a patch for the vulnerability.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 4.2,
+        "exploitabilityScore": 0.5,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/sigstore/cosign/v2",
+       "version": "v2.2.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=2.2.3 (unknown)",
+      "vulnerabilityID": "GHSA-88jx-383q-w4qc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2f37dc82dfad2284",
+    "name": "github.com/sigstore/cosign/v2",
+    "version": "v2.2.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:sigstore:cosign/v2:v2.2.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/sigstore/cosign@v2.2.2#v2",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:V1uE1/QnKGfj77vuqlEGBg6O2ZJqOrWkLwjTC21Vxw0="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4v7x-pqxf-cx7m",
+    "dataSource": "https://github.com/advisories/GHSA-4v7x-pqxf-cx7m",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-4v7x-pqxf-cx7m"
+    ],
+    "description": "net/http, x/net/http2: close connections when receiving too many headers",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.23.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45288",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45288",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/04/03/16",
+      "http://www.openwall.com/lists/oss-security/2024/04/05/4",
+      "https://go.dev/cl/576155",
+      "https://go.dev/issue/65051",
+      "https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QRYFHIQ6XRKRYBI2F5UESH67BJBQXUPT/",
+      "https://pkg.go.dev/vuln/GO-2024-2687",
+      "https://security.netapp.com/advisory/ntap-20240419-0009/"
+     ],
+     "description": "An attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames. Maintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed. This permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send. The fix sets a limit on the amount of excess header frames we will process before closing a connection.",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.22.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.23.0 (unknown)",
+      "vulnerabilityID": "GHSA-4v7x-pqxf-cx7m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a9f55afcd0d68b4",
+    "name": "golang.org/x/net",
+    "version": "v0.22.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:networking:v0.22.0:*:*:*:*:go:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.22.0",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:9sGLhx7iRIHEiX0oAJ3MRZMUCElJgy7Br1nO+AMN3Tc="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c5q2-7r4c-mv6g",
+    "dataSource": "https://github.com/advisories/GHSA-c5q2-7r4c-mv6g",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-c5q2-7r4c-mv6g"
+    ],
+    "description": "Go JOSE vulnerable to Improper Handling of Highly Compressed Data (Data Amplification)",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.6.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28180",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28180",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/go-jose/go-jose/commit/0dd4dd541c665fb292d664f77604ba694726f298",
+      "https://github.com/go-jose/go-jose/commit/add6a284ea0f844fd6628cba637be5451fe4b28a",
+      "https://github.com/go-jose/go-jose/commit/f4c051a0653d78199a053892f7619ebf96339502",
+      "https://github.com/go-jose/go-jose/security/advisories/GHSA-c5q2-7r4c-mv6g",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GD2GSBQTBLYADASUBHHZV2CZPTSLIPQJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6MMWFBOXJA6ZCXNVPDFJ4XMK5PVG5RG/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ6LAJJ2FTA2JVVOACCV5RZTOIZLXUNJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JNPMXL36YGS3GQEVI3Q5HKHJ7YAAQXL5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KXKGNCRU7OTM5AHC7YIYBNOWI742PRMY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MSOMHDKRPU3A2JEMRODT2IREDFBLVPGS/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UG5FSEYJ3GP27FZXC5YAAMMEC5XWKJHG/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UJO2U5ACZVACNQXJ5EBRFLFW6DP5BROY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJDO5VSIAOGT2WP63AXAAWNRSVJCNCRH/"
+     ],
+     "description": "Package jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "gopkg.in/go-jose/go-jose.v2",
+       "version": "v2.6.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.6.3 (unknown)",
+      "vulnerabilityID": "GHSA-c5q2-7r4c-mv6g"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5e1f40ecbcee2411",
+    "name": "gopkg.in/go-jose/go-jose.v2",
+    "version": "v2.6.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/go.mod"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/gopkg.in/go-jose/go-jose.v2@v2.6.1",
+    "upstreams": [],
+    "metadataType": "GolangModMetadata",
+    "metadata": {
+     "h1Digest": "h1:qEzJlIDmG9q5VO0M/o8tGS65QMHMS1w01TQJB1VPJ4U="
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "directory",
+  "target": "."
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.85.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/ayush/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "require-update-check": false,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 300000000000,
+    "max-update-check-frequency": 7200000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "jvm": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false
+  },
+  "db": {
+   "built": "2024-11-26T01:32:02Z",
+   "schemaVersion": 5,
+   "location": "/home/ayush/.cache/grype/db/5",
+   "checksum": "sha256:f92434afc47aa60b31cb1b77e18ac4a6bf218110fabdb69f6a44d3b2b1b7a3af",
+   "error": null
+  },
+  "timestamp": "2024-11-26T15:20:36.917342582Z"
+ }
+}

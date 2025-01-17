@@ -1,0 +1,767 @@
+{
+    "results": [
+        {
+            "type": "kics",
+            "id": "DkWzG6VK5WhhxXsJ6/ZTf+yGuu8=",
+            "similarityId": "69ca6b56ea4edae0687828c0947307f54fe94ef4e4a1b1af96d38901c547194a",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "INFO",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "As a best practice, ensure that is made the correct use of namespaces to adequately administer your resources. Kubernetes Authorization plugins can also be used to create policies that segregate user access to namespaces.",
+            "data": {
+                "queryId": "e84eaf4d-2f45-47b2-abe8-e581b06deb66",
+                "queryName": "Ensure Administrative Boundaries Between Resources",
+                "group": "Access Control [Taken from category]",
+                "queryUrl": "Ensure Administrative Boundaries Between Resources [Taken from query_name]",
+                "queryId": "e84eaf4d-2f45-47b2-abe8-e581b06deb66 [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 10,
+                "platform": "Kubernetes",
+                "issueType": "IncorrectValue",
+                "expectedValue": "ensure that these namespaces are the ones you need and are adequately administered as per your requirements.",
+                "value": "namespaces in use: wordpress-mysql"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "jDIzU3meGdG7A0t3oHgL1gEBPZk=",
+            "similarityId": "deced09ca49d3364fe60fceebb388aee17fc0733d6fc0611d7a98d0c100a3f88",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "INFO",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "In case of an unresponsive container, a Liveness Probe can help your application become more available since it restarts the container. However, it can lead to cascading failures. Define one if you really need it",
+            "data": {
+                "queryId": "ade74944-a674-4e00-859e-c6eab5bde441",
+                "queryName": "Liveness Probe Is Not Defined",
+                "group": "Availability [Taken from category]",
+                "queryUrl": "Liveness Probe Is Not Defined [Taken from query_name]",
+                "queryId": "ade74944-a674-4e00-859e-c6eab5bde441 [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 43,
+                "platform": "Kubernetes",
+                "issueType": "MissingAttribute",
+                "expectedValue": "metadata.name={{wordpress}}.spec.containers.name={{wordpress}}.livenessProbe should be defined",
+                "value": "metadata.name={{wordpress}}.spec.containers.name={{wordpress}}.livenessProbe is undefined"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "vFvynCyNCVUFI3wZJfHAvwtE2lM=",
+            "similarityId": "48a5cabbcf8cfe098c868d6c1183cb4c10fffce54ff981743c0b13ac29359d7e",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "INFO",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "In case of an unresponsive container, a Liveness Probe can help your application become more available since it restarts the container. However, it can lead to cascading failures. Define one if you really need it",
+            "data": {
+                "queryId": "ade74944-a674-4e00-859e-c6eab5bde441",
+                "queryName": "Liveness Probe Is Not Defined",
+                "group": "Availability [Taken from category]",
+                "queryUrl": "Liveness Probe Is Not Defined [Taken from query_name]",
+                "queryId": "ade74944-a674-4e00-859e-c6eab5bde441 [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 89,
+                "platform": "Kubernetes",
+                "issueType": "MissingAttribute",
+                "expectedValue": "metadata.name={{mysql}}.spec.containers.name={{mysql}}.livenessProbe should be defined",
+                "value": "metadata.name={{mysql}}.spec.containers.name={{mysql}}.livenessProbe is undefined"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "sast",
+            "id": "0R/w0uZZw/ec0uzpRZGkaxX8hXE=",
+            "similarityId": "-1792766039",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:08:13Z",
+            "firstFoundAt": "2024-11-15T09:49:51Z",
+            "foundAt": "2024-11-26T16:08:13Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "The JavaScript file imported in \"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js\" in /recommend/report/html/header.html at line 5 is from a remote domain, which may allow attackers to replace its contents with malicious code.",
+            "data": {
+                "queryId": 3455652598283285801,
+                "queryName": "Client_Hardcoded_Domain",
+                "group": "JavaScript_Low_Visibility",
+                "resultHash": "0R/w0uZZw/ec0uzpRZGkaxX8hXE=",
+                "languageName": "JavaScript",
+                "nodes": [
+                    {
+                        "id": "MQ8SEcRNm5EpsT8loZ48NDEmn4A=",
+                        "line": 5,
+                        "name": "\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js\"",
+                        "column": 46,
+                        "length": 67,
+                        "method": "script___3725ea2b",
+                        "nodeID": 88336,
+                        "domType": "StringLiteral",
+                        "fileName": "/recommend/report/html/header.html",
+                        "fullName": "\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js\"",
+                        "typeName": "StringLiteral",
+                        "methodLine": 5,
+                        "definitions": "-1"
+                    }
+                ]
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": 829,
+                "compliances": [
+                    "MOIS(KISA) Secure Coding 2021",
+                    "NIST SP 800-53",
+                    "OWASP ASVS",
+                    "OWASP Top 10 2021",
+                    "PCI DSS v4.0",
+                    "SANS top 25",
+                    "ASA Premium",
+                    "CWE top 25"
+                ]
+            }
+        },
+        {
+            "type": "kics",
+            "id": "1FvJ+9CTH0y5LIXmMPB50uHAGw4=",
+            "similarityId": "da52abde79d8656dceb0e0eaa84c3f8d62ac8ca35350447a708554c727062969",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "Sees if Kubernetes Drop Capabilities exists to ensure containers security context",
+            "data": {
+                "queryId": "268ca686-7fb7-4ae9-b129-955a2a89064e",
+                "queryName": "No Drop Capabilities for Containers",
+                "group": "Best Practices [Taken from category]",
+                "queryUrl": "No Drop Capabilities for Containers [Taken from query_name]",
+                "queryId": "268ca686-7fb7-4ae9-b129-955a2a89064e [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 43,
+                "platform": "Kubernetes",
+                "issueType": "MissingAttribute",
+                "expectedValue": "metadata.name={{wordpress}}.spec.containers.name=wordpress.securityContext should be set",
+                "value": "metadata.name={{wordpress}}.spec.containers.name=wordpress.securityContext is undefined"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "sast",
+            "id": "1vuXLI0iDsRmf72KovlkMXmZw44=",
+            "similarityId": "-759292373",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:08:13Z",
+            "firstFoundAt": "2024-11-15T09:49:51Z",
+            "foundAt": "2024-11-26T16:08:13Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "The JavaScript file imported in https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css in /recommend/report/html/header.html at line 9 is from a remote domain, which may allow attackers to replace its contents with malicious code.",
+            "data": {
+                "queryId": 3455652598283285801,
+                "queryName": "Client_Hardcoded_Domain",
+                "group": "JavaScript_Low_Visibility",
+                "resultHash": "1vuXLI0iDsRmf72KovlkMXmZw44=",
+                "languageName": "JavaScript",
+                "nodes": [
+                    {
+                        "id": "2x3X9/bEqFJD5yBjzSLAGMgmsEQ=",
+                        "line": 9,
+                        "name": "https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css",
+                        "column": 34,
+                        "length": 72,
+                        "nodeID": 89211,
+                        "domType": "Comment",
+                        "fileName": "/recommend/report/html/header.html",
+                        "fullName": "https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css",
+                        "methodLine": 9,
+                        "definitions": "-1"
+                    }
+                ]
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": 829,
+                "compliances": [
+                    "MOIS(KISA) Secure Coding 2021",
+                    "NIST SP 800-53",
+                    "OWASP ASVS",
+                    "OWASP Top 10 2021",
+                    "PCI DSS v4.0",
+                    "SANS top 25",
+                    "ASA Premium",
+                    "CWE top 25"
+                ]
+            }
+        },
+        {
+            "type": "kics",
+            "id": "8eB8f6GQOB1Cy/c8P9eKmV7uwRs=",
+            "similarityId": "6bd4154437b8e0390bd4a5d110805ba74a33bbe940e05021eed1b6380702cb27",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "CPU limits should be set because if the system has CPU time free, a container is guaranteed to be allocated as much CPU as it requests",
+            "data": {
+                "queryId": "4ac0e2b7-d2d2-4af7-8799-e8de6721ccda",
+                "queryName": "CPU Limits Not Set",
+                "group": "Resource Management [Taken from category]",
+                "queryUrl": "CPU Limits Not Set [Taken from query_name]",
+                "queryId": "4ac0e2b7-d2d2-4af7-8799-e8de6721ccda [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 89,
+                "platform": "Kubernetes",
+                "issueType": "MissingAttribute",
+                "expectedValue": "spec.template.spec.containers.name=mysql has resources defined",
+                "value": "spec.template.spec.containers.name=mysql doesn't have resources defined"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "+9RwMyLm8usunPA25lskuq2XW6Q=",
+            "similarityId": "ea5c901e95e70a996ca5caf0bf74b9bc3df34368ca4b96bb1d9d38753550c5a8",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "CPU requests should be set to ensure the sum of the resource requests of the scheduled Containers is less than the capacity of the node",
+            "data": {
+                "queryId": "ca469dd4-c736-448f-8ac1-30a642705e0a",
+                "queryName": "CPU Requests Not Set",
+                "group": "Resource Management [Taken from category]",
+                "queryUrl": "CPU Requests Not Set [Taken from query_name]",
+                "queryId": "ca469dd4-c736-448f-8ac1-30a642705e0a [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 43,
+                "platform": "Kubernetes",
+                "issueType": "MissingAttribute",
+                "expectedValue": "spec.template.spec.containers.name=wordpress should have resources defined",
+                "value": "spec.template.spec.containers.name=wordpress doesn't have resources defined"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "aFJtXwcuIaSSSGGIx8mtWb/bHVw=",
+            "similarityId": "c7e7535dd9245a6e164b2827e9730bf3ea577a7c7af528da0ab124849c55155c",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "Image Pull Policy of the container must be defined and set to Always",
+            "data": {
+                "queryId": "caa3479d-885d-4882-9aac-95e5e78ef5c2",
+                "queryName": "Image Pull Policy Of The Container Is Not Set To Always",
+                "group": "Insecure Configurations [Taken from category]",
+                "queryUrl": "Image Pull Policy Of The Container Is Not Set To Always [Taken from query_name]",
+                "queryId": "caa3479d-885d-4882-9aac-95e5e78ef5c2 [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 89,
+                "platform": "Kubernetes",
+                "issueType": "IncorrectValue",
+                "expectedValue": "metadata.name={{mysql}}.spec.template.spec.containers.name={{mysql}}.imagePullPolicy should be set to 'Always'",
+                "value": "metadata.name={{mysql}}.spec.template.spec.containers.name={{mysql}}.imagePullPolicy relies on mutable images in cache"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "AN4iqpHYqYPjNXw+Q8PsrAndX6U=",
+            "similarityId": "e8b86665fad4547ffdf8bc9218735441fdd3a15c35d05ce527a1504a70182074",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "Each namespace should have a LimitRange policy associated to ensure that resource allocations of Pods, Containers and PersistentVolumeClaims do not exceed the defined boundaries",
+            "data": {
+                "queryId": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+                "queryName": "Pod or Container Without LimitRange",
+                "group": "Insecure Configurations [Taken from category]",
+                "queryUrl": "Pod or Container Without LimitRange [Taken from query_name]",
+                "queryId": "4a20ebac-1060-4c81-95d1-1f7f620e983b [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 26,
+                "platform": "Kubernetes",
+                "issueType": "MissingAttribute",
+                "expectedValue": "metadata.name={{wordpress}} has a 'LimitRange' policy associated",
+                "value": "metadata.name={{wordpress}} does not have a 'LimitRange' policy associated"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "cInm6tNUtCypCOSM0E3DoqasBi0=",
+            "similarityId": "9866b6922b21afe8d9d6abf8e4d42cd1f3c5d5b0f279d61745f9e94df1706963",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-13T13:20:05Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "d31e2204-78b9-411c-b7fa-120784ec284d",
+            "description": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+            "data": {
+                "queryId": "555ab8f9-2001-455e-a077-f2d0f41e2fb9",
+                "queryName": "Unpinned Actions Full Length Commit SHA",
+                "group": "Supply-Chain [Taken from category]",
+                "queryUrl": "Unpinned Actions Full Length Commit SHA [Taken from query_name]",
+                "queryId": "555ab8f9-2001-455e-a077-f2d0f41e2fb9 [Taken from query_id]",
+                "fileName": "/.github/workflows/SAST.yml",
+                "line": 43,
+                "platform": "CICD",
+                "issueType": "IncorrectValue",
+                "expectedValue": "Action pinned to a full length commit SHA.",
+                "value": "Action is not pinned to a full length commit SHA."
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "sca",
+            "id": "CVE-2024-45310",
+            "similarityId": "CVE-2024-45310",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:10:34Z",
+            "firstFoundAt": "2024-11-15T09:52:09Z",
+            "foundAt": "2024-11-26T16:10:34Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "The runc is a CLI tool for spawning and running containers according to the OCI specification. In runc, it can be tricked into creating empty files or directories in arbitrary locations in the host filesystem by sharing a volume between two containers and exploiting a race with `os.MkdirAll`. While this could be used to create empty files, existing files would not be truncated. An attacker must have the ability to start containers using some kind of custom volume configuration. Containers using user `namespaces` are still affected, but the scope of places an attacker can create inodes can be significantly reduced. Sufficiently strict LSM policies (SELinux/Apparmor) can also in principle block this attack -- we suspect the industry standard SELinux policy may restrict this attack's scope, but the exact scope of protection hasn't been analyzed. This is exploitable using runc directly as well as through Docker and Kubernetes. This vulnerability affects github.com/opencontainers/runc package verisons through 1.1.13, 1.2.0-rc.1 through 1.2.0-rc2. Some workarounds are available. Using user `namespaces` restricts this attack fairly significantly such that the attacker can only create `inodes` in directories that the remapped root `user/group` has write access to. Unless the root user is remapped to an actual user on the host (such as with rootless containers that don't use `/etc/sub[ug]id`), this in practice means that an attacker would only be able to create inodes in world-writable directories. A strict enough SELinux or AppArmor policy could in principle also restrict the scope if a specific label is applied to the runc runtime, though neither the extent to which the standard existing policies block this attack nor what exact policies are needed to sufficiently restrict this attack have been thoroughly tested.",
+            "data": {
+                "packageIdentifier": "Go-github.com/opencontainers/runc-v1.1.12",
+                "publishedAt": "2024-09-03T19:15:00+00:00",
+                "recommendations": "v1.1.12-0.20240123131159-2a4ed3e75b9e",
+                "recommendedVersion": "v1.1.12-0.20240123131159-2a4ed3e75b9e",
+                "exploitableMethods": null,
+                "packageData": [
+                    {
+                        "url": "https://github.com/advisories/GHSA-jfvp-7x6p-h2pv",
+                        "type": "Advisory"
+                    },
+                    {
+                        "url": "https://github.com/opencontainers/runc/pull/4359",
+                        "type": "Pull request"
+                    },
+                    {
+                        "url": "https://github.com/golang/vulndb/issues/3110",
+                        "type": "Disclosure"
+                    },
+                    {
+                        "url": "https://github.com/golang/vulndb/issues/3111",
+                        "type": "Disclosure"
+                    },
+                    {
+                        "url": "https://github.com/opencontainers/runc/commit/63c2908164f3a1daea455bf5bcd8d363d70328c7",
+                        "type": "Commit",
+                        "comment": "master"
+                    },
+                    {
+                        "url": "https://github.com/opencontainers/runc/commit/8781993968fd964ac723ff5f360b6f259e809a3e",
+                        "type": "Commit",
+                        "comment": "release-1.1"
+                    },
+                    {
+                        "url": "https://github.com/opencontainers/runc/releases/tag/v1.2.0-rc.3",
+                        "type": "Release Note"
+                    }
+                ]
+            },
+            "comments": {
+                "comments": ""
+            },
+            "vulnerabilityDetails": {
+                "cvssScore": 3.5999999046325684,
+                "cveName": "CVE-2024-45310",
+                "cweId": "CWE-363",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "LOCAL",
+                    "availability": "NONE",
+                    "cvss3severity": "Low",
+                    "confidentiality": "NONE",
+                    "attackComplexity": "LOW",
+                    "exploitCodeMaturity": "1.8"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "id": "CVE-2024-48921",
+            "similarityId": "CVE-2024-48921",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:10:34Z",
+            "firstFoundAt": "2024-11-13T13:21:55Z",
+            "foundAt": "2024-11-26T16:10:34Z",
+            "firstScanId": "d31e2204-78b9-411c-b7fa-120784ec284d",
+            "description": "Kyverno is a policy engine designed for Kubernetes. A Kyverno ClusterPolicy, ie. \"disallow-privileged-containers,\" can be overridden by creating a \"PolicyException\" in a random namespace. By design, \"PolicyExceptions\" are consumed from any namespace. Administrators may not recognise that this allows users with privileges to \"non-kyverno\" namespaces to create exceptions. This vulnerability affects github.com/kyverno/kyverno versions prior to 1.13.0-rc.3.",
+            "data": {
+                "packageIdentifier": "Go-github.com/kyverno/kyverno-v1.9.2",
+                "publishedAt": "2024-10-29T15:15:00+00:00",
+                "recommendations": "v1.13.0",
+                "recommendedVersion": "v1.13.0",
+                "exploitableMethods": null,
+                "packageData": [
+                    {
+                        "url": "https://github.com/advisories/GHSA-qjvc-p88j-j9rm",
+                        "type": "Advisory"
+                    },
+                    {
+                        "url": "https://nirmata.com/2024/10/30/announcing-kyverno-release-1-13/",
+                        "type": "Release Note"
+                    },
+                    {
+                        "url": "https://main.kyverno.io/docs/installation/upgrading/#upgrading-to-kyverno-v113",
+                        "type": "Release Note"
+                    },
+                    {
+                        "url": "https://github.com/kyverno/kyverno/pull/11426",
+                        "type": "Pull request"
+                    },
+                    {
+                        "url": "https://github.com/kyverno/kyverno/commit/cbfeb32b1aa1eab878c268c8cebeee914d859fd1",
+                        "type": "Commit"
+                    }
+                ]
+            },
+            "comments": {
+                "comments": ""
+            },
+            "vulnerabilityDetails": {
+                "cvssScore": 2.700000047683716,
+                "cveName": "CVE-2024-48921",
+                "cweId": "CWE-863",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "NONE",
+                    "cvss3severity": "Low",
+                    "confidentiality": "NONE",
+                    "attackComplexity": "LOW"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "id": "CVE-2024-51744",
+            "similarityId": "CVE-2024-51744",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:10:34Z",
+            "firstFoundAt": "2024-11-15T08:13:18Z",
+            "foundAt": "2024-11-26T16:10:34Z",
+            "firstScanId": "f9685e43-0665-4d4f-afc4-2cebe3b20696",
+            "description": "The golang-jwt is a Go implementation of JSON Web Tokens. Unclear documentation of the error behavior in `ParseWithClaims` can lead to situations where users are potentially not checking errors in the way they should be. Especially, if a token is both expired and invalid, the errors returned by `ParseWithClaims` return both error codes. If users only check for the `jwt.ErrTokenExpired ` using `error.Is`, they will ignore the embedded `jwt.ErrTokenSignatureInvalid` and thus potentially accept invalid tokens. A fix has been back-ported with the error handling logic from the `v5` branch to the `v4` branch. In this logic, the `ParseWithClaims` function will immediately return in \"dangerous\" situations (e.g., an invalid signature), limiting the combined errors only to situations where the signature is valid, but further validation failed (e.g., if the signature is valid, but is expired AND has the wrong audience). This vulnerability affects github.com/golang-jwt/jwt package versions through 4.5.0. This fix is part of the 4.5.1 release. We are aware that this changes the behavior of an established function and is not 100 % backwards compatible. In case you cannot update to 4.5.0, please make sure that you are properly checking for all errors (\"dangerous\" ones first), so that you are not running in the case detailed above.",
+            "data": {
+                "packageIdentifier": "Go-github.com/golang-jwt/jwt-v3.2.2",
+                "publishedAt": "2024-11-04T02:39:00+00:00",
+                "recommendations": "v5.0.0",
+                "recommendedVersion": "v5.0.0",
+                "exploitableMethods": null,
+                "packageData": [
+                    {
+                        "url": "https://github.com/advisories/GHSA-29wx-vh33-7x7r",
+                        "type": "Advisory"
+                    },
+                    {
+                        "url": "https://github.com/golang-jwt/jwt/commit/7b1c1c00a171c6c79bbdb40e4ce7d197060c1c2c",
+                        "type": "Commit"
+                    },
+                    {
+                        "url": "https://github.com/golang-jwt/jwt/releases/tag/v4.5.1",
+                        "type": "Release Note"
+                    }
+                ]
+            },
+            "comments": {
+                "comments": ""
+            },
+            "vulnerabilityDetails": {
+                "cvssScore": 3.0999999046325684,
+                "cveName": "CVE-2024-51744",
+                "cweId": "CWE-755",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "NONE",
+                    "cvss3severity": "Low",
+                    "confidentiality": "LOW",
+                    "attackComplexity": "HIGH"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "id": "CVE-2024-51744",
+            "similarityId": "CVE-2024-51744",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:10:34Z",
+            "firstFoundAt": "2024-11-13T13:21:55Z",
+            "foundAt": "2024-11-26T16:10:34Z",
+            "firstScanId": "d31e2204-78b9-411c-b7fa-120784ec284d",
+            "description": "The golang-jwt is a Go implementation of JSON Web Tokens. Unclear documentation of the error behavior in `ParseWithClaims` can lead to situations where users are potentially not checking errors in the way they should be. Especially, if a token is both expired and invalid, the errors returned by `ParseWithClaims` return both error codes. If users only check for the `jwt.ErrTokenExpired ` using `error.Is`, they will ignore the embedded `jwt.ErrTokenSignatureInvalid` and thus potentially accept invalid tokens. A fix has been back-ported with the error handling logic from the `v5` branch to the `v4` branch. In this logic, the `ParseWithClaims` function will immediately return in \"dangerous\" situations (e.g., an invalid signature), limiting the combined errors only to situations where the signature is valid, but further validation failed (e.g., if the signature is valid, but is expired AND has the wrong audience). This vulnerability affects github.com/golang-jwt/jwt package versions through 4.5.0. This fix is part of the 4.5.1 release. We are aware that this changes the behavior of an established function and is not 100 % backwards compatible. In case you cannot update to 4.5.0, please make sure that you are properly checking for all errors (\"dangerous\" ones first), so that you are not running in the case detailed above.",
+            "data": {
+                "packageIdentifier": "Go-github.com/golang-jwt/jwt/v4-v4.5.0",
+                "publishedAt": "2024-11-04T02:39:00+00:00",
+                "recommendations": "v4.5.1",
+                "recommendedVersion": "v4.5.1",
+                "exploitableMethods": null,
+                "packageData": [
+                    {
+                        "url": "https://github.com/advisories/GHSA-29wx-vh33-7x7r",
+                        "type": "Advisory"
+                    },
+                    {
+                        "url": "https://github.com/golang-jwt/jwt/commit/7b1c1c00a171c6c79bbdb40e4ce7d197060c1c2c",
+                        "type": "Commit"
+                    },
+                    {
+                        "url": "https://github.com/golang-jwt/jwt/releases/tag/v4.5.1",
+                        "type": "Release Note"
+                    }
+                ]
+            },
+            "comments": {
+                "comments": ""
+            },
+            "vulnerabilityDetails": {
+                "cvssScore": 3.0999999046325684,
+                "cveName": "CVE-2024-51744",
+                "cweId": "CWE-755",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "NONE",
+                    "cvss3severity": "Low",
+                    "confidentiality": "LOW",
+                    "attackComplexity": "HIGH"
+                }
+            }
+        },
+        {
+            "type": "sast",
+            "id": "F3oYKBuM8WPcVOKxbYJnEhLbvbg=",
+            "similarityId": "-1725764147",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:08:13Z",
+            "firstFoundAt": "2024-11-15T09:49:51Z",
+            "foundAt": "2024-11-26T16:08:13Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "The JavaScript file imported in \"https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js\" in /recommend/report/html/header.html at line 7 is from a remote domain, which may allow attackers to replace its contents with malicious code.",
+            "data": {
+                "queryId": 3455652598283285801,
+                "queryName": "Client_Hardcoded_Domain",
+                "group": "JavaScript_Low_Visibility",
+                "resultHash": "F3oYKBuM8WPcVOKxbYJnEhLbvbg=",
+                "languageName": "JavaScript",
+                "nodes": [
+                    {
+                        "id": "kTSP/LCxblyrx1Xupu4Y+ffPpVw=",
+                        "line": 7,
+                        "name": "\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js\"",
+                        "column": 46,
+                        "length": 72,
+                        "method": "script___3725ea2b",
+                        "nodeID": 88356,
+                        "domType": "StringLiteral",
+                        "fileName": "/recommend/report/html/header.html",
+                        "fullName": "\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js\"",
+                        "typeName": "StringLiteral",
+                        "methodLine": 7,
+                        "definitions": "-1"
+                    }
+                ]
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": 829,
+                "compliances": [
+                    "MOIS(KISA) Secure Coding 2021",
+                    "NIST SP 800-53",
+                    "OWASP ASVS",
+                    "OWASP Top 10 2021",
+                    "PCI DSS v4.0",
+                    "SANS top 25",
+                    "ASA Premium",
+                    "CWE top 25"
+                ]
+            }
+        },
+        {
+            "type": "kics",
+            "id": "fRo6+KTYM7teUcIZybRVOZmGpCk=",
+            "similarityId": "cb07c1143c8027eb727ab603bfcb3beb672a11b59985ad44891964ae37d05451",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "Image Pull Policy of the container must be defined and set to Always",
+            "data": {
+                "queryId": "caa3479d-885d-4882-9aac-95e5e78ef5c2",
+                "queryName": "Image Pull Policy Of The Container Is Not Set To Always",
+                "group": "Insecure Configurations [Taken from category]",
+                "queryUrl": "Image Pull Policy Of The Container Is Not Set To Always [Taken from query_name]",
+                "queryId": "caa3479d-885d-4882-9aac-95e5e78ef5c2 [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 43,
+                "platform": "Kubernetes",
+                "issueType": "IncorrectValue",
+                "expectedValue": "metadata.name={{wordpress}}.spec.template.spec.containers.name={{wordpress}}.imagePullPolicy should be set to 'Always'",
+                "value": "metadata.name={{wordpress}}.spec.template.spec.containers.name={{wordpress}}.imagePullPolicy relies on mutable images in cache"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "G55jdhWvrto0WMF9A7HWG8Clh78=",
+            "similarityId": "dcf95aeeda728a0945a37d974f387070f722daa01aa4d0ae9fc25238a3577145",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "Check if the root container filesystem is not being mounted as read-only.",
+            "data": {
+                "queryId": "a9c2f49d-0671-4fc9-9ece-f4e261e128d0",
+                "queryName": "Root Container Not Mounted Read-only",
+                "group": "Build Process [Taken from category]",
+                "queryUrl": "Root Container Not Mounted Read-only [Taken from query_name]",
+                "queryId": "a9c2f49d-0671-4fc9-9ece-f4e261e128d0 [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 43,
+                "platform": "Kubernetes",
+                "issueType": "MissingAttribute",
+                "expectedValue": "metadata.name={{wordpress}}.spec.template.spec.containers.name={{wordpress}}.securityContext.readOnlyRootFilesystem should be set to true",
+                "value": "metadata.name={{wordpress}}.spec.template.spec.containers.name={{wordpress}}.securityContext.readOnlyRootFilesystem is undefined"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "GA5ie3+V59FvLPFy8JjTOz2g/qk=",
+            "similarityId": "78ab0387455ee994a22f0551b8a639b341864c49802d6271dbd0a307c9941fb0",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "Images should be specified together with their digests to ensure integrity",
+            "data": {
+                "queryId": "7c81d34c-8e5a-402b-9798-9f442630e678",
+                "queryName": "Image Without Digest",
+                "group": "Insecure Configurations [Taken from category]",
+                "queryUrl": "Image Without Digest [Taken from query_name]",
+                "queryId": "7c81d34c-8e5a-402b-9798-9f442630e678 [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 44,
+                "platform": "Kubernetes",
+                "issueType": "IncorrectValue",
+                "expectedValue": "metadata.name={{wordpress}}.spec.template.spec.containers.name={{wordpress}}.image should specify the image with a digest",
+                "value": "metadata.name={{wordpress}}.spec.template.spec.containers.name={{wordpress}}.image does not include an image digest"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "GJUCLAXd0KDG5Eg20p9TcJMvEBM=",
+            "similarityId": "1715aad9c07bb951c5e15878464b2dd443a04281194f9f7f372386b59b2c976c",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-26T16:07:33Z",
+            "firstFoundAt": "2024-11-15T09:49:10Z",
+            "foundAt": "2024-11-26T16:07:33Z",
+            "firstScanId": "ea269fe2-c5ba-499d-9309-2218d9a0fb9a",
+            "description": "Containers should be configured with an AppArmor profile to enforce fine-grained access control over low-level system resources",
+            "data": {
+                "queryId": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+                "queryName": "Missing AppArmor Profile",
+                "group": "Access Control [Taken from category]",
+                "queryUrl": "Missing AppArmor Profile [Taken from query_name]",
+                "queryId": "8b36775e-183d-4d46-b0f7-96a6f34a723f [Taken from query_id]",
+                "fileName": "/tests/recommend/res/wordpress-mysql-deployment.yaml",
+                "line": 35,
+                "platform": "Kubernetes",
+                "issueType": "MissingAttribute",
+                "expectedValue": "metadata.name={{wordpress}}.spec.template.metadata.annotations should specify an AppArmor profile for container {{wordpress}}",
+                "value": "metadata.name={{wordpress}}.spec.template.metadata.annotations does not specify an AppArmor profile for container {{wordpress}}"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        }
+    ],
+    "totalCount": 111
+}

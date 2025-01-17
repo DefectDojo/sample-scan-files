@@ -1,0 +1,167 @@
+{
+    "total": 2,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 2
+    },
+    "effortTotal": 8,
+    "issues": [
+        {
+            "key": "6168cdc6-03fb-44c3-be80-9c274a0c3d09",
+            "rule": "ruby:S1192",
+            "severity": "CRITICAL",
+            "component": "yavdb:lib/yavdb/cli.rb",
+            "project": "yavdb",
+            "line": 31,
+            "hash": "12407b08d3ebfb0da0c8eee70d007ac2",
+            "textRange": {
+                "startLine": 31,
+                "endLine": 31,
+                "startOffset": 18,
+                "endOffset": 33
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "yavdb:lib/yavdb/cli.rb",
+                            "textRange": {
+                                "startLine": 42,
+                                "endLine": 42,
+                                "startOffset": 81,
+                                "endOffset": 96
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "yavdb:lib/yavdb/cli.rb",
+                            "textRange": {
+                                "startLine": 45,
+                                "endLine": 45,
+                                "startOffset": 18,
+                                "endOffset": 33
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "yavdb:lib/yavdb/cli.rb",
+                            "textRange": {
+                                "startLine": 49,
+                                "endLine": 49,
+                                "startOffset": 36,
+                                "endOffset": 51
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"database-path\" 4 times.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "rtfrodrigo@gmail.com",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2018-08-19T21:26:51+0000",
+            "updateDate": "2024-11-14T06:54:40+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "686b63a6-751f-43a2-945b-b8751e610793",
+            "rule": "ruby:S1135",
+            "severity": "INFO",
+            "component": "yavdb:lib/yavdb/dtos/advisory.rb",
+            "project": "yavdb",
+            "line": 18,
+            "hash": "6df12d717fce5cd2105068f42ac9601c",
+            "textRange": {
+                "startLine": 18,
+                "endLine": 18,
+                "startOffset": 4,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Complete the task associated to this TODO comment.",
+            "effort": "0min",
+            "debt": "0min",
+            "author": "rtfrodrigo@gmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2018-08-19T21:26:51+0000",
+            "updateDate": "2024-11-14T06:54:40+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        }
+    ],
+    "components": [
+        {
+            "key": "yavdb:lib/yavdb/cli.rb",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "cli.rb",
+            "longName": "lib/yavdb/cli.rb",
+            "path": "lib/yavdb/cli.rb"
+        },
+        {
+            "key": "yavdb",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "yavdb",
+            "longName": "yavdb"
+        },
+        {
+            "key": "yavdb:lib/yavdb/dtos/advisory.rb",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "advisory.rb",
+            "longName": "lib/yavdb/dtos/advisory.rb",
+            "path": "lib/yavdb/dtos/advisory.rb"
+        }
+    ],
+    "facets": []
+}
