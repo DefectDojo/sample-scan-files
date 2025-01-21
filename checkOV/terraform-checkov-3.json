@@ -1,0 +1,2250 @@
+{
+        "check_type": "terraform",
+        "results": {
+            "passed_checks": [
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"github_repository\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"github_app_example\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository created using GitHub App authentication\"\n"
+                        ],
+                        [
+                            4,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\app_authentication\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_authentication\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/app_authentication/main.tf",
+                    "file_line_range": [
+                        1,
+                        4
+                    ],
+                    "resource": "github_repository.github_repository",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_authentication\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"app_installation_example\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"appinstallationexample\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository to install an application in.\"\n"
+                        ],
+                        [
+                            4,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\app_installation_repository\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_installation_repository\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/app_installation_repository/main.tf",
+                    "file_line_range": [
+                        1,
+                        4
+                    ],
+                    "resource": "github_repository.app_installation_example",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_installation_repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"collaboration\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"collaboration\"\n"
+                        ],
+                        [
+                            3,
+                            "  visibility  = \"private\"\n"
+                        ],
+                        [
+                            4,
+                            "  description = \"A collaborative repository\"\n"
+                        ],
+                        [
+                            5,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_collaborator\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_collaborator\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_collaborator/main.tf",
+                    "file_line_range": [
+                        1,
+                        5
+                    ],
+                    "resource": "github_repository.collaboration",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_collaborator\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"delete_branch_on_merge\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name                   = \"delete_branch_on_merge\"\n"
+                        ],
+                        [
+                            3,
+                            "  description            = \"A repository with delete-branch-on-merge configured\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility             = \"private\"\n"
+                        ],
+                        [
+                            5,
+                            "  delete_branch_on_merge = true\n"
+                        ],
+                        [
+                            6,
+                            "}"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_delete_branch_on_merge\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_delete_branch_on_merge\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_delete_branch_on_merge/main.tf",
+                    "file_line_range": [
+                        1,
+                        6
+                    ],
+                    "resource": "github_repository.delete_branch_on_merge",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_delete_branch_on_merge\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"terraformed\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"terraformed\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository created by Terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_non_org_owner\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_non_org_owner\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_non_org_owner/main.tf",
+                    "file_line_range": [
+                        1,
+                        4
+                    ],
+                    "resource": "github_repository.terraformed",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_non_org_owner\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"internal\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"internal-visibility\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A internal-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility  = \"internal\"\n"
+                        ],
+                        [
+                            5,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_org_internal\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_org_internal\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_org_internal/main.tf",
+                    "file_line_range": [
+                        1,
+                        5
+                    ],
+                    "resource": "github_repository.internal",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_org_internal\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"terraformed\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"terraformed\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository created by terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility  = \"public\"\n"
+                        ],
+                        [
+                            5,
+                            "\n"
+                        ],
+                        [
+                            6,
+                            "  security_and_analysis {\n"
+                        ],
+                        [
+                            7,
+                            "    # Cannot set advanced_security for public repositories as it is always on by default.\n"
+                        ],
+                        [
+                            8,
+                            "    # advanced_security {\n"
+                        ],
+                        [
+                            9,
+                            "    #   status = \"enabled\"\n"
+                        ],
+                        [
+                            10,
+                            "    # }\n"
+                        ],
+                        [
+                            11,
+                            "    secret_scanning {\n"
+                        ],
+                        [
+                            12,
+                            "      status = \"enabled\"\n"
+                        ],
+                        [
+                            13,
+                            "    }\n"
+                        ],
+                        [
+                            14,
+                            "    secret_scanning_push_protection {\n"
+                        ],
+                        [
+                            15,
+                            "      status = \"enabled\"\n"
+                        ],
+                        [
+                            16,
+                            "    }\n"
+                        ],
+                        [
+                            17,
+                            "  }\n"
+                        ],
+                        [
+                            18,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_security_and_analysis\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_security_and_analysis\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_security_and_analysis/main.tf",
+                    "file_line_range": [
+                        1,
+                        18
+                    ],
+                    "resource": "github_repository.terraformed",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_security_and_analysis\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            31,
+                            "resource \"github_repository\" \"writers\" {\n"
+                        ],
+                        [
+                            32,
+                            "  name      = \"writers\"\n"
+                        ],
+                        [
+                            33,
+                            "  auto_init = true\n"
+                        ],
+                        [
+                            34,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_team\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_team\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_team/main.tf",
+                    "file_line_range": [
+                        31,
+                        34
+                    ],
+                    "resource": "github_repository.writers",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_team\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"public\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"public-visibility\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A public-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility  = \"public\"\n"
+                        ],
+                        [
+                            5,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_visibility\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_visibility/main.tf",
+                    "file_line_range": [
+                        1,
+                        5
+                    ],
+                    "resource": "github_repository.public",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            7,
+                            "resource \"github_repository\" \"private\" {\n"
+                        ],
+                        [
+                            8,
+                            "  name        = \"private-visibility\"\n"
+                        ],
+                        [
+                            9,
+                            "  description = \"A private-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            10,
+                            "  visibility  = \"private\"\n"
+                        ],
+                        [
+                            11,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_visibility\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_visibility/main.tf",
+                    "file_line_range": [
+                        7,
+                        11
+                    ],
+                    "resource": "github_repository.private",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            16,
+                            "resource \"github_repository\" \"internal\" {\n"
+                        ],
+                        [
+                            17,
+                            "  name        = \"internal-visibility\"\n"
+                        ],
+                        [
+                            18,
+                            "  description = \"A internal-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            19,
+                            "  visibility  = \"internal\"\n"
+                        ],
+                        [
+                            20,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_visibility\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_visibility/main.tf",
+                    "file_line_range": [
+                        16,
+                        20
+                    ],
+                    "resource": "github_repository.internal",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf"
+                }
+            ],
+            "failed_checks": [
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"github_repository\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"github_app_example\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository created using GitHub App authentication\"\n"
+                        ],
+                        [
+                            4,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\app_authentication\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_authentication\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/app_authentication/main.tf",
+                    "file_line_range": [
+                        1,
+                        4
+                    ],
+                    "resource": "github_repository.github_repository",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_authentication\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"app_installation_example\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"appinstallationexample\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository to install an application in.\"\n"
+                        ],
+                        [
+                            4,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\app_installation_repository\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_installation_repository\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/app_installation_repository/main.tf",
+                    "file_line_range": [
+                        1,
+                        4
+                    ],
+                    "resource": "github_repository.app_installation_example",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_installation_repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"collaboration\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"collaboration\"\n"
+                        ],
+                        [
+                            3,
+                            "  visibility  = \"private\"\n"
+                        ],
+                        [
+                            4,
+                            "  description = \"A collaborative repository\"\n"
+                        ],
+                        [
+                            5,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_collaborator\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_collaborator\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_collaborator/main.tf",
+                    "file_line_range": [
+                        1,
+                        5
+                    ],
+                    "resource": "github_repository.collaboration",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_collaborator\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"delete_branch_on_merge\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name                   = \"delete_branch_on_merge\"\n"
+                        ],
+                        [
+                            3,
+                            "  description            = \"A repository with delete-branch-on-merge configured\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility             = \"private\"\n"
+                        ],
+                        [
+                            5,
+                            "  delete_branch_on_merge = true\n"
+                        ],
+                        [
+                            6,
+                            "}"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_delete_branch_on_merge\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_delete_branch_on_merge\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_delete_branch_on_merge/main.tf",
+                    "file_line_range": [
+                        1,
+                        6
+                    ],
+                    "resource": "github_repository.delete_branch_on_merge",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_delete_branch_on_merge\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"terraformed\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"terraformed\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository created by Terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_non_org_owner\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_non_org_owner\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_non_org_owner/main.tf",
+                    "file_line_range": [
+                        1,
+                        4
+                    ],
+                    "resource": "github_repository.terraformed",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_non_org_owner\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"internal\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"internal-visibility\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A internal-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility  = \"internal\"\n"
+                        ],
+                        [
+                            5,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_org_internal\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_org_internal\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_org_internal/main.tf",
+                    "file_line_range": [
+                        1,
+                        5
+                    ],
+                    "resource": "github_repository.internal",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_org_internal\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"terraformed\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"terraformed\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository created by terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility  = \"public\"\n"
+                        ],
+                        [
+                            5,
+                            "\n"
+                        ],
+                        [
+                            6,
+                            "  security_and_analysis {\n"
+                        ],
+                        [
+                            7,
+                            "    # Cannot set advanced_security for public repositories as it is always on by default.\n"
+                        ],
+                        [
+                            8,
+                            "    # advanced_security {\n"
+                        ],
+                        [
+                            9,
+                            "    #   status = \"enabled\"\n"
+                        ],
+                        [
+                            10,
+                            "    # }\n"
+                        ],
+                        [
+                            11,
+                            "    secret_scanning {\n"
+                        ],
+                        [
+                            12,
+                            "      status = \"enabled\"\n"
+                        ],
+                        [
+                            13,
+                            "    }\n"
+                        ],
+                        [
+                            14,
+                            "    secret_scanning_push_protection {\n"
+                        ],
+                        [
+                            15,
+                            "      status = \"enabled\"\n"
+                        ],
+                        [
+                            16,
+                            "    }\n"
+                        ],
+                        [
+                            17,
+                            "  }\n"
+                        ],
+                        [
+                            18,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_security_and_analysis\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_security_and_analysis\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_security_and_analysis/main.tf",
+                    "file_line_range": [
+                        1,
+                        18
+                    ],
+                    "resource": "github_repository.terraformed",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_security_and_analysis\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            31,
+                            "resource \"github_repository\" \"writers\" {\n"
+                        ],
+                        [
+                            32,
+                            "  name      = \"writers\"\n"
+                        ],
+                        [
+                            33,
+                            "  auto_init = true\n"
+                        ],
+                        [
+                            34,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_team\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_team\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_team/main.tf",
+                    "file_line_range": [
+                        31,
+                        34
+                    ],
+                    "resource": "github_repository.writers",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_team\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"public\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"public-visibility\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A public-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility  = \"public\"\n"
+                        ],
+                        [
+                            5,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_visibility\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_visibility/main.tf",
+                    "file_line_range": [
+                        1,
+                        5
+                    ],
+                    "resource": "github_repository.public",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            7,
+                            "resource \"github_repository\" \"private\" {\n"
+                        ],
+                        [
+                            8,
+                            "  name        = \"private-visibility\"\n"
+                        ],
+                        [
+                            9,
+                            "  description = \"A private-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            10,
+                            "  visibility  = \"private\"\n"
+                        ],
+                        [
+                            11,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_visibility\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_visibility/main.tf",
+                    "file_line_range": [
+                        7,
+                        11
+                    ],
+                    "resource": "github_repository.private",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            16,
+                            "resource \"github_repository\" \"internal\" {\n"
+                        ],
+                        [
+                            17,
+                            "  name        = \"internal-visibility\"\n"
+                        ],
+                        [
+                            18,
+                            "  description = \"A internal-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            19,
+                            "  visibility  = \"internal\"\n"
+                        ],
+                        [
+                            20,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\repository_visibility\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_visibility/main.tf",
+                    "file_line_range": [
+                        16,
+                        20
+                    ],
+                    "resource": "github_repository.internal",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "github_repository": {
+                                    "__end_line__": 4,
+                                    "__start_line__": 1,
+                                    "description": [
+                                        "A repository created using GitHub App authentication"
+                                    ],
+                                    "name": [
+                                        "github_app_example"
+                                    ],
+                                    "__address__": "github_repository.github_repository"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"github_repository\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"github_app_example\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository created using GitHub App authentication\"\n"
+                        ],
+                        [
+                            4,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_authentication\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/app_authentication/main.tf",
+                    "file_line_range": [
+                        1,
+                        4
+                    ],
+                    "resource": "github_repository.github_repository",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_authentication\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "app_installation_example": {
+                                    "__end_line__": 4,
+                                    "__start_line__": 1,
+                                    "description": [
+                                        "A repository to install an application in."
+                                    ],
+                                    "name": [
+                                        "appinstallationexample"
+                                    ],
+                                    "__address__": "github_repository.app_installation_example"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"app_installation_example\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"appinstallationexample\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository to install an application in.\"\n"
+                        ],
+                        [
+                            4,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_installation_repository\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/app_installation_repository/main.tf",
+                    "file_line_range": [
+                        1,
+                        4
+                    ],
+                    "resource": "github_repository.app_installation_example",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\app_installation_repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "collaboration": {
+                                    "__end_line__": 5,
+                                    "__start_line__": 1,
+                                    "description": [
+                                        "A collaborative repository"
+                                    ],
+                                    "name": [
+                                        "collaboration"
+                                    ],
+                                    "visibility": [
+                                        "private"
+                                    ],
+                                    "__address__": "github_repository.collaboration"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"collaboration\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"collaboration\"\n"
+                        ],
+                        [
+                            3,
+                            "  visibility  = \"private\"\n"
+                        ],
+                        [
+                            4,
+                            "  description = \"A collaborative repository\"\n"
+                        ],
+                        [
+                            5,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_collaborator\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_collaborator/main.tf",
+                    "file_line_range": [
+                        1,
+                        5
+                    ],
+                    "resource": "github_repository.collaboration",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_collaborator\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "delete_branch_on_merge": {
+                                    "__end_line__": 6,
+                                    "__start_line__": 1,
+                                    "delete_branch_on_merge": [
+                                        true
+                                    ],
+                                    "description": [
+                                        "A repository with delete-branch-on-merge configured"
+                                    ],
+                                    "name": [
+                                        "delete_branch_on_merge"
+                                    ],
+                                    "visibility": [
+                                        "private"
+                                    ],
+                                    "__address__": "github_repository.delete_branch_on_merge"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"delete_branch_on_merge\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name                   = \"delete_branch_on_merge\"\n"
+                        ],
+                        [
+                            3,
+                            "  description            = \"A repository with delete-branch-on-merge configured\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility             = \"private\"\n"
+                        ],
+                        [
+                            5,
+                            "  delete_branch_on_merge = true\n"
+                        ],
+                        [
+                            6,
+                            "}"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_delete_branch_on_merge\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_delete_branch_on_merge/main.tf",
+                    "file_line_range": [
+                        1,
+                        6
+                    ],
+                    "resource": "github_repository.delete_branch_on_merge",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_delete_branch_on_merge\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "terraformed": {
+                                    "__end_line__": 4,
+                                    "__start_line__": 1,
+                                    "description": [
+                                        "A repository created by Terraform"
+                                    ],
+                                    "name": [
+                                        "terraformed"
+                                    ],
+                                    "__address__": "github_repository.terraformed"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"terraformed\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"terraformed\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository created by Terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_non_org_owner\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_non_org_owner/main.tf",
+                    "file_line_range": [
+                        1,
+                        4
+                    ],
+                    "resource": "github_repository.terraformed",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_non_org_owner\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "internal": {
+                                    "__end_line__": 5,
+                                    "__start_line__": 1,
+                                    "description": [
+                                        "A internal-visible repository created by Terraform"
+                                    ],
+                                    "name": [
+                                        "internal-visibility"
+                                    ],
+                                    "visibility": [
+                                        "internal"
+                                    ],
+                                    "__address__": "github_repository.internal"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"internal\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"internal-visibility\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A internal-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility  = \"internal\"\n"
+                        ],
+                        [
+                            5,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_org_internal\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_org_internal/main.tf",
+                    "file_line_range": [
+                        1,
+                        5
+                    ],
+                    "resource": "github_repository.internal",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_org_internal\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "terraformed": {
+                                    "__end_line__": 18,
+                                    "__start_line__": 1,
+                                    "description": [
+                                        "A repository created by terraform"
+                                    ],
+                                    "name": [
+                                        "terraformed"
+                                    ],
+                                    "security_and_analysis": [
+                                        {
+                                            "secret_scanning": [
+                                                {
+                                                    "status": [
+                                                        "enabled"
+                                                    ]
+                                                }
+                                            ],
+                                            "secret_scanning_push_protection": [
+                                                {
+                                                    "status": [
+                                                        "enabled"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "visibility": [
+                                        "public"
+                                    ],
+                                    "__address__": "github_repository.terraformed"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"terraformed\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"terraformed\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A repository created by terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility  = \"public\"\n"
+                        ],
+                        [
+                            5,
+                            "\n"
+                        ],
+                        [
+                            6,
+                            "  security_and_analysis {\n"
+                        ],
+                        [
+                            7,
+                            "    # Cannot set advanced_security for public repositories as it is always on by default.\n"
+                        ],
+                        [
+                            8,
+                            "    # advanced_security {\n"
+                        ],
+                        [
+                            9,
+                            "    #   status = \"enabled\"\n"
+                        ],
+                        [
+                            10,
+                            "    # }\n"
+                        ],
+                        [
+                            11,
+                            "    secret_scanning {\n"
+                        ],
+                        [
+                            12,
+                            "      status = \"enabled\"\n"
+                        ],
+                        [
+                            13,
+                            "    }\n"
+                        ],
+                        [
+                            14,
+                            "    secret_scanning_push_protection {\n"
+                        ],
+                        [
+                            15,
+                            "      status = \"enabled\"\n"
+                        ],
+                        [
+                            16,
+                            "    }\n"
+                        ],
+                        [
+                            17,
+                            "  }\n"
+                        ],
+                        [
+                            18,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_security_and_analysis\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_security_and_analysis/main.tf",
+                    "file_line_range": [
+                        1,
+                        18
+                    ],
+                    "resource": "github_repository.terraformed",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_security_and_analysis\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "writers": {
+                                    "__end_line__": 34,
+                                    "__start_line__": 31,
+                                    "auto_init": [
+                                        true
+                                    ],
+                                    "name": [
+                                        "writers"
+                                    ],
+                                    "__address__": "github_repository.writers"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            31,
+                            "resource \"github_repository\" \"writers\" {\n"
+                        ],
+                        [
+                            32,
+                            "  name      = \"writers\"\n"
+                        ],
+                        [
+                            33,
+                            "  auto_init = true\n"
+                        ],
+                        [
+                            34,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_team\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_team/main.tf",
+                    "file_line_range": [
+                        31,
+                        34
+                    ],
+                    "resource": "github_repository.writers",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_team\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "public": {
+                                    "__end_line__": 5,
+                                    "__start_line__": 1,
+                                    "description": [
+                                        "A public-visible repository created by Terraform"
+                                    ],
+                                    "name": [
+                                        "public-visibility"
+                                    ],
+                                    "visibility": [
+                                        "public"
+                                    ],
+                                    "__address__": "github_repository.public"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "resource \"github_repository\" \"public\" {\n"
+                        ],
+                        [
+                            2,
+                            "  name        = \"public-visibility\"\n"
+                        ],
+                        [
+                            3,
+                            "  description = \"A public-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            4,
+                            "  visibility  = \"public\"\n"
+                        ],
+                        [
+                            5,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_visibility/main.tf",
+                    "file_line_range": [
+                        1,
+                        5
+                    ],
+                    "resource": "github_repository.public",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "private": {
+                                    "__end_line__": 11,
+                                    "__start_line__": 7,
+                                    "description": [
+                                        "A private-visible repository created by Terraform"
+                                    ],
+                                    "name": [
+                                        "private-visibility"
+                                    ],
+                                    "visibility": [
+                                        "private"
+                                    ],
+                                    "__address__": "github_repository.private"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            7,
+                            "resource \"github_repository\" \"private\" {\n"
+                        ],
+                        [
+                            8,
+                            "  name        = \"private-visibility\"\n"
+                        ],
+                        [
+                            9,
+                            "  description = \"A private-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            10,
+                            "  visibility  = \"private\"\n"
+                        ],
+                        [
+                            11,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_visibility/main.tf",
+                    "file_line_range": [
+                        7,
+                        11
+                    ],
+                    "resource": "github_repository.private",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "FAILED",
+                        "entity": {
+                            "github_repository": {
+                                "internal": {
+                                    "__end_line__": 20,
+                                    "__start_line__": 16,
+                                    "description": [
+                                        "A internal-visible repository created by Terraform"
+                                    ],
+                                    "name": [
+                                        "internal-visibility"
+                                    ],
+                                    "visibility": [
+                                        "internal"
+                                    ],
+                                    "__address__": "github_repository.internal"
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            16,
+                            "resource \"github_repository\" \"internal\" {\n"
+                        ],
+                        [
+                            17,
+                            "  name        = \"internal-visibility\"\n"
+                        ],
+                        [
+                            18,
+                            "  description = \"A internal-visible repository created by Terraform\"\n"
+                        ],
+                        [
+                            19,
+                            "  visibility  = \"internal\"\n"
+                        ],
+                        [
+                            20,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf",
+                    "repo_file_path": "/terraform-provider-github/examples/repository_visibility/main.tf",
+                    "file_line_range": [
+                        16,
+                        20
+                    ],
+                    "resource": "github_repository.internal",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\examples\\repository_visibility\\main.tf"
+                }
+            ],
+            "skipped_checks": [],
+            "parsing_errors": []
+        },
+        "summary": {
+            "passed": 11,
+            "failed": 22,
+            "skipped": 0,
+            "parsing_errors": 0,
+            "resource_count": 18,
+            "checkov_version": "3.2.353"
+        },
+        "url": "Add an api key '--bc-api-key <api-key>' to see more detailed insights via https://bridgecrew.cloud"
+    }

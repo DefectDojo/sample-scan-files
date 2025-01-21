@@ -1,0 +1,558 @@
+{
+        "check_type": "gitlab_ci",
+        "results": {
+            "passed_checks": [
+                {
+                    "check_id": "CKV_GITLABCI_3",
+                    "bc_check_id": null,
+                    "check_name": "Detecting image usages in gitlab workflows",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "golang:1.22.2@sha256:450e3822c7a135e1463cd83e51c8e2eb03b86a02113c89424e6f0f8344bb4168",
+                            "__startline__": 56,
+                            "__endline__": 56
+                        }
+                    },
+                    "code_block": [
+                        [
+                            56,
+                            "    image: golang:1.22.2@sha256:450e3822c7a135e1463cd83e51c8e2eb03b86a02113c89424e6f0f8344bb4168\n"
+                        ],
+                        [
+                            57,
+                            "    only:\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        56,
+                        57
+                    ],
+                    "resource": "pages",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.DetectImagesUsage",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_GITLABCI_3",
+                    "bc_check_id": null,
+                    "check_name": "Detecting image usages in gitlab workflows",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "golangci/golangci-lint:v1.55.2-alpine@sha256:22e4dd2bba6ad3c6ef918432b92329b51e82d55e470d268d315bfff6a160bceb",
+                            "__startline__": 30,
+                            "__endline__": 30
+                        }
+                    },
+                    "code_block": [
+                        [
+                            30,
+                            "    image: golangci/golangci-lint:v1.55.2-alpine@sha256:22e4dd2bba6ad3c6ef918432b92329b51e82d55e470d268d315bfff6a160bceb\n"
+                        ],
+                        [
+                            31,
+                            "    script:\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        30,
+                        31
+                    ],
+                    "resource": "lint:source-code",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.DetectImagesUsage",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_GITLABCI_1",
+                    "bc_check_id": null,
+                    "check_name": "Suspicious use of curl with CI environment variables in script",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "### run tests ###",
+                            "__startline__": 24,
+                            "__endline__": 24
+                        }
+                    },
+                    "code_block": [
+                        [
+                            24,
+                            "        - '### run tests ###'\n"
+                        ],
+                        [
+                            25,
+                            "        - make test\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        24,
+                        25
+                    ],
+                    "resource": "test",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.SuspectCurlInScript",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_GITLABCI_1",
+                    "bc_check_id": null,
+                    "check_name": "Suspicious use of curl with CI environment variables in script",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "make test-cover",
+                            "__startline__": 26,
+                            "__endline__": 26
+                        }
+                    },
+                    "code_block": [
+                        [
+                            26,
+                            "        - make test-cover\n"
+                        ],
+                        [
+                            27,
+                            "\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        26,
+                        27
+                    ],
+                    "resource": "test",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.SuspectCurlInScript",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_GITLABCI_1",
+                    "bc_check_id": null,
+                    "check_name": "Suspicious use of curl with CI environment variables in script",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "apk add make bash",
+                            "__startline__": 32,
+                            "__endline__": 32
+                        }
+                    },
+                    "code_block": [
+                        [
+                            32,
+                            "        - apk add make bash\n"
+                        ],
+                        [
+                            33,
+                            "        - make settings\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        32,
+                        33
+                    ],
+                    "resource": "lint:source-code",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.SuspectCurlInScript",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_GITLABCI_1",
+                    "bc_check_id": null,
+                    "check_name": "Suspicious use of curl with CI environment variables in script",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "make settings",
+                            "__startline__": 33,
+                            "__endline__": 33
+                        }
+                    },
+                    "code_block": [
+                        [
+                            33,
+                            "        - make settings\n"
+                        ],
+                        [
+                            34,
+                            "        - '### run linter ###'\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        33,
+                        34
+                    ],
+                    "resource": "lint:source-code",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.SuspectCurlInScript",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_GITLABCI_1",
+                    "bc_check_id": null,
+                    "check_name": "Suspicious use of curl with CI environment variables in script",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "### run linter ###",
+                            "__startline__": 34,
+                            "__endline__": 34
+                        }
+                    },
+                    "code_block": [
+                        [
+                            34,
+                            "        - '### run linter ###'\n"
+                        ],
+                        [
+                            35,
+                            "        - golangci-lint run ./...\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        34,
+                        35
+                    ],
+                    "resource": "lint:source-code",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.SuspectCurlInScript",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_GITLABCI_1",
+                    "bc_check_id": null,
+                    "check_name": "Suspicious use of curl with CI environment variables in script",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "golangci-lint run ./...",
+                            "__startline__": 35,
+                            "__endline__": 35
+                        }
+                    },
+                    "code_block": [
+                        [
+                            35,
+                            "        - golangci-lint run ./...\n"
+                        ],
+                        [
+                            36,
+                            "\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        35,
+                        36
+                    ],
+                    "resource": "lint:source-code",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.SuspectCurlInScript",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_GITLABCI_1",
+                    "bc_check_id": null,
+                    "check_name": "Suspicious use of curl with CI environment variables in script",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "### run license-check ###",
+                            "__startline__": 47,
+                            "__endline__": 47
+                        }
+                    },
+                    "code_block": [
+                        [
+                            47,
+                            "        - '### run license-check ###'\n"
+                        ],
+                        [
+                            48,
+                            "        - make check-licenses\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        47,
+                        48
+                    ],
+                    "resource": "license-check",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.SuspectCurlInScript",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_GITLABCI_1",
+                    "bc_check_id": null,
+                    "check_name": "Suspicious use of curl with CI environment variables in script",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "make check-licenses",
+                            "__startline__": 48,
+                            "__endline__": 48
+                        }
+                    },
+                    "code_block": [
+                        [
+                            48,
+                            "        - make check-licenses\n"
+                        ],
+                        [
+                            49,
+                            "    artifacts:\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        48,
+                        49
+                    ],
+                    "resource": "license-check",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.SuspectCurlInScript",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_GITLABCI_1",
+                    "bc_check_id": null,
+                    "check_name": "Suspicious use of curl with CI environment variables in script",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "0": "make gitlab-pages",
+                            "__startline__": 60,
+                            "__endline__": 60
+                        }
+                    },
+                    "code_block": [
+                        [
+                            60,
+                            "        - make gitlab-pages\n"
+                        ],
+                        [
+                            61,
+                            "    artifacts:\n"
+                        ]
+                    ],
+                    "file_path": "/.gitlab-ci.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\gitlab.com\\bosi\\decorder\\.gitlab-ci.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/gitlab.com/bosi/decorder/.gitlab-ci.yml",
+                    "file_line_range": [
+                        60,
+                        61
+                    ],
+                    "resource": "pages",
+                    "evaluations": null,
+                    "check_class": "checkov.gitlab_ci.checks.job.SuspectCurlInScript",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                }
+            ],
+            "failed_checks": [],
+            "skipped_checks": [],
+            "parsing_errors": []
+        },
+        "summary": {
+            "passed": 11,
+            "failed": 0,
+            "skipped": 0,
+            "parsing_errors": 0,
+            "resource_count": 0,
+            "checkov_version": "3.2.353"
+        },
+        "url": "Add an api key '--bc-api-key <api-key>' to see more detailed insights via https://bridgecrew.cloud"
+    }

@@ -1,0 +1,1392 @@
+{
+        "check_type": "openapi",
+        "results": {
+            "passed_checks": [
+                {
+                    "check_id": "CKV_OPENAPI_20",
+                    "bc_check_id": "BC_OPENAPI_20",
+                    "check_name": "Ensure that API keys are not sent over cleartext",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "swagger": 2.0,
+                            "basePath": "/prod",
+                            "info": {
+                                "title": "AwsSamExample",
+                                "__startline__": 5,
+                                "__endline__": 6
+                            },
+                            "schemes": [
+                                "https"
+                            ],
+                            "paths": {
+                                "/": {
+                                    "x-amazon-apigateway-any-method": {
+                                        "produces": [
+                                            "application/json"
+                                        ],
+                                        "responses": {
+                                            "200": {
+                                                "description": "200 response",
+                                                "schema": {
+                                                    "$ref": "#/definitions/Empty",
+                                                    "__startline__": 17,
+                                                    "__endline__": 18
+                                                },
+                                                "__startline__": 15,
+                                                "__endline__": 18
+                                            },
+                                            "__startline__": 14,
+                                            "__endline__": 18
+                                        },
+                                        "x-amazon-apigateway-integration": {
+                                            "responses": {
+                                                "default": {
+                                                    "statusCode": 200,
+                                                    "__startline__": 21,
+                                                    "__endline__": 23
+                                                },
+                                                "__startline__": 20,
+                                                "__endline__": 23
+                                            },
+                                            "uri": {
+                                                "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations",
+                                                "__startline__": 24,
+                                                "__endline__": 26
+                                            },
+                                            "passthroughBehavior": "when_no_match",
+                                            "httpMethod": "POST",
+                                            "type": "aws_proxy",
+                                            "__startline__": 19,
+                                            "__endline__": 29
+                                        },
+                                        "__startline__": 11,
+                                        "__endline__": 29
+                                    },
+                                    "__startline__": 10,
+                                    "__endline__": 29
+                                },
+                                "/{proxy+}": {
+                                    "x-amazon-apigateway-any-method": {
+                                        "x-amazon-apigateway-auth": {
+                                            "type": "aws_iam",
+                                            "__startline__": 32,
+                                            "__endline__": 33
+                                        },
+                                        "produces": [
+                                            "application/json"
+                                        ],
+                                        "parameters": [
+                                            {
+                                                "name": "proxy",
+                                                "in": "path",
+                                                "required": true,
+                                                "type": "string",
+                                                "__startline__": 36,
+                                                "__endline__": 40
+                                            }
+                                        ],
+                                        "responses": {
+                                            "__startline__": 40,
+                                            "__endline__": 40
+                                        },
+                                        "x-amazon-apigateway-integration": {
+                                            "uri": {
+                                                "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations",
+                                                "__startline__": 43,
+                                                "__endline__": 44
+                                            },
+                                            "httpMethod": "POST",
+                                            "type": "aws_proxy",
+                                            "__startline__": 42,
+                                            "__endline__": 46
+                                        },
+                                        "__startline__": 31,
+                                        "__endline__": 46
+                                    },
+                                    "__startline__": 30,
+                                    "__endline__": 46
+                                },
+                                "__startline__": 9,
+                                "__endline__": 46
+                            },
+                            "definitions": {
+                                "Empty": {
+                                    "type": "object",
+                                    "title": "Empty Schema",
+                                    "__startline__": 48,
+                                    "__endline__": 50
+                                },
+                                "__startline__": 47,
+                                "__endline__": 50
+                            },
+                            "__startline__": 2,
+                            "__endline__": 50
+                        }
+                    },
+                    "code_block": [
+                        [
+                            2,
+                            "swagger: 2.0\n"
+                        ],
+                        [
+                            3,
+                            "basePath: /prod\n"
+                        ],
+                        [
+                            4,
+                            "info:\n"
+                        ],
+                        [
+                            5,
+                            "  title: AwsSamExample\n"
+                        ],
+                        [
+                            6,
+                            "schemes:\n"
+                        ],
+                        [
+                            7,
+                            "- https\n"
+                        ],
+                        [
+                            8,
+                            "paths:\n"
+                        ],
+                        [
+                            9,
+                            "  /:\n"
+                        ],
+                        [
+                            10,
+                            "    x-amazon-apigateway-any-method:\n"
+                        ],
+                        [
+                            11,
+                            "      produces:\n"
+                        ],
+                        [
+                            12,
+                            "      - application/json\n"
+                        ],
+                        [
+                            13,
+                            "      responses:\n"
+                        ],
+                        [
+                            14,
+                            "        '200':\n"
+                        ],
+                        [
+                            15,
+                            "          description: 200 response\n"
+                        ],
+                        [
+                            16,
+                            "          schema:\n"
+                        ],
+                        [
+                            17,
+                            "            $ref: \"#/definitions/Empty\"\n"
+                        ],
+                        [
+                            18,
+                            "      x-amazon-apigateway-integration:\n"
+                        ],
+                        [
+                            19,
+                            "        responses:\n"
+                        ],
+                        [
+                            20,
+                            "          default:\n"
+                        ],
+                        [
+                            21,
+                            "            statusCode: 200\n"
+                        ],
+                        [
+                            22,
+                            "        # NOTE: ${LambdaFunction} must match the Lambda resourcename\n"
+                        ],
+                        [
+                            23,
+                            "        uri: \n"
+                        ],
+                        [
+                            24,
+                            "          Fn::Sub: \"arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations\"\n"
+                        ],
+                        [
+                            25,
+                            "\n"
+                        ],
+                        [
+                            26,
+                            "        passthroughBehavior: when_no_match\n"
+                        ],
+                        [
+                            27,
+                            "        httpMethod: POST\n"
+                        ],
+                        [
+                            28,
+                            "        type: aws_proxy\n"
+                        ],
+                        [
+                            29,
+                            "  /{proxy+}:\n"
+                        ],
+                        [
+                            30,
+                            "    x-amazon-apigateway-any-method:\n"
+                        ],
+                        [
+                            31,
+                            "      x-amazon-apigateway-auth:\n"
+                        ],
+                        [
+                            32,
+                            "        type: aws_iam\n"
+                        ],
+                        [
+                            33,
+                            "      produces:\n"
+                        ],
+                        [
+                            34,
+                            "      - application/json\n"
+                        ],
+                        [
+                            35,
+                            "      parameters:\n"
+                        ],
+                        [
+                            36,
+                            "      - name: proxy\n"
+                        ],
+                        [
+                            37,
+                            "        in: path\n"
+                        ],
+                        [
+                            38,
+                            "        required: true\n"
+                        ],
+                        [
+                            39,
+                            "        type: string\n"
+                        ],
+                        [
+                            40,
+                            "      responses: {}\n"
+                        ],
+                        [
+                            41,
+                            "      x-amazon-apigateway-integration:\n"
+                        ],
+                        [
+                            42,
+                            "        uri: \n"
+                        ],
+                        [
+                            43,
+                            "          Fn::Sub: \"arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations\"\n"
+                        ],
+                        [
+                            44,
+                            "        httpMethod: POST\n"
+                        ],
+                        [
+                            45,
+                            "        type: aws_proxy\n"
+                        ],
+                        [
+                            46,
+                            "definitions:\n"
+                        ],
+                        [
+                            47,
+                            "  Empty:\n"
+                        ],
+                        [
+                            48,
+                            "    type: object\n"
+                        ],
+                        [
+                            49,
+                            "    title: Empty Schema\n"
+                        ]
+                    ],
+                    "file_path": "/swagger.yaml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\aws-sam-examples\\samples_3\\api_swagger_cors\\swagger.yaml",
+                    "repo_file_path": "/aws-sam-examples/samples_3/api_swagger_cors/swagger.yaml",
+                    "file_line_range": [
+                        2,
+                        51
+                    ],
+                    "resource": "paths",
+                    "evaluations": null,
+                    "check_class": "checkov.openapi.checks.resource.generic.ClearTextAPIKey",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/api-policies/openapi-policies/bc-openapi-20",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_OPENAPI_21",
+                    "bc_check_id": "BC_OPENAPI_21",
+                    "check_name": "Ensure that arrays have a maximum number of items",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "swagger": 2.0,
+                            "basePath": "/prod",
+                            "info": {
+                                "title": "AwsSamExample",
+                                "__startline__": 5,
+                                "__endline__": 6
+                            },
+                            "schemes": [
+                                "https"
+                            ],
+                            "paths": {
+                                "/": {
+                                    "x-amazon-apigateway-any-method": {
+                                        "produces": [
+                                            "application/json"
+                                        ],
+                                        "responses": {
+                                            "200": {
+                                                "description": "200 response",
+                                                "schema": {
+                                                    "$ref": "#/definitions/Empty",
+                                                    "__startline__": 17,
+                                                    "__endline__": 18
+                                                },
+                                                "__startline__": 15,
+                                                "__endline__": 18
+                                            },
+                                            "__startline__": 14,
+                                            "__endline__": 18
+                                        },
+                                        "x-amazon-apigateway-integration": {
+                                            "responses": {
+                                                "default": {
+                                                    "statusCode": 200,
+                                                    "__startline__": 21,
+                                                    "__endline__": 23
+                                                },
+                                                "__startline__": 20,
+                                                "__endline__": 23
+                                            },
+                                            "uri": {
+                                                "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations",
+                                                "__startline__": 24,
+                                                "__endline__": 26
+                                            },
+                                            "passthroughBehavior": "when_no_match",
+                                            "httpMethod": "POST",
+                                            "type": "aws_proxy",
+                                            "__startline__": 19,
+                                            "__endline__": 29
+                                        },
+                                        "__startline__": 11,
+                                        "__endline__": 29
+                                    },
+                                    "__startline__": 10,
+                                    "__endline__": 29
+                                },
+                                "/{proxy+}": {
+                                    "x-amazon-apigateway-any-method": {
+                                        "x-amazon-apigateway-auth": {
+                                            "type": "aws_iam",
+                                            "__startline__": 32,
+                                            "__endline__": 33
+                                        },
+                                        "produces": [
+                                            "application/json"
+                                        ],
+                                        "parameters": [
+                                            {
+                                                "name": "proxy",
+                                                "in": "path",
+                                                "required": true,
+                                                "type": "string",
+                                                "__startline__": 36,
+                                                "__endline__": 40
+                                            }
+                                        ],
+                                        "responses": {
+                                            "__startline__": 40,
+                                            "__endline__": 40
+                                        },
+                                        "x-amazon-apigateway-integration": {
+                                            "uri": {
+                                                "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations",
+                                                "__startline__": 43,
+                                                "__endline__": 44
+                                            },
+                                            "httpMethod": "POST",
+                                            "type": "aws_proxy",
+                                            "__startline__": 42,
+                                            "__endline__": 46
+                                        },
+                                        "__startline__": 31,
+                                        "__endline__": 46
+                                    },
+                                    "__startline__": 30,
+                                    "__endline__": 46
+                                },
+                                "__startline__": 9,
+                                "__endline__": 46
+                            },
+                            "definitions": {
+                                "Empty": {
+                                    "type": "object",
+                                    "title": "Empty Schema",
+                                    "__startline__": 48,
+                                    "__endline__": 50
+                                },
+                                "__startline__": 47,
+                                "__endline__": 50
+                            },
+                            "__startline__": 2,
+                            "__endline__": 50
+                        }
+                    },
+                    "code_block": [
+                        [
+                            2,
+                            "swagger: 2.0\n"
+                        ],
+                        [
+                            3,
+                            "basePath: /prod\n"
+                        ],
+                        [
+                            4,
+                            "info:\n"
+                        ],
+                        [
+                            5,
+                            "  title: AwsSamExample\n"
+                        ],
+                        [
+                            6,
+                            "schemes:\n"
+                        ],
+                        [
+                            7,
+                            "- https\n"
+                        ],
+                        [
+                            8,
+                            "paths:\n"
+                        ],
+                        [
+                            9,
+                            "  /:\n"
+                        ],
+                        [
+                            10,
+                            "    x-amazon-apigateway-any-method:\n"
+                        ],
+                        [
+                            11,
+                            "      produces:\n"
+                        ],
+                        [
+                            12,
+                            "      - application/json\n"
+                        ],
+                        [
+                            13,
+                            "      responses:\n"
+                        ],
+                        [
+                            14,
+                            "        '200':\n"
+                        ],
+                        [
+                            15,
+                            "          description: 200 response\n"
+                        ],
+                        [
+                            16,
+                            "          schema:\n"
+                        ],
+                        [
+                            17,
+                            "            $ref: \"#/definitions/Empty\"\n"
+                        ],
+                        [
+                            18,
+                            "      x-amazon-apigateway-integration:\n"
+                        ],
+                        [
+                            19,
+                            "        responses:\n"
+                        ],
+                        [
+                            20,
+                            "          default:\n"
+                        ],
+                        [
+                            21,
+                            "            statusCode: 200\n"
+                        ],
+                        [
+                            22,
+                            "        # NOTE: ${LambdaFunction} must match the Lambda resourcename\n"
+                        ],
+                        [
+                            23,
+                            "        uri: \n"
+                        ],
+                        [
+                            24,
+                            "          Fn::Sub: \"arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations\"\n"
+                        ],
+                        [
+                            25,
+                            "\n"
+                        ],
+                        [
+                            26,
+                            "        passthroughBehavior: when_no_match\n"
+                        ],
+                        [
+                            27,
+                            "        httpMethod: POST\n"
+                        ],
+                        [
+                            28,
+                            "        type: aws_proxy\n"
+                        ],
+                        [
+                            29,
+                            "  /{proxy+}:\n"
+                        ],
+                        [
+                            30,
+                            "    x-amazon-apigateway-any-method:\n"
+                        ],
+                        [
+                            31,
+                            "      x-amazon-apigateway-auth:\n"
+                        ],
+                        [
+                            32,
+                            "        type: aws_iam\n"
+                        ],
+                        [
+                            33,
+                            "      produces:\n"
+                        ],
+                        [
+                            34,
+                            "      - application/json\n"
+                        ],
+                        [
+                            35,
+                            "      parameters:\n"
+                        ],
+                        [
+                            36,
+                            "      - name: proxy\n"
+                        ],
+                        [
+                            37,
+                            "        in: path\n"
+                        ],
+                        [
+                            38,
+                            "        required: true\n"
+                        ],
+                        [
+                            39,
+                            "        type: string\n"
+                        ],
+                        [
+                            40,
+                            "      responses: {}\n"
+                        ],
+                        [
+                            41,
+                            "      x-amazon-apigateway-integration:\n"
+                        ],
+                        [
+                            42,
+                            "        uri: \n"
+                        ],
+                        [
+                            43,
+                            "          Fn::Sub: \"arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations\"\n"
+                        ],
+                        [
+                            44,
+                            "        httpMethod: POST\n"
+                        ],
+                        [
+                            45,
+                            "        type: aws_proxy\n"
+                        ],
+                        [
+                            46,
+                            "definitions:\n"
+                        ],
+                        [
+                            47,
+                            "  Empty:\n"
+                        ],
+                        [
+                            48,
+                            "    type: object\n"
+                        ],
+                        [
+                            49,
+                            "    title: Empty Schema\n"
+                        ]
+                    ],
+                    "file_path": "/swagger.yaml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\aws-sam-examples\\samples_3\\api_swagger_cors\\swagger.yaml",
+                    "repo_file_path": "/aws-sam-examples/samples_3/api_swagger_cors/swagger.yaml",
+                    "file_line_range": [
+                        2,
+                        51
+                    ],
+                    "resource": "paths",
+                    "evaluations": null,
+                    "check_class": "checkov.openapi.checks.resource.generic.NoMaximumNumberItems",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/api-policies/openapi-policies/bc-openapi-21",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                }
+            ],
+            "failed_checks": [
+                {
+                    "check_id": "CKV_OPENAPI_4",
+                    "bc_check_id": "BC_OPENAPI_4",
+                    "check_name": "Ensure that the global security field has rules defined",
+                    "check_result": {
+                        "result": "FAILED",
+                        "results_configuration": {
+                            "swagger": 2.0,
+                            "basePath": "/prod",
+                            "info": {
+                                "title": "AwsSamExample",
+                                "__startline__": 5,
+                                "__endline__": 6
+                            },
+                            "schemes": [
+                                "https"
+                            ],
+                            "paths": {
+                                "/": {
+                                    "x-amazon-apigateway-any-method": {
+                                        "produces": [
+                                            "application/json"
+                                        ],
+                                        "responses": {
+                                            "200": {
+                                                "description": "200 response",
+                                                "schema": {
+                                                    "$ref": "#/definitions/Empty",
+                                                    "__startline__": 17,
+                                                    "__endline__": 18
+                                                },
+                                                "__startline__": 15,
+                                                "__endline__": 18
+                                            },
+                                            "__startline__": 14,
+                                            "__endline__": 18
+                                        },
+                                        "x-amazon-apigateway-integration": {
+                                            "responses": {
+                                                "default": {
+                                                    "statusCode": 200,
+                                                    "__startline__": 21,
+                                                    "__endline__": 23
+                                                },
+                                                "__startline__": 20,
+                                                "__endline__": 23
+                                            },
+                                            "uri": {
+                                                "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations",
+                                                "__startline__": 24,
+                                                "__endline__": 26
+                                            },
+                                            "passthroughBehavior": "when_no_match",
+                                            "httpMethod": "POST",
+                                            "type": "aws_proxy",
+                                            "__startline__": 19,
+                                            "__endline__": 29
+                                        },
+                                        "__startline__": 11,
+                                        "__endline__": 29
+                                    },
+                                    "__startline__": 10,
+                                    "__endline__": 29
+                                },
+                                "/{proxy+}": {
+                                    "x-amazon-apigateway-any-method": {
+                                        "x-amazon-apigateway-auth": {
+                                            "type": "aws_iam",
+                                            "__startline__": 32,
+                                            "__endline__": 33
+                                        },
+                                        "produces": [
+                                            "application/json"
+                                        ],
+                                        "parameters": [
+                                            {
+                                                "name": "proxy",
+                                                "in": "path",
+                                                "required": true,
+                                                "type": "string",
+                                                "__startline__": 36,
+                                                "__endline__": 40
+                                            }
+                                        ],
+                                        "responses": {
+                                            "__startline__": 40,
+                                            "__endline__": 40
+                                        },
+                                        "x-amazon-apigateway-integration": {
+                                            "uri": {
+                                                "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations",
+                                                "__startline__": 43,
+                                                "__endline__": 44
+                                            },
+                                            "httpMethod": "POST",
+                                            "type": "aws_proxy",
+                                            "__startline__": 42,
+                                            "__endline__": 46
+                                        },
+                                        "__startline__": 31,
+                                        "__endline__": 46
+                                    },
+                                    "__startline__": 30,
+                                    "__endline__": 46
+                                },
+                                "__startline__": 9,
+                                "__endline__": 46
+                            },
+                            "definitions": {
+                                "Empty": {
+                                    "type": "object",
+                                    "title": "Empty Schema",
+                                    "__startline__": 48,
+                                    "__endline__": 50
+                                },
+                                "__startline__": 47,
+                                "__endline__": 50
+                            },
+                            "__startline__": 2,
+                            "__endline__": 50
+                        }
+                    },
+                    "code_block": [
+                        [
+                            2,
+                            "swagger: 2.0\n"
+                        ],
+                        [
+                            3,
+                            "basePath: /prod\n"
+                        ],
+                        [
+                            4,
+                            "info:\n"
+                        ],
+                        [
+                            5,
+                            "  title: AwsSamExample\n"
+                        ],
+                        [
+                            6,
+                            "schemes:\n"
+                        ],
+                        [
+                            7,
+                            "- https\n"
+                        ],
+                        [
+                            8,
+                            "paths:\n"
+                        ],
+                        [
+                            9,
+                            "  /:\n"
+                        ],
+                        [
+                            10,
+                            "    x-amazon-apigateway-any-method:\n"
+                        ],
+                        [
+                            11,
+                            "      produces:\n"
+                        ],
+                        [
+                            12,
+                            "      - application/json\n"
+                        ],
+                        [
+                            13,
+                            "      responses:\n"
+                        ],
+                        [
+                            14,
+                            "        '200':\n"
+                        ],
+                        [
+                            15,
+                            "          description: 200 response\n"
+                        ],
+                        [
+                            16,
+                            "          schema:\n"
+                        ],
+                        [
+                            17,
+                            "            $ref: \"#/definitions/Empty\"\n"
+                        ],
+                        [
+                            18,
+                            "      x-amazon-apigateway-integration:\n"
+                        ],
+                        [
+                            19,
+                            "        responses:\n"
+                        ],
+                        [
+                            20,
+                            "          default:\n"
+                        ],
+                        [
+                            21,
+                            "            statusCode: 200\n"
+                        ],
+                        [
+                            22,
+                            "        # NOTE: ${LambdaFunction} must match the Lambda resourcename\n"
+                        ],
+                        [
+                            23,
+                            "        uri: \n"
+                        ],
+                        [
+                            24,
+                            "          Fn::Sub: \"arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations\"\n"
+                        ],
+                        [
+                            25,
+                            "\n"
+                        ],
+                        [
+                            26,
+                            "        passthroughBehavior: when_no_match\n"
+                        ],
+                        [
+                            27,
+                            "        httpMethod: POST\n"
+                        ],
+                        [
+                            28,
+                            "        type: aws_proxy\n"
+                        ],
+                        [
+                            29,
+                            "  /{proxy+}:\n"
+                        ],
+                        [
+                            30,
+                            "    x-amazon-apigateway-any-method:\n"
+                        ],
+                        [
+                            31,
+                            "      x-amazon-apigateway-auth:\n"
+                        ],
+                        [
+                            32,
+                            "        type: aws_iam\n"
+                        ],
+                        [
+                            33,
+                            "      produces:\n"
+                        ],
+                        [
+                            34,
+                            "      - application/json\n"
+                        ],
+                        [
+                            35,
+                            "      parameters:\n"
+                        ],
+                        [
+                            36,
+                            "      - name: proxy\n"
+                        ],
+                        [
+                            37,
+                            "        in: path\n"
+                        ],
+                        [
+                            38,
+                            "        required: true\n"
+                        ],
+                        [
+                            39,
+                            "        type: string\n"
+                        ],
+                        [
+                            40,
+                            "      responses: {}\n"
+                        ],
+                        [
+                            41,
+                            "      x-amazon-apigateway-integration:\n"
+                        ],
+                        [
+                            42,
+                            "        uri: \n"
+                        ],
+                        [
+                            43,
+                            "          Fn::Sub: \"arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations\"\n"
+                        ],
+                        [
+                            44,
+                            "        httpMethod: POST\n"
+                        ],
+                        [
+                            45,
+                            "        type: aws_proxy\n"
+                        ],
+                        [
+                            46,
+                            "definitions:\n"
+                        ],
+                        [
+                            47,
+                            "  Empty:\n"
+                        ],
+                        [
+                            48,
+                            "    type: object\n"
+                        ],
+                        [
+                            49,
+                            "    title: Empty Schema\n"
+                        ]
+                    ],
+                    "file_path": "/swagger.yaml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\aws-sam-examples\\samples_3\\api_swagger_cors\\swagger.yaml",
+                    "repo_file_path": "/aws-sam-examples/samples_3/api_swagger_cors/swagger.yaml",
+                    "file_line_range": [
+                        2,
+                        51
+                    ],
+                    "resource": "security",
+                    "evaluations": null,
+                    "check_class": "checkov.openapi.checks.resource.generic.GlobalSecurityFieldIsEmpty",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/api-policies/openapi-policies/ensure-that-the-global-security-field-has-rules-defined",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_OPENAPI_5",
+                    "bc_check_id": "BC_OPENAPI_5",
+                    "check_name": "Ensure that security operations is not empty.",
+                    "check_result": {
+                        "result": "FAILED",
+                        "results_configuration": {
+                            "swagger": 2.0,
+                            "basePath": "/prod",
+                            "info": {
+                                "title": "AwsSamExample",
+                                "__startline__": 5,
+                                "__endline__": 6
+                            },
+                            "schemes": [
+                                "https"
+                            ],
+                            "paths": {
+                                "/": {
+                                    "x-amazon-apigateway-any-method": {
+                                        "produces": [
+                                            "application/json"
+                                        ],
+                                        "responses": {
+                                            "200": {
+                                                "description": "200 response",
+                                                "schema": {
+                                                    "$ref": "#/definitions/Empty",
+                                                    "__startline__": 17,
+                                                    "__endline__": 18
+                                                },
+                                                "__startline__": 15,
+                                                "__endline__": 18
+                                            },
+                                            "__startline__": 14,
+                                            "__endline__": 18
+                                        },
+                                        "x-amazon-apigateway-integration": {
+                                            "responses": {
+                                                "default": {
+                                                    "statusCode": 200,
+                                                    "__startline__": 21,
+                                                    "__endline__": 23
+                                                },
+                                                "__startline__": 20,
+                                                "__endline__": 23
+                                            },
+                                            "uri": {
+                                                "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations",
+                                                "__startline__": 24,
+                                                "__endline__": 26
+                                            },
+                                            "passthroughBehavior": "when_no_match",
+                                            "httpMethod": "POST",
+                                            "type": "aws_proxy",
+                                            "__startline__": 19,
+                                            "__endline__": 29
+                                        },
+                                        "__startline__": 11,
+                                        "__endline__": 29
+                                    },
+                                    "__startline__": 10,
+                                    "__endline__": 29
+                                },
+                                "/{proxy+}": {
+                                    "x-amazon-apigateway-any-method": {
+                                        "x-amazon-apigateway-auth": {
+                                            "type": "aws_iam",
+                                            "__startline__": 32,
+                                            "__endline__": 33
+                                        },
+                                        "produces": [
+                                            "application/json"
+                                        ],
+                                        "parameters": [
+                                            {
+                                                "name": "proxy",
+                                                "in": "path",
+                                                "required": true,
+                                                "type": "string",
+                                                "__startline__": 36,
+                                                "__endline__": 40
+                                            }
+                                        ],
+                                        "responses": {
+                                            "__startline__": 40,
+                                            "__endline__": 40
+                                        },
+                                        "x-amazon-apigateway-integration": {
+                                            "uri": {
+                                                "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations",
+                                                "__startline__": 43,
+                                                "__endline__": 44
+                                            },
+                                            "httpMethod": "POST",
+                                            "type": "aws_proxy",
+                                            "__startline__": 42,
+                                            "__endline__": 46
+                                        },
+                                        "__startline__": 31,
+                                        "__endline__": 46
+                                    },
+                                    "__startline__": 30,
+                                    "__endline__": 46
+                                },
+                                "__startline__": 9,
+                                "__endline__": 46
+                            },
+                            "definitions": {
+                                "Empty": {
+                                    "type": "object",
+                                    "title": "Empty Schema",
+                                    "__startline__": 48,
+                                    "__endline__": 50
+                                },
+                                "__startline__": 47,
+                                "__endline__": 50
+                            },
+                            "__startline__": 2,
+                            "__endline__": 50
+                        }
+                    },
+                    "code_block": [
+                        [
+                            2,
+                            "swagger: 2.0\n"
+                        ],
+                        [
+                            3,
+                            "basePath: /prod\n"
+                        ],
+                        [
+                            4,
+                            "info:\n"
+                        ],
+                        [
+                            5,
+                            "  title: AwsSamExample\n"
+                        ],
+                        [
+                            6,
+                            "schemes:\n"
+                        ],
+                        [
+                            7,
+                            "- https\n"
+                        ],
+                        [
+                            8,
+                            "paths:\n"
+                        ],
+                        [
+                            9,
+                            "  /:\n"
+                        ],
+                        [
+                            10,
+                            "    x-amazon-apigateway-any-method:\n"
+                        ],
+                        [
+                            11,
+                            "      produces:\n"
+                        ],
+                        [
+                            12,
+                            "      - application/json\n"
+                        ],
+                        [
+                            13,
+                            "      responses:\n"
+                        ],
+                        [
+                            14,
+                            "        '200':\n"
+                        ],
+                        [
+                            15,
+                            "          description: 200 response\n"
+                        ],
+                        [
+                            16,
+                            "          schema:\n"
+                        ],
+                        [
+                            17,
+                            "            $ref: \"#/definitions/Empty\"\n"
+                        ],
+                        [
+                            18,
+                            "      x-amazon-apigateway-integration:\n"
+                        ],
+                        [
+                            19,
+                            "        responses:\n"
+                        ],
+                        [
+                            20,
+                            "          default:\n"
+                        ],
+                        [
+                            21,
+                            "            statusCode: 200\n"
+                        ],
+                        [
+                            22,
+                            "        # NOTE: ${LambdaFunction} must match the Lambda resourcename\n"
+                        ],
+                        [
+                            23,
+                            "        uri: \n"
+                        ],
+                        [
+                            24,
+                            "          Fn::Sub: \"arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations\"\n"
+                        ],
+                        [
+                            25,
+                            "\n"
+                        ],
+                        [
+                            26,
+                            "        passthroughBehavior: when_no_match\n"
+                        ],
+                        [
+                            27,
+                            "        httpMethod: POST\n"
+                        ],
+                        [
+                            28,
+                            "        type: aws_proxy\n"
+                        ],
+                        [
+                            29,
+                            "  /{proxy+}:\n"
+                        ],
+                        [
+                            30,
+                            "    x-amazon-apigateway-any-method:\n"
+                        ],
+                        [
+                            31,
+                            "      x-amazon-apigateway-auth:\n"
+                        ],
+                        [
+                            32,
+                            "        type: aws_iam\n"
+                        ],
+                        [
+                            33,
+                            "      produces:\n"
+                        ],
+                        [
+                            34,
+                            "      - application/json\n"
+                        ],
+                        [
+                            35,
+                            "      parameters:\n"
+                        ],
+                        [
+                            36,
+                            "      - name: proxy\n"
+                        ],
+                        [
+                            37,
+                            "        in: path\n"
+                        ],
+                        [
+                            38,
+                            "        required: true\n"
+                        ],
+                        [
+                            39,
+                            "        type: string\n"
+                        ],
+                        [
+                            40,
+                            "      responses: {}\n"
+                        ],
+                        [
+                            41,
+                            "      x-amazon-apigateway-integration:\n"
+                        ],
+                        [
+                            42,
+                            "        uri: \n"
+                        ],
+                        [
+                            43,
+                            "          Fn::Sub: \"arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations\"\n"
+                        ],
+                        [
+                            44,
+                            "        httpMethod: POST\n"
+                        ],
+                        [
+                            45,
+                            "        type: aws_proxy\n"
+                        ],
+                        [
+                            46,
+                            "definitions:\n"
+                        ],
+                        [
+                            47,
+                            "  Empty:\n"
+                        ],
+                        [
+                            48,
+                            "    type: object\n"
+                        ],
+                        [
+                            49,
+                            "    title: Empty Schema\n"
+                        ]
+                    ],
+                    "file_path": "/swagger.yaml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\aws-sam-examples\\samples_3\\api_swagger_cors\\swagger.yaml",
+                    "repo_file_path": "/aws-sam-examples/samples_3/api_swagger_cors/swagger.yaml",
+                    "file_line_range": [
+                        2,
+                        51
+                    ],
+                    "resource": "security",
+                    "evaluations": null,
+                    "check_class": "checkov.openapi.checks.resource.generic.SecurityOperations",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/api-policies/openapi-policies/ensure-that-security-operations-is-not-empty",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                }
+            ],
+            "skipped_checks": [],
+            "parsing_errors": []
+        },
+        "summary": {
+            "passed": 2,
+            "failed": 2,
+            "skipped": 0,
+            "parsing_errors": 0,
+            "resource_count": 0,
+            "checkov_version": "3.2.353"
+        },
+        "url": "Add an api key '--bc-api-key <api-key>' to see more detailed insights via https://bridgecrew.cloud"
+    }

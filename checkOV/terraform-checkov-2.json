@@ -1,0 +1,4607 @@
+{
+        "check_type": "terraform",
+        "results": {
+            "passed_checks": [
+                {
+                    "check_id": "CKV_TF_2",
+                    "bc_check_id": "BC_CROSS_2",
+                    "check_name": "Ensure Terraform module sources use a tag with a version number",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            8,
+                            "module \"repository\" {\n"
+                        ],
+                        [
+                            9,
+                            "  source  = \"mineiros-io/repository/github\"\n"
+                        ],
+                        [
+                            10,
+                            "  version = \"~> 0.13.0\"\n"
+                        ],
+                        [
+                            11,
+                            "\n"
+                        ],
+                        [
+                            12,
+                            "  module_depends_on = [\n"
+                        ],
+                        [
+                            13,
+                            "    module.team\n"
+                        ],
+                        [
+                            14,
+                            "  ]\n"
+                        ],
+                        [
+                            15,
+                            "\n"
+                        ],
+                        [
+                            16,
+                            "  name               = \"my-public-repository\"\n"
+                        ],
+                        [
+                            17,
+                            "  description        = \"A description of the repository.\"\n"
+                        ],
+                        [
+                            18,
+                            "  homepage_url       = \"https://github.com/mineiros-io\"\n"
+                        ],
+                        [
+                            19,
+                            "  visibility         = \"public\"\n"
+                        ],
+                        [
+                            20,
+                            "  has_issues         = true\n"
+                        ],
+                        [
+                            21,
+                            "  has_projects       = false\n"
+                        ],
+                        [
+                            22,
+                            "  has_wiki           = true\n"
+                        ],
+                        [
+                            23,
+                            "  allow_merge_commit = true\n"
+                        ],
+                        [
+                            24,
+                            "  allow_rebase_merge = false\n"
+                        ],
+                        [
+                            25,
+                            "  allow_squash_merge = false\n"
+                        ],
+                        [
+                            26,
+                            "  allow_auto_merge   = true\n"
+                        ],
+                        [
+                            27,
+                            "  has_downloads      = false\n"
+                        ],
+                        [
+                            28,
+                            "  auto_init          = true\n"
+                        ],
+                        [
+                            29,
+                            "  gitignore_template = \"Terraform\"\n"
+                        ],
+                        [
+                            30,
+                            "  license_template   = \"mit\"\n"
+                        ],
+                        [
+                            31,
+                            "  topics             = [\"terraform\", \"unit-test\"]\n"
+                        ],
+                        [
+                            32,
+                            "\n"
+                        ],
+                        [
+                            33,
+                            "  admin_team_ids = [\n"
+                        ],
+                        [
+                            34,
+                            "    module.team.team.id\n"
+                        ],
+                        [
+                            35,
+                            "  ]\n"
+                        ],
+                        [
+                            36,
+                            "\n"
+                        ],
+                        [
+                            37,
+                            "  webhooks = [\n"
+                        ],
+                        [
+                            38,
+                            "    {\n"
+                        ],
+                        [
+                            39,
+                            "      active       = true\n"
+                        ],
+                        [
+                            40,
+                            "      events       = [\"issues\"]\n"
+                        ],
+                        [
+                            41,
+                            "      url          = \"https://example.com/events\"\n"
+                        ],
+                        [
+                            42,
+                            "      content_type = \"application/json\"\n"
+                        ],
+                        [
+                            43,
+                            "      insecure_ssl = false\n"
+                        ],
+                        [
+                            44,
+                            "      secret       = \"sososecret\"\n"
+                        ],
+                        [
+                            45,
+                            "    },\n"
+                        ],
+                        [
+                            46,
+                            "  ]\n"
+                        ],
+                        [
+                            47,
+                            "\n"
+                        ],
+                        [
+                            48,
+                            "  admin_collaborators = [\"terraform-test-user-1\"]\n"
+                        ],
+                        [
+                            49,
+                            "\n"
+                        ],
+                        [
+                            50,
+                            "  branch_protections = [\n"
+                        ],
+                        [
+                            51,
+                            "    {\n"
+                        ],
+                        [
+                            52,
+                            "      branch                          = \"main\"\n"
+                        ],
+                        [
+                            53,
+                            "      enforce_admins                  = true\n"
+                        ],
+                        [
+                            54,
+                            "      require_conversation_resolution = true\n"
+                        ],
+                        [
+                            55,
+                            "      require_signed_commits          = true\n"
+                        ],
+                        [
+                            56,
+                            "\n"
+                        ],
+                        [
+                            57,
+                            "      required_status_checks = {\n"
+                        ],
+                        [
+                            58,
+                            "        strict   = true\n"
+                        ],
+                        [
+                            59,
+                            "        contexts = [\"ci/travis\"]\n"
+                        ],
+                        [
+                            60,
+                            "      }\n"
+                        ],
+                        [
+                            61,
+                            "\n"
+                        ],
+                        [
+                            62,
+                            "      required_pull_request_reviews = {\n"
+                        ],
+                        [
+                            63,
+                            "        dismiss_stale_reviews           = true\n"
+                        ],
+                        [
+                            64,
+                            "        dismissal_teams                 = [module.team.name]\n"
+                        ],
+                        [
+                            65,
+                            "        require_code_owner_reviews      = true\n"
+                        ],
+                        [
+                            66,
+                            "        required_approving_review_count = 1\n"
+                        ],
+                        [
+                            67,
+                            "      }\n"
+                        ],
+                        [
+                            68,
+                            "\n"
+                        ],
+                        [
+                            69,
+                            "      restrictions = {\n"
+                        ],
+                        [
+                            70,
+                            "        teams = [module.team.name]\n"
+                        ],
+                        [
+                            71,
+                            "      }\n"
+                        ],
+                        [
+                            72,
+                            "    }\n"
+                        ],
+                        [
+                            73,
+                            "  ]\n"
+                        ],
+                        [
+                            74,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\public-repository\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\examples\\public-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/examples/public-repository/main.tf",
+                    "file_line_range": [
+                        8,
+                        74
+                    ],
+                    "resource": "repository",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.module.generic.RevisionVersionTag",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-tag",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\examples\\public-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_TF_2",
+                    "bc_check_id": "BC_CROSS_2",
+                    "check_name": "Ensure Terraform module sources use a tag with a version number",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            80,
+                            "module \"team\" {\n"
+                        ],
+                        [
+                            81,
+                            "  source  = \"mineiros-io/team/github\"\n"
+                        ],
+                        [
+                            82,
+                            "  version = \"~> 0.8.0\"\n"
+                        ],
+                        [
+                            83,
+                            "\n"
+                        ],
+                        [
+                            84,
+                            "  name        = \"DevOps\"\n"
+                        ],
+                        [
+                            85,
+                            "  description = \"The DevOps Team\"\n"
+                        ],
+                        [
+                            86,
+                            "  privacy     = \"secret\"\n"
+                        ],
+                        [
+                            87,
+                            "\n"
+                        ],
+                        [
+                            88,
+                            "  # TEAM MEMBERSHIP\n"
+                        ],
+                        [
+                            89,
+                            "  # We are adding a member to this team: \"terraform-test-user-2\".\n"
+                        ],
+                        [
+                            90,
+                            "  # This existing users and already member of the GitHub Organization \"terraform-test\" that\n"
+                        ],
+                        [
+                            91,
+                            "  # is an Organization managed by Mineiros.io to run integration tests with Terratest.\n"
+                        ],
+                        [
+                            92,
+                            "  members = [\n"
+                        ],
+                        [
+                            93,
+                            "    \"terraform-test-user-2\",\n"
+                        ],
+                        [
+                            94,
+                            "  ]\n"
+                        ],
+                        [
+                            95,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\public-repository\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\examples\\public-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/examples/public-repository/main.tf",
+                    "file_line_range": [
+                        80,
+                        95
+                    ],
+                    "resource": "team",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.module.generic.RevisionVersionTag",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-tag",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\examples\\public-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            91,
+                            "resource \"github_repository\" \"repository\" {\n"
+                        ],
+                        [
+                            92,
+                            "  name                   = var.name\n"
+                        ],
+                        [
+                            93,
+                            "  description            = var.description\n"
+                        ],
+                        [
+                            94,
+                            "  homepage_url           = local.homepage_url\n"
+                        ],
+                        [
+                            95,
+                            "  visibility             = local.visibility\n"
+                        ],
+                        [
+                            96,
+                            "  has_issues             = local.has_issues\n"
+                        ],
+                        [
+                            97,
+                            "  has_projects           = local.has_projects\n"
+                        ],
+                        [
+                            98,
+                            "  has_wiki               = local.has_wiki\n"
+                        ],
+                        [
+                            99,
+                            "  allow_merge_commit     = local.allow_merge_commit\n"
+                        ],
+                        [
+                            100,
+                            "  allow_rebase_merge     = local.allow_rebase_merge\n"
+                        ],
+                        [
+                            101,
+                            "  allow_squash_merge     = local.allow_squash_merge\n"
+                        ],
+                        [
+                            102,
+                            "  allow_auto_merge       = local.allow_auto_merge\n"
+                        ],
+                        [
+                            103,
+                            "  delete_branch_on_merge = local.delete_branch_on_merge\n"
+                        ],
+                        [
+                            104,
+                            "  is_template            = local.is_template\n"
+                        ],
+                        [
+                            105,
+                            "  has_downloads          = local.has_downloads\n"
+                        ],
+                        [
+                            106,
+                            "  auto_init              = local.auto_init\n"
+                        ],
+                        [
+                            107,
+                            "  gitignore_template     = local.gitignore_template\n"
+                        ],
+                        [
+                            108,
+                            "  license_template       = local.license_template\n"
+                        ],
+                        [
+                            109,
+                            "  archived               = var.archived\n"
+                        ],
+                        [
+                            110,
+                            "  topics                 = local.topics\n"
+                        ],
+                        [
+                            111,
+                            "\n"
+                        ],
+                        [
+                            112,
+                            "  archive_on_destroy   = var.archive_on_destroy\n"
+                        ],
+                        [
+                            113,
+                            "  vulnerability_alerts = local.vulnerability_alerts\n"
+                        ],
+                        [
+                            114,
+                            "\n"
+                        ],
+                        [
+                            115,
+                            "  dynamic \"template\" {\n"
+                        ],
+                        [
+                            116,
+                            "    for_each = local.template\n"
+                        ],
+                        [
+                            117,
+                            "\n"
+                        ],
+                        [
+                            118,
+                            "    content {\n"
+                        ],
+                        [
+                            119,
+                            "      owner      = template.value.owner\n"
+                        ],
+                        [
+                            120,
+                            "      repository = template.value.repository\n"
+                        ],
+                        [
+                            121,
+                            "    }\n"
+                        ],
+                        [
+                            122,
+                            "  }\n"
+                        ],
+                        [
+                            123,
+                            "\n"
+                        ],
+                        [
+                            124,
+                            "  dynamic \"pages\" {\n"
+                        ],
+                        [
+                            125,
+                            "    for_each = var.pages != null ? [true] : []\n"
+                        ],
+                        [
+                            126,
+                            "\n"
+                        ],
+                        [
+                            127,
+                            "    content {\n"
+                        ],
+                        [
+                            128,
+                            "      source {\n"
+                        ],
+                        [
+                            129,
+                            "        branch = var.pages.branch\n"
+                        ],
+                        [
+                            130,
+                            "        path   = try(var.pages.path, \"/\")\n"
+                        ],
+                        [
+                            131,
+                            "      }\n"
+                        ],
+                        [
+                            132,
+                            "      cname = try(var.pages.cname, null)\n"
+                        ],
+                        [
+                            133,
+                            "    }\n"
+                        ],
+                        [
+                            134,
+                            "  }\n"
+                        ],
+                        [
+                            135,
+                            "\n"
+                        ],
+                        [
+                            136,
+                            "  lifecycle {\n"
+                        ],
+                        [
+                            137,
+                            "    ignore_changes = [\n"
+                        ],
+                        [
+                            138,
+                            "      auto_init,\n"
+                        ],
+                        [
+                            139,
+                            "      license_template,\n"
+                        ],
+                        [
+                            140,
+                            "      gitignore_template,\n"
+                        ],
+                        [
+                            141,
+                            "      template,\n"
+                        ],
+                        [
+                            142,
+                            "    ]\n"
+                        ],
+                        [
+                            143,
+                            "  }\n"
+                        ],
+                        [
+                            144,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        91,
+                        144
+                    ],
+                    "resource": "module.repository.github_repository.repository",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        25,
+                        161
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_3",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_3",
+                    "check_name": "Ensure GitHub repository has vulnerability alerts enabled",
+                    "check_result": {
+                        "result": "PASSED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            91,
+                            "resource \"github_repository\" \"repository\" {\n"
+                        ],
+                        [
+                            92,
+                            "  name                   = var.name\n"
+                        ],
+                        [
+                            93,
+                            "  description            = var.description\n"
+                        ],
+                        [
+                            94,
+                            "  homepage_url           = local.homepage_url\n"
+                        ],
+                        [
+                            95,
+                            "  visibility             = local.visibility\n"
+                        ],
+                        [
+                            96,
+                            "  has_issues             = local.has_issues\n"
+                        ],
+                        [
+                            97,
+                            "  has_projects           = local.has_projects\n"
+                        ],
+                        [
+                            98,
+                            "  has_wiki               = local.has_wiki\n"
+                        ],
+                        [
+                            99,
+                            "  allow_merge_commit     = local.allow_merge_commit\n"
+                        ],
+                        [
+                            100,
+                            "  allow_rebase_merge     = local.allow_rebase_merge\n"
+                        ],
+                        [
+                            101,
+                            "  allow_squash_merge     = local.allow_squash_merge\n"
+                        ],
+                        [
+                            102,
+                            "  allow_auto_merge       = local.allow_auto_merge\n"
+                        ],
+                        [
+                            103,
+                            "  delete_branch_on_merge = local.delete_branch_on_merge\n"
+                        ],
+                        [
+                            104,
+                            "  is_template            = local.is_template\n"
+                        ],
+                        [
+                            105,
+                            "  has_downloads          = local.has_downloads\n"
+                        ],
+                        [
+                            106,
+                            "  auto_init              = local.auto_init\n"
+                        ],
+                        [
+                            107,
+                            "  gitignore_template     = local.gitignore_template\n"
+                        ],
+                        [
+                            108,
+                            "  license_template       = local.license_template\n"
+                        ],
+                        [
+                            109,
+                            "  archived               = var.archived\n"
+                        ],
+                        [
+                            110,
+                            "  topics                 = local.topics\n"
+                        ],
+                        [
+                            111,
+                            "\n"
+                        ],
+                        [
+                            112,
+                            "  archive_on_destroy   = var.archive_on_destroy\n"
+                        ],
+                        [
+                            113,
+                            "  vulnerability_alerts = local.vulnerability_alerts\n"
+                        ],
+                        [
+                            114,
+                            "\n"
+                        ],
+                        [
+                            115,
+                            "  dynamic \"template\" {\n"
+                        ],
+                        [
+                            116,
+                            "    for_each = local.template\n"
+                        ],
+                        [
+                            117,
+                            "\n"
+                        ],
+                        [
+                            118,
+                            "    content {\n"
+                        ],
+                        [
+                            119,
+                            "      owner      = template.value.owner\n"
+                        ],
+                        [
+                            120,
+                            "      repository = template.value.repository\n"
+                        ],
+                        [
+                            121,
+                            "    }\n"
+                        ],
+                        [
+                            122,
+                            "  }\n"
+                        ],
+                        [
+                            123,
+                            "\n"
+                        ],
+                        [
+                            124,
+                            "  dynamic \"pages\" {\n"
+                        ],
+                        [
+                            125,
+                            "    for_each = var.pages != null ? [true] : []\n"
+                        ],
+                        [
+                            126,
+                            "\n"
+                        ],
+                        [
+                            127,
+                            "    content {\n"
+                        ],
+                        [
+                            128,
+                            "      source {\n"
+                        ],
+                        [
+                            129,
+                            "        branch = var.pages.branch\n"
+                        ],
+                        [
+                            130,
+                            "        path   = try(var.pages.path, \"/\")\n"
+                        ],
+                        [
+                            131,
+                            "      }\n"
+                        ],
+                        [
+                            132,
+                            "      cname = try(var.pages.cname, null)\n"
+                        ],
+                        [
+                            133,
+                            "    }\n"
+                        ],
+                        [
+                            134,
+                            "  }\n"
+                        ],
+                        [
+                            135,
+                            "\n"
+                        ],
+                        [
+                            136,
+                            "  lifecycle {\n"
+                        ],
+                        [
+                            137,
+                            "    ignore_changes = [\n"
+                        ],
+                        [
+                            138,
+                            "      auto_init,\n"
+                        ],
+                        [
+                            139,
+                            "      license_template,\n"
+                        ],
+                        [
+                            140,
+                            "      gitignore_template,\n"
+                        ],
+                        [
+                            141,
+                            "      template,\n"
+                        ],
+                        [
+                            142,
+                            "    ]\n"
+                        ],
+                        [
+                            143,
+                            "  }\n"
+                        ],
+                        [
+                            144,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        91,
+                        144
+                    ],
+                    "resource": "module.repository-with-defaults.github_repository.repository",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.RepositoryEnableVulnerabilityAlerts",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        169,
+                        180
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-repository-has-vulnerability-alerts-enabled",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "github_repository": {
+                                "repository": {
+                                    "__end_line__": 144,
+                                    "__start_line__": 91,
+                                    "allow_auto_merge": [
+                                        true
+                                    ],
+                                    "allow_merge_commit": [
+                                        true
+                                    ],
+                                    "allow_rebase_merge": [
+                                        true
+                                    ],
+                                    "allow_squash_merge": [
+                                        true
+                                    ],
+                                    "archive_on_destroy": [
+                                        true
+                                    ],
+                                    "archived": [
+                                        false
+                                    ],
+                                    "auto_init": [
+                                        true
+                                    ],
+                                    "delete_branch_on_merge": [
+                                        true
+                                    ],
+                                    "description": [
+                                        "(Optional) A description of the repository."
+                                    ],
+                                    "dynamic": [
+                                        {
+                                            "template": {
+                                                "owner": [
+                                                    "var.template"
+                                                ],
+                                                "repository": [
+                                                    "var.template"
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "pages": [
+                                                {
+                                                    "cname": [
+                                                        true
+                                                    ],
+                                                    "source": [
+                                                        true
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "gitignore_template": [
+                                        "Terraform"
+                                    ],
+                                    "has_downloads": [
+                                        false
+                                    ],
+                                    "has_issues": [
+                                        true
+                                    ],
+                                    "has_projects": [
+                                        true
+                                    ],
+                                    "has_wiki": [
+                                        true
+                                    ],
+                                    "homepage_url": [
+                                        "https://github.com/mineiros-io"
+                                    ],
+                                    "is_template": [
+                                        false
+                                    ],
+                                    "license_template": [
+                                        "mit"
+                                    ],
+                                    "lifecycle": [
+                                        {
+                                            "ignore_changes": [
+                                                [
+                                                    [
+                                                        "auto_init"
+                                                    ],
+                                                    [
+                                                        "gitignore_template"
+                                                    ],
+                                                    [
+                                                        "license_template"
+                                                    ],
+                                                    [
+                                                        "template"
+                                                    ]
+                                                ]
+                                            ]
+                                        }
+                                    ],
+                                    "name": [
+                                        "test-public-repository-complete-example-A"
+                                    ],
+                                    "topics": [
+                                        [
+                                            [
+                                                "integration-test"
+                                            ],
+                                            [
+                                                "terraform"
+                                            ]
+                                        ]
+                                    ],
+                                    "visibility": [
+                                        "var.visibility"
+                                    ],
+                                    "vulnerability_alerts": [
+                                        "var.vulnerability_alerts"
+                                    ],
+                                    "__address__": "module.repository.github_repository.repository",
+                                    "template": [
+                                        {
+                                            "owner": [
+                                                "var.template"
+                                            ],
+                                            "repository": [
+                                                "var.template"
+                                            ]
+                                        }
+                                    ],
+                                    "pages": [
+                                        {
+                                            "cname": [
+                                                true
+                                            ],
+                                            "source": [
+                                                true
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            91,
+                            "resource \"github_repository\" \"repository\" {\n"
+                        ],
+                        [
+                            92,
+                            "  name                   = var.name\n"
+                        ],
+                        [
+                            93,
+                            "  description            = var.description\n"
+                        ],
+                        [
+                            94,
+                            "  homepage_url           = local.homepage_url\n"
+                        ],
+                        [
+                            95,
+                            "  visibility             = local.visibility\n"
+                        ],
+                        [
+                            96,
+                            "  has_issues             = local.has_issues\n"
+                        ],
+                        [
+                            97,
+                            "  has_projects           = local.has_projects\n"
+                        ],
+                        [
+                            98,
+                            "  has_wiki               = local.has_wiki\n"
+                        ],
+                        [
+                            99,
+                            "  allow_merge_commit     = local.allow_merge_commit\n"
+                        ],
+                        [
+                            100,
+                            "  allow_rebase_merge     = local.allow_rebase_merge\n"
+                        ],
+                        [
+                            101,
+                            "  allow_squash_merge     = local.allow_squash_merge\n"
+                        ],
+                        [
+                            102,
+                            "  allow_auto_merge       = local.allow_auto_merge\n"
+                        ],
+                        [
+                            103,
+                            "  delete_branch_on_merge = local.delete_branch_on_merge\n"
+                        ],
+                        [
+                            104,
+                            "  is_template            = local.is_template\n"
+                        ],
+                        [
+                            105,
+                            "  has_downloads          = local.has_downloads\n"
+                        ],
+                        [
+                            106,
+                            "  auto_init              = local.auto_init\n"
+                        ],
+                        [
+                            107,
+                            "  gitignore_template     = local.gitignore_template\n"
+                        ],
+                        [
+                            108,
+                            "  license_template       = local.license_template\n"
+                        ],
+                        [
+                            109,
+                            "  archived               = var.archived\n"
+                        ],
+                        [
+                            110,
+                            "  topics                 = local.topics\n"
+                        ],
+                        [
+                            111,
+                            "\n"
+                        ],
+                        [
+                            112,
+                            "  archive_on_destroy   = var.archive_on_destroy\n"
+                        ],
+                        [
+                            113,
+                            "  vulnerability_alerts = local.vulnerability_alerts\n"
+                        ],
+                        [
+                            114,
+                            "\n"
+                        ],
+                        [
+                            115,
+                            "  dynamic \"template\" {\n"
+                        ],
+                        [
+                            116,
+                            "    for_each = local.template\n"
+                        ],
+                        [
+                            117,
+                            "\n"
+                        ],
+                        [
+                            118,
+                            "    content {\n"
+                        ],
+                        [
+                            119,
+                            "      owner      = template.value.owner\n"
+                        ],
+                        [
+                            120,
+                            "      repository = template.value.repository\n"
+                        ],
+                        [
+                            121,
+                            "    }\n"
+                        ],
+                        [
+                            122,
+                            "  }\n"
+                        ],
+                        [
+                            123,
+                            "\n"
+                        ],
+                        [
+                            124,
+                            "  dynamic \"pages\" {\n"
+                        ],
+                        [
+                            125,
+                            "    for_each = var.pages != null ? [true] : []\n"
+                        ],
+                        [
+                            126,
+                            "\n"
+                        ],
+                        [
+                            127,
+                            "    content {\n"
+                        ],
+                        [
+                            128,
+                            "      source {\n"
+                        ],
+                        [
+                            129,
+                            "        branch = var.pages.branch\n"
+                        ],
+                        [
+                            130,
+                            "        path   = try(var.pages.path, \"/\")\n"
+                        ],
+                        [
+                            131,
+                            "      }\n"
+                        ],
+                        [
+                            132,
+                            "      cname = try(var.pages.cname, null)\n"
+                        ],
+                        [
+                            133,
+                            "    }\n"
+                        ],
+                        [
+                            134,
+                            "  }\n"
+                        ],
+                        [
+                            135,
+                            "\n"
+                        ],
+                        [
+                            136,
+                            "  lifecycle {\n"
+                        ],
+                        [
+                            137,
+                            "    ignore_changes = [\n"
+                        ],
+                        [
+                            138,
+                            "      auto_init,\n"
+                        ],
+                        [
+                            139,
+                            "      license_template,\n"
+                        ],
+                        [
+                            140,
+                            "      gitignore_template,\n"
+                        ],
+                        [
+                            141,
+                            "      template,\n"
+                        ],
+                        [
+                            142,
+                            "    ]\n"
+                        ],
+                        [
+                            143,
+                            "  }\n"
+                        ],
+                        [
+                            144,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        91,
+                        144
+                    ],
+                    "resource": "module.repository.github_repository.repository",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": {
+                        "code_block": [
+                            [
+                                240,
+                                "resource \"github_branch_protection_v3\" \"branch_protection\" {\n"
+                            ],
+                            [
+                                241,
+                                "  count = length(local.branch_protections_v3)\n"
+                            ],
+                            [
+                                242,
+                                "\n"
+                            ],
+                            [
+                                243,
+                                "  # ensure we have all members and collaborators added before applying\n"
+                            ],
+                            [
+                                244,
+                                "  # any configuration for them\n"
+                            ],
+                            [
+                                245,
+                                "  depends_on = [\n"
+                            ],
+                            [
+                                246,
+                                "    github_repository_collaborator.collaborator,\n"
+                            ],
+                            [
+                                247,
+                                "    github_team_repository.team_repository,\n"
+                            ],
+                            [
+                                248,
+                                "    github_team_repository.team_repository_by_slug,\n"
+                            ],
+                            [
+                                249,
+                                "    github_branch.branch,\n"
+                            ],
+                            [
+                                250,
+                                "  ]\n"
+                            ],
+                            [
+                                251,
+                                "\n"
+                            ],
+                            [
+                                252,
+                                "  repository                      = github_repository.repository.name\n"
+                            ],
+                            [
+                                253,
+                                "  branch                          = local.branch_protections_v3[count.index].branch\n"
+                            ],
+                            [
+                                254,
+                                "  enforce_admins                  = local.branch_protections_v3[count.index].enforce_admins\n"
+                            ],
+                            [
+                                255,
+                                "  require_conversation_resolution = local.branch_protections_v3[count.index].require_conversation_resolution\n"
+                            ],
+                            [
+                                256,
+                                "  require_signed_commits          = local.branch_protections_v3[count.index].require_signed_commits\n"
+                            ],
+                            [
+                                257,
+                                "\n"
+                            ],
+                            [
+                                258,
+                                "  dynamic \"required_status_checks\" {\n"
+                            ],
+                            [
+                                259,
+                                "    for_each = local.required_status_checks[count.index]\n"
+                            ],
+                            [
+                                260,
+                                "\n"
+                            ],
+                            [
+                                261,
+                                "    content {\n"
+                            ],
+                            [
+                                262,
+                                "      strict   = required_status_checks.value.strict\n"
+                            ],
+                            [
+                                263,
+                                "      contexts = required_status_checks.value.contexts\n"
+                            ],
+                            [
+                                264,
+                                "    }\n"
+                            ],
+                            [
+                                265,
+                                "  }\n"
+                            ],
+                            [
+                                266,
+                                "\n"
+                            ],
+                            [
+                                267,
+                                "  dynamic \"required_pull_request_reviews\" {\n"
+                            ],
+                            [
+                                268,
+                                "    for_each = local.required_pull_request_reviews[count.index]\n"
+                            ],
+                            [
+                                269,
+                                "\n"
+                            ],
+                            [
+                                270,
+                                "    content {\n"
+                            ],
+                            [
+                                271,
+                                "      dismiss_stale_reviews           = required_pull_request_reviews.value.dismiss_stale_reviews\n"
+                            ],
+                            [
+                                272,
+                                "      dismissal_users                 = required_pull_request_reviews.value.dismissal_users\n"
+                            ],
+                            [
+                                273,
+                                "      dismissal_teams                 = [for t in required_pull_request_reviews.value.dismissal_teams : replace(lower(t), \"/[^a-z0-9_]/\", \"-\")]\n"
+                            ],
+                            [
+                                274,
+                                "      require_code_owner_reviews      = required_pull_request_reviews.value.require_code_owner_reviews\n"
+                            ],
+                            [
+                                275,
+                                "      required_approving_review_count = required_pull_request_reviews.value.required_approving_review_count\n"
+                            ],
+                            [
+                                276,
+                                "    }\n"
+                            ],
+                            [
+                                277,
+                                "  }\n"
+                            ],
+                            [
+                                278,
+                                "\n"
+                            ],
+                            [
+                                279,
+                                "  dynamic \"restrictions\" {\n"
+                            ],
+                            [
+                                280,
+                                "    for_each = local.restrictions[count.index]\n"
+                            ],
+                            [
+                                281,
+                                "\n"
+                            ],
+                            [
+                                282,
+                                "    content {\n"
+                            ],
+                            [
+                                283,
+                                "      users = restrictions.value.users\n"
+                            ],
+                            [
+                                284,
+                                "      teams = [for t in restrictions.value.teams : replace(lower(t), \"/[^a-z0-9_]/\", \"-\")]\n"
+                            ],
+                            [
+                                285,
+                                "      apps  = restrictions.value.apps\n"
+                            ],
+                            [
+                                286,
+                                "    }\n"
+                            ],
+                            [
+                                287,
+                                "  }\n"
+                            ],
+                            [
+                                288,
+                                "}\n"
+                            ]
+                        ],
+                        "file_path": "\\main.tf",
+                        "file_line_range": [
+                            240,
+                            288
+                        ],
+                        "resource": "github_branch_protection_v3.branch_protection",
+                        "entity_tags": {},
+                        "evaluations": null,
+                        "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                        "resource_address": null
+                    },
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV2_GIT_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure each Repository has branch protection associated",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "github_repository": {
+                                "repository": {
+                                    "__end_line__": 144,
+                                    "__start_line__": 91,
+                                    "allow_auto_merge": [
+                                        "var.allow_auto_merge"
+                                    ],
+                                    "allow_merge_commit": [
+                                        "var.allow_merge_commit"
+                                    ],
+                                    "allow_rebase_merge": [
+                                        "var.allow_rebase_merge"
+                                    ],
+                                    "allow_squash_merge": [
+                                        "var.allow_squash_merge"
+                                    ],
+                                    "archive_on_destroy": [
+                                        true
+                                    ],
+                                    "archived": [
+                                        false
+                                    ],
+                                    "auto_init": [
+                                        "var.auto_init"
+                                    ],
+                                    "delete_branch_on_merge": [
+                                        "var.delete_branch_on_merge"
+                                    ],
+                                    "description": [
+                                        "(Optional) A description of the repository."
+                                    ],
+                                    "dynamic": [
+                                        {
+                                            "template": {
+                                                "owner": [
+                                                    "var.template"
+                                                ],
+                                                "repository": [
+                                                    "var.template"
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "pages": [
+                                                {
+                                                    "cname": [
+                                                        true
+                                                    ],
+                                                    "source": [
+                                                        true
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "gitignore_template": [
+                                        "var.gitignore_template"
+                                    ],
+                                    "has_downloads": [
+                                        "var.has_downloads"
+                                    ],
+                                    "has_issues": [
+                                        "var.has_issues"
+                                    ],
+                                    "has_projects": [
+                                        "var.has_projects"
+                                    ],
+                                    "has_wiki": [
+                                        "var.has_wiki"
+                                    ],
+                                    "homepage_url": [
+                                        "var.homepage_url"
+                                    ],
+                                    "is_template": [
+                                        "var.is_template"
+                                    ],
+                                    "license_template": [
+                                        "var.license_template"
+                                    ],
+                                    "lifecycle": [
+                                        {
+                                            "ignore_changes": [
+                                                [
+                                                    [
+                                                        "auto_init"
+                                                    ],
+                                                    [
+                                                        "gitignore_template"
+                                                    ],
+                                                    [
+                                                        "license_template"
+                                                    ],
+                                                    [
+                                                        "template"
+                                                    ]
+                                                ]
+                                            ]
+                                        }
+                                    ],
+                                    "name": [
+                                        "test-public-repository-complete-example-B"
+                                    ],
+                                    "topics": [
+                                        []
+                                    ],
+                                    "visibility": [
+                                        "var.visibility"
+                                    ],
+                                    "vulnerability_alerts": [
+                                        "var.vulnerability_alerts"
+                                    ],
+                                    "__address__": "module.repository-with-defaults.github_repository.repository",
+                                    "template": [
+                                        {
+                                            "owner": [
+                                                "var.template"
+                                            ],
+                                            "repository": [
+                                                "var.template"
+                                            ]
+                                        }
+                                    ],
+                                    "pages": [
+                                        {
+                                            "cname": [
+                                                true
+                                            ],
+                                            "source": [
+                                                true
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "evaluated_keys": [
+                            "resource_type"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            91,
+                            "resource \"github_repository\" \"repository\" {\n"
+                        ],
+                        [
+                            92,
+                            "  name                   = var.name\n"
+                        ],
+                        [
+                            93,
+                            "  description            = var.description\n"
+                        ],
+                        [
+                            94,
+                            "  homepage_url           = local.homepage_url\n"
+                        ],
+                        [
+                            95,
+                            "  visibility             = local.visibility\n"
+                        ],
+                        [
+                            96,
+                            "  has_issues             = local.has_issues\n"
+                        ],
+                        [
+                            97,
+                            "  has_projects           = local.has_projects\n"
+                        ],
+                        [
+                            98,
+                            "  has_wiki               = local.has_wiki\n"
+                        ],
+                        [
+                            99,
+                            "  allow_merge_commit     = local.allow_merge_commit\n"
+                        ],
+                        [
+                            100,
+                            "  allow_rebase_merge     = local.allow_rebase_merge\n"
+                        ],
+                        [
+                            101,
+                            "  allow_squash_merge     = local.allow_squash_merge\n"
+                        ],
+                        [
+                            102,
+                            "  allow_auto_merge       = local.allow_auto_merge\n"
+                        ],
+                        [
+                            103,
+                            "  delete_branch_on_merge = local.delete_branch_on_merge\n"
+                        ],
+                        [
+                            104,
+                            "  is_template            = local.is_template\n"
+                        ],
+                        [
+                            105,
+                            "  has_downloads          = local.has_downloads\n"
+                        ],
+                        [
+                            106,
+                            "  auto_init              = local.auto_init\n"
+                        ],
+                        [
+                            107,
+                            "  gitignore_template     = local.gitignore_template\n"
+                        ],
+                        [
+                            108,
+                            "  license_template       = local.license_template\n"
+                        ],
+                        [
+                            109,
+                            "  archived               = var.archived\n"
+                        ],
+                        [
+                            110,
+                            "  topics                 = local.topics\n"
+                        ],
+                        [
+                            111,
+                            "\n"
+                        ],
+                        [
+                            112,
+                            "  archive_on_destroy   = var.archive_on_destroy\n"
+                        ],
+                        [
+                            113,
+                            "  vulnerability_alerts = local.vulnerability_alerts\n"
+                        ],
+                        [
+                            114,
+                            "\n"
+                        ],
+                        [
+                            115,
+                            "  dynamic \"template\" {\n"
+                        ],
+                        [
+                            116,
+                            "    for_each = local.template\n"
+                        ],
+                        [
+                            117,
+                            "\n"
+                        ],
+                        [
+                            118,
+                            "    content {\n"
+                        ],
+                        [
+                            119,
+                            "      owner      = template.value.owner\n"
+                        ],
+                        [
+                            120,
+                            "      repository = template.value.repository\n"
+                        ],
+                        [
+                            121,
+                            "    }\n"
+                        ],
+                        [
+                            122,
+                            "  }\n"
+                        ],
+                        [
+                            123,
+                            "\n"
+                        ],
+                        [
+                            124,
+                            "  dynamic \"pages\" {\n"
+                        ],
+                        [
+                            125,
+                            "    for_each = var.pages != null ? [true] : []\n"
+                        ],
+                        [
+                            126,
+                            "\n"
+                        ],
+                        [
+                            127,
+                            "    content {\n"
+                        ],
+                        [
+                            128,
+                            "      source {\n"
+                        ],
+                        [
+                            129,
+                            "        branch = var.pages.branch\n"
+                        ],
+                        [
+                            130,
+                            "        path   = try(var.pages.path, \"/\")\n"
+                        ],
+                        [
+                            131,
+                            "      }\n"
+                        ],
+                        [
+                            132,
+                            "      cname = try(var.pages.cname, null)\n"
+                        ],
+                        [
+                            133,
+                            "    }\n"
+                        ],
+                        [
+                            134,
+                            "  }\n"
+                        ],
+                        [
+                            135,
+                            "\n"
+                        ],
+                        [
+                            136,
+                            "  lifecycle {\n"
+                        ],
+                        [
+                            137,
+                            "    ignore_changes = [\n"
+                        ],
+                        [
+                            138,
+                            "      auto_init,\n"
+                        ],
+                        [
+                            139,
+                            "      license_template,\n"
+                        ],
+                        [
+                            140,
+                            "      gitignore_template,\n"
+                        ],
+                        [
+                            141,
+                            "      template,\n"
+                        ],
+                        [
+                            142,
+                            "    ]\n"
+                        ],
+                        [
+                            143,
+                            "  }\n"
+                        ],
+                        [
+                            144,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        91,
+                        144
+                    ],
+                    "resource": "module.repository-with-defaults.github_repository.repository",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": {},
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": {},
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": {
+                        "code_block": [
+                            [
+                                240,
+                                "resource \"github_branch_protection_v3\" \"branch_protection\" {\n"
+                            ],
+                            [
+                                241,
+                                "  count = length(local.branch_protections_v3)\n"
+                            ],
+                            [
+                                242,
+                                "\n"
+                            ],
+                            [
+                                243,
+                                "  # ensure we have all members and collaborators added before applying\n"
+                            ],
+                            [
+                                244,
+                                "  # any configuration for them\n"
+                            ],
+                            [
+                                245,
+                                "  depends_on = [\n"
+                            ],
+                            [
+                                246,
+                                "    github_repository_collaborator.collaborator,\n"
+                            ],
+                            [
+                                247,
+                                "    github_team_repository.team_repository,\n"
+                            ],
+                            [
+                                248,
+                                "    github_team_repository.team_repository_by_slug,\n"
+                            ],
+                            [
+                                249,
+                                "    github_branch.branch,\n"
+                            ],
+                            [
+                                250,
+                                "  ]\n"
+                            ],
+                            [
+                                251,
+                                "\n"
+                            ],
+                            [
+                                252,
+                                "  repository                      = github_repository.repository.name\n"
+                            ],
+                            [
+                                253,
+                                "  branch                          = local.branch_protections_v3[count.index].branch\n"
+                            ],
+                            [
+                                254,
+                                "  enforce_admins                  = local.branch_protections_v3[count.index].enforce_admins\n"
+                            ],
+                            [
+                                255,
+                                "  require_conversation_resolution = local.branch_protections_v3[count.index].require_conversation_resolution\n"
+                            ],
+                            [
+                                256,
+                                "  require_signed_commits          = local.branch_protections_v3[count.index].require_signed_commits\n"
+                            ],
+                            [
+                                257,
+                                "\n"
+                            ],
+                            [
+                                258,
+                                "  dynamic \"required_status_checks\" {\n"
+                            ],
+                            [
+                                259,
+                                "    for_each = local.required_status_checks[count.index]\n"
+                            ],
+                            [
+                                260,
+                                "\n"
+                            ],
+                            [
+                                261,
+                                "    content {\n"
+                            ],
+                            [
+                                262,
+                                "      strict   = required_status_checks.value.strict\n"
+                            ],
+                            [
+                                263,
+                                "      contexts = required_status_checks.value.contexts\n"
+                            ],
+                            [
+                                264,
+                                "    }\n"
+                            ],
+                            [
+                                265,
+                                "  }\n"
+                            ],
+                            [
+                                266,
+                                "\n"
+                            ],
+                            [
+                                267,
+                                "  dynamic \"required_pull_request_reviews\" {\n"
+                            ],
+                            [
+                                268,
+                                "    for_each = local.required_pull_request_reviews[count.index]\n"
+                            ],
+                            [
+                                269,
+                                "\n"
+                            ],
+                            [
+                                270,
+                                "    content {\n"
+                            ],
+                            [
+                                271,
+                                "      dismiss_stale_reviews           = required_pull_request_reviews.value.dismiss_stale_reviews\n"
+                            ],
+                            [
+                                272,
+                                "      dismissal_users                 = required_pull_request_reviews.value.dismissal_users\n"
+                            ],
+                            [
+                                273,
+                                "      dismissal_teams                 = [for t in required_pull_request_reviews.value.dismissal_teams : replace(lower(t), \"/[^a-z0-9_]/\", \"-\")]\n"
+                            ],
+                            [
+                                274,
+                                "      require_code_owner_reviews      = required_pull_request_reviews.value.require_code_owner_reviews\n"
+                            ],
+                            [
+                                275,
+                                "      required_approving_review_count = required_pull_request_reviews.value.required_approving_review_count\n"
+                            ],
+                            [
+                                276,
+                                "    }\n"
+                            ],
+                            [
+                                277,
+                                "  }\n"
+                            ],
+                            [
+                                278,
+                                "\n"
+                            ],
+                            [
+                                279,
+                                "  dynamic \"restrictions\" {\n"
+                            ],
+                            [
+                                280,
+                                "    for_each = local.restrictions[count.index]\n"
+                            ],
+                            [
+                                281,
+                                "\n"
+                            ],
+                            [
+                                282,
+                                "    content {\n"
+                            ],
+                            [
+                                283,
+                                "      users = restrictions.value.users\n"
+                            ],
+                            [
+                                284,
+                                "      teams = [for t in restrictions.value.teams : replace(lower(t), \"/[^a-z0-9_]/\", \"-\")]\n"
+                            ],
+                            [
+                                285,
+                                "      apps  = restrictions.value.apps\n"
+                            ],
+                            [
+                                286,
+                                "    }\n"
+                            ],
+                            [
+                                287,
+                                "  }\n"
+                            ],
+                            [
+                                288,
+                                "}\n"
+                            ]
+                        ],
+                        "file_path": "\\main.tf",
+                        "file_line_range": [
+                            240,
+                            288
+                        ],
+                        "resource": "github_branch_protection_v3.branch_protection",
+                        "entity_tags": {},
+                        "evaluations": null,
+                        "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                        "resource_address": null
+                    },
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                }
+            ],
+            "failed_checks": [
+                {
+                    "check_id": "CKV_TF_1",
+                    "bc_check_id": "BC_CROSS_1",
+                    "check_name": "Ensure Terraform module sources use a commit hash",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            8,
+                            "module \"repository\" {\n"
+                        ],
+                        [
+                            9,
+                            "  source  = \"mineiros-io/repository/github\"\n"
+                        ],
+                        [
+                            10,
+                            "  version = \"~> 0.13.0\"\n"
+                        ],
+                        [
+                            11,
+                            "\n"
+                        ],
+                        [
+                            12,
+                            "  module_depends_on = [\n"
+                        ],
+                        [
+                            13,
+                            "    module.team\n"
+                        ],
+                        [
+                            14,
+                            "  ]\n"
+                        ],
+                        [
+                            15,
+                            "\n"
+                        ],
+                        [
+                            16,
+                            "  name               = \"my-public-repository\"\n"
+                        ],
+                        [
+                            17,
+                            "  description        = \"A description of the repository.\"\n"
+                        ],
+                        [
+                            18,
+                            "  homepage_url       = \"https://github.com/mineiros-io\"\n"
+                        ],
+                        [
+                            19,
+                            "  visibility         = \"public\"\n"
+                        ],
+                        [
+                            20,
+                            "  has_issues         = true\n"
+                        ],
+                        [
+                            21,
+                            "  has_projects       = false\n"
+                        ],
+                        [
+                            22,
+                            "  has_wiki           = true\n"
+                        ],
+                        [
+                            23,
+                            "  allow_merge_commit = true\n"
+                        ],
+                        [
+                            24,
+                            "  allow_rebase_merge = false\n"
+                        ],
+                        [
+                            25,
+                            "  allow_squash_merge = false\n"
+                        ],
+                        [
+                            26,
+                            "  allow_auto_merge   = true\n"
+                        ],
+                        [
+                            27,
+                            "  has_downloads      = false\n"
+                        ],
+                        [
+                            28,
+                            "  auto_init          = true\n"
+                        ],
+                        [
+                            29,
+                            "  gitignore_template = \"Terraform\"\n"
+                        ],
+                        [
+                            30,
+                            "  license_template   = \"mit\"\n"
+                        ],
+                        [
+                            31,
+                            "  topics             = [\"terraform\", \"unit-test\"]\n"
+                        ],
+                        [
+                            32,
+                            "\n"
+                        ],
+                        [
+                            33,
+                            "  admin_team_ids = [\n"
+                        ],
+                        [
+                            34,
+                            "    module.team.team.id\n"
+                        ],
+                        [
+                            35,
+                            "  ]\n"
+                        ],
+                        [
+                            36,
+                            "\n"
+                        ],
+                        [
+                            37,
+                            "  webhooks = [\n"
+                        ],
+                        [
+                            38,
+                            "    {\n"
+                        ],
+                        [
+                            39,
+                            "      active       = true\n"
+                        ],
+                        [
+                            40,
+                            "      events       = [\"issues\"]\n"
+                        ],
+                        [
+                            41,
+                            "      url          = \"https://example.com/events\"\n"
+                        ],
+                        [
+                            42,
+                            "      content_type = \"application/json\"\n"
+                        ],
+                        [
+                            43,
+                            "      insecure_ssl = false\n"
+                        ],
+                        [
+                            44,
+                            "      secret       = \"sososecret\"\n"
+                        ],
+                        [
+                            45,
+                            "    },\n"
+                        ],
+                        [
+                            46,
+                            "  ]\n"
+                        ],
+                        [
+                            47,
+                            "\n"
+                        ],
+                        [
+                            48,
+                            "  admin_collaborators = [\"terraform-test-user-1\"]\n"
+                        ],
+                        [
+                            49,
+                            "\n"
+                        ],
+                        [
+                            50,
+                            "  branch_protections = [\n"
+                        ],
+                        [
+                            51,
+                            "    {\n"
+                        ],
+                        [
+                            52,
+                            "      branch                          = \"main\"\n"
+                        ],
+                        [
+                            53,
+                            "      enforce_admins                  = true\n"
+                        ],
+                        [
+                            54,
+                            "      require_conversation_resolution = true\n"
+                        ],
+                        [
+                            55,
+                            "      require_signed_commits          = true\n"
+                        ],
+                        [
+                            56,
+                            "\n"
+                        ],
+                        [
+                            57,
+                            "      required_status_checks = {\n"
+                        ],
+                        [
+                            58,
+                            "        strict   = true\n"
+                        ],
+                        [
+                            59,
+                            "        contexts = [\"ci/travis\"]\n"
+                        ],
+                        [
+                            60,
+                            "      }\n"
+                        ],
+                        [
+                            61,
+                            "\n"
+                        ],
+                        [
+                            62,
+                            "      required_pull_request_reviews = {\n"
+                        ],
+                        [
+                            63,
+                            "        dismiss_stale_reviews           = true\n"
+                        ],
+                        [
+                            64,
+                            "        dismissal_teams                 = [module.team.name]\n"
+                        ],
+                        [
+                            65,
+                            "        require_code_owner_reviews      = true\n"
+                        ],
+                        [
+                            66,
+                            "        required_approving_review_count = 1\n"
+                        ],
+                        [
+                            67,
+                            "      }\n"
+                        ],
+                        [
+                            68,
+                            "\n"
+                        ],
+                        [
+                            69,
+                            "      restrictions = {\n"
+                        ],
+                        [
+                            70,
+                            "        teams = [module.team.name]\n"
+                        ],
+                        [
+                            71,
+                            "      }\n"
+                        ],
+                        [
+                            72,
+                            "    }\n"
+                        ],
+                        [
+                            73,
+                            "  ]\n"
+                        ],
+                        [
+                            74,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\public-repository\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\examples\\public-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/examples/public-repository/main.tf",
+                    "file_line_range": [
+                        8,
+                        74
+                    ],
+                    "resource": "repository",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\examples\\public-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_TF_1",
+                    "bc_check_id": "BC_CROSS_1",
+                    "check_name": "Ensure Terraform module sources use a commit hash",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            80,
+                            "module \"team\" {\n"
+                        ],
+                        [
+                            81,
+                            "  source  = \"mineiros-io/team/github\"\n"
+                        ],
+                        [
+                            82,
+                            "  version = \"~> 0.8.0\"\n"
+                        ],
+                        [
+                            83,
+                            "\n"
+                        ],
+                        [
+                            84,
+                            "  name        = \"DevOps\"\n"
+                        ],
+                        [
+                            85,
+                            "  description = \"The DevOps Team\"\n"
+                        ],
+                        [
+                            86,
+                            "  privacy     = \"secret\"\n"
+                        ],
+                        [
+                            87,
+                            "\n"
+                        ],
+                        [
+                            88,
+                            "  # TEAM MEMBERSHIP\n"
+                        ],
+                        [
+                            89,
+                            "  # We are adding a member to this team: \"terraform-test-user-2\".\n"
+                        ],
+                        [
+                            90,
+                            "  # This existing users and already member of the GitHub Organization \"terraform-test\" that\n"
+                        ],
+                        [
+                            91,
+                            "  # is an Organization managed by Mineiros.io to run integration tests with Terratest.\n"
+                        ],
+                        [
+                            92,
+                            "  members = [\n"
+                        ],
+                        [
+                            93,
+                            "    \"terraform-test-user-2\",\n"
+                        ],
+                        [
+                            94,
+                            "  ]\n"
+                        ],
+                        [
+                            95,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\examples\\public-repository\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\examples\\public-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/examples/public-repository/main.tf",
+                    "file_line_range": [
+                        80,
+                        95
+                    ],
+                    "resource": "team",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\examples\\public-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            91,
+                            "resource \"github_repository\" \"repository\" {\n"
+                        ],
+                        [
+                            92,
+                            "  name                   = var.name\n"
+                        ],
+                        [
+                            93,
+                            "  description            = var.description\n"
+                        ],
+                        [
+                            94,
+                            "  homepage_url           = local.homepage_url\n"
+                        ],
+                        [
+                            95,
+                            "  visibility             = local.visibility\n"
+                        ],
+                        [
+                            96,
+                            "  has_issues             = local.has_issues\n"
+                        ],
+                        [
+                            97,
+                            "  has_projects           = local.has_projects\n"
+                        ],
+                        [
+                            98,
+                            "  has_wiki               = local.has_wiki\n"
+                        ],
+                        [
+                            99,
+                            "  allow_merge_commit     = local.allow_merge_commit\n"
+                        ],
+                        [
+                            100,
+                            "  allow_rebase_merge     = local.allow_rebase_merge\n"
+                        ],
+                        [
+                            101,
+                            "  allow_squash_merge     = local.allow_squash_merge\n"
+                        ],
+                        [
+                            102,
+                            "  allow_auto_merge       = local.allow_auto_merge\n"
+                        ],
+                        [
+                            103,
+                            "  delete_branch_on_merge = local.delete_branch_on_merge\n"
+                        ],
+                        [
+                            104,
+                            "  is_template            = local.is_template\n"
+                        ],
+                        [
+                            105,
+                            "  has_downloads          = local.has_downloads\n"
+                        ],
+                        [
+                            106,
+                            "  auto_init              = local.auto_init\n"
+                        ],
+                        [
+                            107,
+                            "  gitignore_template     = local.gitignore_template\n"
+                        ],
+                        [
+                            108,
+                            "  license_template       = local.license_template\n"
+                        ],
+                        [
+                            109,
+                            "  archived               = var.archived\n"
+                        ],
+                        [
+                            110,
+                            "  topics                 = local.topics\n"
+                        ],
+                        [
+                            111,
+                            "\n"
+                        ],
+                        [
+                            112,
+                            "  archive_on_destroy   = var.archive_on_destroy\n"
+                        ],
+                        [
+                            113,
+                            "  vulnerability_alerts = local.vulnerability_alerts\n"
+                        ],
+                        [
+                            114,
+                            "\n"
+                        ],
+                        [
+                            115,
+                            "  dynamic \"template\" {\n"
+                        ],
+                        [
+                            116,
+                            "    for_each = local.template\n"
+                        ],
+                        [
+                            117,
+                            "\n"
+                        ],
+                        [
+                            118,
+                            "    content {\n"
+                        ],
+                        [
+                            119,
+                            "      owner      = template.value.owner\n"
+                        ],
+                        [
+                            120,
+                            "      repository = template.value.repository\n"
+                        ],
+                        [
+                            121,
+                            "    }\n"
+                        ],
+                        [
+                            122,
+                            "  }\n"
+                        ],
+                        [
+                            123,
+                            "\n"
+                        ],
+                        [
+                            124,
+                            "  dynamic \"pages\" {\n"
+                        ],
+                        [
+                            125,
+                            "    for_each = var.pages != null ? [true] : []\n"
+                        ],
+                        [
+                            126,
+                            "\n"
+                        ],
+                        [
+                            127,
+                            "    content {\n"
+                        ],
+                        [
+                            128,
+                            "      source {\n"
+                        ],
+                        [
+                            129,
+                            "        branch = var.pages.branch\n"
+                        ],
+                        [
+                            130,
+                            "        path   = try(var.pages.path, \"/\")\n"
+                        ],
+                        [
+                            131,
+                            "      }\n"
+                        ],
+                        [
+                            132,
+                            "      cname = try(var.pages.cname, null)\n"
+                        ],
+                        [
+                            133,
+                            "    }\n"
+                        ],
+                        [
+                            134,
+                            "  }\n"
+                        ],
+                        [
+                            135,
+                            "\n"
+                        ],
+                        [
+                            136,
+                            "  lifecycle {\n"
+                        ],
+                        [
+                            137,
+                            "    ignore_changes = [\n"
+                        ],
+                        [
+                            138,
+                            "      auto_init,\n"
+                        ],
+                        [
+                            139,
+                            "      license_template,\n"
+                        ],
+                        [
+                            140,
+                            "      gitignore_template,\n"
+                        ],
+                        [
+                            141,
+                            "      template,\n"
+                        ],
+                        [
+                            142,
+                            "    ]\n"
+                        ],
+                        [
+                            143,
+                            "  }\n"
+                        ],
+                        [
+                            144,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        91,
+                        144
+                    ],
+                    "resource": "module.repository.github_repository.repository",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        25,
+                        161
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_6",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_4",
+                    "check_name": "Ensure GitHub branch protection rules requires signed commits",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": [
+                            "require_signed_commits"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            187,
+                            "resource \"github_branch_protection\" \"branch_protection\" {\n"
+                        ],
+                        [
+                            188,
+                            "  for_each = local.branch_protections_v4_map\n"
+                        ],
+                        [
+                            189,
+                            "\n"
+                        ],
+                        [
+                            190,
+                            "  # ensure we have all members and collaborators added before applying\n"
+                        ],
+                        [
+                            191,
+                            "  # any configuration for them\n"
+                        ],
+                        [
+                            192,
+                            "  depends_on = [\n"
+                        ],
+                        [
+                            193,
+                            "    github_repository_collaborator.collaborator,\n"
+                        ],
+                        [
+                            194,
+                            "    github_team_repository.team_repository,\n"
+                        ],
+                        [
+                            195,
+                            "    github_team_repository.team_repository_by_slug,\n"
+                        ],
+                        [
+                            196,
+                            "    github_branch.branch,\n"
+                        ],
+                        [
+                            197,
+                            "  ]\n"
+                        ],
+                        [
+                            198,
+                            "\n"
+                        ],
+                        [
+                            199,
+                            "  repository_id = github_repository.repository.node_id\n"
+                        ],
+                        [
+                            200,
+                            "\n"
+                        ],
+                        [
+                            201,
+                            "  pattern = var.branch_protections_v4[each.value].pattern\n"
+                        ],
+                        [
+                            202,
+                            "\n"
+                        ],
+                        [
+                            203,
+                            "  allows_deletions                = try(var.branch_protections_v4[each.value].allows_deletions, false)\n"
+                        ],
+                        [
+                            204,
+                            "  allows_force_pushes             = try(var.branch_protections_v4[each.value].allows_force_pushes, false)\n"
+                        ],
+                        [
+                            205,
+                            "  blocks_creations                = try(var.branch_protections_v4[each.value].blocks_creations, false)\n"
+                        ],
+                        [
+                            206,
+                            "  enforce_admins                  = try(var.branch_protections_v4[each.value].enforce_admins, true)\n"
+                        ],
+                        [
+                            207,
+                            "  push_restrictions               = try(var.branch_protections_v4[each.value].push_restrictions, [])\n"
+                        ],
+                        [
+                            208,
+                            "  require_conversation_resolution = try(var.branch_protections_v4[each.value].require_conversation_resolution, false)\n"
+                        ],
+                        [
+                            209,
+                            "  require_signed_commits          = try(var.branch_protections_v4[each.value].require_signed_commits, false)\n"
+                        ],
+                        [
+                            210,
+                            "  required_linear_history         = try(var.branch_protections_v4[each.value].required_linear_history, false)\n"
+                        ],
+                        [
+                            211,
+                            "\n"
+                        ],
+                        [
+                            212,
+                            "  dynamic \"required_pull_request_reviews\" {\n"
+                        ],
+                        [
+                            213,
+                            "    for_each = try([var.branch_protections_v4[each.value].required_pull_request_reviews], [])\n"
+                        ],
+                        [
+                            214,
+                            "\n"
+                        ],
+                        [
+                            215,
+                            "    content {\n"
+                        ],
+                        [
+                            216,
+                            "      dismiss_stale_reviews           = try(required_pull_request_reviews.value.dismiss_stale_reviews, true)\n"
+                        ],
+                        [
+                            217,
+                            "      restrict_dismissals             = try(required_pull_request_reviews.value.restrict_dismissals, null)\n"
+                        ],
+                        [
+                            218,
+                            "      dismissal_restrictions          = try(required_pull_request_reviews.value.dismissal_restrictions, [])\n"
+                        ],
+                        [
+                            219,
+                            "      pull_request_bypassers          = try(required_pull_request_reviews.value.pull_request_bypassers, [])\n"
+                        ],
+                        [
+                            220,
+                            "      require_code_owner_reviews      = try(required_pull_request_reviews.value.require_code_owner_reviews, true)\n"
+                        ],
+                        [
+                            221,
+                            "      required_approving_review_count = try(required_pull_request_reviews.value.required_approving_review_count, 0)\n"
+                        ],
+                        [
+                            222,
+                            "    }\n"
+                        ],
+                        [
+                            223,
+                            "  }\n"
+                        ],
+                        [
+                            224,
+                            "\n"
+                        ],
+                        [
+                            225,
+                            "  dynamic \"required_status_checks\" {\n"
+                        ],
+                        [
+                            226,
+                            "    for_each = try([var.branch_protections_v4[each.value].required_status_checks], [])\n"
+                        ],
+                        [
+                            227,
+                            "\n"
+                        ],
+                        [
+                            228,
+                            "    content {\n"
+                        ],
+                        [
+                            229,
+                            "      strict   = try(required_status_checks.value.strict, false)\n"
+                        ],
+                        [
+                            230,
+                            "      contexts = try(required_status_checks.value.contexts, [])\n"
+                        ],
+                        [
+                            231,
+                            "    }\n"
+                        ],
+                        [
+                            232,
+                            "  }\n"
+                        ],
+                        [
+                            233,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        187,
+                        233
+                    ],
+                    "resource": "module.repository.github_branch_protection.branch_protection",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.BranchProtectionRequireSignedCommits",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        25,
+                        161
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/github-6",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_5",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_5",
+                    "check_name": "GitHub pull requests should require at least 2 approvals",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": [
+                            "required_pull_request_reviews/[0]/required_approving_review_count"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            187,
+                            "resource \"github_branch_protection\" \"branch_protection\" {\n"
+                        ],
+                        [
+                            188,
+                            "  for_each = local.branch_protections_v4_map\n"
+                        ],
+                        [
+                            189,
+                            "\n"
+                        ],
+                        [
+                            190,
+                            "  # ensure we have all members and collaborators added before applying\n"
+                        ],
+                        [
+                            191,
+                            "  # any configuration for them\n"
+                        ],
+                        [
+                            192,
+                            "  depends_on = [\n"
+                        ],
+                        [
+                            193,
+                            "    github_repository_collaborator.collaborator,\n"
+                        ],
+                        [
+                            194,
+                            "    github_team_repository.team_repository,\n"
+                        ],
+                        [
+                            195,
+                            "    github_team_repository.team_repository_by_slug,\n"
+                        ],
+                        [
+                            196,
+                            "    github_branch.branch,\n"
+                        ],
+                        [
+                            197,
+                            "  ]\n"
+                        ],
+                        [
+                            198,
+                            "\n"
+                        ],
+                        [
+                            199,
+                            "  repository_id = github_repository.repository.node_id\n"
+                        ],
+                        [
+                            200,
+                            "\n"
+                        ],
+                        [
+                            201,
+                            "  pattern = var.branch_protections_v4[each.value].pattern\n"
+                        ],
+                        [
+                            202,
+                            "\n"
+                        ],
+                        [
+                            203,
+                            "  allows_deletions                = try(var.branch_protections_v4[each.value].allows_deletions, false)\n"
+                        ],
+                        [
+                            204,
+                            "  allows_force_pushes             = try(var.branch_protections_v4[each.value].allows_force_pushes, false)\n"
+                        ],
+                        [
+                            205,
+                            "  blocks_creations                = try(var.branch_protections_v4[each.value].blocks_creations, false)\n"
+                        ],
+                        [
+                            206,
+                            "  enforce_admins                  = try(var.branch_protections_v4[each.value].enforce_admins, true)\n"
+                        ],
+                        [
+                            207,
+                            "  push_restrictions               = try(var.branch_protections_v4[each.value].push_restrictions, [])\n"
+                        ],
+                        [
+                            208,
+                            "  require_conversation_resolution = try(var.branch_protections_v4[each.value].require_conversation_resolution, false)\n"
+                        ],
+                        [
+                            209,
+                            "  require_signed_commits          = try(var.branch_protections_v4[each.value].require_signed_commits, false)\n"
+                        ],
+                        [
+                            210,
+                            "  required_linear_history         = try(var.branch_protections_v4[each.value].required_linear_history, false)\n"
+                        ],
+                        [
+                            211,
+                            "\n"
+                        ],
+                        [
+                            212,
+                            "  dynamic \"required_pull_request_reviews\" {\n"
+                        ],
+                        [
+                            213,
+                            "    for_each = try([var.branch_protections_v4[each.value].required_pull_request_reviews], [])\n"
+                        ],
+                        [
+                            214,
+                            "\n"
+                        ],
+                        [
+                            215,
+                            "    content {\n"
+                        ],
+                        [
+                            216,
+                            "      dismiss_stale_reviews           = try(required_pull_request_reviews.value.dismiss_stale_reviews, true)\n"
+                        ],
+                        [
+                            217,
+                            "      restrict_dismissals             = try(required_pull_request_reviews.value.restrict_dismissals, null)\n"
+                        ],
+                        [
+                            218,
+                            "      dismissal_restrictions          = try(required_pull_request_reviews.value.dismissal_restrictions, [])\n"
+                        ],
+                        [
+                            219,
+                            "      pull_request_bypassers          = try(required_pull_request_reviews.value.pull_request_bypassers, [])\n"
+                        ],
+                        [
+                            220,
+                            "      require_code_owner_reviews      = try(required_pull_request_reviews.value.require_code_owner_reviews, true)\n"
+                        ],
+                        [
+                            221,
+                            "      required_approving_review_count = try(required_pull_request_reviews.value.required_approving_review_count, 0)\n"
+                        ],
+                        [
+                            222,
+                            "    }\n"
+                        ],
+                        [
+                            223,
+                            "  }\n"
+                        ],
+                        [
+                            224,
+                            "\n"
+                        ],
+                        [
+                            225,
+                            "  dynamic \"required_status_checks\" {\n"
+                        ],
+                        [
+                            226,
+                            "    for_each = try([var.branch_protections_v4[each.value].required_status_checks], [])\n"
+                        ],
+                        [
+                            227,
+                            "\n"
+                        ],
+                        [
+                            228,
+                            "    content {\n"
+                        ],
+                        [
+                            229,
+                            "      strict   = try(required_status_checks.value.strict, false)\n"
+                        ],
+                        [
+                            230,
+                            "      contexts = try(required_status_checks.value.contexts, [])\n"
+                        ],
+                        [
+                            231,
+                            "    }\n"
+                        ],
+                        [
+                            232,
+                            "  }\n"
+                        ],
+                        [
+                            233,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        187,
+                        233
+                    ],
+                    "resource": "module.repository.github_branch_protection.branch_protection",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.BranchProtectionReviewNumTwo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        25,
+                        161
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/github-5",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_6",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_4",
+                    "check_name": "Ensure GitHub branch protection rules requires signed commits",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": [
+                            "require_signed_commits"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            240,
+                            "resource \"github_branch_protection_v3\" \"branch_protection\" {\n"
+                        ],
+                        [
+                            241,
+                            "  count = length(local.branch_protections_v3)\n"
+                        ],
+                        [
+                            242,
+                            "\n"
+                        ],
+                        [
+                            243,
+                            "  # ensure we have all members and collaborators added before applying\n"
+                        ],
+                        [
+                            244,
+                            "  # any configuration for them\n"
+                        ],
+                        [
+                            245,
+                            "  depends_on = [\n"
+                        ],
+                        [
+                            246,
+                            "    github_repository_collaborator.collaborator,\n"
+                        ],
+                        [
+                            247,
+                            "    github_team_repository.team_repository,\n"
+                        ],
+                        [
+                            248,
+                            "    github_team_repository.team_repository_by_slug,\n"
+                        ],
+                        [
+                            249,
+                            "    github_branch.branch,\n"
+                        ],
+                        [
+                            250,
+                            "  ]\n"
+                        ],
+                        [
+                            251,
+                            "\n"
+                        ],
+                        [
+                            252,
+                            "  repository                      = github_repository.repository.name\n"
+                        ],
+                        [
+                            253,
+                            "  branch                          = local.branch_protections_v3[count.index].branch\n"
+                        ],
+                        [
+                            254,
+                            "  enforce_admins                  = local.branch_protections_v3[count.index].enforce_admins\n"
+                        ],
+                        [
+                            255,
+                            "  require_conversation_resolution = local.branch_protections_v3[count.index].require_conversation_resolution\n"
+                        ],
+                        [
+                            256,
+                            "  require_signed_commits          = local.branch_protections_v3[count.index].require_signed_commits\n"
+                        ],
+                        [
+                            257,
+                            "\n"
+                        ],
+                        [
+                            258,
+                            "  dynamic \"required_status_checks\" {\n"
+                        ],
+                        [
+                            259,
+                            "    for_each = local.required_status_checks[count.index]\n"
+                        ],
+                        [
+                            260,
+                            "\n"
+                        ],
+                        [
+                            261,
+                            "    content {\n"
+                        ],
+                        [
+                            262,
+                            "      strict   = required_status_checks.value.strict\n"
+                        ],
+                        [
+                            263,
+                            "      contexts = required_status_checks.value.contexts\n"
+                        ],
+                        [
+                            264,
+                            "    }\n"
+                        ],
+                        [
+                            265,
+                            "  }\n"
+                        ],
+                        [
+                            266,
+                            "\n"
+                        ],
+                        [
+                            267,
+                            "  dynamic \"required_pull_request_reviews\" {\n"
+                        ],
+                        [
+                            268,
+                            "    for_each = local.required_pull_request_reviews[count.index]\n"
+                        ],
+                        [
+                            269,
+                            "\n"
+                        ],
+                        [
+                            270,
+                            "    content {\n"
+                        ],
+                        [
+                            271,
+                            "      dismiss_stale_reviews           = required_pull_request_reviews.value.dismiss_stale_reviews\n"
+                        ],
+                        [
+                            272,
+                            "      dismissal_users                 = required_pull_request_reviews.value.dismissal_users\n"
+                        ],
+                        [
+                            273,
+                            "      dismissal_teams                 = [for t in required_pull_request_reviews.value.dismissal_teams : replace(lower(t), \"/[^a-z0-9_]/\", \"-\")]\n"
+                        ],
+                        [
+                            274,
+                            "      require_code_owner_reviews      = required_pull_request_reviews.value.require_code_owner_reviews\n"
+                        ],
+                        [
+                            275,
+                            "      required_approving_review_count = required_pull_request_reviews.value.required_approving_review_count\n"
+                        ],
+                        [
+                            276,
+                            "    }\n"
+                        ],
+                        [
+                            277,
+                            "  }\n"
+                        ],
+                        [
+                            278,
+                            "\n"
+                        ],
+                        [
+                            279,
+                            "  dynamic \"restrictions\" {\n"
+                        ],
+                        [
+                            280,
+                            "    for_each = local.restrictions[count.index]\n"
+                        ],
+                        [
+                            281,
+                            "\n"
+                        ],
+                        [
+                            282,
+                            "    content {\n"
+                        ],
+                        [
+                            283,
+                            "      users = restrictions.value.users\n"
+                        ],
+                        [
+                            284,
+                            "      teams = [for t in restrictions.value.teams : replace(lower(t), \"/[^a-z0-9_]/\", \"-\")]\n"
+                        ],
+                        [
+                            285,
+                            "      apps  = restrictions.value.apps\n"
+                        ],
+                        [
+                            286,
+                            "    }\n"
+                        ],
+                        [
+                            287,
+                            "  }\n"
+                        ],
+                        [
+                            288,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        240,
+                        288
+                    ],
+                    "resource": "module.repository.github_branch_protection_v3.branch_protection",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.BranchProtectionRequireSignedCommits",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        25,
+                        161
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/github-6",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_5",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_5",
+                    "check_name": "GitHub pull requests should require at least 2 approvals",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": [
+                            "required_pull_request_reviews/[0]/required_approving_review_count"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            240,
+                            "resource \"github_branch_protection_v3\" \"branch_protection\" {\n"
+                        ],
+                        [
+                            241,
+                            "  count = length(local.branch_protections_v3)\n"
+                        ],
+                        [
+                            242,
+                            "\n"
+                        ],
+                        [
+                            243,
+                            "  # ensure we have all members and collaborators added before applying\n"
+                        ],
+                        [
+                            244,
+                            "  # any configuration for them\n"
+                        ],
+                        [
+                            245,
+                            "  depends_on = [\n"
+                        ],
+                        [
+                            246,
+                            "    github_repository_collaborator.collaborator,\n"
+                        ],
+                        [
+                            247,
+                            "    github_team_repository.team_repository,\n"
+                        ],
+                        [
+                            248,
+                            "    github_team_repository.team_repository_by_slug,\n"
+                        ],
+                        [
+                            249,
+                            "    github_branch.branch,\n"
+                        ],
+                        [
+                            250,
+                            "  ]\n"
+                        ],
+                        [
+                            251,
+                            "\n"
+                        ],
+                        [
+                            252,
+                            "  repository                      = github_repository.repository.name\n"
+                        ],
+                        [
+                            253,
+                            "  branch                          = local.branch_protections_v3[count.index].branch\n"
+                        ],
+                        [
+                            254,
+                            "  enforce_admins                  = local.branch_protections_v3[count.index].enforce_admins\n"
+                        ],
+                        [
+                            255,
+                            "  require_conversation_resolution = local.branch_protections_v3[count.index].require_conversation_resolution\n"
+                        ],
+                        [
+                            256,
+                            "  require_signed_commits          = local.branch_protections_v3[count.index].require_signed_commits\n"
+                        ],
+                        [
+                            257,
+                            "\n"
+                        ],
+                        [
+                            258,
+                            "  dynamic \"required_status_checks\" {\n"
+                        ],
+                        [
+                            259,
+                            "    for_each = local.required_status_checks[count.index]\n"
+                        ],
+                        [
+                            260,
+                            "\n"
+                        ],
+                        [
+                            261,
+                            "    content {\n"
+                        ],
+                        [
+                            262,
+                            "      strict   = required_status_checks.value.strict\n"
+                        ],
+                        [
+                            263,
+                            "      contexts = required_status_checks.value.contexts\n"
+                        ],
+                        [
+                            264,
+                            "    }\n"
+                        ],
+                        [
+                            265,
+                            "  }\n"
+                        ],
+                        [
+                            266,
+                            "\n"
+                        ],
+                        [
+                            267,
+                            "  dynamic \"required_pull_request_reviews\" {\n"
+                        ],
+                        [
+                            268,
+                            "    for_each = local.required_pull_request_reviews[count.index]\n"
+                        ],
+                        [
+                            269,
+                            "\n"
+                        ],
+                        [
+                            270,
+                            "    content {\n"
+                        ],
+                        [
+                            271,
+                            "      dismiss_stale_reviews           = required_pull_request_reviews.value.dismiss_stale_reviews\n"
+                        ],
+                        [
+                            272,
+                            "      dismissal_users                 = required_pull_request_reviews.value.dismissal_users\n"
+                        ],
+                        [
+                            273,
+                            "      dismissal_teams                 = [for t in required_pull_request_reviews.value.dismissal_teams : replace(lower(t), \"/[^a-z0-9_]/\", \"-\")]\n"
+                        ],
+                        [
+                            274,
+                            "      require_code_owner_reviews      = required_pull_request_reviews.value.require_code_owner_reviews\n"
+                        ],
+                        [
+                            275,
+                            "      required_approving_review_count = required_pull_request_reviews.value.required_approving_review_count\n"
+                        ],
+                        [
+                            276,
+                            "    }\n"
+                        ],
+                        [
+                            277,
+                            "  }\n"
+                        ],
+                        [
+                            278,
+                            "\n"
+                        ],
+                        [
+                            279,
+                            "  dynamic \"restrictions\" {\n"
+                        ],
+                        [
+                            280,
+                            "    for_each = local.restrictions[count.index]\n"
+                        ],
+                        [
+                            281,
+                            "\n"
+                        ],
+                        [
+                            282,
+                            "    content {\n"
+                        ],
+                        [
+                            283,
+                            "      users = restrictions.value.users\n"
+                        ],
+                        [
+                            284,
+                            "      teams = [for t in restrictions.value.teams : replace(lower(t), \"/[^a-z0-9_]/\", \"-\")]\n"
+                        ],
+                        [
+                            285,
+                            "      apps  = restrictions.value.apps\n"
+                        ],
+                        [
+                            286,
+                            "    }\n"
+                        ],
+                        [
+                            287,
+                            "  }\n"
+                        ],
+                        [
+                            288,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        240,
+                        288
+                    ],
+                    "resource": "module.repository.github_branch_protection_v3.branch_protection",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.BranchProtectionReviewNumTwo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        25,
+                        161
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/github-5",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_1",
+                    "bc_check_id": "BC_GIT_20",
+                    "check_name": "Ensure GitHub repository is Private",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": []
+                    },
+                    "code_block": [
+                        [
+                            91,
+                            "resource \"github_repository\" \"repository\" {\n"
+                        ],
+                        [
+                            92,
+                            "  name                   = var.name\n"
+                        ],
+                        [
+                            93,
+                            "  description            = var.description\n"
+                        ],
+                        [
+                            94,
+                            "  homepage_url           = local.homepage_url\n"
+                        ],
+                        [
+                            95,
+                            "  visibility             = local.visibility\n"
+                        ],
+                        [
+                            96,
+                            "  has_issues             = local.has_issues\n"
+                        ],
+                        [
+                            97,
+                            "  has_projects           = local.has_projects\n"
+                        ],
+                        [
+                            98,
+                            "  has_wiki               = local.has_wiki\n"
+                        ],
+                        [
+                            99,
+                            "  allow_merge_commit     = local.allow_merge_commit\n"
+                        ],
+                        [
+                            100,
+                            "  allow_rebase_merge     = local.allow_rebase_merge\n"
+                        ],
+                        [
+                            101,
+                            "  allow_squash_merge     = local.allow_squash_merge\n"
+                        ],
+                        [
+                            102,
+                            "  allow_auto_merge       = local.allow_auto_merge\n"
+                        ],
+                        [
+                            103,
+                            "  delete_branch_on_merge = local.delete_branch_on_merge\n"
+                        ],
+                        [
+                            104,
+                            "  is_template            = local.is_template\n"
+                        ],
+                        [
+                            105,
+                            "  has_downloads          = local.has_downloads\n"
+                        ],
+                        [
+                            106,
+                            "  auto_init              = local.auto_init\n"
+                        ],
+                        [
+                            107,
+                            "  gitignore_template     = local.gitignore_template\n"
+                        ],
+                        [
+                            108,
+                            "  license_template       = local.license_template\n"
+                        ],
+                        [
+                            109,
+                            "  archived               = var.archived\n"
+                        ],
+                        [
+                            110,
+                            "  topics                 = local.topics\n"
+                        ],
+                        [
+                            111,
+                            "\n"
+                        ],
+                        [
+                            112,
+                            "  archive_on_destroy   = var.archive_on_destroy\n"
+                        ],
+                        [
+                            113,
+                            "  vulnerability_alerts = local.vulnerability_alerts\n"
+                        ],
+                        [
+                            114,
+                            "\n"
+                        ],
+                        [
+                            115,
+                            "  dynamic \"template\" {\n"
+                        ],
+                        [
+                            116,
+                            "    for_each = local.template\n"
+                        ],
+                        [
+                            117,
+                            "\n"
+                        ],
+                        [
+                            118,
+                            "    content {\n"
+                        ],
+                        [
+                            119,
+                            "      owner      = template.value.owner\n"
+                        ],
+                        [
+                            120,
+                            "      repository = template.value.repository\n"
+                        ],
+                        [
+                            121,
+                            "    }\n"
+                        ],
+                        [
+                            122,
+                            "  }\n"
+                        ],
+                        [
+                            123,
+                            "\n"
+                        ],
+                        [
+                            124,
+                            "  dynamic \"pages\" {\n"
+                        ],
+                        [
+                            125,
+                            "    for_each = var.pages != null ? [true] : []\n"
+                        ],
+                        [
+                            126,
+                            "\n"
+                        ],
+                        [
+                            127,
+                            "    content {\n"
+                        ],
+                        [
+                            128,
+                            "      source {\n"
+                        ],
+                        [
+                            129,
+                            "        branch = var.pages.branch\n"
+                        ],
+                        [
+                            130,
+                            "        path   = try(var.pages.path, \"/\")\n"
+                        ],
+                        [
+                            131,
+                            "      }\n"
+                        ],
+                        [
+                            132,
+                            "      cname = try(var.pages.cname, null)\n"
+                        ],
+                        [
+                            133,
+                            "    }\n"
+                        ],
+                        [
+                            134,
+                            "  }\n"
+                        ],
+                        [
+                            135,
+                            "\n"
+                        ],
+                        [
+                            136,
+                            "  lifecycle {\n"
+                        ],
+                        [
+                            137,
+                            "    ignore_changes = [\n"
+                        ],
+                        [
+                            138,
+                            "      auto_init,\n"
+                        ],
+                        [
+                            139,
+                            "      license_template,\n"
+                        ],
+                        [
+                            140,
+                            "      gitignore_template,\n"
+                        ],
+                        [
+                            141,
+                            "      template,\n"
+                        ],
+                        [
+                            142,
+                            "    ]\n"
+                        ],
+                        [
+                            143,
+                            "  }\n"
+                        ],
+                        [
+                            144,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        91,
+                        144
+                    ],
+                    "resource": "module.repository-with-defaults.github_repository.repository",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.PrivateRepo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        169,
+                        180
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/docs/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-repository-is-private",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_6",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_4",
+                    "check_name": "Ensure GitHub branch protection rules requires signed commits",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": [
+                            "require_signed_commits"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            187,
+                            "resource \"github_branch_protection\" \"branch_protection\" {\n"
+                        ],
+                        [
+                            188,
+                            "  for_each = local.branch_protections_v4_map\n"
+                        ],
+                        [
+                            189,
+                            "\n"
+                        ],
+                        [
+                            190,
+                            "  # ensure we have all members and collaborators added before applying\n"
+                        ],
+                        [
+                            191,
+                            "  # any configuration for them\n"
+                        ],
+                        [
+                            192,
+                            "  depends_on = [\n"
+                        ],
+                        [
+                            193,
+                            "    github_repository_collaborator.collaborator,\n"
+                        ],
+                        [
+                            194,
+                            "    github_team_repository.team_repository,\n"
+                        ],
+                        [
+                            195,
+                            "    github_team_repository.team_repository_by_slug,\n"
+                        ],
+                        [
+                            196,
+                            "    github_branch.branch,\n"
+                        ],
+                        [
+                            197,
+                            "  ]\n"
+                        ],
+                        [
+                            198,
+                            "\n"
+                        ],
+                        [
+                            199,
+                            "  repository_id = github_repository.repository.node_id\n"
+                        ],
+                        [
+                            200,
+                            "\n"
+                        ],
+                        [
+                            201,
+                            "  pattern = var.branch_protections_v4[each.value].pattern\n"
+                        ],
+                        [
+                            202,
+                            "\n"
+                        ],
+                        [
+                            203,
+                            "  allows_deletions                = try(var.branch_protections_v4[each.value].allows_deletions, false)\n"
+                        ],
+                        [
+                            204,
+                            "  allows_force_pushes             = try(var.branch_protections_v4[each.value].allows_force_pushes, false)\n"
+                        ],
+                        [
+                            205,
+                            "  blocks_creations                = try(var.branch_protections_v4[each.value].blocks_creations, false)\n"
+                        ],
+                        [
+                            206,
+                            "  enforce_admins                  = try(var.branch_protections_v4[each.value].enforce_admins, true)\n"
+                        ],
+                        [
+                            207,
+                            "  push_restrictions               = try(var.branch_protections_v4[each.value].push_restrictions, [])\n"
+                        ],
+                        [
+                            208,
+                            "  require_conversation_resolution = try(var.branch_protections_v4[each.value].require_conversation_resolution, false)\n"
+                        ],
+                        [
+                            209,
+                            "  require_signed_commits          = try(var.branch_protections_v4[each.value].require_signed_commits, false)\n"
+                        ],
+                        [
+                            210,
+                            "  required_linear_history         = try(var.branch_protections_v4[each.value].required_linear_history, false)\n"
+                        ],
+                        [
+                            211,
+                            "\n"
+                        ],
+                        [
+                            212,
+                            "  dynamic \"required_pull_request_reviews\" {\n"
+                        ],
+                        [
+                            213,
+                            "    for_each = try([var.branch_protections_v4[each.value].required_pull_request_reviews], [])\n"
+                        ],
+                        [
+                            214,
+                            "\n"
+                        ],
+                        [
+                            215,
+                            "    content {\n"
+                        ],
+                        [
+                            216,
+                            "      dismiss_stale_reviews           = try(required_pull_request_reviews.value.dismiss_stale_reviews, true)\n"
+                        ],
+                        [
+                            217,
+                            "      restrict_dismissals             = try(required_pull_request_reviews.value.restrict_dismissals, null)\n"
+                        ],
+                        [
+                            218,
+                            "      dismissal_restrictions          = try(required_pull_request_reviews.value.dismissal_restrictions, [])\n"
+                        ],
+                        [
+                            219,
+                            "      pull_request_bypassers          = try(required_pull_request_reviews.value.pull_request_bypassers, [])\n"
+                        ],
+                        [
+                            220,
+                            "      require_code_owner_reviews      = try(required_pull_request_reviews.value.require_code_owner_reviews, true)\n"
+                        ],
+                        [
+                            221,
+                            "      required_approving_review_count = try(required_pull_request_reviews.value.required_approving_review_count, 0)\n"
+                        ],
+                        [
+                            222,
+                            "    }\n"
+                        ],
+                        [
+                            223,
+                            "  }\n"
+                        ],
+                        [
+                            224,
+                            "\n"
+                        ],
+                        [
+                            225,
+                            "  dynamic \"required_status_checks\" {\n"
+                        ],
+                        [
+                            226,
+                            "    for_each = try([var.branch_protections_v4[each.value].required_status_checks], [])\n"
+                        ],
+                        [
+                            227,
+                            "\n"
+                        ],
+                        [
+                            228,
+                            "    content {\n"
+                        ],
+                        [
+                            229,
+                            "      strict   = try(required_status_checks.value.strict, false)\n"
+                        ],
+                        [
+                            230,
+                            "      contexts = try(required_status_checks.value.contexts, [])\n"
+                        ],
+                        [
+                            231,
+                            "    }\n"
+                        ],
+                        [
+                            232,
+                            "  }\n"
+                        ],
+                        [
+                            233,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        187,
+                        233
+                    ],
+                    "resource": "module.repository-with-defaults.github_branch_protection.branch_protection",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.BranchProtectionRequireSignedCommits",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        169,
+                        180
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/github-6",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_5",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_5",
+                    "check_name": "GitHub pull requests should require at least 2 approvals",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": [
+                            "required_pull_request_reviews/[0]/required_approving_review_count"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            187,
+                            "resource \"github_branch_protection\" \"branch_protection\" {\n"
+                        ],
+                        [
+                            188,
+                            "  for_each = local.branch_protections_v4_map\n"
+                        ],
+                        [
+                            189,
+                            "\n"
+                        ],
+                        [
+                            190,
+                            "  # ensure we have all members and collaborators added before applying\n"
+                        ],
+                        [
+                            191,
+                            "  # any configuration for them\n"
+                        ],
+                        [
+                            192,
+                            "  depends_on = [\n"
+                        ],
+                        [
+                            193,
+                            "    github_repository_collaborator.collaborator,\n"
+                        ],
+                        [
+                            194,
+                            "    github_team_repository.team_repository,\n"
+                        ],
+                        [
+                            195,
+                            "    github_team_repository.team_repository_by_slug,\n"
+                        ],
+                        [
+                            196,
+                            "    github_branch.branch,\n"
+                        ],
+                        [
+                            197,
+                            "  ]\n"
+                        ],
+                        [
+                            198,
+                            "\n"
+                        ],
+                        [
+                            199,
+                            "  repository_id = github_repository.repository.node_id\n"
+                        ],
+                        [
+                            200,
+                            "\n"
+                        ],
+                        [
+                            201,
+                            "  pattern = var.branch_protections_v4[each.value].pattern\n"
+                        ],
+                        [
+                            202,
+                            "\n"
+                        ],
+                        [
+                            203,
+                            "  allows_deletions                = try(var.branch_protections_v4[each.value].allows_deletions, false)\n"
+                        ],
+                        [
+                            204,
+                            "  allows_force_pushes             = try(var.branch_protections_v4[each.value].allows_force_pushes, false)\n"
+                        ],
+                        [
+                            205,
+                            "  blocks_creations                = try(var.branch_protections_v4[each.value].blocks_creations, false)\n"
+                        ],
+                        [
+                            206,
+                            "  enforce_admins                  = try(var.branch_protections_v4[each.value].enforce_admins, true)\n"
+                        ],
+                        [
+                            207,
+                            "  push_restrictions               = try(var.branch_protections_v4[each.value].push_restrictions, [])\n"
+                        ],
+                        [
+                            208,
+                            "  require_conversation_resolution = try(var.branch_protections_v4[each.value].require_conversation_resolution, false)\n"
+                        ],
+                        [
+                            209,
+                            "  require_signed_commits          = try(var.branch_protections_v4[each.value].require_signed_commits, false)\n"
+                        ],
+                        [
+                            210,
+                            "  required_linear_history         = try(var.branch_protections_v4[each.value].required_linear_history, false)\n"
+                        ],
+                        [
+                            211,
+                            "\n"
+                        ],
+                        [
+                            212,
+                            "  dynamic \"required_pull_request_reviews\" {\n"
+                        ],
+                        [
+                            213,
+                            "    for_each = try([var.branch_protections_v4[each.value].required_pull_request_reviews], [])\n"
+                        ],
+                        [
+                            214,
+                            "\n"
+                        ],
+                        [
+                            215,
+                            "    content {\n"
+                        ],
+                        [
+                            216,
+                            "      dismiss_stale_reviews           = try(required_pull_request_reviews.value.dismiss_stale_reviews, true)\n"
+                        ],
+                        [
+                            217,
+                            "      restrict_dismissals             = try(required_pull_request_reviews.value.restrict_dismissals, null)\n"
+                        ],
+                        [
+                            218,
+                            "      dismissal_restrictions          = try(required_pull_request_reviews.value.dismissal_restrictions, [])\n"
+                        ],
+                        [
+                            219,
+                            "      pull_request_bypassers          = try(required_pull_request_reviews.value.pull_request_bypassers, [])\n"
+                        ],
+                        [
+                            220,
+                            "      require_code_owner_reviews      = try(required_pull_request_reviews.value.require_code_owner_reviews, true)\n"
+                        ],
+                        [
+                            221,
+                            "      required_approving_review_count = try(required_pull_request_reviews.value.required_approving_review_count, 0)\n"
+                        ],
+                        [
+                            222,
+                            "    }\n"
+                        ],
+                        [
+                            223,
+                            "  }\n"
+                        ],
+                        [
+                            224,
+                            "\n"
+                        ],
+                        [
+                            225,
+                            "  dynamic \"required_status_checks\" {\n"
+                        ],
+                        [
+                            226,
+                            "    for_each = try([var.branch_protections_v4[each.value].required_status_checks], [])\n"
+                        ],
+                        [
+                            227,
+                            "\n"
+                        ],
+                        [
+                            228,
+                            "    content {\n"
+                        ],
+                        [
+                            229,
+                            "      strict   = try(required_status_checks.value.strict, false)\n"
+                        ],
+                        [
+                            230,
+                            "      contexts = try(required_status_checks.value.contexts, [])\n"
+                        ],
+                        [
+                            231,
+                            "    }\n"
+                        ],
+                        [
+                            232,
+                            "  }\n"
+                        ],
+                        [
+                            233,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\main.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf",
+                    "repo_file_path": "/terraform-github-repository/main.tf",
+                    "file_line_range": [
+                        187,
+                        233
+                    ],
+                    "resource": "module.repository-with-defaults.github_branch_protection.branch_protection",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.BranchProtectionReviewNumTwo",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        169,
+                        180
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/github-5",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\main.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_4",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_6",
+                    "check_name": "Ensure GitHub Actions secrets are encrypted",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": [
+                            "plaintext_value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            12,
+                            "resource \"github_actions_secret\" \"repository_secret\" {\n"
+                        ],
+                        [
+                            13,
+                            "  for_each = local.secrets\n"
+                        ],
+                        [
+                            14,
+                            "\n"
+                        ],
+                        [
+                            15,
+                            "  repository      = github_repository.repository.name\n"
+                        ],
+                        [
+                            16,
+                            "  secret_name     = each.key\n"
+                        ],
+                        [
+                            17,
+                            "  plaintext_value = try(each.value.plaintext, null)\n"
+                        ],
+                        [
+                            18,
+                            "  encrypted_value = try(each.value.encrypted, null)\n"
+                        ],
+                        [
+                            19,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\secrets.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\secrets.tf",
+                    "repo_file_path": "/terraform-github-repository/secrets.tf",
+                    "file_line_range": [
+                        12,
+                        19
+                    ],
+                    "resource": "module.repository.github_actions_secret.repository_secret",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.SecretsEncrypted",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        25,
+                        161
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-actions-secrets-are-encrypted",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\secrets.tf"
+                },
+                {
+                    "check_id": "CKV_GIT_4",
+                    "bc_check_id": "BC_REPO_GITHUB_TF_6",
+                    "check_name": "Ensure GitHub Actions secrets are encrypted",
+                    "check_result": {
+                        "result": "FAILED",
+                        "evaluated_keys": [
+                            "plaintext_value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            12,
+                            "resource \"github_actions_secret\" \"repository_secret\" {\n"
+                        ],
+                        [
+                            13,
+                            "  for_each = local.secrets\n"
+                        ],
+                        [
+                            14,
+                            "\n"
+                        ],
+                        [
+                            15,
+                            "  repository      = github_repository.repository.name\n"
+                        ],
+                        [
+                            16,
+                            "  secret_name     = each.key\n"
+                        ],
+                        [
+                            17,
+                            "  plaintext_value = try(each.value.plaintext, null)\n"
+                        ],
+                        [
+                            18,
+                            "  encrypted_value = try(each.value.encrypted, null)\n"
+                        ],
+                        [
+                            19,
+                            "}\n"
+                        ]
+                    ],
+                    "file_path": "\\secrets.tf",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\secrets.tf",
+                    "repo_file_path": "/terraform-github-repository/secrets.tf",
+                    "file_line_range": [
+                        12,
+                        19
+                    ],
+                    "resource": "module.repository-with-defaults.github_actions_secret.repository_secret",
+                    "evaluations": null,
+                    "check_class": "checkov.terraform.checks.resource.github.SecretsEncrypted",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": "\\test\\unit-complete\\main.tf",
+                    "caller_file_line_range": [
+                        169,
+                        180
+                    ],
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/build-integrity-policies/github-policies/ensure-github-actions-secrets-are-encrypted",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-github-repository\\secrets.tf"
+                }
+            ],
+            "skipped_checks": [],
+            "parsing_errors": []
+        },
+        "summary": {
+            "passed": 6,
+            "failed": 12,
+            "skipped": 0,
+            "parsing_errors": 0,
+            "resource_count": 37,
+            "checkov_version": "3.2.353"
+        },
+        "url": "Add an api key '--bc-api-key <api-key>' to see more detailed insights via https://bridgecrew.cloud"
+    }
