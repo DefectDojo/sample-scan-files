@@ -1,0 +1,3114 @@
+{
+        "check_type": "dockerfile",
+        "results": {
+            "passed_checks": [
+                {
+                    "check_id": "CKV_DOCKER_11",
+                    "bc_check_id": "BC_DKR_GENERAL_9",
+                    "check_name": "Ensure From Alias are unique for multistage builds.",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": null
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "# Use the official Golang image as the base\n"
+                        ],
+                        [
+                            2,
+                            "FROM golang:1.23-alpine\n"
+                        ],
+                        [
+                            3,
+                            "\n"
+                        ],
+                        [
+                            4,
+                            "# Set the Current Working Directory inside the container\n"
+                        ],
+                        [
+                            5,
+                            "WORKDIR /app\n"
+                        ],
+                        [
+                            6,
+                            "\n"
+                        ],
+                        [
+                            7,
+                            "# Copy go mod and sum files\n"
+                        ],
+                        [
+                            8,
+                            "COPY go.mod go.sum ./\n"
+                        ],
+                        [
+                            9,
+                            "\n"
+                        ],
+                        [
+                            10,
+                            "# Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed\n"
+                        ],
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ],
+                        [
+                            12,
+                            "\n"
+                        ],
+                        [
+                            13,
+                            "# Copy the source code into the container\n"
+                        ],
+                        [
+                            14,
+                            "COPY . .\n"
+                        ],
+                        [
+                            15,
+                            "\n"
+                        ],
+                        [
+                            16,
+                            "# Build the Go app\n"
+                        ],
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ],
+                        [
+                            18,
+                            "\n"
+                        ],
+                        [
+                            19,
+                            "# Expose port 8080 to the outside world\n"
+                        ],
+                        [
+                            20,
+                            "EXPOSE 8080\n"
+                        ],
+                        [
+                            21,
+                            "\n"
+                        ],
+                        [
+                            22,
+                            "# Command to run the executable\n"
+                        ],
+                        [
+                            23,
+                            "CMD [\"./main\"]"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        1,
+                        23
+                    ],
+                    "resource": "/Dockerfile.",
+                    "evaluations": null,
+                    "check_class": "checkov.dockerfile.checks.AliasIsUnique",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-from-alias-is-unique-for-multistage-builds",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_DOCKER_7",
+                    "bc_check_id": "BC_DKR_7",
+                    "check_name": "Ensure the base image uses a non latest version tag",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": [
+                            {
+                                "instruction": "FROM",
+                                "startline": 1,
+                                "endline": 1,
+                                "content": "FROM golang:1.23-alpine\n",
+                                "value": "golang:1.23-alpine"
+                            }
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            2,
+                            "FROM golang:1.23-alpine\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        2,
+                        2
+                    ],
+                    "resource": "/Dockerfile.FROM",
+                    "evaluations": null,
+                    "check_class": "checkov.dockerfile.checks.ReferenceLatestTag",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-the-base-image-uses-a-non-latest-version-tag",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_DOCKER_1",
+                    "bc_check_id": "BC_DKR_1",
+                    "check_name": "Ensure port 22 is not exposed",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": null
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "# Use the official Golang image as the base\n"
+                        ],
+                        [
+                            2,
+                            "FROM golang:1.23-alpine\n"
+                        ],
+                        [
+                            3,
+                            "\n"
+                        ],
+                        [
+                            4,
+                            "# Set the Current Working Directory inside the container\n"
+                        ],
+                        [
+                            5,
+                            "WORKDIR /app\n"
+                        ],
+                        [
+                            6,
+                            "\n"
+                        ],
+                        [
+                            7,
+                            "# Copy go mod and sum files\n"
+                        ],
+                        [
+                            8,
+                            "COPY go.mod go.sum ./\n"
+                        ],
+                        [
+                            9,
+                            "\n"
+                        ],
+                        [
+                            10,
+                            "# Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed\n"
+                        ],
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ],
+                        [
+                            12,
+                            "\n"
+                        ],
+                        [
+                            13,
+                            "# Copy the source code into the container\n"
+                        ],
+                        [
+                            14,
+                            "COPY . .\n"
+                        ],
+                        [
+                            15,
+                            "\n"
+                        ],
+                        [
+                            16,
+                            "# Build the Go app\n"
+                        ],
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ],
+                        [
+                            18,
+                            "\n"
+                        ],
+                        [
+                            19,
+                            "# Expose port 8080 to the outside world\n"
+                        ],
+                        [
+                            20,
+                            "EXPOSE 8080\n"
+                        ],
+                        [
+                            21,
+                            "\n"
+                        ],
+                        [
+                            22,
+                            "# Command to run the executable\n"
+                        ],
+                        [
+                            23,
+                            "CMD [\"./main\"]"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        1,
+                        23
+                    ],
+                    "resource": "/Dockerfile.",
+                    "evaluations": null,
+                    "check_class": "checkov.dockerfile.checks.ExposePort22",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-port-22-is-not-exposed",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_DOCKER_9",
+                    "bc_check_id": "BC_DKR_NETWORKING_1",
+                    "check_name": "Ensure that APT isn't used",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": null
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "# Use the official Golang image as the base\n"
+                        ],
+                        [
+                            2,
+                            "FROM golang:1.23-alpine\n"
+                        ],
+                        [
+                            3,
+                            "\n"
+                        ],
+                        [
+                            4,
+                            "# Set the Current Working Directory inside the container\n"
+                        ],
+                        [
+                            5,
+                            "WORKDIR /app\n"
+                        ],
+                        [
+                            6,
+                            "\n"
+                        ],
+                        [
+                            7,
+                            "# Copy go mod and sum files\n"
+                        ],
+                        [
+                            8,
+                            "COPY go.mod go.sum ./\n"
+                        ],
+                        [
+                            9,
+                            "\n"
+                        ],
+                        [
+                            10,
+                            "# Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed\n"
+                        ],
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ],
+                        [
+                            12,
+                            "\n"
+                        ],
+                        [
+                            13,
+                            "# Copy the source code into the container\n"
+                        ],
+                        [
+                            14,
+                            "COPY . .\n"
+                        ],
+                        [
+                            15,
+                            "\n"
+                        ],
+                        [
+                            16,
+                            "# Build the Go app\n"
+                        ],
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ],
+                        [
+                            18,
+                            "\n"
+                        ],
+                        [
+                            19,
+                            "# Expose port 8080 to the outside world\n"
+                        ],
+                        [
+                            20,
+                            "EXPOSE 8080\n"
+                        ],
+                        [
+                            21,
+                            "\n"
+                        ],
+                        [
+                            22,
+                            "# Command to run the executable\n"
+                        ],
+                        [
+                            23,
+                            "CMD [\"./main\"]"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        1,
+                        23
+                    ],
+                    "resource": "/Dockerfile.",
+                    "evaluations": null,
+                    "check_class": "checkov.dockerfile.checks.RunUsingAPT",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-is-not-used",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_DOCKER_5",
+                    "bc_check_id": "BC_DKR_4",
+                    "check_name": "Ensure update instructions are not use alone in the Dockerfile",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": null
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "# Use the official Golang image as the base\n"
+                        ],
+                        [
+                            2,
+                            "FROM golang:1.23-alpine\n"
+                        ],
+                        [
+                            3,
+                            "\n"
+                        ],
+                        [
+                            4,
+                            "# Set the Current Working Directory inside the container\n"
+                        ],
+                        [
+                            5,
+                            "WORKDIR /app\n"
+                        ],
+                        [
+                            6,
+                            "\n"
+                        ],
+                        [
+                            7,
+                            "# Copy go mod and sum files\n"
+                        ],
+                        [
+                            8,
+                            "COPY go.mod go.sum ./\n"
+                        ],
+                        [
+                            9,
+                            "\n"
+                        ],
+                        [
+                            10,
+                            "# Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed\n"
+                        ],
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ],
+                        [
+                            12,
+                            "\n"
+                        ],
+                        [
+                            13,
+                            "# Copy the source code into the container\n"
+                        ],
+                        [
+                            14,
+                            "COPY . .\n"
+                        ],
+                        [
+                            15,
+                            "\n"
+                        ],
+                        [
+                            16,
+                            "# Build the Go app\n"
+                        ],
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ],
+                        [
+                            18,
+                            "\n"
+                        ],
+                        [
+                            19,
+                            "# Expose port 8080 to the outside world\n"
+                        ],
+                        [
+                            20,
+                            "EXPOSE 8080\n"
+                        ],
+                        [
+                            21,
+                            "\n"
+                        ],
+                        [
+                            22,
+                            "# Command to run the executable\n"
+                        ],
+                        [
+                            23,
+                            "CMD [\"./main\"]"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        1,
+                        23
+                    ],
+                    "resource": "/Dockerfile.",
+                    "evaluations": null,
+                    "check_class": "checkov.dockerfile.checks.UpdateNotAlone",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-update-instructions-are-not-used-alone-in-the-dockerfile",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_DOCKER_10",
+                    "bc_check_id": "BC_DKR_GENERAL_10",
+                    "check_name": "Ensure that WORKDIR values are absolute paths",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": null
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "# Use the official Golang image as the base\n"
+                        ],
+                        [
+                            2,
+                            "FROM golang:1.23-alpine\n"
+                        ],
+                        [
+                            3,
+                            "\n"
+                        ],
+                        [
+                            4,
+                            "# Set the Current Working Directory inside the container\n"
+                        ],
+                        [
+                            5,
+                            "WORKDIR /app\n"
+                        ],
+                        [
+                            6,
+                            "\n"
+                        ],
+                        [
+                            7,
+                            "# Copy go mod and sum files\n"
+                        ],
+                        [
+                            8,
+                            "COPY go.mod go.sum ./\n"
+                        ],
+                        [
+                            9,
+                            "\n"
+                        ],
+                        [
+                            10,
+                            "# Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed\n"
+                        ],
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ],
+                        [
+                            12,
+                            "\n"
+                        ],
+                        [
+                            13,
+                            "# Copy the source code into the container\n"
+                        ],
+                        [
+                            14,
+                            "COPY . .\n"
+                        ],
+                        [
+                            15,
+                            "\n"
+                        ],
+                        [
+                            16,
+                            "# Build the Go app\n"
+                        ],
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ],
+                        [
+                            18,
+                            "\n"
+                        ],
+                        [
+                            19,
+                            "# Expose port 8080 to the outside world\n"
+                        ],
+                        [
+                            20,
+                            "EXPOSE 8080\n"
+                        ],
+                        [
+                            21,
+                            "\n"
+                        ],
+                        [
+                            22,
+                            "# Command to run the executable\n"
+                        ],
+                        [
+                            23,
+                            "CMD [\"./main\"]"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        1,
+                        23
+                    ],
+                    "resource": "/Dockerfile.",
+                    "evaluations": null,
+                    "check_class": "checkov.dockerfile.checks.WorkdirIsAbsolute",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-workdir-values-are-absolute-paths",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_14",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled for git by setting the environment variable 'GIT_SSL_NO_VERIFY' to any value",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-git-ssl",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_14",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled for git by setting the environment variable 'GIT_SSL_NO_VERIFY' to any value",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-git-ssl",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_6",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with the NODE_TLS_REJECT_UNAUTHORIZED environmnet variable",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-node-tls-secure",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_6",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with the NODE_TLS_REJECT_UNAUTHORIZED environmnet variable",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-node-tls-secure",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_12",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled for npm via the 'NPM_CONFIG_STRICT_SSL' environmnet variable",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_12",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled for npm via the 'NPM_CONFIG_STRICT_SSL' environmnet variable",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_16",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with pip via the 'PIP_TRUSTED_HOST' environment variable",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-trusted-host",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_16",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with pip via the 'PIP_TRUSTED_HOST' environment variable",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-trusted-host",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_5",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with the PYTHONHTTPSVERIFY environmnet variable",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-PYTHONHTTPSVERIFY-secure",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_5",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with the PYTHONHTTPSVERIFY environmnet variable",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-PYTHONHTTPSVERIFY-secure",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_17",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that 'chpasswd' is not used to set or remove passwords",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/bc-docker-2-17",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_17",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that 'chpasswd' is not used to set or remove passwords",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/bc-docker-2-17",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_2",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with curl",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-curl-secure",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_2",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with curl",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-curl-secure",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_13",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled for npm or yarn by setting the option strict-ssl to false",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl2",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_13",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled for npm or yarn by setting the option strict-ssl to false",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl2",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_4",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with the pip '--trusted-host' option",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-secure",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_4",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with the pip '--trusted-host' option",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-secure",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that sudo isn't used",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-dont-use-sudo",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_1",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that sudo isn't used",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-dont-use-sudo",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_7",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that packages with untrusted or missing signatures are not used by apk via the '--allow-untrusted' option",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apk-trusted",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_7",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that packages with untrusted or missing signatures are not used by apk via the '--allow-untrusted' option",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apk-trusted",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_8",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that packages with untrusted or missing signatures are not used by apt-get via the '--allow-unauthenticated' option",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-authenticated",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_8",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that packages with untrusted or missing signatures are not used by apt-get via the '--allow-unauthenticated' option",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-authenticated",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_3",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with wget",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-wget-secure",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_3",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that certificate validation isn't disabled with wget",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-wget-secure",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_11",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that the '--force-yes' option is not used, as it disables signature validation and allows packages to be downgraded which can leave the system in a broken or inconsistent state",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-force",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_11",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that the '--force-yes' option is not used, as it disables signature validation and allows packages to be downgraded which can leave the system in a broken or inconsistent state",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-force",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_9",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that packages with untrusted or missing GPG signatures are not used by dnf, tdnf, or yum via the '--nogpgcheck' option",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-yum-signed",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_9",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that packages with untrusted or missing GPG signatures are not used by dnf, tdnf, or yum via the '--nogpgcheck' option",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-yum-signed",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_15",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that the yum and dnf package managers are not configured to disable SSL certificate validation via the 'sslverify' configuration option",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-yum-ssl",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_15",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that the yum and dnf package managers are not configured to disable SSL certificate validation via the 'sslverify' configuration option",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-yum-ssl",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_10",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that packages with untrusted or missing signatures are not used by rpm via the '--nodigest', '--nosignature', '--noverify', or '--nofiledigest' options",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go mod download\n",
+                                "value": "go mod download",
+                                "__startline__": 10,
+                                "__endline__": 10
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go mod download\n",
+                            "value": "go mod download",
+                            "__startline__": 10,
+                            "__endline__": 10,
+                            "resource_type": "RUN",
+                            "hash": "e200efc52a4fcd458b14f28f7b878e6078ffb395588add6d33e081f0f1391028"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        11,
+                        11
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-rpm-signed",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV2_DOCKER_10",
+                    "bc_check_id": null,
+                    "check_name": "Ensure that packages with untrusted or missing signatures are not used by rpm via the '--nodigest', '--nosignature', '--noverify', or '--nofiledigest' options",
+                    "check_result": {
+                        "result": "PASSED",
+                        "entity": {
+                            "block_name_": "RUN",
+                            "block_type_": "resource",
+                            "file_path_": "/Dockerfile",
+                            "config_": {
+                                "content": "RUN go build -o main .\n",
+                                "value": "go build -o main .",
+                                "__startline__": 16,
+                                "__endline__": 16
+                            },
+                            "label_": "resource: RUN",
+                            "id_": "RUN",
+                            "source_": "Dockerfile",
+                            "content": "RUN go build -o main .\n",
+                            "value": "go build -o main .",
+                            "__startline__": 16,
+                            "__endline__": 16,
+                            "resource_type": "RUN",
+                            "hash": "e67850087b6aabe449930a974d9a9a90db3bb1834671a555eb54b62cf6eae2fa"
+                        },
+                        "evaluated_keys": [
+                            "value"
+                        ]
+                    },
+                    "code_block": [
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        17,
+                        17
+                    ],
+                    "resource": "/Dockerfile.RUN",
+                    "evaluations": null,
+                    "check_class": "checkov.common.graph.checks_infra.base_check",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-rpm-signed",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                }
+            ],
+            "failed_checks": [
+                {
+                    "check_id": "CKV_DOCKER_2",
+                    "bc_check_id": "BC_DKR_2",
+                    "check_name": "Ensure that HEALTHCHECK instructions have been added to container images",
+                    "check_result": {
+                        "result": "FAILED",
+                        "results_configuration": null
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "# Use the official Golang image as the base\n"
+                        ],
+                        [
+                            2,
+                            "FROM golang:1.23-alpine\n"
+                        ],
+                        [
+                            3,
+                            "\n"
+                        ],
+                        [
+                            4,
+                            "# Set the Current Working Directory inside the container\n"
+                        ],
+                        [
+                            5,
+                            "WORKDIR /app\n"
+                        ],
+                        [
+                            6,
+                            "\n"
+                        ],
+                        [
+                            7,
+                            "# Copy go mod and sum files\n"
+                        ],
+                        [
+                            8,
+                            "COPY go.mod go.sum ./\n"
+                        ],
+                        [
+                            9,
+                            "\n"
+                        ],
+                        [
+                            10,
+                            "# Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed\n"
+                        ],
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ],
+                        [
+                            12,
+                            "\n"
+                        ],
+                        [
+                            13,
+                            "# Copy the source code into the container\n"
+                        ],
+                        [
+                            14,
+                            "COPY . .\n"
+                        ],
+                        [
+                            15,
+                            "\n"
+                        ],
+                        [
+                            16,
+                            "# Build the Go app\n"
+                        ],
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ],
+                        [
+                            18,
+                            "\n"
+                        ],
+                        [
+                            19,
+                            "# Expose port 8080 to the outside world\n"
+                        ],
+                        [
+                            20,
+                            "EXPOSE 8080\n"
+                        ],
+                        [
+                            21,
+                            "\n"
+                        ],
+                        [
+                            22,
+                            "# Command to run the executable\n"
+                        ],
+                        [
+                            23,
+                            "CMD [\"./main\"]"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        1,
+                        23
+                    ],
+                    "resource": "/Dockerfile.",
+                    "evaluations": null,
+                    "check_class": "checkov.dockerfile.checks.HealthcheckExists",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-that-healthcheck-instructions-have-been-added-to-container-images",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_DOCKER_3",
+                    "bc_check_id": "BC_DKR_3",
+                    "check_name": "Ensure that a user for the container has been created",
+                    "check_result": {
+                        "result": "FAILED",
+                        "results_configuration": null
+                    },
+                    "code_block": [
+                        [
+                            1,
+                            "# Use the official Golang image as the base\n"
+                        ],
+                        [
+                            2,
+                            "FROM golang:1.23-alpine\n"
+                        ],
+                        [
+                            3,
+                            "\n"
+                        ],
+                        [
+                            4,
+                            "# Set the Current Working Directory inside the container\n"
+                        ],
+                        [
+                            5,
+                            "WORKDIR /app\n"
+                        ],
+                        [
+                            6,
+                            "\n"
+                        ],
+                        [
+                            7,
+                            "# Copy go mod and sum files\n"
+                        ],
+                        [
+                            8,
+                            "COPY go.mod go.sum ./\n"
+                        ],
+                        [
+                            9,
+                            "\n"
+                        ],
+                        [
+                            10,
+                            "# Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed\n"
+                        ],
+                        [
+                            11,
+                            "RUN go mod download\n"
+                        ],
+                        [
+                            12,
+                            "\n"
+                        ],
+                        [
+                            13,
+                            "# Copy the source code into the container\n"
+                        ],
+                        [
+                            14,
+                            "COPY . .\n"
+                        ],
+                        [
+                            15,
+                            "\n"
+                        ],
+                        [
+                            16,
+                            "# Build the Go app\n"
+                        ],
+                        [
+                            17,
+                            "RUN go build -o main .\n"
+                        ],
+                        [
+                            18,
+                            "\n"
+                        ],
+                        [
+                            19,
+                            "# Expose port 8080 to the outside world\n"
+                        ],
+                        [
+                            20,
+                            "EXPOSE 8080\n"
+                        ],
+                        [
+                            21,
+                            "\n"
+                        ],
+                        [
+                            22,
+                            "# Command to run the executable\n"
+                        ],
+                        [
+                            23,
+                            "CMD [\"./main\"]"
+                        ]
+                    ],
+                    "file_path": "/Dockerfile",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\Ayush_Projects\\Accuknox\\Dockerfile",
+                    "repo_file_path": "/Dockerfile",
+                    "file_line_range": [
+                        1,
+                        23
+                    ],
+                    "resource": "/Dockerfile.",
+                    "evaluations": null,
+                    "check_class": "checkov.dockerfile.checks.UserExists",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-that-a-user-for-the-container-has-been-created",
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                }
+            ],
+            "skipped_checks": [],
+            "parsing_errors": []
+        },
+        "summary": {
+            "passed": 40,
+            "failed": 2,
+            "skipped": 0,
+            "parsing_errors": 0,
+            "resource_count": 1,
+            "checkov_version": "3.2.353"
+        },
+        "url": "Add an api key '--bc-api-key <api-key>' to see more detailed insights via https://bridgecrew.cloud"
+    }

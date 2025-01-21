@@ -1,0 +1,193 @@
+{
+    "errors": [],
+    "interfile_languages_used": [],
+    "paths": {
+        "scanned": [
+            ".circleci/config.yml",
+            ".github/workflows/SAST.yml",
+            ".gitignore",
+            ".rspec",
+            ".rubocop.yml",
+            ".rubocop_todo.yml",
+            ".ruby-version",
+            "CODE_OF_CONDUCT.md",
+            "CONTRIBUTING.md",
+            "Gemfile",
+            "Gemfile.lock",
+            "LICENSE",
+            "README.md",
+            "Rakefile",
+            "bin/console",
+            "bin/setup",
+            "bin/vulndb",
+            "bin/vulnerabilitydb",
+            "bin/yavdb",
+            "lib/yavdb/cli.rb",
+            "lib/yavdb/constants.rb",
+            "lib/yavdb/crawler.rb",
+            "lib/yavdb/database.rb",
+            "lib/yavdb/dtos/advisory.rb",
+            "lib/yavdb/source_types/git_repo.rb",
+            "lib/yavdb/sources/friends_of_php.rb",
+            "lib/yavdb/sources/npmjs.rb",
+            "lib/yavdb/sources/ruby_advisory.rb",
+            "lib/yavdb/sources/rustsec.rb",
+            "lib/yavdb/sources/victims.rb",
+            "lib/yavdb/utils/cache.rb",
+            "lib/yavdb/utils/exec.rb",
+            "lib/yavdb/utils/git.rb",
+            "lib/yavdb/utils/http.rb",
+            "lib/yavdb/utils/semver.rb",
+            "lib/yavdb/utils/zip.rb",
+            "lib/yavdb/version.rb",
+            "lib/yavdb.rb",
+            "spec/crawler_spec.rb",
+            "spec/spec_helper.rb",
+            "spec/yavdb_spec.rb",
+            "yavdb.gemspec"
+        ]
+    },
+    "results": [
+        {
+            "check_id": "bash.lang.security.ifs-tampering.ifs-tampering",
+            "end": {
+                "col": 12,
+                "line": 5,
+                "offset": 51
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "b5a4da1b9ef96a3efa6fee7d2734eb774ce0f6d98eef15c24d0f447aa691193ef7ccd7b56f73c622fa7e0b11a578537ac13ce4b8f88fb5341120c2c743102ab8_0",
+                "is_ignored": false,
+                "lines": "IFS=$'\\n\\t'",
+                "message": "The special variable IFS affects how splitting takes place when expanding unquoted variables. Don't set it globally. Prefer a dedicated utility such as 'cut' or 'awk' if you need to split input data. If you must use 'read', set IFS locally using e.g. 'IFS=\",\" read -a my_array'.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "LOW",
+                    "cwe": [
+                        "CWE-20: Improper Input Validation"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "LOW",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A03:2021 - Injection"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A03_2021-Injection"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 14842,
+                            "rule_id": "WAUy9q",
+                            "rv_id": 833380,
+                            "url": "https://semgrep.dev/playground/r/O9TJWZZ/bash.lang.security.ifs-tampering.ifs-tampering",
+                            "version_id": "O9TJWZZ"
+                        }
+                    },
+                    "shortlink": "https://sg.run/Q9pq",
+                    "source": "https://semgrep.dev/r/bash.lang.security.ifs-tampering.ifs-tampering",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "bash"
+                    ],
+                    "vulnerability_class": [
+                        "Improper Validation"
+                    ]
+                },
+                "metavars": {},
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "bin/setup",
+            "start": {
+                "col": 1,
+                "line": 5,
+                "offset": 40
+            }
+        },
+        {
+            "check_id": "ruby.lang.security.dangerous-subshell.dangerous-subshell",
+            "end": {
+                "col": 26,
+                "line": 27,
+                "offset": 965
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "43fdbb5a81635977fc2474d360d5a58b3b072706a4872bbb4f552130a5f82595271d309be2c0bbf3e8b233439b3a18df3b184c195ce036543ab2ff85bdf99fc3_0",
+                "is_ignored": false,
+                "lines": "        output = `#{cmd}`",
+                "message": "Detected non-static command inside `...`. If unverified user data can reach this call site, this is a code injection vulnerability. A malicious actor can inject a malicious script to execute arbitrary code.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "LOW",
+                    "cwe": [
+                        "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+                    ],
+                    "cwe2022-top25": true,
+                    "impact": "HIGH",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A03:2021 - Injection"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A03_2021-Injection"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 9827,
+                            "rule_id": "OrUGn8",
+                            "rv_id": 834741,
+                            "url": "https://semgrep.dev/playground/r/ZRTldOx/ruby.lang.security.dangerous-subshell.dangerous-subshell",
+                            "version_id": "ZRTldOx"
+                        }
+                    },
+                    "shortlink": "https://sg.run/NrxL",
+                    "source": "https://semgrep.dev/r/ruby.lang.security.dangerous-subshell.dangerous-subshell",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "ruby"
+                    ],
+                    "vulnerability_class": [
+                        "Code Injection"
+                    ]
+                },
+                "metavars": {
+                    "$VAL": {
+                        "abstract_content": "cmd",
+                        "end": {
+                            "col": 24,
+                            "line": 27,
+                            "offset": 963
+                        },
+                        "start": {
+                            "col": 21,
+                            "line": 27,
+                            "offset": 960
+                        }
+                    }
+                },
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "lib/yavdb/utils/exec.rb",
+            "start": {
+                "col": 18,
+                "line": 27,
+                "offset": 957
+            }
+        }
+    ],
+    "skipped_rules": [],
+    "version": "1.93.0"
+}

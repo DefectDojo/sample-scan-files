@@ -1,0 +1,92 @@
+{
+    "results": [
+        {
+            "type": "kics",
+            "id": "cInm6tNUtCypCOSM0E3DoqasBi0=",
+            "similarityId": "9866b6922b21afe8d9d6abf8e4d42cd1f3c5d5b0f279d61745f9e94df1706963",
+            "status": "NEW",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-14T06:54:19Z",
+            "firstFoundAt": "2024-11-13T13:20:05Z",
+            "foundAt": "2024-11-14T06:54:19Z",
+            "firstScanId": "d31e2204-78b9-411c-b7fa-120784ec284d",
+            "description": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+            "data": {
+                "queryId": "555ab8f9-2001-455e-a077-f2d0f41e2fb9",
+                "queryName": "Unpinned Actions Full Length Commit SHA",
+                "group": "Supply-Chain [Taken from category]",
+                "queryUrl": "Unpinned Actions Full Length Commit SHA [Taken from query_name]",
+                "queryId": "555ab8f9-2001-455e-a077-f2d0f41e2fb9 [Taken from query_id]",
+                "fileName": "/.github/workflows/SAST.yml",
+                "line": 43,
+                "platform": "CICD",
+                "issueType": "IncorrectValue",
+                "expectedValue": "Action pinned to a full length commit SHA.",
+                "value": "Action is not pinned to a full length commit SHA."
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "T2ZxsYm/UcuOI0veCESdgbrUnAI=",
+            "similarityId": "f19191f43b1994e08090dabc939258663e67db82e6e4492b7eef6df43e05bab9",
+            "status": "NEW",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-14T06:54:19Z",
+            "firstFoundAt": "2024-11-13T13:20:05Z",
+            "foundAt": "2024-11-14T06:54:19Z",
+            "firstScanId": "d31e2204-78b9-411c-b7fa-120784ec284d",
+            "description": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+            "data": {
+                "queryId": "555ab8f9-2001-455e-a077-f2d0f41e2fb9",
+                "queryName": "Unpinned Actions Full Length Commit SHA",
+                "group": "Supply-Chain [Taken from category]",
+                "queryUrl": "Unpinned Actions Full Length Commit SHA [Taken from query_name]",
+                "queryId": "555ab8f9-2001-455e-a077-f2d0f41e2fb9 [Taken from query_id]",
+                "fileName": "/.github/workflows/SAST.yml",
+                "line": 74,
+                "platform": "CICD",
+                "issueType": "IncorrectValue",
+                "expectedValue": "Action pinned to a full length commit SHA.",
+                "value": "Action is not pinned to a full length commit SHA."
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        },
+        {
+            "type": "kics",
+            "id": "VtIjbCgXm9hoLJSbCarV4C+waso=",
+            "similarityId": "3212544469ea5857f4da18665ad310bec9033e62c136c3c4a1484d1f70af12a8",
+            "status": "NEW",
+            "state": "TO_VERIFY",
+            "severity": "LOW",
+            "confidenceLevel": 0,
+            "created": "2024-11-14T06:54:19Z",
+            "firstFoundAt": "2024-11-13T13:20:05Z",
+            "foundAt": "2024-11-14T06:54:19Z",
+            "firstScanId": "d31e2204-78b9-411c-b7fa-120784ec284d",
+            "description": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+            "data": {
+                "queryId": "555ab8f9-2001-455e-a077-f2d0f41e2fb9",
+                "queryName": "Unpinned Actions Full Length Commit SHA",
+                "group": "Supply-Chain [Taken from category]",
+                "queryUrl": "Unpinned Actions Full Length Commit SHA [Taken from query_name]",
+                "queryId": "555ab8f9-2001-455e-a077-f2d0f41e2fb9 [Taken from query_id]",
+                "fileName": "/.github/workflows/SAST.yml",
+                "line": 58,
+                "platform": "CICD",
+                "issueType": "IncorrectValue",
+                "expectedValue": "Action pinned to a full length commit SHA.",
+                "value": "Action is not pinned to a full length commit SHA."
+            },
+            "comments": {},
+            "vulnerabilityDetails": {}
+        }
+    ],
+    "totalCount": 3
+}

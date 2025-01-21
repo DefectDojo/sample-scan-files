@@ -1,0 +1,1411 @@
+{
+        "check_type": "azure_pipelines",
+        "results": {
+            "passed_checks": [
+                {
+                    "check_id": "CKV_AZUREPIPELINES_5",
+                    "bc_check_id": null,
+                    "check_name": "Detecting image usages in azure pipelines workflows",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "job": "fmt",
+                            "displayName": "fmt",
+                            "pool": {
+                                "vmImage": "ubuntu-latest",
+                                "__startline__": 12,
+                                "__endline__": 13
+                            },
+                            "steps": [
+                                {
+                                    "task": "GoTool@0",
+                                    "displayName": "Install Go 1.16",
+                                    "inputs": {
+                                        "version": "1.16",
+                                        "__startline__": 17,
+                                        "__endline__": 18
+                                    },
+                                    "__startline__": 14,
+                                    "__endline__": 18
+                                },
+                                {
+                                    "task": "Go@0",
+                                    "displayName": "go fmt ./...",
+                                    "inputs": {
+                                        "command": "custom",
+                                        "customCommand": "fmt",
+                                        "arguments": "./...",
+                                        "__startline__": 21,
+                                        "__endline__": 24
+                                    },
+                                    "__startline__": 18,
+                                    "__endline__": 24
+                                }
+                            ],
+                            "__startline__": 9,
+                            "__endline__": 24
+                        }
+                    },
+                    "code_block": [
+                        [
+                            9,
+                            "  - job: fmt\n"
+                        ],
+                        [
+                            10,
+                            "    displayName: \"fmt\"\n"
+                        ],
+                        [
+                            11,
+                            "    pool:\n"
+                        ],
+                        [
+                            12,
+                            "      vmImage: ubuntu-latest\n"
+                        ],
+                        [
+                            13,
+                            "    steps:\n"
+                        ],
+                        [
+                            14,
+                            "    - task: GoTool@0\n"
+                        ],
+                        [
+                            15,
+                            "      displayName: \"Install Go 1.16\"\n"
+                        ],
+                        [
+                            16,
+                            "      inputs:\n"
+                        ],
+                        [
+                            17,
+                            "        version: \"1.16\"\n"
+                        ],
+                        [
+                            18,
+                            "    - task: Go@0\n"
+                        ],
+                        [
+                            19,
+                            "      displayName: \"go fmt ./...\"\n"
+                        ],
+                        [
+                            20,
+                            "      inputs:\n"
+                        ],
+                        [
+                            21,
+                            "        command: 'custom'\n"
+                        ],
+                        [
+                            22,
+                            "        customCommand: 'fmt'\n"
+                        ],
+                        [
+                            23,
+                            "        arguments: './...'\n"
+                        ],
+                        [
+                            24,
+                            "  - job: coverage\n"
+                        ],
+                        [
+                            25,
+                            "    displayName: \"coverage\"\n"
+                        ]
+                    ],
+                    "file_path": "/azure-pipelines.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\github.com\\pelletier\\go-toml\\azure-pipelines.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/github.com/pelletier/go-toml/azure-pipelines.yml",
+                    "file_line_range": [
+                        9,
+                        25
+                    ],
+                    "resource": "stages[0](Check).jobs[0](fmt)",
+                    "evaluations": null,
+                    "check_class": "checkov.azure_pipelines.checks.job.DetectImagesUsage",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_AZUREPIPELINES_5",
+                    "bc_check_id": null,
+                    "check_name": "Detecting image usages in azure pipelines workflows",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "job": "coverage",
+                            "displayName": "coverage",
+                            "pool": {
+                                "vmImage": "ubuntu-latest",
+                                "__startline__": 27,
+                                "__endline__": 28
+                            },
+                            "steps": [
+                                {
+                                    "task": "GoTool@0",
+                                    "displayName": "Install Go 1.16",
+                                    "inputs": {
+                                        "version": "1.16",
+                                        "__startline__": 32,
+                                        "__endline__": 33
+                                    },
+                                    "__startline__": 29,
+                                    "__endline__": 33
+                                },
+                                {
+                                    "task": "Go@0",
+                                    "displayName": "Generate coverage",
+                                    "inputs": {
+                                        "command": "test",
+                                        "arguments": "-race -coverprofile=coverage.txt -covermode=atomic",
+                                        "__startline__": 36,
+                                        "__endline__": 38
+                                    },
+                                    "__startline__": 33,
+                                    "__endline__": 38
+                                },
+                                {
+                                    "task": "Bash@3",
+                                    "inputs": {
+                                        "targetType": "inline",
+                                        "script": "bash <(curl -s https://codecov.io/bash) -t ${CODECOV_TOKEN}",
+                                        "__startline__": 40,
+                                        "__endline__": 42
+                                    },
+                                    "env": {
+                                        "CODECOV_TOKEN": "$(CODECOV_TOKEN)",
+                                        "__startline__": 43,
+                                        "__endline__": 44
+                                    },
+                                    "__startline__": 38,
+                                    "__endline__": 44
+                                }
+                            ],
+                            "__startline__": 24,
+                            "__endline__": 44
+                        }
+                    },
+                    "code_block": [
+                        [
+                            24,
+                            "  - job: coverage\n"
+                        ],
+                        [
+                            25,
+                            "    displayName: \"coverage\"\n"
+                        ],
+                        [
+                            26,
+                            "    pool:\n"
+                        ],
+                        [
+                            27,
+                            "      vmImage: ubuntu-latest\n"
+                        ],
+                        [
+                            28,
+                            "    steps:\n"
+                        ],
+                        [
+                            29,
+                            "    - task: GoTool@0\n"
+                        ],
+                        [
+                            30,
+                            "      displayName: \"Install Go 1.16\"\n"
+                        ],
+                        [
+                            31,
+                            "      inputs:\n"
+                        ],
+                        [
+                            32,
+                            "        version: \"1.16\"\n"
+                        ],
+                        [
+                            33,
+                            "    - task: Go@0\n"
+                        ],
+                        [
+                            34,
+                            "      displayName: \"Generate coverage\"\n"
+                        ],
+                        [
+                            35,
+                            "      inputs:\n"
+                        ],
+                        [
+                            36,
+                            "        command: 'test'\n"
+                        ],
+                        [
+                            37,
+                            "        arguments: \"-race -coverprofile=coverage.txt -covermode=atomic\"\n"
+                        ],
+                        [
+                            38,
+                            "    - task: Bash@3\n"
+                        ],
+                        [
+                            39,
+                            "      inputs:\n"
+                        ],
+                        [
+                            40,
+                            "        targetType: 'inline'\n"
+                        ],
+                        [
+                            41,
+                            "        script: 'bash <(curl -s https://codecov.io/bash) -t ${CODECOV_TOKEN}'\n"
+                        ],
+                        [
+                            42,
+                            "      env:\n"
+                        ],
+                        [
+                            43,
+                            "        CODECOV_TOKEN: $(CODECOV_TOKEN)\n"
+                        ],
+                        [
+                            44,
+                            "  - job: benchmark\n"
+                        ],
+                        [
+                            45,
+                            "    displayName: \"benchmark\"\n"
+                        ]
+                    ],
+                    "file_path": "/azure-pipelines.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\github.com\\pelletier\\go-toml\\azure-pipelines.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/github.com/pelletier/go-toml/azure-pipelines.yml",
+                    "file_line_range": [
+                        24,
+                        45
+                    ],
+                    "resource": "stages[0](Check).jobs[1](coverage)",
+                    "evaluations": null,
+                    "check_class": "checkov.azure_pipelines.checks.job.DetectImagesUsage",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_AZUREPIPELINES_5",
+                    "bc_check_id": null,
+                    "check_name": "Detecting image usages in azure pipelines workflows",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "job": "benchmark",
+                            "displayName": "benchmark",
+                            "pool": {
+                                "vmImage": "ubuntu-latest",
+                                "__startline__": 47,
+                                "__endline__": 48
+                            },
+                            "steps": [
+                                {
+                                    "task": "GoTool@0",
+                                    "displayName": "Install Go 1.16",
+                                    "inputs": {
+                                        "version": "1.16",
+                                        "__startline__": 52,
+                                        "__endline__": 53
+                                    },
+                                    "__startline__": 49,
+                                    "__endline__": 53
+                                },
+                                {
+                                    "script": "echo \"##vso[task.setvariable variable=PATH]${PATH}:/home/vsts/go/bin/\"",
+                                    "__startline__": 53,
+                                    "__endline__": 54
+                                },
+                                {
+                                    "task": "Bash@3",
+                                    "inputs": {
+                                        "filePath": "./benchmark.sh",
+                                        "arguments": "master $(Build.Repository.Uri)",
+                                        "__startline__": 56,
+                                        "__endline__": 59
+                                    },
+                                    "__startline__": 54,
+                                    "__endline__": 59
+                                }
+                            ],
+                            "__startline__": 44,
+                            "__endline__": 59
+                        }
+                    },
+                    "code_block": [
+                        [
+                            44,
+                            "  - job: benchmark\n"
+                        ],
+                        [
+                            45,
+                            "    displayName: \"benchmark\"\n"
+                        ],
+                        [
+                            46,
+                            "    pool:\n"
+                        ],
+                        [
+                            47,
+                            "      vmImage: ubuntu-latest\n"
+                        ],
+                        [
+                            48,
+                            "    steps:\n"
+                        ],
+                        [
+                            49,
+                            "    - task: GoTool@0\n"
+                        ],
+                        [
+                            50,
+                            "      displayName: \"Install Go 1.16\"\n"
+                        ],
+                        [
+                            51,
+                            "      inputs:\n"
+                        ],
+                        [
+                            52,
+                            "        version: \"1.16\"\n"
+                        ],
+                        [
+                            53,
+                            "    - script: echo \"##vso[task.setvariable variable=PATH]${PATH}:/home/vsts/go/bin/\"\n"
+                        ],
+                        [
+                            54,
+                            "    - task: Bash@3\n"
+                        ],
+                        [
+                            55,
+                            "      inputs:\n"
+                        ],
+                        [
+                            56,
+                            "        filePath: './benchmark.sh'\n"
+                        ],
+                        [
+                            57,
+                            "        arguments: \"master $(Build.Repository.Uri)\"\n"
+                        ],
+                        [
+                            58,
+                            "\n"
+                        ],
+                        [
+                            59,
+                            "  - job: go_unit_tests\n"
+                        ],
+                        [
+                            60,
+                            "    displayName: \"unit tests\"\n"
+                        ]
+                    ],
+                    "file_path": "/azure-pipelines.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\github.com\\pelletier\\go-toml\\azure-pipelines.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/github.com/pelletier/go-toml/azure-pipelines.yml",
+                    "file_line_range": [
+                        44,
+                        60
+                    ],
+                    "resource": "stages[0](Check).jobs[2](benchmark)",
+                    "evaluations": null,
+                    "check_class": "checkov.azure_pipelines.checks.job.DetectImagesUsage",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_AZUREPIPELINES_5",
+                    "bc_check_id": null,
+                    "check_name": "Detecting image usages in azure pipelines workflows",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "job": "go_unit_tests",
+                            "displayName": "unit tests",
+                            "strategy": {
+                                "matrix": {
+                                    "linux 1.16": {
+                                        "goVersion": "1.16",
+                                        "imageName": "ubuntu-latest",
+                                        "__startline__": 64,
+                                        "__endline__": 66
+                                    },
+                                    "mac 1.16": {
+                                        "goVersion": "1.16",
+                                        "imageName": "macOS-latest",
+                                        "__startline__": 67,
+                                        "__endline__": 69
+                                    },
+                                    "windows 1.16": {
+                                        "goVersion": "1.16",
+                                        "imageName": "windows-latest",
+                                        "__startline__": 70,
+                                        "__endline__": 72
+                                    },
+                                    "linux 1.15": {
+                                        "goVersion": "1.15",
+                                        "imageName": "ubuntu-latest",
+                                        "__startline__": 73,
+                                        "__endline__": 75
+                                    },
+                                    "mac 1.15": {
+                                        "goVersion": "1.15",
+                                        "imageName": "macOS-latest",
+                                        "__startline__": 76,
+                                        "__endline__": 78
+                                    },
+                                    "windows 1.15": {
+                                        "goVersion": "1.15",
+                                        "imageName": "windows-latest",
+                                        "__startline__": 79,
+                                        "__endline__": 81
+                                    },
+                                    "__startline__": 63,
+                                    "__endline__": 81
+                                },
+                                "__startline__": 62,
+                                "__endline__": 81
+                            },
+                            "pool": {
+                                "vmImage": "$(imageName)",
+                                "__startline__": 82,
+                                "__endline__": 83
+                            },
+                            "steps": [
+                                {
+                                    "task": "GoTool@0",
+                                    "displayName": "Install Go $(goVersion)",
+                                    "inputs": {
+                                        "version": "$(goVersion)",
+                                        "__startline__": 87,
+                                        "__endline__": 88
+                                    },
+                                    "__startline__": 84,
+                                    "__endline__": 88
+                                },
+                                {
+                                    "task": "Go@0",
+                                    "displayName": "go test ./...",
+                                    "inputs": {
+                                        "command": "test",
+                                        "arguments": "./...",
+                                        "__startline__": 91,
+                                        "__endline__": 93
+                                    },
+                                    "__startline__": 88,
+                                    "__endline__": 93
+                                }
+                            ],
+                            "__startline__": 59,
+                            "__endline__": 93
+                        }
+                    },
+                    "code_block": [
+                        [
+                            59,
+                            "  - job: go_unit_tests\n"
+                        ],
+                        [
+                            60,
+                            "    displayName: \"unit tests\"\n"
+                        ],
+                        [
+                            61,
+                            "    strategy:\n"
+                        ],
+                        [
+                            62,
+                            "      matrix:\n"
+                        ],
+                        [
+                            63,
+                            "        linux 1.16:\n"
+                        ],
+                        [
+                            64,
+                            "          goVersion: '1.16'\n"
+                        ],
+                        [
+                            65,
+                            "          imageName: 'ubuntu-latest'\n"
+                        ],
+                        [
+                            66,
+                            "        mac 1.16:\n"
+                        ],
+                        [
+                            67,
+                            "          goVersion: '1.16'\n"
+                        ],
+                        [
+                            68,
+                            "          imageName: 'macOS-latest'\n"
+                        ],
+                        [
+                            69,
+                            "        windows 1.16:\n"
+                        ],
+                        [
+                            70,
+                            "          goVersion: '1.16'\n"
+                        ],
+                        [
+                            71,
+                            "          imageName: 'windows-latest'\n"
+                        ],
+                        [
+                            72,
+                            "        linux 1.15:\n"
+                        ],
+                        [
+                            73,
+                            "          goVersion: '1.15'\n"
+                        ],
+                        [
+                            74,
+                            "          imageName: 'ubuntu-latest'\n"
+                        ],
+                        [
+                            75,
+                            "        mac 1.15:\n"
+                        ],
+                        [
+                            76,
+                            "          goVersion: '1.15'\n"
+                        ],
+                        [
+                            77,
+                            "          imageName: 'macOS-latest'\n"
+                        ],
+                        [
+                            78,
+                            "        windows 1.15:\n"
+                        ],
+                        [
+                            79,
+                            "          goVersion: '1.15'\n"
+                        ],
+                        [
+                            80,
+                            "          imageName: 'windows-latest'\n"
+                        ],
+                        [
+                            81,
+                            "    pool:\n"
+                        ],
+                        [
+                            82,
+                            "      vmImage: $(imageName)\n"
+                        ],
+                        [
+                            83,
+                            "    steps:\n"
+                        ],
+                        [
+                            84,
+                            "    - task: GoTool@0\n"
+                        ],
+                        [
+                            85,
+                            "      displayName: \"Install Go $(goVersion)\"\n"
+                        ],
+                        [
+                            86,
+                            "      inputs:\n"
+                        ],
+                        [
+                            87,
+                            "        version: $(goVersion)\n"
+                        ],
+                        [
+                            88,
+                            "    - task: Go@0\n"
+                        ],
+                        [
+                            89,
+                            "      displayName: \"go test ./...\"\n"
+                        ],
+                        [
+                            90,
+                            "      inputs:\n"
+                        ],
+                        [
+                            91,
+                            "        command: 'test'\n"
+                        ],
+                        [
+                            92,
+                            "        arguments: './...'\n"
+                        ],
+                        [
+                            93,
+                            "- stage: build_binaries\n"
+                        ],
+                        [
+                            94,
+                            "  displayName: \"Build binaries\"\n"
+                        ]
+                    ],
+                    "file_path": "/azure-pipelines.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\github.com\\pelletier\\go-toml\\azure-pipelines.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/github.com/pelletier/go-toml/azure-pipelines.yml",
+                    "file_line_range": [
+                        59,
+                        94
+                    ],
+                    "resource": "stages[0](Check).jobs[3](unit tests)",
+                    "evaluations": null,
+                    "check_class": "checkov.azure_pipelines.checks.job.DetectImagesUsage",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_AZUREPIPELINES_5",
+                    "bc_check_id": null,
+                    "check_name": "Detecting image usages in azure pipelines workflows",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "job": "build_binary",
+                            "displayName": "Build binary",
+                            "strategy": {
+                                "matrix": {
+                                    "linux_amd64": {
+                                        "GOOS": "linux",
+                                        "GOARCH": "amd64",
+                                        "__startline__": 102,
+                                        "__endline__": 104
+                                    },
+                                    "darwin_amd64": {
+                                        "GOOS": "darwin",
+                                        "GOARCH": "amd64",
+                                        "__startline__": 105,
+                                        "__endline__": 107
+                                    },
+                                    "windows_amd64": {
+                                        "GOOS": "windows",
+                                        "GOARCH": "amd64",
+                                        "__startline__": 108,
+                                        "__endline__": 110
+                                    },
+                                    "__startline__": 101,
+                                    "__endline__": 110
+                                },
+                                "__startline__": 100,
+                                "__endline__": 110
+                            },
+                            "pool": {
+                                "vmImage": "ubuntu-latest",
+                                "__startline__": 111,
+                                "__endline__": 112
+                            },
+                            "steps": [
+                                {
+                                    "task": "GoTool@0",
+                                    "displayName": "Install Go",
+                                    "inputs": {
+                                        "version": 1.16,
+                                        "__startline__": 116,
+                                        "__endline__": 117
+                                    },
+                                    "__startline__": 113,
+                                    "__endline__": 117
+                                },
+                                {
+                                    "task": "Bash@3",
+                                    "inputs": {
+                                        "targetType": "inline",
+                                        "script": "make dist",
+                                        "__startline__": 119,
+                                        "__endline__": 121
+                                    },
+                                    "env": {
+                                        "go.goos": "$(GOOS)",
+                                        "go.goarch": "$(GOARCH)",
+                                        "__startline__": 122,
+                                        "__endline__": 124
+                                    },
+                                    "__startline__": 117,
+                                    "__endline__": 124
+                                },
+                                {
+                                    "task": "CopyFiles@2",
+                                    "inputs": {
+                                        "sourceFolder": "$(Build.SourcesDirectory)",
+                                        "contents": "*.tar.xz",
+                                        "TargetFolder": "$(Build.ArtifactStagingDirectory)",
+                                        "__startline__": 126,
+                                        "__endline__": 129
+                                    },
+                                    "__startline__": 124,
+                                    "__endline__": 129
+                                },
+                                {
+                                    "task": "PublishBuildArtifacts@1",
+                                    "inputs": {
+                                        "pathtoPublish": "$(Build.ArtifactStagingDirectory)",
+                                        "artifactName": "binaries",
+                                        "__startline__": 131,
+                                        "__endline__": 133
+                                    },
+                                    "__startline__": 129,
+                                    "__endline__": 133
+                                }
+                            ],
+                            "__startline__": 97,
+                            "__endline__": 133
+                        }
+                    },
+                    "code_block": [
+                        [
+                            97,
+                            "  - job: build_binary\n"
+                        ],
+                        [
+                            98,
+                            "    displayName: \"Build binary\"\n"
+                        ],
+                        [
+                            99,
+                            "    strategy:\n"
+                        ],
+                        [
+                            100,
+                            "      matrix:\n"
+                        ],
+                        [
+                            101,
+                            "        linux_amd64:\n"
+                        ],
+                        [
+                            102,
+                            "          GOOS: linux\n"
+                        ],
+                        [
+                            103,
+                            "          GOARCH: amd64\n"
+                        ],
+                        [
+                            104,
+                            "        darwin_amd64:\n"
+                        ],
+                        [
+                            105,
+                            "          GOOS: darwin\n"
+                        ],
+                        [
+                            106,
+                            "          GOARCH: amd64\n"
+                        ],
+                        [
+                            107,
+                            "        windows_amd64:\n"
+                        ],
+                        [
+                            108,
+                            "          GOOS: windows\n"
+                        ],
+                        [
+                            109,
+                            "          GOARCH: amd64\n"
+                        ],
+                        [
+                            110,
+                            "    pool:\n"
+                        ],
+                        [
+                            111,
+                            "      vmImage: ubuntu-latest\n"
+                        ],
+                        [
+                            112,
+                            "    steps:\n"
+                        ],
+                        [
+                            113,
+                            "    - task: GoTool@0\n"
+                        ],
+                        [
+                            114,
+                            "      displayName: \"Install Go\"\n"
+                        ],
+                        [
+                            115,
+                            "      inputs:\n"
+                        ],
+                        [
+                            116,
+                            "        version: 1.16\n"
+                        ],
+                        [
+                            117,
+                            "    - task: Bash@3\n"
+                        ],
+                        [
+                            118,
+                            "      inputs:\n"
+                        ],
+                        [
+                            119,
+                            "        targetType: inline\n"
+                        ],
+                        [
+                            120,
+                            "        script: \"make dist\"\n"
+                        ],
+                        [
+                            121,
+                            "      env:\n"
+                        ],
+                        [
+                            122,
+                            "        go.goos: $(GOOS)\n"
+                        ],
+                        [
+                            123,
+                            "        go.goarch: $(GOARCH)\n"
+                        ],
+                        [
+                            124,
+                            "    - task: CopyFiles@2\n"
+                        ],
+                        [
+                            125,
+                            "      inputs:\n"
+                        ],
+                        [
+                            126,
+                            "        sourceFolder: '$(Build.SourcesDirectory)'\n"
+                        ],
+                        [
+                            127,
+                            "        contents: '*.tar.xz'\n"
+                        ],
+                        [
+                            128,
+                            "        TargetFolder: '$(Build.ArtifactStagingDirectory)'\n"
+                        ],
+                        [
+                            129,
+                            "    - task: PublishBuildArtifacts@1\n"
+                        ],
+                        [
+                            130,
+                            "      inputs:\n"
+                        ],
+                        [
+                            131,
+                            "        pathtoPublish: '$(Build.ArtifactStagingDirectory)'\n"
+                        ],
+                        [
+                            132,
+                            "        artifactName: binaries\n"
+                        ],
+                        [
+                            133,
+                            "- stage: build_binaries_manifest\n"
+                        ],
+                        [
+                            134,
+                            "  displayName: \"Build binaries manifest\"\n"
+                        ]
+                    ],
+                    "file_path": "/azure-pipelines.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\github.com\\pelletier\\go-toml\\azure-pipelines.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/github.com/pelletier/go-toml/azure-pipelines.yml",
+                    "file_line_range": [
+                        97,
+                        134
+                    ],
+                    "resource": "stages[1](Build binaries).jobs[0](Build binary)",
+                    "evaluations": null,
+                    "check_class": "checkov.azure_pipelines.checks.job.DetectImagesUsage",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_AZUREPIPELINES_5",
+                    "bc_check_id": null,
+                    "check_name": "Detecting image usages in azure pipelines workflows",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "job": "build_manifest",
+                            "displayName": "Build binaries manifest",
+                            "steps": [
+                                {
+                                    "task": "DownloadBuildArtifacts@0",
+                                    "inputs": {
+                                        "buildType": "current",
+                                        "downloadType": "single",
+                                        "artifactName": "binaries",
+                                        "downloadPath": "$(Build.SourcesDirectory)",
+                                        "__startline__": 142,
+                                        "__endline__": 146
+                                    },
+                                    "__startline__": 140,
+                                    "__endline__": 146
+                                },
+                                {
+                                    "task": "Bash@3",
+                                    "inputs": {
+                                        "targetType": "inline",
+                                        "script": "cd binaries && sha256sum --binary *.tar.xz | tee $(Build.ArtifactStagingDirectory)/sha256sums.txt",
+                                        "__startline__": 148,
+                                        "__endline__": 150
+                                    },
+                                    "__startline__": 146,
+                                    "__endline__": 150
+                                },
+                                {
+                                    "task": "PublishBuildArtifacts@1",
+                                    "inputs": {
+                                        "pathtoPublish": "$(Build.ArtifactStagingDirectory)",
+                                        "artifactName": "manifest",
+                                        "__startline__": 152,
+                                        "__endline__": 155
+                                    },
+                                    "__startline__": 150,
+                                    "__endline__": 155
+                                }
+                            ],
+                            "__startline__": 137,
+                            "__endline__": 155
+                        }
+                    },
+                    "code_block": [
+                        [
+                            137,
+                            "  - job: build_manifest\n"
+                        ],
+                        [
+                            138,
+                            "    displayName: \"Build binaries manifest\"\n"
+                        ],
+                        [
+                            139,
+                            "    steps:\n"
+                        ],
+                        [
+                            140,
+                            "      - task: DownloadBuildArtifacts@0\n"
+                        ],
+                        [
+                            141,
+                            "        inputs:\n"
+                        ],
+                        [
+                            142,
+                            "          buildType: 'current'\n"
+                        ],
+                        [
+                            143,
+                            "          downloadType: 'single'\n"
+                        ],
+                        [
+                            144,
+                            "          artifactName: 'binaries'\n"
+                        ],
+                        [
+                            145,
+                            "          downloadPath: '$(Build.SourcesDirectory)'\n"
+                        ],
+                        [
+                            146,
+                            "      - task: Bash@3\n"
+                        ],
+                        [
+                            147,
+                            "        inputs:\n"
+                        ],
+                        [
+                            148,
+                            "          targetType: inline\n"
+                        ],
+                        [
+                            149,
+                            "          script: \"cd binaries && sha256sum --binary *.tar.xz | tee $(Build.ArtifactStagingDirectory)/sha256sums.txt\"\n"
+                        ],
+                        [
+                            150,
+                            "      - task: PublishBuildArtifacts@1\n"
+                        ],
+                        [
+                            151,
+                            "        inputs:\n"
+                        ],
+                        [
+                            152,
+                            "          pathtoPublish: '$(Build.ArtifactStagingDirectory)'\n"
+                        ],
+                        [
+                            153,
+                            "          artifactName: manifest\n"
+                        ],
+                        [
+                            154,
+                            "\n"
+                        ],
+                        [
+                            155,
+                            "- stage: build_docker_image\n"
+                        ],
+                        [
+                            156,
+                            "  displayName: \"Build Docker image\"\n"
+                        ]
+                    ],
+                    "file_path": "/azure-pipelines.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\github.com\\pelletier\\go-toml\\azure-pipelines.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/github.com/pelletier/go-toml/azure-pipelines.yml",
+                    "file_line_range": [
+                        137,
+                        156
+                    ],
+                    "resource": "stages[2](Build binaries manifest).jobs[0](Build binaries manifest)",
+                    "evaluations": null,
+                    "check_class": "checkov.azure_pipelines.checks.job.DetectImagesUsage",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_AZUREPIPELINES_5",
+                    "bc_check_id": null,
+                    "check_name": "Detecting image usages in azure pipelines workflows",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "job": "build",
+                            "displayName": "Build",
+                            "pool": {
+                                "vmImage": "ubuntu-latest",
+                                "__startline__": 162,
+                                "__endline__": 163
+                            },
+                            "steps": [
+                                {
+                                    "task": "Docker@2",
+                                    "inputs": {
+                                        "command": "build",
+                                        "Dockerfile": "Dockerfile",
+                                        "buildContext": ".",
+                                        "addPipelineData": false,
+                                        "__startline__": 166,
+                                        "__endline__": 171
+                                    },
+                                    "__startline__": 164,
+                                    "__endline__": 171
+                                }
+                            ],
+                            "__startline__": 159,
+                            "__endline__": 171
+                        }
+                    },
+                    "code_block": [
+                        [
+                            159,
+                            "  - job: build\n"
+                        ],
+                        [
+                            160,
+                            "    displayName: \"Build\"\n"
+                        ],
+                        [
+                            161,
+                            "    pool:\n"
+                        ],
+                        [
+                            162,
+                            "      vmImage: ubuntu-latest\n"
+                        ],
+                        [
+                            163,
+                            "    steps:\n"
+                        ],
+                        [
+                            164,
+                            "    - task: Docker@2\n"
+                        ],
+                        [
+                            165,
+                            "      inputs:\n"
+                        ],
+                        [
+                            166,
+                            "        command: 'build'\n"
+                        ],
+                        [
+                            167,
+                            "        Dockerfile: 'Dockerfile'\n"
+                        ],
+                        [
+                            168,
+                            "        buildContext: '.'\n"
+                        ],
+                        [
+                            169,
+                            "        addPipelineData: false\n"
+                        ],
+                        [
+                            170,
+                            "\n"
+                        ],
+                        [
+                            171,
+                            "- stage: publish_docker_image\n"
+                        ],
+                        [
+                            172,
+                            "  displayName: \"Publish Docker image\"\n"
+                        ]
+                    ],
+                    "file_path": "/azure-pipelines.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\github.com\\pelletier\\go-toml\\azure-pipelines.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/github.com/pelletier/go-toml/azure-pipelines.yml",
+                    "file_line_range": [
+                        159,
+                        172
+                    ],
+                    "resource": "stages[3](Build Docker image).jobs[0](Build)",
+                    "evaluations": null,
+                    "check_class": "checkov.azure_pipelines.checks.job.DetectImagesUsage",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                },
+                {
+                    "check_id": "CKV_AZUREPIPELINES_5",
+                    "bc_check_id": null,
+                    "check_name": "Detecting image usages in azure pipelines workflows",
+                    "check_result": {
+                        "result": "PASSED",
+                        "results_configuration": {
+                            "job": "publish",
+                            "displayName": "Publish",
+                            "pool": {
+                                "vmImage": "ubuntu-latest",
+                                "__startline__": 179,
+                                "__endline__": 180
+                            },
+                            "steps": [
+                                {
+                                    "task": "Docker@2",
+                                    "inputs": {
+                                        "containerRegistry": "DockerHub",
+                                        "repository": "pelletier/go-toml",
+                                        "command": "buildAndPush",
+                                        "Dockerfile": "Dockerfile",
+                                        "buildContext": ".",
+                                        "tags": "latest",
+                                        "__startline__": 183,
+                                        "__endline__": 189
+                                    },
+                                    "__startline__": 181,
+                                    "__endline__": 189
+                                }
+                            ],
+                            "__startline__": 176,
+                            "__endline__": 189
+                        }
+                    },
+                    "code_block": [
+                        [
+                            176,
+                            "  - job: publish\n"
+                        ],
+                        [
+                            177,
+                            "    displayName: \"Publish\"\n"
+                        ],
+                        [
+                            178,
+                            "    pool:\n"
+                        ],
+                        [
+                            179,
+                            "      vmImage: ubuntu-latest\n"
+                        ],
+                        [
+                            180,
+                            "    steps:\n"
+                        ],
+                        [
+                            181,
+                            "    - task: Docker@2\n"
+                        ],
+                        [
+                            182,
+                            "      inputs:\n"
+                        ],
+                        [
+                            183,
+                            "        containerRegistry: 'DockerHub'\n"
+                        ],
+                        [
+                            184,
+                            "        repository: 'pelletier/go-toml'\n"
+                        ],
+                        [
+                            185,
+                            "        command: 'buildAndPush'\n"
+                        ],
+                        [
+                            186,
+                            "        Dockerfile: 'Dockerfile'\n"
+                        ],
+                        [
+                            187,
+                            "        buildContext: '.'\n"
+                        ],
+                        [
+                            188,
+                            "        tags: 'latest'\n"
+                        ]
+                    ],
+                    "file_path": "/azure-pipelines.yml",
+                    "file_abs_path": "C:\\Users\\ayush\\Desktop\\checkov\\terraform-provider-github\\vendor\\github.com\\pelletier\\go-toml\\azure-pipelines.yml",
+                    "repo_file_path": "/terraform-provider-github/vendor/github.com/pelletier/go-toml/azure-pipelines.yml",
+                    "file_line_range": [
+                        176,
+                        190
+                    ],
+                    "resource": "stages[4](Publish Docker image).jobs[0](Publish)",
+                    "evaluations": null,
+                    "check_class": "checkov.azure_pipelines.checks.job.DetectImagesUsage",
+                    "fixed_definition": null,
+                    "entity_tags": null,
+                    "caller_file_path": null,
+                    "caller_file_line_range": null,
+                    "resource_address": null,
+                    "severity": null,
+                    "bc_category": null,
+                    "benchmarks": null,
+                    "description": null,
+                    "short_description": null,
+                    "vulnerability_details": null,
+                    "connected_node": null,
+                    "guideline": null,
+                    "details": [],
+                    "check_len": null,
+                    "definition_context_file_path": null
+                }
+            ],
+            "failed_checks": [],
+            "skipped_checks": [],
+            "parsing_errors": []
+        },
+        "summary": {
+            "passed": 8,
+            "failed": 0,
+            "skipped": 0,
+            "parsing_errors": 0,
+            "resource_count": 0,
+            "checkov_version": "3.2.353"
+        },
+        "url": "Add an api key '--bc-api-key <api-key>' to see more detailed insights via https://bridgecrew.cloud"
+    }
