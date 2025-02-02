@@ -1,1 +1,462 @@
-{"errors": [{"code": 2, "level": "warn", "message": "Other syntax error at line k8tls-job/templates/k8tls-cronjob.yaml:10:\n (approximate error location; error nearby after) error calling parser: did not find expected key character 0 position 0 returned: 0", "path": "k8tls-job/templates/k8tls-cronjob.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line k8s-risk-assessment-job/templates/clusterrole.yaml:4:\n (approximate error location; error nearby after) error calling parser: did not find expected key character 0 position 0 returned: 0", "path": "k8s-risk-assessment-job/templates/clusterrole.yaml", "type": "Other syntax error"}, {"code": 3, "level": "warn", "message": "Syntax error at line .github/workflows/action.yaml:84:\n When parsing a snippet as Bash for metavariable-pattern in rule 'yaml.github-actions.security.curl-eval.curl-eval', `{ github.ref_name` was unexpected", "path": ".github/workflows/action.yaml", "spans": [{"end": {"col": 54, "line": 84, "offset": 2336}, "file": ".github/workflows/action.yaml", "start": {"col": 37, "line": 84, "offset": 2319}}, {"end": {"col": 60, "line": 85, "offset": 2336}, "file": ".github/workflows/action.yaml", "start": {"col": 43, "line": 85, "offset": 2319}}], "type": ["PartialParsing", [{"end": {"col": 54, "line": 84, "offset": 2336}, "path": ".github/workflows/action.yaml", "start": {"col": 37, "line": 84, "offset": 2319}}, {"end": {"col": 60, "line": 85, "offset": 2336}, "path": ".github/workflows/action.yaml", "start": {"col": 43, "line": 85, "offset": 2319}}]]}, {"code": 3, "level": "warn", "message": "Syntax error at line .github/workflows/action.yaml:93:\n When parsing a snippet as Bash for metavariable-pattern in rule 'yaml.github-actions.security.curl-eval.curl-eval', `${{` was unexpected", "path": ".github/workflows/action.yaml", "spans": [{"end": {"col": 36, "line": 93, "offset": 2670}, "file": ".github/workflows/action.yaml", "start": {"col": 33, "line": 93, "offset": 2667}}], "type": ["PartialParsing", [{"end": {"col": 36, "line": 93, "offset": 2670}, "path": ".github/workflows/action.yaml", "start": {"col": 33, "line": 93, "offset": 2667}}]]}, {"code": 2, "level": "warn", "message": "Other syntax error at line cis-k8s-job/templates/cis-cron-job.yaml:12:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0", "path": "cis-k8s-job/templates/cis-cron-job.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line k8s-risk-assessment-job/templates/cronjob.yaml:17:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0", "path": "k8s-risk-assessment-job/templates/cronjob.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line cis-k8s-job/templates/cis-job.yaml:14:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0", "path": "cis-k8s-job/templates/cis-job.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line kiem-job/templates/deployment.yaml:16:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0", "path": "kiem-job/templates/deployment.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line k8s-risk-assessment-job/templates/job.yaml:13:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0", "path": "k8s-risk-assessment-job/templates/job.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line k8tls-job/templates/k8tls-job.yaml:12:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0", "path": "k8tls-job/templates/k8tls-job.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line kiem-job/templates/job.yaml:13:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0", "path": "kiem-job/templates/job.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line kiem-job/templates/role.yaml:4:\n (approximate error location; error nearby after) error calling parser: did not find expected key character 0 position 0 returned: 0", "path": "kiem-job/templates/role.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line k8tls-job/templates/imagepullsecret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0", "path": "k8tls-job/templates/imagepullsecret.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line k8s-risk-assessment-job/templates/imagepullsecret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0", "path": "k8s-risk-assessment-job/templates/imagepullsecret.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line kiem-job/templates/imagepullsecret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0", "path": "kiem-job/templates/imagepullsecret.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line cis-k8s-job/templates/imagepullsecret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0", "path": "cis-k8s-job/templates/imagepullsecret.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line k8s-risk-assessment-job/templates/clusterrolebinding.yaml:4:\n (approximate error location; error nearby after) error calling parser: did not find expected key character 0 position 0 returned: 0", "path": "k8s-risk-assessment-job/templates/clusterrolebinding.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line kiem-job/templates/rolebinding.yaml:4:\n (approximate error location; error nearby after) error calling parser: did not find expected key character 0 position 0 returned: 0", "path": "kiem-job/templates/rolebinding.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line k8s-risk-assessment-job/templates/secret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0", "path": "k8s-risk-assessment-job/templates/secret.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line cis-k8s-job/templates/secret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0", "path": "cis-k8s-job/templates/secret.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line k8tls-job/templates/secret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0", "path": "k8tls-job/templates/secret.yaml", "type": "Other syntax error"}, {"code": 2, "level": "warn", "message": "Other syntax error at line kiem-job/templates/secret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0", "path": "kiem-job/templates/secret.yaml", "type": "Other syntax error"}], "interfile_languages_used": [], "paths": {"scanned": [".github/workflows/action.yaml", ".gitignore", "Dockerfile", "README.md", "cis-k8s-job/.helmignore", "cis-k8s-job/Chart.yaml", "cis-k8s-job/README.md", "cis-k8s-job/templates/_helpers.tpl", "cis-k8s-job/templates/cis-cron-job.yaml", "cis-k8s-job/templates/cis-job.yaml", "cis-k8s-job/templates/imagepullsecret.yaml", "cis-k8s-job/templates/secret.yaml", "cis-k8s-job/values.yaml", "entrypoint.sh", "k8s-risk-assessment-job/.helmignore", "k8s-risk-assessment-job/Chart.yaml", "k8s-risk-assessment-job/README.md", "k8s-risk-assessment-job/templates/clusterrole.yaml", "k8s-risk-assessment-job/templates/clusterrolebinding.yaml", "k8s-risk-assessment-job/templates/configmap.yaml", "k8s-risk-assessment-job/templates/cronjob.yaml", "k8s-risk-assessment-job/templates/imagepullsecret.yaml", "k8s-risk-assessment-job/templates/job.yaml", "k8s-risk-assessment-job/templates/secret.yaml", "k8s-risk-assessment-job/templates/serviceaccount.yaml", "k8s-risk-assessment-job/values.yaml", "k8tls-job/.helmignore", "k8tls-job/Chart.yaml", "k8tls-job/README.md", "k8tls-job/templates/_helpers.tpl", "k8tls-job/templates/imagepullsecret.yaml", "k8tls-job/templates/k8tls-cronjob.yaml", "k8tls-job/templates/k8tls-job.yaml", "k8tls-job/templates/secret.yaml", "k8tls-job/values.yaml", "kiem-job/.helmignore", "kiem-job/Chart.yaml", "kiem-job/README.md", "kiem-job/templates/_helpers.tpl", "kiem-job/templates/deployment.yaml", "kiem-job/templates/imagepullsecret.yaml", "kiem-job/templates/job.yaml", "kiem-job/templates/role.yaml", "kiem-job/templates/rolebinding.yaml", "kiem-job/templates/secret.yaml", "kiem-job/templates/serviceaccount.yaml", "kiem-job/values.yaml", "nessus-job/README.md", "res/arch.png", "sast-job/Dockerfile", "sast-job/Makefile", "sast-job/README.md", "sast-job/sq-job.py"]}, "results": [{"check_id": "dockerfile.security.missing-user-entrypoint.missing-user-entrypoint", "end": {"col": 40, "line": 6, "offset": 110}, "extra": {"engine_kind": "OSS", "fingerprint": "f430f4e383ef96c7c10f4afe4e3325b0b7e46fac8299c0eedf76f9599a79d309754b1ec6557dba0c1bbc66b380ef40b104b9c8acb63f36e13cbab1858ad48c5c_0", "fix": "USER non-root\nENTRYPOINT [\"/bin/sh\", \"entrypoint.sh\"]", "is_ignored": false, "lines": "ENTRYPOINT [\"/bin/sh\", \"entrypoint.sh\"]", "message": "By not specifying a USER, a program in the container may run as 'root'. This is a security hazard. If an attacker can control a process running as root, they may have control over the container. Ensure that the last USER in a Dockerfile is a USER other than 'root'.", "metadata": {"category": "security", "confidence": "MEDIUM", "cwe": ["CWE-269: Improper Privilege Management"], "impact": "MEDIUM", "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]", "likelihood": "LOW", "owasp": ["A04:2021 - Insecure Design"], "references": ["https://owasp.org/Top10/A04_2021-Insecure_Design"], "semgrep.dev": {"rule": {"origin": "community", "r_id": 47272, "rule_id": "ReUW9E", "rv_id": 928285, "url": "https://semgrep.dev/playground/r/WrTYvkG/dockerfile.security.missing-user-entrypoint.missing-user-entrypoint", "version_id": "WrTYvkG"}}, "shortlink": "https://sg.run/k281", "source": "https://semgrep.dev/r/dockerfile.security.missing-user-entrypoint.missing-user-entrypoint", "subcategory": ["audit"], "technology": ["dockerfile"], "vulnerability_class": ["Improper Authorization"]}, "metavars": {"$...VARS": {"abstract_content": "[\"/bin/sh\"\"entrypoint.sh\"]", "end": {"col": 40, "line": 6, "offset": 110}, "start": {"col": 12, "line": 6, "offset": 82}}}, "severity": "ERROR", "validation_state": "NO_VALIDATOR"}, "path": "Dockerfile", "start": {"col": 1, "line": 6, "offset": 71}}, {"check_id": "dockerfile.security.missing-user.missing-user", "end": {"col": 29, "line": 12, "offset": 277}, "extra": {"engine_kind": "OSS", "fingerprint": "9a796b827675130b460199b209503f0462abe572a3a7cdb00c64139c997ec707fdba1e3f4d85ae903a206589affdb1593db92ad64f90eb0776c675131721c09a_0", "fix": "USER non-root\nCMD [\"python3\", \"sq-job.py\"]", "is_ignored": false, "lines": "CMD [\"python3\", \"sq-job.py\"]", "message": "By not specifying a USER, a program in the container may run as 'root'. This is a security hazard. If an attacker can control a process running as root, they may have control over the container. Ensure that the last USER in a Dockerfile is a USER other than 'root'.", "metadata": {"category": "security", "confidence": "MEDIUM", "cwe": ["CWE-269: Improper Privilege Management"], "impact": "MEDIUM", "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]", "likelihood": "LOW", "owasp": ["A04:2021 - Insecure Design"], "references": ["https://owasp.org/Top10/A04_2021-Insecure_Design"], "semgrep.dev": {"rule": {"origin": "community", "r_id": 20148, "rule_id": "AbUN06", "rv_id": 928286, "url": "https://semgrep.dev/playground/r/0bTpAQq/dockerfile.security.missing-user.missing-user", "version_id": "0bTpAQq"}}, "shortlink": "https://sg.run/Gbvn", "source": "https://semgrep.dev/r/dockerfile.security.missing-user.missing-user", "subcategory": ["audit"], "technology": ["dockerfile"], "vulnerability_class": ["Improper Authorization"]}, "metavars": {"$...VARS": {"abstract_content": "[\"python3\"\"sq-job.py\"]", "end": {"col": 29, "line": 12, "offset": 277}, "start": {"col": 5, "line": 12, "offset": 253}}}, "severity": "ERROR", "validation_state": "NO_VALIDATOR"}, "path": "sast-job/Dockerfile", "start": {"col": 1, "line": 12, "offset": 249}}], "skipped_rules": [], "version": "1.95.0"}
+{
+    "errors": [
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line k8tls-job/templates/k8tls-cronjob.yaml:10:\n (approximate error location; error nearby after) error calling parser: did not find expected key character 0 position 0 returned: 0",
+            "path": "k8tls-job/templates/k8tls-cronjob.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line k8s-risk-assessment-job/templates/clusterrole.yaml:4:\n (approximate error location; error nearby after) error calling parser: did not find expected key character 0 position 0 returned: 0",
+            "path": "k8s-risk-assessment-job/templates/clusterrole.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 3,
+            "level": "warn",
+            "message": "Syntax error at line .github/workflows/action.yaml:84:\n When parsing a snippet as Bash for metavariable-pattern in rule 'yaml.github-actions.security.curl-eval.curl-eval', `{ github.ref_name` was unexpected",
+            "path": ".github/workflows/action.yaml",
+            "spans": [
+                {
+                    "end": {
+                        "col": 54,
+                        "line": 84,
+                        "offset": 2336
+                    },
+                    "file": ".github/workflows/action.yaml",
+                    "start": {
+                        "col": 37,
+                        "line": 84,
+                        "offset": 2319
+                    }
+                },
+                {
+                    "end": {
+                        "col": 60,
+                        "line": 85,
+                        "offset": 2336
+                    },
+                    "file": ".github/workflows/action.yaml",
+                    "start": {
+                        "col": 43,
+                        "line": 85,
+                        "offset": 2319
+                    }
+                }
+            ],
+            "type": [
+                "PartialParsing",
+                [
+                    {
+                        "end": {
+                            "col": 54,
+                            "line": 84,
+                            "offset": 2336
+                        },
+                        "path": ".github/workflows/action.yaml",
+                        "start": {
+                            "col": 37,
+                            "line": 84,
+                            "offset": 2319
+                        }
+                    },
+                    {
+                        "end": {
+                            "col": 60,
+                            "line": 85,
+                            "offset": 2336
+                        },
+                        "path": ".github/workflows/action.yaml",
+                        "start": {
+                            "col": 43,
+                            "line": 85,
+                            "offset": 2319
+                        }
+                    }
+                ]
+            ]
+        },
+        {
+            "code": 3,
+            "level": "warn",
+            "message": "Syntax error at line .github/workflows/action.yaml:93:\n When parsing a snippet as Bash for metavariable-pattern in rule 'yaml.github-actions.security.curl-eval.curl-eval', `${{` was unexpected",
+            "path": ".github/workflows/action.yaml",
+            "spans": [
+                {
+                    "end": {
+                        "col": 36,
+                        "line": 93,
+                        "offset": 2670
+                    },
+                    "file": ".github/workflows/action.yaml",
+                    "start": {
+                        "col": 33,
+                        "line": 93,
+                        "offset": 2667
+                    }
+                }
+            ],
+            "type": [
+                "PartialParsing",
+                [
+                    {
+                        "end": {
+                            "col": 36,
+                            "line": 93,
+                            "offset": 2670
+                        },
+                        "path": ".github/workflows/action.yaml",
+                        "start": {
+                            "col": 33,
+                            "line": 93,
+                            "offset": 2667
+                        }
+                    }
+                ]
+            ]
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line cis-k8s-job/templates/cis-cron-job.yaml:12:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0",
+            "path": "cis-k8s-job/templates/cis-cron-job.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line k8s-risk-assessment-job/templates/cronjob.yaml:17:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0",
+            "path": "k8s-risk-assessment-job/templates/cronjob.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line cis-k8s-job/templates/cis-job.yaml:14:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0",
+            "path": "cis-k8s-job/templates/cis-job.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line kiem-job/templates/deployment.yaml:16:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0",
+            "path": "kiem-job/templates/deployment.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line k8s-risk-assessment-job/templates/job.yaml:13:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0",
+            "path": "k8s-risk-assessment-job/templates/job.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line k8tls-job/templates/k8tls-job.yaml:12:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0",
+            "path": "k8tls-job/templates/k8tls-job.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line kiem-job/templates/job.yaml:13:\n (approximate error location; error nearby after) error calling parser: could not find expected ':' character 0 position 0 returned: 0",
+            "path": "kiem-job/templates/job.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line kiem-job/templates/role.yaml:4:\n (approximate error location; error nearby after) error calling parser: did not find expected key character 0 position 0 returned: 0",
+            "path": "kiem-job/templates/role.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line k8tls-job/templates/imagepullsecret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0",
+            "path": "k8tls-job/templates/imagepullsecret.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line k8s-risk-assessment-job/templates/imagepullsecret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0",
+            "path": "k8s-risk-assessment-job/templates/imagepullsecret.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line kiem-job/templates/imagepullsecret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0",
+            "path": "kiem-job/templates/imagepullsecret.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line cis-k8s-job/templates/imagepullsecret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0",
+            "path": "cis-k8s-job/templates/imagepullsecret.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line k8s-risk-assessment-job/templates/clusterrolebinding.yaml:4:\n (approximate error location; error nearby after) error calling parser: did not find expected key character 0 position 0 returned: 0",
+            "path": "k8s-risk-assessment-job/templates/clusterrolebinding.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line kiem-job/templates/rolebinding.yaml:4:\n (approximate error location; error nearby after) error calling parser: did not find expected key character 0 position 0 returned: 0",
+            "path": "kiem-job/templates/rolebinding.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line k8s-risk-assessment-job/templates/secret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0",
+            "path": "k8s-risk-assessment-job/templates/secret.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line cis-k8s-job/templates/secret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0",
+            "path": "cis-k8s-job/templates/secret.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line k8tls-job/templates/secret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0",
+            "path": "k8tls-job/templates/secret.yaml",
+            "type": "Other syntax error"
+        },
+        {
+            "code": 2,
+            "level": "warn",
+            "message": "Other syntax error at line kiem-job/templates/secret.yaml:1:\n (approximate error location; error nearby after) error calling parser: did not find expected node content character 0 position 0 returned: 0",
+            "path": "kiem-job/templates/secret.yaml",
+            "type": "Other syntax error"
+        }
+    ],
+    "interfile_languages_used": [],
+    "paths": {
+        "scanned": [
+            ".github/workflows/action.yaml",
+            ".gitignore",
+            "Dockerfile",
+            "README.md",
+            "cis-k8s-job/.helmignore",
+            "cis-k8s-job/Chart.yaml",
+            "cis-k8s-job/README.md",
+            "cis-k8s-job/templates/_helpers.tpl",
+            "cis-k8s-job/templates/cis-cron-job.yaml",
+            "cis-k8s-job/templates/cis-job.yaml",
+            "cis-k8s-job/templates/imagepullsecret.yaml",
+            "cis-k8s-job/templates/secret.yaml",
+            "cis-k8s-job/values.yaml",
+            "entrypoint.sh",
+            "k8s-risk-assessment-job/.helmignore",
+            "k8s-risk-assessment-job/Chart.yaml",
+            "k8s-risk-assessment-job/README.md",
+            "k8s-risk-assessment-job/templates/clusterrole.yaml",
+            "k8s-risk-assessment-job/templates/clusterrolebinding.yaml",
+            "k8s-risk-assessment-job/templates/configmap.yaml",
+            "k8s-risk-assessment-job/templates/cronjob.yaml",
+            "k8s-risk-assessment-job/templates/imagepullsecret.yaml",
+            "k8s-risk-assessment-job/templates/job.yaml",
+            "k8s-risk-assessment-job/templates/secret.yaml",
+            "k8s-risk-assessment-job/templates/serviceaccount.yaml",
+            "k8s-risk-assessment-job/values.yaml",
+            "k8tls-job/.helmignore",
+            "k8tls-job/Chart.yaml",
+            "k8tls-job/README.md",
+            "k8tls-job/templates/_helpers.tpl",
+            "k8tls-job/templates/imagepullsecret.yaml",
+            "k8tls-job/templates/k8tls-cronjob.yaml",
+            "k8tls-job/templates/k8tls-job.yaml",
+            "k8tls-job/templates/secret.yaml",
+            "k8tls-job/values.yaml",
+            "kiem-job/.helmignore",
+            "kiem-job/Chart.yaml",
+            "kiem-job/README.md",
+            "kiem-job/templates/_helpers.tpl",
+            "kiem-job/templates/deployment.yaml",
+            "kiem-job/templates/imagepullsecret.yaml",
+            "kiem-job/templates/job.yaml",
+            "kiem-job/templates/role.yaml",
+            "kiem-job/templates/rolebinding.yaml",
+            "kiem-job/templates/secret.yaml",
+            "kiem-job/templates/serviceaccount.yaml",
+            "kiem-job/values.yaml",
+            "nessus-job/README.md",
+            "res/arch.png",
+            "sast-job/Dockerfile",
+            "sast-job/Makefile",
+            "sast-job/README.md",
+            "sast-job/sq-job.py"
+        ]
+    },
+    "results": [
+        {
+            "check_id": "dockerfile.security.missing-user-entrypoint.missing-user-entrypoint",
+            "end": {
+                "col": 40,
+                "line": 6,
+                "offset": 110
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "f430f4e383ef96c7c10f4afe4e3325b0b7e46fac8299c0eedf76f9599a79d309754b1ec6557dba0c1bbc66b380ef40b104b9c8acb63f36e13cbab1858ad48c5c_0",
+                "fix": "USER non-root\nENTRYPOINT [\"/bin/sh\", \"entrypoint.sh\"]",
+                "is_ignored": false,
+                "lines": "ENTRYPOINT [\"/bin/sh\", \"entrypoint.sh\"]",
+                "message": "By not specifying a USER, a program in the container may run as 'root'. This is a security hazard. If an attacker can control a process running as root, they may have control over the container. Ensure that the last USER in a Dockerfile is a USER other than 'root'.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "MEDIUM",
+                    "cwe": [
+                        "CWE-269: Improper Privilege Management"
+                    ],
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A04:2021 - Insecure Design"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A04_2021-Insecure_Design"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 47272,
+                            "rule_id": "ReUW9E",
+                            "rv_id": 928285,
+                            "url": "https://semgrep.dev/playground/r/WrTYvkG/dockerfile.security.missing-user-entrypoint.missing-user-entrypoint",
+                            "version_id": "WrTYvkG"
+                        }
+                    },
+                    "shortlink": "https://sg.run/k281",
+                    "source": "https://semgrep.dev/r/dockerfile.security.missing-user-entrypoint.missing-user-entrypoint",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "dockerfile"
+                    ],
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ]
+                },
+                "metavars": {
+                    "$...VARS": {
+                        "abstract_content": "[\"/bin/sh\"\"entrypoint.sh\"]",
+                        "end": {
+                            "col": 40,
+                            "line": 6,
+                            "offset": 110
+                        },
+                        "start": {
+                            "col": 12,
+                            "line": 6,
+                            "offset": 82
+                        }
+                    }
+                },
+                "severity": "ERROR",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "Dockerfile",
+            "start": {
+                "col": 1,
+                "line": 6,
+                "offset": 71
+            }
+        },
+        {
+            "check_id": "dockerfile.security.missing-user.missing-user",
+            "end": {
+                "col": 29,
+                "line": 12,
+                "offset": 277
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "9a796b827675130b460199b209503f0462abe572a3a7cdb00c64139c997ec707fdba1e3f4d85ae903a206589affdb1593db92ad64f90eb0776c675131721c09a_0",
+                "fix": "USER non-root\nCMD [\"python3\", \"sq-job.py\"]",
+                "is_ignored": false,
+                "lines": "CMD [\"python3\", \"sq-job.py\"]",
+                "message": "By not specifying a USER, a program in the container may run as 'root'. This is a security hazard. If an attacker can control a process running as root, they may have control over the container. Ensure that the last USER in a Dockerfile is a USER other than 'root'.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "MEDIUM",
+                    "cwe": [
+                        "CWE-269: Improper Privilege Management"
+                    ],
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "LOW",
+                    "owasp": [
+                        "A04:2021 - Insecure Design"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A04_2021-Insecure_Design"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 20148,
+                            "rule_id": "AbUN06",
+                            "rv_id": 928286,
+                            "url": "https://semgrep.dev/playground/r/0bTpAQq/dockerfile.security.missing-user.missing-user",
+                            "version_id": "0bTpAQq"
+                        }
+                    },
+                    "shortlink": "https://sg.run/Gbvn",
+                    "source": "https://semgrep.dev/r/dockerfile.security.missing-user.missing-user",
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "technology": [
+                        "dockerfile"
+                    ],
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ]
+                },
+                "metavars": {
+                    "$...VARS": {
+                        "abstract_content": "[\"python3\"\"sq-job.py\"]",
+                        "end": {
+                            "col": 29,
+                            "line": 12,
+                            "offset": 277
+                        },
+                        "start": {
+                            "col": 5,
+                            "line": 12,
+                            "offset": 253
+                        }
+                    }
+                },
+                "severity": "ERROR",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "sast-job/Dockerfile",
+            "start": {
+                "col": 1,
+                "line": 12,
+                "offset": 249
+            }
+        }
+    ],
+    "skipped_rules": [],
+    "version": "1.95.0"
+}

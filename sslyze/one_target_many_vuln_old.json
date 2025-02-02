@@ -253,8 +253,7 @@
                                 {
                                     "openssl_error_string": null,
                                     "trust_store": {
-                                        "ev_oids": [
-                                        ],
+                                        "ev_oids": [],
                                         "name": "Mozilla",
                                         "path": "C:\\_MWea\\tmp\\sslyze\\pem_files\\mozilla_nss.pem",
                                         "version": "2019-11-28"
@@ -399,68 +398,68 @@
                                 }
                             ],
                             "received_certificate_chain": [
-                                        {
-                                            "as_pem": "-----BEGIN CERTIFICATE-----\n-----END CERTIFICATE-----\n",
-                                            "hpkp_pin": "abc",
-                                            "issuer": {
-                                                "attributes": [
-                                                    {
-                                                        "oid": {
-                                                            "dotted_string": "2.5.4.6",
-                                                            "name": "countryName"
-                                                        },
-                                                        "rfc4514_string": "C=US",
-                                                        "value": "US"
-                                                    },
-                                                    {
-                                                        "oid": {
-                                                            "dotted_string": "2.5.4.10",
-                                                            "name": "organizationName"
-                                                        },
-                                                        "rfc4514_string": "O=Let's Encrypt",
-                                                        "value": "Let's Encrypt"
-                                                    },
-                                                    {
-                                                        "oid": {
-                                                            "dotted_string": "2.5.4.3",
-                                                            "name": "commonName"
-                                                        },
-                                                        "rfc4514_string": "CN=Let's Encrypt Authority X3",
-                                                        "value": "Let's Encrypt Authority X3"
-                                                    }
-                                                ],
-                                                "parsing_error": null,
-                                                "rfc4514_string": "C=US,O=Let's Encrypt,CN=Let's Encrypt Authority X3"
+                                {
+                                    "as_pem": "-----BEGIN CERTIFICATE-----\n-----END CERTIFICATE-----\n",
+                                    "hpkp_pin": "abc",
+                                    "issuer": {
+                                        "attributes": [
+                                            {
+                                                "oid": {
+                                                    "dotted_string": "2.5.4.6",
+                                                    "name": "countryName"
+                                                },
+                                                "rfc4514_string": "C=US",
+                                                "value": "US"
                                             },
-                                            "notAfter": "2020-12-21T19:13:34",
-                                            "notBefore": "2020-09-22T19:13:34",
-                                            "publicKey": {
-                                                "algorithm": "_RSAPublicKey",
-                                                "exponent": 65537,
-                                                "size": 2048
+                                            {
+                                                "oid": {
+                                                    "dotted_string": "2.5.4.10",
+                                                    "name": "organizationName"
+                                                },
+                                                "rfc4514_string": "O=Let's Encrypt",
+                                                "value": "Let's Encrypt"
                                             },
-                                            "serialNumber": "123",
-                                            "signatureAlgorithm": "sha256",
-                                            "subject": {
-                                                "attributes": [
-                                                    {
-                                                        "oid": {
-                                                            "dotted_string": "2.5.4.3",
-                                                            "name": "commonName"
-                                                        },
-                                                        "rfc4514_string": "CN=www.example.com",
-                                                        "value": "www.example.com"
-                                                    }
-                                                ],
-                                                "parsing_error": null,
-                                                "rfc4514_string": "CN=www.example.com"
-                                            },
-                                            "subjectAlternativeName": {
-                                                "DNS": [
-                                                    "www.example.com"
-                                                ]
+                                            {
+                                                "oid": {
+                                                    "dotted_string": "2.5.4.3",
+                                                    "name": "commonName"
+                                                },
+                                                "rfc4514_string": "CN=Let's Encrypt Authority X3",
+                                                "value": "Let's Encrypt Authority X3"
                                             }
-                                        }
+                                        ],
+                                        "parsing_error": null,
+                                        "rfc4514_string": "C=US,O=Let's Encrypt,CN=Let's Encrypt Authority X3"
+                                    },
+                                    "notAfter": "2020-12-21T19:13:34",
+                                    "notBefore": "2020-09-22T19:13:34",
+                                    "publicKey": {
+                                        "algorithm": "_RSAPublicKey",
+                                        "exponent": 65537,
+                                        "size": 2048
+                                    },
+                                    "serialNumber": "123",
+                                    "signatureAlgorithm": "sha256",
+                                    "subject": {
+                                        "attributes": [
+                                            {
+                                                "oid": {
+                                                    "dotted_string": "2.5.4.3",
+                                                    "name": "commonName"
+                                                },
+                                                "rfc4514_string": "CN=www.example.com",
+                                                "value": "www.example.com"
+                                            }
+                                        ],
+                                        "parsing_error": null,
+                                        "rfc4514_string": "CN=www.example.com"
+                                    },
+                                    "subjectAlternativeName": {
+                                        "DNS": [
+                                            "www.example.com"
+                                        ]
+                                    }
+                                }
                             ],
                             "received_chain_contains_anchor_certificate": false,
                             "received_chain_has_valid_order": true,
@@ -2021,7 +2020,7 @@
                                 "openssl_name": "RC4-SHA"
                             }
                         }
-					],
+                    ],
                     "cipher_suite_preferred_by_server": null,
                     "rejected_cipher_suites": [
                         {

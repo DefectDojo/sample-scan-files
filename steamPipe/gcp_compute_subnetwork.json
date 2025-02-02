@@ -1,2573 +1,2573 @@
 {
- "columns": [
-  {
-   "name": "name",
-   "data_type": "text"
-  },
-  {
-   "name": "id",
-   "data_type": "int8"
-  },
-  {
-   "name": "network_name",
-   "data_type": "text"
-  },
-  {
-   "name": "state",
-   "data_type": "text"
-  },
-  {
-   "name": "kind",
-   "data_type": "text"
-  },
-  {
-   "name": "description",
-   "data_type": "text"
-  },
-  {
-   "name": "creation_timestamp",
-   "data_type": "timestamptz"
-  },
-  {
-   "name": "enable_flow_logs",
-   "data_type": "bool"
-  },
-  {
-   "name": "fingerprint",
-   "data_type": "text"
-  },
-  {
-   "name": "log_config_aggregation_interval",
-   "data_type": "text"
-  },
-  {
-   "name": "log_config_enable",
-   "data_type": "bool"
-  },
-  {
-   "name": "log_config_filter_expr",
-   "data_type": "text"
-  },
-  {
-   "name": "log_config_flow_sampling",
-   "data_type": "float8"
-  },
-  {
-   "name": "log_config_metadata",
-   "data_type": "text"
-  },
-  {
-   "name": "gateway_address",
-   "data_type": "inet"
-  },
-  {
-   "name": "ip_cidr_range",
-   "data_type": "cidr"
-  },
-  {
-   "name": "ipv6_cidr_range",
-   "data_type": "cidr"
-  },
-  {
-   "name": "network",
-   "data_type": "text"
-  },
-  {
-   "name": "private_ip_google_access",
-   "data_type": "bool"
-  },
-  {
-   "name": "private_ipv6_google_access",
-   "data_type": "text"
-  },
-  {
-   "name": "purpose",
-   "data_type": "text"
-  },
-  {
-   "name": "region",
-   "data_type": "text"
-  },
-  {
-   "name": "role",
-   "data_type": "text"
-  },
-  {
-   "name": "self_link",
-   "data_type": "text"
-  },
-  {
-   "name": "log_config_metadata_fields",
-   "data_type": "jsonb"
-  },
-  {
-   "name": "secondary_ip_ranges",
-   "data_type": "jsonb"
-  },
-  {
-   "name": "iam_policy",
-   "data_type": "jsonb"
-  },
-  {
-   "name": "title",
-   "data_type": "text"
-  },
-  {
-   "name": "akas",
-   "data_type": "jsonb"
-  },
-  {
-   "name": "location",
-   "data_type": "text"
-  },
-  {
-   "name": "project",
-   "data_type": "text"
-  },
-  {
-   "name": "sp_connection_name",
-   "data_type": "text"
-  },
-  {
-   "name": "sp_ctx",
-   "data_type": "jsonb"
-  },
-  {
-   "name": "_ctx",
-   "data_type": "jsonb"
-  }
- ],
- "rows": [
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-southeast1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:33+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "fWvACvuYcxo=",
-   "gateway_address": "10.148.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 296501880719445510,
-   "ip_cidr_range": "10.148.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "asia-southeast1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-southeast1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-southeast1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-southeast2/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:33+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "QEmjbGR9-Jc=",
-   "gateway_address": "10.184.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 7603029828685827590,
-   "ip_cidr_range": "10.184.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "asia-southeast2",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-southeast2",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-southeast2/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-east1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "d8cn1lUep3o=",
-   "gateway_address": "10.140.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 3347539887795768839,
-   "ip_cidr_range": "10.140.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "asia-east1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-east1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-east1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-east2/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "tqUTIgT7dPM=",
-   "gateway_address": "10.170.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 2392221612205444615,
-   "ip_cidr_range": "10.170.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "asia-east2",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-east2",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-east2/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/southamerica-west1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "4YQdVYfldhQ=",
-   "gateway_address": "10.194.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 5864222626821737991,
-   "ip_cidr_range": "10.194.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "southamerica-west1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/southamerica-west1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/southamerica-west1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/southamerica-east1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:29+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "9WuY5yFS37g=",
-   "gateway_address": "10.158.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 9170040108236443146,
-   "ip_cidr_range": "10.158.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "southamerica-east1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/southamerica-east1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/southamerica-east1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-northeast1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "LnkHrbhunw8=",
-   "gateway_address": "10.146.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 2810962811688357384,
-   "ip_cidr_range": "10.146.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "asia-northeast1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-northeast3/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "xdhvhsKu4OI=",
-   "gateway_address": "10.178.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 6980257298728128007,
-   "ip_cidr_range": "10.178.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "asia-northeast3",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast3",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast3/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-northeast2/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "OHkH5SHV_hg=",
-   "gateway_address": "10.174.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 6756936157730475527,
-   "ip_cidr_range": "10.174.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "asia-northeast2",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast2",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast2/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-southwest1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "G1SIVJUbkac=",
-   "gateway_address": "10.204.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 526204990931635719,
-   "ip_cidr_range": "10.204.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-southwest1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-southwest1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-southwest1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-south1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:34+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "WSV5jEMy-3Q=",
-   "gateway_address": "10.160.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 5950045659762822661,
-   "ip_cidr_range": "10.160.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "asia-south1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-south1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-south1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/australia-southeast2/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "UqHEr-cT1Tc=",
-   "gateway_address": "10.192.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 6310972184215195143,
-   "ip_cidr_range": "10.192.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "australia-southeast2",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/australia-southeast2",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/australia-southeast2/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/australia-southeast1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "nMEWRwebtTc=",
-   "gateway_address": "10.152.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 911944997446913543,
-   "ip_cidr_range": "10.152.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "australia-southeast1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/australia-southeast1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/australia-southeast1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-south2/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:33+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "apPvN7_Wr44=",
-   "gateway_address": "10.190.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 7785386542276840966,
-   "ip_cidr_range": "10.190.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "asia-south2",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-south2",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-south2/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-west1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "FXtEFPr59oY=",
-   "gateway_address": "10.138.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 7191786972086832648,
-   "ip_cidr_range": "10.138.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-west1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-west2/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "z7R2hqOO4e0=",
-   "gateway_address": "10.168.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 6819531612397800968,
-   "ip_cidr_range": "10.168.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-west2",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west2",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west2/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-west4/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "ufX_vJ_8U9E=",
-   "gateway_address": "10.182.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 9160533928271187464,
-   "ip_cidr_range": "10.182.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-west4",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west4",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west4/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-west8/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-11-16T18:38:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "vUnfzk4hmHw=",
-   "gateway_address": "10.220.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 6727810206387645119,
-   "ip_cidr_range": "10.220.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-west8",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west8",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west8/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-west3/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "7FmJN8ia3rk=",
-   "gateway_address": "10.180.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 7462922381968051720,
-   "ip_cidr_range": "10.180.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-west3",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west3",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west3/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-central1/subnetworks/gke-accuknox-onprem-cluster-dcb6898b-pe-subnet"
-   ],
-   "creation_timestamp": "2024-10-29T10:40:16+05:30",
-   "description": "Control Plane Endpoint Subnetwork",
-   "enable_flow_logs": false,
-   "fingerprint": "-bJv1RM1gEo=",
-   "gateway_address": "172.16.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 7346433385579794647,
-   "ip_cidr_range": "172.16.0.0/28",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-central1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "gke-accuknox-onprem-cluster-dcb6898b-pe-subnet",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/net1",
-   "network_name": "net1",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1/subnetworks/gke-accuknox-onprem-cluster-dcb6898b-pe-subnet",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "gke-accuknox-onprem-cluster-dcb6898b-pe-subnet"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-central1/subnetworks/gke-accuknox-stage-87772857-pe-subnet"
-   ],
-   "creation_timestamp": "2024-09-20T15:24:18+05:30",
-   "description": "Control Plane Endpoint Subnetwork",
-   "enable_flow_logs": false,
-   "fingerprint": "fdnfjaft8Rk=",
-   "gateway_address": "10.5.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 511525239335745701,
-   "ip_cidr_range": "10.5.0.0/28",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-central1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "gke-accuknox-stage-87772857-pe-subnet",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/accuknox-stage",
-   "network_name": "accuknox-stage",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1/subnetworks/gke-accuknox-stage-87772857-pe-subnet",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "gke-accuknox-stage-87772857-pe-subnet"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-central1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:29+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "F_3rZEVlu7c=",
-   "gateway_address": "10.128.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 1945279494248238602,
-   "ip_cidr_range": "10.128.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-central1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": true,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1",
-   "role": "",
-   "secondary_ip_ranges": [
-    {
-     "ipCidrRange": "10.100.0.0/14",
-     "rangeName": "gke-devops-test-cluster-pods-614c78ec",
-     "reservedInternalRange": "https://networkconnectivity.googleapis.com/v1/projects/accuknox-cnapp/locations/global/internalRanges/gke-devops-test-cluster-pods-614c78ec"
-    },
-    {
-     "ipCidrRange": "10.12.0.0/14",
-     "rangeName": "gke-jfrog-test-cluster-pods-5ee7802c",
-     "reservedInternalRange": "https://networkconnectivity.googleapis.com/v1/projects/accuknox-cnapp/locations/global/internalRanges/gke-jfrog-test-cluster-pods-5ee7802c"
-    }
-   ],
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-south1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:30+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "k_EXJIMn5Wc=",
-   "gateway_address": "10.206.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 4371073758853893641,
-   "ip_cidr_range": "10.206.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-south1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-south1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-south1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-central1/subnetworks/sub1-net1"
-   ],
-   "creation_timestamp": "2024-10-29T10:39:17+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "Uv9yKntzoyA=",
-   "gateway_address": "10.0.128.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 2538180071362777874,
-   "ip_cidr_range": "10.0.128.0/17",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-central1",
-   "log_config_aggregation_interval": "",
-   "log_config_enable": false,
-   "log_config_filter_expr": "",
-   "log_config_flow_sampling": 0,
-   "log_config_metadata": "",
-   "log_config_metadata_fields": null,
-   "name": "sub1-net1",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/net1",
-   "network_name": "net1",
-   "private_ip_google_access": true,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1",
-   "role": "",
-   "secondary_ip_ranges": [
-    {
-     "ipCidrRange": "192.168.0.0/18",
-     "rangeName": "pod-range"
-    },
-    {
-     "ipCidrRange": "192.168.64.0/18",
-     "rangeName": "svc-range"
-    }
-   ],
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1/subnetworks/sub1-net1",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "sub1-net1"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-central1/subnetworks/accuknox-stage-subnet"
-   ],
-   "creation_timestamp": "2024-09-20T14:48:17+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "K80WthN7ZbI=",
-   "gateway_address": "10.4.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 4420849268663812918,
-   "ip_cidr_range": "10.4.0.0/16",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-central1",
-   "log_config_aggregation_interval": "INTERVAL_5_SEC",
-   "log_config_enable": false,
-   "log_config_filter_expr": "",
-   "log_config_flow_sampling": 0.5,
-   "log_config_metadata": "INCLUDE_ALL_METADATA",
-   "log_config_metadata_fields": null,
-   "name": "accuknox-stage-subnet",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/accuknox-stage",
-   "network_name": "accuknox-stage",
-   "private_ip_google_access": true,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1",
-   "role": "",
-   "secondary_ip_ranges": [
-    {
-     "ipCidrRange": "10.84.0.0/14",
-     "rangeName": "gke-accuknox-stage-pods-4b4834a0",
-     "reservedInternalRange": "https://networkconnectivity.googleapis.com/v1/projects/accuknox-cnapp/locations/global/internalRanges/gke-accuknox-stage-pods-4b4834a0"
-    }
-   ],
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1/subnetworks/accuknox-stage-subnet",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "accuknox-stage-subnet"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/northamerica-northeast2/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:30+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "jbAO7z68Bic=",
-   "gateway_address": "10.188.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 5993618476642897417,
-   "ip_cidr_range": "10.188.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "northamerica-northeast2",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-northeast2",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-northeast2/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-east5/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:30+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "HLbbmTxCYv4=",
-   "gateway_address": "10.202.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 337442715870727689,
-   "ip_cidr_range": "10.202.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-east5",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east5",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east5/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/northamerica-south1/subnetworks/default"
-   ],
-   "creation_timestamp": "2024-09-03T23:24:43+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "pglppPR-YNo=",
-   "gateway_address": "10.224.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 3392669282377331596,
-   "ip_cidr_range": "10.224.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "northamerica-south1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-south1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-south1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-east1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:29+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "H-zcCPSFM3c=",
-   "gateway_address": "10.142.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 1911347603342396938,
-   "ip_cidr_range": "10.142.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-east1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": true,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-east7/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T21:11:57+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "v4GFB1KGZtU=",
-   "gateway_address": "10.196.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 9136919781465971626,
-   "ip_cidr_range": "10.196.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-east7",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east7",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east7/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/northamerica-northeast1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "m8uNC9WOkHM=",
-   "gateway_address": "10.162.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 2619798271224483336,
-   "ip_cidr_range": "10.162.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "northamerica-northeast1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-northeast1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-northeast1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-east4/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:30+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "6DkTatKbfy0=",
-   "gateway_address": "10.150.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 1273128670181232137,
-   "ip_cidr_range": "10.150.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-east4",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east4",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east4/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-east1/subnetworks/ahv"
-   ],
-   "creation_timestamp": "2023-12-14T17:39:35+05:30",
-   "description": "ahv-subnet",
-   "enable_flow_logs": false,
-   "fingerprint": "CvSih8maw5s=",
-   "gateway_address": "10.0.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 6537703670985215632,
-   "ip_cidr_range": "10.0.0.0/24",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "us-east1",
-   "log_config_aggregation_interval": "INTERVAL_5_SEC",
-   "log_config_enable": false,
-   "log_config_filter_expr": "",
-   "log_config_flow_sampling": 0.5,
-   "log_config_metadata": "INCLUDE_ALL_METADATA",
-   "log_config_metadata_fields": null,
-   "name": "ahv",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east1/subnetworks/ahv",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "ahv"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west9/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "XjZSAitODcA=",
-   "gateway_address": "10.200.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 7882796181506788872,
-   "ip_cidr_range": "10.200.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-west9",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west9",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west9/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west4/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:30+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "44ceqRObVG0=",
-   "gateway_address": "10.164.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 5744378475029237257,
-   "ip_cidr_range": "10.164.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-west4",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west4",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west4/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west3/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "ccjYmmvrwmk=",
-   "gateway_address": "10.156.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 2549781207558950408,
-   "ip_cidr_range": "10.156.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-west3",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west3",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west3/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west6/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "hZrBzF2ga3A=",
-   "gateway_address": "10.172.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 6821679431053250055,
-   "ip_cidr_range": "10.172.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-west6",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west6",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west6/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west10/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "BBXtFZYyqTA=",
-   "gateway_address": "10.214.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 7483046820600647176,
-   "ip_cidr_range": "10.214.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-west10",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west10",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west10/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west8/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "ZZDYpzXKU1I=",
-   "gateway_address": "10.198.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 7124625752435494407,
-   "ip_cidr_range": "10.198.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-west8",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west8",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west8/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/me-central2/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:33+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "MI5-Jdcvm5Q=",
-   "gateway_address": "10.216.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 6239938518970568198,
-   "ip_cidr_range": "10.216.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "me-central2",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-central2",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-central2/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west2/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "hCMVwIv6DYI=",
-   "gateway_address": "10.154.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 5116868944036400648,
-   "ip_cidr_range": "10.154.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-west2",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west2",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west2/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:31+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "3-i9Mt9pBn0=",
-   "gateway_address": "10.132.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 7444317429750337032,
-   "ip_cidr_range": "10.132.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-west1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west12/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "X0RbyE9gvKE=",
-   "gateway_address": "10.210.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 3535275292010778119,
-   "ip_cidr_range": "10.210.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-west12",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west12",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west12/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-central2/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "ZV-ThMb05o4=",
-   "gateway_address": "10.186.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 8441081572811378183,
-   "ip_cidr_range": "10.186.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-central2",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-central2",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-central2/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/me-west1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "uXdtHUreOP8=",
-   "gateway_address": "10.208.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 3245111523445870087,
-   "ip_cidr_range": "10.208.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "me-west1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-west1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-west1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-north1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:32+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "znRj47iGFe4=",
-   "gateway_address": "10.166.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 8690404991279861255,
-   "ip_cidr_range": "10.166.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "europe-north1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-north1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-north1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/me-central1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-10-13T17:28:33+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "si4tbZ0oJP4=",
-   "gateway_address": "10.212.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 5821679919192903174,
-   "ip_cidr_range": "10.212.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "me-central1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-central1",
-   "role": "",
-   "secondary_ip_ranges": null,
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-central1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  },
-  {
-   "_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "akas": [
-    "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/africa-south1/subnetworks/default"
-   ],
-   "creation_timestamp": "2023-11-09T09:11:04+05:30",
-   "description": "",
-   "enable_flow_logs": false,
-   "fingerprint": "rUOrmYccZLQ=",
-   "gateway_address": "10.218.0.1",
-   "iam_policy": {
-    "etag": "ACAB"
-   },
-   "id": 5066691373699295807,
-   "ip_cidr_range": "10.218.0.0/20",
-   "ipv6_cidr_range": null,
-   "kind": "compute#subnetwork",
-   "location": "africa-south1",
-   "log_config_aggregation_interval": null,
-   "log_config_enable": false,
-   "log_config_filter_expr": null,
-   "log_config_flow_sampling": null,
-   "log_config_metadata": null,
-   "log_config_metadata_fields": null,
-   "name": "default",
-   "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
-   "network_name": "default",
-   "private_ip_google_access": false,
-   "private_ipv6_google_access": "",
-   "project": "accuknox-cnapp",
-   "purpose": "PRIVATE",
-   "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/africa-south1",
-   "role": "",
-   "secondary_ip_ranges": [
-    {
-     "ipCidrRange": "10.0.245.0/24",
-     "rangeName": "range-1"
-    }
-   ],
-   "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/africa-south1/subnetworks/default",
-   "sp_connection_name": "gcp",
-   "sp_ctx": {
-    "connection_name": "gcp",
-    "steampipe": {
-     "sdk_version": "5.10.4"
-    }
-   },
-   "state": "",
-   "title": "default"
-  }
- ]
+    "columns": [
+        {
+            "name": "name",
+            "data_type": "text"
+        },
+        {
+            "name": "id",
+            "data_type": "int8"
+        },
+        {
+            "name": "network_name",
+            "data_type": "text"
+        },
+        {
+            "name": "state",
+            "data_type": "text"
+        },
+        {
+            "name": "kind",
+            "data_type": "text"
+        },
+        {
+            "name": "description",
+            "data_type": "text"
+        },
+        {
+            "name": "creation_timestamp",
+            "data_type": "timestamptz"
+        },
+        {
+            "name": "enable_flow_logs",
+            "data_type": "bool"
+        },
+        {
+            "name": "fingerprint",
+            "data_type": "text"
+        },
+        {
+            "name": "log_config_aggregation_interval",
+            "data_type": "text"
+        },
+        {
+            "name": "log_config_enable",
+            "data_type": "bool"
+        },
+        {
+            "name": "log_config_filter_expr",
+            "data_type": "text"
+        },
+        {
+            "name": "log_config_flow_sampling",
+            "data_type": "float8"
+        },
+        {
+            "name": "log_config_metadata",
+            "data_type": "text"
+        },
+        {
+            "name": "gateway_address",
+            "data_type": "inet"
+        },
+        {
+            "name": "ip_cidr_range",
+            "data_type": "cidr"
+        },
+        {
+            "name": "ipv6_cidr_range",
+            "data_type": "cidr"
+        },
+        {
+            "name": "network",
+            "data_type": "text"
+        },
+        {
+            "name": "private_ip_google_access",
+            "data_type": "bool"
+        },
+        {
+            "name": "private_ipv6_google_access",
+            "data_type": "text"
+        },
+        {
+            "name": "purpose",
+            "data_type": "text"
+        },
+        {
+            "name": "region",
+            "data_type": "text"
+        },
+        {
+            "name": "role",
+            "data_type": "text"
+        },
+        {
+            "name": "self_link",
+            "data_type": "text"
+        },
+        {
+            "name": "log_config_metadata_fields",
+            "data_type": "jsonb"
+        },
+        {
+            "name": "secondary_ip_ranges",
+            "data_type": "jsonb"
+        },
+        {
+            "name": "iam_policy",
+            "data_type": "jsonb"
+        },
+        {
+            "name": "title",
+            "data_type": "text"
+        },
+        {
+            "name": "akas",
+            "data_type": "jsonb"
+        },
+        {
+            "name": "location",
+            "data_type": "text"
+        },
+        {
+            "name": "project",
+            "data_type": "text"
+        },
+        {
+            "name": "sp_connection_name",
+            "data_type": "text"
+        },
+        {
+            "name": "sp_ctx",
+            "data_type": "jsonb"
+        },
+        {
+            "name": "_ctx",
+            "data_type": "jsonb"
+        }
+    ],
+    "rows": [
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-southeast1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:33+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "fWvACvuYcxo=",
+            "gateway_address": "10.148.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 296501880719445510,
+            "ip_cidr_range": "10.148.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "asia-southeast1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-southeast1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-southeast1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-southeast2/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:33+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "QEmjbGR9-Jc=",
+            "gateway_address": "10.184.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 7603029828685827590,
+            "ip_cidr_range": "10.184.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "asia-southeast2",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-southeast2",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-southeast2/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-east1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "d8cn1lUep3o=",
+            "gateway_address": "10.140.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 3347539887795768839,
+            "ip_cidr_range": "10.140.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "asia-east1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-east1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-east1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-east2/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "tqUTIgT7dPM=",
+            "gateway_address": "10.170.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 2392221612205444615,
+            "ip_cidr_range": "10.170.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "asia-east2",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-east2",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-east2/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/southamerica-west1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "4YQdVYfldhQ=",
+            "gateway_address": "10.194.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 5864222626821737991,
+            "ip_cidr_range": "10.194.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "southamerica-west1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/southamerica-west1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/southamerica-west1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/southamerica-east1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:29+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "9WuY5yFS37g=",
+            "gateway_address": "10.158.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 9170040108236443146,
+            "ip_cidr_range": "10.158.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "southamerica-east1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/southamerica-east1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/southamerica-east1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-northeast1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "LnkHrbhunw8=",
+            "gateway_address": "10.146.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 2810962811688357384,
+            "ip_cidr_range": "10.146.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "asia-northeast1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-northeast3/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "xdhvhsKu4OI=",
+            "gateway_address": "10.178.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 6980257298728128007,
+            "ip_cidr_range": "10.178.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "asia-northeast3",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast3",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast3/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-northeast2/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "OHkH5SHV_hg=",
+            "gateway_address": "10.174.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 6756936157730475527,
+            "ip_cidr_range": "10.174.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "asia-northeast2",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast2",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-northeast2/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-southwest1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "G1SIVJUbkac=",
+            "gateway_address": "10.204.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 526204990931635719,
+            "ip_cidr_range": "10.204.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-southwest1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-southwest1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-southwest1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-south1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:34+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "WSV5jEMy-3Q=",
+            "gateway_address": "10.160.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 5950045659762822661,
+            "ip_cidr_range": "10.160.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "asia-south1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-south1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-south1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/australia-southeast2/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "UqHEr-cT1Tc=",
+            "gateway_address": "10.192.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 6310972184215195143,
+            "ip_cidr_range": "10.192.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "australia-southeast2",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/australia-southeast2",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/australia-southeast2/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/australia-southeast1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "nMEWRwebtTc=",
+            "gateway_address": "10.152.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 911944997446913543,
+            "ip_cidr_range": "10.152.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "australia-southeast1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/australia-southeast1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/australia-southeast1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/asia-south2/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:33+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "apPvN7_Wr44=",
+            "gateway_address": "10.190.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 7785386542276840966,
+            "ip_cidr_range": "10.190.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "asia-south2",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-south2",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/asia-south2/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-west1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "FXtEFPr59oY=",
+            "gateway_address": "10.138.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 7191786972086832648,
+            "ip_cidr_range": "10.138.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-west1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-west2/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "z7R2hqOO4e0=",
+            "gateway_address": "10.168.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 6819531612397800968,
+            "ip_cidr_range": "10.168.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-west2",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west2",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west2/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-west4/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "ufX_vJ_8U9E=",
+            "gateway_address": "10.182.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 9160533928271187464,
+            "ip_cidr_range": "10.182.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-west4",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west4",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west4/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-west8/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-11-16T18:38:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "vUnfzk4hmHw=",
+            "gateway_address": "10.220.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 6727810206387645119,
+            "ip_cidr_range": "10.220.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-west8",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west8",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west8/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-west3/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "7FmJN8ia3rk=",
+            "gateway_address": "10.180.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 7462922381968051720,
+            "ip_cidr_range": "10.180.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-west3",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west3",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-west3/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-central1/subnetworks/gke-accuknox-onprem-cluster-dcb6898b-pe-subnet"
+            ],
+            "creation_timestamp": "2024-10-29T10:40:16+05:30",
+            "description": "Control Plane Endpoint Subnetwork",
+            "enable_flow_logs": false,
+            "fingerprint": "-bJv1RM1gEo=",
+            "gateway_address": "172.16.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 7346433385579794647,
+            "ip_cidr_range": "172.16.0.0/28",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-central1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "gke-accuknox-onprem-cluster-dcb6898b-pe-subnet",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/net1",
+            "network_name": "net1",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1/subnetworks/gke-accuknox-onprem-cluster-dcb6898b-pe-subnet",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "gke-accuknox-onprem-cluster-dcb6898b-pe-subnet"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-central1/subnetworks/gke-accuknox-stage-87772857-pe-subnet"
+            ],
+            "creation_timestamp": "2024-09-20T15:24:18+05:30",
+            "description": "Control Plane Endpoint Subnetwork",
+            "enable_flow_logs": false,
+            "fingerprint": "fdnfjaft8Rk=",
+            "gateway_address": "10.5.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 511525239335745701,
+            "ip_cidr_range": "10.5.0.0/28",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-central1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "gke-accuknox-stage-87772857-pe-subnet",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/accuknox-stage",
+            "network_name": "accuknox-stage",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1/subnetworks/gke-accuknox-stage-87772857-pe-subnet",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "gke-accuknox-stage-87772857-pe-subnet"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-central1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:29+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "F_3rZEVlu7c=",
+            "gateway_address": "10.128.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 1945279494248238602,
+            "ip_cidr_range": "10.128.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-central1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": true,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1",
+            "role": "",
+            "secondary_ip_ranges": [
+                {
+                    "ipCidrRange": "10.100.0.0/14",
+                    "rangeName": "gke-devops-test-cluster-pods-614c78ec",
+                    "reservedInternalRange": "https://networkconnectivity.googleapis.com/v1/projects/accuknox-cnapp/locations/global/internalRanges/gke-devops-test-cluster-pods-614c78ec"
+                },
+                {
+                    "ipCidrRange": "10.12.0.0/14",
+                    "rangeName": "gke-jfrog-test-cluster-pods-5ee7802c",
+                    "reservedInternalRange": "https://networkconnectivity.googleapis.com/v1/projects/accuknox-cnapp/locations/global/internalRanges/gke-jfrog-test-cluster-pods-5ee7802c"
+                }
+            ],
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-south1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:30+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "k_EXJIMn5Wc=",
+            "gateway_address": "10.206.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 4371073758853893641,
+            "ip_cidr_range": "10.206.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-south1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-south1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-south1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-central1/subnetworks/sub1-net1"
+            ],
+            "creation_timestamp": "2024-10-29T10:39:17+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "Uv9yKntzoyA=",
+            "gateway_address": "10.0.128.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 2538180071362777874,
+            "ip_cidr_range": "10.0.128.0/17",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-central1",
+            "log_config_aggregation_interval": "",
+            "log_config_enable": false,
+            "log_config_filter_expr": "",
+            "log_config_flow_sampling": 0,
+            "log_config_metadata": "",
+            "log_config_metadata_fields": null,
+            "name": "sub1-net1",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/net1",
+            "network_name": "net1",
+            "private_ip_google_access": true,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1",
+            "role": "",
+            "secondary_ip_ranges": [
+                {
+                    "ipCidrRange": "192.168.0.0/18",
+                    "rangeName": "pod-range"
+                },
+                {
+                    "ipCidrRange": "192.168.64.0/18",
+                    "rangeName": "svc-range"
+                }
+            ],
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1/subnetworks/sub1-net1",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "sub1-net1"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-central1/subnetworks/accuknox-stage-subnet"
+            ],
+            "creation_timestamp": "2024-09-20T14:48:17+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "K80WthN7ZbI=",
+            "gateway_address": "10.4.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 4420849268663812918,
+            "ip_cidr_range": "10.4.0.0/16",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-central1",
+            "log_config_aggregation_interval": "INTERVAL_5_SEC",
+            "log_config_enable": false,
+            "log_config_filter_expr": "",
+            "log_config_flow_sampling": 0.5,
+            "log_config_metadata": "INCLUDE_ALL_METADATA",
+            "log_config_metadata_fields": null,
+            "name": "accuknox-stage-subnet",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/accuknox-stage",
+            "network_name": "accuknox-stage",
+            "private_ip_google_access": true,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1",
+            "role": "",
+            "secondary_ip_ranges": [
+                {
+                    "ipCidrRange": "10.84.0.0/14",
+                    "rangeName": "gke-accuknox-stage-pods-4b4834a0",
+                    "reservedInternalRange": "https://networkconnectivity.googleapis.com/v1/projects/accuknox-cnapp/locations/global/internalRanges/gke-accuknox-stage-pods-4b4834a0"
+                }
+            ],
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-central1/subnetworks/accuknox-stage-subnet",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "accuknox-stage-subnet"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/northamerica-northeast2/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:30+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "jbAO7z68Bic=",
+            "gateway_address": "10.188.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 5993618476642897417,
+            "ip_cidr_range": "10.188.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "northamerica-northeast2",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-northeast2",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-northeast2/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-east5/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:30+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "HLbbmTxCYv4=",
+            "gateway_address": "10.202.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 337442715870727689,
+            "ip_cidr_range": "10.202.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-east5",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east5",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east5/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/northamerica-south1/subnetworks/default"
+            ],
+            "creation_timestamp": "2024-09-03T23:24:43+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "pglppPR-YNo=",
+            "gateway_address": "10.224.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 3392669282377331596,
+            "ip_cidr_range": "10.224.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "northamerica-south1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-south1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-south1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-east1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:29+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "H-zcCPSFM3c=",
+            "gateway_address": "10.142.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 1911347603342396938,
+            "ip_cidr_range": "10.142.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-east1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": true,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-east7/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T21:11:57+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "v4GFB1KGZtU=",
+            "gateway_address": "10.196.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 9136919781465971626,
+            "ip_cidr_range": "10.196.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-east7",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east7",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east7/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/northamerica-northeast1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "m8uNC9WOkHM=",
+            "gateway_address": "10.162.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 2619798271224483336,
+            "ip_cidr_range": "10.162.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "northamerica-northeast1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-northeast1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/northamerica-northeast1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-east4/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:30+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "6DkTatKbfy0=",
+            "gateway_address": "10.150.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 1273128670181232137,
+            "ip_cidr_range": "10.150.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-east4",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east4",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east4/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/us-east1/subnetworks/ahv"
+            ],
+            "creation_timestamp": "2023-12-14T17:39:35+05:30",
+            "description": "ahv-subnet",
+            "enable_flow_logs": false,
+            "fingerprint": "CvSih8maw5s=",
+            "gateway_address": "10.0.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 6537703670985215632,
+            "ip_cidr_range": "10.0.0.0/24",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "us-east1",
+            "log_config_aggregation_interval": "INTERVAL_5_SEC",
+            "log_config_enable": false,
+            "log_config_filter_expr": "",
+            "log_config_flow_sampling": 0.5,
+            "log_config_metadata": "INCLUDE_ALL_METADATA",
+            "log_config_metadata_fields": null,
+            "name": "ahv",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/us-east1/subnetworks/ahv",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "ahv"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west9/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "XjZSAitODcA=",
+            "gateway_address": "10.200.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 7882796181506788872,
+            "ip_cidr_range": "10.200.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-west9",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west9",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west9/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west4/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:30+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "44ceqRObVG0=",
+            "gateway_address": "10.164.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 5744378475029237257,
+            "ip_cidr_range": "10.164.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-west4",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west4",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west4/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west3/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "ccjYmmvrwmk=",
+            "gateway_address": "10.156.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 2549781207558950408,
+            "ip_cidr_range": "10.156.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-west3",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west3",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west3/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west6/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "hZrBzF2ga3A=",
+            "gateway_address": "10.172.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 6821679431053250055,
+            "ip_cidr_range": "10.172.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-west6",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west6",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west6/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west10/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "BBXtFZYyqTA=",
+            "gateway_address": "10.214.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 7483046820600647176,
+            "ip_cidr_range": "10.214.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-west10",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west10",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west10/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west8/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "ZZDYpzXKU1I=",
+            "gateway_address": "10.198.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 7124625752435494407,
+            "ip_cidr_range": "10.198.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-west8",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west8",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west8/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/me-central2/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:33+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "MI5-Jdcvm5Q=",
+            "gateway_address": "10.216.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 6239938518970568198,
+            "ip_cidr_range": "10.216.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "me-central2",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-central2",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-central2/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west2/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "hCMVwIv6DYI=",
+            "gateway_address": "10.154.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 5116868944036400648,
+            "ip_cidr_range": "10.154.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-west2",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west2",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west2/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:31+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "3-i9Mt9pBn0=",
+            "gateway_address": "10.132.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 7444317429750337032,
+            "ip_cidr_range": "10.132.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-west1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-west12/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "X0RbyE9gvKE=",
+            "gateway_address": "10.210.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 3535275292010778119,
+            "ip_cidr_range": "10.210.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-west12",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west12",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-west12/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-central2/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "ZV-ThMb05o4=",
+            "gateway_address": "10.186.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 8441081572811378183,
+            "ip_cidr_range": "10.186.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-central2",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-central2",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-central2/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/me-west1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "uXdtHUreOP8=",
+            "gateway_address": "10.208.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 3245111523445870087,
+            "ip_cidr_range": "10.208.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "me-west1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-west1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-west1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/europe-north1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:32+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "znRj47iGFe4=",
+            "gateway_address": "10.166.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 8690404991279861255,
+            "ip_cidr_range": "10.166.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "europe-north1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-north1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/europe-north1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/me-central1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-10-13T17:28:33+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "si4tbZ0oJP4=",
+            "gateway_address": "10.212.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 5821679919192903174,
+            "ip_cidr_range": "10.212.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "me-central1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "DISABLE_GOOGLE_ACCESS",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-central1",
+            "role": "",
+            "secondary_ip_ranges": null,
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/me-central1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        },
+        {
+            "_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "akas": [
+                "gcp://compute.googleapis.com/projects/accuknox-cnapp/regions/africa-south1/subnetworks/default"
+            ],
+            "creation_timestamp": "2023-11-09T09:11:04+05:30",
+            "description": "",
+            "enable_flow_logs": false,
+            "fingerprint": "rUOrmYccZLQ=",
+            "gateway_address": "10.218.0.1",
+            "iam_policy": {
+                "etag": "ACAB"
+            },
+            "id": 5066691373699295807,
+            "ip_cidr_range": "10.218.0.0/20",
+            "ipv6_cidr_range": null,
+            "kind": "compute#subnetwork",
+            "location": "africa-south1",
+            "log_config_aggregation_interval": null,
+            "log_config_enable": false,
+            "log_config_filter_expr": null,
+            "log_config_flow_sampling": null,
+            "log_config_metadata": null,
+            "log_config_metadata_fields": null,
+            "name": "default",
+            "network": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/global/networks/default",
+            "network_name": "default",
+            "private_ip_google_access": false,
+            "private_ipv6_google_access": "",
+            "project": "accuknox-cnapp",
+            "purpose": "PRIVATE",
+            "region": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/africa-south1",
+            "role": "",
+            "secondary_ip_ranges": [
+                {
+                    "ipCidrRange": "10.0.245.0/24",
+                    "rangeName": "range-1"
+                }
+            ],
+            "self_link": "https://www.googleapis.com/compute/v1/projects/accuknox-cnapp/regions/africa-south1/subnetworks/default",
+            "sp_connection_name": "gcp",
+            "sp_ctx": {
+                "connection_name": "gcp",
+                "steampipe": {
+                    "sdk_version": "5.10.4"
+                }
+            },
+            "state": "",
+            "title": "default"
+        }
+    ]
 }

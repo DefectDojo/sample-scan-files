@@ -1,1 +1,1399 @@
-{"errors": [], "interfile_languages_used": [], "paths": {"scanned": [".all-contributorsrc", ".github/workflows/flake8.yml", ".github/workflows/hadolint.yml", ".gitignore", ".vscode/settings.json", "Dockerfile", "Procfile", "PyGoatBot.py", "README.md", "Solutions/img/img4.png", "Solutions/img/pic1.png", "Solutions/img/pic2.png", "Solutions/img/pic3.png", "Solutions/solution.md", "app.log", "chatbot/README.md", "chatbot/pygoatbot.ipynb", "db.sqlite3~f1cf11156c656314790387c2c9eb7f187a3d480e", "docker-compose.yml", "docs/dev_guide.md", "gh-md-toc", "installer.sh", "introduction/__init__.py", "introduction/admin.py", "introduction/apis.py", "introduction/apps.py", "introduction/forms.py", "introduction/lab_code/test.py", "introduction/migrations/0001_initial.py", "introduction/migrations/0002_auto_20210414_1510.py", "introduction/migrations/0003_password_user.py", "introduction/migrations/0004_auto_20210415_1722.py", "introduction/migrations/0005_auto_20210415_1748.py", "introduction/migrations/0006_comments.py", "introduction/migrations/0007_auto_20210418_0022.py", "introduction/migrations/0008_otp.py", "introduction/migrations/0009_auto_20210517_2047.py", "introduction/migrations/0010_authlogin.py", "introduction/migrations/0011_tickits.py", "introduction/migrations/0012_alter_tickits_user.py", "introduction/migrations/0013_alter_comments_id_alter_faang_id_alter_info_id_and_more.py", "introduction/migrations/0014_sql_lab_table.py", "introduction/migrations/0015_blogs.py", "introduction/migrations/0016_alter_blogs_blog_id.py", "introduction/migrations/0017_cf_user.py", "introduction/migrations/0018_cf_user_password2.py", "introduction/migrations/0019_af_admin.py", "introduction/migrations/0020_af_session_id_alter_af_admin_lockout_cooldown.py", "introduction/migrations/0021_csrf_user_tbl.py", "introduction/migrations/__init__.py", "introduction/mitre.py", "introduction/models.py", "introduction/playground/A6/soln.py", "introduction/playground/A6/utility.py", "introduction/playground/A9/api.py", "introduction/playground/A9/archive.py", "introduction/playground/A9/main.py", "introduction/playground/__init__.py", "introduction/playground/readme.md", "introduction/playground/ssrf/__init__.py", "introduction/playground/ssrf/main.py", "introduction/playground/ssrf/secret.txt", "introduction/playground/ssrf/templates/Lab/ssrf/blogs/blog1.txt", "introduction/playground/ssrf/templates/Lab/ssrf/blogs/blog2.txt", "introduction/playground/ssrf/templates/Lab/ssrf/blogs/blog3.txt", "introduction/playground/ssrf/templates/Lab/ssrf/blogs/blog4.txt", "introduction/playground/ssrf/test.py", "introduction/static/Lab/icons/pygoat-mini.png", "introduction/static/Lab/icons/pygoat-mini.svg", "introduction/static/Lab/icons/pygoat-small.png", "introduction/static/Lab/icons/pygoat-small.svg", "introduction/static/Lab/icons/pygoat.png", "introduction/static/Lab/icons/pygoat.svg", "introduction/static/Lab/image/xxe.jpg", "introduction/static/Lab/ssrf.css", "introduction/static/Lab/ssrf.js", "introduction/static/Lab/ssti.css", "introduction/static/Lab/xss.js", "introduction/static/css/common.css", "introduction/static/css/dark-theme.css", "introduction/static/css/home.css", "introduction/static/css/light.css", "introduction/static/css/playground.css", "introduction/static/css/style.css", "introduction/static/fake.txt", "introduction/static/google.jpg", "introduction/static/js/a6.js", "introduction/static/js/a7.js", "introduction/static/js/a9.js", "introduction/static/real.txt", "introduction/templates/Lab/A10/a10.html", "introduction/templates/Lab/A10/a10_lab.html", "introduction/templates/Lab/A10/a10_lab2.html", "introduction/templates/Lab/A10/debug.log", "introduction/templates/Lab/A11/a11.html", "introduction/templates/Lab/A11/a11_lab.html", "introduction/templates/Lab/A9/a9.html", "introduction/templates/Lab/A9/a9_lab.html", "introduction/templates/Lab/A9/a9_lab2.html", "introduction/templates/Lab/AUTH/auth_home.html", "introduction/templates/Lab/AUTH/auth_lab.html", "introduction/templates/Lab/AUTH/auth_lab_login.html", "introduction/templates/Lab/AUTH/auth_lab_signup.html", "introduction/templates/Lab/AUTH/auth_success.html", "introduction/templates/Lab/BrokenAccess/ba.html", "introduction/templates/Lab/BrokenAccess/ba_lab.html", "introduction/templates/Lab/BrokenAuth/bau.html", "introduction/templates/Lab/BrokenAuth/bau_lab.html", "introduction/templates/Lab/BrokenAuth/otp.html", "introduction/templates/Lab/CMD/cmd.html", "introduction/templates/Lab/CMD/cmd_lab.html", "introduction/templates/Lab/CMD/cmd_lab2.html", "introduction/templates/Lab/DataExp/data_exp.html", "introduction/templates/Lab/DataExp/data_exp_lab.html", "introduction/templates/Lab/DataExp/robots.txt", "introduction/templates/Lab/SQL/sql.html", "introduction/templates/Lab/SQL/sql_lab.html", "introduction/templates/Lab/XSS/xss.html", "introduction/templates/Lab/XSS/xss_lab.html", "introduction/templates/Lab/XSS/xss_lab_2.html", "introduction/templates/Lab/XSS/xss_lab_3.html", "introduction/templates/Lab/XXE/xxe.html", "introduction/templates/Lab/XXE/xxe_lab.html", "introduction/templates/Lab/insec_des/insec_des.html", "introduction/templates/Lab/insec_des/insec_des_lab.html", "introduction/templates/Lab/sec_mis/sec_mis.html", "introduction/templates/Lab/sec_mis/sec_mis_lab.html", "introduction/templates/Lab/sec_mis/sec_mis_lab3.html", "introduction/templates/Lab/ssrf/blogs/blog1.txt", "introduction/templates/Lab/ssrf/blogs/blog2.txt", "introduction/templates/Lab/ssrf/blogs/blog3.txt", "introduction/templates/Lab/ssrf/blogs/blog4.txt", "introduction/templates/Lab/ssrf/secret.txt", "introduction/templates/Lab/ssrf/ssrf.html", "introduction/templates/Lab/ssrf/ssrf_discussion.html", "introduction/templates/Lab/ssrf/ssrf_lab.html", "introduction/templates/Lab/ssrf/ssrf_lab2.html", "introduction/templates/Lab/ssrf/ssrf_target.html", "introduction/templates/Lab_2021/A1_BrokenAccessControl/broken_access.html", "introduction/templates/Lab_2021/A1_BrokenAccessControl/broken_access_lab_1.html", "introduction/templates/Lab_2021/A1_BrokenAccessControl/broken_access_lab_2.html", "introduction/templates/Lab_2021/A1_BrokenAccessControl/broken_access_lab_3.html", "introduction/templates/Lab_2021/A1_BrokenAccessControl/secret.html", "introduction/templates/Lab_2021/A2_Crypto_failur/crypto_failure.html", "introduction/templates/Lab_2021/A2_Crypto_failur/crypto_failure_lab.html", "introduction/templates/Lab_2021/A2_Crypto_failur/crypto_failure_lab2.html", "introduction/templates/Lab_2021/A2_Crypto_failur/crypto_failure_lab3.html", "introduction/templates/Lab_2021/A3_Injection/Blogs/0db9c0e7093d.html", "introduction/templates/Lab_2021/A3_Injection/Blogs/9d73d120683d.html", "introduction/templates/Lab_2021/A3_Injection/Blogs/a2538af1b5e4.html", "introduction/templates/Lab_2021/A3_Injection/injection.html", "introduction/templates/Lab_2021/A3_Injection/sql_lab.html", "introduction/templates/Lab_2021/A3_Injection/ssti.html", "introduction/templates/Lab_2021/A3_Injection/ssti_lab.html", "introduction/templates/Lab_2021/A7_auth_failure/a7.html", "introduction/templates/Lab_2021/A7_auth_failure/lab2.html", "introduction/templates/Lab_2021/A7_auth_failure/lab3.html", "introduction/templates/Lab_2021/A8_software_and_data_integrity_failure/desc.html", "introduction/templates/Lab_2021/A8_software_and_data_integrity_failure/lab2.html", "introduction/templates/Lab_2021/A8_software_and_data_integrity_failure/lab3.html", "introduction/templates/introduction/base.html", "introduction/templates/introduction/home.html", "introduction/templates/mitre/csrf_dashboard.html", "introduction/templates/mitre/csrf_lab_login.html", "introduction/templates/mitre/mitre_lab_17.html", "introduction/templates/mitre/mitre_lab_25.html", "introduction/templates/mitre/mitre_top1.html", "introduction/templates/mitre/mitre_top10.html", "introduction/templates/mitre/mitre_top11.html", "introduction/templates/mitre/mitre_top12.html", "introduction/templates/mitre/mitre_top13.html", "introduction/templates/mitre/mitre_top14.html", "introduction/templates/mitre/mitre_top15.html", "introduction/templates/mitre/mitre_top16.html", "introduction/templates/mitre/mitre_top17.html", "introduction/templates/mitre/mitre_top18.html", "introduction/templates/mitre/mitre_top19.html", "introduction/templates/mitre/mitre_top2.html", "introduction/templates/mitre/mitre_top20.html", "introduction/templates/mitre/mitre_top21.html", "introduction/templates/mitre/mitre_top22.html", "introduction/templates/mitre/mitre_top23.html", "introduction/templates/mitre/mitre_top24.html", "introduction/templates/mitre/mitre_top25.html", "introduction/templates/mitre/mitre_top3.html", "introduction/templates/mitre/mitre_top4.html", "introduction/templates/mitre/mitre_top5.html", "introduction/templates/mitre/mitre_top6.html", "introduction/templates/mitre/mitre_top7.html", "introduction/templates/mitre/mitre_top8.html", "introduction/templates/mitre/mitre_top9.html", "introduction/templates/playground/A6/index.html", "introduction/templates/playground/A7/index.html", "introduction/templates/playground/A9/index.html", "introduction/templates/registration/login.html", "introduction/templates/registration/logout.html", "introduction/templates/registration/register.html", "introduction/tests.py", "introduction/urls.py", "introduction/utility.py", "introduction/views.py", "introduction/xee_see.txt", "manage.py", "pygoat/__init__.py", "pygoat/asgi.py", "pygoat/settings.py", "pygoat/urls.py", "pygoat/wsgi.py", "requirements.txt", "runtime.txt", "setup.py", "temp.py", "test.log", "uninstaller.py", "uninstaller.sh"]}, "results": [{"check_id": "python.lang.security.audit.subprocess-shell-true.subprocess-shell-true", "end": {"col": 51, "line": 233, "offset": 7124}, "extra": {"engine_kind": "OSS", "fingerprint": "3c960c552411d7d480542af0c5342d109b3bafef7de8d208a05c7b344e4e813f7dd620a183d2f5be79aec41d0062806f487fa5cf03095333fd233c420bedbef7_0", "fix": "False", "is_ignored": false, "lines": "    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)", "message": "Found 'subprocess' function 'Popen' with 'shell=True'. This is dangerous because this call will spawn the command using a shell process. Doing so propagates current shell settings and variables, which makes it much easier for a malicious actor to execute commands. Use 'shell=False' instead.", "metadata": {"category": "security", "confidence": "MEDIUM", "cwe": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"], "cwe2021-top25": true, "cwe2022-top25": true, "impact": "LOW", "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]", "likelihood": "HIGH", "owasp": ["A01:2017 - Injection", "A03:2021 - Injection"], "references": ["https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess", "https://docs.python.org/3/library/subprocess.html"], "semgrep.dev": {"rule": {"origin": "community", "r_id": 9646, "rule_id": "DbUpz2", "rv_id": 834650, "url": "https://semgrep.dev/playground/r/PkTxGkR/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true", "version_id": "PkTxGkR"}}, "shortlink": "https://sg.run/J92w", "source": "https://semgrep.dev/r/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true", "source-rule-url": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html", "subcategory": ["secure default"], "technology": ["python"], "vulnerability_class": ["Command Injection"]}, "metavars": {"$FUNC": {"abstract_content": "Popen", "end": {"col": 31, "line": 233, "offset": 7104}, "start": {"col": 26, "line": 233, "offset": 7099}}, "$TRUE": {"abstract_content": "True", "end": {"col": 51, "line": 233, "offset": 7124}, "start": {"col": 47, "line": 233, "offset": 7120}}}, "severity": "ERROR", "validation_state": "NO_VALIDATOR"}, "path": "introduction/mitre.py", "start": {"col": 47, "line": 233, "offset": 7120}}, {"check_id": "python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization", "end": {"col": 40, "line": 213, "offset": 6971}, "extra": {"dataflow_trace": {"intermediate_vars": [{"content": "token", "location": {"end": {"col": 14, "line": 207, "offset": 6710}, "path": "introduction/views.py", "start": {"col": 9, "line": 207, "offset": 6705}}}], "taint_sink": ["CliLoc", [{"end": {"col": 40, "line": 213, "offset": 6971}, "path": "introduction/views.py", "start": {"col": 21, "line": 213, "offset": 6952}}, "pickle.loads(token)"]], "taint_source": ["CliLoc", [{"end": {"col": 45, "line": 207, "offset": 6741}, "path": "introduction/views.py", "start": {"col": 17, "line": 207, "offset": 6713}}, "request.COOKIES.get('token')"]]}, "engine_kind": "OSS", "fingerprint": "6afd3de860be660079ffdea91808b7bd19861619ab2d850b5233695189c043a97873f674cb51da6153616c0d07e07607389507ef460d0d27ff369679efbf9654_0", "is_ignored": false, "lines": "            admin = pickle.loads(token)", "message": "Avoid using insecure deserialization library, backed by `pickle`, `_pickle`, `cpickle`, `dill`, `shelve`, or `yaml`, which are known to lead to remote code execution vulnerabilities.", "metadata": {"category": "security", "confidence": "MEDIUM", "cwe": ["CWE-502: Deserialization of Untrusted Data"], "cwe2021-top25": true, "cwe2022-top25": true, "impact": "MEDIUM", "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]", "likelihood": "MEDIUM", "owasp": ["A08:2017 - Insecure Deserialization", "A08:2021 - Software and Data Integrity Failures"], "references": ["https://docs.python.org/3/library/pickle.html"], "semgrep.dev": {"rule": {"origin": "community", "r_id": 9467, "rule_id": "OrU3e6", "rv_id": 834402, "url": "https://semgrep.dev/playground/r/3ZT3A9q/python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization", "version_id": "3ZT3A9q"}}, "shortlink": "https://sg.run/9oyr", "source": "https://semgrep.dev/r/python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization", "subcategory": ["vuln"], "technology": ["django"], "vulnerability_class": ["Insecure Deserialization "]}, "metavars": {"$INSIDE": {"abstract_content": "insec_des_lab", "end": {"col": 18, "line": 204, "offset": 6533}, "start": {"col": 5, "line": 204, "offset": 6520}}, "$PARAM": {"abstract_content": "request", "end": {"col": 26, "line": 204, "offset": 6541}, "start": {"col": 19, "line": 204, "offset": 6534}}, "$PICKLEFUNC": {"abstract_content": "loads", "end": {"col": 33, "line": 213, "offset": 6964}, "start": {"col": 28, "line": 213, "offset": 6959}}, "$REQFUNC": {"abstract_content": "COOKIES", "end": {"col": 32, "line": 207, "offset": 6728}, "start": {"col": 25, "line": 207, "offset": 6721}}}, "severity": "ERROR", "validation_state": "NO_VALIDATOR"}, "path": "introduction/views.py", "start": {"col": 21, "line": 213, "offset": 6952}}, {"check_id": "python.django.security.injection.command.subprocess-injection.subprocess-injection", "end": {"col": 44, "line": 427, "offset": 15005}, "extra": {"dataflow_trace": {"intermediate_vars": [{"content": "request", "location": {"end": {"col": 20, "line": 409, "offset": 14312}, "path": "introduction/views.py", "start": {"col": 13, "line": 409, "offset": 14305}}}, {"content": "domain", "location": {"end": {"col": 19, "line": 412, "offset": 14407}, "path": "introduction/views.py", "start": {"col": 13, "line": 412, "offset": 14401}}}, {"content": "command", "location": {"end": {"col": 24, "line": 419, "offset": 14669}, "path": "introduction/views.py", "start": {"col": 17, "line": 419, "offset": 14662}}}], "taint_sink": ["CliLoc", [{"end": {"col": 44, "line": 427, "offset": 15005}, "path": "introduction/views.py", "start": {"col": 27, "line": 423, "offset": 14838}}, "subprocess.Popen(\n                    command,\n                    shell=True,\n                    stdout=subprocess.PIPE, \n                    stderr=subprocess.PIPE)"]], "taint_source": ["CliLoc", [{"end": {"col": 20, "line": 409, "offset": 14312}, "path": "introduction/views.py", "start": {"col": 13, "line": 409, "offset": 14305}}, "request"]]}, "engine_kind": "OSS", "fingerprint": "94611d943987a0d7f75afc843d39653c4ade5d2aedc527f96b426d960163cb2a1870d9e6b1fed79c92cc9a9843458348cbcdd152d51665133f63850bd8e67788_0", "is_ignored": false, "lines": "                process = subprocess.Popen(\n                    command,\n                    shell=True,\n                    stdout=subprocess.PIPE, \n                    stderr=subprocess.PIPE)", "message": "Detected user input entering a `subprocess` call unsafely. This could result in a command injection vulnerability. An attacker could use this vulnerability to execute arbitrary commands on the host, which allows them to download malware, scan sensitive data, or run any command they wish on the server. Do not let users choose the command to run. In general, prefer to use Python API versions of system commands. If you must use subprocess, use a dictionary to allowlist a set of commands.", "metadata": {"category": "security", "confidence": "HIGH", "cwe": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"], "cwe2021-top25": true, "cwe2022-top25": true, "impact": "HIGH", "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]", "likelihood": "MEDIUM", "owasp": ["A01:2017 - Injection", "A03:2021 - Injection"], "references": ["https://semgrep.dev/docs/cheat-sheets/python-command-injection/"], "semgrep.dev": {"rule": {"origin": "community", "r_id": 31144, "rule_id": "EwUepx", "rv_id": 834437, "url": "https://semgrep.dev/playground/r/d6TKgwn/python.django.security.injection.command.subprocess-injection.subprocess-injection", "version_id": "d6TKgwn"}}, "shortlink": "https://sg.run/49BE", "source": "https://semgrep.dev/r/python.django.security.injection.command.subprocess-injection.subprocess-injection", "subcategory": ["vuln"], "technology": ["flask"], "vulnerability_class": ["Command Injection"]}, "metavars": {"$FUNC": {"abstract_content": "cmd_lab", "end": {"col": 12, "line": 409, "offset": 14304}, "start": {"col": 5, "line": 409, "offset": 14297}}, "$REQUEST": {"abstract_content": "request", "end": {"col": 20, "line": 409, "offset": 14312}, "start": {"col": 13, "line": 409, "offset": 14305}}}, "severity": "ERROR", "validation_state": "NO_VALIDATOR"}, "path": "introduction/views.py", "start": {"col": 27, "line": 423, "offset": 14838}}, {"check_id": "python.lang.security.dangerous-subprocess-use.dangerous-subprocess-use", "end": {"col": 28, "line": 424, "offset": 14883}, "extra": {"dataflow_trace": {"intermediate_vars": [{"content": "domain", "location": {"end": {"col": 19, "line": 412, "offset": 14407}, "path": "introduction/views.py", "start": {"col": 13, "line": 412, "offset": 14401}}}, {"content": "command", "location": {"end": {"col": 24, "line": 419, "offset": 14669}, "path": "introduction/views.py", "start": {"col": 17, "line": 419, "offset": 14662}}}], "taint_sink": ["CliLoc", [{"end": {"col": 28, "line": 424, "offset": 14883}, "path": "introduction/views.py", "start": {"col": 21, "line": 424, "offset": 14876}}, "command"]], "taint_source": ["CliLoc", [{"end": {"col": 46, "line": 412, "offset": 14434}, "path": "introduction/views.py", "start": {"col": 20, "line": 412, "offset": 14408}}, "request.POST.get('domain')"]]}, "engine_kind": "OSS", "fingerprint": "b22e8250a693c5f615d40674fb16d520b52b75e4c405f61babb0ced7553bd691bc0c14dd21ff7ff0441ea97d16470a221e447d09fb17213138e9b4f4c4ab6e49_0", "is_ignored": false, "lines": "                    command,", "message": "Detected subprocess function 'cmd_lab' with user controlled data. A malicious actor could leverage this to perform command injection. You may consider using 'shlex.escape()'.", "metadata": {"asvs": {"control_id": "5.3.8 OS Command Injection", "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v53-output-encoding-and-injection-prevention-requirements", "section": "V5: Validation, Sanitization and Encoding Verification Requirements", "version": "4"}, "category": "security", "confidence": "MEDIUM", "cwe": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"], "cwe2021-top25": true, "cwe2022-top25": true, "impact": "HIGH", "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]", "likelihood": "MEDIUM", "owasp": ["A01:2017 - Injection", "A03:2021 - Injection"], "references": ["https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess", "https://docs.python.org/3/library/subprocess.html", "https://docs.python.org/3/library/shlex.html", "https://semgrep.dev/docs/cheat-sheets/python-command-injection/"], "semgrep.dev": {"rule": {"origin": "community", "r_id": 27271, "rule_id": "JDUz3R", "rv_id": 834659, "url": "https://semgrep.dev/playground/r/0bTw3E0/python.lang.security.dangerous-subprocess-use.dangerous-subprocess-use", "version_id": "0bTw3E0"}}, "shortlink": "https://sg.run/NWxp", "source": "https://semgrep.dev/r/python.lang.security.dangerous-subprocess-use.dangerous-subprocess-use", "subcategory": ["vuln"], "technology": ["python"], "vulnerability_class": ["Command Injection"]}, "metavars": {"$CMD": {"abstract_content": "command", "end": {"col": 28, "line": 424, "offset": 14883}, "start": {"col": 21, "line": 424, "offset": 14876}}, "$FUNC": {"abstract_content": "cmd_lab", "end": {"col": 12, "line": 409, "offset": 14304}, "start": {"col": 5, "line": 409, "offset": 14297}}, "$PROPERTY": {"abstract_content": "POST", "end": {"col": 32, "line": 412, "offset": 14420}, "start": {"col": 28, "line": 412, "offset": 14416}}}, "severity": "ERROR", "validation_state": "NO_VALIDATOR"}, "path": "introduction/views.py", "start": {"col": 21, "line": 424, "offset": 14876}}, {"check_id": "python.lang.security.audit.subprocess-shell-true.subprocess-shell-true", "end": {"col": 31, "line": 425, "offset": 14915}, "extra": {"engine_kind": "OSS", "fingerprint": "2f819a91e6dbd962fc4833b9ff8198ce71a5c75113bf48e48dcdd11e3cbaefc9c12a416e729d446afb7cdcd41eb6c1e70a058c342b3500d1d7c806ea4f0dc280_0", "fix": "False", "is_ignored": false, "lines": "                    shell=True,", "message": "Found 'subprocess' function 'Popen' with 'shell=True'. This is dangerous because this call will spawn the command using a shell process. Doing so propagates current shell settings and variables, which makes it much easier for a malicious actor to execute commands. Use 'shell=False' instead.", "metadata": {"category": "security", "confidence": "MEDIUM", "cwe": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"], "cwe2021-top25": true, "cwe2022-top25": true, "impact": "LOW", "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]", "likelihood": "HIGH", "owasp": ["A01:2017 - Injection", "A03:2021 - Injection"], "references": ["https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess", "https://docs.python.org/3/library/subprocess.html"], "semgrep.dev": {"rule": {"origin": "community", "r_id": 9646, "rule_id": "DbUpz2", "rv_id": 834650, "url": "https://semgrep.dev/playground/r/PkTxGkR/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true", "version_id": "PkTxGkR"}}, "shortlink": "https://sg.run/J92w", "source": "https://semgrep.dev/r/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true", "source-rule-url": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html", "subcategory": ["secure default"], "technology": ["python"], "vulnerability_class": ["Command Injection"]}, "metavars": {"$FUNC": {"abstract_content": "Popen", "end": {"col": 43, "line": 423, "offset": 14854}, "start": {"col": 38, "line": 423, "offset": 14849}}, "$TRUE": {"abstract_content": "True", "end": {"col": 31, "line": 425, "offset": 14915}, "start": {"col": 27, "line": 425, "offset": 14911}}}, "severity": "ERROR", "validation_state": "NO_VALIDATOR"}, "path": "introduction/views.py", "start": {"col": 27, "line": 425, "offset": 14911}}, {"check_id": "python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization", "end": {"col": 55, "line": 553, "offset": 19541}, "extra": {"dataflow_trace": {"intermediate_vars": [{"content": "file", "location": {"end": {"col": 21, "line": 551, "offset": 19442}, "path": "introduction/views.py", "start": {"col": 17, "line": 551, "offset": 19438}}}], "taint_sink": ["CliLoc", [{"end": {"col": 55, "line": 553, "offset": 19541}, "path": "introduction/views.py", "start": {"col": 28, "line": 553, "offset": 19514}}, "yaml.load(file,yaml.Loader)"]], "taint_source": ["CliLoc", [{"end": {"col": 43, "line": 551, "offset": 19464}, "path": "introduction/views.py", "start": {"col": 22, "line": 551, "offset": 19443}}, "request.FILES[\"file\"]"]]}, "engine_kind": "OSS", "fingerprint": "55b039a7d13528e25e3bad4465aaea7b810fbbce02b515657d90a9e1bd61e656bf30e35d3d477cbb78924a78e34b0bf91c371ea860fdb697d0643a120df5776b_0", "is_ignored": false, "lines": "                    data = yaml.load(file,yaml.Loader)", "message": "Avoid using insecure deserialization library, backed by `pickle`, `_pickle`, `cpickle`, `dill`, `shelve`, or `yaml`, which are known to lead to remote code execution vulnerabilities.", "metadata": {"category": "security", "confidence": "MEDIUM", "cwe": ["CWE-502: Deserialization of Untrusted Data"], "cwe2021-top25": true, "cwe2022-top25": true, "impact": "MEDIUM", "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]", "likelihood": "MEDIUM", "owasp": ["A08:2017 - Insecure Deserialization", "A08:2021 - Software and Data Integrity Failures"], "references": ["https://docs.python.org/3/library/pickle.html"], "semgrep.dev": {"rule": {"origin": "community", "r_id": 9467, "rule_id": "OrU3e6", "rv_id": 834402, "url": "https://semgrep.dev/playground/r/3ZT3A9q/python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization", "version_id": "3ZT3A9q"}}, "shortlink": "https://sg.run/9oyr", "source": "https://semgrep.dev/r/python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization", "subcategory": ["vuln"], "technology": ["django"], "vulnerability_class": ["Insecure Deserialization "]}, "metavars": {"$INSIDE": {"abstract_content": "a9_lab", "end": {"col": 11, "line": 544, "offset": 19250}, "start": {"col": 5, "line": 544, "offset": 19244}}, "$PARAM": {"abstract_content": "request", "end": {"col": 19, "line": 544, "offset": 19258}, "start": {"col": 12, "line": 544, "offset": 19251}}, "$REQFUNC": {"abstract_content": "FILES", "end": {"col": 35, "line": 551, "offset": 19456}, "start": {"col": 30, "line": 551, "offset": 19451}}, "$YAMLFUNC": {"abstract_content": "load", "end": {"col": 37, "line": 553, "offset": 19523}, "start": {"col": 33, "line": 553, "offset": 19519}}}, "severity": "ERROR", "validation_state": "NO_VALIDATOR"}, "path": "introduction/views.py", "start": {"col": 28, "line": 553, "offset": 19514}}, {"check_id": "python.django.security.injection.ssrf.ssrf-injection-requests.ssrf-injection-requests", "end": {"col": 88, "line": 959, "offset": 34841}, "extra": {"engine_kind": "OSS", "fingerprint": "0f2beffd9a3568dffdc80e464ecf3e85fb7232c5849472c0befc2409be86dbc9c48eda513a2ccd3a376f64dde7e6ed28d887dc37df0119d39337797efff63244_0", "is_ignored": false, "lines": "        url = request.POST[\"url\"]\n        try:\n            response = requests.get(url)\n            return render(request, \"Lab/ssrf/ssrf_lab2.html\", {\"response\": response.content.decode()})\n        except:\n            return render(request, \"Lab/ssrf/ssrf_lab2.html\", {\"error\": \"Invalid URL\"})", "message": "Data from request object is passed to a new server-side request. This could lead to a server-side request forgery (SSRF). To mitigate, ensure that schemes and hosts are validated against an allowlist, do not forward the response to the user, and ensure proper authentication and transport-layer security in the proxied request. See https://owasp.org/www-community/attacks/Server_Side_Request_Forgery to learn more about SSRF vulnerabilities.", "metadata": {"category": "security", "confidence": "MEDIUM", "cwe": ["CWE-918: Server-Side Request Forgery (SSRF)"], "cwe2021-top25": true, "cwe2022-top25": true, "impact": "HIGH", "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]", "likelihood": "MEDIUM", "owasp": ["A10:2021 - Server-Side Request Forgery (SSRF)"], "references": ["https://owasp.org/www-community/attacks/Server_Side_Request_Forgery"], "semgrep.dev": {"rule": {"origin": "community", "r_id": 9514, "rule_id": "j2UvEw", "rv_id": 834455, "url": "https://semgrep.dev/playground/r/DkTGydD/python.django.security.injection.ssrf.ssrf-injection-requests.ssrf-injection-requests", "version_id": "DkTGydD"}}, "shortlink": "https://sg.run/YvY4", "source": "https://semgrep.dev/r/python.django.security.injection.ssrf.ssrf-injection-requests.ssrf-injection-requests", "subcategory": ["vuln"], "technology": ["django"], "vulnerability_class": ["Server-Side Request Forgery (SSRF)"]}, "metavars": {"$DATA": {"abstract_content": "url", "end": {"col": 12, "line": 954, "offset": 34558}, "start": {"col": 9, "line": 954, "offset": 34555}}, "$FUNC": {"abstract_content": "ssrf_lab2", "end": {"col": 14, "line": 949, "offset": 34410}, "start": {"col": 5, "line": 949, "offset": 34401}}, "$METHOD": {"abstract_content": "get", "end": {"col": 36, "line": 956, "offset": 34629}, "start": {"col": 33, "line": 956, "offset": 34626}}, "$W": {"abstract_content": "POST", "end": {"col": 27, "line": 954, "offset": 34573}, "start": {"col": 23, "line": 954, "offset": 34569}}}, "severity": "ERROR", "validation_state": "NO_VALIDATOR"}, "path": "introduction/views.py", "start": {"col": 9, "line": 954, "offset": 34555}}, {"check_id": "python.django.security.injection.raw-html-format.raw-html-format", "end": {"col": 58, "line": 983, "offset": 35812}, "extra": {"dataflow_trace": {"intermediate_vars": [{"content": "blog", "location": {"end": {"col": 17, "line": 974, "offset": 35433}, "path": "introduction/views.py", "start": {"col": 13, "line": 974, "offset": 35429}}}], "taint_sink": ["CliLoc", [{"end": {"col": 58, "line": 983, "offset": 35812}, "path": "introduction/views.py", "start": {"col": 20, "line": 983, "offset": 35774}}, "prepend_code + blog + \"{% endblock %}\""]], "taint_source": ["CliLoc", [{"end": {"col": 32, "line": 974, "offset": 35448}, "path": "introduction/views.py", "start": {"col": 20, "line": 974, "offset": 35436}}, "request.POST"]]}, "engine_kind": "OSS", "fingerprint": "740ff47b0cfb52ecc996f3f50e4e830fe4b786021617f85d7c96a71fb45ed699c0f56419ddeb16813ba64412e7c9fe275b553c00979235a747fc6a05a2605a77_0", "is_ignored": false, "lines": "            blog = prepend_code + blog + \"{% endblock %}\"", "message": "Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassing secure methods of rendering HTML by manually constructing HTML and this could create a cross-site scripting vulnerability, which could let attackers steal sensitive user data. To be sure this is safe, check that the HTML is rendered safely. Otherwise, use templates (`django.shortcuts.render`) which will safely render HTML instead.", "metadata": {"category": "security", "confidence": "MEDIUM", "cwe": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"], "cwe2021-top25": true, "cwe2022-top25": true, "impact": "MEDIUM", "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]", "likelihood": "HIGH", "owasp": ["A07:2017 - Cross-Site Scripting (XSS)", "A03:2021 - Injection"], "references": ["https://docs.djangoproject.com/en/3.2/topics/http/shortcuts/#render", "https://docs.djangoproject.com/en/3.2/topics/security/#cross-site-scripting-xss-protection"], "semgrep.dev": {"rule": {"origin": "community", "r_id": 14360, "rule_id": "2ZUPER", "rv_id": 834446, "url": "https://semgrep.dev/playground/r/3ZT3wYq/python.django.security.injection.raw-html-format.raw-html-format", "version_id": "3ZT3wYq"}}, "shortlink": "https://sg.run/oYj1", "source": "https://semgrep.dev/r/python.django.security.injection.raw-html-format.raw-html-format", "subcategory": ["vuln"], "technology": ["django"], "vulnerability_class": ["Cross-Site-Scripting (XSS)"]}, "metavars": {"$ANYTHING": {"abstract_content": "POST", "end": {"col": 32, "line": 974, "offset": 35448}, "start": {"col": 28, "line": 974, "offset": 35444}}, "$HTMLSTR": {"abstract_content": "\"{% extends 'introduction/base.html' %}\\\n                {% block content %}{% block title %}\\\n                <title>SSTI-Blogs</title>\\\n                {% endblock %}\"", "end": {"col": 32, "line": 981, "offset": 35741}, "start": {"col": 28, "line": 978, "offset": 35572}}}, "severity": "WARNING", "validation_state": "NO_VALIDATOR"}, "path": "introduction/views.py", "start": {"col": 20, "line": 983, "offset": 35774}}], "skipped_rules": [], "version": "1.95.0"}
+{
+    "errors": [],
+    "interfile_languages_used": [],
+    "paths": {
+        "scanned": [
+            ".all-contributorsrc",
+            ".github/workflows/flake8.yml",
+            ".github/workflows/hadolint.yml",
+            ".gitignore",
+            ".vscode/settings.json",
+            "Dockerfile",
+            "Procfile",
+            "PyGoatBot.py",
+            "README.md",
+            "Solutions/img/img4.png",
+            "Solutions/img/pic1.png",
+            "Solutions/img/pic2.png",
+            "Solutions/img/pic3.png",
+            "Solutions/solution.md",
+            "app.log",
+            "chatbot/README.md",
+            "chatbot/pygoatbot.ipynb",
+            "db.sqlite3~f1cf11156c656314790387c2c9eb7f187a3d480e",
+            "docker-compose.yml",
+            "docs/dev_guide.md",
+            "gh-md-toc",
+            "installer.sh",
+            "introduction/__init__.py",
+            "introduction/admin.py",
+            "introduction/apis.py",
+            "introduction/apps.py",
+            "introduction/forms.py",
+            "introduction/lab_code/test.py",
+            "introduction/migrations/0001_initial.py",
+            "introduction/migrations/0002_auto_20210414_1510.py",
+            "introduction/migrations/0003_password_user.py",
+            "introduction/migrations/0004_auto_20210415_1722.py",
+            "introduction/migrations/0005_auto_20210415_1748.py",
+            "introduction/migrations/0006_comments.py",
+            "introduction/migrations/0007_auto_20210418_0022.py",
+            "introduction/migrations/0008_otp.py",
+            "introduction/migrations/0009_auto_20210517_2047.py",
+            "introduction/migrations/0010_authlogin.py",
+            "introduction/migrations/0011_tickits.py",
+            "introduction/migrations/0012_alter_tickits_user.py",
+            "introduction/migrations/0013_alter_comments_id_alter_faang_id_alter_info_id_and_more.py",
+            "introduction/migrations/0014_sql_lab_table.py",
+            "introduction/migrations/0015_blogs.py",
+            "introduction/migrations/0016_alter_blogs_blog_id.py",
+            "introduction/migrations/0017_cf_user.py",
+            "introduction/migrations/0018_cf_user_password2.py",
+            "introduction/migrations/0019_af_admin.py",
+            "introduction/migrations/0020_af_session_id_alter_af_admin_lockout_cooldown.py",
+            "introduction/migrations/0021_csrf_user_tbl.py",
+            "introduction/migrations/__init__.py",
+            "introduction/mitre.py",
+            "introduction/models.py",
+            "introduction/playground/A6/soln.py",
+            "introduction/playground/A6/utility.py",
+            "introduction/playground/A9/api.py",
+            "introduction/playground/A9/archive.py",
+            "introduction/playground/A9/main.py",
+            "introduction/playground/__init__.py",
+            "introduction/playground/readme.md",
+            "introduction/playground/ssrf/__init__.py",
+            "introduction/playground/ssrf/main.py",
+            "introduction/playground/ssrf/secret.txt",
+            "introduction/playground/ssrf/templates/Lab/ssrf/blogs/blog1.txt",
+            "introduction/playground/ssrf/templates/Lab/ssrf/blogs/blog2.txt",
+            "introduction/playground/ssrf/templates/Lab/ssrf/blogs/blog3.txt",
+            "introduction/playground/ssrf/templates/Lab/ssrf/blogs/blog4.txt",
+            "introduction/playground/ssrf/test.py",
+            "introduction/static/Lab/icons/pygoat-mini.png",
+            "introduction/static/Lab/icons/pygoat-mini.svg",
+            "introduction/static/Lab/icons/pygoat-small.png",
+            "introduction/static/Lab/icons/pygoat-small.svg",
+            "introduction/static/Lab/icons/pygoat.png",
+            "introduction/static/Lab/icons/pygoat.svg",
+            "introduction/static/Lab/image/xxe.jpg",
+            "introduction/static/Lab/ssrf.css",
+            "introduction/static/Lab/ssrf.js",
+            "introduction/static/Lab/ssti.css",
+            "introduction/static/Lab/xss.js",
+            "introduction/static/css/common.css",
+            "introduction/static/css/dark-theme.css",
+            "introduction/static/css/home.css",
+            "introduction/static/css/light.css",
+            "introduction/static/css/playground.css",
+            "introduction/static/css/style.css",
+            "introduction/static/fake.txt",
+            "introduction/static/google.jpg",
+            "introduction/static/js/a6.js",
+            "introduction/static/js/a7.js",
+            "introduction/static/js/a9.js",
+            "introduction/static/real.txt",
+            "introduction/templates/Lab/A10/a10.html",
+            "introduction/templates/Lab/A10/a10_lab.html",
+            "introduction/templates/Lab/A10/a10_lab2.html",
+            "introduction/templates/Lab/A10/debug.log",
+            "introduction/templates/Lab/A11/a11.html",
+            "introduction/templates/Lab/A11/a11_lab.html",
+            "introduction/templates/Lab/A9/a9.html",
+            "introduction/templates/Lab/A9/a9_lab.html",
+            "introduction/templates/Lab/A9/a9_lab2.html",
+            "introduction/templates/Lab/AUTH/auth_home.html",
+            "introduction/templates/Lab/AUTH/auth_lab.html",
+            "introduction/templates/Lab/AUTH/auth_lab_login.html",
+            "introduction/templates/Lab/AUTH/auth_lab_signup.html",
+            "introduction/templates/Lab/AUTH/auth_success.html",
+            "introduction/templates/Lab/BrokenAccess/ba.html",
+            "introduction/templates/Lab/BrokenAccess/ba_lab.html",
+            "introduction/templates/Lab/BrokenAuth/bau.html",
+            "introduction/templates/Lab/BrokenAuth/bau_lab.html",
+            "introduction/templates/Lab/BrokenAuth/otp.html",
+            "introduction/templates/Lab/CMD/cmd.html",
+            "introduction/templates/Lab/CMD/cmd_lab.html",
+            "introduction/templates/Lab/CMD/cmd_lab2.html",
+            "introduction/templates/Lab/DataExp/data_exp.html",
+            "introduction/templates/Lab/DataExp/data_exp_lab.html",
+            "introduction/templates/Lab/DataExp/robots.txt",
+            "introduction/templates/Lab/SQL/sql.html",
+            "introduction/templates/Lab/SQL/sql_lab.html",
+            "introduction/templates/Lab/XSS/xss.html",
+            "introduction/templates/Lab/XSS/xss_lab.html",
+            "introduction/templates/Lab/XSS/xss_lab_2.html",
+            "introduction/templates/Lab/XSS/xss_lab_3.html",
+            "introduction/templates/Lab/XXE/xxe.html",
+            "introduction/templates/Lab/XXE/xxe_lab.html",
+            "introduction/templates/Lab/insec_des/insec_des.html",
+            "introduction/templates/Lab/insec_des/insec_des_lab.html",
+            "introduction/templates/Lab/sec_mis/sec_mis.html",
+            "introduction/templates/Lab/sec_mis/sec_mis_lab.html",
+            "introduction/templates/Lab/sec_mis/sec_mis_lab3.html",
+            "introduction/templates/Lab/ssrf/blogs/blog1.txt",
+            "introduction/templates/Lab/ssrf/blogs/blog2.txt",
+            "introduction/templates/Lab/ssrf/blogs/blog3.txt",
+            "introduction/templates/Lab/ssrf/blogs/blog4.txt",
+            "introduction/templates/Lab/ssrf/secret.txt",
+            "introduction/templates/Lab/ssrf/ssrf.html",
+            "introduction/templates/Lab/ssrf/ssrf_discussion.html",
+            "introduction/templates/Lab/ssrf/ssrf_lab.html",
+            "introduction/templates/Lab/ssrf/ssrf_lab2.html",
+            "introduction/templates/Lab/ssrf/ssrf_target.html",
+            "introduction/templates/Lab_2021/A1_BrokenAccessControl/broken_access.html",
+            "introduction/templates/Lab_2021/A1_BrokenAccessControl/broken_access_lab_1.html",
+            "introduction/templates/Lab_2021/A1_BrokenAccessControl/broken_access_lab_2.html",
+            "introduction/templates/Lab_2021/A1_BrokenAccessControl/broken_access_lab_3.html",
+            "introduction/templates/Lab_2021/A1_BrokenAccessControl/secret.html",
+            "introduction/templates/Lab_2021/A2_Crypto_failur/crypto_failure.html",
+            "introduction/templates/Lab_2021/A2_Crypto_failur/crypto_failure_lab.html",
+            "introduction/templates/Lab_2021/A2_Crypto_failur/crypto_failure_lab2.html",
+            "introduction/templates/Lab_2021/A2_Crypto_failur/crypto_failure_lab3.html",
+            "introduction/templates/Lab_2021/A3_Injection/Blogs/0db9c0e7093d.html",
+            "introduction/templates/Lab_2021/A3_Injection/Blogs/9d73d120683d.html",
+            "introduction/templates/Lab_2021/A3_Injection/Blogs/a2538af1b5e4.html",
+            "introduction/templates/Lab_2021/A3_Injection/injection.html",
+            "introduction/templates/Lab_2021/A3_Injection/sql_lab.html",
+            "introduction/templates/Lab_2021/A3_Injection/ssti.html",
+            "introduction/templates/Lab_2021/A3_Injection/ssti_lab.html",
+            "introduction/templates/Lab_2021/A7_auth_failure/a7.html",
+            "introduction/templates/Lab_2021/A7_auth_failure/lab2.html",
+            "introduction/templates/Lab_2021/A7_auth_failure/lab3.html",
+            "introduction/templates/Lab_2021/A8_software_and_data_integrity_failure/desc.html",
+            "introduction/templates/Lab_2021/A8_software_and_data_integrity_failure/lab2.html",
+            "introduction/templates/Lab_2021/A8_software_and_data_integrity_failure/lab3.html",
+            "introduction/templates/introduction/base.html",
+            "introduction/templates/introduction/home.html",
+            "introduction/templates/mitre/csrf_dashboard.html",
+            "introduction/templates/mitre/csrf_lab_login.html",
+            "introduction/templates/mitre/mitre_lab_17.html",
+            "introduction/templates/mitre/mitre_lab_25.html",
+            "introduction/templates/mitre/mitre_top1.html",
+            "introduction/templates/mitre/mitre_top10.html",
+            "introduction/templates/mitre/mitre_top11.html",
+            "introduction/templates/mitre/mitre_top12.html",
+            "introduction/templates/mitre/mitre_top13.html",
+            "introduction/templates/mitre/mitre_top14.html",
+            "introduction/templates/mitre/mitre_top15.html",
+            "introduction/templates/mitre/mitre_top16.html",
+            "introduction/templates/mitre/mitre_top17.html",
+            "introduction/templates/mitre/mitre_top18.html",
+            "introduction/templates/mitre/mitre_top19.html",
+            "introduction/templates/mitre/mitre_top2.html",
+            "introduction/templates/mitre/mitre_top20.html",
+            "introduction/templates/mitre/mitre_top21.html",
+            "introduction/templates/mitre/mitre_top22.html",
+            "introduction/templates/mitre/mitre_top23.html",
+            "introduction/templates/mitre/mitre_top24.html",
+            "introduction/templates/mitre/mitre_top25.html",
+            "introduction/templates/mitre/mitre_top3.html",
+            "introduction/templates/mitre/mitre_top4.html",
+            "introduction/templates/mitre/mitre_top5.html",
+            "introduction/templates/mitre/mitre_top6.html",
+            "introduction/templates/mitre/mitre_top7.html",
+            "introduction/templates/mitre/mitre_top8.html",
+            "introduction/templates/mitre/mitre_top9.html",
+            "introduction/templates/playground/A6/index.html",
+            "introduction/templates/playground/A7/index.html",
+            "introduction/templates/playground/A9/index.html",
+            "introduction/templates/registration/login.html",
+            "introduction/templates/registration/logout.html",
+            "introduction/templates/registration/register.html",
+            "introduction/tests.py",
+            "introduction/urls.py",
+            "introduction/utility.py",
+            "introduction/views.py",
+            "introduction/xee_see.txt",
+            "manage.py",
+            "pygoat/__init__.py",
+            "pygoat/asgi.py",
+            "pygoat/settings.py",
+            "pygoat/urls.py",
+            "pygoat/wsgi.py",
+            "requirements.txt",
+            "runtime.txt",
+            "setup.py",
+            "temp.py",
+            "test.log",
+            "uninstaller.py",
+            "uninstaller.sh"
+        ]
+    },
+    "results": [
+        {
+            "check_id": "python.lang.security.audit.subprocess-shell-true.subprocess-shell-true",
+            "end": {
+                "col": 51,
+                "line": 233,
+                "offset": 7124
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "3c960c552411d7d480542af0c5342d109b3bafef7de8d208a05c7b344e4e813f7dd620a183d2f5be79aec41d0062806f487fa5cf03095333fd233c420bedbef7_0",
+                "fix": "False",
+                "is_ignored": false,
+                "lines": "    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)",
+                "message": "Found 'subprocess' function 'Popen' with 'shell=True'. This is dangerous because this call will spawn the command using a shell process. Doing so propagates current shell settings and variables, which makes it much easier for a malicious actor to execute commands. Use 'shell=False' instead.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "MEDIUM",
+                    "cwe": [
+                        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "LOW",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "HIGH",
+                    "owasp": [
+                        "A01:2017 - Injection",
+                        "A03:2021 - Injection"
+                    ],
+                    "references": [
+                        "https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess",
+                        "https://docs.python.org/3/library/subprocess.html"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 9646,
+                            "rule_id": "DbUpz2",
+                            "rv_id": 834650,
+                            "url": "https://semgrep.dev/playground/r/PkTxGkR/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true",
+                            "version_id": "PkTxGkR"
+                        }
+                    },
+                    "shortlink": "https://sg.run/J92w",
+                    "source": "https://semgrep.dev/r/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true",
+                    "source-rule-url": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+                    "subcategory": [
+                        "secure default"
+                    ],
+                    "technology": [
+                        "python"
+                    ],
+                    "vulnerability_class": [
+                        "Command Injection"
+                    ]
+                },
+                "metavars": {
+                    "$FUNC": {
+                        "abstract_content": "Popen",
+                        "end": {
+                            "col": 31,
+                            "line": 233,
+                            "offset": 7104
+                        },
+                        "start": {
+                            "col": 26,
+                            "line": 233,
+                            "offset": 7099
+                        }
+                    },
+                    "$TRUE": {
+                        "abstract_content": "True",
+                        "end": {
+                            "col": 51,
+                            "line": 233,
+                            "offset": 7124
+                        },
+                        "start": {
+                            "col": 47,
+                            "line": 233,
+                            "offset": 7120
+                        }
+                    }
+                },
+                "severity": "ERROR",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "introduction/mitre.py",
+            "start": {
+                "col": 47,
+                "line": 233,
+                "offset": 7120
+            }
+        },
+        {
+            "check_id": "python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization",
+            "end": {
+                "col": 40,
+                "line": 213,
+                "offset": 6971
+            },
+            "extra": {
+                "dataflow_trace": {
+                    "intermediate_vars": [
+                        {
+                            "content": "token",
+                            "location": {
+                                "end": {
+                                    "col": 14,
+                                    "line": 207,
+                                    "offset": 6710
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 9,
+                                    "line": 207,
+                                    "offset": 6705
+                                }
+                            }
+                        }
+                    ],
+                    "taint_sink": [
+                        "CliLoc",
+                        [
+                            {
+                                "end": {
+                                    "col": 40,
+                                    "line": 213,
+                                    "offset": 6971
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 21,
+                                    "line": 213,
+                                    "offset": 6952
+                                }
+                            },
+                            "pickle.loads(token)"
+                        ]
+                    ],
+                    "taint_source": [
+                        "CliLoc",
+                        [
+                            {
+                                "end": {
+                                    "col": 45,
+                                    "line": 207,
+                                    "offset": 6741
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 17,
+                                    "line": 207,
+                                    "offset": 6713
+                                }
+                            },
+                            "request.COOKIES.get('token')"
+                        ]
+                    ]
+                },
+                "engine_kind": "OSS",
+                "fingerprint": "6afd3de860be660079ffdea91808b7bd19861619ab2d850b5233695189c043a97873f674cb51da6153616c0d07e07607389507ef460d0d27ff369679efbf9654_0",
+                "is_ignored": false,
+                "lines": "            admin = pickle.loads(token)",
+                "message": "Avoid using insecure deserialization library, backed by `pickle`, `_pickle`, `cpickle`, `dill`, `shelve`, or `yaml`, which are known to lead to remote code execution vulnerabilities.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "MEDIUM",
+                    "cwe": [
+                        "CWE-502: Deserialization of Untrusted Data"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "MEDIUM",
+                    "owasp": [
+                        "A08:2017 - Insecure Deserialization",
+                        "A08:2021 - Software and Data Integrity Failures"
+                    ],
+                    "references": [
+                        "https://docs.python.org/3/library/pickle.html"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 9467,
+                            "rule_id": "OrU3e6",
+                            "rv_id": 834402,
+                            "url": "https://semgrep.dev/playground/r/3ZT3A9q/python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization",
+                            "version_id": "3ZT3A9q"
+                        }
+                    },
+                    "shortlink": "https://sg.run/9oyr",
+                    "source": "https://semgrep.dev/r/python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization",
+                    "subcategory": [
+                        "vuln"
+                    ],
+                    "technology": [
+                        "django"
+                    ],
+                    "vulnerability_class": [
+                        "Insecure Deserialization "
+                    ]
+                },
+                "metavars": {
+                    "$INSIDE": {
+                        "abstract_content": "insec_des_lab",
+                        "end": {
+                            "col": 18,
+                            "line": 204,
+                            "offset": 6533
+                        },
+                        "start": {
+                            "col": 5,
+                            "line": 204,
+                            "offset": 6520
+                        }
+                    },
+                    "$PARAM": {
+                        "abstract_content": "request",
+                        "end": {
+                            "col": 26,
+                            "line": 204,
+                            "offset": 6541
+                        },
+                        "start": {
+                            "col": 19,
+                            "line": 204,
+                            "offset": 6534
+                        }
+                    },
+                    "$PICKLEFUNC": {
+                        "abstract_content": "loads",
+                        "end": {
+                            "col": 33,
+                            "line": 213,
+                            "offset": 6964
+                        },
+                        "start": {
+                            "col": 28,
+                            "line": 213,
+                            "offset": 6959
+                        }
+                    },
+                    "$REQFUNC": {
+                        "abstract_content": "COOKIES",
+                        "end": {
+                            "col": 32,
+                            "line": 207,
+                            "offset": 6728
+                        },
+                        "start": {
+                            "col": 25,
+                            "line": 207,
+                            "offset": 6721
+                        }
+                    }
+                },
+                "severity": "ERROR",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "introduction/views.py",
+            "start": {
+                "col": 21,
+                "line": 213,
+                "offset": 6952
+            }
+        },
+        {
+            "check_id": "python.django.security.injection.command.subprocess-injection.subprocess-injection",
+            "end": {
+                "col": 44,
+                "line": 427,
+                "offset": 15005
+            },
+            "extra": {
+                "dataflow_trace": {
+                    "intermediate_vars": [
+                        {
+                            "content": "request",
+                            "location": {
+                                "end": {
+                                    "col": 20,
+                                    "line": 409,
+                                    "offset": 14312
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 13,
+                                    "line": 409,
+                                    "offset": 14305
+                                }
+                            }
+                        },
+                        {
+                            "content": "domain",
+                            "location": {
+                                "end": {
+                                    "col": 19,
+                                    "line": 412,
+                                    "offset": 14407
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 13,
+                                    "line": 412,
+                                    "offset": 14401
+                                }
+                            }
+                        },
+                        {
+                            "content": "command",
+                            "location": {
+                                "end": {
+                                    "col": 24,
+                                    "line": 419,
+                                    "offset": 14669
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 17,
+                                    "line": 419,
+                                    "offset": 14662
+                                }
+                            }
+                        }
+                    ],
+                    "taint_sink": [
+                        "CliLoc",
+                        [
+                            {
+                                "end": {
+                                    "col": 44,
+                                    "line": 427,
+                                    "offset": 15005
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 27,
+                                    "line": 423,
+                                    "offset": 14838
+                                }
+                            },
+                            "subprocess.Popen(\n                    command,\n                    shell=True,\n                    stdout=subprocess.PIPE, \n                    stderr=subprocess.PIPE)"
+                        ]
+                    ],
+                    "taint_source": [
+                        "CliLoc",
+                        [
+                            {
+                                "end": {
+                                    "col": 20,
+                                    "line": 409,
+                                    "offset": 14312
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 13,
+                                    "line": 409,
+                                    "offset": 14305
+                                }
+                            },
+                            "request"
+                        ]
+                    ]
+                },
+                "engine_kind": "OSS",
+                "fingerprint": "94611d943987a0d7f75afc843d39653c4ade5d2aedc527f96b426d960163cb2a1870d9e6b1fed79c92cc9a9843458348cbcdd152d51665133f63850bd8e67788_0",
+                "is_ignored": false,
+                "lines": "                process = subprocess.Popen(\n                    command,\n                    shell=True,\n                    stdout=subprocess.PIPE, \n                    stderr=subprocess.PIPE)",
+                "message": "Detected user input entering a `subprocess` call unsafely. This could result in a command injection vulnerability. An attacker could use this vulnerability to execute arbitrary commands on the host, which allows them to download malware, scan sensitive data, or run any command they wish on the server. Do not let users choose the command to run. In general, prefer to use Python API versions of system commands. If you must use subprocess, use a dictionary to allowlist a set of commands.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "HIGH",
+                    "cwe": [
+                        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "HIGH",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "MEDIUM",
+                    "owasp": [
+                        "A01:2017 - Injection",
+                        "A03:2021 - Injection"
+                    ],
+                    "references": [
+                        "https://semgrep.dev/docs/cheat-sheets/python-command-injection/"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 31144,
+                            "rule_id": "EwUepx",
+                            "rv_id": 834437,
+                            "url": "https://semgrep.dev/playground/r/d6TKgwn/python.django.security.injection.command.subprocess-injection.subprocess-injection",
+                            "version_id": "d6TKgwn"
+                        }
+                    },
+                    "shortlink": "https://sg.run/49BE",
+                    "source": "https://semgrep.dev/r/python.django.security.injection.command.subprocess-injection.subprocess-injection",
+                    "subcategory": [
+                        "vuln"
+                    ],
+                    "technology": [
+                        "flask"
+                    ],
+                    "vulnerability_class": [
+                        "Command Injection"
+                    ]
+                },
+                "metavars": {
+                    "$FUNC": {
+                        "abstract_content": "cmd_lab",
+                        "end": {
+                            "col": 12,
+                            "line": 409,
+                            "offset": 14304
+                        },
+                        "start": {
+                            "col": 5,
+                            "line": 409,
+                            "offset": 14297
+                        }
+                    },
+                    "$REQUEST": {
+                        "abstract_content": "request",
+                        "end": {
+                            "col": 20,
+                            "line": 409,
+                            "offset": 14312
+                        },
+                        "start": {
+                            "col": 13,
+                            "line": 409,
+                            "offset": 14305
+                        }
+                    }
+                },
+                "severity": "ERROR",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "introduction/views.py",
+            "start": {
+                "col": 27,
+                "line": 423,
+                "offset": 14838
+            }
+        },
+        {
+            "check_id": "python.lang.security.dangerous-subprocess-use.dangerous-subprocess-use",
+            "end": {
+                "col": 28,
+                "line": 424,
+                "offset": 14883
+            },
+            "extra": {
+                "dataflow_trace": {
+                    "intermediate_vars": [
+                        {
+                            "content": "domain",
+                            "location": {
+                                "end": {
+                                    "col": 19,
+                                    "line": 412,
+                                    "offset": 14407
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 13,
+                                    "line": 412,
+                                    "offset": 14401
+                                }
+                            }
+                        },
+                        {
+                            "content": "command",
+                            "location": {
+                                "end": {
+                                    "col": 24,
+                                    "line": 419,
+                                    "offset": 14669
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 17,
+                                    "line": 419,
+                                    "offset": 14662
+                                }
+                            }
+                        }
+                    ],
+                    "taint_sink": [
+                        "CliLoc",
+                        [
+                            {
+                                "end": {
+                                    "col": 28,
+                                    "line": 424,
+                                    "offset": 14883
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 21,
+                                    "line": 424,
+                                    "offset": 14876
+                                }
+                            },
+                            "command"
+                        ]
+                    ],
+                    "taint_source": [
+                        "CliLoc",
+                        [
+                            {
+                                "end": {
+                                    "col": 46,
+                                    "line": 412,
+                                    "offset": 14434
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 20,
+                                    "line": 412,
+                                    "offset": 14408
+                                }
+                            },
+                            "request.POST.get('domain')"
+                        ]
+                    ]
+                },
+                "engine_kind": "OSS",
+                "fingerprint": "b22e8250a693c5f615d40674fb16d520b52b75e4c405f61babb0ced7553bd691bc0c14dd21ff7ff0441ea97d16470a221e447d09fb17213138e9b4f4c4ab6e49_0",
+                "is_ignored": false,
+                "lines": "                    command,",
+                "message": "Detected subprocess function 'cmd_lab' with user controlled data. A malicious actor could leverage this to perform command injection. You may consider using 'shlex.escape()'.",
+                "metadata": {
+                    "asvs": {
+                        "control_id": "5.3.8 OS Command Injection",
+                        "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v53-output-encoding-and-injection-prevention-requirements",
+                        "section": "V5: Validation, Sanitization and Encoding Verification Requirements",
+                        "version": "4"
+                    },
+                    "category": "security",
+                    "confidence": "MEDIUM",
+                    "cwe": [
+                        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "HIGH",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "MEDIUM",
+                    "owasp": [
+                        "A01:2017 - Injection",
+                        "A03:2021 - Injection"
+                    ],
+                    "references": [
+                        "https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess",
+                        "https://docs.python.org/3/library/subprocess.html",
+                        "https://docs.python.org/3/library/shlex.html",
+                        "https://semgrep.dev/docs/cheat-sheets/python-command-injection/"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 27271,
+                            "rule_id": "JDUz3R",
+                            "rv_id": 834659,
+                            "url": "https://semgrep.dev/playground/r/0bTw3E0/python.lang.security.dangerous-subprocess-use.dangerous-subprocess-use",
+                            "version_id": "0bTw3E0"
+                        }
+                    },
+                    "shortlink": "https://sg.run/NWxp",
+                    "source": "https://semgrep.dev/r/python.lang.security.dangerous-subprocess-use.dangerous-subprocess-use",
+                    "subcategory": [
+                        "vuln"
+                    ],
+                    "technology": [
+                        "python"
+                    ],
+                    "vulnerability_class": [
+                        "Command Injection"
+                    ]
+                },
+                "metavars": {
+                    "$CMD": {
+                        "abstract_content": "command",
+                        "end": {
+                            "col": 28,
+                            "line": 424,
+                            "offset": 14883
+                        },
+                        "start": {
+                            "col": 21,
+                            "line": 424,
+                            "offset": 14876
+                        }
+                    },
+                    "$FUNC": {
+                        "abstract_content": "cmd_lab",
+                        "end": {
+                            "col": 12,
+                            "line": 409,
+                            "offset": 14304
+                        },
+                        "start": {
+                            "col": 5,
+                            "line": 409,
+                            "offset": 14297
+                        }
+                    },
+                    "$PROPERTY": {
+                        "abstract_content": "POST",
+                        "end": {
+                            "col": 32,
+                            "line": 412,
+                            "offset": 14420
+                        },
+                        "start": {
+                            "col": 28,
+                            "line": 412,
+                            "offset": 14416
+                        }
+                    }
+                },
+                "severity": "ERROR",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "introduction/views.py",
+            "start": {
+                "col": 21,
+                "line": 424,
+                "offset": 14876
+            }
+        },
+        {
+            "check_id": "python.lang.security.audit.subprocess-shell-true.subprocess-shell-true",
+            "end": {
+                "col": 31,
+                "line": 425,
+                "offset": 14915
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "2f819a91e6dbd962fc4833b9ff8198ce71a5c75113bf48e48dcdd11e3cbaefc9c12a416e729d446afb7cdcd41eb6c1e70a058c342b3500d1d7c806ea4f0dc280_0",
+                "fix": "False",
+                "is_ignored": false,
+                "lines": "                    shell=True,",
+                "message": "Found 'subprocess' function 'Popen' with 'shell=True'. This is dangerous because this call will spawn the command using a shell process. Doing so propagates current shell settings and variables, which makes it much easier for a malicious actor to execute commands. Use 'shell=False' instead.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "MEDIUM",
+                    "cwe": [
+                        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "LOW",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "HIGH",
+                    "owasp": [
+                        "A01:2017 - Injection",
+                        "A03:2021 - Injection"
+                    ],
+                    "references": [
+                        "https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess",
+                        "https://docs.python.org/3/library/subprocess.html"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 9646,
+                            "rule_id": "DbUpz2",
+                            "rv_id": 834650,
+                            "url": "https://semgrep.dev/playground/r/PkTxGkR/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true",
+                            "version_id": "PkTxGkR"
+                        }
+                    },
+                    "shortlink": "https://sg.run/J92w",
+                    "source": "https://semgrep.dev/r/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true",
+                    "source-rule-url": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+                    "subcategory": [
+                        "secure default"
+                    ],
+                    "technology": [
+                        "python"
+                    ],
+                    "vulnerability_class": [
+                        "Command Injection"
+                    ]
+                },
+                "metavars": {
+                    "$FUNC": {
+                        "abstract_content": "Popen",
+                        "end": {
+                            "col": 43,
+                            "line": 423,
+                            "offset": 14854
+                        },
+                        "start": {
+                            "col": 38,
+                            "line": 423,
+                            "offset": 14849
+                        }
+                    },
+                    "$TRUE": {
+                        "abstract_content": "True",
+                        "end": {
+                            "col": 31,
+                            "line": 425,
+                            "offset": 14915
+                        },
+                        "start": {
+                            "col": 27,
+                            "line": 425,
+                            "offset": 14911
+                        }
+                    }
+                },
+                "severity": "ERROR",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "introduction/views.py",
+            "start": {
+                "col": 27,
+                "line": 425,
+                "offset": 14911
+            }
+        },
+        {
+            "check_id": "python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization",
+            "end": {
+                "col": 55,
+                "line": 553,
+                "offset": 19541
+            },
+            "extra": {
+                "dataflow_trace": {
+                    "intermediate_vars": [
+                        {
+                            "content": "file",
+                            "location": {
+                                "end": {
+                                    "col": 21,
+                                    "line": 551,
+                                    "offset": 19442
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 17,
+                                    "line": 551,
+                                    "offset": 19438
+                                }
+                            }
+                        }
+                    ],
+                    "taint_sink": [
+                        "CliLoc",
+                        [
+                            {
+                                "end": {
+                                    "col": 55,
+                                    "line": 553,
+                                    "offset": 19541
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 28,
+                                    "line": 553,
+                                    "offset": 19514
+                                }
+                            },
+                            "yaml.load(file,yaml.Loader)"
+                        ]
+                    ],
+                    "taint_source": [
+                        "CliLoc",
+                        [
+                            {
+                                "end": {
+                                    "col": 43,
+                                    "line": 551,
+                                    "offset": 19464
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 22,
+                                    "line": 551,
+                                    "offset": 19443
+                                }
+                            },
+                            "request.FILES[\"file\"]"
+                        ]
+                    ]
+                },
+                "engine_kind": "OSS",
+                "fingerprint": "55b039a7d13528e25e3bad4465aaea7b810fbbce02b515657d90a9e1bd61e656bf30e35d3d477cbb78924a78e34b0bf91c371ea860fdb697d0643a120df5776b_0",
+                "is_ignored": false,
+                "lines": "                    data = yaml.load(file,yaml.Loader)",
+                "message": "Avoid using insecure deserialization library, backed by `pickle`, `_pickle`, `cpickle`, `dill`, `shelve`, or `yaml`, which are known to lead to remote code execution vulnerabilities.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "MEDIUM",
+                    "cwe": [
+                        "CWE-502: Deserialization of Untrusted Data"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "MEDIUM",
+                    "owasp": [
+                        "A08:2017 - Insecure Deserialization",
+                        "A08:2021 - Software and Data Integrity Failures"
+                    ],
+                    "references": [
+                        "https://docs.python.org/3/library/pickle.html"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 9467,
+                            "rule_id": "OrU3e6",
+                            "rv_id": 834402,
+                            "url": "https://semgrep.dev/playground/r/3ZT3A9q/python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization",
+                            "version_id": "3ZT3A9q"
+                        }
+                    },
+                    "shortlink": "https://sg.run/9oyr",
+                    "source": "https://semgrep.dev/r/python.django.security.audit.avoid-insecure-deserialization.avoid-insecure-deserialization",
+                    "subcategory": [
+                        "vuln"
+                    ],
+                    "technology": [
+                        "django"
+                    ],
+                    "vulnerability_class": [
+                        "Insecure Deserialization "
+                    ]
+                },
+                "metavars": {
+                    "$INSIDE": {
+                        "abstract_content": "a9_lab",
+                        "end": {
+                            "col": 11,
+                            "line": 544,
+                            "offset": 19250
+                        },
+                        "start": {
+                            "col": 5,
+                            "line": 544,
+                            "offset": 19244
+                        }
+                    },
+                    "$PARAM": {
+                        "abstract_content": "request",
+                        "end": {
+                            "col": 19,
+                            "line": 544,
+                            "offset": 19258
+                        },
+                        "start": {
+                            "col": 12,
+                            "line": 544,
+                            "offset": 19251
+                        }
+                    },
+                    "$REQFUNC": {
+                        "abstract_content": "FILES",
+                        "end": {
+                            "col": 35,
+                            "line": 551,
+                            "offset": 19456
+                        },
+                        "start": {
+                            "col": 30,
+                            "line": 551,
+                            "offset": 19451
+                        }
+                    },
+                    "$YAMLFUNC": {
+                        "abstract_content": "load",
+                        "end": {
+                            "col": 37,
+                            "line": 553,
+                            "offset": 19523
+                        },
+                        "start": {
+                            "col": 33,
+                            "line": 553,
+                            "offset": 19519
+                        }
+                    }
+                },
+                "severity": "ERROR",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "introduction/views.py",
+            "start": {
+                "col": 28,
+                "line": 553,
+                "offset": 19514
+            }
+        },
+        {
+            "check_id": "python.django.security.injection.ssrf.ssrf-injection-requests.ssrf-injection-requests",
+            "end": {
+                "col": 88,
+                "line": 959,
+                "offset": 34841
+            },
+            "extra": {
+                "engine_kind": "OSS",
+                "fingerprint": "0f2beffd9a3568dffdc80e464ecf3e85fb7232c5849472c0befc2409be86dbc9c48eda513a2ccd3a376f64dde7e6ed28d887dc37df0119d39337797efff63244_0",
+                "is_ignored": false,
+                "lines": "        url = request.POST[\"url\"]\n        try:\n            response = requests.get(url)\n            return render(request, \"Lab/ssrf/ssrf_lab2.html\", {\"response\": response.content.decode()})\n        except:\n            return render(request, \"Lab/ssrf/ssrf_lab2.html\", {\"error\": \"Invalid URL\"})",
+                "message": "Data from request object is passed to a new server-side request. This could lead to a server-side request forgery (SSRF). To mitigate, ensure that schemes and hosts are validated against an allowlist, do not forward the response to the user, and ensure proper authentication and transport-layer security in the proxied request. See https://owasp.org/www-community/attacks/Server_Side_Request_Forgery to learn more about SSRF vulnerabilities.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "MEDIUM",
+                    "cwe": [
+                        "CWE-918: Server-Side Request Forgery (SSRF)"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "HIGH",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "MEDIUM",
+                    "owasp": [
+                        "A10:2021 - Server-Side Request Forgery (SSRF)"
+                    ],
+                    "references": [
+                        "https://owasp.org/www-community/attacks/Server_Side_Request_Forgery"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 9514,
+                            "rule_id": "j2UvEw",
+                            "rv_id": 834455,
+                            "url": "https://semgrep.dev/playground/r/DkTGydD/python.django.security.injection.ssrf.ssrf-injection-requests.ssrf-injection-requests",
+                            "version_id": "DkTGydD"
+                        }
+                    },
+                    "shortlink": "https://sg.run/YvY4",
+                    "source": "https://semgrep.dev/r/python.django.security.injection.ssrf.ssrf-injection-requests.ssrf-injection-requests",
+                    "subcategory": [
+                        "vuln"
+                    ],
+                    "technology": [
+                        "django"
+                    ],
+                    "vulnerability_class": [
+                        "Server-Side Request Forgery (SSRF)"
+                    ]
+                },
+                "metavars": {
+                    "$DATA": {
+                        "abstract_content": "url",
+                        "end": {
+                            "col": 12,
+                            "line": 954,
+                            "offset": 34558
+                        },
+                        "start": {
+                            "col": 9,
+                            "line": 954,
+                            "offset": 34555
+                        }
+                    },
+                    "$FUNC": {
+                        "abstract_content": "ssrf_lab2",
+                        "end": {
+                            "col": 14,
+                            "line": 949,
+                            "offset": 34410
+                        },
+                        "start": {
+                            "col": 5,
+                            "line": 949,
+                            "offset": 34401
+                        }
+                    },
+                    "$METHOD": {
+                        "abstract_content": "get",
+                        "end": {
+                            "col": 36,
+                            "line": 956,
+                            "offset": 34629
+                        },
+                        "start": {
+                            "col": 33,
+                            "line": 956,
+                            "offset": 34626
+                        }
+                    },
+                    "$W": {
+                        "abstract_content": "POST",
+                        "end": {
+                            "col": 27,
+                            "line": 954,
+                            "offset": 34573
+                        },
+                        "start": {
+                            "col": 23,
+                            "line": 954,
+                            "offset": 34569
+                        }
+                    }
+                },
+                "severity": "ERROR",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "introduction/views.py",
+            "start": {
+                "col": 9,
+                "line": 954,
+                "offset": 34555
+            }
+        },
+        {
+            "check_id": "python.django.security.injection.raw-html-format.raw-html-format",
+            "end": {
+                "col": 58,
+                "line": 983,
+                "offset": 35812
+            },
+            "extra": {
+                "dataflow_trace": {
+                    "intermediate_vars": [
+                        {
+                            "content": "blog",
+                            "location": {
+                                "end": {
+                                    "col": 17,
+                                    "line": 974,
+                                    "offset": 35433
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 13,
+                                    "line": 974,
+                                    "offset": 35429
+                                }
+                            }
+                        }
+                    ],
+                    "taint_sink": [
+                        "CliLoc",
+                        [
+                            {
+                                "end": {
+                                    "col": 58,
+                                    "line": 983,
+                                    "offset": 35812
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 20,
+                                    "line": 983,
+                                    "offset": 35774
+                                }
+                            },
+                            "prepend_code + blog + \"{% endblock %}\""
+                        ]
+                    ],
+                    "taint_source": [
+                        "CliLoc",
+                        [
+                            {
+                                "end": {
+                                    "col": 32,
+                                    "line": 974,
+                                    "offset": 35448
+                                },
+                                "path": "introduction/views.py",
+                                "start": {
+                                    "col": 20,
+                                    "line": 974,
+                                    "offset": 35436
+                                }
+                            },
+                            "request.POST"
+                        ]
+                    ]
+                },
+                "engine_kind": "OSS",
+                "fingerprint": "740ff47b0cfb52ecc996f3f50e4e830fe4b786021617f85d7c96a71fb45ed699c0f56419ddeb16813ba64412e7c9fe275b553c00979235a747fc6a05a2605a77_0",
+                "is_ignored": false,
+                "lines": "            blog = prepend_code + blog + \"{% endblock %}\"",
+                "message": "Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassing secure methods of rendering HTML by manually constructing HTML and this could create a cross-site scripting vulnerability, which could let attackers steal sensitive user data. To be sure this is safe, check that the HTML is rendered safely. Otherwise, use templates (`django.shortcuts.render`) which will safely render HTML instead.",
+                "metadata": {
+                    "category": "security",
+                    "confidence": "MEDIUM",
+                    "cwe": [
+                        "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+                    ],
+                    "cwe2021-top25": true,
+                    "cwe2022-top25": true,
+                    "impact": "MEDIUM",
+                    "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
+                    "likelihood": "HIGH",
+                    "owasp": [
+                        "A07:2017 - Cross-Site Scripting (XSS)",
+                        "A03:2021 - Injection"
+                    ],
+                    "references": [
+                        "https://docs.djangoproject.com/en/3.2/topics/http/shortcuts/#render",
+                        "https://docs.djangoproject.com/en/3.2/topics/security/#cross-site-scripting-xss-protection"
+                    ],
+                    "semgrep.dev": {
+                        "rule": {
+                            "origin": "community",
+                            "r_id": 14360,
+                            "rule_id": "2ZUPER",
+                            "rv_id": 834446,
+                            "url": "https://semgrep.dev/playground/r/3ZT3wYq/python.django.security.injection.raw-html-format.raw-html-format",
+                            "version_id": "3ZT3wYq"
+                        }
+                    },
+                    "shortlink": "https://sg.run/oYj1",
+                    "source": "https://semgrep.dev/r/python.django.security.injection.raw-html-format.raw-html-format",
+                    "subcategory": [
+                        "vuln"
+                    ],
+                    "technology": [
+                        "django"
+                    ],
+                    "vulnerability_class": [
+                        "Cross-Site-Scripting (XSS)"
+                    ]
+                },
+                "metavars": {
+                    "$ANYTHING": {
+                        "abstract_content": "POST",
+                        "end": {
+                            "col": 32,
+                            "line": 974,
+                            "offset": 35448
+                        },
+                        "start": {
+                            "col": 28,
+                            "line": 974,
+                            "offset": 35444
+                        }
+                    },
+                    "$HTMLSTR": {
+                        "abstract_content": "\"{% extends 'introduction/base.html' %}\\\n                {% block content %}{% block title %}\\\n                <title>SSTI-Blogs</title>\\\n                {% endblock %}\"",
+                        "end": {
+                            "col": 32,
+                            "line": 981,
+                            "offset": 35741
+                        },
+                        "start": {
+                            "col": 28,
+                            "line": 978,
+                            "offset": 35572
+                        }
+                    }
+                },
+                "severity": "WARNING",
+                "validation_state": "NO_VALIDATOR"
+            },
+            "path": "introduction/views.py",
+            "start": {
+                "col": 20,
+                "line": 983,
+                "offset": 35774
+            }
+        }
+    ],
+    "skipped_rules": [],
+    "version": "1.95.0"
+}
