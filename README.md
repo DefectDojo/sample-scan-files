@@ -1,11 +1,3 @@
-# Sample Scan Files
+# Sample Scan Files (Archvied)
 
-Repository for sample scan files.
-
-## Getting Started
-
-Upload the sample file to the folder of the scanner. If the scanner folder is not there then please create it with the submission. The file should be in the format, <scanner_name>\_v<x.x>.ext
-
-### Notice
-
-Please do not upload any production data as the scans are intended to be scrubbed or against demo systems.
+Sample scans have been moved into the [open source repo](https://github.com/DefectDojo/django-DefectDojo/tree/master/unittests/scans) for easier testing capabilities
